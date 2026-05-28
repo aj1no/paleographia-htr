@@ -7,7 +7,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![License MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/aj1no/transcricao_jundiai/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/aj1no/transcricao_jundiai/actions)
+[![CI](https://img.shields.io/github/actions/workflow/status/aj1no/paleographia-htr/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/aj1no/paleographia-htr/actions)
 
 PaleographIA é um sistema especializado de HTR (Handwritten Text Recognition - Reconhecimento de Texto Manuscrito) de alto desempenho, projetado especificamente para a documentação histórica de Jundiaí (1657 - 1889).
 
