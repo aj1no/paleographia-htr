@@ -63,5 +63,24 @@
     "new_real_htr_runs": 0,
     "report": "docs/correcoes_pos_revisao.md",
     "evidence": "docs/correcoes_evidencias.json"
+  },
+  "human_reference_preparation": {
+    "date": "2026-10-15",
+    "reviewer": "Rodolfo Vinícius Cima Takemoto",
+    "folio": "100r",
+    "editorial_lines": [
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "full_lines_validated": 0,
+    "partial_confirmation": "Leu se",
+    "upper_signs_tentative": "es",
+    "abbreviation_unresolved": true,
+    "catalog_and_workspace_changed": false,
+    "report": "docs/revisao_humana/100r_17_21/conferencia.md",
+    "manifest": "docs/revisao_humana/100r_17_21/preparacao.json"
   }
 }

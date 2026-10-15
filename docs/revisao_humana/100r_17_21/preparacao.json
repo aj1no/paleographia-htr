@@ -1,0 +1,254 @@
+{
+  "titulo": "Preparação da referência humana — fólio 100 reto, linhas editoriais 17–21",
+  "preparado_em": "2026-10-15T18:04:09.428337+00:00",
+  "estado": "aguarda conferência humana linha a linha",
+  "revisao_workspace_consultada": "20261015T152646_ce045fe6",
+  "fonte": "data/raw/import_20261015/6e82cef18b04_198b675a9b65d183.jpg",
+  "fonte_sha256": "413d1502555f62d45ef50cc9af5d0fb7df0ed55bf9652157f0fa874b2006a1ad",
+  "edicao": "data/raw/import_20261015/6e82cef18b04_094cbf86c7ec88ea.pdf",
+  "edicao_sha256": "479bc2535feed70ea54b3bc1dc8956de4fdb32a41afe28d42e3772f978a6f075",
+  "pagina_edicao": 3,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "linhas_integralmente_validadas_nesta_preparacao": 0,
+  "cobertura_completa_validada": false,
+  "convencao": "Preservar grafia, sinais e abreviaturas visíveis; expansões ficam no apoio. Leituras e sinais incertos aguardam decisão humana.",
+  "aviso": "Caixas de contexto são somente para inspeção e podem incluir traços vizinhos. Não substituem caixas canônicas nem delimitam uma cobertura validada.",
+  "linhas": [
+    {
+      "linha_editorial": 17,
+      "ordem_no_catalogo": 17,
+      "line_id": "l_cdcca7fc5eb63d322541",
+      "bbox_catalogo_atual": [
+        74,
+        913,
+        1162,
+        977
+      ],
+      "bbox_contexto_inspecao": [
+        100,
+        895,
+        1100,
+        1001
+      ],
+      "recorte_ampliado": "linha_17_ampliada.png",
+      "recorte_nativo_contexto": "linha_17_contexto.png",
+      "texto_apoio_modernizado": "Leu-se um Projeto de Posturas com treze artigos seguintes",
+      "transcricao_diplomatica_confirmada": null,
+      "geometria_confirmada": false,
+      "ordem_confirmada": false,
+      "grafia_confirmada": false,
+      "abreviaturas_confirmadas": false,
+      "revisor": "Rodolfo Vinícius Cima Takemoto",
+      "validado_em": null,
+      "pendencias_de_leitura": {
+        "hifen_da_primeira_palavra": "não confirmado",
+        "abreviatura_final": "seg… com sinais superiores aparentemente es, conforme o revisor; conferir a forma escrita e a representação antes de expandir",
+        "expressao_antes_de_treze": "conferir com/em no manuscrito; o revisor mencionou em treze, e o apoio modernizado apresenta com treze"
+      },
+      "hipotese_historica_abertura": {
+        "origem": "hipótese do revisor nesta conversa, pesquisada em fontes históricas",
+        "hipotese": "Leo se hum Projecto…",
+        "interpretacao_modernizada": "Leu-se um projeto…",
+        "estado": "hipótese histórica anterior preservada; a decisão posterior do revisor adotou Leu se, com u; hífen pendente",
+        "fontes": [
+          {
+            "titulo": "Luís Caetano de Lima, Orthographia da lingua portugueza (1736), p. 121; edição semidiplomática no portal da UTAD",
+            "url": "https://pml.cel.utad.pt/ViewEntry.aspx?id_entry=15",
+            "evidencia": "O autor distingue os presentes dos pretéritos e inclui a forma «Elle leo» entre estes últimos."
+          },
+          {
+            "titulo": "Semanário de Saúde Pública, 1831, n. 2, primeira página do PDF; relatos de sessões de 1829",
+            "url": "https://hemeroteca-pdf.bn.gov.br/702560/per702560_1831_00002.pdf",
+            "evidencia": "O texto disponível na Hemeroteca registra «Leo-se» em relatos de leitura de atas. A grafia tem apoio adicional no tratado de 1736."
+          }
+        ]
+      },
+      "observacoes_do_revisor": [
+        {
+          "registrado_em": "2026-10-15T18:26:21.738974+00:00",
+          "revisor": "Rodolfo Vinícius Cima Takemoto",
+          "mensagem_original": "realmente pode ser Leu se, pela grafia parece mais um U que o",
+          "leitura_provavel": "Leu se",
+          "vogal_preferida": "u",
+          "estado": "leitura provável indicada pelo revisor; não é confirmação definitiva",
+          "hifen": "não confirmado",
+          "escopo": "somente a abertura da linha 17; não valida a linha completa"
+        },
+        {
+          "registrado_em": "2026-10-15T18:29:50.924118+00:00",
+          "revisor": "Rodolfo Vinícius Cima Takemoto",
+          "mensagem_original": "pelo contexto do que eu li e justamente leu se hum projecto de posturas em treze.... ai ali em baixo começa pelo Art 1º.... vamos levar isso como um leu se",
+          "leitura_confirmada": "Leu se",
+          "vogal_confirmada": "u",
+          "escopo": "confirmação parcial da abertura da linha 17; hífen e linha completa não validados"
+        },
+        {
+          "registrado_em": "2026-10-15T18:37:42.156851+00:00",
+          "revisor": "Rodolfo Vinícius Cima Takemoto",
+          "mensagem_original": "faz muito sentido isso, logo na sequencia eu vejo algo com segues  ou algo q da sequecia mas não sei ao certo",
+          "escopo": "leitura tentativa da sequência final; não é confirmação de letras ou expansão",
+          "estado": "abreviatura e sinais superiores em conferência"
+        },
+        {
+          "registrado_em": "2026-10-15T18:41:57.091417+00:00",
+          "revisor": "Rodolfo Vinícius Cima Takemoto",
+          "mensagem_original": "Claramente parece es, mas não faz sentido mas aparentemente parace, mas por hoje preciso encerrar, suba oq fizemos no github,",
+          "leitura_visual_sinais_superiores": "es",
+          "estado": "aparência indicada pelo revisor; identificação provisória, abreviatura sem resolução",
+          "escopo": "somente os sinais superiores após seg; não confirma a expansão nem valida a linha"
+        }
+      ],
+      "confirmacoes_parciais": [
+        {
+          "trecho": "Leu se",
+          "vogal": "u",
+          "estado": "leitura confirmada pelo revisor",
+          "revisor": "Rodolfo Vinícius Cima Takemoto",
+          "confirmado_em": "2026-10-15T18:29:50.924118+00:00",
+          "origem": "decisão explícita do usuário nesta conversa",
+          "mensagem_original": "pelo contexto do que eu li e justamente leu se hum projecto de posturas em treze.... ai ali em baixo começa pelo Art 1º.... vamos levar isso como um leu se",
+          "limites": "A representação conserva a separação usada pelo revisor; presença ou ausência de hífen, caixa e geometria não foram confirmadas separadamente."
+        }
+      ],
+      "leitura_atual_abertura": {
+        "texto": "Leu se",
+        "estado": "confirmada parcialmente pelo revisor",
+        "revisor": "Rodolfo Vinícius Cima Takemoto",
+        "confirmado_em": "2026-10-15T18:29:50.924118+00:00"
+      },
+      "hipotese_abreviatura_final": {
+        "leitura_de_trabalho": "seg…",
+        "expansao_provavel": "seguintes",
+        "limites": "Os sinais superiores não foram identificados com segurança. A expansão tem apoio no contexto e na edição modernizada; não substitui a forma escrita.",
+        "imagem_contexto": "linha_17_artigos_abreviatura_contexto.png",
+        "imagem_ampliada": "linha_17_abreviatura_final_5x.png",
+        "confirmacao_humana": false,
+        "sinais_superiores_provisorios": "es",
+        "origem_sinais_superiores": "observação do revisor nesta conversa; leitura ainda provisória",
+        "imagem_sinais_superiores": "linha_17_sinais_superiores_16x.png",
+        "imagem_sinais_e_contexto": "linha_17_sinais_superiores_e_contexto.png"
+      }
+    },
+    {
+      "linha_editorial": 18,
+      "ordem_no_catalogo": 18,
+      "line_id": "l_a0e12ce77bc93b0975fd",
+      "bbox_catalogo_atual": [
+        74,
+        977,
+        1162,
+        1026
+      ],
+      "bbox_contexto_inspecao": [
+        100,
+        948,
+        1100,
+        1054
+      ],
+      "recorte_ampliado": "linha_18_ampliada.png",
+      "recorte_nativo_contexto": "linha_18_contexto.png",
+      "texto_apoio_modernizado": "Artigo 1º – Ninguém poderá vender armas ofensivas,",
+      "transcricao_diplomatica_confirmada": null,
+      "geometria_confirmada": false,
+      "ordem_confirmada": false,
+      "grafia_confirmada": false,
+      "abreviaturas_confirmadas": false,
+      "revisor": "Rodolfo Vinícius Cima Takemoto",
+      "validado_em": null
+    },
+    {
+      "linha_editorial": 19,
+      "ordem_no_catalogo": 19,
+      "line_id": "l_ae7a34c22d6e8b5a96df",
+      "bbox_catalogo_atual": [
+        74,
+        1026,
+        1162,
+        1079
+      ],
+      "bbox_contexto_inspecao": [
+        100,
+        1009,
+        1100,
+        1103
+      ],
+      "recorte_ampliado": "linha_19_ampliada.png",
+      "recorte_nativo_contexto": "linha_19_contexto.png",
+      "texto_apoio_modernizado": "ou defensivas, pólvora, ou chumbo sem prévia licença",
+      "transcricao_diplomatica_confirmada": null,
+      "geometria_confirmada": false,
+      "ordem_confirmada": false,
+      "grafia_confirmada": false,
+      "abreviaturas_confirmadas": false,
+      "revisor": "Rodolfo Vinícius Cima Takemoto",
+      "validado_em": null
+    },
+    {
+      "linha_editorial": 20,
+      "ordem_no_catalogo": 20,
+      "line_id": "l_1c9ee411b36d763f5d2e",
+      "bbox_catalogo_atual": [
+        74,
+        1079,
+        1162,
+        1122
+      ],
+      "bbox_contexto_inspecao": [
+        100,
+        1066,
+        1100,
+        1158
+      ],
+      "recorte_ampliado": "linha_20_ampliada.png",
+      "recorte_nativo_contexto": "linha_20_contexto.png",
+      "texto_apoio_modernizado": "do Juiz de Paz do Distrito para comércio naque-",
+      "transcricao_diplomatica_confirmada": null,
+      "geometria_confirmada": false,
+      "ordem_confirmada": false,
+      "grafia_confirmada": false,
+      "abreviaturas_confirmadas": false,
+      "revisor": "Rodolfo Vinícius Cima Takemoto",
+      "validado_em": null
+    },
+    {
+      "linha_editorial": 21,
+      "ordem_no_catalogo": 21,
+      "line_id": "l_e66cdf7250bda9782dcc",
+      "bbox_catalogo_atual": [
+        74,
+        1122,
+        1162,
+        1182
+      ],
+      "bbox_contexto_inspecao": [
+        100,
+        1114,
+        1100,
+        1201
+      ],
+      "recorte_ampliado": "linha_21_ampliada.png",
+      "recorte_nativo_contexto": "linha_21_contexto.png",
+      "texto_apoio_modernizado": "le gênero = O contraventor será preso por quatro",
+      "transcricao_diplomatica_confirmada": null,
+      "geometria_confirmada": false,
+      "ordem_confirmada": false,
+      "grafia_confirmada": false,
+      "abreviaturas_confirmadas": false,
+      "revisor": "Rodolfo Vinícius Cima Takemoto",
+      "validado_em": null
+    }
+  ],
+  "identificacao_revisor": {
+    "origem": "resposta explícita do usuário nesta conversa",
+    "registrado_em": "2026-10-15T18:08:03.727711+00:00",
+    "escopo": "identificação do revisor; não constitui validação de texto, geometria, ordem ou cobertura"
+  },
+  "encerramento_sessao": {
+    "data_local": "2026-10-15",
+    "fuso": "America/Sao_Paulo",
+    "registrado_em": "2026-10-15T18:41:57.091417+00:00",
+    "estado": "sessão encerrada a pedido do revisor; material preparado para publicação",
+    "retomar_em": "conferir os sinais superiores aparentemente es e resolver a abreviatura final da linha 17; depois conferir com/em, grafia, recortes e as linhas 18–21",
+    "linhas_completas_validadas": 0
+  }
+}

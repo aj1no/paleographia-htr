@@ -1,5 +1,13 @@
 # Estado do projeto para revisão
 
+Preparação humana iniciada em 15/10/2026: cinco linhas consecutivas, 17–21 do
+100 reto, com recortes ampliados e identificação do revisor. «Leu se» recebeu
+confirmação parcial; a abreviatura final permanece aberta, com sinais superiores
+aparentemente «es» segundo o revisor. Nenhuma linha completa foi validada.
+O [caderno da sessão e ponto de retomada](revisao_humana/100r_17_21/conferencia.md)
+separa decisões atuais, hipóteses e histórico; as seis confirmações anteriores
+do repertório foram preservadas em seu catálogo original.
+
 Atualização de 15/10/2026, após a revisão de `756492c`: foram corrigidas a
 validação global da partição, a preservação das múltiplas regiões e a perda de
 rascunhos. Consulte [correcoes_pos_revisao.md](correcoes_pos_revisao.md) para
