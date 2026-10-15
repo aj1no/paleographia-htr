@@ -30,6 +30,7 @@ Os manifests versionados apontam para derivados locais ignorados. Para reproduzi
 
 ## Documentação
 
+- [Correções após revisão e testes de regressão](docs/correcoes_pos_revisao.md)
 - [Estado do projeto para revisão](docs/guia_revisao_gpt.md)
 - [Repertório de letras e abreviaturas](docs/repertorio_100r.md)
 - [Apresentação das saídas em português](docs/saidas_em_portugues.md)

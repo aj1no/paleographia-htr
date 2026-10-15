@@ -58,6 +58,19 @@ Abra `http://127.0.0.1:8000`. Identifique o documento/fólio, confira a edição
 
 O editor mantém correção humana e edição modernizada em campos distintos. A sugestão do reconhecedor atual fica indisponível na tela por não oferecer leitura utilizável em português; o resultado bruto permanece nos registros técnicos. Salvar rascunho mantém pendente. Para referência, o humano precisa fornecer seu nome e marcar explicitamente conferência do recorte e do texto. Não marcar uma edição modernizada como diplomática sem leitura do manuscrito. No 100r, o início editorial 17 não deve ser confundido com o índice operacional dos recortes.
 
+Os rascunhos locais são mantidos por linha e fólio durante a navegação e a
+atualização do catálogo. A tela informa quantos ainda não foram salvos. Use
+**Salvar revisão** ou **Salvar identificação** para persistir; a memória da aba
+não sobrevive garantidamente ao fechamento. Em conflito 409, atualize o catálogo,
+confira a versão salva no painel e só então escolha **Manter rascunho após
+conferir esta versão**, revise os campos e salve novamente. Nenhuma sobrescrita
+é feita automaticamente.
+
+Na identificação, selecione a região antes de editar seus limites ou fonte.
+Adicionar/remover são ações explícitas no rascunho; salvar somente créditos não
+altera coberturas. Para remover ou renomear uma região com linhas, reatribua
+essas linhas primeiro. As demais regiões mantêm revisor, data e proveniência.
+
 Revisões e predições ficam em `data/workspace`. Não executar outra instância mutante sobre a mesma pasta. A exportação ZIP tem manifests/textos e não inclui imagens; mantenha fontes e crops. Uma exportação do CLI cria arquivos canônicos em diretório novo:
 
 ```powershell
@@ -67,7 +80,33 @@ python -m paleographia validate --manifest data/manifests/review_export_NEW/line
 
 ## Referência, inferência e comparação
 
-Selecione previamente 30–50 linhas revisadas, em regiões de cobertura integral, e registre exclusões e sua justificativa. Exporte seleção para um manifest separado, com suas páginas correspondentes; não apagar o catálogo completo para esconder pendências. Um catálogo com linhas rejeitadas/pendentes não é aceito diretamente como referência de avaliação.
+Roteiro atualizado em **15/10/2026**, após as correções de revisão:
+
+1. Escolher uma região curta e legível com correspondência documental conferida.
+2. Revisar inicialmente **cinco linhas completas**: limites, ordem, transcrição
+   paleográfica, convenções de abreviaturas/incertezas e identificação do revisor.
+   As seis confirmações parciais do repertório não cumprem essa etapa.
+3. Ampliar gradualmente para 30–50 linhas úteis ao diagnóstico. Essa quantidade
+   não garante treino suficiente nem independência entre documentos.
+4. Marcar cobertura completa somente quando todas as linhas da região estiverem
+   efetivamente representadas na referência; registrar exclusões e justificativas.
+5. Com referência disponível, avaliar o reconhecedor de base e investigar
+   candidatos adequados ao português e à escrita do acervo. Registrar modelo,
+   revisão dos pesos, ambiente, entradas e saídas, inclusive resultados ruins.
+6. Definir protocolo e separar desenvolvimento da avaliação reservada **antes**
+   da seleção de modelos ou ajuste de parâmetros. Uma sessão permite apenas
+   exploração; não distribuir seus fólios entre treino e teste como independentes.
+7. Comparar segmentadores com o mesmo reconhecedor, as mesmas regiões e condições
+   de medição comparáveis, separando carregamento inicial do processamento.
+
+Preserve o catálogo completo com a partição para `compare`: `[paths].lines`
+deve incluir as linhas dos demais conjuntos, inclusive pendentes. A validação
+global verifica integridade e vazamento antes da seleção; somente as linhas
+de `[experiment].split` precisam de referência paleográfica/geometria revisadas.
+`validation.json` registra as duas verificações e a validade conjunta. Linhas
+pendentes/rejeitadas dentro da seleção não são referências de avaliação.
+Para avaliação direta, exporte a referência revisada e suas páginas para novos
+manifests, sem apagar os registros do catálogo completo.
 
 Com uma sessão documental, a única divisão oferecida é exploratória sem treino:
 

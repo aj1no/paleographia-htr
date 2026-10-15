@@ -1,3 +1,4 @@
+import copy
 import hashlib
 import io
 import json
@@ -134,26 +135,42 @@ class ReviewService:
                        "credits", "usage_conditions", "transcribed_coverage"}
             if set(changes)-allowed:
                 raise ValueError("Campo de página não editável.")
-            updated = dict(page, **changes)
-            updated["reviewed_at"] = now() if updated["correspondence_status"] == "validated" else None
+            updated = copy.deepcopy(dict(page, **changes))
+            identity_fields = {"document_id", "folio_id", "side", "correspondence_status", "reviewer"}
+            if any(updated.get(key) != page.get(key) for key in identity_fields):
+                updated["reviewed_at"] = now() if updated["correspondence_status"] == "validated" else None
             if updated["correspondence_status"] == "validated":
                 if updated["document_id"].startswith("unassigned_"):
                     raise ValueError("Identifique o documento antes de validar.")
                 check_reviewer(updated)
+            previous_regions = {c["region_id"]: c for c in page["transcribed_coverage"]}
+            region_ids = set()
             for coverage in updated["transcribed_coverage"]:
                 if not bbox_valid(coverage.get("bbox_xyxy"), updated["width"], updated["height"]) or not coverage.get("region_id"):
                     raise ValueError("Cobertura da região inválida.")
-                if coverage.get("review_status") == "validated":
-                    coverage["reviewer"] = updated["reviewer"]
-                    coverage["reviewed_at"] = now()
+                if coverage["region_id"] in region_ids:
+                    raise ValueError("Nome de região repetido.")
+                region_ids.add(coverage["region_id"])
+                if coverage != previous_regions.get(coverage["region_id"]):
+                    if coverage.get("review_status") == "validated":
+                        coverage["reviewer"] = updated["reviewer"]
+                        coverage["reviewed_at"] = now()
+                        check_reviewer(coverage)
+                    else:
+                        coverage["reviewer"] = None
+                        coverage["reviewed_at"] = None
+                elif coverage.get("review_status") == "validated":
                     check_reviewer(coverage)
                 if coverage.get("reference_source") and not safe_path(self.root, coverage["reference_source"]).is_file():
                     raise ValueError("Fonte da cobertura ausente.")
                 if not all(type(n) is int and n > 0 for n in coverage.get("reference_pages", [])):
                     raise ValueError("Páginas de referência inválidas.")
+            removed = set(previous_regions) - region_ids
+            if any(l["page_id"] == page_id and l["region_id"] in removed for l in state["lines"]):
+                raise Conflict("A região tem linhas associadas. Reatribua essas linhas antes de remover ou renomear a região.")
             Page.model_validate(updated)
             for line in state["lines"]:
-                if line["page_id"] == page_id:
+                if line["page_id"] == page_id and any(updated[key] != page[key] for key in ("document_id", "folio_id")):
                     line.update(document_id=updated["document_id"], folio_id=updated["folio_id"], split_group=updated["document_id"], split=None)
             state["pages"] = [updated if p["page_id"] == page_id else p for p in state["pages"]]
             self.save(state, "update_page")
