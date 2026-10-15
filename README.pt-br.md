@@ -30,6 +30,7 @@ Os manifests versionados apontam para derivados locais ignorados. Para reproduzi
 
 ## Documentação
 
+- [Preparação da referência humana: 100 reto, linhas 17–21 e ponto de retomada](docs/revisao_humana/100r_17_21/conferencia.md)
 - [Correções após revisão e testes de regressão](docs/correcoes_pos_revisao.md)
 - [Estado do projeto para revisão](docs/guia_revisao_gpt.md)
 - [Repertório de letras e abreviaturas](docs/repertorio_100r.md)

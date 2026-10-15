@@ -86,3 +86,22 @@ em navegador real em instância sintética isolada, incluindo conflito 409 e
 reabertura. Os 274 arquivos anteriores conferidos por hash permaneceram intactos.
 Detalhes e limites: [correcoes_pos_revisao.md](correcoes_pos_revisao.md).
 Não houve novos resultados de HTR ou validação humana do acervo.
+
+## Início da preparação da referência humana — 15/10/2026
+
+Foram preparados cinco recortes consecutivos correspondentes às linhas editoriais
+17–21 do 100 reto, dentro do trecho coberto pela página 3 da edição modernizada.
+O revisor identificou-se como Rodolfo Vinícius Cima Takemoto e confirmou
+parcialmente a abertura «Leu se», com u. A hipótese anterior «Leo se» e sua
+pesquisa histórica foram preservadas como etapa anterior.
+
+«Hum» continua provável; «com/em treze», hífen, caixa, geometria e abreviatura
+final continuam em conferência. Os sinais superiores parecem «es» ao revisor,
+sem resolução da abreviatura. Zero linhas completas ou coberturas foram
+validadas; não houve inferência real, treino ou métricas nesta sessão.
+O catálogo e as revisões anteriores não foram alterados.
+
+O [caderno da sessão](revisao_humana/100r_17_21/conferencia.md) reúne os recortes,
+as observações e o ponto de retomada. O manifesto `preparacao.json` no mesmo
+diretório conserva as mensagens de origem e as coordenadas; `arquivos.json`
+registra os hashes da cópia publicada.
