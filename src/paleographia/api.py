@@ -66,6 +66,10 @@ def create_app(root=None, config=None, recognizer=None):
     def index():
         return FileResponse(Path(__file__).parent/"web/index.html")
 
+    @app.get("/review.js")
+    def review_script():
+        return FileResponse(Path(__file__).parent/"web/review.js", media_type="text/javascript")
+
     def repertoire_catalog():
         path = root / "data/manifests/repertorio_100r.json"
         if not path.is_file():

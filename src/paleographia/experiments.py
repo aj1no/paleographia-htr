@@ -35,14 +35,24 @@ def compare(pages, reference, config, output_dir, root=Path.cwd(), manifest_path
         raise ValueError("Comparação exige diretório novo.")
     output.mkdir(parents=True)
     write_json(output/"provenance.json", provenance(config, manifest_paths))
+    # Integrity/partition checks need the complete catalogue: filtering first
+    # hides leakage. Pending rows outside the selection are not evaluation targets.
+    global_report = validate(reference, root, "catalog", pages)
     selected_split = config["experiment"].get("split", "exploratory")
-    selected = [r for r in reference if r.get("split") == selected_split]
-    report = validate(selected, root, "evaluation", pages)
+    selected = [r for r in reference if isinstance(r, dict) and r.get("split") == selected_split]
+    selected_report = validate(selected, root, "evaluation", pages)
+    report = {"valid": global_report["valid"] and selected_report["valid"],
+              "global": global_report, "selected": selected_report,
+              "errors": (["Catálogo completo: " + e for e in global_report["errors"]]
+                         + ["Seleção: " + e for e in selected_report["errors"]])}
+    if not selected:
+        report["errors"].append("Nenhuma linha no conjunto selecionado: " + selected_split)
     write_json(output/"validation.json", report)
     results = {"status": "not_executed", "split": selected_split,
                "methods": {}, "reference_lines": len(selected),
-               "groups": len({r["split_group"] for r in selected}),
-               "exclusions": [{"line_id": r["line_id"], "reason": r.get("exclusion_reason") or "different_or_unassigned_split"}
+               "groups": len({r.get("split_group") for r in selected}),
+               "exclusions": [{"line_id": r.get("line_id") if isinstance(r, dict) else None,
+                               "reason": (r.get("exclusion_reason") if isinstance(r, dict) else None) or "different_or_unassigned_split"}
                               for r in reference if r not in selected]}
     if not report["valid"]:
         results["reason"] = "Referências/splits não aptos; " + "; ".join(report["errors"])

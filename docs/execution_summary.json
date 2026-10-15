@@ -50,5 +50,18 @@
     "language": "pt-BR",
     "automatic_transcription_enabled": false,
     "recognition_improved": false
+  },
+  "post_review_corrections": {
+    "date": "2026-10-15",
+    "reviewed_commit": "756492c69b3eab4b86757e1dc0570349ff2cc02a",
+    "python_tests_passed": 46,
+    "python_warnings": 1,
+    "javascript_simulated_dom_tests_passed": 16,
+    "real_browser": "synthetic isolated instance; drafts, two regions, conflict, diagnostic and reload checked",
+    "original_files_hash_checked": 274,
+    "original_files_changed": 0,
+    "new_real_htr_runs": 0,
+    "report": "docs/correcoes_pos_revisao.md",
+    "evidence": "docs/correcoes_evidencias.json"
   }
 }

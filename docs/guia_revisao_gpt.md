@@ -1,5 +1,12 @@
 # Estado do projeto para revisão
 
+Atualização de 15/10/2026, após a revisão de `756492c`: foram corrigidas a
+validação global da partição, a preservação das múltiplas regiões e a perda de
+rascunhos. Consulte [correcoes_pos_revisao.md](correcoes_pos_revisao.md) para
+implementação, 46 testes Python, 16 testes em DOM simulado e conferência em
+navegador real com dados sintéticos. Os números de HTR abaixo são históricos;
+esta atualização não acrescenta reconhecimento real nem referências humanas.
+
 Esta entrega organiza o piloto que estava distribuído em scripts e acrescenta
 uma revisão local com proveniência, histórico e um repertório paleográfico.
 O objetivo da análise é verificar se esse caminho sustenta transcrições

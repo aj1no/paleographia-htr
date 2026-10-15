@@ -75,3 +75,14 @@ O repertório do 100r tem 13 exemplos e seis confirmações parciais do usuário
 A interface passou a apresentar avisos em português e mantém indisponíveis as sugestões do reconhecedor inadequado. Os resultados brutos continuam nos registros técnicos. O comparativo qualitativo com a edição está em `diagnostico_reconhecimento.json`; não há métricas acadêmicas.
 
 Foi acrescentada a reconstrução dos recortes do repertório a partir do catálogo existente, sem sobrescrever confirmações. A cópia visual para revisão no GitHub está em `repertorio/`. O guia `guia_revisao_gpt.md` apresenta o estado e as perguntas para a análise.
+
+## Correções posteriores à revisão de 756492c — 15/10/2026
+
+Os resultados acima pertencem à entrega inicial. A atualização corrige validação
+global de partições, preservação de regiões/proveniência e rascunhos da interface.
+Verificações locais: 46 testes Python e 16 testes em DOM simulado passaram;
+compilação, instalação, CLI e dependências também passaram. Houve conferência
+em navegador real em instância sintética isolada, incluindo conflito 409 e
+reabertura. Os 274 arquivos anteriores conferidos por hash permaneceram intactos.
+Detalhes e limites: [correcoes_pos_revisao.md](correcoes_pos_revisao.md).
+Não houve novos resultados de HTR ou validação humana do acervo.
