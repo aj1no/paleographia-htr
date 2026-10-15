@@ -1,71 +1,45 @@
-# PaleographIA: Sistema de Transcrição para o Arquivo Histórico de Jundiaí
+# PaleographIA — piloto de transcrição assistida
 
-*[Read in English](README.md)*
+Protótipo local para importar manuscritos, conferir recortes, gerar sugestões com TrOCR, registrar revisão humana e exportar dados rastreáveis. A comparação proposta mantém o reconhecedor fixo e varia segmentação OpenCV/Kraken. Não há ajuste fino validado para português histórico nem evidência de alto desempenho.
 
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![License MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/aj1no/paleographia-htr/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/aj1no/paleographia-htr/actions)
+O catálogo preparado contém três fólios candidatos de 1831 e 94 recortes pendentes. Há zero linhas validadas por humano. Inferência real foi verificada em três recortes de diagnóstico e nos 32 recortes do 100r; as saídas foram inadequadas e não são transcrições confiáveis. O repertório reúne 13 exemplos e seis confirmações parciais do usuário, preservando “hum” como provável. Treino e avaliação textual permanecem bloqueados por revisão/protocolo. Veja o [relatório de execução](docs/execution_report.md).
 
-PaleographIA é um sistema especializado de HTR (Handwritten Text Recognition - Reconhecimento de Texto Manuscrito) de alto desempenho, projetado especificamente para a documentação histórica de Jundiaí (1657 - 1889).
+## Abrir nesta máquina
 
-O sistema utiliza a arquitetura de IA de última geração (TrOCR) para decifrar caligrafias irregulares, texturas de papel dos séculos XVII a XIX e terminologias arcaicas em português.
+O ambiente `.venv` está instalado. Execute `start_safe.bat` ou:
 
----
-
-## Principais Funcionalidades
-
-### Calibração Profunda para Paleografia em Português
-Diferente de OCRs genéricos, o PaleographIA utiliza um processo de ajuste fino especializado para compreender as nuances das texturas de papéis italianos de 300 anos e os estilos específicos de escrita cursiva dos escrivães regionais.
-- **Decodificação Literal (Greedy Search):** Interpretação forçada caractere por caractere para evitar alucinações baseadas em inglês.
-- **Filtragem de Ruído:** Filtros avançados com OpenCV para ignorar texturas de papel vergê e manchas de tinta.
-
-### Estabilização de Hardware (Modo Seguro para CPU)
-Projetado para rodar em notebooks (16GB RAM / GTX 1050 Ti) sem causar travamentos no sistema ou superaquecimento.
-- **Limitação de Threads:** Controle de poder de processamento para evitar erros de TDR (Timeout Detection and Recovery).
-- **Pausas de Resfriamento:** Intervalos de espera entre inferências de linha para manter a temperatura do hardware estável.
-
-### Interface Focada no Especialista
-Um ambiente escuro de alto contraste, livre de distrações, projetado para longas sessões de transcrição profissional.
-- **Barra Lateral Inteligente:** Editor em tempo real com sincronização horizontal e vertical do manuscrito.
-- **Visualização Segmentada:** Sobreposições visuais no documento para acompanhar o progresso da transcrição linha por linha.
-
----
-
-## Estrutura do Projeto
-
-```text
-├── client/          # Frontend Next.js (Interface de Especialista)
-├── server/          # Backend FastAPI (Inferência de IA)
-├── data/
-│   ├── raw/         # Digitalizações históricas
-│   └── processed/   # Linhas segmentadas para treinamento
-├── models/          # Pesos especializados TrOCR (TrOCR-Jundiahy)
-└── scripts/         # Scripts automatizados de treinamento e processamento
+```powershell
+.\.venv\Scripts\python.exe -m paleographia serve --host 127.0.0.1 --port 8000
 ```
 
----
+Abra [a interface local](http://127.0.0.1:8000). Selecione um fólio, clique numa linha, ajuste o recorte e registre sua leitura. O modelo carrega sob demanda; os resultados brutos ficam nos registros técnicos. A apresentação de sugestões está desativada porque o modelo atual não produziu leituras utilizáveis em português. Correção humana e edição modernizada continuam separadas. Marcar como validada exige conferência humana explícita.
 
-## Como Começar
+## Instalação em outro checkout
 
-1. **Iniciar o Backend:**
-   Execute o script de inicialização segura: `.\start_safe.bat`
-   
-2. **Iniciar o Frontend:**
-   ```bash
-   cd client
-   npm run dev
-   ```
+Use Python 3.11 ou 3.12. O ambiente básico não instala PyTorch nem baixa pesos.
 
-3. **Transcrição:**
-   Faça o upload de uma digitalização, aguarde a segmentação por IA e utilize o Editor Inteligente para finalizar a transcrição.
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e ".[test,pdf]"
+.\.venv\Scripts\python.exe -m pip install -e ".[htr]"
+.\.venv\Scripts\python.exe -m paleographia prepare-weights --config configs/trocr-download.toml --output-dir models/trocr-small-handwritten
+.\.venv\Scripts\python.exe -m pytest -q
+```
 
----
+Os manifests versionados apontam para derivados locais ignorados. Para reproduzi-los, extraia os arquivos originais preservados e siga o [guia de execução](docs/runbook.md). Não sobrescrever manifests já revisados.
 
-## História & Contexto
-Este projeto foi desenvolvido para preservar e digitalizar a história de Jundiaí, fornecendo aos historiadores uma ferramenta poderosa de transcrição assistida que respeita a complexidade dos manuscritos originais enquanto utiliza IA moderna para acelerar o processo.
+## Documentação
 
----
-*Desenvolvido para o Arquivo Histórico de Jundiaí (1615 - 2026).*
+- [Estado do projeto para revisão](docs/guia_revisao_gpt.md)
+- [Repertório de letras e abreviaturas](docs/repertorio_100r.md)
+- [Apresentação das saídas em português](docs/saidas_em_portugues.md)
+- [Instalação, importação, revisão, inferência e comparação](docs/runbook.md)
+- [Auditoria e decisões de migração](docs/audit.md)
+- [Esquema e estados de revisão](docs/data_schema.md)
+- [Política de transcrição](docs/transcription_policy.md)
+- [Protocolo e métricas](docs/evaluation_protocol.md)
+- [Ambientes e bloqueio neural no Windows](docs/environment.md)
+- [Enquadramento acadêmico pendente](docs/academic_alignment.md), [revisão bibliográfica a executar](docs/literature_review.md)
+- [Fontes/condições de uso](docs/sources.md) e [Comentários sobre uso de IA](docs/ai_comments.md)
+
+O pacote está em `src/paleographia`; CLI e API compartilham o serviço. Scripts antigos orientam à CLI, com cópias preservadas em `legacy/`. O ponteiro Git `client` foi mantido; o editor atual é HTML integrado ao backend. Código sob MIT; condições de uso dos manuscritos/edições são independentes e precisam ser verificadas antes de redistribuição.

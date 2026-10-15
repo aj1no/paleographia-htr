@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-10-15T16:12:18.563218+00:00",
+  "workspace_revision": "20261015T152646_ce045fe6",
+  "page_id": "p_1c30bfae3576f7d2",
+  "source_image": "data/raw/import_20261015/6e82cef18b04_198b675a9b65d183.jpg",
+  "reference_pdf": "data/raw/import_20261015/6e82cef18b04_094cbf86c7ec88ea.pdf",
+  "reference_page": 3,
+  "reference_kind": "modernized_edition",
+  "method": "Inspeção visual do manuscrito e da página integral da edição; comparação com predições existentes, sem nova inferência. A correspondência das linhas 17–19 foi conferida visualmente, sem inferir equivalência geral entre índices automáticos e editoriais.",
+  "human_validation": false,
+  "reviewer": null,
+  "metrics": null,
+  "limitations": [
+    "Referência modernizada; não é transcrição diplomática validada.",
+    "Leitura visual assistida pela edição; não é teste cego.",
+    "Sem promoção de dados a referência humana e sem treinamento."
+  ],
+  "comparisons": [
+    {
+      "editorial_line": 17,
+      "line_id": "l_cdcca7fc5eb63d322541",
+      "bbox_xyxy": [
+        74,
+        913,
+        1162,
+        977
+      ],
+      "crop_image": "data/processed/pilot_projection/l_cdcca7fc5eb63d322541.png",
+      "reference_modernized": "Leu-se um Projeto de Posturas com treze artigos seguintes",
+      "existing_prediction_raw": "It is the small position of its transmission to understand they are in",
+      "prediction_execution_id": null,
+      "status": "qualitative_mismatch"
+    },
+    {
+      "editorial_line": 18,
+      "line_id": "l_a0e12ce77bc93b0975fd",
+      "bbox_xyxy": [
+        74,
+        977,
+        1162,
+        1026
+      ],
+      "crop_image": "data/processed/pilot_projection/l_a0e12ce77bc93b0975fd.png",
+      "reference_modernized": "Artigo 1º – Ninguém poderá vender armas ofensivas,",
+      "existing_prediction_raw": "a distinguished education and a",
+      "prediction_execution_id": null,
+      "status": "qualitative_mismatch"
+    },
+    {
+      "editorial_line": 19,
+      "line_id": "l_ae7a34c22d6e8b5a96df",
+      "bbox_xyxy": [
+        74,
+        1026,
+        1162,
+        1079
+      ],
+      "crop_image": "data/processed/pilot_projection/l_ae7a34c22d6e8b5a96df.png",
+      "reference_modernized": "ou defensivas, pólvora, ou chumbo sem prévia licença",
+      "existing_prediction_raw": "a federally knowledgeable and more than",
+      "prediction_execution_id": null,
+      "status": "qualitative_mismatch"
+    }
+  ],
+  "nota_publicacao": "Registro técnico: saídas brutas preservadas sem tradução. O diagnóstico não constitui avaliação com referência paleográfica validada."
+}
