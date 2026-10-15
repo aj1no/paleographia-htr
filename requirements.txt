@@ -1,12 +1,2 @@
-opencv-python
-numpy
-torch
-torchvision
-transformers
-pillow
-psutil
-scipy
-jiwer
-sentencepiece
-protobuf
-accelerate
+# Lightweight runtime. Optional inference: pip install -e ".[htr]"
+-e .

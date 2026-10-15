@@ -1,0 +1,54 @@
+{
+  "paths": {
+    "pages": "data/manifests/pages.jsonl",
+    "lines": "data/manifests/lines.jsonl",
+    "workspace": "data/workspace"
+  },
+  "recognition": {
+    "model": "microsoft/trocr-small-handwritten",
+    "revision": "main",
+    "device": "cpu",
+    "precision": "float32",
+    "local_files_only": true
+  },
+  "generation": {
+    "max_new_tokens": 128,
+    "num_beams": 1,
+    "do_sample": false,
+    "repetition_penalty": 1.0
+  },
+  "segmentation": {
+    "detector": "projection",
+    "horizontal_margin_ratio": 0.06,
+    "smoothing_ratio": 0.003,
+    "peak_threshold_std": 0.2,
+    "min_peak_distance_ratio": 0.019,
+    "block_size": 31,
+    "threshold_c": 15,
+    "kernel_width_ratio": 0.025,
+    "kernel_height": 3,
+    "iterations": 1,
+    "min_width_ratio": 0.12,
+    "min_height_ratio": 0.002,
+    "max_height_ratio": 0.12,
+    "padding": 4
+  },
+  "neural": {
+    "weights": "models/kraken/segmentation.mlmodel",
+    "device": "cpu"
+  },
+  "experiment": {
+    "seed": 1831,
+    "split": "exploratory",
+    "iou_threshold": 0.5,
+    "overlap_threshold": 0.2
+  },
+  "training": {
+    "seed": 1831,
+    "max_target_length": 128,
+    "epochs": 3,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 5e-05
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "titulo": "Repertório de letras e abreviaturas · Fólio 100 reto",
+  "versao": 3,
+  "aviso": "Leituras assistidas pela edição modernizada. Há confirmações parciais do usuário em quatro exemplos; a conferência completa dos exemplos permanece pendente. Este repertório não é uma referência de treinamento.",
+  "metodo": "Recortes dos pixels originais, sem reconstrução ou alteração dos traços. A ampliação na tela apenas facilita a visualização.",
+  "fonte": "data/raw/import_20261015/6e82cef18b04_198b675a9b65d183.jpg",
+  "fonte_sha256": "413d1502555f62d45ef50cc9af5d0fb7df0ed55bf9652157f0fa874b2006a1ad",
+  "edicao": "data/raw/import_20261015/6e82cef18b04_094cbf86c7ec88ea.pdf",
+  "edicao_sha256": "479bc2535feed70ea54b3bc1dc8956de4fdb32a41afe28d42e3772f978a6f075",
+  "pagina_edicao": 3,
+  "creditos_edicao": "Transcrição e edição: Paulo Vicentini (AHMJ). Revisão: Isabella Ferraro e Gilson Santos (AHMJ).",
+  "itens": [
+    {
+      "id": "hum",
+      "tipo": "letra em palavra",
+      "letras": [
+        "h",
+        "u",
+        "m"
+      ],
+      "leitura_provisoria": "hum",
+      "forma_na_edicao": "um",
+      "nota": "Observe a haste inicial e a sequência de arcos. A edição moderniza a palavra para ‘um’; preserve ‘hum’ se essa grafia for confirmada na imagem.",
+      "linha_editorial": 17,
+      "line_id": "l_cdcca7fc5eb63d322541",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        240,
+        916,
+        333,
+        978
+      ],
+      "imagem": "data/processed/repertorio_100r/hum.png",
+      "imagem_sha256": "b49e4430e3eb9820b5ba00bf54222bef03836d678f01a36b7dae280fec8938de",
+      "contexto": "data/processed/pilot_projection/l_cdcca7fc5eb63d322541.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null
+    },
+    {
+      "id": "projecto",
+      "tipo": "letra em palavra",
+      "letras": [
+        "P",
+        "r",
+        "j",
+        "t"
+      ],
+      "leitura_provisoria": "Projecto",
+      "forma_na_edicao": "Projeto",
+      "nota": "Compare a inicial com o P de ‘Posturas’. A leitura ‘Projecto’, incluindo o c, continua em conferência; a edição traz ‘Projeto’.",
+      "linha_editorial": 17,
+      "line_id": "l_cdcca7fc5eb63d322541",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        330,
+        905,
+        485,
+        998
+      ],
+      "imagem": "data/processed/repertorio_100r/projecto.png",
+      "imagem_sha256": "c4e244f8eca58782a7467abbc5d8fa599f7808d80a08caef21398851ea8e6681",
+      "contexto": "data/processed/pilot_projection/l_cdcca7fc5eb63d322541.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null,
+      "confirmacao_parcial": {
+        "palavra_confirmada": "projecto",
+        "letras_confirmadas": [
+          "p",
+          "r",
+          "o",
+          "j",
+          "e",
+          "c",
+          "t",
+          "o"
+        ],
+        "forma_comparada": "inicial P",
+        "escopo": "Leitura da palavra e comparação da forma da inicial P. Caixa, pontuação e demais sinais não foram confirmados separadamente.",
+        "origem": "mensagem do usuário nesta conversa",
+        "mensagem_original": "Leio exatamente isso tanto em projecto quando em posturas",
+        "registrado_em": "2026-10-15T16:33:40.778768+00:00",
+        "mensagem": "Leitura de «projecto» e comparação da inicial P confirmadas pelo usuário. Caixa, pontuação e demais sinais continuam em conferência."
+      }
+    },
+    {
+      "id": "posturas",
+      "tipo": "letra em palavra",
+      "letras": [
+        "P",
+        "s",
+        "t",
+        "r"
+      ],
+      "leitura_provisoria": "Posturas",
+      "forma_na_edicao": "Posturas",
+      "nota": "Use a inicial alta e os traços internos de s e t como comparações. Uma forma pode variar conforme sua posição e ligação com a letra vizinha.",
+      "linha_editorial": 17,
+      "line_id": "l_cdcca7fc5eb63d322541",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        505,
+        916,
+        665,
+        978
+      ],
+      "imagem": "data/processed/repertorio_100r/posturas.png",
+      "imagem_sha256": "d49ceb44179da816441a6d9985206a34ec3b9990c76cae3497ae81b90e0cf9bd",
+      "contexto": "data/processed/pilot_projection/l_cdcca7fc5eb63d322541.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null,
+      "confirmacao_parcial": {
+        "palavra_confirmada": "posturas",
+        "letras_confirmadas": [
+          "p",
+          "o",
+          "s",
+          "t",
+          "u",
+          "r",
+          "a",
+          "s"
+        ],
+        "forma_comparada": "inicial P",
+        "escopo": "Leitura da palavra e comparação da forma da inicial P. Caixa, pontuação e demais sinais não foram confirmados separadamente.",
+        "origem": "mensagem do usuário nesta conversa",
+        "mensagem_original": "Leio exatamente isso tanto em projecto quando em posturas",
+        "registrado_em": "2026-10-15T16:33:40.778768+00:00",
+        "mensagem": "Leitura de «posturas» e comparação da inicial P confirmadas pelo usuário. Caixa, pontuação e demais sinais continuam em conferência."
+      }
+    },
+    {
+      "id": "treze",
+      "tipo": "letra em palavra",
+      "letras": [
+        "t",
+        "r",
+        "z",
+        "e"
+      ],
+      "leitura_provisoria": "treze",
+      "forma_na_edicao": "treze",
+      "nota": "Observe o traço alto inicial e compare o t com os exemplos em ‘Posturas’. Não identifique uma palavra apenas pelo traço transversal.",
+      "linha_editorial": 17,
+      "line_id": "l_cdcca7fc5eb63d322541",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        730,
+        920,
+        829,
+        981
+      ],
+      "imagem": "data/processed/repertorio_100r/treze.png",
+      "imagem_sha256": "77f3acc840eea127b36f46642614a9572db7243735cf15bd997c8b0ebfb495f8",
+      "contexto": "data/processed/pilot_projection/l_cdcca7fc5eb63d322541.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null
+    },
+    {
+      "id": "artigos",
+      "tipo": "letra em palavra",
+      "letras": [
+        "A",
+        "r",
+        "t",
+        "g",
+        "s"
+      ],
+      "leitura_provisoria": "Artigos",
+      "forma_na_edicao": "artigos",
+      "nota": "Compare a sequência inicial Art com as formas abreviadas de ‘Artigo’. Maiúscula inicial e pontuação permanecem em conferência.",
+      "linha_editorial": 17,
+      "line_id": "l_cdcca7fc5eb63d322541",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        822,
+        920,
+        954,
+        993
+      ],
+      "imagem": "data/processed/repertorio_100r/artigos.png",
+      "imagem_sha256": "94b2af3ea39cdb0bdb5a3504d92624c06c4ac35fe296d39ce79b3641297c5bc6",
+      "contexto": "data/processed/pilot_projection/l_cdcca7fc5eb63d322541.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null
+    },
+    {
+      "id": "seguintes",
+      "tipo": "abreviatura a conferir",
+      "letras": [
+        "s",
+        "e",
+        "g"
+      ],
+      "leitura_provisoria": "seg…",
+      "forma_na_edicao": "seguintes",
+      "nota": "A edição desenvolve como ‘seguintes’. Há sinais acima da sequência principal; a forma completa da abreviatura e sua representação textual ainda não foram estabelecidas. ‘seg…’ é apenas um rótulo provisório.",
+      "linha_editorial": 17,
+      "line_id": "l_cdcca7fc5eb63d322541",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        950,
+        902,
+        1087,
+        991
+      ],
+      "imagem": "data/processed/repertorio_100r/seguintes.png",
+      "imagem_sha256": "a6fe119ecda18cf7ac6ae7d72e52bd646f569bd48590e43dbac9a86d76a2449b",
+      "contexto": "data/processed/pilot_projection/l_cdcca7fc5eb63d322541.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null
+    },
+    {
+      "id": "artigo1",
+      "tipo": "abreviatura",
+      "letras": [
+        "A",
+        "r",
+        "t"
+      ],
+      "leitura_provisoria": "Art. 1º",
+      "forma_na_edicao": "Artigo 1º",
+      "nota": "Abreviatura correspondente a ‘Artigo’, seguida do número 1. ‘Art. 1º’ é uma representação de trabalho; confira a caixa, o ponto e a forma do ordinal antes de validar.",
+      "linha_editorial": 18,
+      "line_id": "l_a0e12ce77bc93b0975fd",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        136,
+        974,
+        326,
+        1042
+      ],
+      "imagem": "data/processed/repertorio_100r/artigo1.png",
+      "imagem_sha256": "b5ec794b9cd7c09a17c2d07389303b447c190059fc9b35c5fced7eb7da555fb6",
+      "contexto": "data/processed/pilot_projection/l_a0e12ce77bc93b0975fd.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null,
+      "confirmacao_parcial": {
+        "letras_confirmadas": [
+          "a",
+          "r",
+          "t"
+        ],
+        "escopo": "Somente a sequência de letras; sem confirmação de caixa, ponto, ordinal ou outros sinais.",
+        "origem": "mensagem do usuário nesta conversa",
+        "mensagem_original": "claramente é art, nesse 2 casos",
+        "registrado_em": "2026-10-15T16:28:27.112175+00:00",
+        "mensagem": "Letras a–r–t confirmadas pelo usuário nos dois exemplos. Maiúscula, ponto e sinais dos números continuam em conferência."
+      }
+    },
+    {
+      "id": "ninguem",
+      "tipo": "letra em palavra",
+      "letras": [
+        "N",
+        "g",
+        "u",
+        "m"
+      ],
+      "leitura_provisoria": "Ninguem",
+      "forma_na_edicao": "Ninguém",
+      "nota": "Observe a inicial N e o traço descendente no corpo da palavra. O acento não foi fixado na leitura de trabalho; a edição usa a grafia atual.",
+      "linha_editorial": 18,
+      "line_id": "l_a0e12ce77bc93b0975fd",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        315,
+        945,
+        499,
+        1050
+      ],
+      "imagem": "data/processed/repertorio_100r/ninguem.png",
+      "imagem_sha256": "bc5fd5af58170aa4d70ccbb5e719c8882165d3776963258d71abee3010f5645b",
+      "contexto": "data/processed/pilot_projection/l_a0e12ce77bc93b0975fd.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null
+    },
+    {
+      "id": "offensivas",
+      "tipo": "letra em palavra",
+      "letras": [
+        "f",
+        "s",
+        "v"
+      ],
+      "leitura_provisoria": "offensivas",
+      "forma_na_edicao": "ofensivas",
+      "nota": "Compare os traços altos no início com os f de ‘defensivas’. A quantidade de f e a pontuação final precisam de conferência no original.",
+      "linha_editorial": 18,
+      "line_id": "l_a0e12ce77bc93b0975fd",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        821,
+        965,
+        1066,
+        1040
+      ],
+      "imagem": "data/processed/repertorio_100r/offensivas.png",
+      "imagem_sha256": "8291861376ad5a981b8c8278cb22aeb9cef0f9e4c8774db08f040f572ddaaa78",
+      "contexto": "data/processed/pilot_projection/l_a0e12ce77bc93b0975fd.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null
+    },
+    {
+      "id": "defensivas",
+      "tipo": "letra em palavra",
+      "letras": [
+        "d",
+        "f",
+        "s",
+        "v"
+      ],
+      "leitura_provisoria": "defensivas",
+      "forma_na_edicao": "defensivas",
+      "nota": "Compare o f com o exemplo em ‘offensivas’ e observe as mudanças de forma do s dentro e no final da palavra.",
+      "linha_editorial": 19,
+      "line_id": "l_ae7a34c22d6e8b5a96df",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        190,
+        1015,
+        399,
+        1100
+      ],
+      "imagem": "data/processed/repertorio_100r/defensivas.png",
+      "imagem_sha256": "8fc4194c5cb4da863202f43f74cc038f31ab780eecc36afdde6fe398dab54994",
+      "contexto": "data/processed/pilot_projection/l_ae7a34c22d6e8b5a96df.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null
+    },
+    {
+      "id": "polvora",
+      "tipo": "letra em palavra",
+      "letras": [
+        "p",
+        "l",
+        "v",
+        "r"
+      ],
+      "leitura_provisoria": "polvora",
+      "forma_na_edicao": "pólvora",
+      "nota": "Observe o p descendente e o l alto. A posição de acentos não foi estabelecida nesta leitura de trabalho.",
+      "linha_editorial": 19,
+      "line_id": "l_ae7a34c22d6e8b5a96df",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        366,
+        1016,
+        548,
+        1093
+      ],
+      "imagem": "data/processed/repertorio_100r/polvora.png",
+      "imagem_sha256": "72bd9ff704205462a8e0142509c3e6ccb63874e5c042dc78cf2027740d785298",
+      "contexto": "data/processed/pilot_projection/l_ae7a34c22d6e8b5a96df.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null
+    },
+    {
+      "id": "chumbo",
+      "tipo": "letra em palavra",
+      "letras": [
+        "c",
+        "h",
+        "u",
+        "m",
+        "b"
+      ],
+      "leitura_provisoria": "chumbo",
+      "forma_na_edicao": "chumbo",
+      "nota": "Use como segundo contexto para h, u e m. As letras estão ligadas; os limites entre elas não foram anotados individualmente.",
+      "linha_editorial": 19,
+      "line_id": "l_ae7a34c22d6e8b5a96df",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        549,
+        1018,
+        696,
+        1085
+      ],
+      "imagem": "data/processed/repertorio_100r/chumbo.png",
+      "imagem_sha256": "4fc42657d0802ffbdba32ae17a200f4226d37cb59f8450a0753e92b9df2eb855",
+      "contexto": "data/processed/pilot_projection/l_ae7a34c22d6e8b5a96df.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null
+    },
+    {
+      "id": "artigo2",
+      "tipo": "abreviatura",
+      "letras": [
+        "A",
+        "r",
+        "t"
+      ],
+      "leitura_provisoria": "Art. 2º",
+      "forma_na_edicao": "Artigo 2º",
+      "nota": "Segunda ocorrência da abreviatura de ‘Artigo’, agora seguida do número 2. Compare com o exemplo anterior antes de generalizar a forma.",
+      "linha_editorial": 23,
+      "line_id": "l_8ebf6fa40159d572d7b8",
+      "page_id": "p_1c30bfae3576f7d2",
+      "bbox_xyxy": [
+        137,
+        1224,
+        328,
+        1294
+      ],
+      "imagem": "data/processed/repertorio_100r/artigo2.png",
+      "imagem_sha256": "36f132ce26bd11b396488842f13eebe84d16039c797fe0332507a21fdf078c1c",
+      "contexto": "data/processed/pilot_projection/l_8ebf6fa40159d572d7b8.png",
+      "estado": "aguarda conferência humana",
+      "revisor": null,
+      "validado_em": null,
+      "confirmacao_parcial": {
+        "letras_confirmadas": [
+          "a",
+          "r",
+          "t"
+        ],
+        "escopo": "Somente a sequência de letras; sem confirmação de caixa, ponto, ordinal ou outros sinais.",
+        "origem": "mensagem do usuário nesta conversa",
+        "mensagem_original": "claramente é art, nesse 2 casos",
+        "registrado_em": "2026-10-15T16:28:27.112175+00:00",
+        "mensagem": "Letras a–r–t confirmadas pelo usuário nos dois exemplos. Maiúscula, ponto e sinais dos números continuam em conferência."
+      }
+    }
+  ],
+  "ultima_atualizacao": "2026-10-15T16:33:40.778768+00:00",
+  "revisao_anterior_sha256": "f345d9669b85bc296837ee459b94e46294d0e492665def8c9e188f39438d7b7e"
+}

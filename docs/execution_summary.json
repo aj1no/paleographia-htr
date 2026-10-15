@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-15",
+  "branch": "codex/refatoracao-piloto",
+  "tests": {
+    "passed": 32,
+    "warnings": 1,
+    "platform": "Windows Python 3.12.14"
+  },
+  "catalog": {
+    "pages": 3,
+    "candidate_lines": 94,
+    "human_validated": 0,
+    "per_folio": {
+      "jundiai_atas_1831_f100r": 32,
+      "jundiai_atas_1831_f101r": 32,
+      "jundiai_atas_1831_f100v": 30
+    }
+  },
+  "real_inference": {
+    "smoke_crops": 3,
+    "api_crops": 32,
+    "api_failed": 0,
+    "api_total_seconds": 58.59555929999988,
+    "model_load_seconds": 19.508464799999274,
+    "recognition_seconds": 38.79015679999429,
+    "possible_truncation_count": 0,
+    "checkpoint": "b4648cfa171985a6745f37ddd637e98c0da958ac",
+    "device": "cpu",
+    "precision": "float32",
+    "quality_status": "inadequate_English_outputs; no_validated_reference_no_CER_WER"
+  },
+  "neural": {
+    "status": "not_executed",
+    "reason": "Windows binary resolver cannot satisfy coremltools~=8.1 for Kraken 6.0.0; no neural weights installed"
+  },
+  "training": {
+    "status": "not_executed",
+    "reason": "no human references and no independent train/validation/test groups"
+  },
+  "academic_approval": "pending",
+  "workspace_revision": "20261015T152646_ce045fe6",
+  "repertoire": {
+    "examples": 13,
+    "partial_user_confirmations": 6,
+    "probable_reading": "hum",
+    "human_validated_full_lines": 0,
+    "catalog": "data/manifests/repertorio_100r.json"
+  },
+  "presentation": {
+    "language": "pt-BR",
+    "automatic_transcription_enabled": false,
+    "recognition_improved": false
+  }
+}

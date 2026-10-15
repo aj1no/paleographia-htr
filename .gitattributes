@@ -1,0 +1,2 @@
+# Cópias históricas literais: preservar bytes e espaços dos scripts de origem.
+legacy/*.py.txt -text -whitespace

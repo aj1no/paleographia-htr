@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PaleographIA · Repertório de letras</title>
+<style>
+:root{color-scheme:light;--ink:#263634;--green:#20594b;--paper:#f5f3ed;--border:#d7dcd5;--muted:#62706b}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}header{padding:22px max(20px,calc((100vw - 1260px)/2));background:#173d35;color:white}header a{color:#d8eadb}h1{font:600 29px Georgia,serif;margin:6px 0}header p{margin:0;color:#d8eadb}main{max-width:1300px;margin:auto;padding:24px 20px}.notice{padding:15px 18px;background:#f8eadb;border-left:4px solid #b67b3b;border-radius:5px}.tools{display:flex;gap:18px;flex-wrap:wrap;align-items:end;margin:22px 0}label{display:flex;flex-direction:column;gap:6px;color:var(--muted);font-size:14px}input[type=search],select{font:inherit;background:white;border:1px solid #aebcb2;border-radius:5px;padding:10px;min-width:230px;color:var(--ink)}input[type=range]{width:190px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{background:white;border:1px solid var(--border);border-radius:8px;overflow:hidden}.card-head{padding:16px 18px 12px;display:flex;justify-content:space-between;gap:10px;align-items:start}.card h2{font:600 25px Georgia,serif;margin:0}.badge{font-size:12px;color:#855024;background:#f8eadb;padding:4px 8px;border-radius:4px}.caption{font-size:14px;color:var(--muted);margin:4px 0}.crop-frame{margin:0 18px;background:#eeeae4;overflow:auto;min-height:150px;max-height:290px;display:flex;align-items:center}.crop-frame img{display:block;max-width:none;height:auto;flex-shrink:0}.content{padding:12px 18px 18px}.edition{background:#eef1f7;padding:9px 12px;border-radius:5px;margin:0 0 10px}.letters{font-size:14px;color:var(--green);margin:0 0 10px}.note{font-size:14px;margin:0}.context{margin-top:14px;border-top:1px solid var(--border);padding-top:12px}summary{cursor:pointer;font-size:14px;color:var(--green)}.context img{display:block;width:100%;margin-top:10px}.provenance{font-size:12px;color:var(--muted);margin:14px 0 0}.intro{max-width:950px}.intro p{margin:10px 0}.count{color:var(--muted);margin:0 0 14px}a{color:var(--green)}footer{margin-top:28px;font-size:13px;color:var(--muted)}.empty{padding:30px;background:white;border:1px solid var(--border)}@media(max-width:760px){.cards{grid-template-columns:1fr}h1{font-size:25px}main{padding:18px 12px}.tools{gap:12px}input[type=search],select{min-width:210px}}
+</style>
+</head>
+<body>
+<header><a href="/">← Voltar à revisão</a><h1>Repertório de letras e abreviaturas</h1><p>Fólio 100 reto · Exemplos apoiados pela edição disponível</p></header>
+<main>
+<div id="notice" class="notice" role="status">Carregando os exemplos…</div>
+<div class="intro"><p>Compare as letras dentro das palavras. As ligações entre os traços fazem parte da escrita: uma letra pode assumir formas diferentes conforme suas vizinhas.</p><p>“Leitura de trabalho” preserva uma hipótese da grafia do manuscrito. “Na edição” mostra a forma modernizada, que pode desenvolver abreviaturas. Os recortes mostram pixels da imagem original, sem reconstrução dos traços.</p></div>
+<div class="tools">
+<label>Buscar letra ou palavra<input id="search" type="search" placeholder="Ex.: h, Artigo, Posturas"></label>
+<label>Tipo de exemplo<select id="kind"><option value="todos">Todos os exemplos</option><option value="letras">Letras em palavras</option><option value="abreviaturas">Abreviaturas e sinais</option></select></label>
+<label for="zoom">Ampliação dos recortes: <span id="zoomValue">3×</span><input id="zoom" type="range" min="1" max="5" step="0.5" value="3"></label>
+</div>
+<p id="count" class="count" aria-live="polite"></p><div id="cards" class="cards"></div>
+<footer><p><a href="/api/repertorio/edicao#page=3" target="_blank" rel="noopener">Consultar a edição · página 3</a></p><p id="credits"></p><p>Este repertório é um apoio à leitura. As hipóteses continuam pendentes e não foram incorporadas a referências de treinamento.</p></footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);let items=[];
+const fold=value=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function node(tag,text,className){const element=document.createElement(tag);if(text)element.textContent=text;if(className)element.className=className;return element}
+function resize(){const zoom=Number($('zoom').value);$('zoomValue').textContent=zoom+'×';document.querySelectorAll('.crop-frame img').forEach(img=>{if(img.naturalWidth)img.style.width=Math.round(img.naturalWidth*zoom)+'px'})}
+function render(){
+ const query=fold($('search').value.trim()),kind=$('kind').value;
+ const visible=items.filter(item=>{
+  const category=kind==='todos'||(kind==='letras'?item.tipo==='letra em palavra':item.tipo!=='letra em palavra');
+  const matches=!query||(query.length===1?item.letras.some(letter=>fold(letter)===query):fold(item.leitura_provisoria+' '+item.forma_na_edicao+' '+item.tipo).includes(query));
+  return category&&matches;
+ });
+ const confirmed=visible.filter(item=>item.confirmacao_parcial).length;
+ $('count').textContent=visible.length+' de '+items.length+' exemplos · '+confirmed+' com confirmação parcial · conferência completa pendente';$('cards').replaceChildren();
+ for(const item of visible){
+  const card=node('article',null,'card'),head=node('div',null,'card-head'),title=node('div');
+  title.append(node('p','Leitura de trabalho','caption'),node('h2',item.leitura_provisoria),node('p','Linha '+item.linha_editorial+' · '+item.tipo,'caption'));head.append(title,node('span',item.confirmacao_parcial?'Confirmação parcial':'Em conferência','badge'));
+  const frame=node('div',null,'crop-frame'),img=node('img');img.src=item.imagem_url;img.alt='Recorte de '+item.leitura_provisoria+', linha '+item.linha_editorial;img.onload=resize;frame.append(img);
+  const content=node('div',null,'content');if(item.confirmacao_parcial)content.append(node('p',item.confirmacao_parcial.mensagem,'edition'));content.append(node('p','Na edição: '+item.forma_na_edicao,'edition'),node('p','Letras para comparar: '+item.letras.join(' · '),'letters'),node('p',item.nota,'note'));
+  const context=node('details',null,'context'),contextImg=node('img');contextImg.src=item.contexto_url;contextImg.alt='Linha inteira com o exemplo em seu contexto';contextImg.loading='lazy';context.append(node('summary','Ver a linha inteira'),contextImg);content.append(context,node('p','Fonte: fólio 100 reto · edição, página 3 · leitura assistida pela edição','provenance'));card.append(head,frame,content);$('cards').append(card);
+ }
+ if(!visible.length)$('cards').append(node('p','Nenhum exemplo encontrado. Experimente outra letra ou palavra.','empty'));
+ resize();
+}
+$('search').oninput=render;$('kind').onchange=render;$('zoom').oninput=resize;
+(async()=>{try{const response=await fetch('/api/repertorio');if(!response.ok)throw Error();const catalog=await response.json();items=catalog.itens;$('notice').textContent=catalog.aviso;$('credits').textContent=catalog.creditos_edicao;render()}catch{$('notice').textContent='Não foi possível carregar o repertório. Confira a conexão com o servidor local.'}})();
+</script>
+</body></html>
