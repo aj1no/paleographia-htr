@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from paleographia.frozen_experiment import audit_bundle, check_control, restore_support
+from paleographia.frozen_experiment import artifact_for_hash, audit_bundle, check_control, restore_support
 from paleographia.io import read_jsonl
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +18,8 @@ def published_checkout(tmp_path):
     for row in inventory["files"] + [{"path": (BUNDLE/"inventory.json").as_posix()}]:
         target = tmp_path/row["path"]
         target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(ROOT/row["path"], target)
+        source = artifact_for_hash(ROOT, row) if "sha256" in row else ROOT/row["path"]
+        shutil.copyfile(source, target)
     return tmp_path, tmp_path/BUNDLE, inventory
 
 

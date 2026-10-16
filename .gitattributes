@@ -19,3 +19,12 @@ src/paleographia/evaluation.py text eol=lf
 src/paleographia/data.py text eol=lf
 src/paleographia/io.py text eol=lf
 src/paleographia/experiments.py text eol=lf
+docs/experimentos/implementation_31997a4/** -text -whitespace
+src/paleographia/backends.py text eol=lf
+src/paleographia/kraken_recognition*.py text eol=lf
+runtime/kraken_ppocrv6/* text eol=lf
+src/paleographia/*.py text eol=lf
+src/paleographia/web/review.js text eol=lf
+configs/pilot.toml text eol=lf
+scripts/audit_ppocrv6_experiment.py text eol=lf
+docs/experimentos/traslado_269r_ppocrv6_20261016/** -text

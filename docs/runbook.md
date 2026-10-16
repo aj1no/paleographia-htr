@@ -5,10 +5,13 @@ Todos os comandos partem da raiz do repositório. Nesta máquina, a `.venv` já 
 ```powershell
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e ".[test,pdf]"
-.\.venv\Scripts\python.exe -m pip install -e ".[htr]"
-.\.venv\Scripts\python.exe -m paleographia prepare-weights --config configs/trocr-download.toml --output-dir models/trocr-small-handwritten
 .\.venv\Scripts\python.exe -m pytest -q
 ```
+
+O reconhecedor atual é PP-OCRv6 medium em [runtime Linux separado](../runtime/kraken_ppocrv6/README.md).
+TrOCR e sua preparação antiga estão desativados; os experimentos históricos
+continuam auditáveis sem executá-lo. O [diagnóstico do 269r e a integração](experimentos/traslado_269r_ppocrv6_20261016/README.md)
+mostram as cinco entradas/saídas, CER 12,40%, WER 51,11% e comandos atuais.
 
 ## Importação
 
@@ -62,7 +65,7 @@ python -m paleographia serve --host 127.0.0.1 --port 8000
 
 Abra `http://127.0.0.1:8000`. Identifique o documento/fólio, confira a edição, delimite a região transcrita e sua cobertura. Selecione os recortes no fólio ou na lista; desenhe linhas faltantes, ajuste caixas em pixels, corrija ordem e rejeite espúrias. O botão de reconhecimento trabalha nos recortes ativos, não na página inteira. Preserve um catálogo de diagnóstico separado do teste final.
 
-O editor mantém correção humana e edição modernizada em campos distintos. A sugestão do reconhecedor atual fica indisponível na tela por não oferecer leitura utilizável em português; o resultado bruto permanece nos registros técnicos. Salvar rascunho mantém pendente. Para referência, o humano precisa fornecer seu nome e marcar explicitamente conferência do recorte e do texto. Não marcar uma edição modernizada como diplomática sem leitura do manuscrito. No 100r, o início editorial 17 não deve ser confundido com o índice operacional dos recortes.
+O editor mantém correção humana e edição modernizada em campos distintos. O Traslado tem sugestões experimentais do PP-OCRv6 vinculadas à configuração avaliada; no piloto de 1831 a apresentação continua desativada. O resultado bruto permanece nos registros técnicos. Salvar rascunho mantém pendente. Para referência, o humano precisa fornecer seu nome e marcar explicitamente conferência do recorte e do texto. Não marcar uma edição modernizada como diplomática sem leitura do manuscrito. No 100r, o início editorial 17 não deve ser confundido com o índice operacional dos recortes.
 
 Os rascunhos locais são mantidos por linha e fólio durante a navegação e a
 atualização do catálogo. A tela informa quantos ainda não foram salvos. Use

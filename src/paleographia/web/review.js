@@ -3,6 +3,7 @@ const $ = id => document.getElementById(id);
 const clone = value => JSON.parse(JSON.stringify(value));
 const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 let state = {pages: [], lines: [], predictions: []};
+let recognitionState = 'not_loaded';
 let pageId = null, lineId = null, mode = 'select', drag = null, pendingBox = null;
 let renderedPage = null, renderedLine = null, displayedPageForm = null;
 const drafts = {page: new Map(), line: new Map()}, activeRegions = new Map();
@@ -41,7 +42,10 @@ async function action(fn) {
         captureDrafts();
         message(e.status === 409 ? 'Conflito de revisão. Seu rascunho foi preservado. Atualize o catálogo e confira a versão salva antes de tentar novamente.'
             : e instanceof TypeError ? 'Não foi possível concluir a operação. Confira a conexão com o servidor local. Seu rascunho foi preservado.' : e.message, true);
-    } finally { document.querySelectorAll('button').forEach(b => b.disabled = false); }
+    } finally {
+        document.querySelectorAll('button').forEach(b => b.disabled = false);
+        $('recognize').disabled = recognitionState === 'disabled';
+    }
 }
 function readFields(fields) {
     return Object.fromEntries(fields.map(id => [id, checkboxes.has(id) ? $(id).checked : $(id).value]));
@@ -153,8 +157,13 @@ async function refresh() {
     $('pages').value = pageId || '';
     renderPage();
     const h = await request('/health');
-    $('health').textContent = !state.presentation_policy?.automatic_transcription_enabled ? 'Revisão disponível · leitura automática em português indisponível'
-        : h.recognition.state === 'loaded' ? 'Reconhecimento disponível' : 'Revisão disponível · modelo sob demanda';
+    const recState = recognitionState = h.recognition.state;
+    $('health').textContent = recState === 'disabled' ? 'Reconhecimento desativado · revisão manual disponível'
+        : recState === 'unavailable' ? 'Reconhecedor indisponível · revisão manual disponível'
+        : !state.presentation_policy?.automatic_transcription_enabled ? 'Revisão disponível · leitura automática em português indisponível'
+        : recState === 'ready' ? 'PP-OCRv6 experimental disponível' : 'Revisão disponível · PP-OCRv6 sob demanda';
+    $('recognize').disabled = recState === 'disabled';
+    $('recognize').title = recState === 'disabled' ? 'Configure o reconhecedor PP-OCRv6 para executar uma nova leitura.' : '';
 }
 function renderCoverage() {
     const regions = displayedPageForm.regions;

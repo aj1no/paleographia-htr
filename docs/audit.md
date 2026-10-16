@@ -1,5 +1,12 @@
 # Auditoria do checkout — 15/10/2026
 
+Atualização: a [substituição do reconhecedor por PP-OCRv6](experimentos/traslado_269r_ppocrv6_20261016/README.md)
+foi executada e integrada experimentalmente no bloco de cinco linhas validadas
+do 269r. CER/WER: 12,40%/51,11%. TrOCR está bloqueado para novas execuções;
+artefatos históricos e seus hashes foram preservados, com cópia do código
+original quando necessário para auditá-los após a migração. O relatório abaixo
+descreve a auditoria original, anterior a essa referência humana.
+
 O diretório recebido continha somente `.git`, sem commits, remoto ou alterações do usuário. Foi configurado `origin` para `https://github.com/aj1no/paleographia-htr.git` e feito fetch. Não houve push, merge nem modificação remota.
 
 | Ref inspecionada | Commit | Constatação |

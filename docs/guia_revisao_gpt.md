@@ -1,5 +1,14 @@
 # Estado do projeto para revisão
 
+**Atualização mais recente — PP-OCRv6:** o [novo reconhecedor e sua integração](experimentos/traslado_269r_ppocrv6_20261016/README.md)
+foram executados nas mesmas cinco linhas: CER **30/242 = 12,40%**, WER
+**23/45 = 51,11%**, sem falhas. A proposta recupera as frases, com erros de
+letras, espaços e grafia; foi liberada experimentalmente no editor do Traslado,
+sem alterar a referência humana. TrOCR está bloqueado nos fluxos de execução;
+o histórico continua auditável. O runtime Linux/CPU usa Docker/WSL2 e preserva
+o ambiente da aplicação. Essa amostra permanece desenvolvimento, sem treino
+ou teste reservado. As notas abaixo registram etapas anteriores.
+
 **Estado mais recente — 16/10/2026:** o usuário concluiu a conferência das cinco
 linhas do corpo do Traslado 269r, com texto, geometria, correspondência de página
 e cobertura completa somente do bloco. A [entrega experimental](experimentos/traslado_269r_20261016/README.md)

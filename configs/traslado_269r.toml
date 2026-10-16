@@ -4,23 +4,23 @@ lines = "data/manifests/traslado_269r/lines.jsonl"
 workspace = "data/workspace_traslado_269r"
 
 [recognition]
-model = "models/trocr-small-handwritten"
-revision = "b4648cfa171985a6745f37ddd637e98c0da958ac"
+backend = "kraken_ppocrv6"
+model = "models/kraken_ppocrv6_medium/medium.safetensors"
+sha256 = "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9"
+docker_image = "paleographia-kraken:7.1.0-cpu"
+docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
 device = "cpu"
 precision = "float32"
-local_files_only = true
+timeout_seconds = 180
 
 [presentation]
 language = "pt-BR"
-# O teste com a edição conhecida falhou. Não exibir resultados brutos como
-# transcrição enquanto um modelo adequado não for avaliado neste acervo.
-automatic_transcription_enabled = false
-
-[generation]
-max_new_tokens = 128
-num_beams = 1
-do_sample = false
-repetition_penalty = 1.0
+# Experimental release restricted to the exact worker, weights and Linux image evaluated on 269r.
+automatic_transcription_enabled = true
+evaluated_backend = "kraken_ppocrv6"
+evaluated_model_sha256 = "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9"
+evaluated_docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+evaluated_worker_sha256 = "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a"
 
 [segmentation]
 detector = "projection"

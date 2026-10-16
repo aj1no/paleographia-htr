@@ -1,5 +1,10 @@
 # Entrega e verificações — 15/10/2026
 
+Estado posterior: o [PP-OCRv6 foi avaliado e integrado experimentalmente ao Traslado](experimentos/traslado_269r_ppocrv6_20261016/README.md),
+com CER 12,40% e WER 51,11% nas cinco linhas congeladas. TrOCR está desativado
+para novas execuções. A entrega vinculada inclui as cinco imagens/saídas,
+ambiente Linux, auditoria e verificações; as notas abaixo são históricas.
+
 Atualização de 16/10/2026: a [entrega do Traslado 269r](experimentos/traslado_269r_20261016/README.md)
 publica cinco linhas humanas validadas e duas avaliações com referência/recortes
 fixos. Os resultados continuam insuficientes para leitura automática. O texto

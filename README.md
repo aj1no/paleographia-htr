@@ -18,12 +18,14 @@ imagens e histórico da preparação. A [referência congelada e comparação de
 reconhecedores](docs/experimentos/traslado_269r_20261016/README.md) publica
 manifests, configurações, predições, métricas, hashes e auditoria offline.
 Na mesma amostra de desenvolvimento, TrOCR teve CER/WER de 80,58%/100% e
-PP-OCRv5 latino, 57,02%/95,56%. Ambos continuam inadequados para leitura automática.
+PP-OCRv5 latino, 57,02%/95,56%.
 
-O TrOCR disponível foi executado em 3 recortes de diagnóstico e nos 32 recortes
-do 100r. As saídas foram inadequadas. A interface informa a indisponibilidade de
-leitura automática utilizável em português; os resultados brutos são preservados
-nos registros técnicos. Essa mudança de apresentação não melhora o reconhecedor.
+O [PP-OCRv6 medium com Kraken 7.1](docs/experimentos/traslado_269r_ppocrv6_20261016/README.md)
+reduziu CER/WER para **12,40%/51,11%**, nas mesmas cinco linhas, sem falhas.
+Suas sugestões estão integradas experimentalmente ao editor do Traslado e
+exigem correção humana. O [runtime Linux separado](runtime/kraken_ppocrv6/README.md)
+preserva o ambiente Windows. **TrOCR foi desativado para novas execuções**;
+predições e cálculos históricos permanecem auditáveis.
 
 ```powershell
 # Python 3.11 ou 3.12
@@ -34,6 +36,8 @@ python -m paleographia serve --host 127.0.0.1 --port 8000
 
 Abra [a revisão local](http://127.0.0.1:8000) ou
 [o repertório](http://127.0.0.1:8000/repertorio).
+Para o Traslado com PP-OCRv6, use `--config configs/traslado_269r.toml --port 8011`
+e abra [o editor experimental](http://127.0.0.1:8011/).
 Para reconstruir imagens e inicializar um checkout novo, siga o
 [guia de execução](docs/runbook.md). A instalação básica e os testes não baixam
 pesos nem exigem GPU.

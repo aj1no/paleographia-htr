@@ -52,7 +52,7 @@ def test_compare_blocks_global_leakage_before_any_model(corpus, monkeypatch, lea
         rows[1]["derived_from"] = rows[0]["line_id"]
     else:
         rows[0]["derived_from"] = rows[1]["derived_from"] = "l_parent"
-    for name in ("segment_pages", "TrOCRRecognizer", "recognize_lines"):
+    for name in ("segment_pages", "create_recognizer", "recognize_lines"):
         monkeypatch.setattr(experiments, name, forbidden)
     output = root/"comparison"
     result = experiments.compare(pages, rows, config, output, root)
@@ -71,7 +71,7 @@ def install_test_only_methods(monkeypatch, reference):
         """TEST ONLY. No weights, downloads or real manuscript interpretation."""
         load_seconds = 0
 
-        def __init__(self, config):
+        def __init__(self, config, root=None):
             calls.append("initialize_test_only")
 
         def load(self):
@@ -87,7 +87,7 @@ def install_test_only_methods(monkeypatch, reference):
         calls.append(method)
         return [r for r in reference if r["split"] == config["experiment"]["split"]], []
 
-    monkeypatch.setattr(experiments, "TrOCRRecognizer", TestOnlyRecognizer)
+    monkeypatch.setattr(experiments, "create_recognizer", TestOnlyRecognizer)
     monkeypatch.setattr(experiments, "segment_pages", test_only_segment)
     return calls
 
@@ -113,7 +113,7 @@ def test_compare_valid_selection_runs_with_pending_rows_outside(corpus, monkeypa
 def test_compare_empty_selection_and_cli_failure(corpus, monkeypatch, capsys):
     root, config, pages, rows = independent_catalog(corpus)
     config["experiment"]["split"] = "validation"
-    for name in ("segment_pages", "TrOCRRecognizer", "recognize_lines"):
+    for name in ("segment_pages", "create_recognizer", "recognize_lines"):
         monkeypatch.setattr(experiments, name, forbidden)
     result = experiments.compare(pages, rows, config, root/"empty", root)
     assert result["status"] == "not_executed" and "Nenhuma linha" in result["reason"]
@@ -130,7 +130,7 @@ def test_compare_empty_selection_and_cli_failure(corpus, monkeypatch, capsys):
 def test_compare_reports_global_integrity_failure_outside_selection(corpus, monkeypatch):
     root, config, pages, rows = independent_catalog(corpus)
     rows.append("registro inválido")
-    for name in ("segment_pages", "TrOCRRecognizer", "recognize_lines"):
+    for name in ("segment_pages", "create_recognizer", "recognize_lines"):
         monkeypatch.setattr(experiments, name, forbidden)
     output = root/"invalid_catalog"
     result = experiments.compare(pages, rows, config, output, root)

@@ -1,8 +1,4 @@
-import hashlib
 import json
-import logging
-import threading
-import time
 from pathlib import Path
 
 from PIL import Image
@@ -32,115 +28,28 @@ def checkpoint_files(path):
 
 
 class TrOCRRecognizer:
+    """Migration shim: legacy entry points cannot load or execute TrOCR."""
+    load_seconds = 0.0
+
     def __init__(self, config):
         self.config = config
-        self.model = self.processor = None
-        self.lock = threading.RLock()
-        self.load_seconds = 0.0
-        self.error = None
-        self.identity = None
 
     def status(self):
-        return {"state": "loaded" if self.model is not None else "unavailable" if self.error else "not_loaded",
-                "configured_model": self.config["recognition"]["model"],
-                "loaded_model": self.identity, "device": getattr(self, "device", None),
-                "precision": self.config["recognition"].get("precision", "float32"),
-                "load_seconds": self.load_seconds, "error": self.error}
+        from .backends import LEGACY_MESSAGE
+        return {"state": "disabled", "backend": "disabled", "loaded_model": None,
+                "load_seconds": 0.0, "error": LEGACY_MESSAGE}
 
     def load(self):
-        with self.lock:
-            if self.model is not None:
-                return
-            start = time.perf_counter()
-            try:
-                import torch
-                from transformers import TrOCRProcessor, VisionEncoderDecoderModel
-                settings = self.config["recognition"]
-                identifier = settings["model"]
-                revision = settings.get("revision", "main")
-                local = Path(identifier)
-                is_local = local.is_dir() or identifier.startswith((".", "/", "models/")) or ":" in identifier
-                files = checkpoint_files(local) if is_local else None
-                options = {"local_files_only": settings.get("local_files_only", True)}
-                if not is_local:
-                    options["revision"] = revision
-                self.device = settings.get("device", "cpu")
-                if self.device == "auto":
-                    self.device = "cuda" if torch.cuda.is_available() else "cpu"
-                precision = settings.get("precision", "float32")
-                if precision not in {"float32", "float16", "bfloat16"}:
-                    raise ValueError("Precisão inválida.")
-                if self.device == "cpu" and precision != "float32":
-                    raise ValueError("CPU usa float32 neste piloto.")
-                self.dtype = getattr(torch, precision)
-                torch.manual_seed(self.config.get("experiment", {}).get("seed", 1831))
-                processor = TrOCRProcessor.from_pretrained(identifier, use_fast=False, **options)
-                model, loading_info = VisionEncoderDecoderModel.from_pretrained(identifier, dtype=self.dtype, output_loading_info=True, **options)
-                model.to(self.device).eval()
-                self.identity = {"id": identifier, "requested_revision": revision,
-                                 "resolved_revision": getattr(model.config, "_commit_hash", None),
-                                 "local_files_sha256": files, "fallback": False,
-                                 "loading_info": loading_info}
-                if is_local and (local/"provenance.json").is_file():
-                    self.identity["preparation"] = json.loads((local/"provenance.json").read_text(encoding="utf-8"))
-                    self.identity["resolved_revision"] = self.identity["preparation"].get("resolved_snapshot")
-                self.processor, self.model = processor, model
-                self.error = None
-                logging.getLogger(__name__).info("TrOCR carregado: %s", self.identity)
-            except Exception as exc:
-                self.error = f"Modelo indisponível: {exc}. Instale .[htr] e execute prepare-weights explicitamente."
-                raise ModelUnavailable(self.error) from exc
-            finally:
-                self.load_seconds = time.perf_counter() - start
+        from .backends import LEGACY_MESSAGE
+        raise ModelUnavailable(LEGACY_MESSAGE)
 
     def recognize(self, image):
-        """Contract accepts one line crop, never a full manuscript page."""
-        with self.lock:
-            self.load()
-            import torch
-            generation = self.config.get("generation", {})
-            if generation.get("do_sample", False):
-                raise ValueError("Piloto comparativo exige decodificação determinística (do_sample=false).")
-            start = time.perf_counter()
-            pixels = self.processor(images=image.convert("RGB"), return_tensors="pt").pixel_values.to(self.device, dtype=self.dtype)
-            if self.device.startswith("cuda"):
-                torch.cuda.synchronize()
-            with torch.inference_mode():
-                tokens = self.model.generate(pixels, **generation)
-            if self.device.startswith("cuda"):
-                torch.cuda.synchronize()
-            generated = tokens[0].tolist()
-            text = self.processor.batch_decode(tokens, skip_special_tokens=True)[0]
-            eos = self.model.generation_config.eos_token_id
-            eos_ids = eos if isinstance(eos, list) else [eos]
-            limit_hit = len(generated)-1 >= generation.get("max_new_tokens", 128)
-            return {"text_raw": text, "token_ids": generated,
-                    "possible_truncation": limit_hit and generated[-1] not in eos_ids,
-                    "generation_limit_reached": limit_hit, "model": self.identity,
-                    "device": self.device, "precision": self.config["recognition"].get("precision", "float32"),
-                    "generation": generation, "recognition_seconds": time.perf_counter()-start,
-                    "seed": self.config.get("experiment", {}).get("seed", 1831),
-                    "created_at": now()}
+        self.load()
 
 
 def prepare_weights(config, output):
-    """Explicit network operation; save the resolved snapshot, processor and weights together."""
-    settings = config["recognition"]
-    destination = Path(output)
-    if destination.exists():
-        raise ValueError("Pesos exigem diretório novo.")
-    from huggingface_hub import HfApi, snapshot_download
-    from .io import run_id
-    resolved = HfApi().model_info(settings["model"], revision=settings.get("revision", "main")).sha
-    staging = destination.with_name(destination.name+".preparing-"+run_id())
-    # local_dir uses real files and does not need Windows symlink privileges.
-    snapshot_download(settings["model"], revision=resolved, local_dir=str(staging),
-             allow_patterns=["*.json", "*.safetensors", "pytorch_model*.bin", "*.model", "vocab.*", "merges.txt", "*.txt"])
-    files = checkpoint_files(staging)
-    write_json(staging / "provenance.json", {"model": settings["model"], "revision": settings.get("revision"),
-               "resolved_snapshot": resolved, "files": files, "prepared_at": now()})
-    staging.rename(destination)
-    return {"path": str(destination), "snapshot": resolved}
+    from .backends import prepare_backend_weights
+    return prepare_backend_weights(config, output)
 
 
 def recognize_lines(lines, recognizer, output, root=Path.cwd()):

@@ -1,5 +1,16 @@
 # Ambiente e modelos
 
+## Estado atual: PP-OCRv6 / Kraken 7.1
+
+O backend de reconhecimento passou a ser `kraken_ppocrv6`, com worker Linux em
+Docker Desktop/WSL2, Python 3.12.15, Kraken 7.1 e PyTorch 2.9.1+cpu. Inferência
+real nas cinco linhas foi concluída e integrada experimentalmente ao Traslado:
+CER 12,40%, WER 51,11%. Veja [ambiente, versões e construção](../runtime/kraken_ppocrv6/README.md)
+e [evidências](experimentos/traslado_269r_ppocrv6_20261016/README.md).
+Não foram substituídas as dependências Windows. As seções de TrOCR e Kraken 6
+abaixo documentam o ambiente anterior; novas execuções do TrOCR estão bloqueadas,
+e o adaptador Kraken 6 refere-se apenas à segmentação, ainda não medida aqui.
+
 Testado localmente no Windows com **Python 3.12.14**, Pillow 11.3.0, NumPy 2.2.6, OpenCV headless 4.12.0.88, FastAPI 0.116.1, Pydantic 2.11.7, JiWER 4.0.0. Inferência: PyTorch 2.7.1+cpu, torchvision 0.22.1, Transformers 4.57.1, sentencepiece 0.2.1 e accelerate 1.10.1. O ambiente `.venv` foi criado com o Python 3.12 do runtime local; o Python padrão do usuário é 3.14 e não deve ser usado neste ambiente. Python 3.11/3.12 são alvos da CI; somente 3.12/Windows foi executado localmente.
 
 As dependências diretas estão fixadas em `pyproject.toml`; `requirements-tested-windows-py312.txt` registra o freeze da execução, não é lock universal para outros sistemas. Instalação leve: `python -m pip install -e ".[test]"`. Extras: `[htr]` para inferência/treino e `[pdf]` para extração de texto/RAR. RAR exige extrator compatível; esta máquina tinha `C:\Program Files\WinRAR\UnRAR.exe`. A extração feita na auditoria selecionou esse executável explicitamente via `rarfile.UNRAR_TOOL`; em outra máquina, instale/configure o extrator no PATH. Nenhum script move o único original de Downloads.

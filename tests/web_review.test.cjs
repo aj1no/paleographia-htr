@@ -36,10 +36,11 @@ async function harness(count = 2, configure = () => {}) {
     let catalog = fixture(count), fail = null, revision = 1;
     configure(catalog);
     const elements = Object.fromEntries([...fs.readFileSync(path.join(web, 'index.html'), 'utf8').matchAll(/id="([^"]+)"/g)].map(m => [m[1], new Element()]));
+    const buttonIds = [...fs.readFileSync(path.join(web, 'index.html'), 'utf8').matchAll(/<button\b[^>]*id="([^"]+)"/g)].map(m => m[1]);
     const calls = [], windowEvents = {};
     const context = vm.createContext({document: {
         getElementById: id => { assert.ok(elements[id], `Elemento ${id} ausente`); return elements[id]; },
-        querySelectorAll: () => [], createElement: () => new Element(), createElementNS: () => new Element()},
+        querySelectorAll: selector => selector === 'button' ? buttonIds.map(id => elements[id]) : [], createElement: () => new Element(), createElementNS: () => new Element()},
         window: {addEventListener: (event, callback) => windowEvents[event] = callback}, FormData, console,
         fetch: async (url, options) => {
             const method = options?.method || 'GET', body = options?.body ? JSON.parse(options.body) : null;
@@ -50,7 +51,7 @@ async function harness(count = 2, configure = () => {}) {
             }
             let result;
             if (url === '/api/catalog') result = catalog;
-            else if (url === '/health') result = {recognition: {state: 'test_only'}};
+            else if (url === '/health') result = {recognition: {state: catalog.testRecognitionState || 'test_only'}};
             else if (method === 'PATCH') {
                 if (body.revision !== catalog.revision) return {ok: false, status: 409, json: async () => ({detail: 'A revisão mudou.'})};
                 const kind = url.includes('/lines/') ? 'line' : 'page';
@@ -207,4 +208,30 @@ test('Proteção ao sair só aparece quando há alterações locais', async () =
     h.windowEvents.beforeunload({preventDefault() { prevented = true; }}); assert.equal(prevented, true);
     await h.click('saveLine'); prevented = false;
     h.windowEvents.beforeunload({preventDefault() { prevented = true; }}); assert.equal(prevented, false);
+});
+
+test('Backend desativado continua bloqueado depois de atualizar ou salvar', async () => {
+    const h = await harness(2, catalog => { catalog.testRecognitionState = 'disabled'; });
+    assert.equal(h.el.recognize.disabled, true);
+    assert.match(h.el.health.textContent, /Reconhecimento desativado/);
+    await h.click('refresh');
+    assert.equal(h.el.recognize.disabled, true);
+    await h.line(0); h.edit('diplomatic', 'Revisão manual'); await h.click('saveLine');
+    assert.equal(h.el.recognize.disabled, true);
+    assert.equal(h.catalog().lines[0].text_diplomatic, 'Revisão manual');
+});
+
+test('Sugestão experimental e reconhecimento preservam o rascunho humano', async () => {
+    const h = await harness(2, catalog => {
+        catalog.testRecognitionState = 'ready';
+        catalog.presentation_policy.automatic_transcription_enabled = true;
+        catalog.predictions = [{line_id: 'l1', presentation: {status: 'candidate', text: 'SAÍDA SINTÉTICA', message: 'Experimental'}}];
+    });
+    await h.line(0);
+    assert.equal(h.el.raw.textContent, 'SAÍDA SINTÉTICA');
+    assert.match(h.el.health.textContent, /PP-OCRv6 experimental/);
+    h.edit('diplomatic', 'Meu rascunho'); await h.click('recognize');
+    assert.equal(h.el.diplomatic.value, 'Meu rascunho');
+    assert.equal(h.catalog().lines[0].text_diplomatic, 'Texto salvo');
+    assert.equal(h.el.validated.checked, false);
 });

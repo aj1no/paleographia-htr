@@ -1,0 +1,8 @@
+{
+  "status": "failed_before_inference",
+  "predictions_generated": 0,
+  "error": "Worker expected RGB/128/variable-width from card; actual checkpoint metadata is RGB/96/variable-width.",
+  "resolution": "Use native checkpoint height=96; no tuning based on recognition outputs.",
+  "failed_worker_sha256": "f487d23f53fccd1b6e74f4e429b196c1253c7dd2eae035b16a3455464a938836",
+  "successful_run_frozen_inputs": "frozen_inputs_v2.json"
+}
