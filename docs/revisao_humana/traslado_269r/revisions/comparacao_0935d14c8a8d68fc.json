@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "comparison_date": "2026-10-16",
+  "folio_candidate": "269r",
+  "manuscript_pdf_page": 1,
+  "manuscript_embedded_image": {
+    "path": "data/processed/traslado_269r_conferencia/manuscrito_269r_original.jpg",
+    "width": 1166,
+    "height": 1873,
+    "sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+    "extraction": "Unmodified first embedded JPEG from manuscript PDF page 1."
+  },
+  "sources": [
+    {
+      "path": "data/raw/import_20261015/6e82cef18b04_5b58a915f024a80e.pdf",
+      "sha256": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0",
+      "pdf_pages": 9
+    },
+    {
+      "path": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+      "pdf_pages": 11
+    }
+  ],
+  "transcription_pdf_pages": [
+    1,
+    2
+  ],
+  "body_line_count_candidate": 24,
+  "scope": "First manuscript page; visual structural comparison, not final grapheme-by-grapheme human validation. Manuscript second page inspected only to check the recto/verso boundary.",
+  "status": "pending_review",
+  "human_reviewer": null,
+  "eligible_for_htr_training": false,
+  "eligible_for_htr_evaluation": false,
+  "conclusion": "Suitable as source-assisted draft after page/line mapping and abbreviation review; unsuitable for unchanged direct diplomatic targets.",
+  "regions": [
+    {
+      "id": "date_place_foliation",
+      "description": "Date, place and foliation across top margin; own reading order required.",
+      "transcription_pdf_pages": [
+        1
+      ]
+    },
+    {
+      "id": "title_and_summary",
+      "description": "Two title lines and seven summary lines, candidate count from visual inspection.",
+      "transcription_pdf_pages": [
+        1
+      ]
+    },
+    {
+      "id": "body_269r",
+      "description": "24 candidate body lines; first 5 on transcription PDF page 1, following 19 on page 2 before 269/Verso.",
+      "transcription_pdf_pages": [
+        1,
+        2
+      ],
+      "coverage_status": "pending_human_confirmation"
+    }
+  ],
+  "observations": [
+    {
+      "kind": "positive",
+      "description": "Manuscript foliation 269 and text sequence correspond to the published transcription."
+    },
+    {
+      "kind": "positive",
+      "description": "Historical spellings retained in the edition, including Jundiahy, sincoenta, Freguezia, Hum and Sismaria."
+    },
+    {
+      "kind": "positive",
+      "description": "Physical line breaks appear preserved in multiple clear cases: ca/torze, Deste/rro, di/ante and abai/xo."
+    },
+    {
+      "kind": "adaptation_required",
+      "description": "The final recto word is written as an abbreviation; the edition expands it as Magestade. Exact signs and convention remain pending."
+    },
+    {
+      "kind": "adaptation_required",
+      "description": "The heading contains additional apparent abbreviated forms; inspect before copying expanded edition text as diplomatic reference."
+    },
+    {
+      "kind": "adaptation_required",
+      "description": "Bibliographic metadata, page furniture, logo and credits belong to the edition and must be excluded from manuscript text regions."
+    },
+    {
+      "kind": "boundary",
+      "description": "269/Verso. in the edition is a boundary marker; text after it belongs to manuscript PDF page 2."
+    },
+    {
+      "kind": "typographic_evidence",
+      "description": "In transcription PDF page 2, the recto-final token Magestade uses TimesNewRomanPS-ItalicMT; preceding text uses TimesNewRomanPSMT. Plain extraction loses this distinction. No universal italic/expansion rule inferred."
+    }
+  ],
+  "body_lines": [
+    {
+      "comparison_line": 1,
+      "source_pdf_page": 1,
+      "extracted_text_line": 19,
+      "published_text": "Anno do Nacimento de Nosso Senhor Jezus christo",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": [],
+      "human_observation_ids": [
+        "leitura_usuario_abertura_269r_20261016"
+      ]
+    },
+    {
+      "comparison_line": 2,
+      "source_pdf_page": 1,
+      "extracted_text_line": 20,
+      "published_text": "de mil seis centos sincoenta e seis annos, aos ca",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": [],
+      "human_observation_ids": [
+        "leitura_usuario_abertura_269r_20261016",
+        "confirmacao_usuario_data_corpo_269r_20261016",
+        "confirmacao_quebra_ca_torze_269r_20261016"
+      ]
+    },
+    {
+      "comparison_line": 3,
+      "source_pdf_page": 1,
+      "extracted_text_line": 21,
+      "published_text": "torze dias do mes de Dezembro da dita Hera nesta",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": [],
+      "human_observation_ids": [
+        "confirmacao_quebra_ca_torze_269r_20261016"
+      ]
+    },
+    {
+      "comparison_line": 4,
+      "source_pdf_page": 1,
+      "extracted_text_line": 22,
+      "published_text": "povoação e Freguezia de Nossa senhora do Deste",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 5,
+      "source_pdf_page": 1,
+      "extracted_text_line": 23,
+      "published_text": "rro de Jundiahy, aonde Eu Publico Tabelião ao di",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": [
+        "Word split across PDF pages: ao di / ante; remains on the same manuscript recto."
+      ]
+    },
+    {
+      "comparison_line": 6,
+      "source_pdf_page": 2,
+      "extracted_text_line": 1,
+      "published_text": "ante nomeado fui Em Companhia do Capitão",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": [
+        "Word split across PDF pages: ao di / ante; remains on the same manuscript recto."
+      ]
+    },
+    {
+      "comparison_line": 7,
+      "source_pdf_page": 2,
+      "extracted_text_line": 2,
+      "published_text": "mõr e ouvidor desta Capitania de Sam viçente",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 8,
+      "source_pdf_page": 2,
+      "extracted_text_line": 3,
+      "published_text": "Miguel de Cabedo de vasconçellos perante elle a",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 9,
+      "source_pdf_page": 2,
+      "extracted_text_line": 4,
+      "published_text": "pareçerão todos os povoadores E moradores os abai",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 10,
+      "source_pdf_page": 2,
+      "extracted_text_line": 5,
+      "published_text": "xo assignados, e todos juntos e Cada Hum Em par",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 11,
+      "source_pdf_page": 2,
+      "extracted_text_line": 6,
+      "published_text": "ticular Requererão Em altas vozes ao dito Capi",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 12,
+      "source_pdf_page": 2,
+      "extracted_text_line": 7,
+      "published_text": "tão mõr e ouvidor Em como elles Herão povoa",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 13,
+      "source_pdf_page": 2,
+      "extracted_text_line": 8,
+      "published_text": "dores e Freguezes desta dita Freguezia de Nossa",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 14,
+      "source_pdf_page": 2,
+      "extracted_text_line": 9,
+      "published_text": "Senhora do DesTerro de Jundiahy onde Heram",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 15,
+      "source_pdf_page": 2,
+      "extracted_text_line": 10,
+      "published_text": "mais de oitenta moradores, e ficaram mui dis",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 16,
+      "source_pdf_page": 2,
+      "extracted_text_line": 11,
+      "published_text": "tantes da villa de Sam Paulo, e da villa de Par",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 17,
+      "source_pdf_page": 2,
+      "extracted_text_line": 12,
+      "published_text": "nahiba, e não poderem vir os ministros de Jus",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 18,
+      "source_pdf_page": 2,
+      "extracted_text_line": 13,
+      "published_text": "tissa fazer deligençias por ser Longe devendo",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 19,
+      "source_pdf_page": 2,
+      "extracted_text_line": 14,
+      "published_text": "por alguã duvida orgente, virem alguns menis",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 20,
+      "source_pdf_page": 2,
+      "extracted_text_line": 15,
+      "published_text": "tros e Hera com muito Grande detrimento de to",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 21,
+      "source_pdf_page": 2,
+      "extracted_text_line": 16,
+      "published_text": "dos como Tambem pessoas que pessuhem Terras",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 22,
+      "source_pdf_page": 2,
+      "extracted_text_line": 17,
+      "published_text": "por titullos de Sismaria as Lavrão outros que mais",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 23,
+      "source_pdf_page": 2,
+      "extracted_text_line": 18,
+      "published_text": "posses tem por falta de Justissa pello que",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": []
+    },
+    {
+      "comparison_line": 24,
+      "source_pdf_page": 2,
+      "extracted_text_line": 19,
+      "published_text": "lhes Requerião da parte de Deos e de Sua Magestade ",
+      "text_origin": "published_paleographic_transcription",
+      "review_status": "pending_review",
+      "image_alignment_status": "visual_sequence_candidate",
+      "bbox_xyxy": null,
+      "notes": [
+        "Published Magestade is expanded; written abbreviation requires its own representation."
+      ]
+    }
+  ],
+  "human_observations": [
+    {
+      "id": "leitura_usuario_abertura_269r_20261016",
+      "type": "partial_user_reading",
+      "recorded_at": "2026-10-16T13:00:38.064110+00:00",
+      "source": "mensagem do usuário nesta conversa",
+      "original_message": "Lendo oq foi trascrito me faz sentido essa imagem, eu vejo o anno de nacimento de nosso senhor jesus cristo de mil....",
+      "comparison_lines": [
+        1,
+        2
+      ],
+      "scope": "Reconhecimento parcial do conteúdo da abertura, até de mil, após consulta à edição e à imagem apresentada. Não equivale à aprovação de todos os grafemas.",
+      "user_reading": "o anno de nacimento de nosso senhor jesus cristo de mil....",
+      "confirmed_exact_spelling": false,
+      "unresolved": [
+        "Grafia exata, inclusive Jezus/christo na edição em contraste com jesus cristo na mensagem.",
+        "Presença e sequência exata das palavras iniciais; não acrescentar o inicial da mensagem ao manuscrito.",
+        "Maiúsculas, acentos, pontuação e sinais.",
+        "Continuação da segunda linha e recortes/cobertura."
+      ],
+      "effect": "Manter rascunhos da edição, revisão e geometria pendentes, sem promoção a referência de treino ou avaliação."
+    },
+    {
+      "id": "confirmacao_usuario_data_corpo_269r_20261016",
+      "type": "partial_text_confirmation",
+      "recorded_at": "2026-10-16T13:01:32.264381+00:00",
+      "source": "mensagem do usuário nesta conversa",
+      "original_message": "Simm leio exatamente isso",
+      "prompted_text": "seis centos sincoenta e seis annos",
+      "confirmed_text": "seis centos sincoenta e seis annos",
+      "comparison_lines": [
+        2
+      ],
+      "scope": "Confirmação explícita da sequência proposta na mensagem anterior. Não se estende ao restante da linha ou à cobertura da região.",
+      "unresolved": [
+        "Caixa, pontuação e demais sinais não examinados separadamente.",
+        "Fim da segunda linha, continuação na terceira, geometria e cobertura."
+      ],
+      "effect": "Confirmação parcial guardada sem validar uma linha completa ou habilitar treino/avaliação."
+    },
+    {
+      "id": "confirmacao_quebra_ca_torze_269r_20261016",
+      "type": "partial_line_break_confirmation",
+      "recorded_at": "2026-10-16T13:04:01.379464+00:00",
+      "source": "mensagem do usuário nesta conversa",
+      "original_message": "Sim eu vejo justamente essa divisão, entre o ca em uma pagina e o torze na quebra, isso vc tbm coseguiu ver? ou viu na trascrição?",
+      "comparison_lines": [
+        2,
+        3
+      ],
+      "confirmed_break": {
+        "line_2_ending": "ca",
+        "line_3_beginning": "torze"
+      },
+      "scope": "Confirmação da divisão ca / torze. Não estendida automaticamente a todos os termos ou sinais do restante da terceira linha.",
+      "location_clarification": "A divisão ocorre entre linhas da mesma página do manuscrito, 269r; não é mudança de página.",
+      "assistant_method": "Inspeção visual assistida pela edição; recorte reaberto nesta resposta, sem alegação de leitura independente.",
+      "effect": "Manter linhas, geometria e cobertura pendentes."
+    }
+  ],
+  "previous_snapshot": "docs/revisao_humana/traslado_269r/revisions/comparacao_2c0858324d48946f.json"
+}

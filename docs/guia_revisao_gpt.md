@@ -1,5 +1,15 @@
 # Estado do projeto para revisão
 
+Atualização de 16/10/2026: foi inventariada a pasta de transcrições indicada
+pelo usuário; os 15 arquivos correspondem por hash à importação existente.
+O [levantamento do acervo](mineracao_acervo_jundiai.md) registra vínculos e
+proposta de mineração. A [revisão do Traslado, fólio 269 reto](revisao_humana/traslado_269r/comparacao.md)
+reúne 24 linhas candidatas da edição, imagens publicadas e confirmações
+parciais de leitura. `Dias` e `da dita Hera nesta povoação` foram confirmados;
+a dificuldade anterior com `Hera` foi resolvida ao consultar a página inteira.
+O caderno mantém o histórico e as pendências de sinais, geometria e cobertura.
+Nenhuma linha completa foi validada ou incorporada ao catálogo experimental.
+
 Preparação humana iniciada em 15/10/2026: cinco linhas consecutivas, 17–21 do
 100 reto, com recortes ampliados e identificação do revisor. «Leu se» recebeu
 confirmação parcial; a abreviatura final permanece aberta, com sinais superiores
@@ -51,8 +61,8 @@ indisponibilidade. **Não é detecção de idioma, tradução, melhoria dos peso
 prova de leitura correta.** A liberação de sugestões continua desligada em
 `configs/pilot.toml` até uma avaliação apropriada do reconhecedor.
 
-CER/WER não foram calculados; não houve ajuste fino. Há uma única sessão
-documental candidata, insuficiente para criar grupos independentes apenas
+CER/WER não foram calculados; não houve ajuste fino. O catálogo experimental
+de 1831 contém uma única sessão, insuficiente para criar grupos independentes apenas
 separando seus fólios. Kraken tem um adaptador, mas sua execução real permanece
 pendente por ambiente/pesos, conforme `environment.md`.
 
