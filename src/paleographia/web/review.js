@@ -191,7 +191,7 @@ function renderLines() {
     $('lineList').replaceChildren();
     for (const l of ls) {
         const b = document.createElement('button');
-        b.textContent = l.reading_order + (l.review_status === 'validated' ? ' ✓' : l.review_status === 'rejected' ? ' ×' : '');
+        b.textContent = (l.comparison_line ?? l.reading_order) + (l.review_status === 'validated' ? ' ✓' : l.review_status === 'rejected' ? ' ×' : '');
         b.classList.toggle('active', l.line_id === lineId); b.onclick = () => selectLine(l.line_id); $('lineList').append(b);
     }
     renderEditor(); renderOverlay();
@@ -203,10 +203,22 @@ function renderEditor() {
     $('status').classList.toggle('valid', l.review_status === 'validated');
     $('crop').src = `/lines/${pageId}/${l.line_id}.png?v=${state.revision}`;
     writeFields(drafts.line.get(lineId)?.form || lineForm(l), lineFields);
+    renderPublishedReference(l);
     pendingBox = drafts.line.has(lineId) ? box() : null;
     const pred = state.predictions.filter(p => p.line_id === lineId).at(-1);
     $('raw').textContent = pred ? (pred.presentation?.text || 'Leitura automática em português indisponível.') : 'Nenhum reconhecimento executado para esta linha.';
     $('predictionInfo').textContent = pred?.presentation?.message || '';
+}
+function renderPublishedReference(line) {
+    const reference = line.published_reference;
+    $('publishedPanel').hidden = !reference?.text;
+    $('publishedText').value = reference?.text || '';
+    $('assistedText').textContent = reference?.assisted_proposal || '';
+    $('publishedInfo').textContent = reference
+        ? `Páginas da edição: ${(reference.reference_pages || []).join(', ')}. ${reference.note || ''}` : '';
+    $('publishedNotes').textContent = (reference?.human_observations || []).map(observation =>
+        `${observation.original_message}\n${observation.scope || ''}\n${observation.effect || ''}`).join('\n\n');
+    $('pageContextLink').href = `/api/pages/${line.page_id}/image`;
 }
 function setBox(b) { ['x1', 'y1', 'x2', 'y2'].forEach((id, i) => $(id).value = String(b[i])); }
 function box() { return ['x1', 'y1', 'x2', 'y2'].map(id => Number($(id).value)); }

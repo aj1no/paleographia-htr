@@ -32,8 +32,9 @@ function fixture(count = 2) {
         lines: [l, {...copy(l), line_id: 'l2', reading_order: 2}, {...copy(l), line_id: 'l3', page_id: 'p2'}],
         predictions: [], presentation_policy: {automatic_transcription_enabled: false}};
 }
-async function harness(count = 2) {
+async function harness(count = 2, configure = () => {}) {
     let catalog = fixture(count), fail = null, revision = 1;
+    configure(catalog);
     const elements = Object.fromEntries([...fs.readFileSync(path.join(web, 'index.html'), 'utf8').matchAll(/id="([^"]+)"/g)].map(m => [m[1], new Element()]));
     const calls = [], windowEvents = {};
     const context = vm.createContext({document: {
@@ -74,6 +75,41 @@ async function harness(count = 2) {
         region: async index => { elements.coverageSelect.value = String(index); await elements.coverageSelect.onchange(); }};
 }
 const patches = h => h.calls.filter(c => c.method === 'PATCH');
+
+test('Transcrição publicada fica separada do texto humano e preserva intervenções editoriais', async () => {
+    const published = {kind: 'published_paleographic_transcription', text: 'torze dias da dita Hera',
+        assisted_proposal: 'torze Dias da dita Hera', reference_pages: [1],
+        human_observations: [{original_message: 'Vejo Dias', scope: 'Confirmação parcial.', effect: 'Linha pendente.'}]};
+    const h = await harness(2, catalog => {
+        catalog.lines[0].published_reference = published;
+        catalog.lines[0].text_diplomatic = null;
+    });
+    await h.line(0);
+    assert.equal(h.el.publishedPanel.hidden, false);
+    assert.equal(h.el.publishedText.value, published.text);
+    assert.equal(h.el.assistedText.textContent, published.assisted_proposal);
+    assert.match(h.el.publishedNotes.textContent, /Confirmação parcial/);
+    assert.equal(h.el.pageContextLink.href, '/api/pages/p1/image');
+    assert.equal(h.el.diplomatic.value, ''); assert.equal(h.el.modernized.value, '');
+    assert.equal(h.el.validated.checked, false); assert.equal(h.el.geometryChecked.checked, false);
+    h.edit('diplomatic', 'Rascunho humano'); await h.click('saveLine');
+    assert.equal(patches(h)[0].body.changes.reference_kind, 'unknown');
+    assert.equal(patches(h)[0].body.changes.review_status, 'pending_review');
+    assert.deepEqual(h.catalog().lines[0].published_reference, published);
+    await h.line(1); assert.equal(h.el.publishedPanel.hidden, true);
+});
+
+test('Apoio modernizado legado continua editável e não recebe classificação nova', async () => {
+    const h = await harness(2, catalog => {
+        catalog.lines[0].text_modernized = 'Texto da edição modernizada';
+        catalog.lines[0].reference_kind = 'modernized_edition';
+    });
+    await h.line(0);
+    assert.equal(h.el.publishedPanel.hidden, true);
+    assert.equal(h.el.modernized.value, 'Texto da edição modernizada');
+    h.edit('diplomatic', 'Rascunho'); await h.click('saveLine');
+    assert.equal(patches(h)[0].body.changes.reference_kind, 'modernized_edition');
+});
 
 for (const count of [0, 1, 2]) test(`Créditos preservam as ${count} regiões sem reconstruir a cobertura`, async () => {
     const h = await harness(count), original = h.catalog().pages[0].transcribed_coverage;

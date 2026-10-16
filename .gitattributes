@@ -1,2 +1,8 @@
 # Cópias históricas literais: preservar bytes e espaços dos scripts de origem.
 legacy/*.py.txt -text -whitespace
+# Escopo restrito: não renormalizar os snapshots legados comparacao_*.json.
+docs/revisao_humana/traslado_269r/integridade.json text eol=lf
+docs/revisao_humana/traslado_269r/revisions/snapshot_*.json text eol=lf
+data/manifests/traslado_269r/*.jsonl text eol=lf
+configs/traslado_269r* text eol=lf
+docs/revisao_humana/traslado_269r/preparacao.json text eol=lf

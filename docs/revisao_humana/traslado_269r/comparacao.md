@@ -12,6 +12,12 @@ pelo usuário ao consultar a página inteira. A abertura recebeu reconhecimento
 parcial de conteúdo; as linhas completas e a cobertura seguem pendentes.
 Os registros anteriores abaixo são preservados como histórico.
 
+**Preparação para o editor:** as cinco primeiras linhas agora têm caixas e
+catálogo candidatos, em workspace próprio. Abra o [bloco de revisão com os
+cinco recortes, tabela e comandos](conferencia_bloco.md). Isso não altera os
+estados pendentes das 24 linhas deste registro documental. A integridade dos
+oito snapshots legados e o contrato dos novos estão em [integridade.md](integridade.md).
+
 ## Fontes e correspondência
 
 - Manuscrito: `data/raw/import_20261015/6e82cef18b04_5b58a915f024a80e.pdf`,
