@@ -1,10 +1,20 @@
 # Protocolo experimental proposto
 
+Atualização de 16/10/2026: o Traslado 269r tem **cinco linhas integralmente
+conferidas**, com cobertura completa somente de `body_first5`. A
+[comparação controlada de reconhecedores](experimentos/traslado_269r_20261016/README.md)
+congela os mesmos textos e recortes: CER/WER de 80,58%/100% (TrOCR) e
+57,02%/95,56% (PP-OCRv5 latino). É uma etapa de diagnóstico do reconhecedor,
+anterior à comparação de segmentadores proposta abaixo. As cinco linhas são
+**desenvolvimento** (valor canônico `exploratory`); não constituem teste reservado.
+Reservar outros trechos/grupos ao ampliar o corpus, antes de escolher modelos
+e configurações com eles. A aprovação do bloco não se estende à página inteira.
+
 Objetivo: medir o efeito da segmentação na transcrição assistida, mantendo **o mesmo TrOCR** e a mesma geração. Métodos: OpenCV (contornos ou perfil horizontal pré-especificado) e Kraken 6.0.0 (linhas/baselines, bbox derivada de polígono). Controle: recortes humanos revisados. O controle não é outro modelo treinado.
 
 Perguntas: RQ1, como os métodos localizam/separam linhas? RQ2, qual o efeito em CER, WER e tempos mantendo o reconhecedor fixo? RQ3, quais características de documento/segmentação aparecem nos erros? Melhoria é hipótese, inclusive resultados negativos devem permanecer.
 
-Antes de gerar predições para avaliação: identificar documento/fólios, fixar política textual, selecionar 30–50 linhas em regiões integralmente revisadas e registrar exclusões. Ainda há **zero** linhas aptas. O orçamento não prova suficiência estatística ou para treino. O primeiro catálogo tem três fólios de uma sessão candidata de 1831, sem comprovação de escriba comum.
+Antes da comparação de segmentadores: identificar documento/fólios, fixar política textual, ampliar a seleção para 30–50 linhas em regiões integralmente revisadas e registrar exclusões. As cinco linhas do Traslado permitem o diagnóstico de desenvolvimento acima; o orçamento não prova suficiência estatística ou para treino. O catálogo de 1831 ainda não tem linhas aptas e reúne três fólios de uma sessão candidata, sem comprovação de escriba comum.
 
 `split` persiste semente, atribuições e contagens; não refaz a divisão em cada treino. O padrão é documento, juntando todos os seus fólios, fontes repetidas e derivados. Exige ao menos três grupos para treino/validação/teste e verifica vazamento também por fonte, fólio e `derived_from`. Não forçar 80/10/10. Com um documento use `--exploratory`: tudo permanece no conjunto exploratório, **sem treino** e sem alegação de generalização. Divisão por fólio de um documento não está habilitada por padrão; exige protocolo adicional explícito.
 

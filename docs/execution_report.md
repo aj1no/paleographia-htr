@@ -1,5 +1,10 @@
 # Entrega e verificações — 15/10/2026
 
+Atualização de 16/10/2026: a [entrega do Traslado 269r](experimentos/traslado_269r_20261016/README.md)
+publica cinco linhas humanas validadas e duas avaliações com referência/recortes
+fixos. Os resultados continuam insuficientes para leitura automática. O texto
+abaixo é o relatório histórico de 15/10, anterior a esta revisão e publicação.
+
 Trabalho local na branch `codex/refatoracao-piloto`, baseada em `origin/master` (`2ab24deaa183373bc0926966cbd474a9dde985cb`). Alterações ficam disponíveis para revisão no working tree. Não houve push, merge, publicação de dados ou treinamento longo.
 
 ## Implementação entregue

@@ -1,0 +1,37 @@
+{
+  "record_kind": "Execution description reconstructed from emitted metadata and fixed adapter source; not a pre-run configuration receipt",
+  "model": {
+    "id": "PaddlePaddle/latin_PP-OCRv5_mobile_rec",
+    "conversion": "RapidAI/RapidOCR ONNX",
+    "registry_revision": "7cfd3d9ef786a2e538ca30df700325e72e85b5f5",
+    "url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.10.0/onnx/PP-OCRv5/rec/latin_PP-OCRv5_rec_mobile.onnx",
+    "sha256": "b20bd37c168a570f583afbc8cd7925603890efbcdc000a59e22c269d160b5f5a",
+    "dictionary_sha256": "3c0a8a79b612653c25f765271714f71281e4e955962c153e272b7b8c1d2b13ff",
+    "dictionary_classes_with_blank_space": 504,
+    "fallback": false,
+    "onnxruntime": "1.23.2",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "threads": 1,
+    "execution_mode": "ORT_SEQUENTIAL"
+  },
+  "preprocessing": {
+    "color": "BGR",
+    "height": 48,
+    "min_width": 320,
+    "resize": "cv2.INTER_LINEAR; preserve aspect ratio; right zero padding",
+    "normalization": "(pixel/255 - 0.5)/0.5"
+  },
+  "batch_size": 1,
+  "decoding": "greedy_ctc_blank_0",
+  "detection": false,
+  "orientation": false,
+  "text_correction": false,
+  "confidence_filter": false,
+  "seed": null,
+  "seed_note": "No sampling, training or random augmentation; deterministic CPU inference.",
+  "adapter_source": "src/paleographia/latin_ocr.py",
+  "adapter_source_sha256": "fd4bf549fbd21a92bdf5e07248697d53d2ce4411ef233c6589155d81596a27f8",
+  "reference_sha256": "ec6496a24377fee3f178fc8424844ac10fb92a946618821461463cc1150067b0"
+}

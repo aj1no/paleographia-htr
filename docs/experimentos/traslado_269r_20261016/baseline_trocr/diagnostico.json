@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-16",
+  "reference_revision": "20261016T172615_7ca3ab1c",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "scope": {
+    "page": "269r",
+    "region": "body_first5",
+    "lines": 5,
+    "document_groups": 1,
+    "remaining_19_candidate_lines": "not validated by these confirmations"
+  },
+  "human_reference": {
+    "text_validated": true,
+    "geometry_validated": true,
+    "page_correspondence_validated": true,
+    "region_coverage_complete": true
+  },
+  "recognition": {
+    "model": "microsoft/trocr-small-handwritten",
+    "snapshot": "b4648cfa171985a6745f37ddd637e98c0da958ac",
+    "device": "cpu",
+    "precision": "float32",
+    "load_seconds": 32.946995899998,
+    "recognition_seconds": 3.9642491999984486,
+    "failures": 0,
+    "truncated_predictions": 0,
+    "generation": {
+      "max_new_tokens": 128,
+      "num_beams": 1,
+      "do_sample": false,
+      "repetition_penalty": 1.0
+    },
+    "loading_missing_keys": [
+      "encoder.pooler.dense.bias",
+      "encoder.pooler.dense.weight"
+    ]
+  },
+  "metrics": {
+    "characters": {
+      "substitutions": 151,
+      "deletions": 20,
+      "insertions": 24,
+      "hits": 71,
+      "reference_length": 242,
+      "errors": 195,
+      "rate": 0.8057851239669421
+    },
+    "words": {
+      "substitutions": 45,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 0,
+      "reference_length": 45,
+      "errors": 45,
+      "rate": 1.0
+    }
+  },
+  "limitations": [
+    "Exploratory result for five lines from one document; no corpus-wide estimate.",
+    "Human-reviewed crops held fixed; no comparison of segmentation methods. IoU matches reflect reused control boxes, not detector performance.",
+    "English-looking raw outputs are inadequate for the Portuguese manuscript.",
+    "No training, new model download or activation of automatic UI suggestions."
+  ],
+  "files": [
+    {
+      "path": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/catalogo/pages.jsonl",
+      "sha256": "3d92095d16b2dbb87fb89e43daa5e4d6a2e5d20e0bf14b310f5dd6d2dcd23147"
+    },
+    {
+      "path": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/catalogo/lines.jsonl",
+      "sha256": "f5c54aaa8b5e31742112946c967012304f47a4f0cb28550e5163bffdb096cc02"
+    },
+    {
+      "path": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/catalogo/provenance.json",
+      "sha256": "cba13936d291ee20320916903be21718d45d4c1cf346a88fc0199fdd1b66ce6c"
+    },
+    {
+      "path": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/confirmacao_pagina_cobertura.json",
+      "sha256": "d31d4eb13fda0fa03f10ee66055537a1a69cc53efd3498ed76b112fe9257483d"
+    },
+    {
+      "path": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/linhas_exploratorias.jsonl",
+      "sha256": "ec6496a24377fee3f178fc8424844ac10fb92a946618821461463cc1150067b0"
+    },
+    {
+      "path": "experiments/traslado_269r_20261016T172615_7ca3ab1c/predictions.jsonl",
+      "sha256": "b4a2a57d13668830d9d68315dde876b0a19ee11ef41087611db65fac8fd74ee2"
+    },
+    {
+      "path": "experiments/traslado_269r_20261016T172615_7ca3ab1c/predictions.run.json",
+      "sha256": "b312fb76fc8d8d2267b483d9930d38e269d5b8910f6457710d2f6c7bb7eba4fa"
+    },
+    {
+      "path": "experiments/traslado_269r_20261016T172615_7ca3ab1c/predictions.provenance.json",
+      "sha256": "a5b020258ae25b584647413c7c319bdcf274c43bc35a8fe60ed6744c7e5390c6"
+    },
+    {
+      "path": "experiments/traslado_269r_20261016T172615_7ca3ab1c/evaluation/metrics.json",
+      "sha256": "2c95d8369aa80ad921351358d409126f6b69c3fe590386fba50692b329707258"
+    },
+    {
+      "path": "experiments/traslado_269r_20261016T172615_7ca3ab1c/evaluation/regions.jsonl",
+      "sha256": "3d9cb8ecda1bc1ffd891c343b186f9cb3f45badcaaacc3b0976d8f8ef32214bb"
+    },
+    {
+      "path": "experiments/traslado_269r_20261016T172615_7ca3ab1c/evaluation/lines.jsonl",
+      "sha256": "2e0f9996e4a9e58e5676dc92c19c889d01b23d928ea50bbe23f5fd6da37f14df"
+    },
+    {
+      "path": "experiments/traslado_269r_20261016T172615_7ca3ab1c/config.toml",
+      "sha256": "5b82c15505dd4c01da67607cf545615264299819a3e76bf0c7d3f343cd7c01c8"
+    },
+    {
+      "path": "experiments/traslado_269r_20261016T172615_7ca3ab1c/frozen_reference.json",
+      "sha256": "c44a98bed903e8b33e7f4a59c73f1e93564b3e46b9345341cdc746d7d8507ca0"
+    }
+  ]
+}

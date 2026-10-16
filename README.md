@@ -6,15 +6,19 @@ mensagens são apresentadas em português.
 
 O catálogo reúne três fólios candidatos de 1831 e 94 recortes pendentes. O
 repertório do fólio 100 reto contém 13 exemplos, com seis confirmações parciais
-do usuário. Ainda há **zero linhas integralmente validadas** para treino ou
-avaliação. “Hum” permanece como leitura provável.
+do usuário. Nesse catálogo de 1831, nenhuma linha foi integralmente validada.
+“Hum” permanece como leitura provável.
 
 A revisão do Traslado do Auto de Criação da Vila começou pelo fólio 269 reto,
-com 24 linhas candidatas da edição e confirmações humanas parciais. O
+com 24 linhas candidatas da edição. **Cinco linhas do corpo foram integralmente
+conferidas pelo usuário**, incluindo geometria, correspondência e cobertura
+somente desse bloco. O
 [caderno do Traslado](docs/revisao_humana/traslado_269r/comparacao.md) inclui
-imagens e histórico; as linhas completas continuam pendentes de validação.
-As [cinco primeiras linhas do Traslado](docs/revisao_humana/traslado_269r/conferencia_bloco.md)
-já podem ser abertas no editor com configuração e workspace próprios.
+imagens e histórico da preparação. A [referência congelada e comparação de
+reconhecedores](docs/experimentos/traslado_269r_20261016/README.md) publica
+manifests, configurações, predições, métricas, hashes e auditoria offline.
+Na mesma amostra de desenvolvimento, TrOCR teve CER/WER de 80,58%/100% e
+PP-OCRv5 latino, 57,02%/95,56%. Ambos continuam inadequados para leitura automática.
 
 O TrOCR disponível foi executado em 3 recortes de diagnóstico e nos 32 recortes
 do 100r. As saídas foram inadequadas. A interface informa a indisponibilidade de

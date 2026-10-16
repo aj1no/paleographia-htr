@@ -17,6 +17,7 @@ dependencies = [
 test = ["pytest==8.4.1", "httpx==0.28.1"]
 htr = ["torch==2.7.1", "torchvision==0.22.1", "transformers==4.57.1", "sentencepiece==0.2.1", "protobuf==6.32.0", "accelerate==1.10.1"]
 pdf = ["pypdf==6.1.1", "rarfile==4.2"]
+ocr = ["onnxruntime==1.23.2"]
 
 [project.scripts]
 paleographia = "paleographia.__main__:main"

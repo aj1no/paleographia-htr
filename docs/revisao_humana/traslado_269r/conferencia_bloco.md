@@ -1,5 +1,12 @@
 # Cinco primeiras linhas do corpo — fólio 269 reto
 
+**Atualização posterior à preparação, 16/10/2026:** as cinco linhas, sua
+geometria, a correspondência do 269r e a cobertura completa somente do bloco
+foram conferidas pelo usuário. A referência final, correções e avaliação estão
+na [entrega experimental publicada](../../experimentos/traslado_269r_20261016/README.md).
+O restante deste caderno preserva o estado anterior à conferência; os manifests
+candidatos continuam separados do snapshot humano validado.
+
 Preparação de 16/10/2026 para **Rodolfo Vinícius Cima Takemoto**, responsável
 previsto pela revisão. Nenhuma nova revisão efetiva foi atribuída a esse nome:
 texto, geometria, correspondência e cobertura continuam pendentes.

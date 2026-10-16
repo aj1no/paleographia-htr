@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "purpose": "evaluation",
+  "rows": 5,
+  "statuses": {
+    "validated": 5
+  },
+  "errors": [],
+  "warnings": []
+}

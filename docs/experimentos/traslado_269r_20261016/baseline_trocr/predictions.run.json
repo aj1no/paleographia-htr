@@ -1,0 +1,52 @@
+{
+  "recognizer": {
+    "state": "loaded",
+    "configured_model": "models/trocr-small-handwritten",
+    "loaded_model": {
+      "id": "models/trocr-small-handwritten",
+      "requested_revision": "b4648cfa171985a6745f37ddd637e98c0da958ac",
+      "resolved_revision": "b4648cfa171985a6745f37ddd637e98c0da958ac",
+      "local_files_sha256": {
+        "config.json": "2b6e06edec319984eca99c932d940bfa1f308db3f74d6279440b906c373bf727",
+        "generation_config.json": "41149cdcffec4d657f32dfcddd9b208037f01286c9e07945c724908c58ed0193",
+        "preprocessor_config.json": "eec0c686d2e2ea6d5887f87e1c6a34ef5bf1ba5b2ac98b8675e131da646fa1d2",
+        "provenance.json": "9e2bd12196a78058abeb597abe8f574b724771318f75657ee3a774469078e73c",
+        "pytorch_model.bin": "1b83102cbc1520dee1c3937ac334da83da18cf4683d46ebd1bd4e93ebe584dd7",
+        "sentencepiece.bpe.model": "6f5e2fefcf793761a76a6bfb8ad35489f9c203b25557673284b6d032f41043f4",
+        "special_tokens_map.json": "58dc0a3d15e3bad4861bcf2dee770ea327344d185182d4c5d2bf253285e53a83",
+        "tokenizer_config.json": "e098c98c6834fbcd3f3e75215e3e8b8868f0fe5bf07aef93d28e4f7196db293c"
+      },
+      "fallback": false,
+      "loading_info": {
+        "missing_keys": [
+          "encoder.pooler.dense.bias",
+          "encoder.pooler.dense.weight"
+        ],
+        "unexpected_keys": [],
+        "mismatched_keys": [],
+        "error_msgs": []
+      },
+      "preparation": {
+        "model": "microsoft/trocr-small-handwritten",
+        "revision": "main",
+        "resolved_snapshot": "b4648cfa171985a6745f37ddd637e98c0da958ac",
+        "files": {
+          "config.json": "2b6e06edec319984eca99c932d940bfa1f308db3f74d6279440b906c373bf727",
+          "generation_config.json": "41149cdcffec4d657f32dfcddd9b208037f01286c9e07945c724908c58ed0193",
+          "preprocessor_config.json": "eec0c686d2e2ea6d5887f87e1c6a34ef5bf1ba5b2ac98b8675e131da646fa1d2",
+          "pytorch_model.bin": "1b83102cbc1520dee1c3937ac334da83da18cf4683d46ebd1bd4e93ebe584dd7",
+          "sentencepiece.bpe.model": "6f5e2fefcf793761a76a6bfb8ad35489f9c203b25557673284b6d032f41043f4",
+          "special_tokens_map.json": "58dc0a3d15e3bad4861bcf2dee770ea327344d185182d4c5d2bf253285e53a83",
+          "tokenizer_config.json": "e098c98c6834fbcd3f3e75215e3e8b8868f0fe5bf07aef93d28e4f7196db293c"
+        },
+        "prepared_at": "2026-10-15T15:09:57.970483+00:00"
+      }
+    },
+    "device": "cpu",
+    "precision": "float32",
+    "load_seconds": 32.946995899998,
+    "error": null
+  },
+  "count": 5,
+  "failures": 0
+}

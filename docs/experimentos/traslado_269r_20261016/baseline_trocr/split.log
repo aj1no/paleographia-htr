@@ -1,0 +1,11 @@
+{
+  "seed": 1831,
+  "grouping": "document",
+  "assignments": {
+    "tt_pbr_0004_026_traslado_1767": "exploratory"
+  },
+  "counts": {
+    "exploratory": 5
+  },
+  "limitation": "Exploratório; sem inferência de generalização."
+}
