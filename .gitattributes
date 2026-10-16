@@ -28,3 +28,4 @@ src/paleographia/web/review.js text eol=lf
 configs/pilot.toml text eol=lf
 scripts/audit_ppocrv6_experiment.py text eol=lf
 docs/experimentos/traslado_269r_ppocrv6_20261016/** -text
+docs/revisao_humana/traslado_269r/sessao_20261016/** -text
