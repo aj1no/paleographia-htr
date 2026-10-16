@@ -1,0 +1,78 @@
+{
+  "normalization": "Unicode NFC + whitespace collapse; preserve case/diacritics",
+  "aggregation_unit": "ordered_complete_region; micro counts",
+  "metrics": {
+    "characters": {
+      "substitutions": 46,
+      "deletions": 90,
+      "insertions": 2,
+      "hits": 106,
+      "reference_length": 242,
+      "errors": 138,
+      "rate": 0.5702479338842975
+    },
+    "words": {
+      "substitutions": 24,
+      "deletions": 19,
+      "insertions": 0,
+      "hits": 2,
+      "reference_length": 45,
+      "errors": 43,
+      "rate": 0.9555555555555556
+    }
+  },
+  "regions": 1,
+  "reference_lines": 5,
+  "predicted_lines": 5,
+  "segmentation": [
+    {
+      "reference_lines": 5,
+      "detected_lines": 5,
+      "correct": 5,
+      "unmatched_reference": 0,
+      "unmatched_detected": 0,
+      "omitted": 0,
+      "spurious": 0,
+      "split_reference_lines": 5,
+      "merged_detected_lines": 5,
+      "matches": [
+        {
+          "reference_id": "l_traslado_269r_body_01",
+          "prediction_id": "l_traslado_269r_body_01",
+          "iou": 1.0
+        },
+        {
+          "reference_id": "l_traslado_269r_body_02",
+          "prediction_id": "l_traslado_269r_body_02",
+          "iou": 1.0
+        },
+        {
+          "reference_id": "l_traslado_269r_body_03",
+          "prediction_id": "l_traslado_269r_body_03",
+          "iou": 1.0
+        },
+        {
+          "reference_id": "l_traslado_269r_body_04",
+          "prediction_id": "l_traslado_269r_body_04",
+          "iou": 1.0
+        },
+        {
+          "reference_id": "l_traslado_269r_body_05",
+          "prediction_id": "l_traslado_269r_body_05",
+          "iou": 1.0
+        }
+      ],
+      "iou_threshold": 0.5,
+      "overlap_threshold": 0.2,
+      "matching": "descending_iou_greedy_one_to_one",
+      "geometry": "axis_aligned_bbox_xyxy",
+      "page_id": "p_traslado_269r",
+      "region_id": "body_first5"
+    }
+  ],
+  "out_of_scope": [],
+  "limitations": [
+    "BBox approximation for neural polygons",
+    "Line metrics omit unpaired spurious lines; primary region metric counts their insertions."
+  ]
+}

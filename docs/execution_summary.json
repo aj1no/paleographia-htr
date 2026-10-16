@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-15",
+  "branch": "codex/refatoracao-piloto",
+  "tests": {
+    "passed": 32,
+    "warnings": 1,
+    "platform": "Windows Python 3.12.14"
+  },
+  "catalog": {
+    "pages": 3,
+    "candidate_lines": 94,
+    "human_validated": 0,
+    "per_folio": {
+      "jundiai_atas_1831_f100r": 32,
+      "jundiai_atas_1831_f101r": 32,
+      "jundiai_atas_1831_f100v": 30
+    }
+  },
+  "real_inference": {
+    "smoke_crops": 3,
+    "api_crops": 32,
+    "api_failed": 0,
+    "api_total_seconds": 58.59555929999988,
+    "model_load_seconds": 19.508464799999274,
+    "recognition_seconds": 38.79015679999429,
+    "possible_truncation_count": 0,
+    "checkpoint": "b4648cfa171985a6745f37ddd637e98c0da958ac",
+    "device": "cpu",
+    "precision": "float32",
+    "quality_status": "inadequate_English_outputs; no_validated_reference_no_CER_WER"
+  },
+  "neural": {
+    "status": "not_executed",
+    "reason": "Windows binary resolver cannot satisfy coremltools~=8.1 for Kraken 6.0.0; no neural weights installed"
+  },
+  "training": {
+    "status": "not_executed",
+    "reason": "no human references and no independent train/validation/test groups"
+  },
+  "academic_approval": "pending",
+  "workspace_revision": "20261015T152646_ce045fe6",
+  "repertoire": {
+    "examples": 13,
+    "partial_user_confirmations": 6,
+    "probable_reading": "hum",
+    "human_validated_full_lines": 0,
+    "catalog": "data/manifests/repertorio_100r.json"
+  },
+  "presentation": {
+    "language": "pt-BR",
+    "automatic_transcription_enabled": false,
+    "recognition_improved": false
+  },
+  "post_review_corrections": {
+    "date": "2026-10-15",
+    "reviewed_commit": "756492c69b3eab4b86757e1dc0570349ff2cc02a",
+    "python_tests_passed": 46,
+    "python_warnings": 1,
+    "javascript_simulated_dom_tests_passed": 16,
+    "real_browser": "synthetic isolated instance; drafts, two regions, conflict, diagnostic and reload checked",
+    "original_files_hash_checked": 274,
+    "original_files_changed": 0,
+    "new_real_htr_runs": 0,
+    "report": "docs/correcoes_pos_revisao.md",
+    "evidence": "docs/correcoes_evidencias.json"
+  },
+  "human_reference_preparation": {
+    "date": "2026-10-15",
+    "reviewer": "Rodolfo Vinícius Cima Takemoto",
+    "folio": "100r",
+    "editorial_lines": [
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "full_lines_validated": 0,
+    "partial_confirmation": "Leu se",
+    "upper_signs_tentative": "es",
+    "abbreviation_unresolved": true,
+    "catalog_and_workspace_changed": false,
+    "report": "docs/revisao_humana/100r_17_21/conferencia.md",
+    "manifest": "docs/revisao_humana/100r_17_21/preparacao.json"
+  }
+}

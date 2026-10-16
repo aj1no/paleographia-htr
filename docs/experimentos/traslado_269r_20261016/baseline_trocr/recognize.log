@@ -1,0 +1,7 @@
+{
+  "predictions": 5,
+  "failures": 0,
+  "valid": true
+}
+Some weights of VisionEncoderDecoderModel were not initialized from the model checkpoint at models/trocr-small-handwritten and are newly initialized: ['encoder.pooler.dense.bias', 'encoder.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.

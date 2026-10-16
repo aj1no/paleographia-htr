@@ -1,0 +1,25 @@
+{
+  "revision": "20261016T191933_07d31bad",
+  "catalog": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 15,
+    "statuses": {
+      "validated": 10,
+      "pending_review": 5
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "archive_files_verified": 65,
+  "workspace_roundtrip_identical": true,
+  "source_pixel_comparisons": 15,
+  "live_workspace_unchanged": true,
+  "browser_drafts_pending": false,
+  "metrics_added": false,
+  "previous_audits": {
+    "ppocrv6_verified_files": 60,
+    "historical_verified_files": 55,
+    "metrics_reproduced": true
+  }
+}

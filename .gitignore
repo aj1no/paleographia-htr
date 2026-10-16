@@ -1,19 +1,27 @@
-# Ambientes Virtuais Python
+.venv*/
 venv/
 env/
 .env
-
-# Arquivos de Imagens Originais e Testes (muito pesados para o Git)
-*.jpg
-*.jpeg
-*.png
-*.pdf
-
-# Cache do Python
 __pycache__/
-*.pyc
-*.pyo
-
-# Configurações de IDE
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+models/
+.cache/
+tmp/
+output/
+docs/screenshots/
 .vscode/
 .idea/
+# Existing tracked originals stay tracked. New source files and runs are opt-in.
+data/raw/*
+!data/raw/inbox/
+data/raw/inbox/*
+!data/raw/inbox/README.md
+data/processed/*
+data/workspace/
+data/workspace_traslado_269r/
+experiments/*
+!experiments/README.md

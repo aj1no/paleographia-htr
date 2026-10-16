@@ -1,0 +1,3 @@
+[recognition]
+model = "microsoft/trocr-small-handwritten"
+revision = "b4648cfa171985a6745f37ddd637e98c0da958ac"

@@ -1,0 +1,307 @@
+{
+  "algorithm": "SHA256 of exact bytes",
+  "dataset_role": "development",
+  "files": [
+    {
+      "path": "configs/pilot.toml",
+      "sha256": "60dae7218b1b0c2d6c92ae99ab9c9bc62116a78092baf9b09eb67da551105c19",
+      "bytes": 1337
+    },
+    {
+      "path": "configs/traslado_269r.toml",
+      "sha256": "c6ccec65073fd220f2cc126ec723a78f3da61ffd11af5d9e8453a46ee75c5373",
+      "bytes": 1646
+    },
+    {
+      "path": "docs/experimentos/implementation_31997a4/scripts/audit_traslado_experiment.py",
+      "sha256": "5ff3c88a33f4465f0eb80ffae9ee57cab118ba95e8ed9a083fd3bbb2913e05e0",
+      "bytes": 911
+    },
+    {
+      "path": "docs/experimentos/implementation_31997a4/scripts/recognize_latin.py",
+      "sha256": "74b175c4488734814f60c763cfbd55a96561e3a93b1f85f47a120c2a20723187",
+      "bytes": 1903
+    },
+    {
+      "path": "docs/experimentos/implementation_31997a4/src/paleographia/data.py",
+      "sha256": "05ef98ce45924f9930245c90a82bbf42bf017463144a1658eb98f57922160c27",
+      "bytes": 16458
+    },
+    {
+      "path": "docs/experimentos/implementation_31997a4/src/paleographia/evaluation.py",
+      "sha256": "96995e52c18eb302127a16698ac07cd3872930b331c10adc3b1e938e09b07efd",
+      "bytes": 8316
+    },
+    {
+      "path": "docs/experimentos/implementation_31997a4/src/paleographia/experiments.py",
+      "sha256": "2de5b4b745eb25e0c289ee5be026e1e55015d4c39dfaa5262c9692894c35d942",
+      "bytes": 6327
+    },
+    {
+      "path": "docs/experimentos/implementation_31997a4/src/paleographia/frozen_experiment.py",
+      "sha256": "a7ab16506afd14490caaf5d7d413c61f429eb248762934f2e6e844f41ef0e6cb",
+      "bytes": 6114
+    },
+    {
+      "path": "docs/experimentos/implementation_31997a4/src/paleographia/io.py",
+      "sha256": "7b0219024494ae7fca5d34b625777978db7af821d7feaff1fc16360ef869c1a7",
+      "bytes": 3176
+    },
+    {
+      "path": "docs/experimentos/implementation_31997a4/src/paleographia/latin_ocr.py",
+      "sha256": "fd4bf549fbd21a92bdf5e07248697d53d2ce4411ef233c6589155d81596a27f8",
+      "bytes": 5302
+    },
+    {
+      "path": "docs/experimentos/implementation_31997a4/src/paleographia/recognition.py",
+      "sha256": "108b53551c69dcadacc92951dba2bbb89a5bbaf63a78a01273fac52ab0f22cf8",
+      "bytes": 9109
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/catalogo/pages.jsonl",
+      "sha256": "3d92095d16b2dbb87fb89e43daa5e4d6a2e5d20e0bf14b310f5dd6d2dcd23147",
+      "bytes": 2147
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/linhas_exploratorias.jsonl",
+      "sha256": "ec6496a24377fee3f178fc8424844ac10fb92a946618821461463cc1150067b0",
+      "bytes": 20493
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/app_before.json",
+      "sha256": "f5c8ebc755864c4caf7db975b858c0be7076e0a8a07fd172090ef24ec06423e7",
+      "bytes": 27307
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/app_configuration.toml",
+      "sha256": "c6ccec65073fd220f2cc126ec723a78f3da61ffd11af5d9e8453a46ee75c5373",
+      "bytes": 1646
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/app_predictions.jsonl",
+      "sha256": "e1d7fbf69cf1d2d3c83f7f73443cf1e03a2093b3cc7a1e9bd834e03a4aa72d80",
+      "bytes": 11530
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/app_smoke.json",
+      "sha256": "1aef67462465771879f365582b94e1ebcf41d9b72ea596e1b5a156036d91c443",
+      "bytes": 2132
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/attempts/startup_contract.json",
+      "sha256": "f77f4e335be617302d25ece3b764552bacbfeed109264d4f3346be9b1552f3af",
+      "bytes": 434
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/attempts/worker_contract_128.py.txt",
+      "sha256": "f487d23f53fccd1b6e74f4e429b196c1253c7dd2eae035b16a3455464a938836",
+      "bytes": 5131
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/comparison.json",
+      "sha256": "c76a036f5e7f69c2f267314ba9d2e31bd8f0eafb7d78f0732f210312cc963f03",
+      "bytes": 1523
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/config.toml",
+      "sha256": "ae2dfa2d9a3739f8c936e06adc00ec6e9f801edef14415dc374afd563171ab52",
+      "bytes": 1539
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/evaluation/lines.jsonl",
+      "sha256": "ea7df9ea98da332974279ae850a06fe500e34c5120a4bcd4038d80f49e4f2f1c",
+      "bytes": 2478
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/evaluation/metrics.json",
+      "sha256": "c21a3457f17b0187a17ba24539387068af3260009b697e46454db71de5f8bf45",
+      "bytes": 2100
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/evaluation/provenance.json",
+      "sha256": "fc8edd8fdbdbfa7db70d83705bbeb01d6f1f9cd872797bbf3d5f40100731b5b0",
+      "bytes": 924
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/evaluation/regions.jsonl",
+      "sha256": "ea0283bb154dfd6cd547a8f18f6d6dca15cd99f4f3670acfc99b17a90daac63b",
+      "bytes": 912
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/frozen_inputs.json",
+      "sha256": "faaf58f6b6b4117a484b2db2f42a8383da2400603885481a302ac267be9bda9b",
+      "bytes": 4344
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/frozen_inputs_v2.json",
+      "sha256": "7552fb41a711be2a56de9b4f07483f0b45066b7ba9b7c562cbf3cbafb75d549d",
+      "bytes": 4471
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/images/app_ppocrv6.jpg",
+      "sha256": "2295e9beb5812d5450f680a9f9b710164a149fc55a349e12d9f98470c0363661",
+      "bytes": 64949
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/images/app_resultado.jpg",
+      "sha256": "82aa4c863b855a105d925c55423e68907597b937a2b2102c92c89412e076ee31",
+      "bytes": 59172
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/model_metadata.json",
+      "sha256": "26ea0c9b9558e31d6beca358148912be20bd5d503883e02d2e109fd466d04405",
+      "bytes": 357
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/model_source.json",
+      "sha256": "9a29341d98bf102624cb8b64201d45ab7487d4142b4a2c08b347945c878928cc",
+      "bytes": 302
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/predictions.jsonl",
+      "sha256": "de3727af7886b9e6ce9a2685e3f21223792095951b945124a1c9066a5f3454b2",
+      "bytes": 11531
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/predictions.provenance.json",
+      "sha256": "08bbf9e78b32425d2bdfbf41fca111d2d11b53a44db0890bd1662a3172360c0d",
+      "bytes": 2461
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/predictions.run.json",
+      "sha256": "1b94c5deabf894a9ed6c1a8950be8c52eb4b037f4637254c148899990b7f5d12",
+      "bytes": 1266
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/README.md",
+      "sha256": "2aa015ea8afba3654e87947d3562b1ef3a6f1405d2c849373fd367e66fdfe7d9",
+      "bytes": 10641
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/release_decision.json",
+      "sha256": "6def9e23602a3c5dcf8c291736a31b9a02ee3387b3e27417fe742f99f9069988",
+      "bytes": 1639
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/runtime_observation.json",
+      "sha256": "d960bd32d8f521b3561a807275e4664c85b4e81e21fdfbfb451f5707d5e31430",
+      "bytes": 575
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_01.png",
+      "sha256": "bf9bfd65b70bf59001d33860ca032c9c10d64ae85eefb986fa562d5a0e052385",
+      "bytes": 124963
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_02.png",
+      "sha256": "61f934eaba26e141ef19387c44c48b5fdc8266c4e942ce5b736e934507ba23b4",
+      "bytes": 98103
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_03.png",
+      "sha256": "9394efae96505f40e5745967fa96c84d00d13e3bb2f32e299b90aaf1de10fb45",
+      "bytes": 113011
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_04.png",
+      "sha256": "8cdfd498804d6a2bb509039ace9691ba5379a40a7948268792a6bd41a51b9c7f",
+      "bytes": 114309
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_05.png",
+      "sha256": "e0f8716dc4eb2fbfcc30476ca674753be551459c87d763cf83f5b91b0051e3d4",
+      "bytes": 104656
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+      "sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+      "bytes": 342221
+    },
+    {
+      "path": "runtime/kraken_ppocrv6/Dockerfile",
+      "sha256": "9cd26e2218c8759ad2379046f11f95e95112d9ac1511c28b4666eb019e477ced",
+      "bytes": 482
+    },
+    {
+      "path": "runtime/kraken_ppocrv6/Dockerfile.locked",
+      "sha256": "2d25d2439a8c389e3fe6f6eb2a1b109f5358035ef1177c5844c6439901375ca5",
+      "bytes": 540
+    },
+    {
+      "path": "runtime/kraken_ppocrv6/README.md",
+      "sha256": "1440615e65ebafdd25d98496d4810eb347c1d7240fc6f3fe20018e8a4046662e",
+      "bytes": 4264
+    },
+    {
+      "path": "runtime/kraken_ppocrv6/requirements.lock",
+      "sha256": "ec2d7c4f14d4b07015772f8a2852a36cfebb5d543114fdb8554bc59fc7240c15",
+      "bytes": 1243
+    },
+    {
+      "path": "scripts/audit_ppocrv6_experiment.py",
+      "sha256": "bd9a4565f9faae0d5dfa87314667ec61dfebc81b2f5755c08b0a2a7c101e11e1",
+      "bytes": 3460
+    },
+    {
+      "path": "src/paleographia/__main__.py",
+      "sha256": "a327ff77e8edba84a5a3bf070edb3de39ccd6b9fbba1cb08227acaecb36419dc",
+      "bytes": 10180
+    },
+    {
+      "path": "src/paleographia/api.py",
+      "sha256": "5aa84e85a3ac2e4845de7e5a7744663eb63f2296a523cabac1353b94f3884903",
+      "bytes": 8783
+    },
+    {
+      "path": "src/paleographia/backends.py",
+      "sha256": "a0b82b7519f1b14ea1f398e2c388732400d99e12c9dfab116fb4b6b847b7b4f6",
+      "bytes": 1756
+    },
+    {
+      "path": "src/paleographia/experiments.py",
+      "sha256": "62585e74b25426d1d4c7237ded5a58b15c827c79811c5dcce7ae447ce46a155d",
+      "bytes": 6854
+    },
+    {
+      "path": "src/paleographia/frozen_experiment.py",
+      "sha256": "5ecf913e16548038a006cff1b0bf5d593d422020ddb492a58089977722dbd760",
+      "bytes": 6656
+    },
+    {
+      "path": "src/paleographia/kraken_recognition.py",
+      "sha256": "48126628f65b79737f8e6a5361494395c377104bb315981e3923e89334d3adcc",
+      "bytes": 9765
+    },
+    {
+      "path": "src/paleographia/kraken_recognition_worker.py",
+      "sha256": "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a",
+      "bytes": 5301
+    },
+    {
+      "path": "src/paleographia/presentation.py",
+      "sha256": "21e7df17cba73147ddbe117ebfe2a7c78f70c03a771e2e3097f5956fabe0e77b",
+      "bytes": 3352
+    },
+    {
+      "path": "src/paleographia/recognition.py",
+      "sha256": "5627ab0b220924b725792e636fb44f39f1691bb80cb3e2df8a3bed0a7a5ea00d",
+      "bytes": 3241
+    },
+    {
+      "path": "src/paleographia/services.py",
+      "sha256": "8dd42e77dac5a2c28237e6004c2f23326f2eea8c184e37757254452f00f6e822",
+      "bytes": 13761
+    },
+    {
+      "path": "src/paleographia/training.py",
+      "sha256": "77edae47585609f34897d94608be219187321632e40899ceeb897d2e0b30a95a",
+      "bytes": 6572
+    },
+    {
+      "path": "src/paleographia/web/review.js",
+      "sha256": "f0c4e0970ba54df323215e51537c0ed2022120fdd7e259e75029dca9f46d3bd4",
+      "bytes": 23696
+    }
+  ],
+  "note": "Git records inventory.json itself. Frozen inputs v2 precede recognition. The first receipt refers to the failed startup check, whose source is preserved under attempts/."
+}

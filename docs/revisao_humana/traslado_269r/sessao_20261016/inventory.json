@@ -1,0 +1,134 @@
+{
+  "files": [
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/app_configuration.toml",
+      "sha256": "c6ccec65073fd220f2cc126ec723a78f3da61ffd11af5d9e8453a46ee75c5373",
+      "bytes": 1646
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crop_path_mapping.json",
+      "sha256": "5533d47eafabc661560bbb462d0288ae2dca28a684be1a75e98773dbe6e251d2",
+      "bytes": 2193
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_01.png",
+      "sha256": "bf9bfd65b70bf59001d33860ca032c9c10d64ae85eefb986fa562d5a0e052385",
+      "bytes": 124963
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_02.png",
+      "sha256": "61f934eaba26e141ef19387c44c48b5fdc8266c4e942ce5b736e934507ba23b4",
+      "bytes": 98103
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_03.png",
+      "sha256": "9394efae96505f40e5745967fa96c84d00d13e3bb2f32e299b90aaf1de10fb45",
+      "bytes": 113011
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_04.png",
+      "sha256": "8cdfd498804d6a2bb509039ace9691ba5379a40a7948268792a6bd41a51b9c7f",
+      "bytes": 114309
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_05.png",
+      "sha256": "e0f8716dc4eb2fbfcc30476ca674753be551459c87d763cf83f5b91b0051e3d4",
+      "bytes": 104656
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_06.png",
+      "sha256": "29fa8cd43ae105f1369e45d692f786a3ded0e0ee5142dad3d09c2d4f592431cf",
+      "bytes": 99553
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_07.png",
+      "sha256": "ffbc967bc6840c23a079a5288f6f5479f47f3b738974c37fc33d5105388347de",
+      "bytes": 100801
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_08.png",
+      "sha256": "4ad7677eb60239b3790b5731df76e2e724e17deb807c0e75269e510b0651bb1c",
+      "bytes": 106851
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_09.png",
+      "sha256": "303c5d244fee3866eae24e1f3dfca78f8d3d152bdeb42ff6d338748aa9998374",
+      "bytes": 111262
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_10.png",
+      "sha256": "7d0f697452cee9200f1c8bda3cc25b274d64bd83ea85759e089978b9b19b5f42",
+      "bytes": 100283
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_11.png",
+      "sha256": "22f044bdcab49e9d066bbe1ae04761def089ff2fd96359a0d96f70d3a72395f3",
+      "bytes": 110576
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_12.png",
+      "sha256": "4476803a43d67ea731596b0c4fce67d21a20720069d1c2b1e4b09155d5330e6b",
+      "bytes": 106516
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_13.png",
+      "sha256": "063ddba7dac683f584de8178d8ecc2ef0924008a6cfb3c8d2aadee8ce80ea907",
+      "bytes": 111593
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_14.png",
+      "sha256": "00c527011142bfb7ac35bde1071f243911779a1efe5093ed30d2a2e5ff94f6cd",
+      "bytes": 113108
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/crops/linha_15.png",
+      "sha256": "f8b2b7374e35f9f6fb85a628efc8f0e0d466cf0cb41652012df92b169021a263",
+      "bytes": 98923
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/editor_06_10.jpg",
+      "sha256": "de9f889e6830bbc7925543916e1a2d22e5f8a7a7cece52b1f5c28685ae524be4",
+      "bytes": 57766
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/editor_11_15.jpg",
+      "sha256": "b438cc1c7a80b46c0b84c95de7e496b16549c1d9473f51da0893872e4ae15e24",
+      "bytes": 55955
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl",
+      "sha256": "28484eb93239061734ccce93376f8869d993643488ee8d31eb5f62f2ecfae5b9",
+      "bytes": 34619
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/pages.jsonl",
+      "sha256": "e74ebc08e9c6db154817d704a905e8a1f75d34907bc9623aa5fcf0a037cda073",
+      "bytes": 3090
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/predictions.jsonl",
+      "sha256": "eadbac09fffc95429a2e91f82b5f7e047e683acc559fac740c13f2a4c4a375be",
+      "bytes": 34704
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/README.md",
+      "sha256": "058428aac70e1113cfea5d485f89745fe16806a217ae59905c6207c6b4ee7d2c",
+      "bytes": 4070
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/verification.json",
+      "sha256": "4c099eeebefcd124c6102ef3938c22a46aa07ddc59dbcaae8677a17485fb24c5",
+      "bytes": 571
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/workspace.zip",
+      "sha256": "a4b297198656e42fe5291b1a097a531c7c6571b3d77fe6114b4e6c6ba188f066",
+      "bytes": 3308302
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/sessao_20261016/workspace_files.json",
+      "sha256": "273d4d0d54c1a679273e199c638e796287f37bc61cd497de67169bfc70120bad",
+      "bytes": 13335
+    }
+  ]
+}

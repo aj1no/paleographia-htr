@@ -1,0 +1,100 @@
+{
+  "fonte": "data/raw/import_20261015/6e82cef18b04_198b675a9b65d183.jpg",
+  "fonte_sha256": "413d1502555f62d45ef50cc9af5d0fb7df0ed55bf9652157f0fa874b2006a1ad",
+  "linha_editorial": 17,
+  "metodo": "Recortes de pixels originais e ampliação uniforme Lanczos; sem reconstrução ou retoque da escrita. Intervalos das letras são aproximados e não constituem segmentação validada.",
+  "amostras": [
+    {
+      "legenda": "Vogal em aberto",
+      "nota": "Antes de «se» · linha 17",
+      "bbox_contexto": [
+        173,
+        944,
+        211,
+        977
+      ],
+      "intervalo_horizontal_aproximado_da_letra": [
+        186,
+        201
+      ],
+      "ampliacao": 10
+    },
+    {
+      "legenda": "«o» final de Projecto",
+      "nota": "Leitura da palavra confirmada",
+      "bbox_contexto": [
+        433,
+        944,
+        461,
+        977
+      ],
+      "intervalo_horizontal_aproximado_da_letra": [
+        443,
+        454
+      ],
+      "ampliacao": 10
+    },
+    {
+      "legenda": "Trecho com «o» de Posturas",
+      "nota": "Leitura da palavra confirmada",
+      "bbox_contexto": [
+        539,
+        944,
+        563,
+        977
+      ],
+      "intervalo_horizontal_aproximado_da_letra": [
+        547,
+        557
+      ],
+      "ampliacao": 10
+    },
+    {
+      "legenda": "Vogal em aberto",
+      "nota": "Mesmo recorte para comparar",
+      "bbox_contexto": [
+        173,
+        944,
+        211,
+        977
+      ],
+      "intervalo_horizontal_aproximado_da_letra": [
+        186,
+        201
+      ],
+      "ampliacao": 10
+    },
+    {
+      "legenda": "Trecho com «u» de Posturas",
+      "nota": "Leitura da palavra confirmada",
+      "bbox_contexto": [
+        576,
+        944,
+        611,
+        977
+      ],
+      "intervalo_horizontal_aproximado_da_letra": [
+        584,
+        600
+      ],
+      "ampliacao": 10
+    },
+    {
+      "legenda": "Possível «u» de hum",
+      "nota": "A palavra continua provável",
+      "bbox_contexto": [
+        268,
+        944,
+        301,
+        977
+      ],
+      "intervalo_horizontal_aproximado_da_letra": [
+        278,
+        292
+      ],
+      "ampliacao": 10
+    }
+  ],
+  "estado_na_etapa_de_comparacao": "comparação visual; vogal em aberto por orientação do usuário",
+  "estado_atual": "quadro histórico da comparação; posteriormente o revisor confirmou a abertura Leu se com u"
+}

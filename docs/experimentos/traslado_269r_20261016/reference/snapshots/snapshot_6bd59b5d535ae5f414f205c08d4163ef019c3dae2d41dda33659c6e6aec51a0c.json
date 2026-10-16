@@ -1,0 +1,522 @@
+{
+  "action": "update_page",
+  "lines": [
+    {
+      "bbox_xyxy": [
+        12,
+        540,
+        1060,
+        628
+      ],
+      "comparison_line": 1,
+      "context_image": "docs/revisao_humana/traslado_269r/images/bloco_5_linhas.png",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_01.png",
+      "dates": {
+        "copy_heading_year": 1767,
+        "described_act": "1656-12-14",
+        "note": "Data do ato e ano indicado para a cópia são funções distintas; cabeçalho ainda sem validação integral.",
+        "review_status": "pending_review"
+      },
+      "derived_from": null,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "exclusion_reason": null,
+      "folio_id": "269r",
+      "geometry_notes": "Caixas propostas por inspeção visual, com sobreposição de hastes/descendentes vizinhos. O floreio da inicial A se prolonga acima do bloco; conferir o limite superior na página inteira antes de aprovar a geometria. A região candidata cobre somente as cinco linhas selecionadas, sem afirmar cobertura completa ou incluir o restante do corpo como referência.",
+      "geometry_status": "validated",
+      "line_id": "l_traslado_269r_body_01",
+      "page_id": "p_traslado_269r",
+      "planned_reviewer": "Rodolfo Vinícius Cima Takemoto",
+      "published_reference": {
+        "assisted_proposal": "Anno do Nacimento de Nosso Senhor Jezus christo",
+        "credits": "Ana Caroline C. Miranda, paleógrafa responsável; Thiago Paschoal, paleógrafo revisor. Memorabilia Paleografia e Diplomática.",
+        "human_observations": [
+          {
+            "comparison_lines": [
+              1,
+              2
+            ],
+            "confirmed_exact_spelling": false,
+            "effect": "Manter rascunhos da edição, revisão e geometria pendentes, sem promoção a referência de treino ou avaliação.",
+            "id": "leitura_usuario_abertura_269r_20261016",
+            "original_message": "Lendo oq foi trascrito me faz sentido essa imagem, eu vejo o anno de nacimento de nosso senhor jesus cristo de mil....",
+            "recorded_at": "2026-10-16T13:00:38.064110+00:00",
+            "scope": "Reconhecimento parcial do conteúdo da abertura, até de mil, após consulta à edição e à imagem apresentada. Não equivale à aprovação de todos os grafemas.",
+            "source": "mensagem do usuário nesta conversa",
+            "type": "partial_user_reading",
+            "unresolved": [
+              "Grafia exata, inclusive Jezus/christo na edição em contraste com jesus cristo na mensagem.",
+              "Presença e sequência exata das palavras iniciais; não acrescentar o inicial da mensagem ao manuscrito.",
+              "Maiúsculas, acentos, pontuação e sinais.",
+              "Continuação da segunda linha e recortes/cobertura."
+            ],
+            "user_reading": "o anno de nacimento de nosso senhor jesus cristo de mil...."
+          }
+        ],
+        "kind": "published_paleographic_transcription",
+        "note": "Texto publicado de apoio; confirmações parciais não validam a linha inteira.",
+        "reference_pages": [
+          1
+        ],
+        "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+        "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+        "text": "Anno do Nacimento de Nosso Senhor Jezus christo"
+      },
+      "reading_order": 0,
+      "reference_kind": "human_diplomatic",
+      "reference_pages": [
+        1
+      ],
+      "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "region_id": "body_first5",
+      "review_status": "validated",
+      "reviewed_at": "2026-10-16T16:59:49.388536+00:00",
+      "reviewer": "Rodolfo Vinicius Cima Takemoto",
+      "source_height": 1873,
+      "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+      "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+      "source_width": 1166,
+      "split": null,
+      "split_group": "tt_pbr_0004_026_traslado_1767",
+      "text_diplomatic": "Anno do Nacimento de Nosso Senhor Jezus christo",
+      "text_modernized": null,
+      "transform_id": "manual_candidate_269r_first5_v1"
+    },
+    {
+      "bbox_xyxy": [
+        95,
+        612,
+        1060,
+        684
+      ],
+      "comparison_line": 2,
+      "context_image": "docs/revisao_humana/traslado_269r/images/bloco_5_linhas.png",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_02.png",
+      "dates": {
+        "copy_heading_year": 1767,
+        "described_act": "1656-12-14",
+        "note": "Data do ato e ano indicado para a cópia são funções distintas; cabeçalho ainda sem validação integral.",
+        "review_status": "pending_review"
+      },
+      "derived_from": null,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "exclusion_reason": null,
+      "folio_id": "269r",
+      "geometry_notes": "Caixas propostas por inspeção visual, com sobreposição de hastes/descendentes vizinhos. O floreio da inicial A se prolonga acima do bloco; conferir o limite superior na página inteira antes de aprovar a geometria. A região candidata cobre somente as cinco linhas selecionadas, sem afirmar cobertura completa ou incluir o restante do corpo como referência.",
+      "geometry_status": "validated",
+      "line_id": "l_traslado_269r_body_02",
+      "page_id": "p_traslado_269r",
+      "planned_reviewer": "Rodolfo Vinícius Cima Takemoto",
+      "published_reference": {
+        "assisted_proposal": "de mil seis centos sincoenta e seis annos, aos ca",
+        "credits": "Ana Caroline C. Miranda, paleógrafa responsável; Thiago Paschoal, paleógrafo revisor. Memorabilia Paleografia e Diplomática.",
+        "human_observations": [
+          {
+            "comparison_lines": [
+              1,
+              2
+            ],
+            "confirmed_exact_spelling": false,
+            "effect": "Manter rascunhos da edição, revisão e geometria pendentes, sem promoção a referência de treino ou avaliação.",
+            "id": "leitura_usuario_abertura_269r_20261016",
+            "original_message": "Lendo oq foi trascrito me faz sentido essa imagem, eu vejo o anno de nacimento de nosso senhor jesus cristo de mil....",
+            "recorded_at": "2026-10-16T13:00:38.064110+00:00",
+            "scope": "Reconhecimento parcial do conteúdo da abertura, até de mil, após consulta à edição e à imagem apresentada. Não equivale à aprovação de todos os grafemas.",
+            "source": "mensagem do usuário nesta conversa",
+            "type": "partial_user_reading",
+            "unresolved": [
+              "Grafia exata, inclusive Jezus/christo na edição em contraste com jesus cristo na mensagem.",
+              "Presença e sequência exata das palavras iniciais; não acrescentar o inicial da mensagem ao manuscrito.",
+              "Maiúsculas, acentos, pontuação e sinais.",
+              "Continuação da segunda linha e recortes/cobertura."
+            ],
+            "user_reading": "o anno de nacimento de nosso senhor jesus cristo de mil...."
+          },
+          {
+            "comparison_lines": [
+              2
+            ],
+            "confirmed_text": "seis centos sincoenta e seis annos",
+            "effect": "Confirmação parcial guardada sem validar uma linha completa ou habilitar treino/avaliação.",
+            "id": "confirmacao_usuario_data_corpo_269r_20261016",
+            "original_message": "Simm leio exatamente isso",
+            "prompted_text": "seis centos sincoenta e seis annos",
+            "recorded_at": "2026-10-16T13:01:32.264381+00:00",
+            "scope": "Confirmação explícita da sequência proposta na mensagem anterior. Não se estende ao restante da linha ou à cobertura da região.",
+            "source": "mensagem do usuário nesta conversa",
+            "type": "partial_text_confirmation",
+            "unresolved": [
+              "Caixa, pontuação e demais sinais não examinados separadamente.",
+              "Fim da segunda linha, continuação na terceira, geometria e cobertura."
+            ]
+          },
+          {
+            "assistant_method": "Inspeção visual assistida pela edição; recorte reaberto nesta resposta, sem alegação de leitura independente.",
+            "comparison_lines": [
+              2,
+              3
+            ],
+            "confirmed_break": {
+              "line_2_ending": "ca",
+              "line_3_beginning": "torze"
+            },
+            "effect": "Manter linhas, geometria e cobertura pendentes.",
+            "id": "confirmacao_quebra_ca_torze_269r_20261016",
+            "location_clarification": "A divisão ocorre entre linhas da mesma página do manuscrito, 269r; não é mudança de página.",
+            "original_message": "Sim eu vejo justamente essa divisão, entre o ca em uma pagina e o torze na quebra, isso vc tbm coseguiu ver? ou viu na trascrição?",
+            "recorded_at": "2026-10-16T13:04:01.379464+00:00",
+            "scope": "Confirmação da divisão ca / torze. Não estendida automaticamente a todos os termos ou sinais do restante da terceira linha.",
+            "source": "mensagem do usuário nesta conversa",
+            "type": "partial_line_break_confirmation"
+          }
+        ],
+        "kind": "published_paleographic_transcription",
+        "note": "Texto publicado de apoio; confirmações parciais não validam a linha inteira.",
+        "reference_pages": [
+          1
+        ],
+        "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+        "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+        "text": "de mil seis centos sincoenta e seis annos, aos ca"
+      },
+      "reading_order": 1,
+      "reference_kind": "human_diplomatic",
+      "reference_pages": [
+        1
+      ],
+      "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "region_id": "body_first5",
+      "review_status": "validated",
+      "reviewed_at": "2026-10-16T17:13:33.487710+00:00",
+      "reviewer": "Rodolfo Vinicius Cima Takemoto",
+      "source_height": 1873,
+      "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+      "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+      "source_width": 1166,
+      "split": null,
+      "split_group": "tt_pbr_0004_026_traslado_1767",
+      "text_diplomatic": "de mil seis centos sincoenta e seis annos, aos ca",
+      "text_modernized": null,
+      "transform_id": "manual_candidate_269r_first5_v1"
+    },
+    {
+      "bbox_xyxy": [
+        85,
+        658,
+        1060,
+        739
+      ],
+      "comparison_line": 3,
+      "context_image": "docs/revisao_humana/traslado_269r/images/bloco_5_linhas.png",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_03.png",
+      "dates": {
+        "copy_heading_year": 1767,
+        "described_act": "1656-12-14",
+        "note": "Data do ato e ano indicado para a cópia são funções distintas; cabeçalho ainda sem validação integral.",
+        "review_status": "pending_review"
+      },
+      "derived_from": null,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "exclusion_reason": null,
+      "folio_id": "269r",
+      "geometry_notes": "Caixas propostas por inspeção visual, com sobreposição de hastes/descendentes vizinhos. O floreio da inicial A se prolonga acima do bloco; conferir o limite superior na página inteira antes de aprovar a geometria. A região candidata cobre somente as cinco linhas selecionadas, sem afirmar cobertura completa ou incluir o restante do corpo como referência.",
+      "geometry_status": "validated",
+      "line_id": "l_traslado_269r_body_03",
+      "page_id": "p_traslado_269r",
+      "planned_reviewer": "Rodolfo Vinícius Cima Takemoto",
+      "published_reference": {
+        "assisted_proposal": "torze Dias do mes de Dezembro da dita Hera nesta",
+        "credits": "Ana Caroline C. Miranda, paleógrafa responsável; Thiago Paschoal, paleógrafo revisor. Memorabilia Paleografia e Diplomática.",
+        "human_observations": [
+          {
+            "assistant_method": "Inspeção visual assistida pela edição; recorte reaberto nesta resposta, sem alegação de leitura independente.",
+            "comparison_lines": [
+              2,
+              3
+            ],
+            "confirmed_break": {
+              "line_2_ending": "ca",
+              "line_3_beginning": "torze"
+            },
+            "effect": "Manter linhas, geometria e cobertura pendentes.",
+            "id": "confirmacao_quebra_ca_torze_269r_20261016",
+            "location_clarification": "A divisão ocorre entre linhas da mesma página do manuscrito, 269r; não é mudança de página.",
+            "original_message": "Sim eu vejo justamente essa divisão, entre o ca em uma pagina e o torze na quebra, isso vc tbm coseguiu ver? ou viu na trascrição?",
+            "recorded_at": "2026-10-16T13:04:01.379464+00:00",
+            "scope": "Confirmação da divisão ca / torze. Não estendida automaticamente a todos os termos ou sinais do restante da terceira linha.",
+            "source": "mensagem do usuário nesta conversa",
+            "type": "partial_line_break_confirmation"
+          },
+          {
+            "comparison_lines": [
+              3
+            ],
+            "confirmed_readings": [
+              {
+                "scope": "Palavra e inicial maiúscula indicadas pelo usuário; explicação histórica da caixa não estabelecida.",
+                "text": "Dias"
+              },
+              {
+                "scope": "Leitura da palavra final confirmada pelo usuário; demais sinais não confirmados separadamente.",
+                "text": "nesta"
+              }
+            ],
+            "effect": "Duas confirmações parciais; manter linha, geometria e cobertura pendentes.",
+            "id": "confirmacao_dias_nesta_duvida_hera_269r_20261016",
+            "original_message": "Claramente é Dias, não sei se tem algo da epoca de usar as maiusculas mas sim eu vejo um dias\n\nHera eu não vi, mas nesta eu vejo sim",
+            "recorded_at": "2026-10-16T16:14:54.772284+00:00",
+            "source": "mensagem do usuário nesta conversa",
+            "type": "partial_text_confirmation_with_unresolved_word",
+            "unresolved": [
+              {
+                "effect": "Leitura da palavra permanece em aberto. Não confirma Era, ausência de palavra ou exclusão do trecho.",
+                "published_text": "Hera",
+                "user_observation": "Hera eu não vi"
+              }
+            ]
+          },
+          {
+            "comparison_lines": [
+              3,
+              4
+            ],
+            "confirmed_text": "da dita Hera nesta povoação",
+            "effect": "Atualizar leituras parciais mantendo sinais, restante das linhas, geometria e cobertura pendentes.",
+            "id": "confirmacao_hera_contexto_pagina_269r_20261016",
+            "original_message": "Vendo a pagina inteira, sim eu vejo Hera, porem no recorte ficou dificil, mas sim eu vejo da dita Hera nesta povoação",
+            "recorded_at": "2026-10-16T16:17:59.409770+00:00",
+            "resolves": [
+              {
+                "human_observation_id": "confirmacao_dias_nesta_duvida_hera_269r_20261016",
+                "issue": "Leitura da palavra publicada como Hera",
+                "resolution": "Usuário confirmou Hera ao consultar a página inteira."
+              }
+            ],
+            "scope": "Confirmação da sequência; Hera com H conforme leitura expressa. O trecho atravessa as linhas físicas 3 e 4; a disposição nesta / povoação é mapeamento da imagem, sem alegar nova confirmação explícita da quebra pelo usuário.",
+            "source": "mensagem do usuário nesta conversa",
+            "type": "partial_text_confirmation",
+            "viewing_context": "Página inteira; usuário atribuiu a dificuldade anterior ao recorte."
+          }
+        ],
+        "kind": "published_paleographic_transcription",
+        "note": "Texto publicado de apoio; confirmações parciais não validam a linha inteira.",
+        "reference_pages": [
+          1
+        ],
+        "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+        "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+        "text": "torze dias do mes de Dezembro da dita Hera nesta"
+      },
+      "reading_order": 2,
+      "reference_kind": "human_diplomatic",
+      "reference_pages": [
+        1
+      ],
+      "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "region_id": "body_first5",
+      "review_status": "validated",
+      "reviewed_at": "2026-10-16T17:13:33.532016+00:00",
+      "reviewer": "Rodolfo Vinicius Cima Takemoto",
+      "source_height": 1873,
+      "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+      "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+      "source_width": 1166,
+      "split": null,
+      "split_group": "tt_pbr_0004_026_traslado_1767",
+      "text_diplomatic": "torze Dias do mes de Dezembro da dita Hera nesta",
+      "text_modernized": null,
+      "transform_id": "manual_candidate_269r_first5_v1"
+    },
+    {
+      "bbox_xyxy": [
+        75,
+        712,
+        1060,
+        793
+      ],
+      "comparison_line": 4,
+      "context_image": "docs/revisao_humana/traslado_269r/images/bloco_5_linhas.png",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_04.png",
+      "dates": {
+        "copy_heading_year": 1767,
+        "described_act": "1656-12-14",
+        "note": "Data do ato e ano indicado para a cópia são funções distintas; cabeçalho ainda sem validação integral.",
+        "review_status": "pending_review"
+      },
+      "derived_from": null,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "exclusion_reason": null,
+      "folio_id": "269r",
+      "geometry_notes": "Caixas propostas por inspeção visual, com sobreposição de hastes/descendentes vizinhos. O floreio da inicial A se prolonga acima do bloco; conferir o limite superior na página inteira antes de aprovar a geometria. A região candidata cobre somente as cinco linhas selecionadas, sem afirmar cobertura completa ou incluir o restante do corpo como referência.",
+      "geometry_status": "validated",
+      "line_id": "l_traslado_269r_body_04",
+      "page_id": "p_traslado_269r",
+      "planned_reviewer": "Rodolfo Vinícius Cima Takemoto",
+      "published_reference": {
+        "assisted_proposal": "povoação e Freguezia de Nossa senhora do Deste",
+        "credits": "Ana Caroline C. Miranda, paleógrafa responsável; Thiago Paschoal, paleógrafo revisor. Memorabilia Paleografia e Diplomática.",
+        "human_observations": [
+          {
+            "comparison_lines": [
+              3,
+              4
+            ],
+            "confirmed_text": "da dita Hera nesta povoação",
+            "effect": "Atualizar leituras parciais mantendo sinais, restante das linhas, geometria e cobertura pendentes.",
+            "id": "confirmacao_hera_contexto_pagina_269r_20261016",
+            "original_message": "Vendo a pagina inteira, sim eu vejo Hera, porem no recorte ficou dificil, mas sim eu vejo da dita Hera nesta povoação",
+            "recorded_at": "2026-10-16T16:17:59.409770+00:00",
+            "resolves": [
+              {
+                "human_observation_id": "confirmacao_dias_nesta_duvida_hera_269r_20261016",
+                "issue": "Leitura da palavra publicada como Hera",
+                "resolution": "Usuário confirmou Hera ao consultar a página inteira."
+              }
+            ],
+            "scope": "Confirmação da sequência; Hera com H conforme leitura expressa. O trecho atravessa as linhas físicas 3 e 4; a disposição nesta / povoação é mapeamento da imagem, sem alegar nova confirmação explícita da quebra pelo usuário.",
+            "source": "mensagem do usuário nesta conversa",
+            "type": "partial_text_confirmation",
+            "viewing_context": "Página inteira; usuário atribuiu a dificuldade anterior ao recorte."
+          }
+        ],
+        "kind": "published_paleographic_transcription",
+        "note": "Texto publicado de apoio; confirmações parciais não validam a linha inteira.",
+        "reference_pages": [
+          1
+        ],
+        "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+        "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+        "text": "povoação e Freguezia de Nossa senhora do Deste"
+      },
+      "reading_order": 3,
+      "reference_kind": "human_diplomatic",
+      "reference_pages": [
+        1
+      ],
+      "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "region_id": "body_first5",
+      "review_status": "validated",
+      "reviewed_at": "2026-10-16T17:02:52.422901+00:00",
+      "reviewer": "Rodolfo Vinicius Cima Takemoto",
+      "source_height": 1873,
+      "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+      "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+      "source_width": 1166,
+      "split": null,
+      "split_group": "tt_pbr_0004_026_traslado_1767",
+      "text_diplomatic": "povoação e Freguezia de Nossa senhora do Deste",
+      "text_modernized": null,
+      "transform_id": "manual_candidate_269r_first5_v1"
+    },
+    {
+      "bbox_xyxy": [
+        95,
+        760,
+        1060,
+        834
+      ],
+      "comparison_line": 5,
+      "context_image": "docs/revisao_humana/traslado_269r/images/bloco_5_linhas.png",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_05.png",
+      "dates": {
+        "copy_heading_year": 1767,
+        "described_act": "1656-12-14",
+        "note": "Data do ato e ano indicado para a cópia são funções distintas; cabeçalho ainda sem validação integral.",
+        "review_status": "pending_review"
+      },
+      "derived_from": null,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "exclusion_reason": null,
+      "folio_id": "269r",
+      "geometry_notes": "Caixas propostas por inspeção visual, com sobreposição de hastes/descendentes vizinhos. O floreio da inicial A se prolonga acima do bloco; conferir o limite superior na página inteira antes de aprovar a geometria. A região candidata cobre somente as cinco linhas selecionadas, sem afirmar cobertura completa ou incluir o restante do corpo como referência.",
+      "geometry_status": "validated",
+      "line_id": "l_traslado_269r_body_05",
+      "page_id": "p_traslado_269r",
+      "planned_reviewer": "Rodolfo Vinícius Cima Takemoto",
+      "published_reference": {
+        "assisted_proposal": "rro de Jundiahy, aonde Eu Publico Tabelião ao di",
+        "credits": "Ana Caroline C. Miranda, paleógrafa responsável; Thiago Paschoal, paleógrafo revisor. Memorabilia Paleografia e Diplomática.",
+        "human_observations": [],
+        "kind": "published_paleographic_transcription",
+        "note": "Texto publicado de apoio; confirmações parciais não validam a linha inteira.",
+        "reference_pages": [
+          1
+        ],
+        "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+        "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+        "text": "rro de Jundiahy, aonde Eu Publico Tabelião ao di"
+      },
+      "reading_order": 4,
+      "reference_kind": "human_diplomatic",
+      "reference_pages": [
+        1
+      ],
+      "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "region_id": "body_first5",
+      "review_status": "validated",
+      "reviewed_at": "2026-10-16T17:03:13.133936+00:00",
+      "reviewer": "Rodolfo Vinicius Cima Takemoto",
+      "source_height": 1873,
+      "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+      "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+      "source_width": 1166,
+      "split": null,
+      "split_group": "tt_pbr_0004_026_traslado_1767",
+      "text_diplomatic": "rro de Jundiahy, aonde Eu Publico Tabelião ao di",
+      "text_modernized": null,
+      "transform_id": "manual_candidate_269r_first5_v1"
+    }
+  ],
+  "pages": [
+    {
+      "comparison_source": "docs/revisao_humana/traslado_269r/comparacao.json",
+      "correspondence_status": "validated",
+      "credits": "Ana Caroline C. Miranda, paleógrafa responsável; Thiago Paschoal, paleógrafo revisor. Memorabilia Paleografia e Diplomática.",
+      "dates": {
+        "copy_heading_year": 1767,
+        "described_act": "1656-12-14",
+        "note": "Data do ato e ano indicado para a cópia são funções distintas; cabeçalho ainda sem validação integral.",
+        "review_status": "pending_review"
+      },
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "folio_id": "269r",
+      "geometry_notes": "Caixas propostas por inspeção visual, com sobreposição de hastes/descendentes vizinhos. O floreio da inicial A se prolonga acima do bloco; conferir o limite superior na página inteira antes de aprovar a geometria. A região candidata cobre somente as cinco linhas selecionadas, sem afirmar cobertura completa ou incluir o restante do corpo como referência.",
+      "height": 1873,
+      "identification_basis": "Identificação proposta no caderno; correspondência ainda pendente.",
+      "original_name": "manuscrito_269r_original.jpg",
+      "page_id": "p_traslado_269r",
+      "planned_reviewer": "Rodolfo Vinícius Cima Takemoto",
+      "reviewed_at": "2026-10-16T17:26:15.557772+00:00",
+      "reviewer": "Rodolfo Vinicius Cima Takemoto",
+      "side": "recto",
+      "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+      "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+      "source_url": "https://jundiai.sismu.app/obra/102201/traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+      "transcribed_coverage": [
+        {
+          "bbox_xyxy": [
+            12,
+            540,
+            1060,
+            834
+          ],
+          "complete": true,
+          "reference_pages": [
+            1
+          ],
+          "reference_source": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+          "region_id": "body_first5",
+          "review_status": "validated",
+          "reviewed_at": "2026-10-16T17:26:15.557772+00:00",
+          "reviewer": "Rodolfo Vinicius Cima Takemoto",
+          "scope": "Somente as cinco primeiras linhas do corpo; não cobre o restante do 269r."
+        }
+      ],
+      "usage_conditions": "Fonte histórica e edição com condições próprias; MIT refere-se ao código.",
+      "width": 1166
+    }
+  ],
+  "parent_revision": "20261016T171333_ab9cbde2",
+  "predictions": [],
+  "revision": "20261016T172615_7ca3ab1c",
+  "saved_at": "2026-10-16T17:26:15.559777+00:00"
+}

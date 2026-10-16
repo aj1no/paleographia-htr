@@ -1,0 +1,46 @@
+{
+  "data": "2026-10-16",
+  "descricao": "Imagens de conferência publicadas junto ao caderno do 269r, idênticas aos derivados locais inspecionados. Confirmações parciais não validam linhas completas.",
+  "manuscrito_pdf": {
+    "path": "data/raw/import_20261015/6e82cef18b04_5b58a915f024a80e.pdf",
+    "sha256": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0",
+    "pdf_pages": 9
+  },
+  "transcricao_pdf": {
+    "path": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+    "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+    "pdf_pages": 11
+  },
+  "arquivos": {
+    "comparacao_paginas.png": {
+      "path": "docs/revisao_humana/traslado_269r/images/comparacao_paginas.png",
+      "sha256": "5244bde1e59bad41179ac08aa9ecdf91472637e771166cbf348b4dac933fc0fc",
+      "bytes": 1431904
+    },
+    "fecho_269r.png": {
+      "path": "docs/revisao_humana/traslado_269r/images/fecho_269r.png",
+      "sha256": "cf58532bdb0bef4dfaabf572a68601721351c90035ec78565a23ed9dcd25ee8c",
+      "bytes": 699324
+    },
+    "linha_03_contexto.png": {
+      "path": "docs/revisao_humana/traslado_269r/images/linha_03_contexto.png",
+      "sha256": "aeed0ac65c73f52e9c85e3c22e0df79dd2a9231ddac4725e25dca2a0b8c30329",
+      "bytes": 583862
+    },
+    "linha_03_final_contexto.png": {
+      "path": "docs/revisao_humana/traslado_269r/images/linha_03_final_contexto.png",
+      "sha256": "b1d28665c3c292b2a91960c5d52d3873e729f315a53171767e850244a829a370",
+      "bytes": 230303
+    },
+    "manuscrito_269r_original.jpg": {
+      "path": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+      "sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+      "bytes": 342221
+    },
+    "primeiras_cinco_linhas.png": {
+      "path": "docs/revisao_humana/traslado_269r/images/primeiras_cinco_linhas.png",
+      "sha256": "3a915035d58a823a72815775546cb202e65199a5a2074f90b6a6594bbfa1a1ee",
+      "bytes": 1204074
+    }
+  }
+}

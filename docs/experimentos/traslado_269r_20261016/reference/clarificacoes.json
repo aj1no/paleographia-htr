@@ -1,0 +1,34 @@
+{
+  "origin": "Explicit user answers to the three clarification questions in this conversation.",
+  "answers": {
+    "line_2_text": "de mil seis centos sincoenta e seis annos, aos ca",
+    "line_2_exclusion": "Limpar o motivo de exclusão e manter meu nome como revisor",
+    "line_3_case": "Dias, com D maiúsculo"
+  },
+  "before_revision": "20261016T170313_0062eded",
+  "after_revision": "20261016T171333_ab9cbde2",
+  "changes": [
+    {
+      "line_id": "l_traslado_269r_body_02",
+      "previous_text": "de mil seiscentos sincoenta e seis annos, anos ca",
+      "previous_exclusion_reason": "Rodolfo Vinicius Cima Takemoto",
+      "applied_changes": {
+        "text_diplomatic": "de mil seis centos sincoenta e seis annos, aos ca",
+        "exclusion_reason": null
+      },
+      "reviewer_preserved": "Rodolfo Vinicius Cima Takemoto",
+      "saved_reviewed_at": "2026-10-16T17:13:33.487710+00:00"
+    },
+    {
+      "line_id": "l_traslado_269r_body_03",
+      "previous_text": "torze dias do mes de Dezembro da dita Hera nesta",
+      "previous_exclusion_reason": null,
+      "applied_changes": {
+        "text_diplomatic": "torze Dias do mes de Dezembro da dita Hera nesta"
+      },
+      "reviewer_preserved": "Rodolfo Vinicius Cima Takemoto",
+      "saved_reviewed_at": "2026-10-16T17:13:33.532016+00:00"
+    }
+  ],
+  "page_and_coverage_not_changed": true
+}

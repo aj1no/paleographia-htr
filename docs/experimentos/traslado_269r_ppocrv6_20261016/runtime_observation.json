@@ -1,0 +1,14 @@
+{
+  "memory_observation_after_recognition": "paleographia-rec-64644fd58d4e4405: 534MiB / 4GiB; CPU 0.00%",
+  "peak_memory_measured": false,
+  "container_limits": {
+    "cpus": 2,
+    "memory_gib": 4
+  },
+  "image_bytes": 2268442619,
+  "load_in_worker_seconds": 11.434850720999975,
+  "startup_including_load_seconds": 12.863082599997142,
+  "recognition_worker_sum_seconds": 9.31534489399985,
+  "recognition_worker_scope": "PNG decode + native preprocessing + CTC inference/decoding; excludes parent IPC",
+  "runtime_requirements": "runtime/kraken_ppocrv6/requirements.lock"
+}

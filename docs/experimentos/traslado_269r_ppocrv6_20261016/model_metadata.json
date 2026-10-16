@@ -1,0 +1,17 @@
+{
+  "63a375c5-4ae9-4889-8c4b-602e89625093": {
+    "_kraken_min_version": "7.0.0",
+    "_tasks": [
+      "recognition"
+    ],
+    "_model": "PPOCRv6Model",
+    "variant": "medium",
+    "num_classes": 1623,
+    "height": 96,
+    "seg_type": "baselines",
+    "one_channel_mode": "RGB",
+    "legacy_polygons": false,
+    "accuracy": [],
+    "metrics": []
+  }
+}
