@@ -2,7 +2,7 @@
 
 Protótipo local para importar manuscritos, conferir recortes, gerar sugestões com TrOCR, registrar revisão humana e exportar dados rastreáveis. A comparação proposta mantém o reconhecedor fixo e varia segmentação OpenCV/Kraken. Não há ajuste fino validado para português histórico nem evidência de alto desempenho.
 
-O catálogo preparado contém três fólios candidatos de 1831 e 94 recortes pendentes. Há zero linhas validadas por humano. Inferência real foi verificada em três recortes de diagnóstico e nos 32 recortes do 100r; as saídas foram inadequadas e não são transcrições confiáveis. O repertório reúne 13 exemplos e seis confirmações parciais do usuário, preservando “hum” como provável. Treino e avaliação textual permanecem bloqueados por revisão/protocolo. Veja o [relatório de execução](docs/execution_report.md).
+O catálogo de 1831 contém três fólios candidatos e 94 recortes pendentes, sem linhas completas validadas. O repertório reúne 13 exemplos e seis confirmações parciais, preservando “hum” como provável. No Traslado, fólio 269r, o usuário conferiu cinco linhas completas e a cobertura somente desse bloco. A [comparação de reconhecedores com referência congelada](docs/experimentos/traslado_269r_20261016/README.md) publica predições e auditoria: CER/WER de 80,58%/100% para TrOCR e 57,02%/95,56% para PP-OCRv5 latino. As saídas ainda são inadequadas. A amostra é desenvolvimento, de um documento; não há treino nem teste reservado.
 
 ## Abrir nesta máquina
 

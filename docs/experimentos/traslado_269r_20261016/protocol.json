@@ -1,0 +1,35 @@
+{
+  "workspace_revision": "20261016T172615_7ca3ab1c",
+  "dataset_role": "development",
+  "manifest_split_value": "exploratory",
+  "lines": 5,
+  "document_groups": 1,
+  "scope": "269r/body_first5; only the five human-reviewed body lines",
+  "reserved_test_available": false,
+  "future_test": "Reserve unseen regions/documents before further model/configuration selection; do not reuse these five lines as a final test.",
+  "human_reference_frozen_before_both_runs": true,
+  "runs": [
+    "baseline_trocr",
+    "latin_ppocrv5"
+  ],
+  "normalization": "Unicode NFC + whitespace collapse; preserve case/diacritics/punctuation; concatenate lines with one space",
+  "primary_measure": "Micro CER/WER over the single ordered complete region",
+  "controlled_variables": [
+    "human text",
+    "crop bytes",
+    "source image",
+    "line IDs",
+    "reading order",
+    "bbox_xyxy",
+    "coverage",
+    "evaluation code and normalization"
+  ],
+  "changed_variables": [
+    "recognizer weights, architecture and native preprocessing/decoding"
+  ],
+  "segmentation_evaluated": false,
+  "geometry_note": "Identical reused boxes; IoU=1 is a control check. Overlapping boxes also produce split/merge overlap counts; these are not detector performance.",
+  "human_review_note": "Assisted by published edition; reviewer confirmations and corrections retained verbatim. Historical pending notes are provenance, superseded only for this five-line block by validated status fields.",
+  "selection_note": "Latin model chosen for Portuguese support and CPU feasibility, without threshold/dictionary correction or tuning on these outputs.",
+  "usable_automatic_reading_achieved": false
+}

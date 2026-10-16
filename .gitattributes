@@ -6,3 +6,16 @@ docs/revisao_humana/traslado_269r/revisions/snapshot_*.json text eol=lf
 data/manifests/traslado_269r/*.jsonl text eol=lf
 configs/traslado_269r* text eol=lf
 docs/revisao_humana/traslado_269r/preparacao.json text eol=lf
+# Bytes dos novos artefatos publicados devem coincidir com seus hashes no Git.
+docs/experimentos/traslado_269r_20261016/** -text
+docs/experimentos/traslado_269r_20261016/baseline_trocr/*.log whitespace=cr-at-eol
+docs/experimentos/traslado_269r_20261016/support/*.pdf binary
+src/paleographia/frozen_experiment.py text eol=lf
+src/paleographia/latin_ocr.py text eol=lf
+scripts/audit_traslado_experiment.py text eol=lf
+scripts/recognize_latin.py text eol=lf
+src/paleographia/recognition.py text eol=lf
+src/paleographia/evaluation.py text eol=lf
+src/paleographia/data.py text eol=lf
+src/paleographia/io.py text eol=lf
+src/paleographia/experiments.py text eol=lf

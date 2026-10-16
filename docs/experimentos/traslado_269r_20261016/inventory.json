@@ -1,0 +1,466 @@
+{
+  "schema": 1,
+  "algorithm": "SHA256 of exact file bytes",
+  "note": "inventory.json has no self-hash; Git records its bytes. Code hashes identify the execution implementation, not model quality.",
+  "files": [
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_reproduce.toml",
+      "sha256": "53e024cfec73af7159b087176ffd5a2c97734e40c8bb0765acb733475bea51d8",
+      "bytes": 1336
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/config.toml",
+      "sha256": "5b82c15505dd4c01da67607cf545615264299819a3e76bf0c7d3f343cd7c01c8",
+      "bytes": 1360
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/diagnostico.json",
+      "sha256": "334351859fae9506730290c9d0f748934f4260bc9658b40b476fb6e9d54346f3",
+      "bytes": 4371
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluate.log",
+      "sha256": "3fc7f9ef9322173d5a9ea1f0dd70f1b513a1402d2f4450b631c3851ff5705972",
+      "bytes": 2164
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluation/lines.jsonl",
+      "sha256": "2e0f9996e4a9e58e5676dc92c19c889d01b23d928ea50bbe23f5fd6da37f14df",
+      "bytes": 2508
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluation/metrics.json",
+      "sha256": "2c95d8369aa80ad921351358d409126f6b69c3fe590386fba50692b329707258",
+      "bytes": 2086
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluation/provenance.json",
+      "sha256": "ab33e47b958f36a3400305effd866e4934f7c7e43735d7768725390392b08021",
+      "bytes": 962
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluation/regions.jsonl",
+      "sha256": "3d9cb8ecda1bc1ffd891c343b186f9cb3f45badcaaacc3b0976d8f8ef32214bb",
+      "bytes": 904
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/frozen_reference.json",
+      "sha256": "c44a98bed903e8b33e7f4a59c73f1e93564b3e46b9345341cdc746d7d8507ca0",
+      "bytes": 801
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/predictions.jsonl",
+      "sha256": "b4a2a57d13668830d9d68315dde876b0a19ee11ef41087611db65fac8fd74ee2",
+      "bytes": 13936
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/predictions.provenance.json",
+      "sha256": "a5b020258ae25b584647413c7c319bdcf274c43bc35a8fe60ed6744c7e5390c6",
+      "bytes": 2275
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/predictions.run.json",
+      "sha256": "b312fb76fc8d8d2267b483d9930d38e269d5b8910f6457710d2f6c7bb7eba4fa",
+      "bytes": 2543
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/recognize.log",
+      "sha256": "25fb132482a346c1664d8a6d4df6059c98c3036bb937342bd87bbbfebe35db3a",
+      "bytes": 386
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/reference_validation.json",
+      "sha256": "48170a078cdcce65b0437df3e1034fd48d1134d1539ee5b54561da471ebdbfa2",
+      "bytes": 134
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/relatorio.md",
+      "sha256": "8e9bb71703da159c0d9f9013375a017ac6ead210fefc4824eca4e0749977af1d",
+      "bytes": 3320
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/split.log",
+      "sha256": "ec12ff174624b1925d3934a7250099dcfaf34408e6d026a9822af48209533990",
+      "bytes": 241
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/baseline_trocr/validate.log",
+      "sha256": "132c55672cd6dc159a48e31e6dbde96c79243d7bba57525aef40dc698ba2c6d8",
+      "bytes": 144
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/comparison.json",
+      "sha256": "03b5f1bea73ffe9dbad3451b17ecae061998b9a1ea0fb1618deea59536a1e564",
+      "bytes": 1103
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/configuration.json",
+      "sha256": "2d5606a757f675c6673fd67a61b6e691685f13147901d08f7b7a6cb18448a177",
+      "bytes": 1555
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/evaluation/lines.jsonl",
+      "sha256": "1f9842ae13f904d1fd730370beb6c5b9346bea29bdccfbb28a5a38086a732204",
+      "bytes": 2403
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/evaluation/metrics.json",
+      "sha256": "8b18eeb98cbd6086df3443dd8c4afae2a196123cdb018b00888125abcce451e6",
+      "bytes": 2101
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/evaluation/provenance.json",
+      "sha256": "c9955e19a4cb099f844302f06259eb39d35713d8a2b623c23eadd477fe7dd0fa",
+      "bytes": 940
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/evaluation/regions.jsonl",
+      "sha256": "f86e22d89925451972b9945f63b46ec9a2fa03e03573e51c9a541801ef583db7",
+      "bytes": 828
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/model_source.json",
+      "sha256": "78005a69bc71a937ab17eca5ea1b17fd3b24d1017772b5b8a984221bd4fd205b",
+      "bytes": 627
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/predictions.jsonl",
+      "sha256": "0e7db831918c23385c03088ecf5c90e2617ba4837c755cb3f87d111033c9178f",
+      "bytes": 8897
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/predictions.provenance.json",
+      "sha256": "5e8adcc5af668005f8dfe67cf0b3e0ea5ad09cc3ea2b73b913821c3559739738",
+      "bytes": 647
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/predictions.run.json",
+      "sha256": "5f536b751160bd2a528fc374b4012cade441963956dd98225820b98b843c91a2",
+      "bytes": 990
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/protocol.json",
+      "sha256": "08739452cd798f987f3319f3b79fa2ad136fdf4d6505d97017fd5fb145d1d64b",
+      "bytes": 1666
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/README.md",
+      "sha256": "455bd32d498110bd4081844ecc3fd46146c2ae0adca3fb8d84f9564bd9ee3228",
+      "bytes": 9968
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/catalogo/lines.jsonl",
+      "sha256": "f5c54aaa8b5e31742112946c967012304f47a4f0cb28550e5163bffdb096cc02",
+      "bytes": 20448
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/catalogo/pages.jsonl",
+      "sha256": "3d92095d16b2dbb87fb89e43daa5e4d6a2e5d20e0bf14b310f5dd6d2dcd23147",
+      "bytes": 2147
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/catalogo/predictions.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/catalogo/provenance.json",
+      "sha256": "cba13936d291ee20320916903be21718d45d4c1cf346a88fc0199fdd1b66ce6c",
+      "bytes": 98
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/clarificacoes.json",
+      "sha256": "8fd29b6f19641b0080b6a7b1199fa044876c280d1c3542566127f9443c4d0a25",
+      "bytes": 1365
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/confirmacao_pagina_cobertura.json",
+      "sha256": "d31d4eb13fda0fa03f10ee66055537a1a69cc53efd3498ed76b112fe9257483d",
+      "bytes": 775
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/linhas_exploratorias.jsonl",
+      "sha256": "ec6496a24377fee3f178fc8424844ac10fb92a946618821461463cc1150067b0",
+      "bytes": 20493
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/linhas_exploratorias.protocol.json",
+      "sha256": "53ba54ea568da19d7273634ac57b94b6e99b7a7c05ff1680443e19caabdc1f5a",
+      "bytes": 230
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/snapshots/snapshot_6bd59b5d535ae5f414f205c08d4163ef019c3dae2d41dda33659c6e6aec51a0c.json",
+      "sha256": "6bd59b5d535ae5f414f205c08d4163ef019c3dae2d41dda33659c6e6aec51a0c",
+      "bytes": 27429
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/validacao_referencia.json",
+      "sha256": "f93a99baca77e07a2e3e2b22d8931e480b329163b6b1a3644345266c0df3cdc5",
+      "bytes": 242
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/support/edition.pdf",
+      "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+      "bytes": 177383
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_01.png",
+      "sha256": "bf9bfd65b70bf59001d33860ca032c9c10d64ae85eefb986fa562d5a0e052385",
+      "bytes": 124963
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_02.png",
+      "sha256": "61f934eaba26e141ef19387c44c48b5fdc8266c4e942ce5b736e934507ba23b4",
+      "bytes": 98103
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_03.png",
+      "sha256": "9394efae96505f40e5745967fa96c84d00d13e3bb2f32e299b90aaf1de10fb45",
+      "bytes": 113011
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_04.png",
+      "sha256": "8cdfd498804d6a2bb509039ace9691ba5379a40a7948268792a6bd41a51b9c7f",
+      "bytes": 114309
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_05.png",
+      "sha256": "e0f8716dc4eb2fbfcc30476ca674753be551459c87d763cf83f5b91b0051e3d4",
+      "bytes": 104656
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+      "sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+      "bytes": 342221
+    },
+    {
+      "path": "scripts/audit_traslado_experiment.py",
+      "sha256": "5ff3c88a33f4465f0eb80ffae9ee57cab118ba95e8ed9a083fd3bbb2913e05e0",
+      "bytes": 911
+    },
+    {
+      "path": "scripts/recognize_latin.py",
+      "sha256": "74b175c4488734814f60c763cfbd55a96561e3a93b1f85f47a120c2a20723187",
+      "bytes": 1903
+    },
+    {
+      "path": "src/paleographia/data.py",
+      "sha256": "05ef98ce45924f9930245c90a82bbf42bf017463144a1658eb98f57922160c27",
+      "bytes": 16458
+    },
+    {
+      "path": "src/paleographia/evaluation.py",
+      "sha256": "96995e52c18eb302127a16698ac07cd3872930b331c10adc3b1e938e09b07efd",
+      "bytes": 8316
+    },
+    {
+      "path": "src/paleographia/experiments.py",
+      "sha256": "2de5b4b745eb25e0c289ee5be026e1e55015d4c39dfaa5262c9692894c35d942",
+      "bytes": 6327
+    },
+    {
+      "path": "src/paleographia/frozen_experiment.py",
+      "sha256": "a7ab16506afd14490caaf5d7d413c61f429eb248762934f2e6e844f41ef0e6cb",
+      "bytes": 6114
+    },
+    {
+      "path": "src/paleographia/io.py",
+      "sha256": "7b0219024494ae7fca5d34b625777978db7af821d7feaff1fc16360ef869c1a7",
+      "bytes": 3176
+    },
+    {
+      "path": "src/paleographia/latin_ocr.py",
+      "sha256": "fd4bf549fbd21a92bdf5e07248697d53d2ce4411ef233c6589155d81596a27f8",
+      "bytes": 5302
+    },
+    {
+      "path": "src/paleographia/recognition.py",
+      "sha256": "108b53551c69dcadacc92951dba2bbb89a5bbaf63a78a01273fac52ab0f22cf8",
+      "bytes": 9109
+    }
+  ],
+  "original_to_published": [
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/catalogo/lines.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/catalogo/lines.jsonl",
+      "sha256": "f5c54aaa8b5e31742112946c967012304f47a4f0cb28550e5163bffdb096cc02"
+    },
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/catalogo/pages.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/catalogo/pages.jsonl",
+      "sha256": "3d92095d16b2dbb87fb89e43daa5e4d6a2e5d20e0bf14b310f5dd6d2dcd23147"
+    },
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/catalogo/predictions.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/catalogo/predictions.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/catalogo/provenance.json",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/catalogo/provenance.json",
+      "sha256": "cba13936d291ee20320916903be21718d45d4c1cf346a88fc0199fdd1b66ce6c"
+    },
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/confirmacao_pagina_cobertura.json",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/confirmacao_pagina_cobertura.json",
+      "sha256": "d31d4eb13fda0fa03f10ee66055537a1a69cc53efd3498ed76b112fe9257483d"
+    },
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/linhas_exploratorias.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/linhas_exploratorias.jsonl",
+      "sha256": "ec6496a24377fee3f178fc8424844ac10fb92a946618821461463cc1150067b0"
+    },
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/linhas_exploratorias.protocol.json",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/linhas_exploratorias.protocol.json",
+      "sha256": "53ba54ea568da19d7273634ac57b94b6e99b7a7c05ff1680443e19caabdc1f5a"
+    },
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/snapshots/snapshot_6bd59b5d535ae5f414f205c08d4163ef019c3dae2d41dda33659c6e6aec51a0c.json",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/snapshots/snapshot_6bd59b5d535ae5f414f205c08d4163ef019c3dae2d41dda33659c6e6aec51a0c.json",
+      "sha256": "6bd59b5d535ae5f414f205c08d4163ef019c3dae2d41dda33659c6e6aec51a0c"
+    },
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T172615_7ca3ab1c/validacao_referencia.json",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/validacao_referencia.json",
+      "sha256": "f93a99baca77e07a2e3e2b22d8931e480b329163b6b1a3644345266c0df3cdc5"
+    },
+    {
+      "original": "data/processed/traslado_269r_revisoes/20261016T171333_ab9cbde2/clarificacoes.json",
+      "published": "docs/experimentos/traslado_269r_20261016/reference/clarificacoes.json",
+      "sha256": "8fd29b6f19641b0080b6a7b1199fa044876c280d1c3542566127f9443c4d0a25"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/config.toml",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/config.toml",
+      "sha256": "5b82c15505dd4c01da67607cf545615264299819a3e76bf0c7d3f343cd7c01c8"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/diagnostico.json",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/diagnostico.json",
+      "sha256": "334351859fae9506730290c9d0f748934f4260bc9658b40b476fb6e9d54346f3"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/evaluate.log",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluate.log",
+      "sha256": "3fc7f9ef9322173d5a9ea1f0dd70f1b513a1402d2f4450b631c3851ff5705972"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/evaluation/lines.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluation/lines.jsonl",
+      "sha256": "2e0f9996e4a9e58e5676dc92c19c889d01b23d928ea50bbe23f5fd6da37f14df"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/evaluation/metrics.json",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluation/metrics.json",
+      "sha256": "2c95d8369aa80ad921351358d409126f6b69c3fe590386fba50692b329707258"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/evaluation/provenance.json",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluation/provenance.json",
+      "sha256": "ab33e47b958f36a3400305effd866e4934f7c7e43735d7768725390392b08021"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/evaluation/regions.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/evaluation/regions.jsonl",
+      "sha256": "3d9cb8ecda1bc1ffd891c343b186f9cb3f45badcaaacc3b0976d8f8ef32214bb"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/frozen_reference.json",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/frozen_reference.json",
+      "sha256": "c44a98bed903e8b33e7f4a59c73f1e93564b3e46b9345341cdc746d7d8507ca0"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/predictions.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/predictions.jsonl",
+      "sha256": "b4a2a57d13668830d9d68315dde876b0a19ee11ef41087611db65fac8fd74ee2"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/predictions.provenance.json",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/predictions.provenance.json",
+      "sha256": "a5b020258ae25b584647413c7c319bdcf274c43bc35a8fe60ed6744c7e5390c6"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/predictions.run.json",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/predictions.run.json",
+      "sha256": "b312fb76fc8d8d2267b483d9930d38e269d5b8910f6457710d2f6c7bb7eba4fa"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/recognize.log",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/recognize.log",
+      "sha256": "25fb132482a346c1664d8a6d4df6059c98c3036bb937342bd87bbbfebe35db3a"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/reference_validation.json",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/reference_validation.json",
+      "sha256": "48170a078cdcce65b0437df3e1034fd48d1134d1539ee5b54561da471ebdbfa2"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/relatorio.md",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/relatorio.md",
+      "sha256": "8e9bb71703da159c0d9f9013375a017ac6ead210fefc4824eca4e0749977af1d"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/split.log",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/split.log",
+      "sha256": "ec12ff174624b1925d3934a7250099dcfaf34408e6d026a9822af48209533990"
+    },
+    {
+      "original": "experiments/traslado_269r_20261016T172615_7ca3ab1c/validate.log",
+      "published": "docs/experimentos/traslado_269r_20261016/baseline_trocr/validate.log",
+      "sha256": "132c55672cd6dc159a48e31e6dbde96c79243d7bba57525aef40dc698ba2c6d8"
+    },
+    {
+      "original": "experiments/traslado_269r_latin_20261016/evaluation/lines.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/evaluation/lines.jsonl",
+      "sha256": "1f9842ae13f904d1fd730370beb6c5b9346bea29bdccfbb28a5a38086a732204"
+    },
+    {
+      "original": "experiments/traslado_269r_latin_20261016/evaluation/metrics.json",
+      "published": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/evaluation/metrics.json",
+      "sha256": "8b18eeb98cbd6086df3443dd8c4afae2a196123cdb018b00888125abcce451e6"
+    },
+    {
+      "original": "experiments/traslado_269r_latin_20261016/evaluation/provenance.json",
+      "published": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/evaluation/provenance.json",
+      "sha256": "c9955e19a4cb099f844302f06259eb39d35713d8a2b623c23eadd477fe7dd0fa"
+    },
+    {
+      "original": "experiments/traslado_269r_latin_20261016/evaluation/regions.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/evaluation/regions.jsonl",
+      "sha256": "f86e22d89925451972b9945f63b46ec9a2fa03e03573e51c9a541801ef583db7"
+    },
+    {
+      "original": "experiments/traslado_269r_latin_20261016/predictions.jsonl",
+      "published": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/predictions.jsonl",
+      "sha256": "0e7db831918c23385c03088ecf5c90e2617ba4837c755cb3f87d111033c9178f"
+    },
+    {
+      "original": "experiments/traslado_269r_latin_20261016/predictions.provenance.json",
+      "published": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/predictions.provenance.json",
+      "sha256": "5e8adcc5af668005f8dfe67cf0b3e0ea5ad09cc3ea2b73b913821c3559739738"
+    },
+    {
+      "original": "experiments/traslado_269r_latin_20261016/predictions.run.json",
+      "published": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/predictions.run.json",
+      "sha256": "5f536b751160bd2a528fc374b4012cade441963956dd98225820b98b843c91a2"
+    },
+    {
+      "original": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "published": "docs/experimentos/traslado_269r_20261016/support/edition.pdf",
+      "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65"
+    },
+    {
+      "original": "models/latin_PP-OCRv5_mobile_rec/provenance.json",
+      "published": "docs/experimentos/traslado_269r_20261016/latin_ppocrv5/model_source.json",
+      "sha256": "78005a69bc71a937ab17eca5ea1b17fd3b24d1017772b5b8a984221bd4fd205b"
+    }
+  ],
+  "restore_support": [
+    {
+      "original": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "published": "docs/experimentos/traslado_269r_20261016/support/edition.pdf",
+      "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65"
+    }
+  ]
+}

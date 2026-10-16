@@ -1,5 +1,14 @@
 # Estado do projeto para revisão
 
+**Estado mais recente — 16/10/2026:** o usuário concluiu a conferência das cinco
+linhas do corpo do Traslado 269r, com texto, geometria, correspondência de página
+e cobertura completa somente do bloco. A [entrega experimental](experimentos/traslado_269r_20261016/README.md)
+publica essa referência, confirmações, snapshot, configuração, saídas, métricas
+e hashes das duas execuções. TrOCR: CER/WER 80,58%/100%; PP-OCRv5 latino:
+57,02%/95,56%. Ainda não há leitura automática aproveitável, treino ou teste
+reservado. As cinco linhas são desenvolvimento; o catálogo de 1831 permanece
+pendente. Os parágrafos seguintes registram etapas anteriores da preparação.
+
 Preparação do Traslado concluída em 16/10/2026: cinco linhas candidatas do
 269r podem ser abertas em workspace próprio no editor, com apoio publicado
 de somente leitura e texto humano vazio. As confirmações parciais foram
