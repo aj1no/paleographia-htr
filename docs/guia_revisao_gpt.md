@@ -1,5 +1,14 @@
 # Estado do projeto para revisão
 
+**Encerramento da sessão de 16/10/2026:** o Traslado 269r tem **15 linhas no
+editor: 10 validadas e 5 pendentes**. O usuário confirmou a cobertura completa
+somente dos blocos 1–5 e 6–10. As linhas 11–15 têm recortes e sugestões reais
+do PP-OCRv6, com os campos humanos vazios e a cobertura pendente. O próximo
+passo é retomar a conferência na linha 11. A [sessão publicada](revisao_humana/traslado_269r/sessao_20261016/README.md)
+inclui os manifests atuais, 15 recortes, predições, configuração, histórico
+integral recuperável e verificações por hash/pixels. Não houve novas métricas
+ou treino. Os parágrafos abaixo registram as etapas anteriores.
+
 **Atualização mais recente — PP-OCRv6:** o [novo reconhecedor e sua integração](experimentos/traslado_269r_ppocrv6_20261016/README.md)
 foram executados nas mesmas cinco linhas: CER **30/242 = 12,40%**, WER
 **23/45 = 51,11%**, sem falhas. A proposta recupera as frases, com erros de
