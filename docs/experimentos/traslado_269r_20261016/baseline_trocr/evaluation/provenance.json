@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-10-16T17:28:37.136740+00:00",
+  "config": {},
+  "commit": "498d47a646a291b1cb06b323e89973e99a39b782",
+  "working_tree_dirty": false,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "versions": {
+    "paleographia": "0.2.0",
+    "Pillow": "11.3.0",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "4.12.0.88",
+    "torch": "2.7.1",
+    "transformers": "4.57.1",
+    "jiwer": "4.0.0",
+    "fastapi": "0.116.1"
+  },
+  "manifests": {
+    "data\\processed\\traslado_269r_revisoes\\20261016T172615_7ca3ab1c\\linhas_exploratorias.jsonl": "ec6496a24377fee3f178fc8424844ac10fb92a946618821461463cc1150067b0",
+    "experiments\\traslado_269r_20261016T172615_7ca3ab1c\\predictions.jsonl": "b4a2a57d13668830d9d68315dde876b0a19ee11ef41087611db65fac8fd74ee2",
+    "data\\processed\\traslado_269r_revisoes\\20261016T172615_7ca3ab1c\\catalogo\\pages.jsonl": "3d92095d16b2dbb87fb89e43daa5e4d6a2e5d20e0bf14b310f5dd6d2dcd23147"
+  }
+}

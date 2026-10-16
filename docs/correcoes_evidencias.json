@@ -1,0 +1,38 @@
+{
+  "data": "2026-10-15",
+  "natureza": "Verificação de software com imagens e reconhecedor sintéticos, exclusivos de teste; não são resultados de HTR.",
+  "particao_invalida": {
+    "estado": "not_executed",
+    "chamadas_segmentacao_ou_reconhecimento": 0,
+    "validacao_global": false,
+    "validacao_selecao": true,
+    "validade_final": false,
+    "motivo": "Referências/splits não aptos; Catálogo completo: l_independent: vazamento entre conjuntos por ('group', 'doc1831')."
+  },
+  "particao_valida": {
+    "estado": "executed",
+    "metodos": {
+      "opencv": "executed",
+      "kraken": "executed",
+      "human_crops": "executed"
+    },
+    "grupos_na_selecao": 1,
+    "inicializacoes_reconhecedor_teste": 1,
+    "segmentadores_substitutos": [
+      "opencv",
+      "kraken"
+    ],
+    "linha_pendente_fora_da_selecao_aceita": true
+  },
+  "preservacao": {
+    "arquivos_anteriores_conferidos": 274,
+    "arquivos_anteriores_alterados": [],
+    "catalogo_folios": 3,
+    "recortes_candidatos": 94,
+    "exemplos_repertorio": 13,
+    "confirmacoes_parciais": 6,
+    "linhas_completas_validadas": 0,
+    "revisao_workspace": "20261015T152646_ce045fe6",
+    "sugestoes_automaticas_habilitadas": false
+  }
+}

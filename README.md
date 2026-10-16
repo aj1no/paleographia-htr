@@ -1,71 +1,55 @@
-# PaleographIA: Transcription System for Jundiaí's Historical Archive
+# PaleographIA — transcrição assistida de manuscritos
 
-*[Ler em Português](README.pt-br.md)*
+Piloto local para importar imagens, conferir recortes, registrar revisão humana e
+construir um repertório paleográfico rastreável. A interface de revisão e suas
+mensagens são apresentadas em português.
 
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![License MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/aj1no/paleographia-htr/ci.yml?branch=main&label=CI&style=flat-square)](https://github.com/aj1no/paleographia-htr/actions)
+O catálogo reúne três fólios candidatos de 1831 e 94 recortes pendentes. O
+repertório do fólio 100 reto contém 13 exemplos, com seis confirmações parciais
+do usuário. Nesse catálogo de 1831, nenhuma linha foi integralmente validada.
+“Hum” permanece como leitura provável.
 
-PaleographIA is a specialized high-performance HTR (Handwritten Text Recognition) system designed specifically for the historical documentation of Jundiaí (1657 - 1889). 
+A revisão do Traslado do Auto de Criação da Vila começou pelo fólio 269 reto,
+com 24 linhas candidatas da edição. **Cinco linhas do corpo foram integralmente
+conferidas pelo usuário**, incluindo geometria, correspondência e cobertura
+somente desse bloco. O
+[caderno do Traslado](docs/revisao_humana/traslado_269r/comparacao.md) inclui
+imagens e histórico da preparação. A [referência congelada e comparação de
+reconhecedores](docs/experimentos/traslado_269r_20261016/README.md) publica
+manifests, configurações, predições, métricas, hashes e auditoria offline.
+Na mesma amostra de desenvolvimento, TrOCR teve CER/WER de 80,58%/100% e
+PP-OCRv5 latino, 57,02%/95,56%.
 
-The system leverages state-of-the-art AI architecture (TrOCR) to decipher irregular calligraphy, paper textures from the 17th-19th centuries, and archaic Portuguese terminology.
+O [PP-OCRv6 medium com Kraken 7.1](docs/experimentos/traslado_269r_ppocrv6_20261016/README.md)
+reduziu CER/WER para **12,40%/51,11%**, nas mesmas cinco linhas, sem falhas.
+Suas sugestões estão integradas experimentalmente ao editor do Traslado e
+exigem correção humana. O [runtime Linux separado](runtime/kraken_ppocrv6/README.md)
+preserva o ambiente Windows. **TrOCR foi desativado para novas execuções**;
+predições e cálculos históricos permanecem auditáveis.
 
----
-
-## Key Features
-
-### Deep Calibration for Portuguese Paleography
-Unlike generic OCRs, PaleographIA uses a specialized fine-tuning process to understand the nuances of 300-year-old Italian paper texture and the specific cursive styles of regional scribes.
-- **Literal Decoding (Greedy Search):** Forced character-by-character interpretation to prevent English-biased hallucinations.
-- **Noise Filtering:** Advanced CV2 filters to ignore vergê paper textures and ink stains.
-
-### Hardware Stabilization (CPU Safe Mode)
-Designed to run on notebook hardware (16GB RAM / GTX 1050 Ti) without causing system crashes or overheating.
-- **Thread Limiting:** Controlled processing power to prevent TDR (Timeout Detection and Recovery) errors.
-- **Cooling Pauses:** Wait times between line inferences to keep hardware temperatures stable.
-
-### Expert-First Interface
-A distraction-free, high-contrast dark environment designed for long professional transcription sessions.
-- **Intelligent Sidebar:** Real-time editor with horizontal/vertical manuscript sync.
-- **Segmented Visualization:** Visual overlays on the document to track transcription progress line-by-line.
-
----
-
-## Project Structure
-
-```text
-├── client/          # Next.js Frontend (Expert UI)
-├── server/          # FastAPI Backend (AI Inference)
-├── data/
-│   ├── raw/         # Historical scans
-│   └── processed/   # Segmented lines for training
-├── models/          # Specialized TrOCR weights (TrOCR-Jundiahy)
-└── scripts/         # Automated training & processing scripts
+```powershell
+# Python 3.11 ou 3.12
+python -m pip install -e ".[test]"
+python -m pytest -q
+python -m paleographia serve --host 127.0.0.1 --port 8000
 ```
 
----
+Abra [a revisão local](http://127.0.0.1:8000) ou
+[o repertório](http://127.0.0.1:8000/repertorio).
+Para o Traslado com PP-OCRv6, use `--config configs/traslado_269r.toml --port 8011`
+e abra [o editor experimental](http://127.0.0.1:8011/).
+Para reconstruir imagens e inicializar um checkout novo, siga o
+[guia de execução](docs/runbook.md). A instalação básica e os testes não baixam
+pesos nem exigem GPU.
 
-## Getting Started
+- [Guia para revisar o estado atual do projeto](docs/guia_revisao_gpt.md)
+- [Acervo de Jundiaí e proposta de mineração](docs/mineracao_acervo_jundiai.md)
+- [Instruções completas](README.pt-br.md)
+- [Relatório de execução e limites](docs/execution_report.md)
+- [Repertório e exemplos visuais](docs/repertorio_100r.md)
+- [Auditoria](docs/audit.md), [política de transcrição](docs/transcription_policy.md)
+  e [protocolo de avaliação](docs/evaluation_protocol.md)
 
-1. **Start the Backend:**
-   Run the safe starter: `.\start_safe.bat`
-   
-2. **Start the Frontend:**
-   ```bash
-   cd client
-   npm run dev
-   ```
-
-3. **Transcription:**
-   Upload a scan, wait for the AI segmentation, and use the Smart Editor to finalize the transcription.
-
----
-
-## History & Context
-This project was developed to preserve and digitalize the history of Jundiaí, providing historians with a powerful assisted transcription tool that respects the complexity of original manuscripts while using modern AI to speed up the process.
-
----
-*Developed for the Jundiaí Historical Archive (1615 - 2026).*
+Código sob MIT. Os documentos históricos e suas edições têm condições de uso
+independentes. Os arquivos originais e o ponteiro do cliente legado foram
+preservados; a interface atual está integrada ao servidor local.

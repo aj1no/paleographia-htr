@@ -1,0 +1,60 @@
+[paths]
+pages = "docs/experimentos/traslado_269r_20261016/reference/catalogo/pages.jsonl"
+lines = "docs/experimentos/traslado_269r_20261016/reference/linhas_exploratorias.jsonl"
+workspace = "data/workspace_traslado_269r"
+
+[recognition]
+backend = "kraken_ppocrv6"
+model = "models/kraken_ppocrv6_medium/medium.safetensors"
+sha256 = "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9"
+docker_image = "paleographia-kraken:7.1.0-cpu"
+docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+device = "cpu"
+precision = "float32"
+timeout_seconds = 180
+
+[presentation]
+language = "pt-BR"
+# O teste com a edição conhecida falhou. Não exibir resultados brutos como
+# transcrição enquanto um modelo adequado não for avaliado neste acervo.
+automatic_transcription_enabled = false
+
+[generation]
+max_new_tokens = 128
+num_beams = 1
+do_sample = false
+repetition_penalty = 1.0
+
+[segmentation]
+detector = "projection"
+horizontal_margin_ratio = 0.06
+smoothing_ratio = 0.003
+peak_threshold_std = 0.2
+min_peak_distance_ratio = 0.019
+block_size = 31
+threshold_c = 15
+kernel_width_ratio = 0.025
+kernel_height = 3
+iterations = 1
+min_width_ratio = 0.12
+min_height_ratio = 0.002
+max_height_ratio = 0.12
+padding = 4
+
+[neural]
+weights = "models/kraken/segmentation.mlmodel"
+device = "cpu"
+
+[experiment]
+seed = 1831
+split = "exploratory"
+iou_threshold = 0.5
+overlap_threshold = 0.2
+
+[training]
+seed = 1831
+max_target_length = 128
+epochs = 3
+batch_size = 1
+gradient_accumulation_steps = 4
+learning_rate = 0.00005

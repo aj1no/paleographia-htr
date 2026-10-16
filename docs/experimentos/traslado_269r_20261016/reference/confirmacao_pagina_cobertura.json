@@ -1,0 +1,21 @@
+{
+  "source": "Explicit user replies in this conversation",
+  "answers": {
+    "page_correspondence": "Confirmo a correspondência entre imagem, documento e fólio 269r",
+    "region_coverage": "Confirmo a cobertura completa somente desse bloco de cinco linhas"
+  },
+  "before_revision": "20261016T171333_ab9cbde2",
+  "after_revision": "20261016T172615_7ca3ab1c",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "page_id": "p_traslado_269r",
+  "region_id": "body_first5",
+  "region_bbox_xyxy": [
+    12,
+    540,
+    1060,
+    834
+  ],
+  "scope": "Only the first-five-lines block; does not validate the other 19 candidate body lines or the whole page.",
+  "page_reviewed_at": "2026-10-16T17:26:15.557772+00:00",
+  "region_reviewed_at": "2026-10-16T17:26:15.557772+00:00"
+}

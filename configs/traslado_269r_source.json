@@ -1,0 +1,74 @@
+{
+  "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+  "width": 1166,
+  "height": 1873,
+  "page_id": "p_traslado_269r",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "region_id": "body_first5",
+  "source_url": "https://jundiai.sismu.app/obra/102201/traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+  "comparison_source": "docs/revisao_humana/traslado_269r/comparacao.json",
+  "planned_reviewer": "Rodolfo Vinícius Cima Takemoto",
+  "dates": {
+    "described_act": "1656-12-14",
+    "copy_heading_year": 1767,
+    "review_status": "pending_review",
+    "note": "Data do ato e ano indicado para a cópia são funções distintas; cabeçalho ainda sem validação integral."
+  },
+  "edition": {
+    "path": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+    "archive_member": {
+      "archive": "Transcrições.rar",
+      "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+      "original_name": "Transcrições/Traslado do Auto de Criação da Vila de Jundiahy/Transcrição..pdf",
+      "output": "6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65"
+    },
+    "credits": "Ana Caroline C. Miranda, paleógrafa responsável; Thiago Paschoal, paleógrafo revisor. Memorabilia Paleografia e Diplomática."
+  },
+  "boxes": [
+    [
+      12,
+      540,
+      1060,
+      628
+    ],
+    [
+      95,
+      612,
+      1060,
+      684
+    ],
+    [
+      85,
+      658,
+      1060,
+      739
+    ],
+    [
+      75,
+      712,
+      1060,
+      793
+    ],
+    [
+      95,
+      760,
+      1060,
+      834
+    ]
+  ],
+  "region_bbox_xyxy": [
+    12,
+    540,
+    1060,
+    834
+  ],
+  "geometry_notes": "Caixas propostas por inspeção visual, com sobreposição de hastes/descendentes vizinhos. O floreio da inicial A se prolonga acima do bloco; conferir o limite superior na página inteira antes de aprovar a geometria. A região candidata cobre somente as cinco linhas selecionadas, sem afirmar cobertura completa ou incluir o restante do corpo como referência.",
+  "transform_id": "manual_candidate_269r_first5_v1",
+  "pages_path": "data/manifests/traslado_269r/pages.jsonl",
+  "lines_path": "data/manifests/traslado_269r/lines.jsonl",
+  "image_directory": "docs/revisao_humana/traslado_269r/images/linhas",
+  "context_image": "docs/revisao_humana/traslado_269r/images/bloco_5_linhas.png",
+  "overlay_image": "docs/revisao_humana/traslado_269r/images/bloco_5_caixas.png"
+}

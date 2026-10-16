@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "git_revision": "632e8ff71eef2913f003cece810f834aa1ca4382",
+  "published_digest_basis": "Exact Git blob bytes read with git show, not checkout bytes.",
+  "legacy_identifier_basis": "First 16 SHA-256 hex characters of UTF-8 JSON serialized with CRLF. Names and blobs preserved.",
+  "new_snapshot_contract": "UTF-8; sorted keys; ensure_ascii=False; indent=2; allow_nan=False; LF; exactly one final LF; full SHA-256 of written bytes.",
+  "snapshots": [
+    {
+      "path": "docs/revisao_humana/traslado_269r/revisions/comparacao_0935d14c8a8d68fc.json",
+      "published_sha256": "30ce8e8e5c2b532f18caa19c8a0e5460386ac99549902531d6a06ad6f88b8a19",
+      "published_bytes": 16901,
+      "legacy_crlf_sha256": "0935d14c8a8d68fc1b459f670f4c6bc1d145a8b798ad6226e309abdbf65a7ce6"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/revisions/comparacao_2c0858324d48946f.json",
+      "published_sha256": "b6b4dc89ced15974cdee6300dcfe9e841caf773ce5833ee4fa70f9a15f87e06c",
+      "published_bytes": 15709,
+      "legacy_crlf_sha256": "2c0858324d48946fdcbdf052e47869708be0b081589d4aa45318ee399c5731e2"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/revisions/comparacao_540a22e315ee0ae3.json",
+      "published_sha256": "5f7cfbba2d50509ec8fa05d2bbdd4e82b84eeef8d8aa0f3a508ce4a648dd33f3",
+      "published_bytes": 21022,
+      "legacy_crlf_sha256": "540a22e315ee0ae34af5f761d0eca6ec87b63079ded42a247be8b96962988b0e"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/revisions/comparacao_86f0432762b8a3ea.json",
+      "published_sha256": "272a81e6c6d8518c660c7f63c919a9d53e381bbb78a796dfb669f5d9e7235142",
+      "published_bytes": 22871,
+      "legacy_crlf_sha256": "86f0432762b8a3eaf976f4e3bcf7804076a15d946d7dd5d5c99a3b727ce30cfa"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/revisions/comparacao_9ec63d18a1763b57.json",
+      "published_sha256": "6bb675e776c83c6645cbed86a6974dc70b4177fe3d87ce0ab53e623072995e4e",
+      "published_bytes": 24746,
+      "legacy_crlf_sha256": "9ec63d18a1763b579d8b3fc3d84cdf681910fa5b946fe1d78ee66507aa26dc68"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/revisions/comparacao_c1c3b79365c8e4bb.json",
+      "published_sha256": "46e412264968d6a12d0c78e5432602650f5ff7cd782e86e9213f2346e4d3f79a",
+      "published_bytes": 14744,
+      "legacy_crlf_sha256": "c1c3b79365c8e4bbd6421f550a99bffbe7c98d517495ce71c62c2da41cc61f61"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/revisions/comparacao_dab4ffe9d586c05b.json",
+      "published_sha256": "18618ede4be7d8de8bbce8e641a646456af1dd786531e53d696a22a4d083db11",
+      "published_bytes": 19103,
+      "legacy_crlf_sha256": "dab4ffe9d586c05b7c823ae27ab4b883f9a6787e1a5df0045ac3c7c81231030d"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/revisions/comparacao_dbac99de1653f476.json",
+      "published_sha256": "bb1ac85e9e26dfe883b434b7e9bb82e6b59ff6ace51bc9f727a70b9d56ead0f8",
+      "published_bytes": 13192,
+      "legacy_crlf_sha256": "dbac99de1653f4765d9af591247d42435ccd155253876097b13c2e1069fc0b41"
+    }
+  ]
+}

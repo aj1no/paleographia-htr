@@ -1,0 +1,10 @@
+{
+  "model_id": "PaddlePaddle/latin_PP-OCRv5_mobile_rec",
+  "conversion": "RapidAI/RapidOCR",
+  "registry_revision": "7cfd3d9ef786a2e538ca30df700325e72e85b5f5",
+  "registry_url": "https://raw.githubusercontent.com/RapidAI/RapidOCR/7cfd3d9ef786a2e538ca30df700325e72e85b5f5/python/rapidocr/default_models.yaml",
+  "registry_sha256": "90e0159dead16c21adbf000014a46043c981ae097f041d92d8b19a52c2f2ed9a",
+  "url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.10.0/onnx/PP-OCRv5/rec/latin_PP-OCRv5_rec_mobile.onnx",
+  "sha256": "b20bd37c168a570f583afbc8cd7925603890efbcdc000a59e22c269d160b5f5a",
+  "bytes": 7904513
+}

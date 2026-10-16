@@ -1,0 +1,32 @@
+{
+  "legacy_rows": 542,
+  "missing_crops": 542,
+  "editorial_examples": [
+    {
+      "file_name": "codigo_de_posturas_-_1831_p001_p000.jpg",
+      "text": "Transcrição das Atas da Câmara Municipal - 1829 a 1833"
+    }
+  ],
+  "original_archives": [
+    {
+      "path": "data\\raw\\Photos-1-001.zip",
+      "sha256": "5114a5585aad3a26cc65ed055ada78e8fed11eedfa30850f457ca434742feffe"
+    },
+    {
+      "path": "data\\raw\\Photos-3-001 (1).zip",
+      "sha256": "183dd731a94d13827b49dec18fc80c7fd6f15128b3c2192afd45ae925e4964c9"
+    },
+    {
+      "path": "data\\raw\\Photos-3-001 (2).zip",
+      "sha256": "8e21ddef1ba67c54b78ad3d931f063423d460407150109cf51e13e7061c6e0a9"
+    },
+    {
+      "path": "data\\raw\\Photos-3-001.zip",
+      "sha256": "dec1165214d1c80f400b7ac4ae2b13c682223102f78b07fa8a9f0c09cfce9800"
+    },
+    {
+      "path": "data\\raw\\Transcrições.rar",
+      "sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d"
+    }
+  ]
+}
