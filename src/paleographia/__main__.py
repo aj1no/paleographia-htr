@@ -125,14 +125,19 @@ def dispatch(args):
         write_json(Path(args.output_dir)/"provenance.json", provenance(config, [args.pages]))
         return {"lines": len(rows), "review_status": "pending_review", "timings": timings}
     if name == "recognize":
-        from .recognition import TrOCRRecognizer, recognize_lines
+        from .recognition import recognize_lines
+        from .backends import create_recognizer
         from .data import require_valid
         from .experiments import provenance
         rows = read_jsonl(args.lines)
         require_valid(rows, root, "catalog")
         if not rows or any(not r.get("crop_image") or not r.get("bbox_xyxy") for r in rows):
             raise ValueError("Reconhecimento exige recortes de linha existentes com geometria.")
-        predictions = recognize_lines(rows, TrOCRRecognizer(config), args.output, root)
+        recognizer = create_recognizer(config, root)
+        try:
+            predictions = recognize_lines(rows, recognizer, args.output, root)
+        finally:
+            recognizer.close()
         write_json(Path(args.output).with_suffix(".provenance.json"), provenance(config, [args.lines]))
         failures = sum(p["status"] != "ok" for p in predictions)
         return {"predictions": len(predictions), "failures": failures, "valid": failures == 0}

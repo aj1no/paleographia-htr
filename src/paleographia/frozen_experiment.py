@@ -9,12 +9,24 @@ from .evaluation import evaluate
 from .io import read_jsonl, safe_path, sha256
 
 
+def artifact_for_hash(root, row):
+    """Old code can evolve; retain the exact implementation bytes in an archive."""
+    current = safe_path(root, row["path"])
+    if current.is_file() and sha256(current) == row["sha256"]:
+        return current
+    if row["path"].endswith(".py") and row["path"].startswith(("src/", "scripts/")):
+        archived = safe_path(root, "docs/experimentos/implementation_31997a4/"+row["path"])
+        if archived.is_file() and sha256(archived) == row["sha256"]:
+            return archived
+    return current
+
+
 def verify_files(root, bundle):
     root = Path(root)
     inventory = json.loads((Path(bundle)/"inventory.json").read_bytes())
     seen = set()
     for row in inventory["files"]:
-        path = safe_path(root, row["path"])
+        path = artifact_for_hash(root, row)
         if row["path"] in seen:
             raise ValueError("Inventário com caminho duplicado.")
         seen.add(row["path"])

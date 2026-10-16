@@ -1,6 +1,7 @@
 import io
 import json
 import zipfile
+from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
@@ -32,13 +33,22 @@ def create_app(root=None, config=None, recognizer=None):
     root = Path(root or Path.cwd()).resolve()
     config = config or load_config(root/"configs/pilot.toml")
     service = ReviewService(root, config, recognizer)
-    app = FastAPI(title="PaleographIA — revisão local")
+    @asynccontextmanager
+    async def lifespan(app):
+        try:
+            yield
+        finally:
+            close = getattr(service.recognizer, "close", None)
+            if close:
+                await run_in_threadpool(close)
+
+    app = FastAPI(title="PaleographIA — revisão local", lifespan=lifespan)
     app.state.service = service
 
     @app.exception_handler(ModelUnavailable)
     async def unavailable(request, exc):
         from fastapi.responses import JSONResponse
-        return JSONResponse(status_code=503, content={"detail": "O modelo de reconhecimento está indisponível. A revisão manual continua disponível.", "review_available": True})
+        return JSONResponse(status_code=503, content={"detail": str(exc), "review_available": True})
 
     @app.exception_handler(RequestValidationError)
     @app.exception_handler(ValidationError)

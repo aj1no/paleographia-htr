@@ -1,0 +1,121 @@
+{
+  "frozen_before_inference": true,
+  "dataset_role": "development",
+  "workspace_revision": "20261016T172615_7ca3ab1c",
+  "reference": "docs/experimentos/traslado_269r_20261016/reference/linhas_exploratorias.jsonl",
+  "pages": "docs/experimentos/traslado_269r_20261016/reference/catalogo/pages.jsonl",
+  "files": [
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/catalogo/pages.jsonl",
+      "sha256": "3d92095d16b2dbb87fb89e43daa5e4d6a2e5d20e0bf14b310f5dd6d2dcd23147"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_20261016/reference/linhas_exploratorias.jsonl",
+      "sha256": "ec6496a24377fee3f178fc8424844ac10fb92a946618821461463cc1150067b0"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_ppocrv6_20261016/config.toml",
+      "sha256": "ae2dfa2d9a3739f8c936e06adc00ec6e9f801edef14415dc374afd563171ab52"
+    },
+    {
+      "path": "src/paleographia/kraken_recognition_worker.py",
+      "sha256": "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a"
+    },
+    {
+      "path": "src/paleographia/kraken_recognition.py",
+      "sha256": "48126628f65b79737f8e6a5361494395c377104bb315981e3923e89334d3adcc"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_01.png",
+      "sha256": "bf9bfd65b70bf59001d33860ca032c9c10d64ae85eefb986fa562d5a0e052385"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_02.png",
+      "sha256": "61f934eaba26e141ef19387c44c48b5fdc8266c4e942ce5b736e934507ba23b4"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_03.png",
+      "sha256": "9394efae96505f40e5745967fa96c84d00d13e3bb2f32e299b90aaf1de10fb45"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_04.png",
+      "sha256": "8cdfd498804d6a2bb509039ace9691ba5379a40a7948268792a6bd41a51b9c7f"
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_05.png",
+      "sha256": "e0f8716dc4eb2fbfcc30476ca674753be551459c87d763cf83f5b91b0051e3d4"
+    }
+  ],
+  "crops": [
+    {
+      "line_id": "l_traslado_269r_body_01",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_01.png",
+      "sha256": "bf9bfd65b70bf59001d33860ca032c9c10d64ae85eefb986fa562d5a0e052385",
+      "pixel_sha256": "1d8966f9c6027aa96fd681304917cabf263b24fc202cc5f30ce3d519f343c7dc",
+      "bbox_xyxy": [
+        12,
+        540,
+        1060,
+        628
+      ],
+      "reading_order": 0
+    },
+    {
+      "line_id": "l_traslado_269r_body_02",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_02.png",
+      "sha256": "61f934eaba26e141ef19387c44c48b5fdc8266c4e942ce5b736e934507ba23b4",
+      "pixel_sha256": "9b1ad45cbfe022bd316e5988b6cfd52e053452912a3ae14304924c0b37ddc44a",
+      "bbox_xyxy": [
+        95,
+        612,
+        1060,
+        684
+      ],
+      "reading_order": 1
+    },
+    {
+      "line_id": "l_traslado_269r_body_03",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_03.png",
+      "sha256": "9394efae96505f40e5745967fa96c84d00d13e3bb2f32e299b90aaf1de10fb45",
+      "pixel_sha256": "c0fe856058db65ab0295825c9602b3f7bef94bdefb1f5077441fc4b48187106f",
+      "bbox_xyxy": [
+        85,
+        658,
+        1060,
+        739
+      ],
+      "reading_order": 2
+    },
+    {
+      "line_id": "l_traslado_269r_body_04",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_04.png",
+      "sha256": "8cdfd498804d6a2bb509039ace9691ba5379a40a7948268792a6bd41a51b9c7f",
+      "pixel_sha256": "9e40f69e7bbe2c3f6d64a8b43ba027a8bb22aaaf259d0c8f3053267c417cfe99",
+      "bbox_xyxy": [
+        75,
+        712,
+        1060,
+        793
+      ],
+      "reading_order": 3
+    },
+    {
+      "line_id": "l_traslado_269r_body_05",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_05.png",
+      "sha256": "e0f8716dc4eb2fbfcc30476ca674753be551459c87d763cf83f5b91b0051e3d4",
+      "pixel_sha256": "9b5276446a2146c1205556bb8952562fb7bd0e0e22bd30b6a12dd92e9a8cc680",
+      "bbox_xyxy": [
+        95,
+        760,
+        1060,
+        834
+      ],
+      "reading_order": 4
+    }
+  ],
+  "reference_not_passed_to_worker": true,
+  "no_new_segmentation": true,
+  "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+  "actual_model_height": 96,
+  "supersedes": "frozen_inputs.json: startup contract check only; no predictions were generated"
+}

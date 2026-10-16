@@ -6,7 +6,8 @@ from .data import validate
 from .evaluation import aggregate, counts
 from .experiments import provenance
 from .io import safe_path, write_json
-from .recognition import TrOCRRecognizer
+from .backends import create_recognizer
+from .recognition import ModelUnavailable
 
 
 def training_run(rows, pages, config, output_dir, root=Path.cwd(), execute=False, manifests=()):
@@ -22,7 +23,9 @@ def training_run(rows, pages, config, output_dir, root=Path.cwd(), execute=False
         write_json(output/"training.json", result)
         return result
     try:
-        recognizer = TrOCRRecognizer(config)
+        recognizer = create_recognizer(config, root)
+        if config.get("recognition", {}).get("backend") == "kraken_ppocrv6":
+            raise ModelUnavailable("Treinamento do backend Kraken não foi implementado neste piloto; use somente reconhecimento e revisão manual.")
         recognizer.load()
         processor, model = recognizer.processor, recognizer.model
         tokenizer = processor.tokenizer

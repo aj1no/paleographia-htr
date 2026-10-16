@@ -1,0 +1,67 @@
+{
+  "dataset_role": "development",
+  "region": "269r/body_first5",
+  "runs": {
+    "baseline_trocr": {
+      "characters": {
+        "substitutions": 151,
+        "deletions": 20,
+        "insertions": 24,
+        "hits": 71,
+        "reference_length": 242,
+        "errors": 195,
+        "rate": 0.8057851239669421
+      },
+      "words": {
+        "substitutions": 45,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 0,
+        "reference_length": 45,
+        "errors": 45,
+        "rate": 1.0
+      }
+    },
+    "latin_ppocrv5": {
+      "characters": {
+        "substitutions": 46,
+        "deletions": 90,
+        "insertions": 2,
+        "hits": 106,
+        "reference_length": 242,
+        "errors": 138,
+        "rate": 0.5702479338842975
+      },
+      "words": {
+        "substitutions": 24,
+        "deletions": 19,
+        "insertions": 0,
+        "hits": 2,
+        "reference_length": 45,
+        "errors": 43,
+        "rate": 0.9555555555555556
+      }
+    },
+    "kraken_ppocrv6_medium": {
+      "characters": {
+        "substitutions": 20,
+        "deletions": 9,
+        "insertions": 1,
+        "hits": 213,
+        "reference_length": 242,
+        "errors": 30,
+        "rate": 0.12396694214876033
+      },
+      "words": {
+        "substitutions": 17,
+        "deletions": 6,
+        "insertions": 0,
+        "hits": 22,
+        "reference_length": 45,
+        "errors": 23,
+        "rate": 0.5111111111111111
+      }
+    }
+  },
+  "usable_as_experimental_draft_on_this_block": true
+}

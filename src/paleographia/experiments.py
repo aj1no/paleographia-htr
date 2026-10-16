@@ -8,7 +8,8 @@ from pathlib import Path
 from .data import validate
 from .evaluation import evaluate
 from .io import now, sha256, write_json
-from .recognition import TrOCRRecognizer, recognize_lines
+from .recognition import recognize_lines
+from .backends import create_recognizer
 from .segmentation import segment_pages
 
 
@@ -66,7 +67,14 @@ def compare(pages, reference, config, output_dir, root=Path.cwd(), manifest_path
         results["reason"] = "Coberturas explícitas ausentes; defina-as antes de executar."
         write_json(output/"comparison.json", results)
         return results
-    recognizer = TrOCRRecognizer(config)
+    recognizer = create_recognizer(config, root)
+    if recognizer.status()["state"] in {"disabled", "unavailable"}:
+        results["reason"] = recognizer.status()["error"]
+        results["recognizer"] = recognizer.status()
+        results["methods"] = {m: {"status": "not_executed", "reason": results["reason"]}
+                              for m in ("opencv", "kraken", "human_crops")}
+        write_json(output/"comparison.json", results)
+        return results
     for method in ("opencv", "kraken", "human_crops"):
         start = time.perf_counter()
         try:
@@ -87,6 +95,9 @@ def compare(pages, reference, config, output_dir, root=Path.cwd(), manifest_path
         except Exception as exc:
             results["methods"][method] = {"status": "not_executed", "reason": str(exc), "elapsed_seconds": time.perf_counter()-start}
     results["recognizer"] = recognizer.status()
+    close = getattr(recognizer, "close", None)
+    if close:
+        close()
     successful = [m for m, r in results["methods"].items() if r["status"] == "executed"]
     results["status"] = "executed" if len(successful) == 3 else "partial" if successful else "not_executed"
     if all(m in successful for m in ("opencv", "kraken")):

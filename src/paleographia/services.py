@@ -10,7 +10,7 @@ from PIL import Image, UnidentifiedImageError
 
 from .data import Line, Page, bbox_valid, check_reviewer
 from .io import now, read_jsonl, relative, run_id, safe_path, sha256, write_json, write_jsonl
-from .recognition import TrOCRRecognizer
+from .backends import create_recognizer
 from .segmentation import crop_line, segment_pages
 
 
@@ -25,7 +25,7 @@ class ReviewService:
         self.config = config
         self.workspace = safe_path(self.root, config["paths"]["workspace"])
         self.lock = threading.RLock()
-        self.recognizer = recognizer or TrOCRRecognizer(config)
+        self.recognizer = recognizer or create_recognizer(config, self.root)
 
     def state(self):
         pointer = self.workspace / "current.json"

@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-10-16T18:32:32.186932+00:00",
+  "config": {},
+  "commit": "31997a428180d983d3f0093491daddbdcff90c34",
+  "working_tree_dirty": true,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "versions": {
+    "paleographia": "0.2.0",
+    "Pillow": "11.3.0",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "4.12.0.88",
+    "torch": "2.7.1",
+    "transformers": "4.57.1",
+    "jiwer": "4.0.0",
+    "fastapi": "0.116.1"
+  },
+  "manifests": {
+    "docs/experimentos/traslado_269r_20261016/reference/linhas_exploratorias.jsonl": "ec6496a24377fee3f178fc8424844ac10fb92a946618821461463cc1150067b0",
+    "docs/experimentos/traslado_269r_ppocrv6_20261016/predictions.jsonl": "de3727af7886b9e6ce9a2685e3f21223792095951b945124a1c9066a5f3454b2",
+    "docs/experimentos/traslado_269r_20261016/reference/catalogo/pages.jsonl": "3d92095d16b2dbb87fb89e43daa5e4d6a2e5d20e0bf14b310f5dd6d2dcd23147"
+  }
+}
