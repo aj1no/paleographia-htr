@@ -13,6 +13,8 @@ A revisão do Traslado do Auto de Criação da Vila começou pelo fólio 269 ret
 com 24 linhas candidatas da edição e confirmações humanas parciais. O
 [caderno do Traslado](docs/revisao_humana/traslado_269r/comparacao.md) inclui
 imagens e histórico; as linhas completas continuam pendentes de validação.
+As [cinco primeiras linhas do Traslado](docs/revisao_humana/traslado_269r/conferencia_bloco.md)
+já podem ser abertas no editor com configuração e workspace próprios.
 
 O TrOCR disponível foi executado em 3 recortes de diagnóstico e nos 32 recortes
 do 100r. As saídas foram inadequadas. A interface informa a indisponibilidade de

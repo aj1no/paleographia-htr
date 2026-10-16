@@ -52,6 +52,36 @@ def write_jsonl(path, rows):
     atomic_write(path, "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows))
 
 
+def deterministic_json_bytes(value):
+    """Snapshot contract: UTF-8, sorted keys, indent 2, finite JSON, one final LF."""
+    return (json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2,
+                       allow_nan=False) + "\n").encode("utf-8")
+
+
+def same_json_content(left, right):
+    """Semantic comparison is deliberately separate from byte integrity."""
+    return json.loads(left) == json.loads(right)
+
+
+def verify_digest(path, expected):
+    return sha256(path) == expected
+
+
+def write_snapshot(directory, value):
+    """Create a content-addressed immutable snapshot; never rewrite an existing one."""
+    content = deterministic_json_bytes(value)
+    digest = hashlib.sha256(content).hexdigest()
+    path = Path(directory) / ("snapshot_" + digest + ".json")
+    if path.exists():
+        if path.read_bytes() != content:
+            raise ValueError("Snapshot existente divergente; não foi sobrescrito.")
+    else:
+        atomic_write(path, content.decode("utf-8"))
+    if not verify_digest(path, digest):
+        raise ValueError("Bytes gravados não correspondem ao digest do snapshot.")
+    return path
+
+
 def atomic_write(path, text):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)

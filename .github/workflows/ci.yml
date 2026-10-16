@@ -12,6 +12,9 @@ jobs:
       TRANSFORMERS_OFFLINE: '1'
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The integrity regression reads the eight legacy blobs at their base commit.
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}

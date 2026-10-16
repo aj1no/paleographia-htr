@@ -12,6 +12,15 @@ Uma cobertura contém `region_id`, `bbox_xyxy`, `reference_source`, `reference_p
 
 ## Linha
 
+Edições paleográficas publicadas com intervenções editoriais podem usar
+`reference_kind="unknown"`, mantendo `text_diplomatic` e `text_modernized`
+nulos na preparação. O campo extra `published_reference` identifica a natureza
+`published_paleographic_transcription`, texto publicado, fonte/hash/páginas,
+proposta assistida e observações humanas parciais. O editor mostra esse apoio
+em painel de somente leitura, sem copiá-lo ao campo humano. Salvar e exportar
+preservam esses metadados. `planned_reviewer` identifica um responsável
+previsto; não substitui `reviewer` ou `reviewed_at` de uma revisão efetiva.
+
 IDs e vínculos: `line_id`, `page_id`, `document_id`, `folio_id`, `region_id`, `reading_order`. Imagem: `source_image`, `crop_image`, `bbox_xyxy`, `source_width`, `source_height`, `source_sha256`, `transform_id`. Texto: `text_diplomatic`, `text_modernized`, `reference_source`, `reference_pages`, `reference_kind`. Revisão: `review_status`, `geometry_status`, `reviewer`, `reviewed_at`, `exclusion_reason`. Protocolo: `split`, `split_group`, `derived_from`.
 
 Caixas: pixels no original, canto superior esquerdo, `[x1,y1,x2,y2]`, limites finais exclusivos; `0 <= x1 < x2 <= width`, equivalente para y. Recortes são RGB da fonte, sem aplicar a binarização de detecção à entrada do reconhecedor. Coordenadas neurais poligonais/baselines são guardadas como metadados; a comparação atual usa a aproximação bbox declarada.

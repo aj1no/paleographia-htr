@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-16",
+  "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+  "sample": {
+    "pages": 1,
+    "lines": 5,
+    "region": "body_first5",
+    "status": "pending_review",
+    "workspace": "data/workspace_traslado_269r",
+    "split": null,
+    "independent_document_groups": 1
+  },
+  "files": [
+    {
+      "path": "configs/traslado_269r.toml",
+      "sha256": "0af136b72563e056d88868030577356fdd7a62c0f5cb48b013d49b1de351d9c0",
+      "bytes": 1268
+    },
+    {
+      "path": "configs/traslado_269r_source.json",
+      "sha256": "413b484edd1bbe3c9250f83989be4d77597a489299031754ae420042ccf55952",
+      "bytes": 2645
+    },
+    {
+      "path": "data/manifests/traslado_269r/pages.jsonl",
+      "sha256": "b187fc8c2379dd191d9c6e07c2c897d14f5ad12bd65989203c7ccfb904985ad9",
+      "bytes": 2042
+    },
+    {
+      "path": "data/manifests/traslado_269r/lines.jsonl",
+      "sha256": "b5a23242f0592598968c50afbc6de960d8e9e478f57e0d0426b4163e0ee2b0a1",
+      "bytes": 19932
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/bloco_5_caixas.png",
+      "sha256": "6c5bdbdee2d1c427f694b4afcc48a62e1fac0033a6763403a9a6189a5ab0448a",
+      "bytes": 405195
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/bloco_5_linhas.png",
+      "sha256": "dfdcf3b11d3807482851a20fbfde9ffe5fccb0ce7ed1909596532b742d23f01d",
+      "bytes": 431476
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/editor_revisao.jpg",
+      "sha256": "e6a8d5b0432ee352d6da19ad7d1e66b7246ad02769879bd342ad07435cb775ca",
+      "bytes": 52671
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_01.png",
+      "sha256": "bf9bfd65b70bf59001d33860ca032c9c10d64ae85eefb986fa562d5a0e052385",
+      "bytes": 124963
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_02.png",
+      "sha256": "61f934eaba26e141ef19387c44c48b5fdc8266c4e942ce5b736e934507ba23b4",
+      "bytes": 98103
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_03.png",
+      "sha256": "9394efae96505f40e5745967fa96c84d00d13e3bb2f32e299b90aaf1de10fb45",
+      "bytes": 113011
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_04.png",
+      "sha256": "8cdfd498804d6a2bb509039ace9691ba5379a40a7948268792a6bd41a51b9c7f",
+      "bytes": 114309
+    },
+    {
+      "path": "docs/revisao_humana/traslado_269r/images/linhas/linha_05.png",
+      "sha256": "e0f8716dc4eb2fbfcc30476ca674753be551459c87d763cf83f5b91b0051e3d4",
+      "bytes": 104656
+    }
+  ],
+  "checks": {
+    "python_tests": {
+      "passed": 53,
+      "platform": "Windows",
+      "python": "3.12.14",
+      "warning": "Starlette/AnyIO deprecation warning"
+    },
+    "javascript_tests": {
+      "passed": 18,
+      "environment": "Simulated DOM running production review.js",
+      "node": "v24.19.0"
+    },
+    "compileall": true,
+    "cli_help": true,
+    "pip_check": true,
+    "real_browser": {
+      "url": "http://127.0.0.1:8011",
+      "observed": "Five candidates, loaded source and line crop, published text read-only, human and modernized fields empty, validation checkboxes unchecked; no review submitted."
+    },
+    "catalog_validation": true,
+    "evaluation_validation_expected_exit_code": 2,
+    "repeat_preparation_preserves_catalog": true,
+    "repeat_import_refused": true,
+    "export_matches_workspace": true,
+    "legacy_git_blobs_verified": 8,
+    "original_pilot_files_preserved": 10
+  },
+  "pilot_before_hashes": {
+    "data/workspace/current.json": "a328110d5734feb543214dc91eb065d5426b2782c4b9c5436af2461796d85416",
+    "data/workspace/predictions/20261015T151703_e259fb20.jsonl": "18ef0c9e041bf38814a19deb728530ceb58750b3547da1b1ebe815e1b558fae1",
+    "data/workspace/predictions/20261015T151703_e259fb20.run.json": "0d442d19b4ea1a67f2bda11b3ef1f5dd30742e89c3d79da0964be079d4759e7f",
+    "data/workspace/revisions/20261015T150521_7c8f2f56.json": "8beddfd6001e48e00be8d79b3774fa0f87084355d926f461182280d9c83365b0",
+    "data/workspace/revisions/20261015T150704_4b49d1e3.json": "b5b860947e2c3c6b7986e8cff6cd579353eed7c347077a739d3770758b273753",
+    "data/workspace/revisions/20261015T151802_f76b1946.json": "3ea0841a14d62a29a38f57794e513e5de351d6cb421b82f4b6415556b49a4b14",
+    "data/workspace/revisions/20261015T151944_54c0b2e5.json": "2a85f9f304a3e4344204b8f3aeb5e65d010fa3fa234b149eafaa26db92c701b1",
+    "data/workspace/revisions/20261015T152646_ce045fe6.json": "ce429e1d29ef3d1928515d4c802a977506d1d5726fdd06b70a9deaa861afe81a",
+    "data/manifests/pages.jsonl": "671b1cf473cc5ff29a69158b92729720b2ddf4ad6ba3b86a1c678c5d7c73c40d",
+    "data/manifests/lines.jsonl": "889cac52e0ad9e4f84cfaa703d8e29c3621eb0e2900df0bee795663963f86ed8"
+  },
+  "limits": {
+    "human_validated_lines": 0,
+    "real_recognition_executed": false,
+    "metrics_computed": false,
+    "training_executed": false,
+    "ci_result": "Local checks only at record creation; remote CI reported separately after push."
+  }
+}

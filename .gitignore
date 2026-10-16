@@ -22,5 +22,6 @@ data/raw/inbox/*
 !data/raw/inbox/README.md
 data/processed/*
 data/workspace/
+data/workspace_traslado_269r/
 experiments/*
 !experiments/README.md

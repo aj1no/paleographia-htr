@@ -1,5 +1,15 @@
 # Estado do projeto para revisão
 
+Preparação do Traslado concluída em 16/10/2026: cinco linhas candidatas do
+269r podem ser abertas em workspace próprio no editor, com apoio publicado
+de somente leitura e texto humano vazio. As confirmações parciais foram
+preservadas. O [bloco concreto para revisão](revisao_humana/traslado_269r/conferencia_bloco.md)
+e a [entrega com verificações](revisao_humana/traslado_269r/entrega.md) descrevem
+os comandos e limites. Foram executados 53 testes Python e 18 testes de DOM;
+nenhuma linha completa foi validada. A integridade dos oito blobs legados foi
+registrada separadamente de seus identificadores CRLF, e os novos snapshots
+têm contrato determinístico UTF-8/LF.
+
 Atualização de 16/10/2026: foi inventariada a pasta de transcrições indicada
 pelo usuário; os 15 arquivos correspondem por hash à importação existente.
 O [levantamento do acervo](mineracao_acervo_jundiai.md) registra vínculos e

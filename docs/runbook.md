@@ -47,6 +47,12 @@ Um mapeamento tem `page_id`, `document_id`, `folio_id`, `side`, `correspondence_
 
 ## Revisão local
 
+Para o Traslado 269r, use o [roteiro específico das cinco primeiras linhas](revisao_humana/traslado_269r/conferencia_bloco.md).
+Ele prepara catálogo próprio e usa `configs/traslado_269r.toml`, workspace
+`data/workspace_traslado_269r` e porta 8011, preservando o piloto de 1831.
+O roteiro inclui exportação, validação e diagnóstico exploratório condicionado
+à revisão humana. Consulte também o [contrato de integridade dos snapshots](revisao_humana/traslado_269r/integridade.md).
+
 O workspace desta máquina já foi inicializado com três fólios e 94 candidatos. Para um editor ainda vazio:
 
 ```powershell
