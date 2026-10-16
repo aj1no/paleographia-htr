@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "survey_date": "2026-10-16",
+  "timezone": "America/Sao_Paulo",
+  "local_source_root": "C:\\Users\\takem\\OneDrive\\Área de Trabalho\\Transcrições",
+  "scope": "Inventory and source discovery only; does not modify the application page/line catalog or human review.",
+  "summary": {
+    "files": 15,
+    "jpeg_files": 7,
+    "pdf_files": 8,
+    "candidate_document_groups": 7,
+    "files_matching_existing_import": 15,
+    "modernized_edition_pdfs": 6,
+    "paleographic_transcription_pdfs": 1,
+    "manuscript_facsimile_pdfs": 1
+  },
+  "issues": [
+    {
+      "group": "pagamento_thomas_pardo",
+      "issue": "date_conflict",
+      "claims": {
+        "folder_and_catalog_title": "1751-11-27",
+        "catalog_date_field_and_local_edition_heading": "1759-11-27"
+      },
+      "resolution": "pending_manuscript_review"
+    },
+    {
+      "group": "traslado_criacao_vila",
+      "issue": "distinct_event_and_copy_dates",
+      "event_date": "1656-12-14",
+      "manuscript_copy_year": 1767
+    },
+    {
+      "group": "traslado_criacao_vila",
+      "issue": "edition_page_count_discrepancy",
+      "local_pdf_pages": 11,
+      "catalog_declared_pages": 12,
+      "resolution": "Version and coverage need verification; missing text not established."
+    },
+    {
+      "group": "carta_jose_gomes_1767",
+      "issue": "image_coverage_pending",
+      "catalog_folios": [
+        "4r",
+        "4v"
+      ],
+      "local_jpeg_files": 1,
+      "resolution": "Image count and filename alone do not establish missing coverage."
+    }
+  ],
+  "files": [
+    {
+      "relative_path": "Autos de Diligências Policiais/Pagamento realizado ao capitão do mato Thomas Pardo, por ter posto a cabeça de um negro quilombola na Estrada Real que vai para São Paulo - 27 de Novembro de 1751/Fólio 113 verso.JPG",
+      "bytes": 582979,
+      "sha256": "37eec7f6ae756ba44fd877bf89610d8bc4b3298ddf1a474f4226297dec61c0bb",
+      "candidate_document_group": "pagamento_thomas_pardo",
+      "content_kind": "manuscript_image",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Autos de Diligências Policiais/Pagamento realizado ao capitão do mato Thomas Pardo, por ter posto a cabeça de um negro quilombola na Estrada Real que vai para São Paulo - 27 de Novembro de 1751/Fólio 113 verso.JPG",
+        "output": "6e82cef18b04_ff8c6685c1e97fa0.jpg",
+        "sha256": "37eec7f6ae756ba44fd877bf89610d8bc4b3298ddf1a474f4226297dec61c0bb"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_ff8c6685c1e97fa0.jpg",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "102151",
+        "url": "https://jundiai.sismu.app/obra/102151/pagamento-realizado-ao-capitao-do-mato-thomas-pardo-por-ter-posto-a-cabeca-de-um-negro-quilombola-na-estrada-real-que-vai-para-sao-paulo-27-de-novembro-de-1751",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Autos de Diligências Policiais/Pagamento realizado ao capitão do mato Thomas Pardo, por ter posto a cabeça de um negro quilombola na Estrada Real que vai para São Paulo - 27 de Novembro de 1751/Fólio 114 reto.JPG",
+      "bytes": 637464,
+      "sha256": "bfa219c731ebc77bdc306b775ead886b54bbb33a08bf776118cd628ed8892396",
+      "candidate_document_group": "pagamento_thomas_pardo",
+      "content_kind": "manuscript_image",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Autos de Diligências Policiais/Pagamento realizado ao capitão do mato Thomas Pardo, por ter posto a cabeça de um negro quilombola na Estrada Real que vai para São Paulo - 27 de Novembro de 1751/Fólio 114 reto.JPG",
+        "output": "6e82cef18b04_72da624d28ac0336.jpg",
+        "sha256": "bfa219c731ebc77bdc306b775ead886b54bbb33a08bf776118cd628ed8892396"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_72da624d28ac0336.jpg",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "102151",
+        "url": "https://jundiai.sismu.app/obra/102151/pagamento-realizado-ao-capitao-do-mato-thomas-pardo-por-ter-posto-a-cabeca-de-um-negro-quilombola-na-estrada-real-que-vai-para-sao-paulo-27-de-novembro-de-1751",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Autos de Diligências Policiais/Pagamento realizado ao capitão do mato Thomas Pardo, por ter posto a cabeça de um negro quilombola na Estrada Real que vai para São Paulo - 27 de Novembro de 1751/Transcrição.pdf",
+      "bytes": 539062,
+      "sha256": "ba07a3fb9769e23b66db806676efc9509f2acb9944753192159e3927408ac39e",
+      "pdf_pages": 4,
+      "pdf_page_characters": [
+        1371,
+        1081,
+        382,
+        2
+      ],
+      "candidate_document_group": "pagamento_thomas_pardo",
+      "content_kind": "modernized_edition",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Autos de Diligências Policiais/Pagamento realizado ao capitão do mato Thomas Pardo, por ter posto a cabeça de um negro quilombola na Estrada Real que vai para São Paulo - 27 de Novembro de 1751/Transcrição.pdf",
+        "output": "6e82cef18b04_24632a5c171215a3.pdf",
+        "sha256": "ba07a3fb9769e23b66db806676efc9509f2acb9944753192159e3927408ac39e"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_24632a5c171215a3.pdf",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "102151",
+        "url": "https://jundiai.sismu.app/obra/102151/pagamento-realizado-ao-capitao-do-mato-thomas-pardo-por-ter-posto-a-cabeca-de-um-negro-quilombola-na-estrada-real-que-vai-para-sao-paulo-27-de-novembro-de-1751",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Autos de Diligências Policiais/Registro oficial da carta enviada por José Gomes de Gouveia nos anais da Câmara com sugestões e métodos para eliminar movimentos de resistência pela liberdade de africanos/Fólio 4.JPG",
+      "bytes": 665764,
+      "sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+      "candidate_document_group": "carta_jose_gomes_1767",
+      "content_kind": "manuscript_image",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Autos de Diligências Policiais/Registro oficial da carta enviada por José Gomes de Gouveia nos anais da Câmara com sugestões e métodos para eliminar movimentos de resistência pela liberdade de africanos/Fólio 4.JPG",
+        "output": "6e82cef18b04_a235660ceaea8116.jpg",
+        "sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_a235660ceaea8116.jpg",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "102967",
+        "url": "https://jundiai.sismu.app/obra/102967/registro-oficial-da-carta-enviada-por-jose-gomes-de-gouveia-nos-anais-da-camara-com-sugestoes-e-metodos-para-eliminar-movimentos-de-resistencia-pela-liberdade-de-africanos-afro-brasileiros-e-povos-originarios-em-1767",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Autos de Diligências Policiais/Registro oficial da carta enviada por José Gomes de Gouveia nos anais da Câmara com sugestões e métodos para eliminar movimentos de resistência pela liberdade de africanos/Transcrição.pdf",
+      "bytes": 627069,
+      "sha256": "500a24d6a2ea8b93ea2fc7d94388b26c5facbef75f094b8c0964a58f0b0b2368",
+      "pdf_pages": 5,
+      "pdf_page_characters": [
+        642,
+        1432,
+        1452,
+        243,
+        0
+      ],
+      "candidate_document_group": "carta_jose_gomes_1767",
+      "content_kind": "modernized_edition",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Autos de Diligências Policiais/Registro oficial da carta enviada por José Gomes de Gouveia nos anais da Câmara com sugestões e métodos para eliminar movimentos de resistência pela liberdade de africanos/Transcrição.pdf",
+        "output": "6e82cef18b04_34bdfe96921d0a64.pdf",
+        "sha256": "500a24d6a2ea8b93ea2fc7d94388b26c5facbef75f094b8c0964a58f0b0b2368"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_34bdfe96921d0a64.pdf",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "102967",
+        "url": "https://jundiai.sismu.app/obra/102967/registro-oficial-da-carta-enviada-por-jose-gomes-de-gouveia-nos-anais-da-camara-com-sugestoes-e-metodos-para-eliminar-movimentos-de-resistencia-pela-liberdade-de-africanos-afro-brasileiros-e-povos-originarios-em-1767",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Código de Posturas - 1831/Fólio 100 reto.JPG",
+      "bytes": 553907,
+      "sha256": "413d1502555f62d45ef50cc9af5d0fb7df0ed55bf9652157f0fa874b2006a1ad",
+      "candidate_document_group": "posturas_1831",
+      "content_kind": "manuscript_image",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Código de Posturas - 1831/Fólio 100 reto.JPG",
+        "output": "6e82cef18b04_198b675a9b65d183.jpg",
+        "sha256": "413d1502555f62d45ef50cc9af5d0fb7df0ed55bf9652157f0fa874b2006a1ad"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_198b675a9b65d183.jpg",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "101300",
+        "url": "https://jundiai.sismu.app/obra/101300/codigo-de-posturas-de-jundiai-de-1831-que-define-juridicamente-a-repressao-contra-movimentos-de-insurreicoes-de-pessoas-escravizadas",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Código de Posturas - 1831/Fólio 100 verso.JPG",
+      "bytes": 643243,
+      "sha256": "2d0bc739ae48eedac6cfb689d07f9278867d34e4a3e699835534b47b300b0758",
+      "candidate_document_group": "posturas_1831",
+      "content_kind": "manuscript_image",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Código de Posturas - 1831/Fólio 100 verso.JPG",
+        "output": "6e82cef18b04_32db5d33c13da16a.jpg",
+        "sha256": "2d0bc739ae48eedac6cfb689d07f9278867d34e4a3e699835534b47b300b0758"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_32db5d33c13da16a.jpg",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "101300",
+        "url": "https://jundiai.sismu.app/obra/101300/codigo-de-posturas-de-jundiai-de-1831-que-define-juridicamente-a-repressao-contra-movimentos-de-insurreicoes-de-pessoas-escravizadas",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Código de Posturas - 1831/Fólio 101 reto.JPG",
+      "bytes": 499427,
+      "sha256": "c001a2648e01c5c4e64e071a7b29b5be0747828b349193e1e7930b2364057e91",
+      "candidate_document_group": "posturas_1831",
+      "content_kind": "manuscript_image",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Código de Posturas - 1831/Fólio 101 reto.JPG",
+        "output": "6e82cef18b04_25e7dfc19b66631a.jpg",
+        "sha256": "c001a2648e01c5c4e64e071a7b29b5be0747828b349193e1e7930b2364057e91"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_25e7dfc19b66631a.jpg",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "101300",
+        "url": "https://jundiai.sismu.app/obra/101300/codigo-de-posturas-de-jundiai-de-1831-que-define-juridicamente-a-repressao-contra-movimentos-de-insurreicoes-de-pessoas-escravizadas",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Código de Posturas - 1831/Transcrição..pdf",
+      "bytes": 1172848,
+      "sha256": "479bc2535feed70ea54b3bc1dc8956de4fdb32a41afe28d42e3772f978a6f075",
+      "pdf_pages": 8,
+      "pdf_page_characters": [
+        642,
+        1433,
+        1147,
+        1276,
+        1066,
+        0,
+        0,
+        0
+      ],
+      "candidate_document_group": "posturas_1831",
+      "content_kind": "modernized_edition",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Código de Posturas - 1831/Transcrição..pdf",
+        "output": "6e82cef18b04_094cbf86c7ec88ea.pdf",
+        "sha256": "479bc2535feed70ea54b3bc1dc8956de4fdb32a41afe28d42e3772f978a6f075"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_094cbf86c7ec88ea.pdf",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "101300",
+        "url": "https://jundiai.sismu.app/obra/101300/codigo-de-posturas-de-jundiai-de-1831-que-define-juridicamente-a-repressao-contra-movimentos-de-insurreicoes-de-pessoas-escravizadas",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Sessão da Câmara Municipal de Jundiaí - 25 de junho de 1795/Fólio 91 reto.JPG",
+      "bytes": 541951,
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "candidate_document_group": "sessao_1795",
+      "content_kind": "manuscript_image",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Sessão da Câmara Municipal de Jundiaí - 25 de junho de 1795/Fólio 91 reto.JPG",
+        "output": "6e82cef18b04_25d77dc0cbe4eb4b.jpg",
+        "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_25d77dc0cbe4eb4b.jpg",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "101813",
+        "url": "https://jundiai.sismu.app/obra/101813/nomeacao-de-cinco-capitaes-de-mato-transcricao-da-sessao-da-camara-municipal-de-jundiai-do-25-de-junho-de-1795",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Sessão da Câmara Municipal de Jundiaí - 25 de junho de 1795/Transcrição..pdf",
+      "bytes": 508026,
+      "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2",
+      "pdf_pages": 4,
+      "pdf_page_characters": [
+        708,
+        1415,
+        1210,
+        0
+      ],
+      "candidate_document_group": "sessao_1795",
+      "content_kind": "modernized_edition",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Sessão da Câmara Municipal de Jundiaí - 25 de junho de 1795/Transcrição..pdf",
+        "output": "6e82cef18b04_ee1a2210835c8d64.pdf",
+        "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_ee1a2210835c8d64.pdf",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "101813",
+        "url": "https://jundiai.sismu.app/obra/101813/nomeacao-de-cinco-capitaes-de-mato-transcricao-da-sessao-da-camara-municipal-de-jundiai-do-25-de-junho-de-1795",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Transcrição de Traslados Contratuais Coloniais do Cartório Olgado/Transcrição e documentos dos Traslados Contratuais Que Incluem o Acordo de Francisco Vieira da Costa e Manoel da Sigueira Gil - 27 de Agosto de 1763..pdf",
+      "bytes": 2702311,
+      "sha256": "c7ffb34ac9b8c735bf5b25cfa6c32d98b3e752fbc8744fa9a8feb14489620e07",
+      "pdf_pages": 12,
+      "pdf_page_characters": [
+        642,
+        1418,
+        940,
+        996,
+        981,
+        1163,
+        767,
+        374,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_document_group": "contrato_livro12_1763",
+      "content_kind": "modernized_edition",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Transcrição de Traslados Contratuais Coloniais do Cartório Olgado/Transcrição e documentos dos Traslados Contratuais Que Incluem o Acordo de Francisco Vieira da Costa e Manoel da Sigueira Gil - 27 de Agosto de 1763..pdf",
+        "output": "6e82cef18b04_3074293f5ca5dcce.pdf",
+        "sha256": "c7ffb34ac9b8c735bf5b25cfa6c32d98b3e752fbc8744fa9a8feb14489620e07"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_3074293f5ca5dcce.pdf",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "101489",
+        "url": "https://jundiai.sismu.app/obra/101489/contrato-para-exploracao-de-minas-auriferas-em-territorios-jundiaienses-em-1763-o-texto-contem-descricoes-sobre-africanos-afro-brasileiros-povos-originarios-e-quilombos",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Transcrição de Traslados Contratuais Coloniais do Cartório Olgado/Transcrições e documentos dos Traslados Contratuais Que Incluem o Acordo de Francisco Vieira da Costa -27 de Agosto de 1763..pdf",
+      "bytes": 1817405,
+      "sha256": "3348a51ef10d9d1b1c79a780d701a250e4ab300433d267c6411234828511afaf",
+      "pdf_pages": 6,
+      "pdf_page_characters": [
+        642,
+        1417,
+        1126,
+        1130,
+        0,
+        0
+      ],
+      "candidate_document_group": "contrato_livro13_1763",
+      "content_kind": "modernized_edition",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Transcrição de Traslados Contratuais Coloniais do Cartório Olgado/Transcrições e documentos dos Traslados Contratuais Que Incluem o Acordo de Francisco Vieira da Costa -27 de Agosto de 1763..pdf",
+        "output": "6e82cef18b04_46c24b18cf02645b.pdf",
+        "sha256": "3348a51ef10d9d1b1c79a780d701a250e4ab300433d267c6411234828511afaf"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_46c24b18cf02645b.pdf",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "101494",
+        "url": "https://jundiai.sismu.app/obra/101494/contrato-para-exploracao-de-minas-auriferas-em-territorios-jundiaienses-em-1763-o-texto-contem-descricoes-sobre-africanos-afro-brasileiros-e-povos-originarios",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Traslado do Auto de Criação da Vila de Jundiahy/Transcrição..pdf",
+      "bytes": 177383,
+      "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+      "pdf_pages": 11,
+      "pdf_page_characters": [
+        824,
+        1320,
+        1248,
+        1288,
+        1367,
+        1392,
+        1375,
+        1365,
+        1469,
+        1485,
+        883
+      ],
+      "candidate_document_group": "traslado_criacao_vila",
+      "content_kind": "published_paleographic_transcription",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Traslado do Auto de Criação da Vila de Jundiahy/Transcrição..pdf",
+        "output": "6e82cef18b04_6b5c840cfc3b7381.pdf",
+        "sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "102202",
+        "url": "https://jundiai.sismu.app/obra/102202/transcricao-paleografica-do-traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    },
+    {
+      "relative_path": "Traslado do Auto de Criação da Vila de Jundiahy/Traslado do Auto de Criação da Vila de Jundiahy - Fólio 269 - 273.pdf",
+      "bytes": 16729975,
+      "sha256": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0",
+      "pdf_pages": 9,
+      "pdf_page_characters": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "candidate_document_group": "traslado_criacao_vila",
+      "content_kind": "manuscript_facsimile",
+      "existing_archive_member": {
+        "archive": "Transcrições.rar",
+        "archive_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+        "original_name": "Transcrições/Traslado do Auto de Criação da Vila de Jundiahy/Traslado do Auto de Criação da Vila de Jundiahy - Fólio 269 - 273.pdf",
+        "output": "6e82cef18b04_5b58a915f024a80e.pdf",
+        "sha256": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0"
+      },
+      "existing_import_path": "data/raw/import_20261015/6e82cef18b04_5b58a915f024a80e.pdf",
+      "existing_import_sha256_verified": true,
+      "catalog_record_candidate": {
+        "work_id": "102201",
+        "url": "https://jundiai.sismu.app/obra/102201/traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+        "basis": "Title, folio and contextual metadata compared with local files; current remote attachment bytes not compared."
+      },
+      "review_status": "pending_review",
+      "eligible_for_htr_training": false
+    }
+  ]
+}

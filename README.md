@@ -9,6 +9,11 @@ repertório do fólio 100 reto contém 13 exemplos, com seis confirmações parc
 do usuário. Ainda há **zero linhas integralmente validadas** para treino ou
 avaliação. “Hum” permanece como leitura provável.
 
+A revisão do Traslado do Auto de Criação da Vila começou pelo fólio 269 reto,
+com 24 linhas candidatas da edição e confirmações humanas parciais. O
+[caderno do Traslado](docs/revisao_humana/traslado_269r/comparacao.md) inclui
+imagens e histórico; as linhas completas continuam pendentes de validação.
+
 O TrOCR disponível foi executado em 3 recortes de diagnóstico e nos 32 recortes
 do 100r. As saídas foram inadequadas. A interface informa a indisponibilidade de
 leitura automática utilizável em português; os resultados brutos são preservados
@@ -28,6 +33,7 @@ Para reconstruir imagens e inicializar um checkout novo, siga o
 pesos nem exigem GPU.
 
 - [Guia para revisar o estado atual do projeto](docs/guia_revisao_gpt.md)
+- [Acervo de Jundiaí e proposta de mineração](docs/mineracao_acervo_jundiai.md)
 - [Instruções completas](README.pt-br.md)
 - [Relatório de execução e limites](docs/execution_report.md)
 - [Repertório e exemplos visuais](docs/repertorio_100r.md)
