@@ -1,0 +1,42 @@
+{
+  "recognizer": {
+    "state": "ready",
+    "backend": "kraken_ppocrv6",
+    "configured_model": "models/kraken_ppocrv6_medium/medium.safetensors",
+    "loaded_model": {
+      "id": "zenodo:21788410/medium.safetensors",
+      "sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+      "backend": "kraken_ppocrv6",
+      "architecture": "PPOCRv6Model",
+      "variant": "medium",
+      "model_input": [
+        1,
+        3,
+        96,
+        0
+      ],
+      "seg_type": "baselines",
+      "runtime": {
+        "kraken": "7.1",
+        "torch": "2.9.1+cpu",
+        "torchvision": "0.24.1+cpu",
+        "numpy": "2.4.6",
+        "Pillow": "12.3.0",
+        "safetensors": "0.7.0",
+        "lightning": "2.6.1"
+      },
+      "python": "3.12.15",
+      "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+      "fallback": false,
+      "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+      "worker_sha256": "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a"
+    },
+    "device": "cpu",
+    "precision": "float32",
+    "load_seconds": 35.231618719,
+    "startup_seconds": 61.075779799954034,
+    "error": null
+  },
+  "count": 1,
+  "failures": 0
+}

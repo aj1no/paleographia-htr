@@ -28,3 +28,5 @@ jobs:
       - run: python -m paleographia --help
       - name: Conferir evidências do teste lexical em cópia
         run: python docs/testes/lexico_copia_20261019/verificar.py
+      - name: Conferir evidências da sessão humana do 269r
+        run: python docs/revisao_humana/traslado_269r/sessao_20261019/verificar.py

@@ -1,0 +1,39 @@
+{
+  "source": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+  "line_id": "l_traslado_269r_body_11",
+  "method": "nearest-neighbor, 3x; somente visualizacao; geometria salva nao alterada",
+  "views": [
+    {
+      "file": "linha_11_em_altas_vozes_3x.png",
+      "bbox_xyxy": [
+        440,
+        1048,
+        714,
+        1157
+      ],
+      "scale": 3
+    },
+    {
+      "file": "linha_11_ao_dito_capi_3x.png",
+      "bbox_xyxy": [
+        710,
+        1048,
+        935,
+        1157
+      ],
+      "scale": 3
+    }
+  ],
+  "conversation_status": {
+    "ticular": "confirmado pelo usuario",
+    "Requererão": "provavel, por decisao do usuario",
+    "punctuation": "em aberto",
+    "remaining_text": "em conferencia"
+  },
+  "saved_state_observed": {
+    "revision": "20261019T153953_c011dcd6",
+    "review_status": "validated"
+  },
+  "original_workspace_modified_by_this_action": false
+}

@@ -1,0 +1,27 @@
+{
+  "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+  "examples": [
+    {
+      "label": "Sam antes de Paulo",
+      "bbox_xyxy": [
+        350,
+        1295,
+        550,
+        1387
+      ]
+    },
+    {
+      "label": "Final da linha 16 — em aberto",
+      "bbox_xyxy": [
+        795,
+        1295,
+        995,
+        1387
+      ]
+    }
+  ],
+  "scale": 4,
+  "method": "PIL.Image.Resampling.NEAREST",
+  "notes": "Mesmo fator de ampliacao e mesma faixa vertical. Sem alteracao dos pixels de origem; legendas fora dos recortes. Final da linha ainda em conferencia."
+}

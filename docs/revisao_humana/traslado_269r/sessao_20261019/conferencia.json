@@ -1,0 +1,512 @@
+{
+  "schema_version": 1,
+  "tipo": "notas_de_conferencia_na_conversa",
+  "data": "2026-10-19",
+  "registrado_em_utc": "2026-10-19T19:13:49.646628+00:00",
+  "folio": "269r",
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "nome_literal_no_editor": "Rodolfo Vinicius Cima Takemoto",
+  "origem_das_decisoes": "Mensagens do usuário nesta conversa; trechos citados sem carimbo horário individual.",
+  "revisao_editor_preservada": "20261019T153953_c011dcd6",
+  "gravado_no_editor": false,
+  "apta_para_treino": false,
+  "apta_para_avaliacao": false,
+  "observacao": "Confirmações textuais parciais não validam geometria, ordem, cobertura ou linhas completas. O editor tem estados históricos próprios, preservados literalmente.",
+  "linhas": [
+    {
+      "linha": 11,
+      "texto_proposto_na_conversa": "ticular Requererão Em altas vozes ao dito Capi",
+      "estado_da_conferencia": "parcial_com_duvida",
+      "segmentos": [
+        {
+          "texto": "ticular",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio ticular com um só l."
+        },
+        {
+          "texto": "Requererão",
+          "estado": "provavel",
+          "alternativas": [
+            "Requererão"
+          ],
+          "nota": "Leitura da palavra provável; sinal superior/final pode ser pontuação, sinal nasal ou floreio. Tipo e pontuação permanecem abertos."
+        },
+        {
+          "texto": "Em altas vozes",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio Em altas vozes."
+        },
+        {
+          "texto": "ao dito",
+          "estado": "proposta_em_conferencia"
+        },
+        {
+          "texto": "Capi",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio Capi."
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": "ticular Requererão Em altas vozes ao dito Capi",
+      "estado_no_editor_preservado": "validated",
+      "texto_bruto": "ticullar Requererao. Em altas vozes ao dito Capi"
+    },
+    {
+      "linha": 12,
+      "texto_proposto_na_conversa": "tão mõr e ouvidor Em como elles Herão povoa",
+      "estado_da_conferencia": "leitura_confirmada_na_conversa",
+      "segmentos": [
+        {
+          "texto": "tão mõr e ouvidor Em como elles Herão povoa",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "tão mõr e ouvidor Em como elles Herão povoa"
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": "tão mõr e ouvidor Em como elles Herão povoa",
+      "estado_no_editor_preservado": "validated",
+      "texto_bruto": "tao moi eouvidon Emcomo lles Er pova"
+    },
+    {
+      "linha": 13,
+      "texto_proposto_na_conversa": "dores e Freguezes desta dita Freguezia de Nossa",
+      "estado_da_conferencia": "leitura_confirmada_na_conversa",
+      "segmentos": [
+        {
+          "texto": "dores e Freguezes desta dita Freguezia de Nossa",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "dores e Freguezes desta dita Freguezia de Nossa"
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": "dores e Freguezes desta dita Freguezia de Nossa",
+      "estado_no_editor_preservado": "validated",
+      "texto_bruto": "dores Freguezes desta diza treguezia de Nossa"
+    },
+    {
+      "linha": 14,
+      "texto_proposto_na_conversa": "Senhora do DesTerro de Jundiahy onde Eram",
+      "estado_da_conferencia": "leitura_confirmada_na_conversa",
+      "segmentos": [
+        {
+          "texto": "Senhora do DesTerro",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio Senhora do DesTerro."
+        },
+        {
+          "texto": "Jundiahy onde Eram",
+          "estado": "confirmado",
+          "nota": "Eram substitui a hipótese Heram nesta conferência; editor preservado com sua grafia anterior.",
+          "mensagem_do_usuario": "Sim, também leio Jundiahy onde Eram."
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": "Senhora do DesTerro de Jundiahy onde Heram",
+      "estado_no_editor_preservado": "validated",
+      "texto_bruto": "senhora dlo des Terro de Sundiaho on de Eeram"
+    },
+    {
+      "linha": 15,
+      "texto_proposto_na_conversa": "mais de oitenta moradores, e ficaram mui dis",
+      "estado_da_conferencia": "parcial",
+      "segmentos": [
+        {
+          "texto": "mais de oitenta moradores",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio mais de oitenta moradores."
+        },
+        {
+          "texto": ", e ficaram",
+          "estado": "proposta_em_conferencia",
+          "nota": "A resposta seguinte concentrou-se em mui dis; não houve confirmação isolada desta sequência e da vírgula."
+        },
+        {
+          "texto": "mui dis",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também vejo tantes, então faz sentido ser mui distantes."
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": "mais de oitenta moradores, e ficaram mui dis",
+      "estado_no_editor_preservado": "validated",
+      "texto_bruto": "mais de ostenta mona dores, e feiarem muidis"
+    },
+    {
+      "linha": 16,
+      "texto_proposto_na_conversa": "tantes da villa de Sam Paulo, e da villa de Par",
+      "estado_da_conferencia": "parcial",
+      "segmentos": [
+        {
+          "texto": "tantes da villa de Sam Paulo",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio tantes da villa de Sam Paulo."
+        },
+        {
+          "texto": ", e da villa de",
+          "estado": "proposta_em_conferencia"
+        },
+        {
+          "texto": "Par",
+          "estado": "confirmado",
+          "nota": "Resposta à comparação Par / nahiba. Hipóteses anteriores Sam e San foram superadas; preservar o histórico, sem duplicar n.",
+          "mensagem_do_usuario": "Extamente isso eu vejo isso certinho"
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": null,
+      "estado_no_editor_preservado": "nao_incorporada",
+      "texto_bruto": "tantes da villa de Sam PauLo, e davilla desar"
+    },
+    {
+      "linha": 17,
+      "texto_proposto_na_conversa": "nahiba, e não poderem vir os ministros de Jus",
+      "estado_da_conferencia": "parcial_com_duvida",
+      "segmentos": [
+        {
+          "texto": "nahiba",
+          "estado": "confirmado",
+          "nota": "Resposta à comparação Par / nahiba.",
+          "mensagem_do_usuario": "Extamente isso eu vejo isso certinho"
+        },
+        {
+          "texto": ", e não poderem vir os",
+          "estado": "proposta_em_conferencia"
+        },
+        {
+          "texto": "ministros",
+          "estado": "provavel",
+          "alternativas": [
+            "ministros",
+            "menistros"
+          ],
+          "nota": "Primeira vogal i/e não resolvida visualmente; preferência contextual por i.",
+          "mensagem_do_usuario": "Vamos manter ministros como provável e seguir para a linha 18."
+        },
+        {
+          "texto": "de Jus",
+          "estado": "proposta_em_conferencia",
+          "nota": "Continuação tissa na linha 18 confirmada. Conservar a quebra."
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": null,
+      "estado_no_editor_preservado": "nao_incorporada",
+      "texto_bruto": "nacibe, e naõ poderem vir os menistros delas"
+    },
+    {
+      "linha": 18,
+      "texto_proposto_na_conversa": "tissa fazer deligençias por ser Longe devendo",
+      "estado_da_conferencia": "leitura_confirmada_na_conversa",
+      "segmentos": [
+        {
+          "texto": "tissa fazer",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio tissa fazer."
+        },
+        {
+          "texto": "deligençias por ser Longe devendo",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "deligençias por ser Longe devendo"
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": null,
+      "estado_no_editor_preservado": "nao_incorporada",
+      "texto_bruto": "iisca fazer deLigencias por sen Longe devendo"
+    },
+    {
+      "linha": 19,
+      "texto_proposto_na_conversa": "por alguã duvida orgente, virem alguns menis",
+      "estado_da_conferencia": "parcial_com_duvida",
+      "segmentos": [
+        {
+          "texto": "por alguã duvida",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio por alguã duvida."
+        },
+        {
+          "texto": "orgente",
+          "estado": "provavel",
+          "alternativas": [
+            "orgente",
+            "ergente"
+          ],
+          "nota": "Inicial o/e não resolvida; a vírgula seguinte não recebeu confirmação isolada.",
+          "mensagem_do_usuario": "A primeira letra ainda está difícil, vamos deixar orgente como provável"
+        },
+        {
+          "texto": "virem alguns",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio virem alguns."
+        },
+        {
+          "texto": "menis",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim eu leio menis"
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": null,
+      "estado_no_editor_preservado": "nao_incorporada",
+      "texto_bruto": "por alguaõ duvila ergente, virem Rguens menis"
+    },
+    {
+      "linha": 20,
+      "texto_proposto_na_conversa": "tros e Hera Com muito Grande detrimento de to",
+      "estado_da_conferencia": "parcial",
+      "segmentos": [
+        {
+          "texto": "tros e Hera",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "Sim, também leio tros e Hera."
+        },
+        {
+          "texto": "Com",
+          "estado": "confirmado",
+          "nota": "Maiúscula C explicitamente confirmada. A pergunta incluía o restante do trecho, mas a resposta enfatizou a inicial.",
+          "mensagem_do_usuario": "Sim vejo isso mesmo C maiusculo"
+        },
+        {
+          "texto": "muito Grande detrimento de to",
+          "estado": "proposta_em_conferencia",
+          "nota": "Trecho apresentado e ampliado; conservar como proposta, sem ampliar o escopo da confirmação específica de C."
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": null,
+      "estado_no_editor_preservado": "nao_incorporada",
+      "texto_bruto": "tros chera Com maito Grande detrimento dito"
+    },
+    {
+      "linha": 21,
+      "texto_proposto_na_conversa": null,
+      "estado_da_conferencia": "parcial_com_palavra_em_aberto",
+      "segmentos": [
+        {
+          "texto": "dos Como Tambem",
+          "estado": "confirmado",
+          "nota": "Resposta à pergunta dos Como Tambem, incluindo observação sobre C maiúsculo.",
+          "mensagem_do_usuario": "SImm vejo isso mesmo"
+        },
+        {
+          "texto": "pessoas que",
+          "estado": "confirmado",
+          "mensagem_do_usuario": "extamene isso pessoas que"
+        },
+        {
+          "texto": "Pesueem",
+          "estado": "hipotese_do_usuario",
+          "alternativas": [
+            "Pesueem",
+            "pessuhem",
+            "peseuhem"
+          ],
+          "nota": "Grafia, sequência central e possível h continuam em aberto. Pesueem é hipótese visual, não texto diplomático final; a maiúscula P da mensagem não foi validada isoladamente. pessuhem vem da edição; peseuhem é a saída do reconhecedor.",
+          "mensagem_do_usuario": "Eu leio Pesueem"
+        },
+        {
+          "texto": "Terras",
+          "estado": "proposta_em_conferencia",
+          "nota": "Ainda sem confirmação humana específica; reconhecedor produziu Torras."
+        }
+      ],
+      "geometria_nesta_conferencia": "nao_validada",
+      "cobertura_nesta_conferencia": "nao_confirmada",
+      "texto_no_editor_preservado": null,
+      "estado_no_editor_preservado": "nao_incorporada",
+      "texto_bruto": "dos ComoTam bem pessoos que peseuhem Torras"
+    }
+  ],
+  "reconhecimentos_novos": [
+    {
+      "linha": 16,
+      "pasta": "evidencias/linha_16_20261019T165002_3bde0d0e",
+      "execution_id": "20261019T165002_2b9a16b9",
+      "texto_bruto": "tantes da villa de Sam PauLo, e davilla desar",
+      "bbox_xyxy": [
+        85,
+        1310,
+        1060,
+        1389
+      ],
+      "status": "ok"
+    },
+    {
+      "linha": 17,
+      "pasta": "evidencias/linha_17_20261019T170028_e7556876",
+      "execution_id": "20261019T170028_d37a947e",
+      "texto_bruto": "nacibe, e naõ poderem vir os menistros delas",
+      "bbox_xyxy": [
+        85,
+        1357,
+        1060,
+        1434
+      ],
+      "status": "ok"
+    },
+    {
+      "linha": 18,
+      "pasta": "evidencias/linha_18_20261019T172614_10348a78",
+      "execution_id": "20261019T172614_dae5b37d",
+      "texto_bruto": "iisca fazer deLigencias por sen Longe devendo",
+      "bbox_xyxy": [
+        85,
+        1408,
+        1060,
+        1489
+      ],
+      "status": "ok"
+    },
+    {
+      "linha": 19,
+      "pasta": "evidencias/linha_19_20261019T185430_fb0a4a01",
+      "execution_id": "20261019T185430_6b7ca8c8",
+      "texto_bruto": "por alguaõ duvila ergente, virem Rguens menis",
+      "bbox_xyxy": [
+        85,
+        1450,
+        1060,
+        1540
+      ],
+      "status": "ok"
+    },
+    {
+      "linha": 20,
+      "pasta": "evidencias/linha_20_20261019T190125_8fb94b6c",
+      "execution_id": "20261019T190125_d5307302",
+      "texto_bruto": "tros chera Com maito Grande detrimento dito",
+      "bbox_xyxy": [
+        75,
+        1500,
+        1060,
+        1594
+      ],
+      "status": "ok"
+    },
+    {
+      "linha": 21,
+      "pasta": "evidencias/linha_21_20261019T190506_061523b0",
+      "execution_id": "20261019T190507_4516e6c3",
+      "texto_bruto": "dos ComoTam bem pessoos que peseuhem Torras",
+      "bbox_xyxy": [
+        65,
+        1552,
+        1060,
+        1652
+      ],
+      "status": "ok"
+    }
+  ],
+  "continuidades": [
+    {
+      "linhas": [
+        11,
+        12
+      ],
+      "partes": [
+        "Capi",
+        "tão"
+      ],
+      "estado": "confirmadas_na_conversa"
+    },
+    {
+      "linhas": [
+        12,
+        13
+      ],
+      "partes": [
+        "povoa",
+        "dores"
+      ],
+      "estado": "confirmadas_na_conversa"
+    },
+    {
+      "linhas": [
+        13,
+        14
+      ],
+      "partes": [
+        "Nossa",
+        "Senhora"
+      ],
+      "estado": "confirmadas_na_conversa"
+    },
+    {
+      "linhas": [
+        15,
+        16
+      ],
+      "partes": [
+        "dis",
+        "tantes"
+      ],
+      "estado": "confirmadas_na_conversa"
+    },
+    {
+      "linhas": [
+        16,
+        17
+      ],
+      "partes": [
+        "Par",
+        "nahiba"
+      ],
+      "estado": "confirmadas_na_conversa",
+      "hipoteses_superadas": [
+        "Sam",
+        "San",
+        "naiba"
+      ]
+    },
+    {
+      "linhas": [
+        17,
+        18
+      ],
+      "partes": [
+        "Jus",
+        "tissa"
+      ],
+      "estado": "continuidade_conferida_na_conversa"
+    },
+    {
+      "linhas": [
+        19,
+        20
+      ],
+      "partes": [
+        "menis",
+        "tros"
+      ],
+      "estado": "confirmadas_na_conversa"
+    },
+    {
+      "linhas": [
+        20,
+        21
+      ],
+      "partes": [
+        "to",
+        "dos"
+      ],
+      "estado": "dos_confirmado; to_proposto"
+    }
+  ],
+  "ponto_de_retomada": "Linha 21: comparar Pesueem (hipótese do usuário) com pessuhem (edição), especialmente a laçada central e o possível h; conferir Terras. Depois, linha 22.",
+  "nao_executado": [
+    "Novas métricas CER/WER",
+    "Treino ou adaptação de modelo",
+    "Novas funcionalidades",
+    "Validação de cobertura das linhas 11–21"
+  ]
+}

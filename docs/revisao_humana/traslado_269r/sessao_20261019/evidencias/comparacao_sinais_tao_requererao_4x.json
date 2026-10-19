@@ -1,0 +1,36 @@
+{
+  "source": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+  "views": [
+    {
+      "label": "tão · linha 12",
+      "bbox": [
+        95,
+        1090,
+        225,
+        1202
+      ]
+    },
+    {
+      "label": "Requererão · linha 11",
+      "bbox": [
+        365,
+        1038,
+        495,
+        1150
+      ]
+    }
+  ],
+  "scale": 4,
+  "resampling": "NEAREST; sem alterações de contraste ou traços",
+  "figure": "comparacao_sinais_tao_requererao_4x.png",
+  "figure_sha256": "572105a645741bce6ea5aa68a13a0d7fee856a6bdf8ecba3cbccb756a4192c4d",
+  "partial_user_confirmation": [
+    "ticular (um l)",
+    "Em altas vozes",
+    "Capi"
+  ],
+  "probable_reading": "Requererão",
+  "punctuation_status": "em aberto; comparação em curso",
+  "original_revisions_modified": false
+}

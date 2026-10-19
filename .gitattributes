@@ -35,3 +35,5 @@ data/lexicon/*.jsonl text eol=lf
 docs/experimentos/implementation_3284e07/** -text -whitespace
 # Evidências de teste em cópia: hashes devem coincidir com os blobs publicados.
 docs/testes/lexico_copia_20261019/** -text -whitespace
+# Sessão humana: preservar os bytes das evidências, recibos e snapshots.
+docs/revisao_humana/traslado_269r/sessao_20261019/** -text -whitespace
