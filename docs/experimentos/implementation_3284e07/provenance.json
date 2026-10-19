@@ -1,0 +1,22 @@
+{
+  "commit": "3284e070285cac462bf38140618e053fe7161650",
+  "reason": "Bytes exatos da implementação para o inventário imutável PP-OCRv6; nenhum experimento regravado.",
+  "files": [
+    {
+      "path": "src/paleographia/api.py",
+      "sha256": "5aa84e85a3ac2e4845de7e5a7744663eb63f2296a523cabac1353b94f3884903"
+    },
+    {
+      "path": "src/paleographia/services.py",
+      "sha256": "8dd42e77dac5a2c28237e6004c2f23326f2eea8c184e37757254452f00f6e822"
+    },
+    {
+      "path": "src/paleographia/web/review.js",
+      "sha256": "f0c4e0970ba54df323215e51537c0ed2022120fdd7e259e75029dca9f46d3bd4"
+    },
+    {
+      "path": "src/paleographia/frozen_experiment.py",
+      "sha256": "5ecf913e16548038a006cff1b0bf5d593d422020ddb492a58089977722dbd760"
+    }
+  ]
+}

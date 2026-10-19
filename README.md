@@ -4,15 +4,21 @@ Piloto local para importar imagens, conferir recortes, registrar revisão humana
 construir um repertório paleográfico rastreável. A interface de revisão e suas
 mensagens são apresentadas em português.
 
+O editor oferece [consulta lexical histórica rastreável](docs/lexico_historico.md):
+21 registros curados, com fontes e aplicação pontual ao rascunho. A consulta
+preserva o reconhecimento bruto e exige conferência humana. Veja o
+[protocolo futuro de comparação](docs/protocolo_apoio_lexical.md) e a
+[entrega de 19/10/2026](docs/lexico_entrega_20261019.md).
+
 O catálogo reúne três fólios candidatos de 1831 e 94 recortes pendentes. O
 repertório do fólio 100 reto contém 13 exemplos, com seis confirmações parciais
 do usuário. Nesse catálogo de 1831, nenhuma linha foi integralmente validada.
 “Hum” permanece como leitura provável.
 
 A revisão do Traslado do Auto de Criação da Vila começou pelo fólio 269 reto,
-com 24 linhas candidatas da edição. **Cinco linhas do corpo foram integralmente
-conferidas pelo usuário**, incluindo geometria, correspondência e cobertura
-somente desse bloco. O
+com 24 linhas candidatas da edição. **Dez linhas do corpo foram integralmente
+conferidas pelo usuário**, com cobertura confirmada somente dos blocos 1–5 e
+6–10. Há 15 linhas no editor; as linhas 11–15 continuam pendentes. O
 [caderno do Traslado](docs/revisao_humana/traslado_269r/comparacao.md) inclui
 imagens e histórico da preparação. A [referência congelada e comparação de
 reconhecedores](docs/experimentos/traslado_269r_20261016/README.md) publica

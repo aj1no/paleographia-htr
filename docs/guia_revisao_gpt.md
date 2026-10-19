@@ -1,5 +1,13 @@
 # Estado do projeto para revisão
 
+**19/10/2026 — apoio lexical:** o editor ganhou consulta determinística com
+21 registros rastreáveis (três de Bluteau e 18 atestações das linhas humanas
+publicadas). Aplicar uma sugestão altera somente o rascunho; o salvamento
+registra a proveniência e exige o fluxo normal de revisão. Nenhum estado humano
+ou experimento existente foi regravado. Não há importação de verbetes indígenas,
+LLM ou avaliação automática lexical. Consulte a [política e fontes](lexico_historico.md),
+o [protocolo futuro](protocolo_apoio_lexical.md) e a [entrega verificável](lexico_entrega_20261019.md).
+
 **Encerramento da sessão de 16/10/2026:** o Traslado 269r tem **15 linhas no
 editor: 10 validadas e 5 pendentes**. O usuário confirmou a cobertura completa
 somente dos blocos 1–5 e 6–10. As linhas 11–15 têm recortes e sugestões reais

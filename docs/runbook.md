@@ -89,6 +89,15 @@ python -m paleographia validate --manifest data/manifests/review_export_NEW/line
 
 ## Referência, inferência e comparação
 
+O painel **Vocabulário histórico e fontes** permite consultar palavras sem
+salvar nem reconhecer novamente. Consulte [uso, fontes e limites](lexico_historico.md).
+Os arquivos `data/lexicon/sources.json` e `entries.jsonl` acompanham o checkout;
+não há instalação ou download adicional. A consulta usa a pasta
+`data/lexicon` por padrão (opcionalmente `[lexicon].directory`, relativo ao
+projeto). Reinicie o servidor após atualizar o código; preserve rascunhos
+abertos antes de recarregar a aba. A futura comparação lexical tem um
+[protocolo separado](protocolo_apoio_lexical.md), ainda sem execução automática.
+
 Roteiro atualizado em **15/10/2026**, após as correções de revisão:
 
 1. Escolher uma região curta e legível com correspondência documental conferida.

@@ -31,6 +31,25 @@ Pré-visualizações e recortes removem a orientação EXIF dos derivados para q
 
 ## Validação e persistência
 
+### Assistência lexical
+
+O campo adicional opcional `lexical_assistance` é uma lista anexada à linha,
+preservada nos snapshots e na exportação. Eventos contêm `version`,
+`fingerprint`, `candidate_id`, `entry_ids`, `query`, `repertoire`, `match`,
+`distance`, `replacement`, `before`, `after`, `start`, `end` e `recorded_at`.
+As posições são índices de pontos de código Unicode, com limite final
+exclusivo. O servidor revalida candidatos, forma aplicada e identidade da base
+antes de anexar novos eventos. Não é permitido apagar ou substituir eventos
+anteriores. Eventos não constituem validação humana nem predição automática.
+Edições manuais posteriores podem divergir do texto `after` e continuam
+registradas pelo histórico normal de snapshots.
+
+`POST /api/lexicon/query` recebe `text`, `repertoire` e `limit` (máximo oito),
+sem persistir alterações. Resposta indisponível conserva a edição manual.
+O esquema documental de `sources.json`/`entries.jsonl` e os limites de consulta
+estão na [política lexical](lexico_historico.md); os modelos executáveis são
+`Entry`/`Origin` em `src/paleographia/lexicon.py`.
+
 Propósitos: catálogo aceita texto/caixa nulos em preparação, mas bloqueia caminhos inválidos, fontes alteradas, IDs repetidos e relações incoerentes. Avaliação exige texto e geometria humanos, crops existentes e correspondência revisada. Avaliação de região exige cobertura completa confirmada. Treino acrescenta três splits por grupos independentes. Falha da CLI retorna código 2; ausência de modelo é HTTP 503, upload inválido HTTP 400, edição inválida HTTP 422, conflito HTTP 409, ID ausente HTTP 404.
 
 O editor usa snapshots JSON imutáveis em `data/workspace/revisions`, ponteiro atômico `current.json`, relação com revisão anterior e registros de predição append-only. Exportação produz os manifests e a revisão de origem. O ZIP de exportação contém metadados e texto; as imagens permanecem nos caminhos originais e devem ser preservadas juntamente com o projeto. Não é um pacote autossuficiente de imagens.

@@ -4,6 +4,15 @@ Protótipo local para importar manuscritos, conferir recortes, gerar sugestões 
 
 O catálogo de 1831 contém três fólios candidatos e 94 recortes pendentes, sem linhas completas validadas. O repertório reúne 13 exemplos e seis confirmações parciais, preservando “hum” como provável. No Traslado, fólio 269r, o usuário conferiu cinco linhas completas e a cobertura somente desse bloco. A [avaliação e integração do PP-OCRv6](docs/experimentos/traslado_269r_ppocrv6_20261016/README.md) obteve CER/WER de **12,40%/51,11%**, com saídas relacionadas ao manuscrito e sugestões experimentais no editor. Os resultados históricos de TrOCR (80,58%/100%) e PP-OCRv5 latino (57,02%/95,56%) permanecem preservados. A amostra é desenvolvimento, de um documento; não há treino nem teste reservado. TrOCR está desativado para novas execuções.
 
+A [consulta lexical histórica](docs/lexico_historico.md) oferece 21 registros
+com fontes, formas históricas e aplicação pontual ao rascunho. Consulte a
+[entrega com testes e evidências](docs/lexico_entrega_20261019.md) e o
+[protocolo futuro de comparação](docs/protocolo_apoio_lexical.md). A consulta
+preserva a saída bruta e exige conferência humana. Em 19/10/2026, a sessão
+preservada do 269r contém **dez linhas validadas e cinco pendentes**; a cobertura
+está confirmada somente nos blocos 1–5 e 6–10. As métricas citadas acima continuam
+restritas às cinco primeiras linhas.
+
 ## Abrir nesta máquina
 
 O ambiente `.venv` está instalado. Execute `start_safe.bat` ou:
