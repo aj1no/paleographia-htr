@@ -68,6 +68,13 @@ não foi suprimido nem motivou atualização de pacotes nesta entrega.
 
 ## Limites e continuação
 
+O [teste complementar de salvamento em cópia isolada](testes/lexico_copia_20261019/README.md)
+publica o relatório solicitado pelo usuário, três snapshots da cópia, os
+eventos lexicais, o catálogo usado e as evidências visuais. As duas aplicações
+ficaram pendentes na cópia; as revisões originais permanecem intactas. Esse
+pacote documenta interface e persistência, sem acrescentar referência humana
+ou métricas de reconhecimento.
+
 Não há busca exaustiva: `Nacimento`, `Jezus`, `Jundiahy`, `sincoenta` e `mõr`
 continuam sem conferência nos dicionários. `Sundiahy` não está atestado no lote;
 ausência não prova erro. Morais e fontes indígenas foram apenas catalogados.

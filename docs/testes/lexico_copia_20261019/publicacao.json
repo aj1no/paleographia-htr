@@ -1,0 +1,83 @@
+{
+  "artifact_type": "teste_em_copia_isolada",
+  "human_reference": false,
+  "automatic_recognition_experiment": false,
+  "original_revisions_modified": false,
+  "destination_branch": "codex/refatoracao-piloto",
+  "implementation_commit": "a59f38a86516acd841b2e20ea24db6952caf782c",
+  "prepared_at": "2026-10-19T15:23:24.402084+00:00",
+  "initial_revision": "20261016T191933_07d31bad",
+  "final_copy_revision": "20261019T151448_c676f483",
+  "original_source_manifest": {
+    "PaleographIA_Teste_Salvamento_Lexical_20261019.md": "fd5b449005f72987ff26d0a7f62b004999365a7e672a11f21704eae6b5e49b39",
+    "evidencias/entries.jsonl": "01012f4d4e3a693a6d90cd1182d39cbffa9419bd1aada20a9f13a9ab1949dcc3",
+    "evidencias/linha_1_salva.png": "a53996f50e66a452d263602323495b1ecf98e46329326802140ae77ccfdb213a",
+    "evidencias/linha_5_salva.png": "212edc77423fc8e3ad7efc1d36efa2ba21ffe25d0a88955a33118fa0851d538f",
+    "evidencias/sources.json": "1c69b3508be8f8e2358c4271cdcc981877ed4d71a0158702002175e0f1f1d30f",
+    "evidencias/verificacao.json": "a6b41ecd45ab94e9ebda3cb1574faeb0067b59a5af30851d0d09362ff3ffc84a",
+    "evidencias/revisions/20261016T191933_07d31bad.json": "dce5c9418ec2747adb1723fcdb275a14ec9808d442eb56b1e50d159ca9bde9a7",
+    "evidencias/revisions/20261019T151442_7b41793f.json": "a76cd235f3b29e87b94e92e2ed189aa6e6547e4520d7201235de8a92c0b05137",
+    "evidencias/revisions/20261019T151448_c676f483.json": "6e4a224e4a88a4c7caaef04b7d350131e143b39e874ce95774f9f68b0bc0ccba"
+  },
+  "original_to_publication": [
+    {
+      "path": "evidencias/entries.jsonl",
+      "source_sha256": "01012f4d4e3a693a6d90cd1182d39cbffa9419bd1aada20a9f13a9ab1949dcc3",
+      "published_sha256": "01012f4d4e3a693a6d90cd1182d39cbffa9419bd1aada20a9f13a9ab1949dcc3",
+      "transformation": "Cópia literal, bytes preservados."
+    },
+    {
+      "path": "evidencias/linha_1_salva.png",
+      "source_sha256": "a53996f50e66a452d263602323495b1ecf98e46329326802140ae77ccfdb213a",
+      "published_sha256": "a53996f50e66a452d263602323495b1ecf98e46329326802140ae77ccfdb213a",
+      "transformation": "Cópia literal, bytes preservados."
+    },
+    {
+      "path": "evidencias/linha_5_salva.png",
+      "source_sha256": "212edc77423fc8e3ad7efc1d36efa2ba21ffe25d0a88955a33118fa0851d538f",
+      "published_sha256": "212edc77423fc8e3ad7efc1d36efa2ba21ffe25d0a88955a33118fa0851d538f",
+      "transformation": "Cópia literal, bytes preservados."
+    },
+    {
+      "path": "evidencias/revisions/20261016T191933_07d31bad.json",
+      "source_sha256": "dce5c9418ec2747adb1723fcdb275a14ec9808d442eb56b1e50d159ca9bde9a7",
+      "published_sha256": "dce5c9418ec2747adb1723fcdb275a14ec9808d442eb56b1e50d159ca9bde9a7",
+      "transformation": "Cópia literal, bytes preservados."
+    },
+    {
+      "path": "evidencias/revisions/20261019T151442_7b41793f.json",
+      "source_sha256": "a76cd235f3b29e87b94e92e2ed189aa6e6547e4520d7201235de8a92c0b05137",
+      "published_sha256": "a76cd235f3b29e87b94e92e2ed189aa6e6547e4520d7201235de8a92c0b05137",
+      "transformation": "Cópia literal, bytes preservados."
+    },
+    {
+      "path": "evidencias/revisions/20261019T151448_c676f483.json",
+      "source_sha256": "6e4a224e4a88a4c7caaef04b7d350131e143b39e874ce95774f9f68b0bc0ccba",
+      "published_sha256": "6e4a224e4a88a4c7caaef04b7d350131e143b39e874ce95774f9f68b0bc0ccba",
+      "transformation": "Cópia literal, bytes preservados."
+    },
+    {
+      "path": "evidencias/sources.json",
+      "source_sha256": "1c69b3508be8f8e2358c4271cdcc981877ed4d71a0158702002175e0f1f1d30f",
+      "published_sha256": "1c69b3508be8f8e2358c4271cdcc981877ed4d71a0158702002175e0f1f1d30f",
+      "transformation": "Cópia literal, bytes preservados."
+    },
+    {
+      "path": "evidencias/verificacao.json",
+      "source_sha256": "a6b41ecd45ab94e9ebda3cb1574faeb0067b59a5af30851d0d09362ff3ffc84a",
+      "published_sha256": "0f6c85be860bc2c4ab8acb453f0612a083f2b93f01a9399b99eea76c333838cf",
+      "transformation": "Caminhos relativos e nota de publicação no Markdown; caminhos relativos no recibo."
+    },
+    {
+      "path": "PaleographIA_Teste_Salvamento_Lexical_20261019.md",
+      "source_sha256": "fd5b449005f72987ff26d0a7f62b004999365a7e672a11f21704eae6b5e49b39",
+      "published_sha256": "b7c5a9278416e36b352fac8c2013db68be3be9a4681c2005224dd8544797aac8",
+      "transformation": "Caminhos relativos e nota de publicação no Markdown; caminhos relativos no recibo."
+    }
+  ],
+  "publication_preservation_baseline": {
+    "files": 565,
+    "sha256": "d1d2c81033b11be64339c34307ac0d285feebaec07734cdd98ad59c38ec7f43b"
+  },
+  "scope": "Relatório, metadados e imagens do teste. A referência humana original e os experimentos reais não recebem os textos de teste."
+}
