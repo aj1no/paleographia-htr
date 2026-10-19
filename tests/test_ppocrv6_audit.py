@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from paleographia.frozen_experiment import restore_support
+from paleographia.frozen_experiment import artifact_for_hash, restore_support
 from paleographia.io import read_jsonl, sha256, write_jsonl
 from scripts.audit_ppocrv6_experiment import audit
 
@@ -20,6 +20,7 @@ def frozen_checkout(tmp_path):
     for bundle in (BUNDLE,OLD):
         inventory=json.loads((ROOT/bundle/'inventory.json').read_bytes())
         paths.update(row['path'] for row in inventory['files'])
+        paths.update(artifact_for_hash(ROOT, row).relative_to(ROOT).as_posix() for row in inventory['files'])
         paths.add((bundle/'inventory.json').as_posix())
     for path in paths:
         target=tmp_path/path

@@ -186,10 +186,15 @@ class ReviewService:
                 raise KeyError(line_id)
             allowed = {"bbox_xyxy", "reading_order", "region_id", "text_diplomatic", "text_modernized",
                        "reference_source", "reference_pages", "reference_kind", "review_status", "reviewer",
-                       "geometry_status", "exclusion_reason"}
+                       "geometry_status", "exclusion_reason", "lexical_assistance"}
             if set(changes)-allowed:
                 raise ValueError("Campo de linha não editável.")
             updated = dict(line, **changes)
+            if "lexical_assistance" in changes:
+                from .lexicon import append_assistance
+                updated["lexical_assistance"] = append_assistance(
+                    self.root, self.config.get("lexicon", {}).get("directory", "data/lexicon"),
+                    line.get("lexical_assistance", []), changes["lexical_assistance"])
             if any(l["line_id"] != line_id and l["review_status"] != "rejected" and l["page_id"] == updated["page_id"] and l["region_id"] == updated["region_id"] and l["reading_order"] == updated["reading_order"] for l in state["lines"]):
                 raise Conflict("Ordem de leitura duplicada.")
             if updated["bbox_xyxy"] != line["bbox_xyxy"]:

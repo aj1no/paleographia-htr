@@ -1,0 +1,372 @@
+{
+  "version": "2026-10-19.1",
+  "fingerprint": "647189123701c535ab9444790689b0d89c2721f38e581e2b2b671ef7d4da3670",
+  "scope": "Lote curado: 21 registros; não é busca exaustiva em dicionários.",
+  "counts": {
+    "portugues_historico": 3,
+    "acervo": 18,
+    "indigena": 0
+  },
+  "terms": [
+    {
+      "form": "Anno",
+      "dictionary_status": "encontrado_com_diferenca_de_caixa",
+      "dictionary_entries": [
+        "bluteau_anno"
+      ],
+      "corpus_status": "encontrado_literalmente",
+      "corpus_entries": [
+        "acervo_269r_01_03"
+      ],
+      "note": "Nenhuma ausência foi inferida para dicionários inteiros."
+    },
+    {
+      "form": "Nacimento",
+      "dictionary_status": "ainda_sem_conferencia",
+      "dictionary_entries": [],
+      "corpus_status": "encontrado_literalmente",
+      "corpus_entries": [
+        "acervo_269r_01_05"
+      ],
+      "note": "Nenhuma ausência foi inferida para dicionários inteiros."
+    },
+    {
+      "form": "Jezus",
+      "dictionary_status": "ainda_sem_conferencia",
+      "dictionary_entries": [],
+      "corpus_status": "encontrado_literalmente",
+      "corpus_entries": [
+        "acervo_269r_01_06"
+      ],
+      "note": "Nenhuma ausência foi inferida para dicionários inteiros."
+    },
+    {
+      "form": "Freguezia",
+      "dictionary_status": "encontrado_com_diferenca_de_caixa",
+      "dictionary_entries": [
+        "bluteau_freguezia"
+      ],
+      "corpus_status": "encontrado_literalmente",
+      "corpus_entries": [
+        "acervo_269r_04_10"
+      ],
+      "note": "Nenhuma ausência foi inferida para dicionários inteiros."
+    },
+    {
+      "form": "Jundiahy",
+      "dictionary_status": "ainda_sem_conferencia",
+      "dictionary_entries": [],
+      "corpus_status": "encontrado_literalmente",
+      "corpus_entries": [
+        "acervo_269r_05_11"
+      ],
+      "note": "Nenhuma ausência foi inferida para dicionários inteiros."
+    },
+    {
+      "form": "sincoenta",
+      "dictionary_status": "ainda_sem_conferencia",
+      "dictionary_entries": [],
+      "corpus_status": "encontrado_literalmente",
+      "corpus_entries": [
+        "acervo_269r_02_07"
+      ],
+      "note": "Nenhuma ausência foi inferida para dicionários inteiros."
+    },
+    {
+      "form": "mõr",
+      "dictionary_status": "ainda_sem_conferencia",
+      "dictionary_entries": [],
+      "corpus_status": "encontrado_literalmente",
+      "corpus_entries": [
+        "acervo_269r_07_14"
+      ],
+      "note": "Nenhuma ausência foi inferida para dicionários inteiros."
+    },
+    {
+      "form": "Sundiahy",
+      "dictionary_status": "ainda_sem_conferencia",
+      "dictionary_entries": [],
+      "corpus_status": "nao_localizado_no_lote_curado",
+      "corpus_entries": [],
+      "note": "Forma de consulta ilustrativa; candidato Jundiahy por distância 1. Não atestada como verbete."
+    }
+  ],
+  "not_checked": [
+    "Morais Silva: verbetes ainda sem conferência nos volumes localizados.",
+    "Leite e VLB: nenhuma entrada importada; identificação linguística depende de exame individual."
+  ],
+  "examples": [
+    {
+      "query": "Annodo",
+      "repertoire": "acervo",
+      "candidates": [
+        {
+          "id": "c2a500ddf656a9f8bcfac9ad",
+          "replacement": "Anno do",
+          "match": "word_split",
+          "distance": 1,
+          "entries": [
+            {
+              "id": "acervo_269r_01_03",
+              "form": "Anno",
+              "repertoire": "acervo",
+              "language": "português",
+              "language_note": "Português do documento; não classificado como Língua Geral Paulista.",
+              "kind": "forma atestada",
+              "meaning": null,
+              "note": "Atestação na linha humana; não é definição lexicográfica e não foi verificada como verbete nos dicionários. Não usar o grupo de origem como teste independente.",
+              "attestation_period": "forma atestada na revisão do 269r, ato de 1656 e cópia indicada como 1767; funções temporais preservadas",
+              "source_id": "acervo_269r_20261016",
+              "volume": null,
+              "printed_page": null,
+              "pdf_page": null,
+              "locator": "fólio 269r, linha 1, ID l_traslado_269r_body_01, revisão 20261016T191933_07d31bad",
+              "url": "https://github.com/aj1no/paleographia-htr/blob/3284e070285cac462bf38140618e053fe7161650/docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl#L1",
+              "source_file": "docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl",
+              "source_sha256": "28484eb93239061734ccce93376f8869d993643488ee8d31eb5f62f2ecfae5b9",
+              "evidence_file": null,
+              "evidence_sha256": null,
+              "evidence": "atestado_no_acervo",
+              "checked_by": "Codex (conferência documental; não é revisão paleográfica humana nova)",
+              "checked_at": "2026-10-19T13:59:35.975756+00:00",
+              "extraction": "Extração literal de forma contígua de linha humana já validada; sem unir quebras ou criar variantes.",
+              "variant_of": null,
+              "expansion": null,
+              "corpus_origin": {
+                "document_id": "tt_pbr_0004_026_traslado_1767",
+                "split_group": "tt_pbr_0004_026_traslado_1767",
+                "revision": "20261016T191933_07d31bad",
+                "line_id": "l_traslado_269r_body_01",
+                "split": null,
+                "dataset_role": "development",
+                "reviewer": "Rodolfo Vinicius Cima Takemoto",
+                "reviewed_at": "2026-10-16T16:59:49.388536+00:00"
+              },
+              "source": {
+                "id": "acervo_269r_20261016",
+                "title": "Traslado 269r — revisão humana publicada da sessão de 16/10/2026",
+                "url": "https://github.com/aj1no/paleographia-htr/blob/3284e070285cac462bf38140618e053fe7161650/docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl",
+                "publication_period": "2026-10-16 (publicação da revisão); data da edição paleográfica não determinada aqui",
+                "attestation_period": "ato descrito de 1656; cabeçalho da cópia indica 1767, conforme perfil da fonte, sem nova validação integral do cabeçalho",
+                "use_conditions": "Atestações mínimas dos textos humanos já publicados no repositório. Créditos da revisão nos registros. Condições do manuscrito e da edição são independentes da licença MIT do código e continuam documentadas no acervo.",
+                "scope": "Somente formas presentes nas linhas 1–10 validadas; não inclui linhas 11–15 pendentes nem reúne fragmentos de quebras físicas. Uso exploratório/de desenvolvimento; bloquear o mesmo grupo em avaliação futura.",
+                "status": "atestacoes_selecionadas_do_acervo"
+              }
+            },
+            {
+              "id": "acervo_269r_01_04",
+              "form": "do",
+              "repertoire": "acervo",
+              "language": "português",
+              "language_note": "Português do documento; não classificado como Língua Geral Paulista.",
+              "kind": "forma atestada",
+              "meaning": null,
+              "note": "Atestação na linha humana; não é definição lexicográfica e não foi verificada como verbete nos dicionários. Não usar o grupo de origem como teste independente.",
+              "attestation_period": "forma atestada na revisão do 269r, ato de 1656 e cópia indicada como 1767; funções temporais preservadas",
+              "source_id": "acervo_269r_20261016",
+              "volume": null,
+              "printed_page": null,
+              "pdf_page": null,
+              "locator": "fólio 269r, linha 1, ID l_traslado_269r_body_01, revisão 20261016T191933_07d31bad",
+              "url": "https://github.com/aj1no/paleographia-htr/blob/3284e070285cac462bf38140618e053fe7161650/docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl#L1",
+              "source_file": "docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl",
+              "source_sha256": "28484eb93239061734ccce93376f8869d993643488ee8d31eb5f62f2ecfae5b9",
+              "evidence_file": null,
+              "evidence_sha256": null,
+              "evidence": "atestado_no_acervo",
+              "checked_by": "Codex (conferência documental; não é revisão paleográfica humana nova)",
+              "checked_at": "2026-10-19T13:59:35.975756+00:00",
+              "extraction": "Extração literal de forma contígua de linha humana já validada; sem unir quebras ou criar variantes.",
+              "variant_of": null,
+              "expansion": null,
+              "corpus_origin": {
+                "document_id": "tt_pbr_0004_026_traslado_1767",
+                "split_group": "tt_pbr_0004_026_traslado_1767",
+                "revision": "20261016T191933_07d31bad",
+                "line_id": "l_traslado_269r_body_01",
+                "split": null,
+                "dataset_role": "development",
+                "reviewer": "Rodolfo Vinicius Cima Takemoto",
+                "reviewed_at": "2026-10-16T16:59:49.388536+00:00"
+              },
+              "source": {
+                "id": "acervo_269r_20261016",
+                "title": "Traslado 269r — revisão humana publicada da sessão de 16/10/2026",
+                "url": "https://github.com/aj1no/paleographia-htr/blob/3284e070285cac462bf38140618e053fe7161650/docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl",
+                "publication_period": "2026-10-16 (publicação da revisão); data da edição paleográfica não determinada aqui",
+                "attestation_period": "ato descrito de 1656; cabeçalho da cópia indica 1767, conforme perfil da fonte, sem nova validação integral do cabeçalho",
+                "use_conditions": "Atestações mínimas dos textos humanos já publicados no repositório. Créditos da revisão nos registros. Condições do manuscrito e da edição são independentes da licença MIT do código e continuam documentadas no acervo.",
+                "scope": "Somente formas presentes nas linhas 1–10 validadas; não inclui linhas 11–15 pendentes nem reúne fragmentos de quebras físicas. Uso exploratório/de desenvolvimento; bloquear o mesmo grupo em avaliação futura.",
+                "status": "atestacoes_selecionadas_do_acervo"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Sundiahy",
+      "repertoire": "acervo",
+      "candidates": [
+        {
+          "id": "3e6500863cfbccb09afb7954",
+          "replacement": "Jundiahy",
+          "match": "edit_distance",
+          "distance": 1,
+          "entries": [
+            {
+              "id": "acervo_269r_05_11",
+              "form": "Jundiahy",
+              "repertoire": "acervo",
+              "language": null,
+              "language_note": "Nome em documento em português; idioma de origem, etimologia e tradução não determinados.",
+              "kind": "nome próprio",
+              "meaning": null,
+              "note": "Atestação na linha humana; não é definição lexicográfica e não foi verificada como verbete nos dicionários. Não usar o grupo de origem como teste independente.",
+              "attestation_period": "forma atestada na revisão do 269r, ato de 1656 e cópia indicada como 1767; funções temporais preservadas",
+              "source_id": "acervo_269r_20261016",
+              "volume": null,
+              "printed_page": null,
+              "pdf_page": null,
+              "locator": "fólio 269r, linha 5, ID l_traslado_269r_body_05, revisão 20261016T191933_07d31bad",
+              "url": "https://github.com/aj1no/paleographia-htr/blob/3284e070285cac462bf38140618e053fe7161650/docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl#L5",
+              "source_file": "docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl",
+              "source_sha256": "28484eb93239061734ccce93376f8869d993643488ee8d31eb5f62f2ecfae5b9",
+              "evidence_file": null,
+              "evidence_sha256": null,
+              "evidence": "atestado_no_acervo",
+              "checked_by": "Codex (conferência documental; não é revisão paleográfica humana nova)",
+              "checked_at": "2026-10-19T13:59:35.975756+00:00",
+              "extraction": "Extração literal de forma contígua de linha humana já validada; sem unir quebras ou criar variantes.",
+              "variant_of": null,
+              "expansion": null,
+              "corpus_origin": {
+                "document_id": "tt_pbr_0004_026_traslado_1767",
+                "split_group": "tt_pbr_0004_026_traslado_1767",
+                "revision": "20261016T191933_07d31bad",
+                "line_id": "l_traslado_269r_body_05",
+                "split": null,
+                "dataset_role": "development",
+                "reviewer": "Rodolfo Vinicius Cima Takemoto",
+                "reviewed_at": "2026-10-16T17:03:13.133936+00:00"
+              },
+              "source": {
+                "id": "acervo_269r_20261016",
+                "title": "Traslado 269r — revisão humana publicada da sessão de 16/10/2026",
+                "url": "https://github.com/aj1no/paleographia-htr/blob/3284e070285cac462bf38140618e053fe7161650/docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl",
+                "publication_period": "2026-10-16 (publicação da revisão); data da edição paleográfica não determinada aqui",
+                "attestation_period": "ato descrito de 1656; cabeçalho da cópia indica 1767, conforme perfil da fonte, sem nova validação integral do cabeçalho",
+                "use_conditions": "Atestações mínimas dos textos humanos já publicados no repositório. Créditos da revisão nos registros. Condições do manuscrito e da edição são independentes da licença MIT do código e continuam documentadas no acervo.",
+                "scope": "Somente formas presentes nas linhas 1–10 validadas; não inclui linhas 11–15 pendentes nem reúne fragmentos de quebras físicas. Uso exploratório/de desenvolvimento; bloquear o mesmo grupo em avaliação futura.",
+                "status": "atestacoes_selecionadas_do_acervo"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Freguezia",
+      "repertoire": "portugues_historico",
+      "candidates": [
+        {
+          "id": "d1e390693b050e7bf5473ad3",
+          "replacement": "FREGUEZIA",
+          "match": "case",
+          "distance": 0,
+          "entries": [
+            {
+              "id": "bluteau_freguezia",
+              "form": "FREGUEZIA",
+              "repertoire": "portugues_historico",
+              "language": "português",
+              "language_note": "Identificação conforme o texto da fonte, sem inferência de etimologia.",
+              "kind": "termo",
+              "meaning": "Igreja paroquial; também o lugar onde vivem os fregueses.",
+              "note": "Forma do lema preservada. A data da edição não comprova uso local no ato de 1656.",
+              "attestation_period": "edição de 1713",
+              "source_id": "bluteau_1713_v4",
+              "volume": "4",
+              "printed_page": "206",
+              "pdf_page": 222,
+              "locator": "volume 4, página impressa 206, página física do PDF 222; verbete FREGUEZIA",
+              "url": "https://digital.bbm.usp.br/bitstream/bbm/5445/1/002994-04_COMPLETO.pdf#page=222",
+              "source_file": null,
+              "source_sha256": "35bbc6023fe0730dff4ec97a7b7f858bc081269d17b03112f67a58dbcea4215f",
+              "evidence_file": "docs/lexico_evidencias/bluteau_v4_p222.png",
+              "evidence_sha256": "66a15c25a2b3d15d34411a57edfc2f1bd80dea95f0203081ac71ecf7c1e2e3b9",
+              "evidence": "verificado_na_fonte",
+              "checked_by": "Codex (conferência documental; não é revisão paleográfica humana nova)",
+              "checked_at": "2026-10-19T13:59:35.975756+00:00",
+              "extraction": "Transcrição manual do lema e nota própria de sentido após leitura visual da página integral; OCR usado somente para localizar.",
+              "variant_of": null,
+              "expansion": null,
+              "corpus_origin": null,
+              "source": {
+                "id": "bluteau_1713_v4",
+                "title": "Rafael Bluteau, Vocabulario Portuguez e latino, vol. 4 (F–J), Coimbra, 1713",
+                "url": "https://digital.bbm.usp.br/handle/bbm/5445",
+                "publication_period": "1713",
+                "attestation_period": "edição de 1713",
+                "use_conditions": "Obra em domínio público, conforme o registro da BBM/USP. Créditos: Rafael Bluteau e Biblioteca Brasiliana Guita e José Mindlin/USP.",
+                "scope": "Somente FREGUEZ e FREGUEZIA, conferidos visualmente na página impressa 206.",
+                "status": "verbetes_selecionados_conferidos"
+              }
+            }
+          ]
+        },
+        {
+          "id": "6fbabb9c0795577e921e2266",
+          "replacement": "FREGUEZ",
+          "match": "edit_distance",
+          "distance": 2,
+          "entries": [
+            {
+              "id": "bluteau_freguez",
+              "form": "FREGUEZ",
+              "repertoire": "portugues_historico",
+              "language": "português",
+              "language_note": "Identificação conforme o texto da fonte, sem inferência de etimologia.",
+              "kind": "termo",
+              "meaning": "Pessoa que mora em uma freguesia ou pertence a ela; também comprador habitual de um comerciante.",
+              "note": "Forma do lema preservada. A data da edição não comprova uso local no ato de 1656.",
+              "attestation_period": "edição de 1713",
+              "source_id": "bluteau_1713_v4",
+              "volume": "4",
+              "printed_page": "206",
+              "pdf_page": 222,
+              "locator": "volume 4, página impressa 206, página física do PDF 222; verbete FREGUEZ",
+              "url": "https://digital.bbm.usp.br/bitstream/bbm/5445/1/002994-04_COMPLETO.pdf#page=222",
+              "source_file": null,
+              "source_sha256": "35bbc6023fe0730dff4ec97a7b7f858bc081269d17b03112f67a58dbcea4215f",
+              "evidence_file": "docs/lexico_evidencias/bluteau_v4_p222.png",
+              "evidence_sha256": "66a15c25a2b3d15d34411a57edfc2f1bd80dea95f0203081ac71ecf7c1e2e3b9",
+              "evidence": "verificado_na_fonte",
+              "checked_by": "Codex (conferência documental; não é revisão paleográfica humana nova)",
+              "checked_at": "2026-10-19T13:59:35.975756+00:00",
+              "extraction": "Transcrição manual do lema e nota própria de sentido após leitura visual da página integral; OCR usado somente para localizar.",
+              "variant_of": null,
+              "expansion": null,
+              "corpus_origin": null,
+              "source": {
+                "id": "bluteau_1713_v4",
+                "title": "Rafael Bluteau, Vocabulario Portuguez e latino, vol. 4 (F–J), Coimbra, 1713",
+                "url": "https://digital.bbm.usp.br/handle/bbm/5445",
+                "publication_period": "1713",
+                "attestation_period": "edição de 1713",
+                "use_conditions": "Obra em domínio público, conforme o registro da BBM/USP. Créditos: Rafael Bluteau e Biblioteca Brasiliana Guita e José Mindlin/USP.",
+                "scope": "Somente FREGUEZ e FREGUEZIA, conferidos visualmente na página impressa 206.",
+                "status": "verbetes_selecionados_conferidos"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "zzzzzz",
+      "repertoire": "all",
+      "candidates": []
+    }
+  ]
+}

@@ -10,7 +10,7 @@ const drafts = {page: new Map(), line: new Map()}, activeRegions = new Map();
 const pageFields = ['document', 'folio', 'side', 'pageReviewer', 'pageValidated', 'sourceUrl', 'credits'];
 const coverageFields = ['coverage', 'coverageRegion', 'coverageSource', 'coveragePages', 'complete'];
 const lineFields = ['diplomatic', 'modernized', 'order', 'region', 'reviewer', 'validated',
-    'geometryChecked', 'exclusion', 'referenceSource', 'referencePages', 'x1', 'y1', 'x2', 'y2'];
+    'geometryChecked', 'exclusion', 'referenceSource', 'referencePages', 'x1', 'y1', 'x2', 'y2', 'lexicalAssistance'];
 const checkboxes = new Set(['pageValidated', 'complete', 'validated', 'geometryChecked']);
 const regionLabel = value => value === 'page' ? 'principal' : value;
 const regionId = value => value === 'principal' ? 'page' : value;
@@ -43,7 +43,7 @@ async function action(fn) {
         message(e.status === 409 ? 'Conflito de revisão. Seu rascunho foi preservado. Atualize o catálogo e confira a versão salva antes de tentar novamente.'
             : e instanceof TypeError ? 'Não foi possível concluir a operação. Confira a conexão com o servidor local. Seu rascunho foi preservado.' : e.message, true);
     } finally {
-        document.querySelectorAll('button').forEach(b => b.disabled = false);
+        document.querySelectorAll('button').forEach(b => b.disabled = !!b.lexicalUnavailable);
         $('recognize').disabled = recognitionState === 'disabled';
     }
 }
@@ -71,7 +71,8 @@ function lineForm(l) {
         region: regionLabel(l.region_id), reviewer: l.reviewer || '', validated: l.review_status === 'validated',
         geometryChecked: l.geometry_status === 'validated', exclusion: l.exclusion_reason || '',
         referenceSource: l.reference_source || '', referencePages: l.reference_pages.join(', '),
-        ...Object.fromEntries(['x1', 'y1', 'x2', 'y2'].map((id, i) => [id, String(l.bbox_xyxy[i])]))};
+        ...Object.fromEntries(['x1', 'y1', 'x2', 'y2'].map((id, i) => [id, String(l.bbox_xyxy[i])])),
+        lexicalAssistance: JSON.stringify(l.lexical_assistance || [])};
 }
 const formFor = (kind, record) => kind === 'page' ? pageForm(record) : lineForm(record);
 function rebaseForm(kind, draft, record) {
@@ -206,6 +207,7 @@ function renderLines() {
     renderEditor(); renderOverlay();
 }
 function renderEditor() {
+    invalidateLexicalResults();
     const l = selected(); renderedLine = l?.line_id || null;
     $('editor').hidden = !l; $('noLines').hidden = !!l; if (!l) return;
     $('status').textContent = l.review_status === 'validated' ? 'Referência validada' : l.review_status === 'rejected' ? 'Rejeitada' : 'Revisão pendente';
@@ -270,6 +272,8 @@ async function saveLine(reject = false) {
         reference_kind: validated ? 'human_diplomatic' : l.reference_kind, review_status: reject ? 'rejected' : validated ? 'validated' : 'pending_review',
         geometry_status: f.geometryChecked ? 'validated' : 'pending_review', reviewer: f.reviewer || null,
         exclusion_reason: f.exclusion || null, reference_source: f.referenceSource || null, reference_pages: numbers(f.referencePages)};
+    const assistance = JSON.parse(f.lexicalAssistance);
+    if (assistance.length || l.lexical_assistance) changes.lexical_assistance = assistance;
     const saved = await request('/api/lines/' + id, 'PATCH', {changes, revision: draft?.revision || state.revision});
     finishSave('line', id, f, saved); pendingBox = null; await refresh();
     message('Revisão salva. Histórico e sugestões originais preservados.');
@@ -368,4 +372,91 @@ $('recognize').onclick = () => action(async () => {
     message(state.presentation_policy?.automatic_transcription_enabled ? 'Sugestões salvas. Confira cada palavra na imagem.'
         : 'Diagnóstico salvo. O modelo atual ainda não oferece uma leitura utilizável em português. Continue pela conferência da imagem e da edição.');
 });
+
+let lexicalRequest = 0;
+const matchLabels = {exact: 'Forma exata', case: 'Diferença de caixa', accent: 'Diferença de acentos',
+    edit_distance: 'Proximidade por distância de edição', word_split: 'Proposta de separação de palavras'};
+const repertoireLabels = {portugues_historico: 'Português histórico', acervo: 'Vocabulário do acervo',
+    indigena: 'Repertório indígena identificado pela fonte'};
+function invalidateLexicalResults() {
+    lexicalRequest++;
+    $('lexiconResults').replaceChildren();
+    $('lexiconMessage').textContent = 'Consulte um trecho desta linha. Sugestões modificam somente o rascunho e exigem salvamento e conferência.';
+}
+function lexicalTarget(query) {
+    const input = $('diplomatic'), before = input.value;
+    const start = input.selectionStart ?? 0, end = input.selectionEnd ?? 0;
+    if (end > start && before.slice(start, end) === query) return {lineId, before, start, end};
+    if (!before) return {lineId, before, start: 0, end: 0};
+    const first = before.indexOf(query);
+    if (first >= 0 && before.indexOf(query, first + 1) < 0) return {lineId, before, start: first, end: first + query.length};
+    return null;
+}
+async function consultLexicon() {
+    if (!selected()) throw Error('Selecione uma linha.');
+    captureDrafts();
+    const input = $('diplomatic');
+    const selection = input.value.slice(input.selectionStart ?? 0, input.selectionEnd ?? 0);
+    const query = (selection || $('lexiconText').value).trim();
+    if (!query || query.length > 80) throw Error('Selecione ou digite uma palavra ou trecho de até 80 caracteres.');
+    $('lexiconText').value = query;
+    const target = lexicalTarget(query), requestId = ++lexicalRequest, queryLine = lineId;
+    const repertoire = $('lexiconRepertoire').value || 'all';
+    $('lexiconResults').replaceChildren();
+    $('lexiconMessage').textContent = 'Consultando a base documental local…';
+    const result = await request('/api/lexicon/query', 'POST', {text: query, repertoire, limit: 8});
+    if (requestId !== lexicalRequest || queryLine !== lineId) return;
+    $('lexiconMessage').textContent = result.message + (result.available ? ` Versão ${result.version}.` : '')
+        + (!target && result.candidates.length ? ' Para aplicar, selecione na transcrição o trecho exato e consulte novamente.' : '');
+    for (const candidate of result.candidates) {
+        const card = document.createElement('div'); card.className = 'panel';
+        const heading = document.createElement('strong'); heading.textContent = candidate.replacement; card.append(heading);
+        const match = document.createElement('p'); match.className = 'hint';
+        match.textContent = `${matchLabels[candidate.match]} · distância ${candidate.distance}. Sem probabilidade de acerto atribuída.`;
+        card.append(match);
+        for (const entry of candidate.entries) {
+            const description = document.createElement('p');
+            description.textContent = `${repertoireLabels[entry.repertoire]} · ${entry.language || 'Identificação linguística não determinada'}. `
+                + `${entry.meaning || 'Significado não determinado nesta entrada.'} ${entry.note} `
+                + `Atestação: ${entry.attestation_period}. Publicação: ${entry.source.publication_period || 'data não determinada'}. `
+                + `${entry.evidence === 'atestado_no_acervo' ? 'Atestado na revisão humana do acervo; não é definição de dicionário.' : 'Conferência documental na fonte.'}`;
+            card.append(description);
+            const evidence = document.createElement('p'); evidence.className = 'hint';
+            evidence.textContent = entry.corpus_origin
+                ? `Revisão humana de origem: ${entry.corpus_origin.reviewer}, ${entry.corpus_origin.reviewed_at}; linha ${entry.corpus_origin.line_id}, revisão ${entry.corpus_origin.revision}.`
+                : `Conferência documental: ${entry.checked_by}, ${entry.checked_at}. Não equivale à validação humana de uma linha.`;
+            card.append(evidence);
+            const link = document.createElement('a'); link.href = entry.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+            link.textContent = `${entry.source.title} · ${entry.locator}`; card.append(link);
+            const terms = document.createElement('p'); terms.className = 'hint'; terms.textContent = entry.source.use_conditions; card.append(terms);
+            if (entry.expansion) {
+                const note = document.createElement('p'); note.textContent = `Expansão editorial documentada: ${entry.expansion}. A aplicação conserva a forma atestada, sem desenvolver a abreviatura.`; card.append(note);
+            }
+        }
+        const button = document.createElement('button'); button.className = 'secondary';
+        button.textContent = target && target.start === target.end ? 'Inserir candidato no rascunho vazio' : 'Aplicar somente ao trecho consultado';
+        button.disabled = !target;
+        button.lexicalUnavailable = !target;
+        button.onclick = () => {
+            if (!target || lineId !== target.lineId || input.value !== target.before || requestId !== lexicalRequest
+                    || $('lexiconText').value !== query || ($('lexiconRepertoire').value || 'all') !== repertoire) {
+                $('lexiconMessage').textContent = 'A linha, o texto ou a consulta mudou. Consulte novamente antes de aplicar.'; return;
+            }
+            const after = target.before.slice(0, target.start) + candidate.replacement + target.before.slice(target.end);
+            if (after === target.before) { $('lexiconMessage').textContent = 'A forma já está presente; nenhum rascunho foi alterado.'; return; }
+            const events = JSON.parse($('lexicalAssistance').value || '[]');
+            events.push({version: result.version, fingerprint: result.fingerprint, candidate_id: candidate.id,
+                query, repertoire, before: target.before, after,
+                start: Array.from(target.before.slice(0, target.start)).length,
+                end: Array.from(target.before.slice(0, target.end)).length});
+            input.value = after; $('lexicalAssistance').value = JSON.stringify(events);
+            // A changed diplomatic text requires a fresh explicit human check.
+            $('validated').checked = false;
+            captureDrafts(); invalidateLexicalResults();
+            $('lexiconMessage').textContent = 'Sugestão aplicada somente ao rascunho. Confira a leitura; salvar usa o fluxo normal e não altera a saída bruta.';
+        };
+        card.append(button); $('lexiconResults').append(card);
+    }
+}
+$('lexiconSearch').onclick = () => action(consultLexicon);
 action(refresh);

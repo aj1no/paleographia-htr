@@ -32,7 +32,7 @@ function fixture(count = 2) {
         lines: [l, {...copy(l), line_id: 'l2', reading_order: 2}, {...copy(l), line_id: 'l3', page_id: 'p2'}],
         predictions: [], presentation_policy: {automatic_transcription_enabled: false}};
 }
-async function harness(count = 2, configure = () => {}) {
+async function harness(count = 2, configure = () => {}, lexicalReply = () => ({available: false, candidates: [], message: 'Base indisponível no teste.'})) {
     let catalog = fixture(count), fail = null, revision = 1;
     configure(catalog);
     const elements = Object.fromEntries([...fs.readFileSync(path.join(web, 'index.html'), 'utf8').matchAll(/id="([^"]+)"/g)].map(m => [m[1], new Element()]));
@@ -52,6 +52,7 @@ async function harness(count = 2, configure = () => {}) {
             let result;
             if (url === '/api/catalog') result = catalog;
             else if (url === '/health') result = {recognition: {state: catalog.testRecognitionState || 'test_only'}};
+            else if (url === '/api/lexicon/query') result = await lexicalReply(body);
             else if (method === 'PATCH') {
                 if (body.revision !== catalog.revision) return {ok: false, status: 409, json: async () => ({detail: 'A revisão mudou.'})};
                 const kind = url.includes('/lines/') ? 'line' : 'page';
@@ -71,6 +72,8 @@ async function harness(count = 2, configure = () => {}) {
             elements[id].listeners.input?.();
         },
         click: async id => { assert.equal(typeof elements[id].onclick, 'function', id + ' precisa ter ação'); await elements[id].onclick(); },
+        select: (start, end) => { elements.diplomatic.selectionStart = start; elements.diplomatic.selectionEnd = end; },
+        candidate: async index => elements.lexiconResults.children[index].children.at(-1).onclick(),
         line: async index => elements.lineList.children[index].onclick(),
         page: async id => { elements.pages.value = id; await elements.pages.onchange(); },
         region: async index => { elements.coverageSelect.value = String(index); await elements.coverageSelect.onchange(); }};
@@ -233,5 +236,83 @@ test('Sugestão experimental e reconhecimento preservam o rascunho humano', asyn
     h.edit('diplomatic', 'Meu rascunho'); await h.click('recognize');
     assert.equal(h.el.diplomatic.value, 'Meu rascunho');
     assert.equal(h.catalog().lines[0].text_diplomatic, 'Texto salvo');
+    assert.equal(h.el.validated.checked, false);
+});
+// Respostas SINTÉTICAS para testar o JavaScript real. As consultas documentais
+// são verificadas separadamente pela API e pela conferência no navegador.
+function lexicalFixture(body) {
+    return {available: true, version: 'test-only', fingerprint: 'test-fingerprint', message: 'Resposta sintética, sem confiança probabilística.',
+        candidates: [{id: 'test-candidate', replacement: 'Jundiahy', match: 'edit_distance', distance: 1,
+            entries: [{id: 'test-entry', form: 'Jundiahy', repertoire: 'acervo', language: null, meaning: null,
+                note: 'SINTÉTICO', attestation_period: 'teste', evidence: 'atestado_no_acervo',
+                locator: 'linha sintética 1', url: 'https://example.org/synthetic',
+                corpus_origin: {reviewer: 'Revisor de teste', reviewed_at: '2026-10-19T12:00:00Z', line_id: 'test-line', revision: 'test-revision'},
+                source: {title: 'Fonte sintética', publication_period: 'teste', use_conditions: 'SINTÉTICO'}}]}]};
+}
+test('Consulta lexical não modifica campos, bruto, estados ou catálogo; aplicação altera só o trecho', async () => {
+    const h = await harness(2, c => {
+        c.lines[0].text_diplomatic = 'Em Sundiahy agora'; c.lines[0].review_status = 'validated';
+        c.lines[0].geometry_status = 'validated'; c.predictions = [{line_id: 'l1', text_raw: 'BRUTO IMUTÁVEL', presentation: {text: 'BRUTO IMUTÁVEL'}}];
+    }, lexicalFixture);
+    await h.line(0); const before = h.catalog();
+    h.select(3, 11); await h.click('lexiconSearch');
+    assert.equal(h.el.diplomatic.value, 'Em Sundiahy agora'); assert.equal(h.el.validated.checked, true);
+    assert.deepEqual(h.catalog(), before); assert.equal(patches(h).length, 0);
+    await h.candidate(0);
+    assert.equal(h.el.diplomatic.value, 'Em Jundiahy agora'); assert.equal(h.el.validated.checked, false);
+    assert.equal(h.el.geometryChecked.checked, true); assert.equal(h.el.raw.textContent, 'BRUTO IMUTÁVEL');
+    assert.equal(patches(h).length, 0);
+    await h.line(1); await h.line(0); assert.equal(h.el.diplomatic.value, 'Em Jundiahy agora');
+    h.select(0, 0); h.edit('lexiconText', 'outra consulta'); await h.click('lexiconSearch');
+    assert.equal(h.el.diplomatic.value, 'Em Jundiahy agora');
+    await h.click('saveLine');
+    const changes = patches(h).at(-1).body.changes;
+    assert.equal(changes.review_status, 'pending_review');
+    assert.equal(changes.lexical_assistance[0].candidate_id, 'test-candidate');
+    assert.equal(changes.lexical_assistance[0].before, 'Em Sundiahy agora');
+    assert.deepEqual(h.catalog().predictions, before.predictions);
+});
+test('Sugestão antiga não altera texto editado depois da consulta', async () => {
+    const h = await harness(2, c => c.lines[0].text_diplomatic = 'Sundiahy', lexicalFixture);
+    await h.line(0); h.edit('lexiconText', 'Sundiahy'); await h.click('lexiconSearch');
+    h.edit('diplomatic', 'Minha leitura nova'); await h.candidate(0);
+    assert.equal(h.el.diplomatic.value, 'Minha leitura nova'); assert.match(h.el.lexiconMessage.textContent, /mudou/);
+    assert.equal(h.el.lexicalAssistance.value, '[]');
+});
+test('Identidade da linha e resposta assíncrona antiga não atravessam navegação', async () => {
+    let release;
+    const reply = new Promise(resolve => release = resolve);
+    const h = await harness(2, c => c.lines[0].text_diplomatic = 'Sundiahy', () => reply);
+    await h.line(0); h.edit('lexiconText', 'Sundiahy'); const pending = h.click('lexiconSearch');
+    await h.line(1); release(lexicalFixture()); await pending;
+    assert.equal(h.el.diplomatic.value, 'Texto salvo'); assert.equal(h.el.lexiconResults.children.length, 0);
+});
+test('Seleção repetida e posições Unicode são preservadas na proveniência', async () => {
+    const h = await harness(2, c => c.lines[0].text_diplomatic = '📜 Sundiahy Sundiahy', lexicalFixture);
+    await h.line(0); h.select(12, 20); await h.click('lexiconSearch'); await h.candidate(0);
+    assert.equal(h.el.diplomatic.value, '📜 Sundiahy Jundiahy');
+    const event = JSON.parse(h.el.lexicalAssistance.value)[0];
+    assert.equal(event.start, 11); assert.equal(event.end, 19);
+});
+for (const error of [409, 422, 'network']) test(`Aplicação lexical mantém rascunho e proveniência na falha ${error}`, async () => {
+    const h = await harness(2, c => c.lines[0].text_diplomatic = 'Sundiahy', lexicalFixture);
+    await h.line(0); h.edit('lexiconText', 'Sundiahy'); await h.click('lexiconSearch'); await h.candidate(0);
+    const assistance = h.el.lexicalAssistance.value; h.fail(error); await h.click('saveLine');
+    assert.equal(h.el.diplomatic.value, 'Jundiahy'); assert.equal(h.el.lexicalAssistance.value, assistance);
+    assert.equal(h.catalog().lines[0].text_diplomatic, 'Sundiahy');
+});
+test('Base indisponível ou sem candidato preserva revisão manual', async () => {
+    for (const available of [false, true]) {
+        const h = await harness(2, () => {}, () => ({available, version: 'test-only', candidates: [], message: 'Sem candidato sustentado.'}));
+        await h.line(0); h.edit('diplomatic', 'Edição livre'); h.edit('lexiconText', 'sem entrada'); await h.click('lexiconSearch');
+        assert.equal(h.el.diplomatic.value, 'Edição livre'); assert.equal(h.el.lexiconResults.children.length, 0);
+        await h.click('saveLine'); assert.equal(h.catalog().lines[0].text_diplomatic, 'Edição livre');
+    }
+});
+test('Consulta manual a partir de palavra reconhecida só insere no rascunho vazio mediante ação explícita', async () => {
+    const h = await harness(2, c => { c.lines[0].text_diplomatic = null; c.predictions = [{line_id: 'l1', text_raw: 'Sundiahy', presentation: {text: 'Sundiahy'}}]; }, lexicalFixture);
+    await h.line(0); h.edit('lexiconText', 'Sundiahy'); await h.click('lexiconSearch');
+    assert.equal(h.el.diplomatic.value, ''); assert.equal(patches(h).length, 0);
+    await h.candidate(0); assert.equal(h.el.diplomatic.value, 'Jundiahy'); assert.equal(h.el.raw.textContent, 'Sundiahy');
     assert.equal(h.el.validated.checked, false);
 });

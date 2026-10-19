@@ -14,10 +14,11 @@ def artifact_for_hash(root, row):
     current = safe_path(root, row["path"])
     if current.is_file() and sha256(current) == row["sha256"]:
         return current
-    if row["path"].endswith(".py") and row["path"].startswith(("src/", "scripts/")):
-        archived = safe_path(root, "docs/experimentos/implementation_31997a4/"+row["path"])
-        if archived.is_file() and sha256(archived) == row["sha256"]:
-            return archived
+    if row["path"].endswith((".py", ".js")) and row["path"].startswith(("src/", "scripts/")):
+        for revision in ("31997a4", "3284e07"):
+            archived = safe_path(root, f"docs/experimentos/implementation_{revision}/"+row["path"])
+            if archived.is_file() and sha256(archived) == row["sha256"]:
+                return archived
     return current
 
 

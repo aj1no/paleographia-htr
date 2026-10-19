@@ -1,0 +1,77 @@
+{
+  "version": "2026-10-19.1",
+  "checked_at": "2026-10-19T13:59:35.975756+00:00",
+  "repertoire_policy": "Rótulos internos; português histórico, acervo e repertórios indígenas são conjuntos separados. Ausência não equivale a erro.",
+  "sources": [
+    {
+      "id": "bluteau_1712_v1",
+      "title": "Rafael Bluteau, Vocabulario Portuguez e latino, vol. 1 (A), Coimbra, 1712",
+      "url": "https://digital.bbm.usp.br/handle/bbm/5446",
+      "publication_period": "1712",
+      "attestation_period": "edição de 1712",
+      "use_conditions": "Obra em domínio público, conforme o registro da BBM/USP. Créditos: Rafael Bluteau e Biblioteca Brasiliana Guita e José Mindlin/USP. Esta indicação não altera a licença de outros materiais.",
+      "scope": "Três verbetes selecionados nos volumes 1 e 4; nenhuma importação integral.",
+      "status": "verbetes_selecionados_conferidos"
+    },
+    {
+      "id": "bluteau_1713_v4",
+      "title": "Rafael Bluteau, Vocabulario Portuguez e latino, vol. 4 (F–J), Coimbra, 1713",
+      "url": "https://digital.bbm.usp.br/handle/bbm/5445",
+      "publication_period": "1713",
+      "attestation_period": "edição de 1713",
+      "use_conditions": "Obra em domínio público, conforme o registro da BBM/USP. Créditos: Rafael Bluteau e Biblioteca Brasiliana Guita e José Mindlin/USP.",
+      "scope": "Somente FREGUEZ e FREGUEZIA, conferidos visualmente na página impressa 206.",
+      "status": "verbetes_selecionados_conferidos"
+    },
+    {
+      "id": "morais_1789_v1",
+      "title": "Antônio de Morais Silva, Diccionario da lingua portugueza, vol. 1 (A–K), Lisboa, 1789",
+      "url": "https://digital.bbm.usp.br/handle/bbm/5412",
+      "publication_period": "1789",
+      "attestation_period": "não determinada nesta etapa",
+      "use_conditions": "Registro BBM/USP indica domínio público. Nenhum verbete deste volume foi importado nesta entrega.",
+      "scope": "Registro bibliográfico conferido; volume A–K localizado. Fonte posterior ao ato de 1656 e ao ano de cópia indicado como 1767.",
+      "status": "somente_catalogo"
+    },
+    {
+      "id": "morais_1789_v2",
+      "title": "Antônio de Morais Silva, Diccionario da lingua portugueza, vol. 2 (L–Z), Lisboa, 1789",
+      "url": "https://digital.bbm.usp.br/handle/bbm/5413",
+      "publication_period": "1789",
+      "attestation_period": "não determinada nesta etapa",
+      "use_conditions": "Registro BBM/USP indica domínio público. Nenhum verbete deste volume foi importado nesta entrega.",
+      "scope": "Registro bibliográfico conferido; não cobre A–K. Não prova automaticamente uso local em 1656 ou 1767.",
+      "status": "somente_catalogo"
+    },
+    {
+      "id": "leite_2013",
+      "title": "Fabiana Raquel Leite, A Língua Geral Paulista e o Vocabulário Elementar da Língua Geral Brasílica, Unicamp, 2013",
+      "url": "https://tupi.fflch.usp.br/sites/tupi.fflch.usp.br/files/A%20lingua%20geral%20paulista.pdf",
+      "publication_period": "2013 (estudo); 1936 (publicação do vocabulário analisado)",
+      "attestation_period": "registros heterogêneos, em parte da LGP do início do século XIX, conforme a análise da autora",
+      "use_conditions": "Estudo moderno consultado para delimitação linguística. Não se pressupõe licença de importação integral; nenhuma definição ou entrada foi copiada.",
+      "scope": "Resumo, PDF físico 7, páginas vii–viii. O repertório analisado reúne fontes e línguas distintas; não foi usado para atribuir idioma ou etimologia aos nomes do acervo.",
+      "status": "somente_catalogo"
+    },
+    {
+      "id": "vlb_ayrosa_1938",
+      "title": "Vocabulário na Língua Brasílica, edição Plínio Ayrosa 1938; manuscrito descrito como 1622 na ficha CEDOCH/USP",
+      "url": "https://cedoch.fflch.usp.br/ficha004",
+      "publication_period": "1938 (edição); ficha institucional contemporânea",
+      "attestation_period": "século XVII; a ficha discute datas 1621/1622 e autoria",
+      "use_conditions": "A ficha CEDOCH permite uso educacional/informativo com créditos, indicação do titular e do termo de uso, e proíbe uso comercial. Nenhum dado lexical nem PDF dessa edição foi importado; estas condições dizem respeito ao banco descrito na página e não conferem licença geral sobre todos os materiais vinculados.",
+      "scope": "Vocabulário português–tupi, distinto do repertório oitocentista analisado por Leite. Catálogo e condições conferidos; entradas aguardam exame dos fac-símiles.",
+      "status": "somente_catalogo"
+    },
+    {
+      "id": "acervo_269r_20261016",
+      "title": "Traslado 269r — revisão humana publicada da sessão de 16/10/2026",
+      "url": "https://github.com/aj1no/paleographia-htr/blob/3284e070285cac462bf38140618e053fe7161650/docs/revisao_humana/traslado_269r/sessao_20261016/lines.jsonl",
+      "publication_period": "2026-10-16 (publicação da revisão); data da edição paleográfica não determinada aqui",
+      "attestation_period": "ato descrito de 1656; cabeçalho da cópia indica 1767, conforme perfil da fonte, sem nova validação integral do cabeçalho",
+      "use_conditions": "Atestações mínimas dos textos humanos já publicados no repositório. Créditos da revisão nos registros. Condições do manuscrito e da edição são independentes da licença MIT do código e continuam documentadas no acervo.",
+      "scope": "Somente formas presentes nas linhas 1–10 validadas; não inclui linhas 11–15 pendentes nem reúne fragmentos de quebras físicas. Uso exploratório/de desenvolvimento; bloquear o mesmo grupo em avaliação futura.",
+      "status": "atestacoes_selecionadas_do_acervo"
+    }
+  ]
+}

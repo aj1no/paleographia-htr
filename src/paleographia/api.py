@@ -29,6 +29,13 @@ class AddLine(BaseModel):
     reading_order: int = Field(ge=0)
 
 
+class LexicalQuery(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    text: str = Field(min_length=1, max_length=80)
+    repertoire: str = "all"
+    limit: int = Field(default=5, ge=1, le=8)
+
+
 def create_app(root=None, config=None, recognizer=None):
     root = Path(root or Path.cwd()).resolve()
     config = config or load_config(root/"configs/pilot.toml")
@@ -79,6 +86,15 @@ def create_app(root=None, config=None, recognizer=None):
     @app.get("/review.js")
     def review_script():
         return FileResponse(Path(__file__).parent/"web/review.js", media_type="text/javascript")
+
+    @app.post("/api/lexicon/query")
+    def lexical_query(query: LexicalQuery):
+        from .lexicon import Lexicon
+        try:
+            lexicon = Lexicon(root, config.get("lexicon", {}).get("directory", "data/lexicon"))
+        except ValueError as exc:
+            return {"available": False, "candidates": [], "message": str(exc)}
+        return lexicon.query(query.text, query.repertoire, query.limit)
 
     def repertoire_catalog():
         path = root / "data/manifests/repertorio_100r.json"
