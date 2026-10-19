@@ -26,3 +26,5 @@ jobs:
       - run: node --test tests/web_review.test.cjs
       - run: python -m compileall -q src server tests
       - run: python -m paleographia --help
+      - name: Conferir evidências do teste lexical em cópia
+        run: python docs/testes/lexico_copia_20261019/verificar.py
