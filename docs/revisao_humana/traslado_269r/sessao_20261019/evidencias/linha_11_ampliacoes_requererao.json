@@ -1,0 +1,29 @@
+{
+  "source": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+  "line_id": "l_traslado_269r_body_11",
+  "views": [
+    {
+      "file": "linha_11_requererao_contexto_3x.png",
+      "bbox_xyxy": [
+        245,
+        1037,
+        570,
+        1151
+      ],
+      "scale": 3
+    },
+    {
+      "file": "linha_11_requererao_sinal_ponto_4x.png",
+      "bbox_xyxy": [
+        390,
+        1040,
+        486,
+        1128
+      ],
+      "scale": 4
+    }
+  ],
+  "method": "Ampliação por repetição de pixels, sem reconstrução de traços; somente derivados para visualização.",
+  "partial_user_confirmation": "ticular, com um só l; confirmada nesta conversa. Linha inteira continua pendente."
+}

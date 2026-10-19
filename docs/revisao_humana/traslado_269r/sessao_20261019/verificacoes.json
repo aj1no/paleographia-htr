@@ -1,0 +1,36 @@
+{
+  "pytest": {
+    "comando": ".venv/Scripts/python.exe -m pytest -q",
+    "aprovados": 90,
+    "falhas": 0,
+    "avisos": [
+      "DeprecationWarning Starlette/AnyIO: anyio.abc.BlockingPortal"
+    ]
+  },
+  "javascript": {
+    "comando": "node --test tests/web_review.test.cjs",
+    "aprovados": 29,
+    "falhas": 0
+  },
+  "pacote_lexical_anterior": {
+    "comando": "python docs/testes/lexico_copia_20261019/verificar.py",
+    "resultado": "aprovado"
+  },
+  "compilacao_verificador": "aprovada",
+  "git_diff_check": "aprovado",
+  "testes_de_recusa_em_copias": [
+    {
+      "caso": "bruto",
+      "resultado": "recusado_como_esperado",
+      "inventario_recalculado_para_testar_conteudo": true,
+      "motivo": "Saída bruta alterada."
+    },
+    {
+      "caso": "pixels",
+      "resultado": "recusado_como_esperado",
+      "inventario_recalculado_para_testar_conteudo": true,
+      "motivo": "Recorte não corresponde aos pixels da fonte."
+    }
+  ],
+  "ci_remota": "resultado ainda nao afirmado; verificar apos push"
+}

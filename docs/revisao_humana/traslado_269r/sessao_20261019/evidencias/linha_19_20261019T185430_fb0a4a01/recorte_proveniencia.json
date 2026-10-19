@@ -1,0 +1,24 @@
+{
+  "line": {
+    "line_id": "l_traslado_269r_body_19_candidata",
+    "page_id": "p_traslado_269r",
+    "region_id": "body_19_candidata",
+    "reading_order": 18,
+    "bbox_xyxy": [
+      85,
+      1450,
+      1060,
+      1540
+    ],
+    "crop_image": "output/revisao_269r/linha_19_20261019T185430_fb0a4a01/recorte.png",
+    "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0"
+  },
+  "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "geometry_status": "pending_review",
+  "coverage_status": "pending_review",
+  "ampliacao": "3x, vizinho mais proximo; sem ajuste de contraste ou nitidez",
+  "preserved_workspace_files": {
+    "data\\workspace_traslado_269r\\current.json": "357b6d91ffac86bdb993366b18dcff70b4c26c4360f107239b067b99dd3b8049",
+    "data\\workspace_traslado_269r\\revisions\\20261019T153953_c011dcd6.json": "21ef7651807f5b88e210e48f151bd09b121d0137672a633189e67dec33f6bfd3"
+  }
+}

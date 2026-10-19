@@ -1,0 +1,16 @@
+{
+  "source": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+  "bbox_xyxy": [
+    95,
+    1110,
+    455,
+    1202
+  ],
+  "scale": 3,
+  "method": "NEAREST, somente visualizacao; sem alterar limites salvos ou revisoes",
+  "focus": "tao mor e ouvidor",
+  "raw_prediction": "tao moi eouvidon Emcomo lles Er pova",
+  "reading_to_check": "tão mõr e ouvidor",
+  "previous_line_open_reading": "Requererão provavel; pontuacao incerta"
+}

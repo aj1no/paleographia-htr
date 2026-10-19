@@ -1,0 +1,30 @@
+{
+  "commit_base": "336c0defd3abba1a1ca946bff42a81acd5bcae4c",
+  "branch": "codex/refatoracao-piloto",
+  "manuscrito": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+  "dimensoes": [
+    1166,
+    1873
+  ],
+  "edicao_de_apoio": "docs/revisao_humana/traslado_269r/corpo_269r_edicao.txt",
+  "edicao_sha256": "15e2ddf3f36f50067bc15b3857831258df0508377f8d0b54f908d210fab68aba",
+  "creditos_edicao": [
+    "Ana Caroline C. Miranda, paleógrafa responsável",
+    "Thiago Paschoal, paleógrafo revisor"
+  ],
+  "paginas_pdf_edicao": [
+    1,
+    2
+  ],
+  "limite_reto": "Antes de 269/Verso. na página 2.",
+  "estado_editor_observado": {
+    "revisao": "20261019T153953_c011dcd6",
+    "linhas": 15,
+    "validadas": 15,
+    "sem_alteracoes_locais_pendentes": true,
+    "evidencia": "evidencias/editor_encerramento_20261019.png"
+  },
+  "metodo_imagens": "Recortes dos pixels RGB originais; ampliação por vizinho mais próximo, sem reconstrução, contraste ou nitidez. Rótulos de comparações fora dos recortes.",
+  "editor_e_dados_originais_alterados_pela_publicacao": false
+}

@@ -1,0 +1,27 @@
+{
+  "source_image": "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg",
+  "source_sha256": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+  "examples": [
+    {
+      "label": "Linha 16 — hipótese: Par",
+      "bbox_xyxy": [
+        790,
+        1285,
+        1010,
+        1405
+      ]
+    },
+    {
+      "label": "Linha 17 — hipótese: nahiba",
+      "bbox_xyxy": [
+        70,
+        1335,
+        290,
+        1455
+      ]
+    }
+  ],
+  "scale": 4,
+  "method": "PIL.Image.Resampling.NEAREST; sem ajuste de contraste ou nitidez",
+  "notes": "Hipoteses da edicao publicada, em conferencia visual conjunta. Mesmo fator de ampliacao. Rotulos fora dos pixels do manuscrito. Nenhuma revisao original alterada."
+}
