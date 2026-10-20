@@ -1,2 +1,3 @@
-# Lightweight runtime. Optional inference: pip install -e ".[htr]"
+# Instala o pacote local. Testes: pip install -e ".[test]".
+# PP-OCRv6 usa runtime separado; o extra [htr] pertence ao TrOCR bloqueado.
 -e .

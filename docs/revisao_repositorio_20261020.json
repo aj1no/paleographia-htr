@@ -1,0 +1,68 @@
+{
+  "data": "2026-10-20",
+  "base_git": "3a629e316e7f0485bc8eaec2ad2c882d3bb3a749",
+  "escopo": "revisao_documental_e_inventario_sem_remocoes",
+  "python_testes_passaram": 90,
+  "python_avisos": 1,
+  "aviso": "Depreciação já existente de anyio.abc.BlockingPortal em Starlette/TestClient.",
+  "javascript_testes_passaram": 29,
+  "auditoria_referencia_assistida": {
+    "arquivos_conferidos": 58,
+    "linhas": 24,
+    "validadas": 16,
+    "ressalvas": 8
+  },
+  "auditoria_experimento": {
+    "arquivos_conferidos": 29,
+    "resultado": "aprovado"
+  },
+  "auditoria_entrega_academica": {
+    "arquivos_conferidos": 24,
+    "resultado": "aprovado"
+  },
+  "compileall": "aprovado",
+  "cli_help": "aprovado",
+  "links_locais_documentacao_conferidos": 87,
+  "importacao_catalogo_congelado_em_copia": {
+    "resultado": "aprovado",
+    "linhas": 24,
+    "validadas": 16,
+    "ressalvas": 8,
+    "originais_alterados": false
+  },
+  "arquivos_versionados_regulares_antes": 606,
+  "arquivos_versionados_protegidos_identicos": 597,
+  "sha256_mapa_arquivos_protegidos": "e8c86064dbe9e93fce3e71b6701884832adabb93b478e5dde818f39480f5e247",
+  "arquivos_workspace_identicos": 82,
+  "arquivos_versionados_modificados": [
+    "CONTRIBUTING.md",
+    "README.md",
+    "README.pt-br.md",
+    "docs/ai_comments.md",
+    "docs/environment.md",
+    "docs/guia_revisao_gpt.md",
+    "docs/runbook.md",
+    "experiments/README.md",
+    "requirements.txt"
+  ],
+  "arquivos_novos": [
+    "docs/README.md",
+    "docs/revisao_repositorio_20261020.md",
+    "docs/revisao_repositorio_20261020.json"
+  ],
+  "arquivos_removidos_ou_movidos": [],
+  "novas_inferencias": 0,
+  "notebook_reexecutado": false,
+  "funcionalidades_adicionadas": false,
+  "limites": [
+    "Sem auditoria exaustiva de segurança/dependências.",
+    "Uso externo de auxiliares da raiz não foi verificado.",
+    "Validação local desta revisão; não é uma nova execução remota de CI."
+  ],
+  "github_consultado": {
+    "branch_padrao": "main",
+    "commit_main": "701dec4ad62863be119260bbe381a88af7c240c0",
+    "descricao_publica_ainda_menciona_trocr": true,
+    "metadados_remotos_alterados": false
+  }
+}
