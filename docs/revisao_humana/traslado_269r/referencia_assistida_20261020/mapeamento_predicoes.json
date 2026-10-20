@@ -1,0 +1,119 @@
+[
+  {
+    "line_id": "l_traslado_269r_body_16_candidata",
+    "arquivo_original": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/predicoes_originais/linha_16.jsonl",
+    "sha256_original": "039ed989198d1697aaceba73c6bdecaefcf8365b36a93828acf27c3df15412d1",
+    "region_id_original": "body_16_candidata",
+    "crop_image_original": "output/revisao_269r/linha_16_20261019T165002_3bde0d0e/recorte.png",
+    "region_id_editor": "body_16_20",
+    "crop_image_editor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_16.png",
+    "campos_alterados_na_projecao": [
+      "region_id",
+      "crop_image"
+    ]
+  },
+  {
+    "line_id": "l_traslado_269r_body_17_candidata",
+    "arquivo_original": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/predicoes_originais/linha_17.jsonl",
+    "sha256_original": "21e7cbf494d6ffb5dcd37e93f75ce85fd0e58c4a37b7768857805588c3dc6d54",
+    "region_id_original": "body_17_candidata",
+    "crop_image_original": "output/revisao_269r/linha_17_20261019T170028_e7556876/recorte.png",
+    "region_id_editor": "body_16_20",
+    "crop_image_editor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_17.png",
+    "campos_alterados_na_projecao": [
+      "region_id",
+      "crop_image"
+    ]
+  },
+  {
+    "line_id": "l_traslado_269r_body_18_candidata",
+    "arquivo_original": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/predicoes_originais/linha_18.jsonl",
+    "sha256_original": "e74fccd80edc0bb43449cb1ac30a34c0f4cfe11314d79680491ade37be7af538",
+    "region_id_original": "body_18_candidata",
+    "crop_image_original": "output/revisao_269r/linha_18_20261019T172614_10348a78/recorte.png",
+    "region_id_editor": "body_16_20",
+    "crop_image_editor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_18.png",
+    "campos_alterados_na_projecao": [
+      "region_id",
+      "crop_image"
+    ]
+  },
+  {
+    "line_id": "l_traslado_269r_body_19_candidata",
+    "arquivo_original": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/predicoes_originais/linha_19.jsonl",
+    "sha256_original": "7eb04db9986f66e2b62a8c49b3cecf258b0c8f3b062170fc0854a38bd7f373dd",
+    "region_id_original": "body_19_candidata",
+    "crop_image_original": "output/revisao_269r/linha_19_20261019T185430_fb0a4a01/recorte.png",
+    "region_id_editor": "body_16_20",
+    "crop_image_editor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_19.png",
+    "campos_alterados_na_projecao": [
+      "region_id",
+      "crop_image"
+    ]
+  },
+  {
+    "line_id": "l_traslado_269r_body_20_candidata",
+    "arquivo_original": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/predicoes_originais/linha_20.jsonl",
+    "sha256_original": "304038a63d2562b6a0b05391ab515c276d58729c3b5841b4131ea7cd7d2f340b",
+    "region_id_original": "body_20_candidata",
+    "crop_image_original": "output/revisao_269r/linha_20_20261019T190125_8fb94b6c/recorte.png",
+    "region_id_editor": "body_16_20",
+    "crop_image_editor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_20.png",
+    "campos_alterados_na_projecao": [
+      "region_id",
+      "crop_image"
+    ]
+  },
+  {
+    "line_id": "l_traslado_269r_body_21_candidata",
+    "arquivo_original": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/predicoes_originais/linha_21.jsonl",
+    "sha256_original": "0b60ec2a6dddb892689899ec1b0538205a0031abd5f0671bf12a84065d3f65be",
+    "region_id_original": "body_21_candidata",
+    "crop_image_original": "output/revisao_269r/linha_21_20261019T190506_061523b0/recorte.png",
+    "region_id_editor": "body_21_24",
+    "crop_image_editor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_21.png",
+    "campos_alterados_na_projecao": [
+      "region_id",
+      "crop_image"
+    ]
+  },
+  {
+    "line_id": "l_traslado_269r_body_22_candidata",
+    "arquivo_original": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/predicoes_originais/linha_22.jsonl",
+    "sha256_original": "5046534d8b7a03bdbf6badd07dd2825f03df0262b6bd4603428f865c73fc3de9",
+    "region_id_original": "body_22_candidata",
+    "crop_image_original": "output/revisao_269r/linha_22_20261020T140507_6e52e126/recorte.png",
+    "region_id_editor": "body_21_24",
+    "crop_image_editor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_22.png",
+    "campos_alterados_na_projecao": [
+      "region_id",
+      "crop_image"
+    ]
+  },
+  {
+    "line_id": "l_traslado_269r_body_23_candidata",
+    "arquivo_original": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/predicoes_originais/linha_23.jsonl",
+    "sha256_original": "f0c91ddfeec44ea94f96a68d2f038f0946aad0fa616065adb11423ac441d31dc",
+    "region_id_original": "body_23_candidata",
+    "crop_image_original": "output/revisao_269r/linha_23_20261020T150507_05fd020e/recorte.png",
+    "region_id_editor": "body_21_24",
+    "crop_image_editor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_23.png",
+    "campos_alterados_na_projecao": [
+      "region_id",
+      "crop_image"
+    ]
+  },
+  {
+    "line_id": "l_traslado_269r_body_24_candidata",
+    "arquivo_original": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/predicoes_originais/linha_24.jsonl",
+    "sha256_original": "a75ed82945ee0eb670c53a3d5ed9640bb093224de4023c94e212a72e3188e9ce",
+    "region_id_original": "body_24_candidata",
+    "crop_image_original": "output/revisao_269r/linha_24_20261020T151118_38298d13/recorte.png",
+    "region_id_editor": "body_21_24",
+    "crop_image_editor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_24.png",
+    "campos_alterados_na_projecao": [
+      "region_id",
+      "crop_image"
+    ]
+  }
+]

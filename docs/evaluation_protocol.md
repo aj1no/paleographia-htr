@@ -1,5 +1,21 @@
 # Protocolo experimental proposto
 
+**Atualização de 20/10/2026 — requisito de PLN:** o usuário informou que a
+disciplina exige **comparar dois reconhecedores**. A proposta principal passa a
+ser latin PP-OCRv5 mobile/ONNX × PP-OCRv6 medium/Kraken, sobre os mesmos recortes
+humanos, com saídas brutas e pré-processamentos nativos documentados. Ambos já
+existem no projeto. O plano de segmentadores descrito abaixo permanece como
+histórico de planejamento secundário e não satisfaz sozinho essa exigência.
+Ver a [minuta atual e seus pré-requisitos](revisao_humana/traslado_269r/referencia_assistida_20261020/proposta_experimento.md).
+
+O corpo do 269r agora tem 24 linhas incorporadas, com geometria e cobertura
+confirmadas, 16 linhas validadas e oito com dúvidas visuais preservadas e leituras
+adotadas por apoio editorial. A [referência assistida congelada](revisao_humana/traslado_269r/referencia_assistida_20261020/README.md)
+não é teste reservado nem referência integralmente independente da edição.
+O validador existente bloqueia a avaliação integral das 24 linhas. Nenhuma nova
+métrica ou inferência foi produzida nesta consolidação. As métricas históricas
+abaixo continuam restritas às primeiras cinco linhas e às versões indicadas.
+
 Atualização posterior: o [PP-OCRv6 medium](experimentos/traslado_269r_ppocrv6_20261016/README.md)
 atingiu CER 30/242 = 12,40% e WER 23/45 = 51,11% na mesma referência e nos mesmos
 cinco recortes, com leitura aproveitável como rascunho assistido e correção humana

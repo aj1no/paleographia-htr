@@ -1,10 +1,26 @@
 # Enquadramento acadêmico — pendente de confirmação
 
-Produto: protótipo local de transcrição assistida de manuscritos delimitados de Jundiaí. Objetivo e RQ1–RQ3 estão em `evaluation_protocol.md`. A comparação clássica/neural é de **segmentação**, com reconhecedor fixo, e não de dois reconhecedores.
+Produto: protótipo local de transcrição assistida de manuscritos delimitados de Jundiaí.
+
+**Atualização de 20/10/2026:** o usuário esclareceu: “PLN exige comparar dois
+reconhecedores.” A proposta principal para PLN passa a ser **PP-OCRv5 latino ×
+PP-OCRv6 medium**, usando os mesmos recortes humanos e os componentes já
+existentes. O PP-OCRv5 local foi carregado em CPU e os hashes dos dois modelos
+foram conferidos, sem nova inferência ou métrica. O editor continua PP-OCRv6.
+A proposta e os pré-requisitos estão na
+[minuta do experimento](revisao_humana/traslado_269r/referencia_assistida_20261020/proposta_experimento.md).
+
+O plano anterior e suas RQ1–RQ3 em `evaluation_protocol.md` comparavam
+**segmentação**, com reconhecedor fixo. Esse plano sozinho não atende ao
+requisito agora esclarecido para PLN e fica secundário, sem iniciar outra frente.
 
 A especificação recebida relata que PI IV menciona “primeiro modelo de classificação” e deep learning, mas também admite outros temas. **O professor ainda precisa confirmar o enquadramento segmentação/HTR**. Não foi criado classificador artificial para cumprir terminologia. Isso não impede catálogo, editor ou piloto.
 
-PLN: segundo a especificação, exige comparação entre dois modelos, artigo de até cinco páginas e apresentação. A comparação de segmentadores sozinha não comprova dois modelos de linguagem/reconhecimento. Confirmar se será necessário um segundo reconhecedor e planejar só depois do fluxo principal e dos dados aptos.
+PLN: o requisito de dois reconhecedores foi informado diretamente pelo usuário
+em 20/10/2026. Artigo de até cinco páginas e apresentação continuam requisitos
+relatados na especificação; a rubrica e a aceitação do desenho específico ainda
+precisam ser confirmadas. O segundo reconhecedor já existe no projeto como
+componente experimental ONNX; não houve novo motor ou ativação de TrOCR.
 
 PI IV: preservar sua própria orientação de revisão sistemática, artigo/notebook e dados públicos. A dispensa relatada para PLN não elimina o requisito de PI. Os PDFs das disciplinas não estavam nas entradas do projeto; requisitos foram registrados como **informação da especificação**, não leitura direta desses slides nem aprovação obtida.
 

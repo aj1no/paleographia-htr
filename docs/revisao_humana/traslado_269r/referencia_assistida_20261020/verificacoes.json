@@ -1,0 +1,58 @@
+{
+  "catalogo": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 24,
+    "statuses": {
+      "validated": 16,
+      "pending_review": 8
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "avaliacao_integral_bloqueada_por_duvidas_visuais": {
+    "valid": false,
+    "purpose": "evaluation",
+    "rows": 24,
+    "statuses": {
+      "validated": 16,
+      "pending_review": 8
+    },
+    "errors": [
+      "l_traslado_269r_body_11: Exige referência paleográfica e geometria revisadas, crop e proveniência; modernizada/pendente/excluída não é alvo.",
+      "l_traslado_269r_body_15: Exige referência paleográfica e geometria revisadas, crop e proveniência; modernizada/pendente/excluída não é alvo.",
+      "l_traslado_269r_body_16_candidata: Exige referência paleográfica e geometria revisadas, crop e proveniência; modernizada/pendente/excluída não é alvo.",
+      "l_traslado_269r_body_17_candidata: Exige referência paleográfica e geometria revisadas, crop e proveniência; modernizada/pendente/excluída não é alvo.",
+      "l_traslado_269r_body_19_candidata: Exige referência paleográfica e geometria revisadas, crop e proveniência; modernizada/pendente/excluída não é alvo.",
+      "l_traslado_269r_body_20_candidata: Exige referência paleográfica e geometria revisadas, crop e proveniência; modernizada/pendente/excluída não é alvo.",
+      "l_traslado_269r_body_23_candidata: Exige referência paleográfica e geometria revisadas, crop e proveniência; modernizada/pendente/excluída não é alvo.",
+      "l_traslado_269r_body_24_candidata: Exige referência paleográfica e geometria revisadas, crop e proveniência; modernizada/pendente/excluída não é alvo."
+    ],
+    "warnings": []
+  },
+  "linhas_1_10_identicas": true,
+  "predicoes_anteriores_identicas": true,
+  "arquivos_preexistentes_workspace_preservados_exceto_ponteiro": true,
+  "ponteiro_anterior": "20261019T153953_c011dcd6",
+  "nova_revisao": "20261020T170710_160e8f3f",
+  "historico_aditivo": true,
+  "inferencias_novas": 0,
+  "metricas_novas": false,
+  "linhas": 24,
+  "geometrias_validadas": 24,
+  "blocos_cobertura_completa": 5,
+  "linhas_validadas": 16,
+  "linhas_pendentes_visuais": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "revisao_intermediaria_preservada": "20261020T170540_d044a4f0",
+  "observacoes_anteriores_preservadas": true,
+  "apoio_editorial_visivel_no_painel_existente": true
+}

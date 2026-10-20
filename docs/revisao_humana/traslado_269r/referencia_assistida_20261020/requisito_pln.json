@@ -1,0 +1,10 @@
+{
+  "informacao_do_usuario": "PLN exige comparar dois reconhecedores.",
+  "registrado_em_utc": "2026-10-20T17:12:26.792564+00:00",
+  "pergunta": "Os professores de PI IV e PLN ja aprovaram a comparacao de segmentacao OpenCV x Kraken, mantendo o PP-OCRv6 fixo?",
+  "efeito": "Proposta principal para PLN: latin PP-OCRv5 mobile/ONNX x PP-OCRv6 medium/Kraken com os mesmos recortes humanos.",
+  "aprovacao_do_desenho_especifico_obtida": false,
+  "envio_a_professores_realizado": false,
+  "nova_inferencia_executada": false,
+  "nova_funcao_adicionada": false
+}

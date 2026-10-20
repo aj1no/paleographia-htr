@@ -1,0 +1,24 @@
+{
+  "gravado_no_editor": true,
+  "revisao": "20261020T170710_160e8f3f",
+  "parent_revision": "20261020T170540_d044a4f0",
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "linhas": 24,
+  "aprovacoes_de_cobertura_incorporadas": [
+    [
+      11,
+      15
+    ],
+    [
+      16,
+      20
+    ],
+    [
+      21,
+      24
+    ]
+  ],
+  "somente_ponteiro_preexistente_mudou": true,
+  "arquivos_anteriores_conferidos": 72,
+  "observacao": "Os indicadores gravado_no_editor=false dos registros históricos descrevem o momento anterior. Este recibo registra sua incorporação posterior."
+}
