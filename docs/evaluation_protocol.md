@@ -1,5 +1,17 @@
 # Protocolo experimental proposto
 
+**Diagnóstico executado em 20/10/2026:** foram comparados PP-OCRv5 latino e
+PP-OCRv6 medium nos mesmos 24 recortes, contra um conjunto separado de
+**alvos assistidos pela edição**, autorizado pelo usuário e congelado antes
+das novas inferências. CER/WER: **58,45%/94,58%** para PP-OCRv5 e
+**15,11%/60,10%** para PP-OCRv6. Nenhuma das oito ressalvas visuais foi removida,
+e o editor e seu validador estrito permanecem inalterados. O cálculo assistido
+reutiliza `counts`/`aggregate`, com microcontagens dos cinco blocos completos.
+Ver [resultados, alvos, protocolo e auditoria](experimentos/traslado_269r_reconhecedores_24_20261020/README.md).
+O documento continua desenvolvimento, sem teste reservado ou inferência de
+generalização. As pendências descritas abaixo referem-se à referência humana
+estrita; este diagnóstico assistido não as transforma em validação visual.
+
 **Atualização de 20/10/2026 — requisito de PLN:** o usuário informou que a
 disciplina exige **comparar dois reconhecedores**. A proposta principal passa a
 ser latin PP-OCRv5 mobile/ONNX × PP-OCRv6 medium/Kraken, sobre os mesmos recortes

@@ -1,0 +1,132 @@
+{"operacao": "substitute", "referencia": "Anno do Nacimento", "predicao": "Amodo Nacei momo", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Nosso Senhor Jezus", "predicao": "Nofo enen Ieucerike", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "christo", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "de mil seis centos sincoenta", "predicao": "demid diCumo cnaoriy amo ay", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e seis annos, aos ca", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "torze Dias do mes", "predicao": "tonzey o mey Deror", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Dezembro", "predicao": "dialednea", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "da dita Hera nesta", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "povoação e", "predicao": "panraeaegariooga inorse", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Freguezia de Nossa senhora do Deste", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "rro de Jundiahy, aonde Eu Publico", "predicao": "mro ce moaky condeeli abrig ad", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Tabelião ao di", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "nomeado fui", "predicao": "nomuiemlompanio opitio", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Em Companhia do Capitão", "predicao": "", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "mõr e ouvidor", "predicao": "moncouvigo deaCapirane decamviccnte", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "desta Capitania de Sam viçente", "predicao": "", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Miguel de Cabedo de vasconçellos perante elle", "predicao": "igud eed ckug nge g ynte eins", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "a", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "pareçerão todos os povoadores", "predicao": "ereCerdroy or padoy Emnabai", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "E moradores os abai", "predicao": "", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "assignados, e todos", "predicao": "adignasy,ohdy jitg cladalamempor", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "juntos e Cada Hum Em par", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ticular Requererão Em altas vozes ao", "predicao": "tilka Pe pen eay omy aiopi", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "dito Capi", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "tão mõr e ouvidor", "predicao": "mo.mo caior Emmoeaent pod", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Em como elles Herão povoa", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "dores e Freguezes desta dita Freguezia", "predicao": "doy i hregee sete diosreguride Woea", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "de Nossa", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "eado", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Senhora do DesTerro", "predicao": "Gira Deelmdeay on", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Jundiahy", "predicao": "leram", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "onde Eram", "predicao": "", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "mais de oitenta", "predicao": "may deiomomoraony, feisermuidi", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "moradores, e ficaram mui dis", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "tantes da villa", "predicao": "y devir dantue", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "de Sam Paulo,", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "da", "predicao": "eoiladela", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "villa de Par", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "nahiba, e não poderem", "predicao": "needo end podrm iromenetreyay", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "vir os ministros de Jus", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "tissa fazer deligençias por ser Longe", "predicao": "o sarer egeniy pa leenge deeo", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "devendo", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "alguã duvida orgente, virem alguns", "predicao": "be uda egte vindeny my", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "menis", "predicao": "", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "tros", "predicao": "oelena", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "e Hera", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "muito Grande", "predicao": "maiGrne m", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "detrimento de to", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "dos", "predicao": "dy", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Tambem pessoas que pessuhem Terras", "predicao": "m m ui pe pebueroy", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "por titullos de Sismaria as", "predicao": "tiay cm es uhy g", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Lavrão outros que mais", "predicao": "", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "posses tem por falta de Justissa", "predicao": "y fim pn aeo let yuomy", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "pello que", "predicao": "", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "lhes Requerião", "predicao": "e beem", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "da parte", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "Deos", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "de Sua Magᵈᵉ", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "Anno", "predicao": "Annodo", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "do", "predicao": "", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Nosso", "predicao": "Noso", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Jezus", "predicao": "Iezuschritto", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "christo", "predicao": "", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "de mil seis", "predicao": "demil sies Centos", "modelo": "ppocrv6", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "centos", "predicao": "", "modelo": "ppocrv6", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "seis", "predicao": "sus", "modelo": "ppocrv6", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "torze Dias", "predicao": "iorze dios", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Dezembro", "predicao": "Dezenbro", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "dita", "predicao": "ditaCera", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Hera", "predicao": "", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "povoação e", "predicao": "pauoaçaõ eTreguezia", "modelo": "ppocrv6", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Freguezia", "predicao": "", "modelo": "ppocrv6", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "senhora", "predicao": "sinhora", "modelo": "ppocrv6", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Jundiahy,", "predicao": "Sundiahy,", "modelo": "ppocrv6", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Tabelião ao", "predicao": "TabaLiaõ aodi", "modelo": "ppocrv6", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "di", "predicao": "", "modelo": "ppocrv6", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Capitão", "predicao": "Capitao.", "modelo": "ppocrv6", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "mõr", "predicao": "more", "modelo": "ppocrv6", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv6", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Sam", "predicao": "Samvicente", "modelo": "ppocrv6", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "viçente", "predicao": "", "modelo": "ppocrv6", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "Cabe", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Cabedo de vasconçellos", "predicao": "do devos concelhos", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "elle", "predicao": "ele", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "preceraõ", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "pareçerão todos", "predicao": "t odos", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "povoadores E moradores os", "predicao": "pavoa dores Emora dorezsaai", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "abai", "predicao": "", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "xo assignados,", "predicao": "ro asignados,", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Cada Hum", "predicao": "Cadahum empor", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Em par", "predicao": "", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ticular Requererão", "predicao": "ticullar Requererao.", "modelo": "ppocrv6", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "tão mõr e ouvidor Em como elles", "predicao": "tao moi eouvidon Emcomo lles Er pova", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Herão povoa", "predicao": "", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv6", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "dita Freguezia", "predicao": "diza treguezia", "modelo": "ppocrv6", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "senhora", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Senhora do DesTerro", "predicao": "dlo des Terro", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "Sundiaho", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Jundiahy onde Eram", "predicao": "on de Eeram", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "ostenta", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "oitenta moradores,", "predicao": "mona dores,", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ficaram mui", "predicao": "feiarem muidis", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "dis", "predicao": "", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "Paulo,", "predicao": "PauLo,", "modelo": "ppocrv6", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "da villa", "predicao": "davilla desar", "modelo": "ppocrv6", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "de Par", "predicao": "", "modelo": "ppocrv6", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "nahiba,", "predicao": "nacibe,", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "não", "predicao": "naõ", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ministros de", "predicao": "menistros delas", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "Jus", "predicao": "", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "tissa", "predicao": "iisca", "modelo": "ppocrv6", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "deligençias", "predicao": "deLigencias", "modelo": "ppocrv6", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ser", "predicao": "sen", "modelo": "ppocrv6", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "alguã duvida orgente,", "predicao": "alguaõ duvila ergente,", "modelo": "ppocrv6", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "alguns", "predicao": "Rguens", "modelo": "ppocrv6", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "e", "predicao": "chera", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "Hera", "predicao": "", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "muito", "predicao": "maito", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "de", "predicao": "dito", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "to", "predicao": "", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "Como Tambem pessoas", "predicao": "ComoTam bem pessoos", "modelo": "ppocrv6", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "pessuhem Terras", "predicao": "peseuhem Torras", "modelo": "ppocrv6", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "titullos", "predicao": "titllos", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Sismaria as Lavrão", "predicao": "Sismario os Lavraõ", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "que", "predicao": "quemas", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "mais", "predicao": "", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "posses tem por falta", "predicao": "pose som po falso", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "Justissa pello que", "predicao": "datia pl oqem", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "lhes Requerião da parte de", "predicao": "lhis Requriaõ daporte ou deos", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "Deos", "predicao": "", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "Magᵈᵉ", "predicao": "Magi", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}

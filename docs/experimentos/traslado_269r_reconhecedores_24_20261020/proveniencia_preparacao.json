@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-10-20T17:31:08.854573+00:00",
+  "config": {},
+  "commit": "4c25b4f6a1dba2536fc5e055b11137d076ef61a5",
+  "working_tree_dirty": false,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "versions": {
+    "paleographia": "0.2.0",
+    "Pillow": "11.3.0",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "4.12.0.88",
+    "torch": "2.7.1",
+    "transformers": "4.57.1",
+    "jiwer": "4.0.0",
+    "fastapi": "0.116.1"
+  },
+  "manifests": {
+    "C:\\Users\\takem\\OneDrive\\Documentos\\ChatGPT\\PaleographIA\\docs\\revisao_humana\\traslado_269r\\referencia_assistida_20261020\\linhas_congeladas.jsonl": "a6659a3cd669563fe359c53be3db1593a711e58338a29877fd5cb63af30fd787"
+  }
+}

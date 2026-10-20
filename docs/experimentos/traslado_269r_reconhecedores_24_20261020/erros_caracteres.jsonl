@@ -1,0 +1,511 @@
+{"operacao": "substitute", "referencia": "n", "predicao": "m", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "n", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "e", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "en", "predicao": "om", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "t", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "f", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "S", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ho", "predicao": "en", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "r", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "J", "predicao": "I", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "z", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s ", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "h", "predicao": "e", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "st", "predicao": "ke", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "o", "predicao": "", "modelo": "ppocrv5", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "l", "predicao": "d", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "d", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s c", "predicao": "Cum", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ent", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "sin", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "oe", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "t", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " e", "predicao": "or", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " se", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "y", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "n", "predicao": "m", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "n", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s,", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "o", "predicao": "y", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s ca", "predicao": "", "modelo": "ppocrv5", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "r", "predicao": "n", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "y", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Dias", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "d", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "y", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "de ", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ze", "predicao": "ro", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "mb", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "o", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "e", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "t", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "l", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "H", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "r", "predicao": "d", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "a ", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "st", "predicao": "", "modelo": "ppocrv5", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ovo", "predicao": "anr", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ção ", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "a", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Fr", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ue", "predicao": "ar", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "z", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " de N", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "g", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "i", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "h", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "a do De", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "t", "predicao": "", "modelo": "ppocrv5", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "r", "predicao": "m", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "d", "predicao": "c", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "Ju", "predicao": "mo", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ndi", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "h", "predicao": "k", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": ",", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "c", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "e", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Eu Pub", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "co", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "T", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "e", "predicao": "r", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "l", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ã", "predicao": "g", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "o", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "o ", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "i", "predicao": "", "modelo": "ppocrv5", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "eado f", "predicao": "", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "e", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "E", "predicao": "", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "l", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "C", "predicao": "", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "h", "predicao": "", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "d", "predicao": "", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " Ca", "predicao": "", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ã", "predicao": "i", "modelo": "ppocrv5", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "õr ", "predicao": "onc", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e ", "predicao": "", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "d", "predicao": "g", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "r", "predicao": "", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "st", "predicao": "", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "t", "predicao": "r", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "i", "predicao": "e", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "a", "predicao": "", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "c", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "S", "predicao": "", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "çe", "predicao": "cc", "modelo": "ppocrv5", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "M", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "e", "predicao": "d", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "l", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "d", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " Cab", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "o", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "de va", "predicao": "ckug ", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "sco", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ç", "predicao": "g", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ll", "predicao": " g", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "os", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "p", "predicao": "y", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "era", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "lle", "predicao": "ins", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " a", "predicao": "", "modelo": "ppocrv5", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "p", "predicao": "e", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "a", "predicao": "", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ç", "predicao": "C", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ão", "predicao": "dr", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " t", "predicao": "", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "d", "predicao": "y", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "os", "predicao": "", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "r", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ovo", "predicao": "", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "r", "predicao": "y", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "es", "predicao": "", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "o", "predicao": "n", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "radores os ", "predicao": "", "modelo": "ppocrv5", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "d", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "do", "predicao": "sy", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " e", "predicao": "oh", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " to", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "o", "predicao": "y", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "u", "predicao": "i", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "n", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "o", "predicao": "g", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "e ", "predicao": "cl", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "C", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " H", "predicao": "la", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "u", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "e", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "E", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv5", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "cu", "predicao": "lk", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "l", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "r", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "R", "predicao": "P", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "qu", "predicao": " p", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "r", "predicao": "n", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "erão", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "E", "predicao": "e", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "m ", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "l", "predicao": "y", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "tas", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "v", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ze", "predicao": "my", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "o d", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "t", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " Ca", "predicao": "", "modelo": "ppocrv5", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "t", "predicao": "m", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ã", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": ".", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "õ", "predicao": "o", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "r", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "e ", "predicao": "ca", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ouv", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "d", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " co", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "l", "predicao": "a", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "l", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s ", "predicao": "nt", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Herão", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "v", "predicao": "d", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "oa", "predicao": "", "modelo": "ppocrv5", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "r", "predicao": "y", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "es", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "e", "predicao": "i", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "F", "predicao": "h", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "u", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "z", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "d", "predicao": "s", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "e", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ta", "predicao": "os", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " F", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "e", "predicao": "r", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "z", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "a ", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "N", "predicao": "W", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "e", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "S", "predicao": "", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "nhor", "predicao": "", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "De", "predicao": "Gi", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "sTe", "predicao": "", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "r", "predicao": "a", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "o", "predicao": "", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "d", "predicao": "D", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " Ju", "predicao": "elm", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "n", "predicao": "", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "i", "predicao": "e", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "h", "predicao": "", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "l", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "E", "predicao": "e", "modelo": "ppocrv5", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "i", "predicao": "y", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": " ", "predicao": "i", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "it", "predicao": "mo", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "enta ", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "d", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "re", "predicao": "ny", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "insert", "referencia": "", "predicao": "f", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " f", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ca", "predicao": "se", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "a", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " m", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "t", "predicao": "y", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "antes", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "a", "predicao": "e", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "l", "predicao": "r", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "la", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "e S", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "m ", "predicao": "nt", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "Pa", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "l", "predicao": "e", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "o,", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "da", "predicao": "eo", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " v", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "l", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": " ", "predicao": "l", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "P", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "r", "predicao": "", "modelo": "ppocrv5", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ahib", "predicao": "eedo", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "a,", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ã", "predicao": "d", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "o", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "v", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s ", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "i", "predicao": "e", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "i", "predicao": "e", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "os d", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": " Ju", "predicao": "yay", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ti", "predicao": "o ", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "r", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "faz", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "d", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "li", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ç", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "y", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "o", "predicao": "a", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "r", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "l", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "r", "predicao": "e", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " Lo", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "v", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "nd", "predicao": "", "modelo": "ppocrv5", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "al", "predicao": "be", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "guã", "predicao": "", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "d", "predicao": "", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "vi", "predicao": "", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "o", "predicao": "e", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "r", "predicao": "", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "en", "predicao": "", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": ",", "predicao": "", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "insert", "referencia": "", "predicao": "n", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "r", "predicao": "d", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "m algu", "predicao": "", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "s", "predicao": "y", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "e", "predicao": "y", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "nis", "predicao": "", "modelo": "ppocrv5", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "tr", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s ", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": " ", "predicao": "l", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "H", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "r", "predicao": "n", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "u", "predicao": "a", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "to ", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "a", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "d", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "detri", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "ento de to", "predicao": "", "modelo": "ppocrv5", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "o", "predicao": "y", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Ta", "predicao": "", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "b", "predicao": " ", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "pe", "predicao": "ui", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ssoas", "predicao": "", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "q", "predicao": "p", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "u", "predicao": "", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "b", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "h", "predicao": "", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "m Te", "predicao": "", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ra", "predicao": "oy", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "por ", "predicao": "", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "tu", "predicao": "ay", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "llos", "predicao": "", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "d", "predicao": "c", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e Sis", "predicao": "", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "aria", "predicao": "", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "e", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "Lavrão o", "predicao": "", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "tr", "predicao": "hy", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "os", "predicao": "", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "q", "predicao": "g", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ue mais", "predicao": "", "modelo": "ppocrv5", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "p", "predicao": "y", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "osses", "predicao": "", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "te", "predicao": "fi", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "o", "predicao": "n", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "r", "predicao": "", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "f", "predicao": "", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "lt", "predicao": "eo", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "a", "predicao": "", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "d", "predicao": "l", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " Jus", "predicao": "", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "issa", "predicao": "", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "pe", "predicao": "yu", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "ll", "predicao": "", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": " q", "predicao": "my", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "ue", "predicao": "", "modelo": "ppocrv5", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "lh", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "R", "predicao": "b", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "qu", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "r", "predicao": "m", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "ião", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "a part", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "d", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " Deos e de Sua Magᵈᵉ", "predicao": "", "modelo": "ppocrv5", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "J", "predicao": "I", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "t", "modelo": "ppocrv6", "linha": 1, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "i", "modelo": "ppocrv6", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "i", "predicao": "", "modelo": "ppocrv6", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "c", "predicao": "C", "modelo": "ppocrv6", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "e", "predicao": "u", "modelo": "ppocrv6", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "i", "predicao": "", "modelo": "ppocrv6", "linha": 2, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "t", "predicao": "i", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "D", "predicao": "d", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "m", "predicao": "n", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "C", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "H", "predicao": "", "modelo": "ppocrv6", "linha": 3, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ov", "predicao": "au", "modelo": "ppocrv6", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ão", "predicao": "aõ", "modelo": "ppocrv6", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "T", "modelo": "ppocrv6", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "F", "predicao": "", "modelo": "ppocrv6", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "e", "predicao": "i", "modelo": "ppocrv6", "linha": 4, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "J", "predicao": "S", "modelo": "ppocrv6", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "el", "predicao": "aL", "modelo": "ppocrv6", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ão", "predicao": "aõ", "modelo": "ppocrv6", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 5, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ã", "predicao": "a", "modelo": "ppocrv6", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": ".", "modelo": "ppocrv6", "linha": 6, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "õ", "predicao": "o", "modelo": "ppocrv6", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ç", "predicao": "c", "modelo": "ppocrv6", "linha": 7, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ç", "predicao": "c", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "l", "predicao": "h", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "l", "predicao": "", "modelo": "ppocrv6", "linha": 8, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "a", "predicao": "", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ç", "predicao": "c", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ão", "predicao": "aõ", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "o", "predicao": "a", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "z", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " o", "predicao": "", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "b", "predicao": "", "modelo": "ppocrv6", "linha": 9, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "x", "predicao": "r", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": " ", "predicao": "h", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "H", "predicao": "", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "E", "predicao": "e", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv6", "linha": 10, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "l", "modelo": "ppocrv6", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ã", "predicao": "a", "modelo": "ppocrv6", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "insert", "referencia": "", "predicao": ".", "modelo": "ppocrv6", "linha": 11, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ã", "predicao": "a", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "õr", "predicao": "oi", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "r", "predicao": "n", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "H", "predicao": "E", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "ão", "predicao": "", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "o", "predicao": "", "modelo": "ppocrv6", "linha": 12, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "e ", "predicao": "", "modelo": "ppocrv6", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "t", "predicao": "z", "modelo": "ppocrv6", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "F", "predicao": "t", "modelo": "ppocrv6", "linha": 13, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "S", "predicao": "s", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "l", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "D", "predicao": "d", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "J", "predicao": "S", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "y", "predicao": "o", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "e", "modelo": "ppocrv6", "linha": 14, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "i", "predicao": "s", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "r", "predicao": "n", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "insert", "referencia": "", "predicao": "e", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "c", "predicao": "", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "a", "predicao": "e", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 15, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "l", "predicao": "L", "modelo": "ppocrv6", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": " ", "predicao": "s", "modelo": "ppocrv6", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "P", "predicao": "", "modelo": "ppocrv6", "linha": 16, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "h", "predicao": "c", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "a", "predicao": "e", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ão", "predicao": "aõ", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "i", "predicao": "e", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": " J", "predicao": "la", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "u", "predicao": "", "modelo": "ppocrv6", "linha": 17, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "t", "predicao": "i", "modelo": "ppocrv6", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "c", "modelo": "ppocrv6", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "l", "predicao": "L", "modelo": "ppocrv6", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ç", "predicao": "c", "modelo": "ppocrv6", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "r", "predicao": "n", "modelo": "ppocrv6", "linha": 18, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": "a", "modelo": "ppocrv6", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ã", "predicao": "õ", "modelo": "ppocrv6", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "d", "predicao": "l", "modelo": "ppocrv6", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "o", "predicao": "e", "modelo": "ppocrv6", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "a", "predicao": "R", "modelo": "ppocrv6", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "l", "predicao": "", "modelo": "ppocrv6", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "insert", "referencia": "", "predicao": "e", "modelo": "ppocrv6", "linha": 19, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "e ", "predicao": "ch", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "H", "predicao": "", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "u", "predicao": "a", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "e", "predicao": "i", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 20, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "insert", "referencia": "", "predicao": " ", "modelo": "ppocrv6", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv6", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "s", "predicao": "e", "modelo": "ppocrv6", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "e", "predicao": "o", "modelo": "ppocrv6", "linha": 21, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "u", "predicao": "", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "substitute", "referencia": "ão", "predicao": "aõ", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "i", "predicao": "", "modelo": "ppocrv6", "linha": 22, "alvo_com_ressalva": false}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "te", "predicao": "so", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "r", "predicao": "", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ta", "predicao": "so", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "Ju", "predicao": "da", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "s", "predicao": "", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "ss", "predicao": "", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "l", "predicao": " ", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ue", "predicao": "em", "modelo": "ppocrv6", "linha": 23, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "e", "predicao": "i", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "e", "predicao": "", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ão", "predicao": "aõ", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": " ", "predicao": "", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "a", "predicao": "o", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "de", "predicao": "ou", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "D", "predicao": "d", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "substitute", "referencia": "ᵈ", "predicao": "i", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}
+{"operacao": "delete", "referencia": "ᵉ", "predicao": "", "modelo": "ppocrv6", "linha": 24, "alvo_com_ressalva": true}

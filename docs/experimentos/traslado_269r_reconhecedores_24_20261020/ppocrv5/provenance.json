@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-10-20T17:31:24.559085+00:00",
+  "config": {},
+  "commit": "4c25b4f6a1dba2536fc5e055b11137d076ef61a5",
+  "working_tree_dirty": true,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "versions": {
+    "paleographia": "0.2.0",
+    "Pillow": "11.3.0",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "4.12.0.88",
+    "torch": "2.7.1",
+    "transformers": "4.57.1",
+    "jiwer": "4.0.0",
+    "fastapi": "0.116.1"
+  },
+  "manifests": {
+    "C:\\Users\\takem\\OneDrive\\Documentos\\ChatGPT\\PaleographIA\\docs\\experimentos\\traslado_269r_reconhecedores_24_20261020\\recortes_reconhecimento.jsonl": "d1beb6394d8b0d3a5040e170b65442ee706674b5b6fcd3cd95e1b576f29a9d89",
+    "C:\\Users\\takem\\OneDrive\\Documentos\\ChatGPT\\PaleographIA\\docs\\experimentos\\traslado_269r_reconhecedores_24_20261020\\entradas_congeladas.json": "6c64e4b480b324115fce0f7d468608d075a868944087209708c59e944e936158"
+  },
+  "inicio": "2026-10-20T17:31:21.758929+00:00",
+  "termino": "2026-10-20T17:31:24.624055+00:00",
+  "tempo_externo_segundos": 2.8650009999983013,
+  "identidade": {
+    "state": "loaded",
+    "configured_model": "PaddlePaddle/latin_PP-OCRv5_mobile_rec",
+    "loaded_model": {
+      "id": "PaddlePaddle/latin_PP-OCRv5_mobile_rec",
+      "conversion": "RapidAI/RapidOCR ONNX",
+      "registry_revision": "7cfd3d9ef786a2e538ca30df700325e72e85b5f5",
+      "url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.10.0/onnx/PP-OCRv5/rec/latin_PP-OCRv5_rec_mobile.onnx",
+      "sha256": "b20bd37c168a570f583afbc8cd7925603890efbcdc000a59e22c269d160b5f5a",
+      "dictionary_sha256": "3c0a8a79b612653c25f765271714f71281e4e955962c153e272b7b8c1d2b13ff",
+      "dictionary_classes_with_blank_space": 504,
+      "fallback": false,
+      "onnxruntime": "1.23.2",
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL"
+    },
+    "device": "cpu",
+    "precision": "float32",
+    "load_seconds": 0.49496470000303816,
+    "error": null
+  },
+  "inferencias": 24,
+  "falhas": 0
+}

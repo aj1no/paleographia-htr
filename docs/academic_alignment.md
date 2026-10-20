@@ -2,6 +2,11 @@
 
 Produto: protótipo local de transcrição assistida de manuscritos delimitados de Jundiaí.
 
+O [diagnóstico assistido nos 24 recortes](experimentos/traslado_269r_reconhecedores_24_20261020/README.md)
+foi executado em 20/10/2026: PP-OCRv5 × PP-OCRv6, com resultados e ressalvas
+preservados. A execução demonstra a comparação técnica de dois reconhecedores;
+não representa aprovação da rubrica pelos professores nem avaliação reservada.
+
 **Atualização de 20/10/2026:** o usuário esclareceu: “PLN exige comparar dois
 reconhecedores.” A proposta principal para PLN passa a ser **PP-OCRv5 latino ×
 PP-OCRv6 medium**, usando os mesmos recortes humanos e os componentes já
