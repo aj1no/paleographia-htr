@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "purpose": "catalog",
+  "rows": 24,
+  "statuses": {
+    "validated": 16,
+    "pending_review": 8
+  },
+  "errors": [],
+  "warnings": []
+}

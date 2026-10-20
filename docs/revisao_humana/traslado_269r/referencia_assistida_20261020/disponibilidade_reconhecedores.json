@@ -1,0 +1,29 @@
+{
+  "latin_ppocrv5": {
+    "state": "loaded",
+    "configured_model": "PaddlePaddle/latin_PP-OCRv5_mobile_rec",
+    "loaded_model": {
+      "id": "PaddlePaddle/latin_PP-OCRv5_mobile_rec",
+      "conversion": "RapidAI/RapidOCR ONNX",
+      "registry_revision": "7cfd3d9ef786a2e538ca30df700325e72e85b5f5",
+      "url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.10.0/onnx/PP-OCRv5/rec/latin_PP-OCRv5_rec_mobile.onnx",
+      "sha256": "b20bd37c168a570f583afbc8cd7925603890efbcdc000a59e22c269d160b5f5a",
+      "dictionary_sha256": "3c0a8a79b612653c25f765271714f71281e4e955962c153e272b7b8c1d2b13ff",
+      "dictionary_classes_with_blank_space": 504,
+      "fallback": false,
+      "onnxruntime": "1.23.2",
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "threads": 1,
+      "execution_mode": "ORT_SEQUENTIAL"
+    },
+    "device": "cpu",
+    "precision": "float32",
+    "load_seconds": 0.7761846000066726,
+    "error": null
+  },
+  "ppocrv6_sha256_local": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+  "ppocrv6_hash_confere": true,
+  "inferencias_executadas": 0
+}

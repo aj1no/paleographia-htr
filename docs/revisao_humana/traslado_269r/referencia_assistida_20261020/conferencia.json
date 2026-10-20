@@ -1,0 +1,524 @@
+[
+  {
+    "linha": 11,
+    "texto_adotado": "ticular Requererão Em altas vozes ao dito Capi",
+    "texto_da_edicao": "ticular Requererão Em altas vozes ao dito Capi",
+    "estado": "adotada_com_apoio_editorial_e_duvida_visual",
+    "duvidas_preservadas": [
+      {
+        "linha": 11,
+        "trecho": "Requererão",
+        "estado": "provavel",
+        "duvida": "Sinal superior/final e pontuação ainda não identificados."
+      }
+    ],
+    "historico_da_conversa": [
+      {
+        "texto": "ticular",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio ticular com um só l."
+      },
+      {
+        "texto": "Requererão",
+        "estado": "provavel",
+        "alternativas": [
+          "Requererão"
+        ],
+        "nota": "Leitura da palavra provável; sinal superior/final pode ser pontuação, sinal nasal ou floreio. Tipo e pontuação permanecem abertos."
+      },
+      {
+        "texto": "Em altas vozes",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio Em altas vozes."
+      },
+      {
+        "texto": "ao dito",
+        "estado": "proposta_em_conferencia"
+      },
+      {
+        "texto": "Capi",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio Capi."
+      },
+      {
+        "trecho": "ao dito",
+        "estado": "confirmado_visualmente",
+        "mensagem_do_usuario": "VAmos sempre usar o que esta na oficial, na duvida vamos por ela, essa eu tbm vejo o ao dito"
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": "ticular Requererão Em altas vozes ao dito Capi"
+  },
+  {
+    "linha": 12,
+    "texto_adotado": "tão mõr e ouvidor Em como elles Herão povoa",
+    "texto_da_edicao": "tão mõr e ouvidor Em como elles Herão povoa",
+    "estado": "conferida_na_conversa",
+    "duvidas_preservadas": [],
+    "historico_da_conversa": [
+      {
+        "texto": "tão mõr e ouvidor Em como elles Herão povoa",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "tão mõr e ouvidor Em como elles Herão povoa"
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": "tão mõr e ouvidor Em como elles Herão povoa"
+  },
+  {
+    "linha": 13,
+    "texto_adotado": "dores e Freguezes desta dita Freguezia de Nossa",
+    "texto_da_edicao": "dores e Freguezes desta dita Freguezia de Nossa",
+    "estado": "conferida_na_conversa",
+    "duvidas_preservadas": [],
+    "historico_da_conversa": [
+      {
+        "texto": "dores e Freguezes desta dita Freguezia de Nossa",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "dores e Freguezes desta dita Freguezia de Nossa"
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": "dores e Freguezes desta dita Freguezia de Nossa"
+  },
+  {
+    "linha": 14,
+    "texto_adotado": "Senhora do DesTerro de Jundiahy onde Eram",
+    "texto_da_edicao": "Senhora do DesTerro de Jundiahy onde Heram",
+    "estado": "conferida_na_conversa",
+    "duvidas_preservadas": [],
+    "historico_da_conversa": [
+      {
+        "texto": "Senhora do DesTerro",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio Senhora do DesTerro."
+      },
+      {
+        "texto": "Jundiahy onde Eram",
+        "estado": "confirmado",
+        "nota": "Eram substitui a hipótese Heram nesta conferência; editor preservado com sua grafia anterior.",
+        "mensagem_do_usuario": "Sim, também leio Jundiahy onde Eram."
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": "Senhora do DesTerro de Jundiahy onde Heram"
+  },
+  {
+    "linha": 15,
+    "texto_adotado": "mais de oitenta moradores, e ficaram mui dis",
+    "texto_da_edicao": "mais de oitenta moradores, e ficaram mui dis",
+    "estado": "adotada_com_apoio_editorial_e_duvida_visual",
+    "duvidas_preservadas": [
+      {
+        "linha": 15,
+        "trecho": ", e ficaram",
+        "estado": "confirmacao_integral_pendente",
+        "duvida": "Trechos propostos, sem confirmação específica isolada no registro; rever a linha completa, sem promover automaticamente a concordância parcial."
+      }
+    ],
+    "historico_da_conversa": [
+      {
+        "texto": "mais de oitenta moradores",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio mais de oitenta moradores."
+      },
+      {
+        "texto": ", e ficaram",
+        "estado": "proposta_em_conferencia",
+        "nota": "A resposta seguinte concentrou-se em mui dis; não houve confirmação isolada desta sequência e da vírgula."
+      },
+      {
+        "texto": "mui dis",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também vejo tantes, então faz sentido ser mui distantes."
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": "mais de oitenta moradores, e ficaram mui dis"
+  },
+  {
+    "linha": 16,
+    "texto_adotado": "tantes da villa de Sam Paulo, e da villa de Par",
+    "texto_da_edicao": "tantes da villa de Sam Paulo, e da villa de Par",
+    "estado": "adotada_com_apoio_editorial_e_duvida_visual",
+    "duvidas_preservadas": [
+      {
+        "linha": 16,
+        "trecho": ", e da villa de",
+        "estado": "confirmacao_integral_pendente",
+        "duvida": "Trechos propostos, sem confirmação específica isolada no registro; rever a linha completa, sem promover automaticamente a concordância parcial."
+      }
+    ],
+    "historico_da_conversa": [
+      {
+        "texto": "tantes da villa de Sam Paulo",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio tantes da villa de Sam Paulo."
+      },
+      {
+        "texto": ", e da villa de",
+        "estado": "proposta_em_conferencia"
+      },
+      {
+        "texto": "Par",
+        "estado": "confirmado",
+        "nota": "Resposta à comparação Par / nahiba. Hipóteses anteriores Sam e San foram superadas; preservar o histórico, sem duplicar n.",
+        "mensagem_do_usuario": "Extamente isso eu vejo isso certinho"
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": null
+  },
+  {
+    "linha": 17,
+    "texto_adotado": "nahiba, e não poderem vir os ministros de Jus",
+    "texto_da_edicao": "nahiba, e não poderem vir os ministros de Jus",
+    "estado": "adotada_com_apoio_editorial_e_duvida_visual",
+    "duvidas_preservadas": [
+      {
+        "linha": 17,
+        "trecho": "ministros",
+        "estado": "provavel",
+        "duvida": "Primeira vogal i/e; alternativa menistros."
+      },
+      {
+        "linha": 17,
+        "trecho": ", e não poderem vir os | de Jus",
+        "estado": "confirmacao_integral_pendente",
+        "duvida": "Trechos propostos, sem confirmação específica isolada no registro; rever a linha completa, sem promover automaticamente a concordância parcial."
+      }
+    ],
+    "historico_da_conversa": [
+      {
+        "texto": "nahiba",
+        "estado": "confirmado",
+        "nota": "Resposta à comparação Par / nahiba.",
+        "mensagem_do_usuario": "Extamente isso eu vejo isso certinho"
+      },
+      {
+        "texto": ", e não poderem vir os",
+        "estado": "proposta_em_conferencia"
+      },
+      {
+        "texto": "ministros",
+        "estado": "provavel",
+        "alternativas": [
+          "ministros",
+          "menistros"
+        ],
+        "nota": "Primeira vogal i/e não resolvida visualmente; preferência contextual por i.",
+        "mensagem_do_usuario": "Vamos manter ministros como provável e seguir para a linha 18."
+      },
+      {
+        "texto": "de Jus",
+        "estado": "proposta_em_conferencia",
+        "nota": "Continuação tissa na linha 18 confirmada. Conservar a quebra."
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": null
+  },
+  {
+    "linha": 18,
+    "texto_adotado": "tissa fazer deligençias por ser Longe devendo",
+    "texto_da_edicao": "tissa fazer deligençias por ser Longe devendo",
+    "estado": "conferida_na_conversa",
+    "duvidas_preservadas": [],
+    "historico_da_conversa": [
+      {
+        "texto": "tissa fazer",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio tissa fazer."
+      },
+      {
+        "texto": "deligençias por ser Longe devendo",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "deligençias por ser Longe devendo"
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": null
+  },
+  {
+    "linha": 19,
+    "texto_adotado": "por alguã duvida orgente, virem alguns menis",
+    "texto_da_edicao": "por alguã duvida orgente, virem alguns menis",
+    "estado": "adotada_com_apoio_editorial_e_duvida_visual",
+    "duvidas_preservadas": [
+      {
+        "linha": 19,
+        "trecho": "orgente",
+        "estado": "provavel",
+        "duvida": "Inicial o/e; alternativa ergente."
+      }
+    ],
+    "historico_da_conversa": [
+      {
+        "texto": "por alguã duvida",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio por alguã duvida."
+      },
+      {
+        "texto": "orgente",
+        "estado": "provavel",
+        "alternativas": [
+          "orgente",
+          "ergente"
+        ],
+        "nota": "Inicial o/e não resolvida; a vírgula seguinte não recebeu confirmação isolada.",
+        "mensagem_do_usuario": "A primeira letra ainda está difícil, vamos deixar orgente como provável"
+      },
+      {
+        "texto": "virem alguns",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio virem alguns."
+      },
+      {
+        "texto": "menis",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim eu leio menis"
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": null
+  },
+  {
+    "linha": 20,
+    "texto_adotado": "tros e Hera Com muito Grande detrimento de to",
+    "texto_da_edicao": "tros e Hera com muito Grande detrimento de to",
+    "estado": "adotada_com_apoio_editorial_e_duvida_visual",
+    "duvidas_preservadas": [
+      {
+        "linha": 20,
+        "trecho": "muito Grande detrimento de to",
+        "estado": "confirmacao_integral_pendente",
+        "duvida": "Trechos propostos, sem confirmação específica isolada no registro; rever a linha completa, sem promover automaticamente a concordância parcial."
+      }
+    ],
+    "historico_da_conversa": [
+      {
+        "texto": "tros e Hera",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim, também leio tros e Hera."
+      },
+      {
+        "texto": "Com",
+        "estado": "confirmado",
+        "nota": "Maiúscula C explicitamente confirmada. A pergunta incluía o restante do trecho, mas a resposta enfatizou a inicial.",
+        "mensagem_do_usuario": "Sim vejo isso mesmo C maiusculo"
+      },
+      {
+        "texto": "muito Grande detrimento de to",
+        "estado": "proposta_em_conferencia",
+        "nota": "Trecho apresentado e ampliado; conservar como proposta, sem ampliar o escopo da confirmação específica de C."
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": null
+  },
+  {
+    "linha": 21,
+    "texto_adotado": "dos Como Tambem pessoas que pessuhem Terras",
+    "texto_da_edicao": "dos como Tambem pessoas que pessuhem Terras",
+    "estado": "conferida_na_conversa",
+    "duvidas_preservadas": [],
+    "historico_da_conversa": [
+      {
+        "trecho": "h no interior de pessuhem",
+        "mensagem_do_usuario": "Realmente nesse recorte parace ser um H mesmo, vendo na caligrafia do Jundiahy, vamos usar ele como H mesmo"
+      },
+      {
+        "trecho": "dois s em pessuhem",
+        "mensagem_do_usuario": "São realmente 2 s"
+      },
+      {
+        "trecho": "Terras",
+        "mensagem_do_usuario": "Claramente Terras"
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": null
+  },
+  {
+    "linha": 22,
+    "texto_adotado": "por titullos de Sismaria as Lavrão outros que mais",
+    "texto_da_edicao": "por titullos de Sismaria as Lavrão outros que mais",
+    "estado": "conferida_na_conversa",
+    "duvidas_preservadas": [],
+    "historico_da_conversa": [
+      {
+        "trecho": "por titullos",
+        "mensagem_do_usuario": "Por titullos e o q leio, inclusive com os 2 L",
+        "nota": "Dois l explicitamente confirmados; a maiúscula inicial da mensagem não fixa por si só a caixa no manuscrito."
+      },
+      {
+        "trecho": "Sismaria",
+        "mensagens_do_usuario": [
+          "Eu leio Sismaria, mesmo sem saber",
+          "isso vamos preserva Sismaria"
+        ],
+        "nota": "Grafia preservada com i e a final. A explicação contextual por sesmaria não substitui o texto lido."
+      },
+      {
+        "trecho": "as Lavrão",
+        "mensagem_do_usuario": "SIm vejo exatamente isso",
+        "nota": "Resposta à pergunta sobre as Lavrão com L maiúsculo e ão final."
+      },
+      {
+        "trecho": "outros que mais",
+        "mensagem_do_usuario": "Eu leio Outros que mais, porem realmente está escrito junto, pode ser somente um erro na escrita, uma duvida falta muito nesse teste?",
+        "nota": "Conteúdo reconhecido pelo usuário, com observação de escrita ligada. O da mensagem não determina isoladamente a caixa no manuscrito."
+      },
+      {
+        "tipo": "decisao_humana_de_representacao_textual",
+        "folio": "269r",
+        "linha": 22,
+        "revisor": "Rodolfo Vinícius Cima Takemoto",
+        "registrado_em_utc": "2026-10-20T17:00:20.175630+00:00",
+        "mensagem_do_usuario": " Vamos fazer assim, utilizando a ideia da trascrição oficial, ja que essa foi registrada",
+        "decisao": "Adotar que mais separado, seguindo a edição publicada; preservar a observação de escrita ligada no manuscrito.",
+        "texto_adotado": "por titullos de Sismaria as Lavrão outros que mais",
+        "representacao_do_trecho": "outros que mais",
+        "criterio": "Separação de palavras apoiada na edição publicada e adotada pelo revisor.",
+        "observacao_grafica_preservada": "O revisor identifica que mais escrito junto no manuscrito; a causa não foi determinada.",
+        "alternativa_anterior_nao_adotada": "outros quemais",
+        "fonte_editorial": "docs/revisao_humana/traslado_269r/corpo_269r_edicao.txt",
+        "fonte_editorial_sha256": "15e2ddf3f36f50067bc15b3857831258df0508377f8d0b54f908d210fab68aba",
+        "pagina_da_edicao": 2,
+        "evidencia_visual": "output/revisao_269r/sessao_20261020/linha_22_outros_que_mais_6x.png",
+        "escopo": "Somente a representação do espaçamento que mais na linha 22; não aprova outras leituras da edição.",
+        "classificado_como_erro_do_escriba": false,
+        "pendencia_anterior": [
+          {
+            "linha": 22,
+            "trecho": "que mais",
+            "estado": "separacao_em_aberto",
+            "duvida": "Usuário vê escrita ligada; definir representação diplomática quemais versus que mais, sem chamar a ligação de erro."
+          }
+        ],
+        "gravado_no_editor": false
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": null
+  },
+  {
+    "linha": 23,
+    "texto_adotado": "posses tem por falta de Justissa pello que",
+    "texto_da_edicao": "posses tem por falta de Justissa pello que",
+    "estado": "adotada_com_apoio_editorial_e_duvida_visual",
+    "duvidas_preservadas": [
+      {
+        "linha": 23,
+        "trecho": "Justissa",
+        "estado": "provavel",
+        "duvida": "J maiúsculo confirmado; dois s não resolvidos."
+      }
+    ],
+    "historico_da_conversa": [
+      {
+        "trecho": "posses tem",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim vejo sim o posses tem"
+      },
+      {
+        "trecho": "por falta de",
+        "estado": "provavel",
+        "nota": "Pergunta sobre por falta de Justissa recebeu concordância provável, com resposta concentrada em J e ss."
+      },
+      {
+        "trecho": "Justissa",
+        "estado": "provavel",
+        "mensagem_do_usuario": "Provavelmente sim, eu vejo de fato o J maiusculo mas to com dificuldade dos 2 S, porem pode ser pela grafia",
+        "letra_J_maiuscula": "confirmada",
+        "dois_s": "em_aberto"
+      },
+      {
+        "trecho": "pello que",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim vejo exatamente isso",
+        "nota": "Resposta à pergunta sobre pello que com dois l em pello."
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "texto_anterior_no_editor": null
+  },
+  {
+    "linha": 24,
+    "texto_adotado": "lhes Requerião da parte de Deos e de Sua Magᵈᵉ",
+    "texto_da_edicao": "lhes Requerião da parte de Deos e de Sua Magestade",
+    "estado": "adotada_com_apoio_editorial_e_duvida_visual",
+    "duvidas_preservadas": [
+      {
+        "linha": 24,
+        "trecho": "Magᵈᵉ",
+        "estado": "base_provavel",
+        "duvida": "Mag provável e de elevado confirmado. Magestade é desenvolvimento da edição. Pontuação final não fixada."
+      }
+    ],
+    "historico_da_conversa": [
+      {
+        "trecho": "lhes Requerião",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim vejo isso sim"
+      },
+      {
+        "trecho": "da parte de Deos",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim vamos manter, e eu vejo exatamente isso",
+        "nota": "Resposta à pergunta sobre da parte de Deos, incluindo D maiúsculo. Grafia Deos preservada."
+      },
+      {
+        "trecho": "e de Sua",
+        "estado": "confirmado",
+        "mensagem_do_usuario": "Sim vejo isso sim",
+        "nota": "Resposta à pergunta sobre e de Sua, com S maiúsculo."
+      }
+    ],
+    "revisor": "Rodolfo Vinícius Cima Takemoto",
+    "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+    "politica": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/politica_textual.json",
+    "pontuacao_adotada": "Da edição nos trechos duvidosos, sem alegação de confirmação visual.",
+    "desenvolvimento_da_abreviatura_na_edicao": "Magestade",
+    "texto_anterior_no_editor": null
+  }
+]

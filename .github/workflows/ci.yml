@@ -30,3 +30,5 @@ jobs:
         run: python docs/testes/lexico_copia_20261019/verificar.py
       - name: Conferir evidências da sessão humana do 269r
         run: python docs/revisao_humana/traslado_269r/sessao_20261019/verificar.py
+      - name: Conferir referência assistida de 24 linhas do 269r
+        run: python docs/revisao_humana/traslado_269r/referencia_assistida_20261020/verificar.py

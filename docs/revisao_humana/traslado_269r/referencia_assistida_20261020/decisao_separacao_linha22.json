@@ -1,0 +1,29 @@
+{
+  "tipo": "decisao_humana_de_representacao_textual",
+  "folio": "269r",
+  "linha": 22,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "registrado_em_utc": "2026-10-20T17:00:20.175630+00:00",
+  "mensagem_do_usuario": " Vamos fazer assim, utilizando a ideia da trascrição oficial, ja que essa foi registrada",
+  "decisao": "Adotar que mais separado, seguindo a edição publicada; preservar a observação de escrita ligada no manuscrito.",
+  "texto_adotado": "por titullos de Sismaria as Lavrão outros que mais",
+  "representacao_do_trecho": "outros que mais",
+  "criterio": "Separação de palavras apoiada na edição publicada e adotada pelo revisor.",
+  "observacao_grafica_preservada": "O revisor identifica que mais escrito junto no manuscrito; a causa não foi determinada.",
+  "alternativa_anterior_nao_adotada": "outros quemais",
+  "fonte_editorial": "docs/revisao_humana/traslado_269r/corpo_269r_edicao.txt",
+  "fonte_editorial_sha256": "15e2ddf3f36f50067bc15b3857831258df0508377f8d0b54f908d210fab68aba",
+  "pagina_da_edicao": 2,
+  "evidencia_visual": "output/revisao_269r/sessao_20261020/linha_22_outros_que_mais_6x.png",
+  "escopo": "Somente a representação do espaçamento que mais na linha 22; não aprova outras leituras da edição.",
+  "classificado_como_erro_do_escriba": false,
+  "pendencia_anterior": [
+    {
+      "linha": 22,
+      "trecho": "que mais",
+      "estado": "separacao_em_aberto",
+      "duvida": "Usuário vê escrita ligada; definir representação diplomática quemais versus que mais, sem chamar a ligação de erro."
+    }
+  ],
+  "gravado_no_editor": false
+}

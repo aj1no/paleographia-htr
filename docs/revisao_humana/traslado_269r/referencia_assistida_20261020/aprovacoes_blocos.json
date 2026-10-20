@@ -1,0 +1,63 @@
+{
+  "decisoes": [
+    {
+      "linhas": [
+        11,
+        15
+      ],
+      "revisor": "Rodolfo Vinícius Cima Takemoto",
+      "registrado_em_utc": "2026-10-20T15:59:49.136230+00:00",
+      "data_sessao": "2026-10-20",
+      "pergunta_apresentada": "Você confirma a cobertura completa somente do bloco 11–15, com todas as cinco linhas incluídas?",
+      "resposta_do_usuario": "Simm, eu vejo exatamente isso",
+      "cobertura_completa": true,
+      "nova_aprovacao_textual": false,
+      "nova_aprovacao_de_geometria": false,
+      "evidencia_apresentada": "cobertura_11_15_contexto_2x.png",
+      "gravado_no_editor": false,
+      "nota": "Confirmação de cobertura somente. Aprovações anteriores de 1–10 e geometria 11–15 preservadas; dúvidas textuais continuam registradas."
+    },
+    {
+      "linhas": [
+        16,
+        20
+      ],
+      "revisor": "Rodolfo Vinícius Cima Takemoto",
+      "registrado_em_utc": "2026-10-20T16:02:07.182690+00:00",
+      "data_sessao": "2026-10-20",
+      "pergunta_apresentada": "Você confirma, somente para 16–20, que os recortes contêm as letras completas de cada linha, a ordem 16 → 20 está correta e as cinco linhas estão integralmente cobertas?",
+      "resposta_do_usuario": "Confirmo sim",
+      "cobertura_completa": true,
+      "nova_aprovacao_de_geometria": true,
+      "ordem_confirmada": true,
+      "nova_aprovacao_textual": false,
+      "evidencias_apresentadas": [
+        "cobertura_16_20_contexto_2x.png",
+        "recortes_16_20_sem_marcas.png"
+      ],
+      "gravado_no_editor": false,
+      "nota": "Aprovação dos recortes, ordem e cobertura do bloco. Leituras prováveis e dúvidas textuais permanecem inalteradas."
+    },
+    {
+      "linhas": [
+        21,
+        24
+      ],
+      "revisor": "Rodolfo Vinícius Cima Takemoto",
+      "registrado_em_utc": "2026-10-20T16:05:04.849552+00:00",
+      "data_sessao": "2026-10-20",
+      "pergunta_apresentada": "Você confirma, somente para 21–24, que os recortes preservam as letras completas, a ordem 21 → 24 está correta e as quatro linhas estão integralmente cobertas até a abreviatura final do reto?",
+      "resposta_do_usuario": "Confirmo sim",
+      "cobertura_completa": true,
+      "nova_aprovacao_de_geometria": true,
+      "ordem_confirmada": true,
+      "nova_aprovacao_textual": false,
+      "evidencias_apresentadas": [
+        "cobertura_21_24_contexto_2x.png",
+        "recortes_21_24_sem_marcas.png"
+      ],
+      "gravado_no_editor": false,
+      "nota": "Aprovação do bloco 21–24, limitada a recortes, ordem e cobertura. Dúvidas textuais mantidas."
+    }
+  ]
+}
