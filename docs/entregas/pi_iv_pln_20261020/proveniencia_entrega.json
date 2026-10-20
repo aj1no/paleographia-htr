@@ -1,0 +1,26 @@
+{
+  "data_execucao": "2026-10-20T17:58:21.330027+00:00",
+  "base_git": "7c9a1b7942fec4f5c7809ccc23e6f96ce44f665b",
+  "papel": "diagnostico_de_desenvolvimento_com_referencia_assistida",
+  "pacotes_de_origem": {
+    "docs/experimentos/traslado_269r_reconhecedores_24_20261020/inventario.json": "98195f0bcfc159baabd7cd8e51a671f4dc8c505246e9f658a286191585800a64",
+    "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/inventario.json": "47c72e4f9c98d0e6bb86c92282294bb14688e3b2259b2fdfcc3ec3c5aa085b28"
+  },
+  "novas_inferencias": 0,
+  "treino": false,
+  "funcionalidades_sistema_adicionadas": false,
+  "ambiente_isolado": true,
+  "python": "3.12.14",
+  "plataforma": "Windows-11-10.0.26300-SP0",
+  "atualizacao_afiliacao": {
+    "data": "2026-10-20T18:03:57.361275+00:00",
+    "origem": "informacao_explicita_do_usuario",
+    "instituicao": "Faculdade de Tecnologia de Jundiaí (FATEC Jundiaí)",
+    "curso": "Ciência de Dados",
+    "semestre": 5,
+    "cidade": "Jundiaí",
+    "estado": "SP",
+    "celulas_codigo_e_resultados_preservados": true,
+    "notebook_reexecutado": false
+  }
+}

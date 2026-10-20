@@ -1,0 +1,32 @@
+{
+  "autores": [
+    {
+      "nome": "Caio Augusto de Souza Soares",
+      "email": "caio.soares01@aluno.cps.sp.gov.br"
+    },
+    {
+      "nome": "Guilherme Rodrigues Veiga",
+      "email": "guilherme.veiga1@aluno.cps.sp.gov.br"
+    },
+    {
+      "nome": "Rodolfo Vinicius Cima Takemoto",
+      "email": "rodolfo.takemoto@aluno.cps.sp.gov.br"
+    },
+    {
+      "nome": "Tiago Galhardo Avelar",
+      "email": "tiago.avelar@aluno.cps.sp.gov.br"
+    }
+  ],
+  "professor_informado": {
+    "nome": "Leonardo de Lellis Rossi",
+    "email": "leoboralelis@gmail.com"
+  },
+  "instituicao": "Faculdade de Tecnologia de Jundiaí (FATEC Jundiaí)",
+  "curso": "Ciência de Dados",
+  "modelo_artigo_pi_iv": null,
+  "modelo_artigo_pln": null,
+  "nota": "Nomes e contatos informados pelo usuário. Professor apresentado em campo separado; coautoria e orientação formal não presumidas. Instituição, curso, semestre e localidade informados pelo usuário. Modelos de artigo pendentes.",
+  "semestre": 5,
+  "cidade": "Jundiaí",
+  "estado": "SP"
+}

@@ -1,0 +1,7 @@
+# Ambiente acadêmico opcional; não altera pyproject.toml nem o ambiente do sistema.
+# Instalar também o projeto: python -m pip install -e . -r este_arquivo
+nbformat==5.10.4
+nbclient==0.10.2
+nbconvert==7.16.6
+ipykernel==6.30.1
+matplotlib==3.10.6
