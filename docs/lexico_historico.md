@@ -4,6 +4,10 @@ Entrega de 19/10/2026, versão **2026-10-19.1**, na branch
 `codex/refatoracao-piloto`. A consulta auxilia uma decisão humana: não executa
 HTR, não faz pós-correção automática e não integra LLM.
 
+**Uso atual:** o código e a base lexical estão na `main`, branch principal e
+padrão. A branch acima identifica a entrega original de 19/10; fontes, versão
+do léxico e proveniência registrada não foram alteradas pela adoção da `main`.
+
 ## Uso no editor
 
 1. Abra uma linha e expanda **Vocabulário histórico e fontes**.

@@ -1,0 +1,181 @@
+{
+  "data": "2026-10-20",
+  "branch_principal": "main",
+  "base_git": "5879f8538146d36e78a996ac1f604deaec36ab83",
+  "escopo": "Atualização documental para main, preservando referências históricas.",
+  "arquivos_modificados": [
+    "README.md",
+    "README.pt-br.md",
+    "CONTRIBUTING.md",
+    "docs/README.md",
+    "docs/guia_revisao_gpt.md",
+    "docs/runbook.md",
+    "docs/environment.md",
+    "docs/lexico_historico.md"
+  ],
+  "arquivos_novos": [
+    "docs/manutencao/main_20261020/README.md",
+    "docs/manutencao/main_20261020/validacao.json"
+  ],
+  "python": {
+    "testes_passaram": 101,
+    "avisos": 1,
+    "aviso": "Depreciação já existente de anyio.abc.BlockingPortal em Starlette/TestClient."
+  },
+  "javascript": {
+    "testes_passaram": 29
+  },
+  "auditorias": [
+    {
+      "auditor": "docs/testes/lexico_copia_20261019/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "natureza": "teste em cópia isolada",
+        "arquivos_conferidos": 13,
+        "snapshots": 3,
+        "eventos_lexicais": 2,
+        "bruto_paginas_e_outras_linhas_preservados": true,
+        "arquivos_originais_registrados_na_publicacao": 565,
+        "arquivos_de_fonte_conferidos_no_checkout": 1,
+        "nota": "A fonte externa ao pacote foi conferida no checkout."
+      }
+    },
+    {
+      "auditor": "docs/revisao_humana/traslado_269r/sessao_20261019/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos_do_pacote": 105,
+        "arquivos_no_zip": 72,
+        "revisoes_no_zip": 30,
+        "reconhecimentos_conferidos": 6,
+        "linhas_com_notas": 11,
+        "linha_de_retomada": 21,
+        "pendencia_preservada": "Pesueem / pessuhem"
+      }
+    },
+    {
+      "auditor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "arquivos_conferidos": 58,
+        "linhas": 24,
+        "recortes_identicos": 24,
+        "linhas_validadas": 16,
+        "pendencias_visuais": [
+          11,
+          15,
+          16,
+          17,
+          19,
+          20,
+          23,
+          24
+        ],
+        "historico_e_bruto_preservados": true,
+        "catalogo_valido": true,
+        "avaliacao_integral_apta": false
+      }
+    },
+    {
+      "auditor": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos_conferidos": 29,
+        "linhas": 24,
+        "ressalvas_preservadas": 8,
+        "blocos": 5,
+        "metricas_recalculadas": {
+          "ppocrv5": {
+            "characters": {
+              "substitutions": 200,
+              "deletions": 444,
+              "insertions": 6,
+              "hits": 468,
+              "reference_length": 1112,
+              "errors": 650,
+              "rate": 0.5845323741007195
+            },
+            "words": {
+              "substitutions": 108,
+              "deletions": 84,
+              "insertions": 0,
+              "hits": 11,
+              "reference_length": 203,
+              "errors": 192,
+              "rate": 0.9458128078817734
+            }
+          },
+          "ppocrv6": {
+            "characters": {
+              "substitutions": 96,
+              "deletions": 54,
+              "insertions": 18,
+              "hits": 962,
+              "reference_length": 1112,
+              "errors": 168,
+              "rate": 0.1510791366906475
+            },
+            "words": {
+              "substitutions": 95,
+              "deletions": 22,
+              "insertions": 5,
+              "hits": 86,
+              "reference_length": 203,
+              "errors": 122,
+              "rate": 0.6009852216748769
+            }
+          }
+        },
+        "distancias_conferidas_por_algoritmo_independente": true
+      }
+    },
+    {
+      "auditor": "docs/entregas/pi_iv_pln_20261020/verificar_entrega.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos_entrega": 24,
+        "celulas_codigo_executadas": 9,
+        "figuras_embutidas": 2,
+        "linhas": 24,
+        "ressalvas": 8,
+        "combinacoes_linha_modelo": 48,
+        "novas_inferencias": 0,
+        "metricas_identicas_ao_experimento": true
+      }
+    },
+    {
+      "auditor": "legacy/auxiliares_20261020/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos": 6,
+        "bytes_identicos_aos_blobs_originais": true,
+        "caminhos_anteriores_ausentes": true,
+        "conversoes_checkout_registradas": 4,
+        "novas_inferencias": 0
+      }
+    }
+  ],
+  "compilacao": "aprovada",
+  "ajuda_cli": "aprovada",
+  "git_diff_check": "aprovado",
+  "arquivos_versionados_fora_da_edicao_identicos": 609,
+  "arquivos_workspace_identicos": 82,
+  "sha256_mapa_arquivos_protegidos": "72c6587d9e12785b440ce241137e8882ab0f162c407ba03e98ff04489bec56c3",
+  "branches_remotas_antes": [
+    "5879f8538146d36e78a996ac1f604deaec36ab83\trefs/heads/codex/refatoracao-piloto",
+    "5879f8538146d36e78a996ac1f604deaec36ab83\trefs/heads/main",
+    "b2fc01ccdfa87ba36c73a2296514f91606ab437c\trefs/heads/master"
+  ],
+  "branches_historicas_fora_do_escopo": true,
+  "historico_reescrito": false,
+  "pacotes_congelados_e_oito_ressalvas_preservados": true,
+  "codigo_configuracoes_e_avisos_numerados_preservados": true,
+  "novas_inferencias": 0,
+  "notebook_reexecutado": false,
+  "nota": "Verificações locais anteriores à publicação; não declaram resultado da CI remota do novo commit.",
+  "links_locais_conferidos": 96
+}

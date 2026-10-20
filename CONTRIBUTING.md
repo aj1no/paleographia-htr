@@ -23,9 +23,10 @@ Tipos comuns:
 
 ## Fluxo de Trabalho
 
-1. Mantenha esta entrega em `codex/refatoracao-piloto`, sem mesclar com `main`
-   ou `master`. Para outra tarefa, confirme a base adequada; não presuma que
-   branches distintas tenham as mesmas fontes. Use prefixo `codex/` quando aplicável.
+1. Use `main`, a branch principal e padrão, como base atualizada. Para isolar
+   uma tarefa, crie uma branch `codex/` a partir dela e publique no destino
+   autorizado pelo responsável. A `codex/refatoracao-piloto` permanece como
+   registro da etapa anterior; não é mais a base padrão de novas alterações.
 2. Preserve originais, autoria, revisões e resultados congelados, inclusive
    resultados negativos. Não reformate pacotes com hashes para atualizar narrativa.
 3. Execute verificações pertinentes: `python -m pytest -q`,
@@ -38,3 +39,8 @@ Tipos comuns:
 5. Não inclua ambientes, pesos ou workspaces mutáveis por acidente. Publicações
    devem ter escopo e proveniência explícitos. Antes de remover código arquivado,
    confira os auditores e as referências que dependem dele.
+
+As orientações anteriores que restringiam a entrega à branch de refatoração
+continuam nos registros históricos, mas não definem o fluxo atual. Consulte a
+[nota da adoção da main](docs/manutencao/main_20261020/README.md). Não reescreva
+inventários, hashes ou vínculos de revisão para atualizar nomes de branches.

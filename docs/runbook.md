@@ -4,6 +4,27 @@ Comandos na raiz do repositório, com Python 3.11/3.12. Instale o pacote com
 o extra `[test]`, conforme o [README](../README.md). Exemplos no Windows;
 em Linux use `.venv/bin/python` no lugar de `.venv/Scripts/python.exe`.
 
+## Obter a versão principal
+
+A branch principal e padrão é `main`. Para um checkout novo:
+
+```powershell
+git clone --branch main https://github.com/aj1no/paleographia-htr.git
+cd paleographia-htr
+```
+
+Em um checkout existente sem alterações locais:
+
+```powershell
+git fetch origin
+git switch main
+git pull --ff-only origin main
+```
+
+O código atual e as evidências estão na `main`. Referências à antiga branch
+de refatoração em snapshots e relatórios preservam a origem das publicações;
+não substitua esses campos. Consulte a [nota da adoção da main](manutencao/main_20261020/README.md).
+
 ## Conferir a entrega sem nova inferência
 
 A [entrega acadêmica](entregas/pi_iv_pln_20261020/README.md) reúne notebook,

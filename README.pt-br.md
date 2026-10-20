@@ -4,6 +4,9 @@ O [README principal](README.md) é a entrada atual e já está em português.
 Este caminho foi mantido para preservar links existentes, evitando duas
 descrições concorrentes do estado do projeto.
 
+A branch principal e padrão é `main`. As menções a outras branches nos
+registros datados preservam a origem histórica das entregas.
+
 - [Execução, editor e auditorias](docs/runbook.md).
 - [Índice da documentação](docs/README.md).
 - [Notebook e artigo de PI IV e PLN](docs/entregas/pi_iv_pln_20261020/README.md).
