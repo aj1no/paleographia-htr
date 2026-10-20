@@ -1,10 +1,13 @@
 # Guia de Contribuição
 
-Obrigado por seu interesse em contribuir para este projeto. Por favor, dedique alguns minutos para ler este documento antes de começar.
+O escopo desta entrega está fechado para novas funções. Priorize correções,
+clareza da documentação e consolidação das entregas já autorizadas. Consulte o
+[README](README.md) e o [índice da documentação](docs/README.md).
 
 ## Conventional Commits
 
-Nós seguimos a especificação Conventional Commits para mensagens de commit. Isso nos ajuda a manter um histórico de commits limpo e legível.
+Use mensagens claras em português. Conventional Commits pode ser usado sem
+reescrever o histórico existente para padronizá-lo.
 
 Estrutura recomendada:
 `tipo(escopo): descrição sucinta`
@@ -20,8 +23,18 @@ Tipos comuns:
 
 ## Fluxo de Trabalho
 
-1. Crie uma branch a partir de `main` (ex: `feat/nova-funcionalidade` ou `fix/erro-calculo`).
-2. Faça suas alterações mantendo a consistência de estilo de código.
-3. Certifique-se de que os testes locais (se existirem) estejam passando.
-4. Faça o commit usando a especificação descrita acima.
-5. Envie a branch para o seu fork ou repositório de origem e abra um Pull Request detalhando as alterações.
+1. Mantenha esta entrega em `codex/refatoracao-piloto`, sem mesclar com `main`
+   ou `master`. Para outra tarefa, confirme a base adequada; não presuma que
+   branches distintas tenham as mesmas fontes. Use prefixo `codex/` quando aplicável.
+2. Preserve originais, autoria, revisões e resultados congelados, inclusive
+   resultados negativos. Não reformate pacotes com hashes para atualizar narrativa.
+3. Execute verificações pertinentes: `python -m pytest -q`,
+   `node --test tests/web_review.test.cjs` e auditorias dos artefatos afetados.
+   Use Python 3.11/3.12; a CI usa Node 22. O notebook tem ambiente separado,
+   documentado na [entrega acadêmica](docs/entregas/pi_iv_pln_20261020/README.md).
+4. Descreva problema, mudança, verificação e limitações. Mudanças apenas
+   documentais podem ser conferidas por links, comandos e integridade, sem nova
+   inferência nem testes que apenas reproduzam o texto.
+5. Não inclua ambientes, pesos ou workspaces mutáveis por acidente. Publicações
+   devem ter escopo e proveniência explícitos. Antes de remover código arquivado,
+   confira os auditores e as referências que dependem dele.

@@ -1,61 +1,102 @@
 # PaleographIA — transcrição assistida de manuscritos
 
-Piloto local para importar imagens, conferir recortes, registrar revisão humana e
-construir um repertório paleográfico rastreável. A interface de revisão e suas
-mensagens são apresentadas em português.
+Protótipo local de apoio à leitura de manuscritos históricos de Jundiaí. Permite
+conferir recortes e ordem de leitura, consultar vocabulário com fontes e salvar
+revisões humanas com autoria e histórico. Reconhecimento bruto, edição publicada
+e texto humano permanecem separados. A interface é apresentada em português.
 
-O editor oferece [consulta lexical histórica rastreável](docs/lexico_historico.md):
-21 registros curados, com fontes e aplicação pontual ao rascunho. A consulta
-preserva o reconhecimento bruto e exige conferência humana. Veja o
-[protocolo futuro de comparação](docs/protocolo_apoio_lexical.md) e a
-[entrega de 19/10/2026](docs/lexico_entrega_20261019.md).
+**Estado em 20/10/2026 — branch `codex/refatoracao-piloto`.** O escopo está
+fechado para novas funções; a prioridade é consolidar a avaliação e as entregas
+de PI IV e PLN. Não houve treinamento ou ajuste fino neste corpus.
 
-O catálogo reúne três fólios candidatos de 1831 e 94 recortes pendentes. O
-repertório do fólio 100 reto contém 13 exemplos, com seis confirmações parciais
-do usuário. Nesse catálogo de 1831, nenhuma linha foi integralmente validada.
-“Hum” permanece como leitura provável.
+## Referência e resultados atuais
 
-A revisão do Traslado do Auto de Criação da Vila começou pelo fólio 269 reto,
-com 24 linhas candidatas da edição. **Dez linhas do corpo foram integralmente
-conferidas pelo usuário**, com cobertura confirmada somente dos blocos 1–5 e
-6–10. Há 15 linhas no editor; as linhas 11–15 continuam pendentes. O
-[caderno do Traslado](docs/revisao_humana/traslado_269r/comparacao.md) inclui
-imagens e histórico da preparação. A [referência congelada e comparação de
-reconhecedores](docs/experimentos/traslado_269r_20261016/README.md) publica
-manifests, configurações, predições, métricas, hashes e auditoria offline.
-Na mesma amostra de desenvolvimento, TrOCR teve CER/WER de 80,58%/100% e
-PP-OCRv5 latino, 57,02%/95,56%.
+O corpo selecionado do **fólio 269r do Traslado do Auto de Criação da Vila** tem
+24 linhas com geometria e cobertura conferidas em cinco blocos. Há **16 linhas
+validadas e oito com ressalvas visuais**. Nas dúvidas, a referência assistida
+adota a edição com proveniência; isso não equivale a confirmação visual nem a
+referência humana independente da edição.
 
-O [PP-OCRv6 medium com Kraken 7.1](docs/experimentos/traslado_269r_ppocrv6_20261016/README.md)
-reduziu CER/WER para **12,40%/51,11%**, nas mesmas cinco linhas, sem falhas.
-Suas sugestões estão integradas experimentalmente ao editor do Traslado e
-exigem correção humana. O [runtime Linux separado](runtime/kraken_ppocrv6/README.md)
-preserva o ambiente Windows. **TrOCR foi desativado para novas execuções**;
-predições e cálculos históricos permanecem auditáveis.
+Os mesmos 24 recortes foram usados para comparar dois reconhecedores:
+
+| Reconhecedor e implementação | CER | WER |
+| --- | ---: | ---: |
+| latin PP-OCRv5 mobile / ONNX | 58,45% | 94,58% |
+| PP-OCRv6 medium / Kraken 7.1 | 15,11% | 60,10% |
+
+**Diagnóstico de desenvolvimento**, com oito ressalvas preservadas: um documento,
+sem teste reservado ou conclusão de generalização. As métricas microagregam os
+cinco blocos completos: 1.112 caracteres e 203 palavras. Variantes, implementações
+e pré-processamentos diferem; a diferença não pode ser atribuída somente à versão.
+
+- [Referência assistida, decisões e dúvidas](docs/revisao_humana/traslado_269r/referencia_assistida_20261020/README.md).
+- [Comparação dos 24 recortes, bruto e auditoria](docs/experimentos/traslado_269r_reconhecedores_24_20261020/README.md).
+- [Notebook executado, artigo, tabelas e figuras](docs/entregas/pi_iv_pln_20261020/README.md).
+- [Pendências de PI IV e PLN](docs/entregas/pi_iv_pln_20261020/adequacao_academica.md):
+  rubricas, modelo de artigo, revisão bibliográfica e revisão final dos autores.
+
+O catálogo anterior de **1831** continua separado: três fólios candidatos, 94
+recortes pendentes e nenhuma linha completa validada. Seu repertório contém 13
+exemplos e seis confirmações parciais; “hum” permanece provável. As métricas do
+269r não avaliam esse catálogo.
+
+## Instalar e abrir
+
+Na raiz do repositório, use **Python 3.11 ou 3.12**. Exemplo no Windows:
 
 ```powershell
-# Python 3.11 ou 3.12
-python -m pip install -e ".[test]"
-python -m pytest -q
-python -m paleographia serve --host 127.0.0.1 --port 8000
+py -3.12 -m venv .venv
+.venv/Scripts/python.exe -m pip install -e ".[test]"
+.venv/Scripts/python.exe -m paleographia serve --config configs/traslado_269r.toml --host 127.0.0.1 --port 8011
 ```
 
-Abra [a revisão local](http://127.0.0.1:8000) ou
-[o repertório](http://127.0.0.1:8000/repertorio).
-Para o Traslado com PP-OCRv6, use `--config configs/traslado_269r.toml --port 8011`
-e abra [o editor experimental](http://127.0.0.1:8011/).
-Para reconstruir imagens e inicializar um checkout novo, siga o
-[guia de execução](docs/runbook.md). A instalação básica e os testes não baixam
-pesos nem exigem GPU.
+Abra [o editor do Traslado](http://127.0.0.1:8011/). Em Linux, use
+`.venv/bin/python` no lugar de `.venv/Scripts/python.exe`.
 
-- [Guia para revisar o estado atual do projeto](docs/guia_revisao_gpt.md)
-- [Acervo de Jundiaí e proposta de mineração](docs/mineracao_acervo_jundiai.md)
-- [Instruções completas](README.pt-br.md)
-- [Relatório de execução e limites](docs/execution_report.md)
-- [Repertório e exemplos visuais](docs/repertorio_100r.md)
-- [Auditoria](docs/audit.md), [política de transcrição](docs/transcription_policy.md)
-  e [protocolo de avaliação](docs/evaluation_protocol.md)
+Um checkout novo começa sem workspace; iniciar o servidor não importa as revisões
+salvas nesta máquina. O [guia de execução](docs/runbook.md) explica a importação
+do catálogo congelado em workspace vazio, os históricos e o piloto de 1831.
+Use um processo por workspace.
 
-Código sob MIT. Os documentos históricos e suas edições têm condições de uso
-independentes. Os arquivos originais e o ponteiro do cliente legado foram
-preservados; a interface atual está integrada ao servidor local.
+O **PP-OCRv6 é o reconhecedor experimental do editor do Traslado**. Inferência
+exige pesos e [runtime Linux/Docker separados](runtime/kraken_ppocrv6/README.md),
+com identidades conferidas. A instalação básica não os baixa; a revisão manual
+continua disponível sem o reconhecedor. PP-OCRv5 é usado no experimento separado;
+TrOCR está bloqueado para novas execuções. `start_safe.bat` abre o piloto de 1831
+na porta 8000, onde a apresentação de sugestões permanece desativada.
+
+## Conferir sem reconhecer novamente
+
+```powershell
+.venv/Scripts/python.exe -m pytest -q
+node --test tests/web_review.test.cjs
+.venv/Scripts/python.exe docs/revisao_humana/traslado_269r/referencia_assistida_20261020/verificar.py
+.venv/Scripts/python.exe docs/experimentos/traslado_269r_reconhecedores_24_20261020/verificar.py
+```
+
+Os testes usam dados sintéticos identificados e evidências congeladas; não
+medem nova qualidade de reconhecimento. A CI executa a suíte e as auditorias
+publicadas em Windows/Ubuntu, Python 3.11/3.12. O notebook tem dependências e
+execução separadas na [entrega acadêmica](docs/entregas/pi_iv_pln_20261020/README.md);
+sua reexecução ainda não faz parte da CI.
+
+## Organização
+
+| Caminho | Papel |
+| --- | --- |
+| `src/paleographia/` | Pacote atual: CLI, API, editor, revisão e avaliação |
+| `configs/`, `runtime/` | Configurações e ambiente separado do reconhecedor |
+| `data/manifests/`, `data/lexicon/` | Catálogos, repertório e base lexical |
+| `docs/revisao_humana/`, `docs/experimentos/` | Revisões e experimentos publicados com hashes |
+| `docs/entregas/` | Notebook, artigo e evidências acadêmicas |
+| `tests/`, `.github/workflows/` | Testes e CI |
+| `legacy/`, scripts numerados, `client` | Histórico e compatibilidade; consultar o inventário antes de remover |
+
+[Índice da documentação](docs/README.md) · [Guia de revisão](docs/guia_revisao_gpt.md) ·
+[Revisão do repositório](docs/revisao_repositorio_20261020.md) ·
+[Consulta lexical](docs/lexico_historico.md) · [Política textual](docs/transcription_policy.md) ·
+[Contribuição](CONTRIBUTING.md).
+
+Código sob MIT. Imagens, manuscritos e edições têm créditos e condições de uso
+próprios; a licença do código não concede automaticamente permissão para esses
+materiais. Consulte [fontes](docs/sources.md) e [uso de IA](docs/ai_comments.md).
