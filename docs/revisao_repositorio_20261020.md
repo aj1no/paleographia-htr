@@ -5,6 +5,11 @@ Base: `3a629e316e7f0485bc8eaec2ad2c882d3bb3a749`, branch
 Escopo: estrutura, documentação de entrada, comandos, referências legadas,
 testes e integridade. Não é auditoria exaustiva de segurança ou dependências.
 
+**Desdobramento posterior à revisão:** os seis auxiliares aprovados foram
+arquivados em [legacy/auxiliares_20261020](../legacy/auxiliares_20261020/README.md),
+com caminhos, hashes e commit de origem. A descrição abaixo preserva as
+constatações da revisão anterior ao arquivamento; os demais candidatos permanecem.
+
 ## Visibilidade no GitHub
 
 A API do GitHub confirmou `main` como branch padrão, no commit
