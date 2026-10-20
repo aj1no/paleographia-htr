@@ -1,0 +1,75 @@
+{
+  "data": "2026-10-20",
+  "commit_origem": "398aafafce895c104a6f16d69167453213cdc50d",
+  "branch": "codex/refatoracao-piloto",
+  "criterio_bytes": "Bytes literais dos blobs publicados no commit de origem, sem recodificação.",
+  "nota_checkout": "Conversão automática CRLF/LF do Git registrada separadamente; não representa mudança de conteúdo.",
+  "arquivos": [
+    {
+      "caminho_original": "test_encoding.py",
+      "caminho_arquivado": "legacy/auxiliares_20261020/test_encoding.py.txt",
+      "bytes": 922,
+      "sha256": "175a852c861dab1bab1fc602030ba5e6a6c1c372af2e75a615987104eb4bd439",
+      "git_blob_original": "9b947e0813e095316bd6a137f4162a713d8dd855",
+      "bytes_checkout_antes": 946,
+      "sha256_checkout_antes": "5e05979bbe9c29821bbfba8fedeab7eddbea7edf629ba172053f479e9e3d08cf",
+      "diferenca_checkout_somente_crlf": true,
+      "motivo": "Diagnóstico antigo de extração de PDF; fora da suíte atual."
+    },
+    {
+      "caminho_original": "downloads_list.txt",
+      "caminho_arquivado": "legacy/auxiliares_20261020/downloads_list.txt",
+      "bytes": 47688,
+      "sha256": "7bc39085ca26b273302610514a77e70cd3a4a98a87dd97efa9e69e78d7c46b8c",
+      "git_blob_original": "9d763bbbfedffd69bcffa63eb8b5bf7262221699",
+      "bytes_checkout_antes": 47688,
+      "sha256_checkout_antes": "7bc39085ca26b273302610514a77e70cd3a4a98a87dd97efa9e69e78d7c46b8c",
+      "diferenca_checkout_somente_crlf": false,
+      "motivo": "Listagem auxiliar histórica de arquivos."
+    },
+    {
+      "caminho_original": "downloads_utf8.txt",
+      "caminho_arquivado": "legacy/auxiliares_20261020/downloads_utf8.txt",
+      "bytes": 23701,
+      "sha256": "d93e72876ccd60e50b75b7a261fc56074b8ccc2f23985e314c5b12ecc9ec4fbb",
+      "git_blob_original": "8006902c5bbed1ed6fd2e4445394c394895cab63",
+      "bytes_checkout_antes": 23901,
+      "sha256_checkout_antes": "b0ee8585bc24c536f889e99c09dc0ee51d5d3880daca036ccb42ef1544c66f52",
+      "diferenca_checkout_somente_crlf": true,
+      "motivo": "Listagem auxiliar histórica em outra codificação."
+    },
+    {
+      "caminho_original": "train_log.txt",
+      "caminho_arquivado": "legacy/auxiliares_20261020/train_log.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_original": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes_checkout_antes": 0,
+      "sha256_checkout_antes": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diferenca_checkout_somente_crlf": false,
+      "motivo": "Arquivo de log vazio, preservado como recebido."
+    },
+    {
+      "caminho_original": "server/Texto importantes.txt",
+      "caminho_arquivado": "legacy/auxiliares_20261020/server/Texto importantes.txt",
+      "bytes": 208,
+      "sha256": "41b30431c144a1c178fc25123282c3915f9f903fc1397578f8098bccb563a4d7",
+      "git_blob_original": "7557408648b5205aef5b5cc3047281ecceadad0b",
+      "bytes_checkout_antes": 221,
+      "sha256_checkout_antes": "7d5adbad642e2080108a12c07713bbf8662221efaae958d6f7259dd49bfcf005",
+      "diferenca_checkout_somente_crlf": true,
+      "motivo": "Anotações do ambiente antigo, sem uso no servidor atual."
+    },
+    {
+      "caminho_original": "index.html",
+      "caminho_arquivado": "legacy/auxiliares_20261020/index.html",
+      "bytes": 8636,
+      "sha256": "9b766c706bb339252a371f966b8c9d2063fc34756b875e5ea7e56567c7fa4167",
+      "git_blob_original": "09f40d2f2eee40f881f5617f0a5d52ad23e7b3d4",
+      "bytes_checkout_antes": 8781,
+      "sha256_checkout_antes": "44b62272007ba5c6f6da831bdc1952c581e5eb97c623c2b02e06b765338acf8c",
+      "diferenca_checkout_somente_crlf": true,
+      "motivo": "Protótipo visual estático; não é a interface atual nem evidência de métricas."
+    }
+  ]
+}

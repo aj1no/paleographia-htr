@@ -51,6 +51,7 @@ para atualizar a narrativa.
   e [sessão de 19/10](revisao_humana/traslado_269r/sessao_20261019/README.md).
 - [Integridade dos snapshots](revisao_humana/traslado_269r/integridade.md).
 - [Código legado](../legacy/README.md), [execuções locais](../experiments/README.md).
+- [Seis auxiliares arquivados, caminhos e hashes](../legacy/auxiliares_20261020/README.md).
 
 A comparação de segmentadores e o [protocolo lexical futuro](protocolo_apoio_lexical.md)
 permanecem fora da entrega atual; não foram executados como novos experimentos.
