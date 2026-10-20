@@ -5,9 +5,15 @@ conferir recortes e ordem de leitura, consultar vocabulário com fontes e salvar
 revisões humanas com autoria e histórico. Reconhecimento bruto, edição publicada
 e texto humano permanecem separados. A interface é apresentada em português.
 
-**Estado em 20/10/2026 — branch `codex/refatoracao-piloto`.** O escopo está
+**Estado em 20/10/2026 — branch principal e padrão: `main`.** O escopo está
 fechado para novas funções; a prioridade é consolidar a avaliação e as entregas
 de PI IV e PLN. Não houve treinamento ou ajuste fino neste corpus.
+
+A [versão principal no GitHub](https://github.com/aj1no/paleographia-htr/tree/main)
+contém o programa, a documentação e as evidências publicadas. A branch
+`codex/refatoracao-piloto` foi preservada como registro da etapa anterior.
+Referências a ela nos pacotes datados indicam a origem das entregas; consulte
+a [nota sobre a adoção da main](docs/manutencao/main_20261020/README.md).
 
 ## Referência e resultados atuais
 

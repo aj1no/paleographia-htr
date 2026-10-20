@@ -1,5 +1,9 @@
 # Ambientes e modelos — 20/10/2026
 
+Instale a versão da `main`, branch principal e padrão. Para obter ou atualizar
+o checkout, siga o [guia de execução](runbook.md). Os registros de ambientes e
+execuções anteriores conservam as branches, versões e hashes de sua época.
+
 ## Aplicação local
 
 Python **3.11 ou 3.12**, conforme `pyproject.toml`. O ambiente básico oferece

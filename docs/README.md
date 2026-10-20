@@ -1,7 +1,11 @@
 # Índice da documentação
 
-Estado em 20/10/2026, na branch `codex/refatoracao-piloto`.
+Estado em 20/10/2026, na branch principal e padrão `main`.
 O escopo permanece fechado para novas funções.
+
+Use a `main` para consultar a versão atual e iniciar novas contribuições.
+As branches anteriores e suas referências de publicação foram preservadas;
+veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 
 ## Para começar
 
@@ -40,6 +44,10 @@ sistemática concluída.
 Contagens, comandos e disponibilidade de modelos nestes registros devem ser
 interpretados na data de cada etapa. Pacotes com hashes não devem ser editados
 para atualizar a narrativa.
+
+Menções a `codex/refatoracao-piloto`, a `master` ou à situação antiga da `main`
+registram a origem e as condições da época. Inclusive os pacotes de entregas e
+manutenção mantêm esses campos; isso não muda a branch principal atual.
 
 - [Auditoria inicial de 15/10](audit.md), [relatório inicial](execution_report.md),
   [inventário legado](legacy_inventory.json).

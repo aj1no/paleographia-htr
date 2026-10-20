@@ -1,8 +1,11 @@
 # Estado do projeto para revisão — 20/10/2026
 
-Revisar `codex/refatoracao-piloto`. Base publicada desta atualização:
-`3a629e316e7f0485bc8eaec2ad2c882d3bb3a749`. Não mesclar com `main` ou
-`master` nesta entrega. O [índice](README.md) separa guias e registros históricos.
+Revisar a `main`, branch principal e padrão. Base publicada anterior a esta
+atualização documental: `5879f8538146d36e78a996ac1f604deaec36ab83`.
+A etapa de refatoração foi incorporada à `main` pelo responsável; a antiga
+`codex/refatoracao-piloto` continua preservada. O [índice](README.md) separa
+guias atuais e registros históricos. A [nota da adoção da main](manutencao/main_20261020/README.md)
+explica por que os pacotes anteriores mantêm suas branches e hashes originais.
 
 ## Evidência atual
 
