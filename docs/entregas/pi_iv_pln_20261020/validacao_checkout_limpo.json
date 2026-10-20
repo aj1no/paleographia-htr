@@ -1,0 +1,26 @@
+{
+  "checkout_sem_pesos_e_workspace": true,
+  "execucao_notebook": {
+    "resultado": "executado_sem_erros",
+    "celulas_codigo": 9,
+    "novas_inferencias": 0,
+    "ressalvas": 8,
+    "notebook": "C:\\Users\\takem\\OneDrive\\Documentos\\ChatGPT\\PaleographIA\\tmp\\notebook_checkout__qujsowl\\checkout\\output\\entrega_academica_269r24_20261020\\comparacao_reproduzivel.ipynb"
+  },
+  "verificacao_entrega": {
+    "resultado": "aprovado",
+    "arquivos_entrega": 23,
+    "celulas_codigo_executadas": 9,
+    "figuras_embutidas": 2,
+    "linhas": 24,
+    "ressalvas": 8,
+    "combinacoes_linha_modelo": 48,
+    "novas_inferencias": 0,
+    "metricas_identicas_ao_experimento": true
+  },
+  "metricas_identicas": true,
+  "cinco_tabelas_identicas_byte_a_byte": true,
+  "quatro_figuras_identicas_byte_a_byte": true,
+  "instalacao_inicial_de_dependencias_necessaria": true,
+  "nova_inferencia": false
+}

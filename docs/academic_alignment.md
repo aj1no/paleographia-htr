@@ -2,6 +2,13 @@
 
 Produto: protótipo local de transcrição assistida de manuscritos delimitados de Jundiaí.
 
+O [notebook executado e o primeiro rascunho do artigo](entregas/pi_iv_pln_20261020/README.md)
+foram preparados com as 24 linhas e oito ressalvas preservadas, sem novas
+inferências ou funções no sistema. A entrega inclui autoria informada, fontes
+iniciais e afiliação à FATEC Jundiaí, curso de Ciência de Dados, 5º semestre,
+Jundiaí – SP. Modelos e rubricas continuam pendentes.
+A revisão bibliográfica inicial não substitui a revisão sistemática de PI IV.
+
 O [diagnóstico assistido nos 24 recortes](experimentos/traslado_269r_reconhecedores_24_20261020/README.md)
 foi executado em 20/10/2026: PP-OCRv5 × PP-OCRv6, com resultados e ressalvas
 preservados. A execução demonstra a comparação técnica de dois reconhecedores;
