@@ -2,6 +2,9 @@
 legacy/*.py.txt -text -whitespace
 # Auxiliares arquivados: conservar bytes e codificação do commit de origem.
 legacy/auxiliares_20261020/** -text -whitespace
+# Avisos numerados e seu catálogo conservam hashes em Windows/Linux.
+/[0-9]*.py text eol=lf
+docs/manutencao/scripts_numerados_20261020/** -text -whitespace
 # Escopo restrito: não renormalizar os snapshots legados comparacao_*.json.
 docs/revisao_humana/traslado_269r/integridade.json text eol=lf
 docs/revisao_humana/traslado_269r/revisions/snapshot_*.json text eol=lf
