@@ -1,0 +1,65 @@
+{
+  "tipo": "diagnostico_de_desenvolvimento_com_referencia_assistida",
+  "normalizacao": "Unicode NFC e colapso de espaços; preservar caixa, diacríticos e grafia histórica.",
+  "agregacao": "microcontagens_por_cinco_regioes_completas",
+  "linhas": 24,
+  "linhas_com_ressalvas": 8,
+  "teste_reservado": false,
+  "modelos": {
+    "ppocrv5": {
+      "metrics": {
+        "characters": {
+          "substitutions": 200,
+          "deletions": 444,
+          "insertions": 6,
+          "hits": 468,
+          "reference_length": 1112,
+          "errors": 650,
+          "rate": 0.5845323741007195
+        },
+        "words": {
+          "substitutions": 108,
+          "deletions": 84,
+          "insertions": 0,
+          "hits": 11,
+          "reference_length": 203,
+          "errors": 192,
+          "rate": 0.9458128078817734
+        }
+      },
+      "linhas": 24,
+      "blocos": 5,
+      "falhas": 0,
+      "tempo_externo_segundos": 2.8650009999983013,
+      "soma_tempos_inferencia_segundos": 2.039137900035712
+    },
+    "ppocrv6": {
+      "metrics": {
+        "characters": {
+          "substitutions": 96,
+          "deletions": 54,
+          "insertions": 18,
+          "hits": 962,
+          "reference_length": 1112,
+          "errors": 168,
+          "rate": 0.1510791366906475
+        },
+        "words": {
+          "substitutions": 95,
+          "deletions": 22,
+          "insertions": 5,
+          "hits": 86,
+          "reference_length": 203,
+          "errors": 122,
+          "rate": 0.6009852216748769
+        }
+      },
+      "linhas": 24,
+      "blocos": 5,
+      "falhas": 0,
+      "tempo_externo_segundos": 40.550116700003855,
+      "soma_tempos_inferencia_segundos": 25.430323610999835
+    }
+  },
+  "metricas_por_linha_somente_diagnosticas": true
+}

@@ -1,0 +1,41 @@
+{
+  "tipo": "referencia_assistida_por_edicao_publicada",
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "registrado_em_utc": "2026-10-20T17:05:29.077513+00:00",
+  "mensagem_do_usuario": "VAmos sempre usar o que esta na oficial, na duvida vamos por ela, essa eu tbm vejo o ao dito",
+  "regra": "Nas dúvidas, adotar a leitura da edição publicada, preservando a dúvida visual e a proveniência editorial.",
+  "confirmacao_visual_nesta_mensagem": {
+    "linha": 11,
+    "trecho": "ao dito"
+  },
+  "fonte_editorial": "data/raw/import_20261015/6e82cef18b04_6b5c840cfc3b7381.pdf",
+  "sha256_fonte_editorial": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+  "excecoes_confirmadas_preservadas": [
+    {
+      "linha": 14,
+      "humano": "Eram",
+      "edicao": "Heram"
+    },
+    {
+      "linha": 20,
+      "humano": "Com",
+      "edicao": "com"
+    },
+    {
+      "linha": 21,
+      "humano": "Como",
+      "edicao": "como"
+    }
+  ],
+  "abreviatura_final": {
+    "forma_no_manuscrito": "Magᵈᵉ",
+    "desenvolvimento_na_edicao": "Magestade",
+    "nota": "A expansão não substitui os sinais da abreviatura no campo diplomático."
+  },
+  "espacamento_linha22": "outros que mais; separado conforme a edição, com observação de escrita ligada preservada.",
+  "pontuacao": "Adotar a pontuação da edição nos trechos duvidosos; isso não identifica os sinais no manuscrito.",
+  "uso": "Desenvolvimento exploratório; não constitui teste reservado nem referência humana independente da edição.",
+  "validacao": "Linhas com dúvida paleográfica ou trecho apenas apoiado na edição continuam pendentes no editor.",
+  "escopo": "Corpo selecionado do 269r, 24 linhas; sem cabeçalho, resumo ou verso.",
+  "fonte_editorial_publicada": "docs/experimentos/traslado_269r_20261016/support/edition.pdf"
+}

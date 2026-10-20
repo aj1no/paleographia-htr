@@ -1,0 +1,49 @@
+﻿modelo,linha,alvo,predicao_bruta,estado_visual,CER,WER,erros_caracteres,caracteres_referencia,erros_palavras,palavras_referencia
+ppocrv5,1,Anno do Nacimento de Nosso Senhor Jezus christo,Amodo Nacei momo de Nofo enen Ieucerike,validated,0.46808510638297873,0.875,22,47,7,8
+ppocrv5,2,"de mil seis centos sincoenta e seis annos, aos ca",demid diCumo cnaoriy amo ay,validated,0.6530612244897959,1.0,32,49,10,10
+ppocrv5,3,torze Dias do mes de Dezembro da dita Hera nesta,tonzey o mey  Deror de dialednea,validated,0.5208333333333334,0.9,25,48,9,10
+ppocrv5,4,povoação e Freguezia de Nossa senhora do Deste,panraeaegariooga inorse,validated,0.6956521739130435,1.0,32,46,8,8
+ppocrv5,5,"rro de Jundiahy, aonde Eu Publico Tabelião ao di",mro ce moaky condeeli abrig ad,validated,0.5625,1.0,27,48,9,9
+ppocrv5,6,ante nomeado fui Em Companhia do Capitão,ante nomuiemlompanio  opitio,validated,0.425,0.8571428571428571,17,40,6,7
+ppocrv5,7,mõr e ouvidor desta Capitania de Sam viçente,moncouvigo deaCapirane decamviccnte,validated,0.4090909090909091,1.0,18,44,8,8
+ppocrv5,8,Miguel de Cabedo de vasconçellos perante elle a,igud eed ckug nge g ynte eins,validated,0.6595744680851063,1.0,31,47,8,8
+ppocrv5,9,pareçerão todos os povoadores E moradores os abai,ereCerdroy or padoy Emnabai,validated,0.6122448979591837,1.0,30,49,8,8
+ppocrv5,10,"xo assignados, e todos juntos e Cada Hum Em par","xo adignasy,ohdy jitg cladalamempor",validated,0.5531914893617021,0.9,26,47,9,10
+ppocrv5,11,ticular Requererão Em altas vozes ao dito Capi,tilka Pe pen eay omy aiopi,pending_review,0.6521739130434783,1.0,30,46,8,8
+ppocrv5,12,tão mõr e ouvidor Em como elles Herão povoa,mo.mo caior Emmoeaent pod,validated,0.627906976744186,1.0,27,43,9,9
+ppocrv5,13,dores e Freguezes desta dita Freguezia de Nossa,doy i hregee sete diosreguride Woea,validated,0.46808510638297873,1.0,22,47,8,8
+ppocrv5,14,Senhora do DesTerro de Jundiahy onde Eram,eado Gira Deelmdeay on de leram,validated,0.5609756097560976,1.0,23,41,7,7
+ppocrv5,15,"mais de oitenta moradores, e ficaram mui dis","may deiomomoraony, feisermuidi",pending_review,0.5454545454545454,1.0,24,44,8,8
+ppocrv5,16,"tantes da villa de Sam Paulo, e da villa de Par",y devir dantue e eoiladela,pending_review,0.6382978723404256,0.9090909090909091,30,47,10,11
+ppocrv5,17,"nahiba, e não poderem vir os ministros de Jus",needo end podrm iromenetreyay,pending_review,0.5777777777777777,1.0,26,45,9,9
+ppocrv5,18,tissa fazer deligençias por ser Longe devendo,o sarer egeniy pa leenge deeo,validated,0.5111111111111111,1.0,23,45,7,7
+ppocrv5,19,"por alguã duvida orgente, virem alguns menis",por be uda egte vindeny my,pending_review,0.5909090909090909,0.8571428571428571,26,44,6,7
+ppocrv5,20,tros e Hera Com muito Grande detrimento de to,oelena Com maiGrne m,pending_review,0.6222222222222222,0.8888888888888888,28,45,8,9
+ppocrv5,21,dos Como Tambem pessoas que pessuhem Terras,dy Como m m ui pe pebueroy,validated,0.5813953488372093,0.8571428571428571,25,43,6,7
+ppocrv5,22,por titullos de Sismaria as Lavrão outros que mais,tiay cm es uhy g,validated,0.82,1.0,41,50,9,9
+ppocrv5,23,posses tem por falta de Justissa pello que,y fim pn aeo let yuomy,pending_review,0.7380952380952381,1.0,31,42,8,8
+ppocrv5,24,lhes Requerião da parte de Deos e de Sua Magᵈᵉ,e beem de e ,pending_review,0.8043478260869565,0.8,37,46,8,10
+ppocrv6,1,Anno do Nacimento de Nosso Senhor Jezus christo,Annodo Nacimento de Noso Senhor Iezuschritto,validated,0.10638297872340426,0.625,5,47,5,8
+ppocrv6,2,"de mil seis centos sincoenta e seis annos, aos ca","demil sies Centos sincoenta e sus annos, aos ca",validated,0.12244897959183673,0.5,6,49,5,10
+ppocrv6,3,torze Dias do mes de Dezembro da dita Hera nesta,iorze dios do mes de Dezenbro da ditaCera nesta,validated,0.125,0.5,6,48,5,10
+ppocrv6,4,povoação e Freguezia de Nossa senhora do Deste,pauoaçaõ eTreguezia de Nossa sinhora do Deste,validated,0.15217391304347827,0.5,7,46,4,8
+ppocrv6,5,"rro de Jundiahy, aonde Eu Publico Tabelião ao di","rro de Sundiahy, aonde Eu Publico TabaLiaõ aodi",validated,0.125,0.4444444444444444,6,48,4,9
+ppocrv6,6,ante nomeado fui Em Companhia do Capitão,ante nomeado fui Em Companhia do Capitao.,validated,0.05,0.14285714285714285,2,40,1,7
+ppocrv6,7,mõr e ouvidor desta Capitania de Sam viçente,more ouvidor desta Capitania de Samvicente,validated,0.09090909090909091,0.5,4,44,4,8
+ppocrv6,8,Miguel de Cabedo de vasconçellos perante elle a,Miguel de Cabe do devos concelhos perante ele a,validated,0.14893617021276595,0.625,7,47,5,8
+ppocrv6,9,pareçerão todos os povoadores E moradores os abai,preceraõ t odos os pavoa dores Emora dorezsaai,validated,0.2857142857142857,1.0,14,49,8,8
+ppocrv6,10,"xo assignados, e todos juntos e Cada Hum Em par","ro asignados, e todos juntos e Cadahum empor",validated,0.14893617021276595,0.6,7,47,6,10
+ppocrv6,11,ticular Requererão Em altas vozes ao dito Capi,ticullar Requererao. Em altas vozes ao dito Capi,pending_review,0.06521739130434782,0.25,3,46,2,8
+ppocrv6,12,tão mõr e ouvidor Em como elles Herão povoa,tao moi eouvidon Emcomo lles Er pova,validated,0.27906976744186046,1.0,12,43,9,9
+ppocrv6,13,dores e Freguezes desta dita Freguezia de Nossa,dores Freguezes desta diza treguezia de Nossa,validated,0.0851063829787234,0.375,4,47,3,8
+ppocrv6,14,Senhora do DesTerro de Jundiahy onde Eram,senhora dlo des Terro de Sundiaho on de Eeram,validated,0.1951219512195122,1.1428571428571428,8,41,8,7
+ppocrv6,15,"mais de oitenta moradores, e ficaram mui dis","mais de ostenta mona dores, e feiarem muidis",pending_review,0.1590909090909091,0.75,7,44,6,8
+ppocrv6,16,"tantes da villa de Sam Paulo, e da villa de Par","tantes da villa de Sam PauLo, e davilla desar",pending_review,0.0851063829787234,0.45454545454545453,4,47,5,11
+ppocrv6,17,"nahiba, e não poderem vir os ministros de Jus","nacibe, e naõ poderem vir os menistros delas",pending_review,0.17777777777777778,0.5555555555555556,8,45,5,9
+ppocrv6,18,tissa fazer deligençias por ser Longe devendo,iisca fazer deLigencias por sen Longe devendo,validated,0.1111111111111111,0.42857142857142855,5,45,3,7
+ppocrv6,19,"por alguã duvida orgente, virem alguns menis","por alguaõ duvila ergente, virem Rguens menis",pending_review,0.1590909090909091,0.5714285714285714,7,44,4,7
+ppocrv6,20,tros e Hera Com muito Grande detrimento de to,tros chera Com maito Grande detrimento dito,pending_review,0.13333333333333333,0.5555555555555556,6,45,5,9
+ppocrv6,21,dos Como Tambem pessoas que pessuhem Terras,dos ComoTam bem pessoos que peseuhem Torras,validated,0.11627906976744186,0.7142857142857143,5,43,5,7
+ppocrv6,22,por titullos de Sismaria as Lavrão outros que mais,por titllos de Sismario os Lavraõ outros quemas,validated,0.14,0.6666666666666666,7,50,6,9
+ppocrv6,23,posses tem por falta de Justissa pello que,pose som po falso de datia pl oqem,pending_review,0.40476190476190477,0.875,17,42,7,8
+ppocrv6,24,lhes Requerião da parte de Deos e de Sua Magᵈᵉ,lhis Requriaõ daporte ou deos e de Sua Magi,pending_review,0.2391304347826087,0.7,11,46,7,10

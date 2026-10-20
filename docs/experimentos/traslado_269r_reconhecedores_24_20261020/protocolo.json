@@ -1,0 +1,43 @@
+{
+  "tipo": "comparacao_assistida_de_desenvolvimento",
+  "data_congelamento": "2026-10-20T17:31:10.331794+00:00",
+  "autorizacao_do_usuario": "Vamos preparar esse conjunto de avaliação assistida, usando a edição nas dúvidas e preservando as ressalvas. Depois pode rodar a comparação nos 24 recortes e me mostrar o CER/WER e os principais erros dos dois.",
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "folio": "269r",
+  "linhas": 24,
+  "regioes_completas": 5,
+  "papel_do_documento": "desenvolvimento_exploratorio",
+  "teste_reservado": false,
+  "referencia_humana_independente": false,
+  "treino": false,
+  "politica": "Usar leituras adotadas na conferência; edição nas dúvidas; preservar ressalvas e diferenças confirmadas.",
+  "abreviatura_final": "Magᵈᵉ literal no alvo; Magestade somente no campo editorial.",
+  "alvo_congelado_antes_das_novas_inferencias": true,
+  "alteracao_dos_estados_no_editor": false,
+  "promocao_de_pendencias_a_validacao_visual": false,
+  "normalizacao": "Unicode NFC e colapso de espaços; preservar caixa, diacríticos e grafia histórica.",
+  "unidade_principal": "Contagens por bloco completo e microagregação dos cinco blocos; não média de taxas por linha.",
+  "tratamento_de_falhas": "Saída vazia, contando deleções; sem excluir linhas ou execuções malsucedidas.",
+  "metricas": [
+    "CER=(S+D+I)/caracteres de referência",
+    "WER=(S+D+I)/palavras de referência"
+  ],
+  "modelos": [
+    "latin PP-OCRv5 mobile/ONNX",
+    "PP-OCRv6 medium/Kraken"
+  ],
+  "recortes": "Os mesmos 24 PNGs, na mesma ordem; nenhum detector ou pós-correção.",
+  "pre_processamento": "Nativo de cada reconhecedor, documentado nas saídas; ambos CPU/float32.",
+  "tempos": "Uma execução sequencial por modelo, sem inferência de superioridade temporal ou economia humana.",
+  "avaliador": "Funções counts/aggregate existentes; os alvos assistidos não são apresentados ao validador como human_diplomatic validado.",
+  "linhas_com_ressalvas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ]
+}

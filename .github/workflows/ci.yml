@@ -32,3 +32,5 @@ jobs:
         run: python docs/revisao_humana/traslado_269r/sessao_20261019/verificar.py
       - name: Conferir referência assistida de 24 linhas do 269r
         run: python docs/revisao_humana/traslado_269r/referencia_assistida_20261020/verificar.py
+      - name: Conferir diagnóstico assistido PP-OCRv5 e PP-OCRv6
+        run: python docs/experimentos/traslado_269r_reconhecedores_24_20261020/verificar.py
