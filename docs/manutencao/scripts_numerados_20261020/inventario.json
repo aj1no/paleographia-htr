@@ -1,0 +1,109 @@
+{
+  "data": "2026-10-20",
+  "commit_anterior": "951363bdb588268dd973de6ead96d7d36c538df6",
+  "branch": "codex/refatoracao-piloto",
+  "guia": "docs/manutencao/scripts_numerados_20261020/README.md",
+  "contrato": "Caminhos preservados; execução termina com código 1 e aviso; importação sem efeitos.",
+  "scripts": [
+    {
+      "caminho": "1_organizar_arquivos.py",
+      "papel": "Extração explícita, sem mover originais.",
+      "orientacao_cli": "python -m paleographia extract --input-dir data/raw --output-dir data/raw/import_NOVO",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "14bbe3c3d0c70eacdd287a9bf65378dfa7ecc2cd19b965603490d64cb3c8ab72",
+      "sha256_aviso_atual": "9bbe89f5cd0bca92b0849856367de5fc2959fbdbee5e824061993cf10f9f51ff",
+      "original_historico": "legacy/1_organizar_arquivos.py.txt",
+      "sha256_original_historico": "e72db552d132528e86773315d4d77feb1abf40395f374052fcd393dce357548e"
+    },
+    {
+      "caminho": "1_testar_recorte_linhas.py",
+      "papel": "Detecção de candidatos, sem validação automática.",
+      "orientacao_cli": "python -m paleographia segment --pages data/manifests/pages.jsonl --config configs/pilot.toml --output-dir data/processed/recortes_NOVO",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "b1bba498c8b592894943f1f2b21e722c1e5bce10acf7b583dad9cd5040fb6532",
+      "sha256_aviso_atual": "b39e953ffd66ceb5693a722f0f0e59e380a4a3066cb6dc9b5ec5d173f320cbc9",
+      "original_historico": "legacy/1_testar_recorte_linhas.py.txt",
+      "sha256_original_historico": "1a64a4347aba48b869bf239e7b4a26c204b5dcbd42b60962f0b51b48af684952"
+    },
+    {
+      "caminho": "2_mapear_e_organizar.py",
+      "papel": "Associação por mapeamento explícito.",
+      "orientacao_cli": "python -m paleographia associate --pages PAGINAS.jsonl --mapping MAPEAMENTO.jsonl --output PAGINAS_NOVAS.jsonl",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "bccca14b4d494cf3f454d9c1a529c4eeb2185b3e0baa3f5ca6a6246454f5184a",
+      "sha256_aviso_atual": "ef7c373636b18cbf8ce89b31be2cdcf277429fc31650e5bd56585d6ba13e2ff1",
+      "original_historico": "legacy/2_mapear_e_organizar.py.txt",
+      "sha256_original_historico": "196f9eb602ac5db2241da63c62915e2451234b2a880de940727c25fca34cf5b4"
+    },
+    {
+      "caminho": "3_limpar_e_extrair_fiel.py",
+      "papel": "Extração de edição como apoio.",
+      "orientacao_cli": "python -m paleographia extract-reference --pdf EDICAO.pdf --output EDICAO_NOVA.jsonl",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "a8f62783c717f6e776237472a94936cf3261f2919263564b5810c40c34c7fdc4",
+      "sha256_aviso_atual": "9500b10a64343286a2a3c5d03c7737c45a0f02a601dbb759a1250ae892dbb0e5",
+      "original_historico": "legacy/3_limpar_e_extrair_fiel.py.txt",
+      "sha256_original_historico": "4bd1c7dbdbc1d605639552d81644feeb638ded25e4365290aa6e50f21653a634"
+    },
+    {
+      "caminho": "4_gerar_dataset_trocr.py",
+      "papel": "Dataset automático TrOCR desativado.",
+      "orientacao_cli": "python -m paleographia segment --help",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "f3d524a778d38bd3b4cd3913568839536e18cc1e50f9b7a4fb2596eb411174a1",
+      "sha256_aviso_atual": "f27a6f12f1e1a934cf4d5593da325fc3c4d4aec71411622c5a1eff290b204a9c",
+      "original_historico": "legacy/4_gerar_dataset_trocr.py.txt",
+      "sha256_original_historico": "c656b388f04ee24fab77fca298b85bca4d1a15c4eedfc8931ea9fa3ff41be9af"
+    },
+    {
+      "caminho": "5_limpar_nomes_arquivos.py",
+      "papel": "Inventário sem renomear arquivos.",
+      "orientacao_cli": "python -m paleographia inventory --input-dir data/raw/inbox --output data/manifests/inventario_NOVO.jsonl",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "45a5ce3539bf93f1fc598aecc2ae8c5ab9a486830cb72790ad81e9f38ed2ca10",
+      "sha256_aviso_atual": "4d569b424aee4bfafad10b1d3e488464ad0dc757a4d554e689d6bb90ceea63b8",
+      "original_historico": "legacy/5_limpar_nomes_arquivos.py.txt",
+      "sha256_original_historico": "24b767428eb7738ed36f02bf1c42cb8c5378039bd2bcfc0a49cd8a171998105c"
+    },
+    {
+      "caminho": "7_segmentador_avancado.py",
+      "papel": "Detecção explícita e revisão posterior.",
+      "orientacao_cli": "python -m paleographia segment --pages PAGINAS.jsonl --config configs/pilot.toml --output-dir data/processed/recortes_NOVO",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "f3d524a778d38bd3b4cd3913568839536e18cc1e50f9b7a4fb2596eb411174a1",
+      "sha256_aviso_atual": "fa049803c5dad0cae7429f2e9ec50cfab616791e164aac2e80033dc84eb2a5cb",
+      "original_historico": "legacy/7_segmentador_avancado.py.txt",
+      "sha256_original_historico": "b07a0cc31fbadcbe0d90a69a2b771f920d12a166aee68f7f18d54260c39e769f"
+    },
+    {
+      "caminho": "8_treinar_modelo.py",
+      "papel": "Treinamento indisponível para os backends atuais.",
+      "orientacao_cli": "python -m paleographia train --help",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "d0a5ff2ce3a01562f24bad570e5ad8aa986b66e50a3386a5ab985aa15dce2d4d",
+      "sha256_aviso_atual": "ecce95eafc98f22bfe370bb591633e455637dc8f6841057b28ac01cf80dbd3f3",
+      "original_historico": "legacy/8_treinar_modelo.py.txt",
+      "sha256_original_historico": "235c9a086fd4996617ac20ae599c9e498a7138fb2a668f8ce2a0e639e50e3d66"
+    },
+    {
+      "caminho": "9_transcrever_imagem.py",
+      "papel": "Reconhecimento de recortes com backend explícito.",
+      "orientacao_cli": "python -m paleographia recognize --help",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "21294bbc14a5acecc6258077e9cd97f9baea4c114a7c01852d1a2398716b470b",
+      "sha256_aviso_atual": "d2922a90a818aae290ff363601485fdac162c3e57222c8382311bf63449592b4",
+      "original_historico": "legacy/9_transcrever_imagem.py.txt",
+      "sha256_original_historico": "da5ca90c59ff59d79d83c958a164c40a25417a04be3259a6859d0c07fec88668"
+    },
+    {
+      "caminho": "9_treino_relampago.py",
+      "papel": "Treinamento rápido desativado.",
+      "orientacao_cli": "python -m paleographia train --help",
+      "saida_esperada": 1,
+      "sha256_aviso_anterior": "a3a925d55fedb8de24edf75e1e88e50a50fe6c1b510202c9bfa4bcd3534338d7",
+      "sha256_aviso_atual": "8906609f8927dfd2d00af2957d28270552beb915837848d1480ef5b405dd9db6",
+      "original_historico": "legacy/9_treino_relampago.py.txt",
+      "sha256_original_historico": "9077c27a9c0bd4eda171346063898faa973e8b8248b8535fbbd841757bcbe05d"
+    }
+  ]
+}

@@ -1,6 +1,13 @@
 # Histórico preservado
 
-Arquivos `.py.txt` são cópias byte a byte dos scripts legados auditados. Foram conservados para leitura e comparação; não os execute sobre os dados. Eles contêm associação por posição, remoção de diretórios e outros comportamentos substituídos. Os scripts com os nomes antigos, na raiz, agora apontam para comandos seguros da CLI.
+Arquivos `.py.txt` são cópias byte a byte dos scripts legados auditados. Foram conservados para leitura e comparação; não os execute sobre os dados. Eles contêm associação por posição, remoção de diretórios e outros comportamentos substituídos.
+
+Os dez scripts numerados da raiz são apenas avisos de compatibilidade: não
+executam algoritmos, não encaminham argumentos e terminam com código 1.
+O [catálogo dos caminhos antigos](../docs/manutencao/scripts_numerados_20261020/README.md)
+registra orientações atuais e hashes dos avisos e originais. Treino e geração
+automática de dataset TrOCR permanecem desativados; as orientações não são
+promessas de operações equivalentes a todos os comportamentos antigos.
 
 `server/main.py` mantém entrada ASGI compatível e delega ao pacote novo. O gitlink `client` não foi removido; a interface mínima atual é servida pelo próprio backend. `metadata.csv`, transcrições antigas e arquivos compactados permanecem intactos, sem validação retroativa.
 
