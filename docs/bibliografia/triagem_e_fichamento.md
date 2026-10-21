@@ -1,8 +1,9 @@
-# Triagem e fichamento — modelos sem estudos preenchidos
+# Ocorrências recuperadas e modelos de triagem/fichamento
 
 Seguir o [protocolo de PI IV](../literature_review.md) e vincular cada ocorrência
-ao [registro de buscas](registro_buscas.md). Nenhuma tabela abaixo contém estudos
-triados ou fichados. As fontes já conhecidas devem manter essa origem e o escopo
+ao [registro de buscas](registro_buscas.md). A tabela de ocorrências registra
+somente a recuperação B01/B02 no arXiv. **Triagem formal, leitura integral e
+fichamentos deste lote estão pendentes.** As fontes já conhecidas mantêm origem e escopo
 real de leitura; não herdam aprovação para inclusão.
 
 ## Ocorrências, registros canônicos e seleção
@@ -12,6 +13,18 @@ canônico reúne ocorrências e versões do mesmo trabalho, sem apagar os origin
 
 | ID da ocorrência | Execução/origem | DOI/arXiv/URL e versão | Título/autores/ano | ID canônico | Relação: único/duplicata/preprint/artigo | Evidência da identificação |
 | --- | --- | --- | --- | --- | --- | --- |
+| B01-ARXIV-001 | ARXIV-B01-20261021 | 2609.24058v1 | All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts; Ye et al.; 2026 | ARXIV-2609.24058 | ID distinto no lote; somente v1 exibida; possível relação com outros estudos ainda não avaliada | [Ficha e histórico arquivados](arxiv_b01_b02_20261021/arxiv_2609_24058_ficha.html) |
+| B01-ARXIV-002 | ARXIV-B01-20261021 | 2603.24373v1 | PP-OCRv5: A Specialized 5M-Parameter Model Rivaling Billion-Parameter Vision-Language Models on OCR Tasks; Cui et al.; 2026 | ARXIV-2603.24373 | ID distinto no lote; somente v1 exibida; sobreposição com relatório de 2025 a verificar | [Ficha e histórico arquivados](arxiv_b01_b02_20261021/arxiv_2603_24373_ficha.html) |
+| B01-ARXIV-003 | ARXIV-B01-20261021; fonte anterior `cui2025` | 2507.05595v1 | PaddleOCR 3.0 Technical Report; Cui et al.; 2025 | ARXIV-2507.05595 | Mesmo ID da fonte conhecida; não é novo artigo; somente v1 exibida | [Ficha e histórico arquivados](arxiv_b01_b02_20261021/arxiv_2507_05595_ficha.html) |
+| B02-ARXIV-001 | ARXIV-B02-20261021 | 2609.20064v1 | A Free Lunch? Adapting PP-OCRv6 for Historical Text Recognition; Kiessling; 2026 | ARXIV-2609.20064 | ID distinto no lote; somente v1 exibida; preprint, revisão por pares não verificada | [Ficha e histórico arquivados](arxiv_b01_b02_20261021/arxiv_2609_20064_ficha.html) |
+| B02-ARXIV-002 | ARXIV-B02-20261021 | 2606.13108v1 | PP-OCRv6: From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs on OCR Tasks; Zhang et al.; 2026 | ARXIV-2606.13108 | ID distinto no lote; somente v1 exibida; relação com checkpoint local a verificar | [Ficha e histórico arquivados](arxiv_b01_b02_20261021/arxiv_2606_13108_ficha.html) |
+
+Autores completos, URLs, datas UTC e proveniência estão em
+[resultados.json](arxiv_b01_b02_20261021/resultados.json). IDs canônicos agrupam
+ocorrências do mesmo identificador; não afirmam independência entre experimentos.
+O resumo e a seção 2.1 do relatório de 2025 já haviam sido consultados antes;
+nenhuma leitura integral foi atribuída a esta coleta. As tabelas seguintes
+continuam sem decisões de seleção ou fichamentos de artigos.
 
 Registrar decisões por etapa e por adição. A leitura integral é distinta da
 consulta ao resumo. Não usar ausência de resumo como exclusão automática.

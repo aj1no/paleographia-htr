@@ -1,0 +1,64 @@
+{
+  "resultado": "aprovado",
+  "data_hora_utc": "2026-10-21T14:49:24.628050+00:00",
+  "escopo": "Validação local offline da coleta, sem nova busca ou inferência",
+  "protocolo_commit": "1faf5c214ed7248f7f0b9ea5c33e020e94d8431a",
+  "execucoes": [
+    "ARXIV-B01-20261021",
+    "ARXIV-B02-20261021"
+  ],
+  "consultas_e_filtros_conferidos_no_html": true,
+  "contagens_reconstruidas_do_html": {
+    "B01": 3,
+    "B02": 2
+  },
+  "registros_arxiv_distintos": 5,
+  "versoes_conferidas_no_historico": {
+    "v1": 5
+  },
+  "origem_anterior_preservada": "cui2025 / arXiv:2507.05595v1",
+  "recibos_http_conferidos": 7,
+  "links_locais_conferidos": 75,
+  "arquivos_versionados_preexistentes_preservados": 620,
+  "arquivos_preexistentes_alterados": [
+    ".gitattributes",
+    "docs/README.md",
+    "docs/academic_alignment.md",
+    "docs/bibliografia/registro_buscas.md",
+    "docs/bibliografia/triagem_e_fichamento.md",
+    "docs/literature_review.md"
+  ],
+  "pacotes_congelados_revisao_experimento_entrega_preservados": true,
+  "ressalvas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "novas_inferencias": 0,
+  "natureza": "diagnóstico de desenvolvimento",
+  "auditoria_academica_original": {
+    "comando": "tmp/academico_notebook_venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261020/verificar_entrega.py",
+    "resultado": "aprovado",
+    "arquivos_entrega": 24,
+    "celulas_codigo_executadas": 9,
+    "figuras_embutidas": 2,
+    "linhas": 24,
+    "ressalvas": 8,
+    "combinacoes_linha_modelo": 48,
+    "novas_inferencias": 0,
+    "metricas_identicas_ao_experimento": true
+  },
+  "nao_afirmado": [
+    "Leitura integral dos cinco textos nesta coleta",
+    "Triagem formal concluída",
+    "Independência de cinco estudos empíricos",
+    "Revisão por pares comprovada",
+    "Revisão sistemática concluída",
+    "Nova aprovação humana ou docente"
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "protocolo_commit": "1faf5c214ed7248f7f0b9ea5c33e020e94d8431a",
+  "gerado_utc": "2026-10-21T14:43:11.055664+00:00",
+  "responsavel": "Codex, assistente de IA, em execução autorizada pelo usuário; sem conferir autoria humana de leitura",
+  "conferente_humano": null,
+  "estado": "recuperação B01/B02 no arXiv concluída; triagem formal e leitura integral pendentes",
+  "execucoes": [
+    {
+      "id": "ARXIV-B01-20261021",
+      "consulta_id": "B01",
+      "estado": "concluída para a recuperação desta consulta",
+      "cabecalho_resultados_literal": "Showing 1–3 of 3 results",
+      "total_informado_interface": 3,
+      "total_estimado": false,
+      "registros_recuperados": 3,
+      "pagina_inicial": 0,
+      "paginas_recuperadas": 1,
+      "todos_resultados_recuperados": true,
+      "intervalo_posicoes": [
+        1,
+        3
+      ],
+      "url": "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22PP-OCRv5%22&terms-0-field=title&terms-1-operator=OR&terms-1-term=%22PP-OCRv5%22&terms-1-field=abstract&terms-2-operator=OR&terms-2-term=%22PP+OCR+v5%22&terms-2-field=title&terms-3-operator=OR&terms-3-term=%22PP+OCR+v5%22&terms-3-field=abstract&terms-4-operator=OR&terms-4-term=%22PPOCRv5%22&terms-4-field=title&terms-5-operator=OR&terms-5-term=%22PPOCRv5%22&terms-5-field=abstract&classification-include_cross_list=include&date-filter_by=date_range&date-from_date=2000-01-01&date-to_date=2026-10-21&date-date_type=submitted_date_first&abstracts=show&size=50&include_older_versions=y&order=-announced_date_first",
+      "inicio_utc": "2026-10-21T14:40:34.053285+00:00",
+      "fim_utc": "2026-10-21T14:40:34.451706+00:00",
+      "inicio_sao_paulo": "2026-10-21T11:40:34.053285-03:00",
+      "resposta": "b01_pagina_0000.html",
+      "sha256": "c48d58e7f959ac06be7e70cd56a1b626b0e24a1d670ff56be5014b50d3c752ed",
+      "parametros_aceitos_conferidos": true
+    },
+    {
+      "id": "ARXIV-B02-20261021",
+      "consulta_id": "B02",
+      "estado": "concluída para a recuperação desta consulta",
+      "cabecalho_resultados_literal": "Showing 1–2 of 2 results",
+      "total_informado_interface": 2,
+      "total_estimado": false,
+      "registros_recuperados": 2,
+      "pagina_inicial": 0,
+      "paginas_recuperadas": 1,
+      "todos_resultados_recuperados": true,
+      "intervalo_posicoes": [
+        1,
+        2
+      ],
+      "url": "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22PP-OCRv6%22&terms-0-field=title&terms-1-operator=OR&terms-1-term=%22PP-OCRv6%22&terms-1-field=abstract&terms-2-operator=OR&terms-2-term=%22PP+OCR+v6%22&terms-2-field=title&terms-3-operator=OR&terms-3-term=%22PP+OCR+v6%22&terms-3-field=abstract&terms-4-operator=OR&terms-4-term=%22PPOCRv6%22&terms-4-field=title&terms-5-operator=OR&terms-5-term=%22PPOCRv6%22&terms-5-field=abstract&classification-include_cross_list=include&date-filter_by=date_range&date-from_date=2000-01-01&date-to_date=2026-10-21&date-date_type=submitted_date_first&abstracts=show&size=50&include_older_versions=y&order=-announced_date_first",
+      "inicio_utc": "2026-10-21T14:40:37.653426+00:00",
+      "fim_utc": "2026-10-21T14:40:38.068339+00:00",
+      "inicio_sao_paulo": "2026-10-21T11:40:37.653426-03:00",
+      "resposta": "b02_pagina_0000.html",
+      "sha256": "31f2f18dca2c27e81df82b885b40e312d1a47decf4ea34705e9a1159cd08492f",
+      "parametros_aceitos_conferidos": true
+    }
+  ],
+  "ocorrencias": [
+    {
+      "id": "B01-ARXIV-001",
+      "execucao": "ARXIV-B01-20261021",
+      "consulta_id": "B01",
+      "posicao": 1,
+      "id_canonico": "ARXIV-2609.24058",
+      "arxiv_id": "2609.24058",
+      "url": "https://arxiv.org/abs/2609.24058",
+      "resposta": "b01_pagina_0000.html",
+      "data_listagem_literal": "Submitted 20 September, 2026; originally announced September 2026."
+    },
+    {
+      "id": "B01-ARXIV-002",
+      "execucao": "ARXIV-B01-20261021",
+      "consulta_id": "B01",
+      "posicao": 2,
+      "id_canonico": "ARXIV-2603.24373",
+      "arxiv_id": "2603.24373",
+      "url": "https://arxiv.org/abs/2603.24373",
+      "resposta": "b01_pagina_0000.html",
+      "data_listagem_literal": "Submitted 25 March, 2026; originally announced March 2026."
+    },
+    {
+      "id": "B01-ARXIV-003",
+      "execucao": "ARXIV-B01-20261021",
+      "consulta_id": "B01",
+      "posicao": 3,
+      "id_canonico": "ARXIV-2507.05595",
+      "arxiv_id": "2507.05595",
+      "url": "https://arxiv.org/abs/2507.05595",
+      "resposta": "b01_pagina_0000.html",
+      "data_listagem_literal": "Submitted 7 July, 2025; originally announced July 2025."
+    },
+    {
+      "id": "B02-ARXIV-001",
+      "execucao": "ARXIV-B02-20261021",
+      "consulta_id": "B02",
+      "posicao": 1,
+      "id_canonico": "ARXIV-2609.20064",
+      "arxiv_id": "2609.20064",
+      "url": "https://arxiv.org/abs/2609.20064",
+      "resposta": "b02_pagina_0000.html",
+      "data_listagem_literal": "Submitted 17 September, 2026; originally announced September 2026."
+    },
+    {
+      "id": "B02-ARXIV-002",
+      "execucao": "ARXIV-B02-20261021",
+      "consulta_id": "B02",
+      "posicao": 2,
+      "id_canonico": "ARXIV-2606.13108",
+      "arxiv_id": "2606.13108",
+      "url": "https://arxiv.org/abs/2606.13108",
+      "resposta": "b02_pagina_0000.html",
+      "data_listagem_literal": "Submitted 11 June, 2026; originally announced June 2026."
+    }
+  ],
+  "registros": [
+    {
+      "id_canonico": "ARXIV-2609.24058",
+      "arxiv_id": "2609.24058",
+      "titulo_original": "All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts",
+      "autores_metadados": [
+        "Ye, Xingsong",
+        "Du, Yongkun",
+        "Zhang, Jiaxin",
+        "Li, Zhixian",
+        "Sun, Chong",
+        "Li, Chen",
+        "Lyu, Jing",
+        "Jin, Lianwen",
+        "Chen, Zhineng"
+      ],
+      "url_ficha": "https://arxiv.org/abs/2609.24058",
+      "doi_arxiv_exibido": [
+        "10.48550/arXiv.2609.24058"
+      ],
+      "registro_doi_validado_externamente": false,
+      "data_citation_literal": [
+        "2026/09/21"
+      ],
+      "data_listagem_literal": "Submitted 20 September, 2026; originally announced September 2026.",
+      "versoes_exibidas": [
+        {
+          "versao": "v1",
+          "data_hora_literal": "Mon, 21 Sep 2026 03:34:56 UTC",
+          "data_hora_utc": "2026-09-21T03:34:56+00:00",
+          "tamanho_literal": "2,778 KB",
+          "url": "https://arxiv.org/abs/2609.24058v1",
+          "dentro_do_corte": true
+        }
+      ],
+      "versao_identificada_para_futura_leitura": "v1",
+      "origens_anteriores": [],
+      "ja_conhecido_antes_do_protocolo": false,
+      "ocorrencias": [
+        "B01-ARXIV-001"
+      ],
+      "evidencia_ficha": "arxiv_2609_24058_ficha.html",
+      "escopo_consulta_nesta_coleta": "Metadados, título, resumo e histórico de versões; sem leitura integral ou inclusão definitiva",
+      "triagem_formal": "não executada",
+      "classe_de_inclusao": "não definida",
+      "revisao_por_pares": "não verificada; registro no arXiv não comprova revisão por pares",
+      "pontos_de_atencao": [
+        "Listagem e histórico UTC exibem dias diferentes; manter ambos, sem atribuir causa não verificada. Para versão/corte, usar histórico UTC explícito da ficha."
+      ]
+    },
+    {
+      "id_canonico": "ARXIV-2603.24373",
+      "arxiv_id": "2603.24373",
+      "titulo_original": "PP-OCRv5: A Specialized 5M-Parameter Model Rivaling Billion-Parameter Vision-Language Models on OCR Tasks",
+      "autores_metadados": [
+        "Cui, Cheng",
+        "Zhang, Yubo",
+        "Sun, Ting",
+        "Wang, Xueqing",
+        "Liu, Hongen",
+        "Lin, Manhui",
+        "Zhang, Yue",
+        "Gao, Tingquan",
+        "Zhou, Changda",
+        "Liu, Jiaxuan",
+        "Zhang, Zelun",
+        "Zhang, Jing",
+        "Zhang, Jun",
+        "Liu, Yi"
+      ],
+      "url_ficha": "https://arxiv.org/abs/2603.24373",
+      "doi_arxiv_exibido": [
+        "10.48550/arXiv.2603.24373"
+      ],
+      "registro_doi_validado_externamente": false,
+      "data_citation_literal": [
+        "2026/03/25"
+      ],
+      "data_listagem_literal": "Submitted 25 March, 2026; originally announced March 2026.",
+      "versoes_exibidas": [
+        {
+          "versao": "v1",
+          "data_hora_literal": "Wed, 25 Mar 2026 14:54:40 UTC",
+          "data_hora_utc": "2026-03-25T14:54:40+00:00",
+          "tamanho_literal": "1,869 KB",
+          "url": "https://arxiv.org/abs/2603.24373v1",
+          "dentro_do_corte": true
+        }
+      ],
+      "versao_identificada_para_futura_leitura": "v1",
+      "origens_anteriores": [],
+      "ja_conhecido_antes_do_protocolo": false,
+      "ocorrencias": [
+        "B01-ARXIV-002"
+      ],
+      "evidencia_ficha": "arxiv_2603_24373_ficha.html",
+      "escopo_consulta_nesta_coleta": "Metadados, título, resumo e histórico de versões; sem leitura integral ou inclusão definitiva",
+      "triagem_formal": "não executada",
+      "classe_de_inclusao": "não definida",
+      "revisao_por_pares": "não verificada; registro no arXiv não comprova revisão por pares",
+      "pontos_de_atencao": []
+    },
+    {
+      "id_canonico": "ARXIV-2507.05595",
+      "arxiv_id": "2507.05595",
+      "titulo_original": "PaddleOCR 3.0 Technical Report",
+      "autores_metadados": [
+        "Cui, Cheng",
+        "Sun, Ting",
+        "Lin, Manhui",
+        "Gao, Tingquan",
+        "Zhang, Yubo",
+        "Liu, Jiaxuan",
+        "Wang, Xueqing",
+        "Zhang, Zelun",
+        "Zhou, Changda",
+        "Liu, Hongen",
+        "Zhang, Yue",
+        "Lv, Wenyu",
+        "Huang, Kui",
+        "Zhang, Yichao",
+        "Zhang, Jing",
+        "Zhang, Jun",
+        "Liu, Yi",
+        "Yu, Dianhai",
+        "Ma, Yanjun"
+      ],
+      "url_ficha": "https://arxiv.org/abs/2507.05595",
+      "doi_arxiv_exibido": [
+        "10.48550/arXiv.2507.05595"
+      ],
+      "registro_doi_validado_externamente": false,
+      "data_citation_literal": [
+        "2025/07/08"
+      ],
+      "data_listagem_literal": "Submitted 7 July, 2025; originally announced July 2025.",
+      "versoes_exibidas": [
+        {
+          "versao": "v1",
+          "data_hora_literal": "Tue, 8 Jul 2025 02:14:10 UTC",
+          "data_hora_utc": "2025-07-08T02:14:10+00:00",
+          "tamanho_literal": "10,526 KB",
+          "url": "https://arxiv.org/abs/2507.05595v1",
+          "dentro_do_corte": true
+        }
+      ],
+      "versao_identificada_para_futura_leitura": "v1",
+      "origens_anteriores": [
+        {
+          "id": "cui2025",
+          "tipo": "relatorio_tecnico",
+          "titulo": "PaddleOCR 3.0 Technical Report",
+          "url": "https://arxiv.org/html/2507.05595v1",
+          "doi": "10.48550/arXiv.2507.05595",
+          "consulta": "Resumo e seção 2.1",
+          "uso": "Contexto do PP-OCRv5; não extrapolar resultados da configuração server para o checkpoint latino mobile.",
+          "data_consulta": "2026-10-20"
+        }
+      ],
+      "ja_conhecido_antes_do_protocolo": true,
+      "ocorrencias": [
+        "B01-ARXIV-003"
+      ],
+      "evidencia_ficha": "arxiv_2507_05595_ficha.html",
+      "escopo_consulta_nesta_coleta": "Metadados, título, resumo e histórico de versões; sem leitura integral ou inclusão definitiva",
+      "triagem_formal": "não executada",
+      "classe_de_inclusao": "não definida",
+      "revisao_por_pares": "não verificada; registro no arXiv não comprova revisão por pares",
+      "pontos_de_atencao": [
+        "Listagem e histórico UTC exibem dias diferentes; manter ambos, sem atribuir causa não verificada. Para versão/corte, usar histórico UTC explícito da ficha."
+      ]
+    },
+    {
+      "id_canonico": "ARXIV-2609.20064",
+      "arxiv_id": "2609.20064",
+      "titulo_original": "A Free Lunch? Adapting PP-OCRv6 for Historical Text Recognition",
+      "autores_metadados": [
+        "Kiessling, Benjamin"
+      ],
+      "url_ficha": "https://arxiv.org/abs/2609.20064",
+      "doi_arxiv_exibido": [
+        "10.48550/arXiv.2609.20064"
+      ],
+      "registro_doi_validado_externamente": false,
+      "data_citation_literal": [
+        "2026/09/17"
+      ],
+      "data_listagem_literal": "Submitted 17 September, 2026; originally announced September 2026.",
+      "versoes_exibidas": [
+        {
+          "versao": "v1",
+          "data_hora_literal": "Thu, 17 Sep 2026 11:15:07 UTC",
+          "data_hora_utc": "2026-09-17T11:15:07+00:00",
+          "tamanho_literal": "816 KB",
+          "url": "https://arxiv.org/abs/2609.20064v1",
+          "dentro_do_corte": true
+        }
+      ],
+      "versao_identificada_para_futura_leitura": "v1",
+      "origens_anteriores": [],
+      "ja_conhecido_antes_do_protocolo": false,
+      "ocorrencias": [
+        "B02-ARXIV-001"
+      ],
+      "evidencia_ficha": "arxiv_2609_20064_ficha.html",
+      "escopo_consulta_nesta_coleta": "Metadados, título, resumo e histórico de versões; sem leitura integral ou inclusão definitiva",
+      "triagem_formal": "não executada",
+      "classe_de_inclusao": "não definida",
+      "revisao_por_pares": "não verificada; registro no arXiv não comprova revisão por pares",
+      "pontos_de_atencao": []
+    },
+    {
+      "id_canonico": "ARXIV-2606.13108",
+      "arxiv_id": "2606.13108",
+      "titulo_original": "PP-OCRv6: From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs on OCR Tasks",
+      "autores_metadados": [
+        "Zhang, Yubo",
+        "Wang, Xueqing",
+        "Lin, Manhui",
+        "Zhang, Yue",
+        "Deng, Penglongyi",
+        "Sun, Ting",
+        "Gao, Tingquan",
+        "Zhang, Zelun",
+        "Liu, Jiaxuan",
+        "Zhou, Changda",
+        "Liu, Hongen",
+        "Liang, Suyin",
+        "Cui, Cheng",
+        "Liu, Yi",
+        "Yu, Dianhai",
+        "Ma, Yanjun"
+      ],
+      "url_ficha": "https://arxiv.org/abs/2606.13108",
+      "doi_arxiv_exibido": [
+        "10.48550/arXiv.2606.13108"
+      ],
+      "registro_doi_validado_externamente": false,
+      "data_citation_literal": [
+        "2026/06/11"
+      ],
+      "data_listagem_literal": "Submitted 11 June, 2026; originally announced June 2026.",
+      "versoes_exibidas": [
+        {
+          "versao": "v1",
+          "data_hora_literal": "Thu, 11 Jun 2026 09:35:16 UTC",
+          "data_hora_utc": "2026-06-11T09:35:16+00:00",
+          "tamanho_literal": "11,185 KB",
+          "url": "https://arxiv.org/abs/2606.13108v1",
+          "dentro_do_corte": true
+        }
+      ],
+      "versao_identificada_para_futura_leitura": "v1",
+      "origens_anteriores": [],
+      "ja_conhecido_antes_do_protocolo": false,
+      "ocorrencias": [
+        "B02-ARXIV-002"
+      ],
+      "evidencia_ficha": "arxiv_2606_13108_ficha.html",
+      "escopo_consulta_nesta_coleta": "Metadados, título, resumo e histórico de versões; sem leitura integral ou inclusão definitiva",
+      "triagem_formal": "não executada",
+      "classe_de_inclusao": "não definida",
+      "revisao_por_pares": "não verificada; registro no arXiv não comprova revisão por pares",
+      "pontos_de_atencao": []
+    }
+  ],
+  "contagens_do_lote": {
+    "ocorrencias": 5,
+    "registros_arxiv_distintos": 5,
+    "repeticoes_do_mesmo_arxiv_id_entre_consultas": 0,
+    "registros_previamente_conhecidos": 1,
+    "registros_sem_vinculo_no_catalogo_anterior": 4,
+    "estudos_unicos_apos_leitura_e_deduplicacao_conceitual": null,
+    "incluidos_sintese_empirica": null,
+    "incluidos_apoio": null,
+    "exclusoes": null
+  },
+  "ressalvas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "revisao_sistematica_concluida": false
+}

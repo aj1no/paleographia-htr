@@ -1,7 +1,10 @@
 # Protocolo bibliográfico de PI IV — PP-OCRv5 × PP-OCRv6
 
-Versão de **21/10/2026**. Estado: **planejamento definido; buscas de estudos,
-triagem e fichamentos ainda não executados sob este protocolo**. A adequação
+Versão de **21/10/2026**, registrada no commit `1faf5c2`. Estado atual:
+**B01 e B02 executadas no arXiv; demais buscas, triagem formal e fichamentos
+pendentes**. A [coleta datada](bibliografia/arxiv_b01_b02_20261021/README.md)
+registra cinco ocorrências, versões e proveniência, sem inclusão definitiva.
+As regras operacionais desta versão permanecem iguais. A adequação
 à rubrica de PI IV continua sem confirmação docente. Este documento define
 o trabalho a realizar; não apresenta resultados de revisão sistemática.
 
@@ -221,8 +224,9 @@ protocolo próprio e está fora desta atualização.
 
 ## 8. Registros e condição de conclusão
 
-O [registro de buscas](bibliografia/registro_buscas.md) começa sem execuções,
-totais ou seleção preenchidos. Campo desconhecido é **não apurado**, nunca zero.
+O [registro de buscas](bibliografia/registro_buscas.md) foi criado sem execuções
+ou resultados e agora recebe o lote datado B01/B02 no arXiv. As contagens locais
+de recuperação não são totais da revisão. Campo desconhecido é **não apurado**, nunca zero.
 Só registrar zero depois de executar a operação correspondente. Distinguir
 total informado pela interface, recuperados, duplicatas, triados, textos
 solicitados/obtidos, excluídos e incluídos. Guardar contagens por consulta e
@@ -248,13 +252,15 @@ As consultas antigas e fontes técnicas continuam históricas; não foram execut
 como parte desta revisão. Notebook, artigo, referências assistidas, saídas brutas
 e pacotes com inventários permanecem intactos.
 
-Em 21/10/2026 foram consultadas apenas orientações operacionais para elaborar
-este protocolo, sem executar B01–B08/G01–G08 nem selecionar estudos:
+Na preparação de 21/10/2026 foram consultadas apenas orientações operacionais,
+antes de executar qualquer B01–B08/G01–G08 ou selecionar estudos:
 
 - [Guia oficial da ACM Digital Library](https://libraries.acm.org/binaries/content/assets/libraries/new_acm-digital-library-user-guide.pdf): campos, coleções e operadores; a interface concreta deve ser registrada na execução.
 - [Mecanismo de busca do IEEE Xplore](https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/search-engine): modos, campos e operadores.
 - [Ajuda oficial do Google Scholar](https://scholar.google.com/intl/en/scholar/help.html): ordenação, busca avançada, versões e exportação; a coleta complementar será manual, sem raspagem em massa.
 
-A sintaxe operacional do arXiv ainda precisa ser validada na interface ao
-registrar a primeira execução. Estas consultas de documentação não são estudos
-incluídos, revisão sistemática realizada ou aprovação dos professores.
+A primeira execução posterior validou o formulário avançado do arXiv para
+B01/B02, com seis cláusulas por consulta em título/resumo. A tradução literal,
+os filtros, horários e respostas estão no plano e nos recibos da coleta datada.
+Estas consultas de documentação não são estudos incluídos, revisão sistemática
+realizada ou aprovação dos professores.

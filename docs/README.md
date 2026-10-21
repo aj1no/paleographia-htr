@@ -24,15 +24,18 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 | [CI acadêmica](manutencao/ci_academica_20261021/README.md) | Auditoria e reexecução do notebook, sem inferência; métricas, tabelas e oito ressalvas conferidas |
 | [Adequação acadêmica](entregas/pi_iv_pln_20261020/adequacao_academica.md) | Rubricas, revisão bibliográfica e revisão dos autores pendentes |
 | [Enquadramento das disciplinas](academic_alignment.md) | Dois reconhecedores em PLN; enquadramento PI IV a confirmar |
-| [Protocolo bibliográfico de PI IV](literature_review.md) | Perguntas, buscas e critérios definidos para PP-OCRv5 × PP-OCRv6; seleção ainda não executada |
+| [Protocolo bibliográfico de PI IV](literature_review.md) | PP-OCRv5 × PP-OCRv6; B01/B02 executadas no arXiv, demais buscas e seleção pendentes |
+| [Primeira coleta bibliográfica](bibliografia/arxiv_b01_b02_20261021/README.md) | B01: 3 registros; B02: 2; cinco IDs distintos, todos v1; um já conhecido; sem inclusão definitiva |
 
 O [protocolo de avaliação](evaluation_protocol.md) registra a mudança do plano
 de segmentação para o diagnóstico de reconhecedores. O [protocolo bibliográfico](literature_review.md)
-foi atualizado em 21/10/2026 para PP-OCRv5 × PP-OCRv6. As buscas, a seleção e os
-fichamentos ainda precisam ser executados; não é revisão sistemática concluída.
+foi atualizado em 21/10/2026 para PP-OCRv5 × PP-OCRv6. B01 e B02 já foram
+executadas no arXiv; outras buscas, seleção e fichamentos continuam pendentes.
+Não é revisão sistemática concluída.
 Os [registros de busca](bibliografia/registro_buscas.md) e os
-[modelos de triagem/fichamento](bibliografia/triagem_e_fichamento.md) estão sem
-resultados preenchidos; o protocolo anterior foi preservado como histórico.
+[modelos de triagem/fichamento](bibliografia/triagem_e_fichamento.md) distinguem
+recuperação, fonte já conhecida e leitura pendente. O protocolo anterior foi
+preservado como histórico.
 
 ## Uso e dados
 
