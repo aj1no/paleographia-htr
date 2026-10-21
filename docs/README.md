@@ -1,6 +1,6 @@
 # Índice da documentação
 
-Estado em 20/10/2026, na branch principal e padrão `main`.
+Estado em 21/10/2026, na branch principal e padrão `main`.
 O escopo permanece fechado para novas funções.
 
 Use a `main` para consultar a versão atual e iniciar novas contribuições.
@@ -21,6 +21,7 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 | [Referência assistida do 269r](revisao_humana/traslado_269r/referencia_assistida_20261020/README.md) | 24 linhas, cinco coberturas; 16 validadas e oito ressalvas |
 | [Comparação de reconhecedores](experimentos/traslado_269r_reconhecedores_24_20261020/README.md) | PP-OCRv5 × PP-OCRv6, desenvolvimento |
 | [Notebook, artigo e evidências](entregas/pi_iv_pln_20261020/README.md) | Notebook executado; artigo em primeiro rascunho |
+| [CI acadêmica](manutencao/ci_academica_20261021/README.md) | Auditoria e reexecução do notebook, sem inferência; métricas, tabelas e oito ressalvas conferidas |
 | [Adequação acadêmica](entregas/pi_iv_pln_20261020/adequacao_academica.md) | Rubricas, revisão bibliográfica e revisão dos autores pendentes |
 | [Enquadramento das disciplinas](academic_alignment.md) | Dois reconhecedores em PLN; enquadramento PI IV a confirmar |
 

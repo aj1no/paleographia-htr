@@ -1,4 +1,4 @@
-# Estado do projeto para revisão — 20/10/2026
+# Estado do projeto para revisão — 21/10/2026
 
 Revisar a `main`, branch principal e padrão. Base publicada anterior a esta
 atualização documental: `5879f8538146d36e78a996ac1f604deaec36ab83`.
@@ -39,7 +39,10 @@ diferenças de variantes e pré-processamento. Não atribuir a diferença soment
 
 ## Preservação e reprodução
 
-Use o [guia de execução](runbook.md). A CI atual não reexecuta o notebook.
+Use o [guia de execução](runbook.md). A [tarefa acadêmica da CI](manutencao/ci_academica_20261021/README.md)
+audita a entrega e reexecuta o notebook em Ubuntu/Python 3.12, sem nova inferência.
+Compara as métricas e cinco tabelas, preserva as oito ressalvas e publica somente
+os derivados da execução. O notebook e os pacotes históricos permanecem intactos.
 Dados, revisões, experimentos e implementações arquivadas fazem parte da
 evidência, inclusive resultados ruins. O [inventário desta revisão](revisao_repositorio_20261020.md)
 identifica componentes legados e dependências de auditoria.

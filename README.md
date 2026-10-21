@@ -5,7 +5,7 @@ conferir recortes e ordem de leitura, consultar vocabulário com fontes e salvar
 revisões humanas com autoria e histórico. Reconhecimento bruto, edição publicada
 e texto humano permanecem separados. A interface é apresentada em português.
 
-**Estado em 20/10/2026 — branch principal e padrão: `main`.** O escopo está
+**Estado em 21/10/2026 — branch principal e padrão: `main`.** O escopo está
 fechado para novas funções; a prioridade é consolidar a avaliação e as entregas
 de PI IV e PLN. Não houve treinamento ou ajuste fino neste corpus.
 
@@ -82,9 +82,11 @@ node --test tests/web_review.test.cjs
 
 Os testes usam dados sintéticos identificados e evidências congeladas; não
 medem nova qualidade de reconhecimento. A CI executa a suíte e as auditorias
-publicadas em Windows/Ubuntu, Python 3.11/3.12. O notebook tem dependências e
-execução separadas na [entrega acadêmica](docs/entregas/pi_iv_pln_20261020/README.md);
-sua reexecução ainda não faz parte da CI.
+publicadas em Windows/Ubuntu, Python 3.11/3.12. A tarefa acadêmica separada usa
+Ubuntu/Python 3.12 para auditar a entrega e reexecutar o notebook, sem pesos ou
+nova inferência. Confere métricas, cinco tabelas e as oito ressalvas, preservando
+os arquivos publicados. Veja a [CI acadêmica e seus artefatos](docs/manutencao/ci_academica_20261021/README.md)
+e a [entrega acadêmica original](docs/entregas/pi_iv_pln_20261020/README.md).
 
 ## Organização
 

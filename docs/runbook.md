@@ -1,4 +1,4 @@
-# Execução, revisão e reprodução — 20/10/2026
+# Execução, revisão e reprodução — 21/10/2026
 
 Comandos na raiz do repositório, com Python 3.11/3.12. Instale o pacote com
 o extra `[test]`, conforme o [README](../README.md). Exemplos no Windows;
@@ -44,6 +44,13 @@ O notebook tem [ambiente e executor separados](entregas/pi_iv_pln_20261020/READM
 e gera derivados em `output/`, preservando o notebook arquivado. Para repetir
 inferências, siga o [experimento de 24 recortes](experimentos/traslado_269r_reconhecedores_24_20261020/README.md):
 é necessário ter pesos e imagem Docker conferidos e escolher pasta nova.
+
+A [CI acadêmica](manutencao/ci_academica_20261021/README.md) usa o mesmo executor
+congelado, acrescentando auditoria antes/depois, proteções contra inferência e
+comparação dos derivados. Para reproduzir essa tarefa, use um checkout limpo,
+sem `models/`, workspaces ou a pasta de saída já existente; não apague revisões
+ou derivados desta máquina para satisfazer essa condição. O guia fornece o
+comando `python scripts/ci_academica.py` e a instalação opcional correspondente.
 
 ## Retomar o editor do Traslado nesta máquina
 
@@ -133,8 +140,9 @@ node --test tests/web_review.test.cjs
 .venv/Scripts/python.exe -m paleographia --help
 ```
 
-A CI usa Node 22 para o editor. Esses testes não executam modelos reais nem
-reexecutam o notebook. `/health` informa o reconhecedor; `/docs` apresenta a API.
+A CI usa Node 22 para o editor. A suíte leve não executa modelos reais; a tarefa
+acadêmica separada reexecuta o notebook sem inferência. `/health` informa o
+reconhecedor; `/docs` apresenta a API.
 O servidor deve permanecer local, com um processo por workspace.
 
 `compare` compara **segmentadores**, com reconhecedor fixo; não é o experimento

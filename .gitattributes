@@ -5,6 +5,10 @@ legacy/auxiliares_20261020/** -text -whitespace
 # Avisos numerados e seu catálogo conservam hashes em Windows/Linux.
 /[0-9]*.py text eol=lf
 docs/manutencao/scripts_numerados_20261020/** -text -whitespace
+# CI acadêmica: conservar as fontes e os recibos de validação entre sistemas.
+scripts/ci_academica*.py text eol=lf
+tests/test_ci_academica.py text eol=lf
+docs/manutencao/ci_academica_20261021/** -text -whitespace
 # Escopo restrito: não renormalizar os snapshots legados comparacao_*.json.
 docs/revisao_humana/traslado_269r/integridade.json text eol=lf
 docs/revisao_humana/traslado_269r/revisions/snapshot_*.json text eol=lf

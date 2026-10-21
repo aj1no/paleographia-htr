@@ -1,4 +1,4 @@
-# Ambientes e modelos — 20/10/2026
+# Ambientes e modelos — 21/10/2026
 
 Instale a versão da `main`, branch principal e padrão. Para obter ou atualizar
 o checkout, siga o [guia de execução](runbook.md). Os registros de ambientes e
@@ -50,6 +50,13 @@ A [entrega acadêmica](entregas/pi_iv_pln_20261020/README.md) fornece ambiente
 opcional, versões observadas, executor e auditor. Recalcular métricas não exige
 pesos, Docker ou nova inferência. A instalação inicial exige rede; o recálculo
 usa arquivos locais. O freeze observado não é lock universal.
+
+A [tarefa acadêmica da CI](manutencao/ci_academica_20261021/README.md) instala
+somente o pacote básico e os requisitos opcionais do notebook, em Ubuntu com
+Python 3.12. Não instala extras de OCR/HTR, pesos ou Docker. O executor e o kernel
+recebem proteções contra importação dos reconhecedores, acesso a pesos,
+subprocessos de inferência, escrita nas entradas e conexões externas. A
+comunicação local do Jupyter e a geração de figuras permanecem permitidas.
 
 ## Histórico e rotas secundárias
 
