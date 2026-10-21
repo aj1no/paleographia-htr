@@ -1,0 +1,16 @@
+{
+  "url_solicitada": "https://arxiv.org/abs/2609.20064",
+  "iniciado_utc": "2026-10-21T14:41:28.889339+00:00",
+  "metodo": "GET",
+  "status_http": 200,
+  "url_final": "https://arxiv.org/abs/2609.20064",
+  "cabecalhos": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Wed, 21 Oct 2026 14:41:32 GMT",
+    "ETag": null,
+    "Last-Modified": "Fri, 18 Sep 2026 00:49:06 GMT"
+  },
+  "arquivo_resposta": "arxiv_2609_20064_ficha.html",
+  "sha256": "5f3139f38d3e1655e85df6ae228a085b5690a140341d1a1d779c4b925d074732",
+  "terminado_utc": "2026-10-21T14:41:29.097059+00:00"
+}

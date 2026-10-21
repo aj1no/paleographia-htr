@@ -11,8 +11,10 @@ A revisão bibliográfica inicial não substitui a revisão sistemática de PI I
 
 **Atualização de 21/10/2026:** o [protocolo bibliográfico](literature_review.md)
 define PB1–PB3, buscas por componentes e por avaliação de reconhecimento histórico,
-critérios de seleção, extração e síntese para PP-OCRv5 × PP-OCRv6. As buscas de
-estudos e os fichamentos ainda não foram executados sob essa versão. O protocolo
+critérios de seleção, extração e síntese para PP-OCRv5 × PP-OCRv6. A
+[coleta B01/B02 no arXiv](bibliografia/arxiv_b01_b02_20261021/README.md) recuperou
+cinco registros e seus históricos de versões, com um vínculo a fonte anterior.
+As demais buscas, a triagem formal e os fichamentos continuam pendentes. O protocolo
 anterior foi preservado; as oito ressalvas e o diagnóstico de desenvolvimento
 continuam válidos, sem presumir confirmação docente ou revisão concluída.
 

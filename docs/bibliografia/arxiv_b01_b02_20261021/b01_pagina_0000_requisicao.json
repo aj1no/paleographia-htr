@@ -1,0 +1,22 @@
+{
+  "consulta_id": "B01",
+  "url_solicitada": "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22PP-OCRv5%22&terms-0-field=title&terms-1-operator=OR&terms-1-term=%22PP-OCRv5%22&terms-1-field=abstract&terms-2-operator=OR&terms-2-term=%22PP+OCR+v5%22&terms-2-field=title&terms-3-operator=OR&terms-3-term=%22PP+OCR+v5%22&terms-3-field=abstract&terms-4-operator=OR&terms-4-term=%22PPOCRv5%22&terms-4-field=title&terms-5-operator=OR&terms-5-term=%22PPOCRv5%22&terms-5-field=abstract&classification-include_cross_list=include&date-filter_by=date_range&date-from_date=2000-01-01&date-to_date=2026-10-21&date-date_type=submitted_date_first&abstracts=show&size=50&include_older_versions=y&order=-announced_date_first",
+  "iniciado_utc": "2026-10-21T14:40:34.053285+00:00",
+  "metodo": "GET",
+  "user_agent": "PaleographIA-Bibliografia-PI-IV/1.0 (coleta B01-B02; sem inferencia)",
+  "status_http": 200,
+  "url_final": "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22PP-OCRv5%22&terms-0-field=title&terms-1-operator=OR&terms-1-term=%22PP-OCRv5%22&terms-1-field=abstract&terms-2-operator=OR&terms-2-term=%22PP+OCR+v5%22&terms-2-field=title&terms-3-operator=OR&terms-3-term=%22PP+OCR+v5%22&terms-3-field=abstract&terms-4-operator=OR&terms-4-term=%22PPOCRv5%22&terms-4-field=title&terms-5-operator=OR&terms-5-term=%22PPOCRv5%22&terms-5-field=abstract&classification-include_cross_list=include&date-filter_by=date_range&date-from_date=2000-01-01&date-to_date=2026-10-21&date-date_type=submitted_date_first&abstracts=show&size=50&include_older_versions=y&order=-announced_date_first",
+  "cabecalhos": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Wed, 21 Oct 2026 14:40:37 GMT",
+    "ETag": null,
+    "Last-Modified": null
+  },
+  "arquivo_resposta": "b01_pagina_0000.html",
+  "sha256": "c48d58e7f959ac06be7e70cd56a1b626b0e24a1d670ff56be5014b50d3c752ed",
+  "titulo_html": [
+    "Advanced Search | arXiv e-print repository"
+  ],
+  "itens_html": 3,
+  "terminado_utc": "2026-10-21T14:40:34.451706+00:00"
+}

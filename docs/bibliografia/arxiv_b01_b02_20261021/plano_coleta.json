@@ -1,0 +1,351 @@
+{
+  "registrado_antes_das_buscas_utc": "2026-10-21T14:40:16.569553+00:00",
+  "protocolo_commit": "1faf5c214ed7248f7f0b9ea5c33e020e94d8431a",
+  "protocolo_sha256": "bb29f8ca0ee248e4200c03a0359e650d8e9785f5acffb797c79dee625cf6ac7f",
+  "responsavel_coleta": "Codex, assistente de IA, em execução autorizada pelo usuário; sem conferir autoria humana de leitura",
+  "conferente_humano": null,
+  "modo": "Formulário público de busca avançada do arXiv, acesso HTTP GET",
+  "limites": {
+    "periodo": [
+      "2000-01-01",
+      "2026-10-21"
+    ],
+    "campo_data": "submitted_date_first (primeira submissão); conferir datas e versões individualmente",
+    "incluir_versoes_anteriores": true,
+    "categorias": "todas; inclui cross-list",
+    "idiomas": "sem filtro de recuperação",
+    "ordenacao": "-announced_date_first",
+    "tamanho_pagina": 50,
+    "triagem_e_leitura_integral": "não executadas; registrar somente recuperação e versões"
+  },
+  "consultas": [
+    {
+      "id": "ARXIV-B01-20261021",
+      "consulta_id": "B01",
+      "expressao_logica": "\"PP-OCRv5\" OR \"PP OCR v5\" OR \"PPOCRv5\"",
+      "campos": [
+        "title",
+        "abstract"
+      ],
+      "clausulas": [
+        {
+          "operador": "AND",
+          "termo": "\"PP-OCRv5\"",
+          "campo": "title"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PP-OCRv5\"",
+          "campo": "abstract"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PP OCR v5\"",
+          "campo": "title"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PP OCR v5\"",
+          "campo": "abstract"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PPOCRv5\"",
+          "campo": "title"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PPOCRv5\"",
+          "campo": "abstract"
+        }
+      ],
+      "parametros": [
+        [
+          "advanced",
+          "1"
+        ],
+        [
+          "terms-0-operator",
+          "AND"
+        ],
+        [
+          "terms-0-term",
+          "\"PP-OCRv5\""
+        ],
+        [
+          "terms-0-field",
+          "title"
+        ],
+        [
+          "terms-1-operator",
+          "OR"
+        ],
+        [
+          "terms-1-term",
+          "\"PP-OCRv5\""
+        ],
+        [
+          "terms-1-field",
+          "abstract"
+        ],
+        [
+          "terms-2-operator",
+          "OR"
+        ],
+        [
+          "terms-2-term",
+          "\"PP OCR v5\""
+        ],
+        [
+          "terms-2-field",
+          "title"
+        ],
+        [
+          "terms-3-operator",
+          "OR"
+        ],
+        [
+          "terms-3-term",
+          "\"PP OCR v5\""
+        ],
+        [
+          "terms-3-field",
+          "abstract"
+        ],
+        [
+          "terms-4-operator",
+          "OR"
+        ],
+        [
+          "terms-4-term",
+          "\"PPOCRv5\""
+        ],
+        [
+          "terms-4-field",
+          "title"
+        ],
+        [
+          "terms-5-operator",
+          "OR"
+        ],
+        [
+          "terms-5-term",
+          "\"PPOCRv5\""
+        ],
+        [
+          "terms-5-field",
+          "abstract"
+        ],
+        [
+          "classification-include_cross_list",
+          "include"
+        ],
+        [
+          "date-filter_by",
+          "date_range"
+        ],
+        [
+          "date-from_date",
+          "2000-01-01"
+        ],
+        [
+          "date-to_date",
+          "2026-10-21"
+        ],
+        [
+          "date-date_type",
+          "submitted_date_first"
+        ],
+        [
+          "abstracts",
+          "show"
+        ],
+        [
+          "size",
+          "50"
+        ],
+        [
+          "include_older_versions",
+          "y"
+        ],
+        [
+          "order",
+          "-announced_date_first"
+        ]
+      ],
+      "url_planejada": "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22PP-OCRv5%22&terms-0-field=title&terms-1-operator=OR&terms-1-term=%22PP-OCRv5%22&terms-1-field=abstract&terms-2-operator=OR&terms-2-term=%22PP+OCR+v5%22&terms-2-field=title&terms-3-operator=OR&terms-3-term=%22PP+OCR+v5%22&terms-3-field=abstract&terms-4-operator=OR&terms-4-term=%22PPOCRv5%22&terms-4-field=title&terms-5-operator=OR&terms-5-term=%22PPOCRv5%22&terms-5-field=abstract&classification-include_cross_list=include&date-filter_by=date_range&date-from_date=2000-01-01&date-to_date=2026-10-21&date-date_type=submitted_date_first&abstracts=show&size=50&include_older_versions=y&order=-announced_date_first",
+      "paginar_ate_total": true
+    },
+    {
+      "id": "ARXIV-B02-20261021",
+      "consulta_id": "B02",
+      "expressao_logica": "\"PP-OCRv6\" OR \"PP OCR v6\" OR \"PPOCRv6\"",
+      "campos": [
+        "title",
+        "abstract"
+      ],
+      "clausulas": [
+        {
+          "operador": "AND",
+          "termo": "\"PP-OCRv6\"",
+          "campo": "title"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PP-OCRv6\"",
+          "campo": "abstract"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PP OCR v6\"",
+          "campo": "title"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PP OCR v6\"",
+          "campo": "abstract"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PPOCRv6\"",
+          "campo": "title"
+        },
+        {
+          "operador": "OR",
+          "termo": "\"PPOCRv6\"",
+          "campo": "abstract"
+        }
+      ],
+      "parametros": [
+        [
+          "advanced",
+          "1"
+        ],
+        [
+          "terms-0-operator",
+          "AND"
+        ],
+        [
+          "terms-0-term",
+          "\"PP-OCRv6\""
+        ],
+        [
+          "terms-0-field",
+          "title"
+        ],
+        [
+          "terms-1-operator",
+          "OR"
+        ],
+        [
+          "terms-1-term",
+          "\"PP-OCRv6\""
+        ],
+        [
+          "terms-1-field",
+          "abstract"
+        ],
+        [
+          "terms-2-operator",
+          "OR"
+        ],
+        [
+          "terms-2-term",
+          "\"PP OCR v6\""
+        ],
+        [
+          "terms-2-field",
+          "title"
+        ],
+        [
+          "terms-3-operator",
+          "OR"
+        ],
+        [
+          "terms-3-term",
+          "\"PP OCR v6\""
+        ],
+        [
+          "terms-3-field",
+          "abstract"
+        ],
+        [
+          "terms-4-operator",
+          "OR"
+        ],
+        [
+          "terms-4-term",
+          "\"PPOCRv6\""
+        ],
+        [
+          "terms-4-field",
+          "title"
+        ],
+        [
+          "terms-5-operator",
+          "OR"
+        ],
+        [
+          "terms-5-term",
+          "\"PPOCRv6\""
+        ],
+        [
+          "terms-5-field",
+          "abstract"
+        ],
+        [
+          "classification-include_cross_list",
+          "include"
+        ],
+        [
+          "date-filter_by",
+          "date_range"
+        ],
+        [
+          "date-from_date",
+          "2000-01-01"
+        ],
+        [
+          "date-to_date",
+          "2026-10-21"
+        ],
+        [
+          "date-date_type",
+          "submitted_date_first"
+        ],
+        [
+          "abstracts",
+          "show"
+        ],
+        [
+          "size",
+          "50"
+        ],
+        [
+          "include_older_versions",
+          "y"
+        ],
+        [
+          "order",
+          "-announced_date_first"
+        ]
+      ],
+      "url_planejada": "https://arxiv.org/search/advanced?advanced=1&terms-0-operator=AND&terms-0-term=%22PP-OCRv6%22&terms-0-field=title&terms-1-operator=OR&terms-1-term=%22PP-OCRv6%22&terms-1-field=abstract&terms-2-operator=OR&terms-2-term=%22PP+OCR+v6%22&terms-2-field=title&terms-3-operator=OR&terms-3-term=%22PP+OCR+v6%22&terms-3-field=abstract&terms-4-operator=OR&terms-4-term=%22PPOCRv6%22&terms-4-field=title&terms-5-operator=OR&terms-5-term=%22PPOCRv6%22&terms-5-field=abstract&classification-include_cross_list=include&date-filter_by=date_range&date-from_date=2000-01-01&date-to_date=2026-10-21&date-date_type=submitted_date_first&abstracts=show&size=50&include_older_versions=y&order=-announced_date_first",
+      "paginar_ate_total": true
+    }
+  ],
+  "preservar": {
+    "ressalvas": [
+      11,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24
+    ],
+    "natureza": "diagnóstico de desenvolvimento",
+    "novas_inferencias": 0
+  }
+}

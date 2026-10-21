@@ -1,13 +1,15 @@
 # Registro de buscas bibliográficas — PI IV
 
 Protocolo: [versão de 21/10/2026](../literature_review.md).
-Estado: **buscas de estudos não iniciadas sob este protocolo**.
-Não há totais apurados, exportações ou estudos selecionados neste registro.
+Estado: **coleta parcial iniciada: B01/B02 concluídas no arXiv; demais buscas,
+triagem formal e leitura integral pendentes**. Não há estudos incluídos por
+decisão final nem total global apurado da revisão.
 
 ## Identificação antes da primeira execução
 
-- Versão/commit do protocolo efetivamente usado: a preencher após seu registro no Git.
-- Responsável pela busca e data de início: não definidos.
+- Versão/commit do protocolo usado neste lote: `1faf5c214ed7248f7f0b9ea5c33e020e94d8431a`.
+- Responsável pela coleta: Codex, assistente de IA, em execução autorizada pelo usuário.
+- Início: 21/10/2026, 11:40:34, São Paulo (UTC−03). Leitura humana não atribuída.
 - Conferente e orientação docente: não registrados.
 - Corte temporal: 21/10/2026; idiomas de leitura: português, inglês e espanhol.
 - Cobertura planejada: B01–B08 em ACM, IEEE e arXiv; G01–G08 no Scholar;
@@ -15,12 +17,20 @@ Não há totais apurados, exportações ou estudos selecionados neste registro.
 
 ## Execuções
 
-Tabela intencionalmente sem linhas de dados. Uma linha por base/consulta/versão;
+Uma linha por base/consulta/versão;
 desdobramentos recebem sufixo. Incluir buscas sem achados e tentativas bloqueadas.
 Campo ainda não medido deve dizer **não apurado**; não usar zero como marcador.
 
 | ID da execução | Base/coleção e modo | Consulta ID e expressão literal aceita/campos | Versão do protocolo | Data/hora e fuso | Responsável | Período, filtros e ordenação | Limite/posições previstas e vistas | Estado: concluída/parcial/bloqueada | Total da interface e se estimado | Registros realmente recuperados | Exportação/evidência e SHA-256 | Bloqueio/desvio e providência |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ARXIV-B01-20261021 | arXiv / formulário avançado, HTTP GET | B01: `"PP-OCRv5" OR "PP OCR v5" OR "PPOCRv5"`; seis cláusulas OR em título/resumo, parâmetros literais no plano | `1faf5c2` | 21/10/2026 11:40:34 UTC−03 | Codex (IA) | Primeira submissão 2000-01-01–2026-10-21; todas as categorias, cross-list e versões anteriores; sem filtro de idioma; `-announced_date_first` | Sem cota; página de 50; posições 1–3 de 3 vistas | concluída para recuperação | 3, não estimado | 3 | [Pacote, plano, HTML e hashes](arxiv_b01_b02_20261021/README.md) | Sem bloqueio; triagem e leitura pendentes |
+| ARXIV-B02-20261021 | arXiv / formulário avançado, HTTP GET | B02: `"PP-OCRv6" OR "PP OCR v6" OR "PPOCRv6"`; seis cláusulas OR em título/resumo, parâmetros literais no plano | `1faf5c2` | 21/10/2026 11:40:37 UTC−03 | Codex (IA) | Primeira submissão 2000-01-01–2026-10-21; todas as categorias, cross-list e versões anteriores; sem filtro de idioma; `-announced_date_first` | Sem cota; página de 50; posições 1–2 de 2 vistas | concluída para recuperação | 2, não estimado | 2 | [Pacote, plano, HTML e hashes](arxiv_b01_b02_20261021/README.md) | Sem bloqueio; triagem e leitura pendentes |
+
+O plano foi salvo antes da coleta. A primeira validação da interface preservou
+as expressões lógicas, desdobrando cada frase nos campos título e resumo; não
+mudou período, critérios ou escopo. As seis cláusulas de termo/campo/operador
+e os filtros aceitos foram conferidos no HTML retornado. Uma página por consulta
+foi suficiente para recuperar os totais exibidos.
 
 Guardar as exportações e evidências em uma pasta datada por execução, sem
 sobrescrever arquivos existentes. Anotar formato, nome, hash, consulta e lote;
@@ -34,21 +44,27 @@ registrar separadamente o total estimado na tela e as posições de fato vistas.
 
 ## Origens complementares
 
-Tabela vazia até o registro efetivo das fontes conhecidas ou do rastreamento.
-Não atribuir à busca nova um artigo que já era conhecido.
+A origem anterior abaixo é vinculada ao mesmo registro recuperado em B01;
+não constitui um sexto artigo nem uma busca complementar já concluída. Não
+atribuir à busca nova um artigo que já era conhecido.
 
 | ID da ocorrência | Origem: fonte conhecida/referência/citação | ID do estudo-semente ou arquivo anterior | Data e responsável | URL/DOI/versão | Posição e ordenação quando aplicável | Evidência e registro canônico vinculado |
 | --- | --- | --- | --- | --- | --- | --- |
+| CONHECIDA-cui2025 | Fonte conhecida antes do protocolo; vinculada a B01-ARXIV-003 | `docs/entregas/pi_iv_pln_20261020/fontes_consultadas.json`, ID `cui2025` | Consulta anterior registrada em 20/10/2026; vínculo conferido por Codex em 21/10/2026 | https://arxiv.org/abs/2507.05595v1 | Não aplicável; origem anterior à coleta | `ARXIV-2507.05595`; seção 2.1 e resumo previamente consultados, sem leitura integral declarada |
 
 ## Contagens para reconciliar após a coleta e seleção
 
-Todas estão **não apuradas**. A tabela não representa um fluxograma preenchido.
+Totais globais continuam **não apurados**. Há somente a recuperação local de
+cinco ocorrências B01/B02 no arXiv, com cinco IDs distintos, nenhuma repetição
+de ID entre as duas consultas e um vínculo a fonte anterior. A independência
+entre estudos e suas versões conceituais depende da leitura; não foi apurada.
+A tabela não representa um fluxograma preenchido da revisão completa.
 Reconstruir os valores a partir das ocorrências e decisões, por origem e no
 total deduplicado; distinguir retirada de duplicata de exclusão por conteúdo.
 
 | Etapa | Contagem | Evidência que permitirá apurar |
 | --- | --- | --- |
-| Ocorrências recuperadas nas bases principais | não apurada | Exportações/lotes vinculados às execuções |
+| Ocorrências recuperadas nas bases principais | parcial: 5 no lote arXiv B01/B02; total global não apurado | Duas respostas HTML completas; ver `resultados.json` do lote |
 | Ocorrências complementares: Scholar, fontes conhecidas e rastreamento | não apurada | Registros por origem e posição |
 | Duplicatas/versões agrupadas | não apurada | Mapeamento de ocorrências ao registro canônico |
 | Registros únicos triados por título/resumo | não apurada | Decisões de triagem |
