@@ -1,0 +1,46 @@
+{
+  "tipo": "recorte_ampliado_para_conferencia_visual",
+  "registrado_em_utc": "2026-10-21T15:34:44.862Z",
+  "fonte": "docs/revisao_humana/traslado_269r/sessao_20261019/evidencias/linha_15_completa_3x.png",
+  "fonte_sha256": "f60cfc493f6d82095c8d7ed3ce9cd9c63e5b1f0f8f6751a97835db0cbb022b4d",
+  "dimensoes_fonte": [
+    2925,
+    219
+  ],
+  "coordenadas": "left/top/width/height, pixels da imagem-fonte já ampliada",
+  "metodo": "Recorte geométrico e ampliação inteira pelo vizinho mais próximo (nearest), com conferência de cada pixel repetido",
+  "reconstrucao_de_tracos": false,
+  "filtros": false,
+  "contraste_alterado": false,
+  "variantes": [
+    {
+      "file": "linha_15_moradores_e_ficaram_contexto.png",
+      "rectangle": {
+        "left": 1150,
+        "top": 0,
+        "width": 1000,
+        "height": 205
+      },
+      "scale": 2,
+      "output_sha256": "803faca842192e28ee66050108c5c8aeeb8bef4804001ca9061835bab6395b21",
+      "pixels_repetidos_conferidos": true
+    },
+    {
+      "file": "linha_15_sinal_entre_moradores_e_ficaram.png",
+      "rectangle": {
+        "left": 1400,
+        "top": 30,
+        "width": 425,
+        "height": 175
+      },
+      "scale": 3,
+      "output_sha256": "129e32edabe3ce9650a5d8ce9ba810915b9606dc7cc2bf0fced3a2daa2cc8f72",
+      "pixels_repetidos_conferidos": true
+    }
+  ],
+  "linha": 15,
+  "palavras_ja_confirmadas": "e ficaram",
+  "pontuacao": "em aberto; este recorte não é decisão de leitura",
+  "referencia_congelada_alterada": false,
+  "novas_inferencias": 0
+}

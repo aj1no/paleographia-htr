@@ -1,0 +1,20 @@
+{
+  "tipo": "copias_literais_de_ampliacoes_existentes",
+  "registrado_em_utc": "2026-10-21T18:54:31.971179+00:00",
+  "arquivos": [
+    {
+      "fonte": "output/revisao_269r/sessao_20261020/linha_24_abreviatura_final_8x.png",
+      "copia": "linha_24_abreviatura_final_8x.png",
+      "sha256": "76e7d87513f9be7884b3193de7b1f4159ffc871cad3dd30eb158f82a56baec0c",
+      "copia_literal": true
+    },
+    {
+      "fonte": "output/revisao_269r/sessao_20261020/linha_24_final_e_de_sua_abreviatura_4x.png",
+      "copia": "linha_24_final_e_de_sua_abreviatura_4x.png",
+      "sha256": "6032929fd3ae819ae2885115465c34296ec9928d4cd30bccab666338ec2ee484",
+      "copia_literal": true
+    }
+  ],
+  "novas_transformacoes": false,
+  "nenhuma_decisao_visual_neste_ato": true
+}

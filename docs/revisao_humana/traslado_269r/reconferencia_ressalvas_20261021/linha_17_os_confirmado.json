@@ -1,0 +1,35 @@
+{
+  "tipo": "confirmacao_humana_visual_parcial",
+  "registrado_em_utc": "2026-10-21T15:50:10.555465+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T12:50:10.555465-03:00",
+  "folio": "269r",
+  "linha": 17,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "Os, sim esta ai",
+  "pergunta_respondida": "Agora, entre vir e ministros, você também lê os?",
+  "trecho_confirmado": "os",
+  "escopo": "Somente os entre vir e ministros; a maiúscula inicial da resposta não determina a caixa no manuscrito. Não confirma automaticamente a vírgula após nahiba.",
+  "duvidas_restantes_da_linha": [
+    "vírgula após nahiba"
+  ],
+  "decisao_editorial_anterior": "ministros conforme edição, com observação visual i e proveniência assistida preservadas",
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/sessao_20261019/evidencias/linha_17_restante_4x.png",
+  "evidencia_sha256": "41aef1b7d7a67dd69090437cf210cc51853eea5a152e4fcab3d4ba50e1d1aed0",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

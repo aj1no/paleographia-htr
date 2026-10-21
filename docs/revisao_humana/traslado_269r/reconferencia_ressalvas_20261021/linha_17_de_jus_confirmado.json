@@ -1,0 +1,36 @@
+{
+  "tipo": "confirmacao_humana_visual_parcial",
+  "registrado_em_utc": "2026-10-21T15:46:17.257926+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T12:46:17.257926-03:00",
+  "folio": "269r",
+  "linha": 17,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "Sim, vejo de Jus também",
+  "pergunta_respondida": "Agora, no final do recorte, você também lê de Jus?",
+  "trecho_confirmado": "de Jus",
+  "escopo": "Somente de Jus no final da linha 17; preservar a quebra física Jus/tissa e a confirmação anterior de tissa na linha 18. Não confirma automaticamente os ou a vírgula após nahiba.",
+  "duvidas_restantes_da_linha": [
+    "vírgula após nahiba",
+    "os"
+  ],
+  "decisao_editorial_anterior": "ministros mantido conforme edição; usuário observa i; proveniência assistida preservada",
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/sessao_20261019/evidencias/linha_17_ministros_final_4x.png",
+  "evidencia_sha256": "433f3647476a960af8e4ba9bcc64c05533f4ae4644fb435f598809dd7f59d1ff",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

@@ -1,0 +1,14 @@
+{
+  "tipo": "copia_literal_de_ampliacao_existente_para_conferencia",
+  "registrado_em_utc": "2026-10-21T18:52:05.857234+00:00",
+  "fonte": "output/revisao_269r/sessao_20261020/linha_23_por_falta_de_justissa_4x.png",
+  "fonte_sha256": "0f78b9f0965bdf7d08aefc90d1ff8bdffd29cdef4f935e4d687a0843eda93f00",
+  "copia": "linha_23_por_falta_de_justissa_4x.png",
+  "copia_sha256": "0f78b9f0965bdf7d08aefc90d1ff8bdffd29cdef4f935e4d687a0843eda93f00",
+  "pixels_e_bytes_preservados": true,
+  "nova_transformacao_da_imagem": false,
+  "linha": 23,
+  "trecho": "por falta de Justissa",
+  "escopo": "Evidência a mostrar; nenhuma confirmação humana nova neste ato",
+  "referencia_congelada_alterada": false
+}

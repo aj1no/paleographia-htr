@@ -1,0 +1,41 @@
+{
+  "tipo": "confirmacao_humana_visual_de_pontuacao",
+  "registrado_em_utc": "2026-10-21T18:49:11.297678+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T15:49:11.297678-03:00",
+  "folio": "269r",
+  "linha": 19,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "Sim, também vejo a vírgula depois de orgente. Vamos para a próxima dúvida, me mostra o recorte.",
+  "pergunta_respondida": "Você também identifica uma vírgula depois de orgente, antes de virem?",
+  "sinal_confirmado": "vírgula após orgente e antes de virem",
+  "escopo": "Confirmação da vírgula. A leitura orgente continua apoiada na edição publicada; a dúvida visual da primeira letra o/e permanece no histórico.",
+  "trecho_adotado": "orgente, virem",
+  "escolha_editorial_preexistente": "orgente, conforme política editorial já autorizada e PDF conferido na etapa anterior",
+  "primeira_letra_confirmada_visualmente_nesta_mensagem": false,
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/sessao_20261019/evidencias/linha_19_orgente_virem_alguns_menis_4x.png",
+  "evidencia_sha256": "91a185a0d6c912a875bed8ff8c31a89b9f42155f2f2aad360a07ff56bb2d6464",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "pendencias_para_proxima_conferencia": [
+    11,
+    20,
+    23,
+    24
+  ],
+  "leitura_visual_nao_resolvida_linha19": "Primeira letra de orgente; adotada por apoio editorial, não promovida a validação independente.",
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

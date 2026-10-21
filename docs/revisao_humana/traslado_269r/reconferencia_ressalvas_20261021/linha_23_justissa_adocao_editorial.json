@@ -1,0 +1,45 @@
+{
+  "tipo": "decisao_humana_de_adocao_editorial_com_duvida_visual_preservada",
+  "registrado_em_utc": "2026-10-21T18:54:31.971179+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T15:54:31.971179-03:00",
+  "folio": "269r",
+  "linha": 23,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "Vamos manter Justissa como está na transcrição oficial, preservando a dúvida sobre os dois s. Me mostra o recorte da próxima dúvida.",
+  "leitura_adotada": "Justissa",
+  "criterio": "Adotar explicitamente a transcrição publicada, sem resolver visualmente a sequência ss",
+  "dois_s": "duvida_visual_preservada",
+  "j_maiusculo": "confirmação anterior preservada",
+  "escopo": "Somente a adoção editorial de Justissa. Não é confirmação visual dos dois s nem nova confirmação isolada de por falta de.",
+  "validacao_humana_independente_da_edicao": false,
+  "fonte_editorial": "docs/revisao_humana/traslado_269r/corpo_269r_edicao.txt",
+  "fonte_editorial_sha256": "15e2ddf3f36f50067bc15b3857831258df0508377f8d0b54f908d210fab68aba",
+  "linha_na_edicao": "posses tem por falta de Justissa pello que",
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/linha_23_por_falta_de_justissa_4x.png",
+  "evidencia_sha256": "0f78b9f0965bdf7d08aefc90d1ff8bdffd29cdef4f935e4d687a0843eda93f00",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "proximas_conferencias": [
+    24,
+    11
+  ],
+  "duvidas_visuais_mantidas_por_apoio_editorial": {
+    "19": "orgente: inicial o/e",
+    "23": "Justissa: dois s"
+  },
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

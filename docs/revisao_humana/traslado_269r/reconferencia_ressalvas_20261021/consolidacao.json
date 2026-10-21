@@ -1,0 +1,356 @@
+{
+  "tipo": "consolidacao_aditiva_de_reconferencia_humana",
+  "registrado_em_utc": "2026-10-21T19:03:37.301661+00:00",
+  "data_da_sessao_sao_paulo": "2026-10-21",
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "responsavel_pela_consolidacao": "Codex, assistente de IA",
+  "estado": "rodada concluída com dúvidas preservadas",
+  "escopo": "Oito linhas já ressalvadas, sem reabrir geometrias ou coberturas confirmadas e sem nova aprovação das outras linhas",
+  "referencia_congelada": {
+    "pasta": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020",
+    "conferencia_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+    "inventario_sha256": "47c72e4f9c98d0e6bb86c92282294bb14688e3b2259b2fdfcc3ec3c5aa085b28",
+    "ressalvas": [
+      11,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24
+    ],
+    "linhas_validadas_na_versao_publicada": 16,
+    "linhas_ressalvadas_na_versao_publicada": 8,
+    "alterada": false
+  },
+  "resultados_por_linha": [
+    {
+      "linha": 11,
+      "estado_nesta_rodada": "adocao_editorial_com_sinal_em_aberto",
+      "trecho_adotado": "Requererão",
+      "confirmacoes_visuais_novas": [],
+      "apoio_editorial": [
+        "Requererão"
+      ],
+      "duvidas_visuais_preservadas": [
+        "natureza do sinal superior/final e pontuação associada"
+      ],
+      "decisoes": [
+        "linha_11_requererao_adocao_editorial.json"
+      ],
+      "texto_adotado_na_referencia_congelada": "ticular Requererão Em altas vozes ao dito Capi",
+      "texto_congelado_alterado": false
+    },
+    {
+      "linha": 15,
+      "estado_nesta_rodada": "ressalva_pontual_reconferida_visualmente",
+      "trecho_adotado": ", e ficaram",
+      "confirmacoes_visuais_novas": [
+        "e ficaram",
+        "vírgula após moradores"
+      ],
+      "apoio_editorial": [],
+      "duvidas_visuais_preservadas": [],
+      "escopo": "Confirmações do trecho e da vírgula; demais partes conservam as decisões anteriores.",
+      "decisoes": [
+        "linha_15_palavras_confirmadas.json",
+        "linha_15_virgula_confirmada.json"
+      ],
+      "texto_adotado_na_referencia_congelada": "mais de oitenta moradores, e ficaram mui dis",
+      "texto_congelado_alterado": false
+    },
+    {
+      "linha": 16,
+      "estado_nesta_rodada": "ressalva_pontual_reconferida_visualmente",
+      "trecho_adotado": ", e da villa de",
+      "confirmacoes_visuais_novas": [
+        "e da villa de",
+        "vírgula após Paulo"
+      ],
+      "apoio_editorial": [],
+      "duvidas_visuais_preservadas": [],
+      "escopo": "Trecho e vírgula confirmados; Par e o início da linha conservam as confirmações anteriores.",
+      "decisoes": [
+        "linha_16_palavras_confirmadas.json",
+        "linha_16_virgula_confirmada.json"
+      ],
+      "texto_adotado_na_referencia_congelada": "tantes da villa de Sam Paulo, e da villa de Par",
+      "texto_congelado_alterado": false
+    },
+    {
+      "linha": 17,
+      "estado_nesta_rodada": "confirmacoes_visuais_e_adocao_editorial",
+      "trecho_adotado": "nahiba, e não poderem vir os ministros de Jus",
+      "confirmacoes_visuais_novas": [
+        "e não poderem vir",
+        "m inicial",
+        "os",
+        "de Jus",
+        "vírgula após nahiba"
+      ],
+      "observacao_visual_do_revisor": "eu vejo um i",
+      "apoio_editorial": [
+        "ministros"
+      ],
+      "duvidas_visuais_preservadas": [],
+      "historico_preservado": [
+        "alternativa anterior menistros; escolha atual de ministros conforme edição",
+        "M na mensagem confirma a identidade da letra, sem inferir caixa",
+        "pergunta contextual sobre Parnahiba não é nova confirmação de suas letras"
+      ],
+      "quebra_fisica_preservada": [
+        "Par/nahiba",
+        "Jus/tissa"
+      ],
+      "decisoes": [
+        "linha_17_e_nao_poderem_vir_confirmado.json",
+        "linha_17_inicial_m_confirmada.json",
+        "linha_17_ministros_adocao_editorial.json",
+        "linha_17_de_jus_confirmado.json",
+        "linha_17_os_confirmado.json",
+        "linha_17_virgula_confirmada.json"
+      ],
+      "texto_adotado_na_referencia_congelada": "nahiba, e não poderem vir os ministros de Jus",
+      "texto_congelado_alterado": false
+    },
+    {
+      "linha": 19,
+      "estado_nesta_rodada": "adocao_editorial_com_virgula_confirmada",
+      "trecho_adotado": "orgente,",
+      "confirmacoes_visuais_novas": [
+        "vírgula após orgente"
+      ],
+      "apoio_editorial": [
+        "orgente, conforme regra já autorizada e conferência do PDF"
+      ],
+      "duvidas_visuais_preservadas": [
+        "primeira letra o/e da palavra no manuscrito"
+      ],
+      "decisoes": [
+        "linha_19_consulta_edicao.json",
+        "linha_19_virgula_confirmada.json"
+      ],
+      "texto_adotado_na_referencia_congelada": "por alguã duvida orgente, virem alguns menis",
+      "texto_congelado_alterado": false
+    },
+    {
+      "linha": 20,
+      "estado_nesta_rodada": "ressalva_pontual_reconferida_visualmente",
+      "trecho_adotado": "muito Grande detrimento de to",
+      "confirmacoes_visuais_novas": [
+        "muito Grande detrimento de to"
+      ],
+      "apoio_editorial": [],
+      "duvidas_visuais_preservadas": [],
+      "confirmacao_anterior_preservada": "Com com C maiúsculo",
+      "quebra_fisica_preservada": [
+        "to/dos"
+      ],
+      "decisoes": [
+        "linha_20_trecho_confirmado.json"
+      ],
+      "texto_adotado_na_referencia_congelada": "tros e Hera Com muito Grande detrimento de to",
+      "texto_congelado_alterado": false
+    },
+    {
+      "linha": 23,
+      "estado_nesta_rodada": "adocao_editorial_com_duvida_visual_preservada",
+      "trecho_adotado": "Justissa",
+      "confirmacoes_visuais_novas": [],
+      "apoio_editorial": [
+        "Justissa"
+      ],
+      "duvidas_visuais_preservadas": [
+        "dois s"
+      ],
+      "confirmacao_anterior_preservada": "J maiúsculo",
+      "outra_observacao": "por falta de não recebeu nova confirmação isolada nesta rodada",
+      "decisoes": [
+        "linha_23_justissa_adocao_editorial.json"
+      ],
+      "texto_adotado_na_referencia_congelada": "posses tem por falta de Justissa pello que",
+      "texto_congelado_alterado": false
+    },
+    {
+      "linha": 24,
+      "estado_nesta_rodada": "base_provavel_e_pontuacao_em_aberto",
+      "trecho_adotado": "Magᵈᵉ",
+      "confirmacoes_visuais_novas": [
+        "reconfirmação de de elevado"
+      ],
+      "apoio_editorial": [
+        "Magestade é o desenvolvimento na edição, sem substituir a forma abreviada"
+      ],
+      "duvidas_visuais_preservadas": [
+        "base Mag provável",
+        "pontuação final em aberto"
+      ],
+      "nao_afirmado": [
+        "ausência de pontuação",
+        "presença de ponto final",
+        "traço horizontal classificado como pontuação"
+      ],
+      "decisoes": [
+        "linha_24_de_elevado_reconfirmado.json",
+        "linha_24_mag_mantido_provavel.json",
+        "linha_24_pontuacao_mantida_em_aberto.json"
+      ],
+      "texto_adotado_na_referencia_congelada": "lhes Requerião da parte de Deos e de Sua Magᵈᵉ",
+      "texto_congelado_alterado": false
+    }
+  ],
+  "novas_confirmacoes_pontuais_de_ressalvas": [
+    15,
+    16,
+    20
+  ],
+  "linhas_com_duvidas_visuais_expressamente_mantidas": [
+    11,
+    19,
+    23,
+    24
+  ],
+  "adocao_editorial_preservada_tambem_na_linha": 17,
+  "todos_os_oito_casos_foram_tratados": true,
+  "duvidas_foram_zeradas": false,
+  "referencia_humana_independente_da_edicao": false,
+  "novo_total_de_linhas_validadas_no_catalogo": null,
+  "gravado_no_editor": false,
+  "historico": {
+    "eventos_humanos_ordenados": [
+      {
+        "arquivo": "linha_15_palavras_confirmadas.json",
+        "sha256": "3eb6f41d0fb3a0366f95b84ce4006383acad9ef3d8daa7fcbfe2f48ce8b800e2",
+        "linha": 15,
+        "tipo": "confirmacao_humana_visual_parcial",
+        "registrado_em_utc": "2026-10-21T15:30:41.566959+00:00"
+      },
+      {
+        "arquivo": "linha_15_virgula_confirmada.json",
+        "sha256": "8693793230ed93359f8225b1cf4b89a709a67896bf620c19faf3bf677abed08f",
+        "linha": 15,
+        "tipo": "confirmacao_humana_de_pontuacao_com_verificacao_historica",
+        "registrado_em_utc": "2026-10-21T15:37:37.626968+00:00"
+      },
+      {
+        "arquivo": "linha_16_palavras_confirmadas.json",
+        "sha256": "e474eaa5a768d484be4829c4fedd7f8c885d4e28366038800d0579346c1869f8",
+        "linha": 16,
+        "tipo": "confirmacao_humana_visual_parcial",
+        "registrado_em_utc": "2026-10-21T15:39:26.362Z"
+      },
+      {
+        "arquivo": "linha_16_virgula_confirmada.json",
+        "sha256": "4ed565fc624e35ae2bb288b54e08a93929e067eb73be77193f159f3371b3c9dd",
+        "linha": 16,
+        "tipo": "confirmacao_humana_visual_de_pontuacao",
+        "registrado_em_utc": "2026-10-21T15:40:57.126494+00:00"
+      },
+      {
+        "arquivo": "linha_17_e_nao_poderem_vir_confirmado.json",
+        "sha256": "9fe232ca27c3f4db353ab7a054225c8c2cc10eb3c16d58dc4181185aa6734dd3",
+        "linha": 17,
+        "tipo": "confirmacao_humana_visual_parcial",
+        "registrado_em_utc": "2026-10-21T15:42:49.076983+00:00"
+      },
+      {
+        "arquivo": "linha_17_inicial_m_confirmada.json",
+        "sha256": "caa107991fcfcbc4f4eccabbc8732fdd50f48045d5aa73b1c613ffad329e5f77",
+        "linha": 17,
+        "tipo": "confirmacao_humana_visual_parcial_de_letra",
+        "registrado_em_utc": "2026-10-21T15:43:53.379232+00:00"
+      },
+      {
+        "arquivo": "linha_17_ministros_adocao_editorial.json",
+        "sha256": "850c7b70868352f53868d51388b2e33535fbc264c909c6885eff28cb91a2e1ff",
+        "linha": 17,
+        "tipo": "decisao_humana_de_adocao_editorial_com_observacao_visual",
+        "registrado_em_utc": "2026-10-21T15:44:57.733035+00:00"
+      },
+      {
+        "arquivo": "linha_17_de_jus_confirmado.json",
+        "sha256": "431c6e9900d7ae5b893aed7f2fda1737353dc7e66aacf5c8702b0344e4191876",
+        "linha": 17,
+        "tipo": "confirmacao_humana_visual_parcial",
+        "registrado_em_utc": "2026-10-21T15:46:17.257926+00:00"
+      },
+      {
+        "arquivo": "linha_17_os_confirmado.json",
+        "sha256": "f0036a6429fab9795428aa5e46f957cd604fe8b49bb198941de4e1b65b682cd9",
+        "linha": 17,
+        "tipo": "confirmacao_humana_visual_parcial",
+        "registrado_em_utc": "2026-10-21T15:50:10.555465+00:00"
+      },
+      {
+        "arquivo": "linha_17_virgula_confirmada.json",
+        "sha256": "d1c1e8bc86cec6b4a5645ff91ab16d678c640950a029fafd8547ebee970039d1",
+        "linha": 17,
+        "tipo": "confirmacao_humana_visual_de_pontuacao",
+        "registrado_em_utc": "2026-10-21T15:52:19.250496+00:00"
+      },
+      {
+        "arquivo": "linha_19_virgula_confirmada.json",
+        "sha256": "643cc2199d14f7b9eee2814ed25e027eab3deb5c2e2f3f74a5ab877ba1816814",
+        "linha": 19,
+        "tipo": "confirmacao_humana_visual_de_pontuacao",
+        "registrado_em_utc": "2026-10-21T18:49:11.297678+00:00"
+      },
+      {
+        "arquivo": "linha_20_trecho_confirmado.json",
+        "sha256": "67c0658f0031c7aec3e9043d5a3437a034d46f8dd70142dc621627a7f0dba854",
+        "linha": 20,
+        "tipo": "confirmacao_humana_visual_de_trecho",
+        "registrado_em_utc": "2026-10-21T18:51:48.189905+00:00"
+      },
+      {
+        "arquivo": "linha_23_justissa_adocao_editorial.json",
+        "sha256": "3dfd9dd807d78c30f90485bd6b8fe083fad8921783adbcaf15f7071bd1919068",
+        "linha": 23,
+        "tipo": "decisao_humana_de_adocao_editorial_com_duvida_visual_preservada",
+        "registrado_em_utc": "2026-10-21T18:54:31.971179+00:00"
+      },
+      {
+        "arquivo": "linha_24_de_elevado_reconfirmado.json",
+        "sha256": "59ebcf29d355d3af9eef1dbad19a7889b8d79af43d642b499166e9764f1ac3d1",
+        "linha": 24,
+        "tipo": "reconfirmacao_humana_visual_parcial",
+        "registrado_em_utc": "2026-10-21T18:55:32.695771+00:00"
+      },
+      {
+        "arquivo": "linha_24_mag_mantido_provavel.json",
+        "sha256": "d644774239e3f890773dbee545621202955702c730ebacc168aed283919d2035",
+        "linha": 24,
+        "tipo": "decisao_humana_de_manutencao_de_leitura_provavel",
+        "registrado_em_utc": "2026-10-21T18:56:30.177877+00:00"
+      },
+      {
+        "arquivo": "linha_24_pontuacao_mantida_em_aberto.json",
+        "sha256": "d3258418438f97229e15552957888e2a2b2a401f35659cda549bc24ee51aeffc",
+        "linha": 24,
+        "tipo": "manutencao_de_duvida_visual_sem_decisao_de_pontuacao",
+        "registrado_em_utc": "2026-10-21T18:58:30.440545+00:00"
+      },
+      {
+        "arquivo": "linha_11_requererao_adocao_editorial.json",
+        "sha256": "42dddee7f395df5187639af07a3becbe1f99e7e5ef7186b857364793253d4ffa",
+        "linha": 11,
+        "tipo": "decisao_humana_de_adocao_editorial_com_duvida_visual_preservada",
+        "registrado_em_utc": "2026-10-21T19:02:31.170155+00:00"
+      }
+    ],
+    "consulta_edicao_separada": "linha_19_consulta_edicao.json",
+    "registros_parciais_nao_sobrescritos": true
+  },
+  "evidencias": "Recortes originais, cópias literais, ampliações nearest com coordenadas e hashes; nenhuma reconstrução de traços",
+  "saidas_brutas_alteradas": false,
+  "alvos_alterados": false,
+  "metodo_de_calculo_alterado": false,
+  "metricas_recalculadas": false,
+  "novas_inferencias": 0,
+  "treinamento": false,
+  "natureza": "diagnóstico de desenvolvimento",
+  "revisao_sistematica": "Não concluída nem modificada por esta reconferência; apoio histórico à vírgula não foi contado como estudo do lote B01/B02",
+  "metricas_preexistentes_conferidas_por_recalculo_no_auditor": true,
+  "escopo_do_recalculo_de_auditoria": "Somente reprodução das contagens arquivadas para verificar igualdade; nenhuma avaliação de nova referência, nova taxa ou inferência."
+}

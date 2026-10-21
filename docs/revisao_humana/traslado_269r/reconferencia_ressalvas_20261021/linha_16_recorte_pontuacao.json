@@ -1,0 +1,28 @@
+{
+  "tipo": "recorte_ampliado_para_conferencia_visual",
+  "registrado_em_utc": "2026-10-21T15:39:26.362Z",
+  "fonte": "docs/revisao_humana/traslado_269r/sessao_20261019/evidencias/linha_16_final_4x.png",
+  "fonte_sha256": "1f4b27d09237b6ab95174e41d56009617e7443d21521a7a1c3ae3bcbcc32e48c",
+  "dimensoes_fonte": [
+    1680,
+    440
+  ],
+  "rectangle": {
+    "left": 0,
+    "top": 140,
+    "width": 680,
+    "height": 260
+  },
+  "escala_adicional": 2,
+  "metodo": "Recorte geométrico e repetição dos pixels com nearest",
+  "pixels_repetidos_conferidos": true,
+  "reconstrucao_de_tracos": false,
+  "filtros": false,
+  "contraste_alterado": false,
+  "arquivo": "linha_16_sinal_apos_paulo.png",
+  "arquivo_sha256": "44d314c6e7fa7e746013e6f58f5c360e2fe47165f98c11e52f95292ce1750b36",
+  "linha": 16,
+  "palavras_confirmadas": "e da villa de",
+  "pontuacao": "em aberto; aguarda conferência humana",
+  "novas_inferencias": 0
+}
