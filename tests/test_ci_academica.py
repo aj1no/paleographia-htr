@@ -95,6 +95,7 @@ def guarded(tmp_path, code):
     ('import onnxruntime', 'importacao_de_inferencia'),
     ('import paleographia.recognition', 'importacao_de_inferencia'),
     ('import subprocess; subprocess.run(["docker", "--version"])', 'subprocesso_nao_autorizado'),
+    ('import subprocess; subprocess.run(["uname", "-a"])', 'subprocesso_nao_autorizado'),
     ('import socket; socket.create_connection(("example.invalid", 443))', 'conexao_externa'),
     ('open("models/peso.safetensors", "rb")', 'acesso_a_pesos'),
     ('open("src/entrada.txt", "w").write("alterado")', 'escrita_em_entrada'),
@@ -119,6 +120,13 @@ client.close()
 server.close()
 open("output/derivado.txt", "w").write("permitido")
 '''
+    process, events = guarded(tmp_path, code)
+    assert process.returncode == 0, process.stderr
+    assert not any(e['evento'] == 'bloqueado' for e in events)
+
+
+def test_guard_accepts_processor_metadata_probe_without_launching_it(tmp_path):
+    code = 'import sys; sys.audit("subprocess.Popen", "uname", ["uname", "-p"], None, None)'
     process, events = guarded(tmp_path, code)
     assert process.returncode == 0, process.stderr
     assert not any(e['evento'] == 'bloqueado' for e in events)

@@ -61,7 +61,9 @@ def instalar():
                       and Path(command[0]).resolve() == Path(sys.executable).resolve()
                       and list(command[1:4]) == ['-m', 'ipykernel_launcher', '-f'])
             font = isinstance(command, (list, tuple)) and Path(command[0]).name in {'fc-list', 'fc-match'}
-            if not (kernel or font):
+            cpu_info = (isinstance(command, (list, tuple)) and len(command) == 2
+                        and Path(command[0]).name == 'uname' and command[1] == '-p')
+            if not (kernel or font or cpu_info):
                 deny('subprocesso_nao_autorizado', command)
         if event == 'open':
             path, mode, flags = args

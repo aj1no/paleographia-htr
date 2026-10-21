@@ -1,0 +1,86 @@
+{
+  "data": "2026-10-21",
+  "base_git": "1305871505fd425fa0449e0b3f41216945d293fc",
+  "primeira_ci": {
+    "run_id": 39600484023,
+    "url": "https://github.com/aj1no/paleographia-htr/actions/runs/39600484023",
+    "resultado": "failure",
+    "matriz_leve": "quatro trabalhos aprovados",
+    "causa_academica": "Proteção bloqueou uname -p, consulta de processador feita por platform.py no Linux."
+  },
+  "correcao": "Permitir somente uname -p como consulta de metadados; uname -a e comandos de inferência continuam bloqueados.",
+  "testes_python_locais": 123,
+  "avisos": 1,
+  "novos_testes_regressao": 2,
+  "reexecucao_local": {
+    "resultado": "aprovado",
+    "tipo": "diagnostico_de_desenvolvimento",
+    "novas_inferencias": 0,
+    "linhas": 24,
+    "ressalvas": [
+      11,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24
+    ],
+    "regioes": 5,
+    "metricas": {
+      "ppocrv5": {
+        "characters": {
+          "substitutions": 200,
+          "deletions": 444,
+          "insertions": 6,
+          "hits": 468,
+          "reference_length": 1112,
+          "errors": 650,
+          "rate": 0.5845323741007195
+        },
+        "words": {
+          "substitutions": 108,
+          "deletions": 84,
+          "insertions": 0,
+          "hits": 11,
+          "reference_length": 203,
+          "errors": 192,
+          "rate": 0.9458128078817734
+        }
+      },
+      "ppocrv6": {
+        "characters": {
+          "substitutions": 96,
+          "deletions": 54,
+          "insertions": 18,
+          "hits": 962,
+          "reference_length": 1112,
+          "errors": 168,
+          "rate": 0.1510791366906475
+        },
+        "words": {
+          "substitutions": 95,
+          "deletions": 22,
+          "insertions": 5,
+          "hits": 86,
+          "reference_length": 203,
+          "errors": 122,
+          "rate": 0.6009852216748769
+        }
+      }
+    },
+    "celulas_codigo_executadas": 9,
+    "figuras_incorporadas": 2,
+    "tabelas_identicas": 5,
+    "figuras_png_svg": 4,
+    "arquivos_versionados_preservados": 623,
+    "protecao_executor_e_kernel": true,
+    "entrada_sem_pesos_e_workspace": true
+  },
+  "guard_testado_sha256": "223f88c9ae6a448882b78d897666eddffd958b67e86233322ab6497ba3691556",
+  "recibo_inicial_preservado_sha256": "97ba4b7a711886df2300a4ea441294e53cc8237758fe047eed066c4082dc3d71",
+  "pacotes_e_oito_ressalvas_preservados": true,
+  "novas_inferencias": 0,
+  "nota": "Verificações locais anteriores à publicação da correção. O resultado remoto posterior deve ser consultado no GitHub."
+}
