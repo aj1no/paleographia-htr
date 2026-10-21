@@ -1,0 +1,30 @@
+{
+  "tipo": "ampliacao_para_conferencia_de_pontuacao",
+  "registrado_em_utc": "2026-10-21T18:57:05.772Z",
+  "fonte": "docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/linha_24_final_e_de_sua_abreviatura_4x.png",
+  "fonte_sha256": "6032929fd3ae819ae2885115465c34296ec9928d4cd30bccab666338ec2ee484",
+  "rectangle": {
+    "left": 560,
+    "top": 110,
+    "width": 1000,
+    "height": 430
+  },
+  "dimensoes_fonte": [
+    1580,
+    560
+  ],
+  "escala_adicional": 2,
+  "metodo": "Recorte geométrico e repetição dos pixels com nearest",
+  "pixels_repetidos_conferidos": true,
+  "filtros": false,
+  "reconstrucao_de_tracos": false,
+  "contraste_alterado": false,
+  "arquivo": "linha_24_final_pontuacao_ampliado.png",
+  "arquivo_sha256": "a2dea24222b399a4ad1a331e7a32ebb7f7f8afcbb65296ee22b723dd2f01458f",
+  "contexto": "Inclui abreviatura, área à direita e abaixo, e parte do traço horizontal existente. Nenhuma função paleográfica é atribuída aos traços por esta operação.",
+  "base_mag": "provável",
+  "de_elevado": "confirmado",
+  "pontuacao_final": "em aberto; aguarda resposta humana",
+  "referencia_congelada_alterada": false,
+  "novas_inferencias": 0
+}

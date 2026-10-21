@@ -19,6 +19,7 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 | Material | Situação |
 | --- | --- |
 | [Referência assistida do 269r](revisao_humana/traslado_269r/referencia_assistida_20261020/README.md) | 24 linhas, cinco coberturas; 16 validadas e oito ressalvas |
+| [Reconferência das oito ressalvas](revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/consolidacao.md) | Rodada concluída com dúvidas e apoio editorial preservados; registro aditivo, sem alterar a referência ou as métricas congeladas |
 | [Comparação de reconhecedores](experimentos/traslado_269r_reconhecedores_24_20261020/README.md) | PP-OCRv5 × PP-OCRv6, desenvolvimento |
 | [Notebook, artigo e evidências](entregas/pi_iv_pln_20261020/README.md) | Notebook executado; artigo em primeiro rascunho |
 | [CI acadêmica](manutencao/ci_academica_20261021/README.md) | Auditoria e reexecução do notebook, sem inferência; métricas, tabelas e oito ressalvas conferidas |

@@ -1,0 +1,32 @@
+{
+  "tipo": "reconfirmacao_humana_visual_parcial",
+  "registrado_em_utc": "2026-10-21T18:55:32.695771+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T15:55:32.695771-03:00",
+  "folio": "269r",
+  "linha": 24,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "Vejo de sim",
+  "trecho_confirmado": "de elevado",
+  "escopo": "Reconfirma somente o grupo de elevado, já confirmado anteriormente. Não confirma a base Mag ou a pontuação final.",
+  "base_mag": "provável; confirmação não ampliada a partir desta resposta",
+  "pontuacao_final": "em_aberto",
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/linha_24_abreviatura_final_8x.png",
+  "evidencia_sha256": "76e7d87513f9be7884b3193de7b1f4159ffc871cad3dd30eb158f82a56baec0c",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

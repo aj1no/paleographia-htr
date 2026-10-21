@@ -1,0 +1,66 @@
+{
+  "tipo": "confirmacao_humana_de_pontuacao_com_verificacao_historica",
+  "registrado_em_utc": "2026-10-21T15:37:37.626968+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T12:37:37.626968-03:00",
+  "folio": "269r",
+  "linha": 15,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "VEjo sim uma virgula, se no perido era usado virgula vamos usar como virgula, se no perido não usassem vamos usar como erro do escriba",
+  "sinal_identificado_pelo_revisor": "vírgula depois de moradores e antes de e ficaram",
+  "condicao_estabelecida_pelo_usuario": "Adotar como vírgula se esse sinal era usado no período",
+  "verificacao_da_condicao": "satisfeita: Feijó (1734), Uso da virgula, §§273–275, descreve o sinal e o uso antes de conjunções; a ficha do acervo data este traslado de 1767",
+  "fontes_historicas": [
+    {
+      "autor": "João de Morais Madureira Feijó",
+      "ano": 1734,
+      "titulo": "Orthographia, ou Arte de Escrever, e Pronunciar com acerto a Lingua Portugueza",
+      "url": "https://pml.cel.utad.pt/ViewEntry.aspx?id_entry=14",
+      "localizador": "Segunda parte, Uso da virgula, §§273–275",
+      "consulta": "Metadados e trecho da edição digital; sem leitura integral do tratado",
+      "apoia": "Existência da vírgula no período e descrição de emprego antes de conjunções",
+      "nao_prova": "Identificação visual do sinal específico, intenção do escriba ou adesão individual ao tratado"
+    },
+    {
+      "titulo": "Traslado do Auto de Criação da Vila de Jundiaí no Ano de 1656, a 14 Dezembro",
+      "url": "https://jundiai.sismu.app/obra/102201/traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+      "localizador": "Informações Gerais, Data e Características",
+      "apoia": "Traslado produzido em 1767, relativo ao ato de 1656"
+    }
+  ],
+  "decisao_nesta_reconferencia": "Adotar a vírgula identificada pelo revisor; manter moradores, e ficaram",
+  "trecho_confirmado": ", e ficaram",
+  "palavras_confirmadas_anteriormente": "docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/linha_15_palavras_confirmadas.json",
+  "ressalva_original_linha15": "reconferida neste novo registro; versão congelada não alterada",
+  "classificado_como_erro_do_escriba": false,
+  "nota_sobre_erro": "Nenhum erro atribuído ao escriba. A existência histórica do sinal e a leitura visual são evidências distintas; a primeira não substitui a segunda.",
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/linha_15_sinal_entre_moradores_e_ficaram.png",
+  "evidencia_sha256": "129e32edabe3ce9650a5d8ce9ba810915b9606dc7cc2bf0fced3a2daa2cc8f72",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "pendencias_desta_nova_rodada": [
+    11,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "contagem_historica_ressalvas": 8,
+  "natureza": "diagnóstico de desenvolvimento",
+  "referencia_humana_independente_de_edicao": false,
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

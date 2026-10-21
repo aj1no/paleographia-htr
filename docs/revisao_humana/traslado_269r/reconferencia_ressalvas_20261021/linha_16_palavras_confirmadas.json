@@ -1,0 +1,31 @@
+{
+  "tipo": "confirmacao_humana_visual_parcial",
+  "registrado_em_utc": "2026-10-21T15:39:26.362Z",
+  "folio": "269r",
+  "linha": 16,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "Vejo exatamente isso",
+  "pergunta_respondida": "Você também lê e da villa de, antes de Par?",
+  "trecho_confirmado": "e da villa de",
+  "escopo": "Somente as palavras e da villa de; a vírgula após Sam Paulo continua em aberto",
+  "pontuacao_anterior": "em_aberto",
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/sessao_20261019/evidencias/linha_16_final_4x.png",
+  "evidencia_sha256": "1f4b27d09237b6ab95174e41d56009617e7443d21521a7a1c3ae3bcbcc32e48c",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

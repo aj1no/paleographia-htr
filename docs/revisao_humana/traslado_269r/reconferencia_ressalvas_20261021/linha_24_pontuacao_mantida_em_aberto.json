@@ -1,0 +1,39 @@
+{
+  "tipo": "manutencao_de_duvida_visual_sem_decisao_de_pontuacao",
+  "registrado_em_utc": "2026-10-21T18:58:30.440545+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T15:58:30.440545-03:00",
+  "folio": "269r",
+  "linha": 24,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "Vamos deixar a pontuação final, oq falta?",
+  "contexto": "Resposta à pergunta sobre identificar pontuação ou manter a pontuação final em aberto",
+  "decisao_conservadora": "Manter a pontuação final em aberto; não foi indicado um sinal específico",
+  "pontuacao_final": "em_aberto",
+  "base_mag": "provável, conforme decisão anterior",
+  "grupo_elevado": "de, confirmado e reconfirmado",
+  "nao_afirmado": [
+    "ausência de pontuação",
+    "presença de ponto final",
+    "identificação do traço horizontal como pontuação"
+  ],
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/linha_24_final_pontuacao_ampliado.png",
+  "evidencia_sha256": "a2dea24222b399a4ad1a331e7a32ebb7f7f8afcbb65296ee22b723dd2f01458f",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "proximo_caso_para_inspecao": 11,
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

@@ -13,6 +13,8 @@ docs/manutencao/ci_academica_20261021/** -text -whitespace
 docs/bibliografia/protocolo_anterior_20261021.md -text -whitespace
 # Respostas e recibos da primeira coleta bibliográfica: preservar hashes.
 docs/bibliografia/arxiv_b01_b02_20261021/** -text -whitespace
+# Reconferência humana: preservar bytes dos registros e imagens com hashes.
+docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/** -text -whitespace
 # Escopo restrito: não renormalizar os snapshots legados comparacao_*.json.
 docs/revisao_humana/traslado_269r/integridade.json text eol=lf
 docs/revisao_humana/traslado_269r/revisions/snapshot_*.json text eol=lf

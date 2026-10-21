@@ -1,0 +1,43 @@
+{
+  "tipo": "confirmacao_humana_visual_de_pontuacao",
+  "registrado_em_utc": "2026-10-21T15:40:57.126494+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T12:40:57.126494-03:00",
+  "folio": "269r",
+  "linha": 16,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "SImm com certeza é uma virgula",
+  "pergunta_respondida": "Você também identifica uma vírgula antes do e, depois de Paulo?",
+  "sinal_confirmado": "vírgula após Paulo e antes de e da villa de",
+  "trecho_adotado_nesta_reconferencia": "Sam Paulo, e da villa de Par",
+  "escopo": "Vírgula após Paulo; palavras e da villa de confirmadas na etapa anterior. Par e o início da linha já constavam das confirmações anteriores.",
+  "confirmacao_anterior": "docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/linha_16_palavras_confirmadas.json",
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/linha_16_sinal_apos_paulo.png",
+  "evidencia_sha256": "44d314c6e7fa7e746013e6f58f5c360e2fe47165f98c11e52f95292ce1750b36",
+  "ressalva_original_linha16": "reconferida neste novo registro; versão congelada não alterada",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "pendencias_desta_nova_rodada": [
+    11,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "natureza": "diagnóstico de desenvolvimento",
+  "referencia_humana_independente_de_edicao": false,
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

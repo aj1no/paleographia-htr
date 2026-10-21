@@ -1,0 +1,49 @@
+{
+  "tipo": "confirmacao_humana_visual_de_pontuacao",
+  "registrado_em_utc": "2026-10-21T15:52:19.250496+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T12:52:19.250496-03:00",
+  "folio": "269r",
+  "linha": 17,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "a virgula eu vejo, não sei o q e nahiba, de parnaiba ne que foi cortado? mas a virgula existe",
+  "pergunta_respondida": "Entre nahiba e e não, você identifica uma vírgula?",
+  "sinal_confirmado": "vírgula após nahiba",
+  "escopo": "Confirmação da vírgula. A pergunta do usuário sobre o topônimo não é tratada como nova confirmação isolada de suas letras.",
+  "esclarecimento_contextual": "Par no final da linha 16 e nahiba no início da 17 formam Parnahiba; a quebra física é preservada, sem substituir a grafia do alvo por Parnaíba.",
+  "quebra_fisica_preservada": [
+    "Par",
+    "nahiba"
+  ],
+  "linha_16_na_edicao": "tantes da villa de Sam Paulo, e da villa de Par",
+  "linha_17_na_edicao": "nahiba, e não poderem vir os ministros de Jus",
+  "fonte_editorial": "docs/revisao_humana/traslado_269r/corpo_269r_edicao.txt",
+  "fonte_editorial_sha256": "15e2ddf3f36f50067bc15b3857831258df0508377f8d0b54f908d210fab68aba",
+  "estado_nesta_reconferencia": "Ressalvas pontuais da linha 17 reconferidas; ministros continua adotado conforme a edição, com observação visual i e alternativa anterior no histórico. Não constitui validação independente da edição.",
+  "trecho_adotado_linha17": "nahiba, e não poderem vir os ministros de Jus",
+  "evidencia_exibida": "docs/revisao_humana/traslado_269r/sessao_20261019/evidencias/linha_17_inicio_4x.png",
+  "evidencia_sha256": "a73889e8c3560d217cc9d34a2a6931df18d5f91ad0fb36e5efc7eff0ae3f5a7a",
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "pendencias_desta_nova_rodada": [
+    11,
+    19,
+    20,
+    23,
+    24
+  ],
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

@@ -1,0 +1,56 @@
+{
+  "tipo": "consulta_e_conferencia_de_fonte_editorial",
+  "registrado_em_utc": "2026-10-21T18:40:19.557577+00:00",
+  "folio": "269r",
+  "linha": 19,
+  "responsavel_pela_consulta": "Codex, assistente de IA",
+  "pedido_do_usuario": "vamos ver oq esta no documento oficial",
+  "nova_confirmacao_visual_humana": false,
+  "fonte": "docs/experimentos/traslado_269r_20261016/support/edition.pdf",
+  "fonte_sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+  "pagina_pdf": 2,
+  "linha_encontrada": "por alguã duvida orgente, virem alguns menis",
+  "palavra_na_edicao": "orgente",
+  "primeira_letra_na_edicao": "o",
+  "pontuacao_na_edicao": "vírgula após orgente",
+  "meios_de_conferencia": [
+    "extração textual da página 2 com pypdf",
+    "localização do trecho na página 2 com pdfplumber",
+    "renderização da página inteira e do trecho com Poppler, seguida de inspeção visual"
+  ],
+  "render_recorte": {
+    "arquivo": "docs/revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/edicao_pagina_2_linha_19.png",
+    "sha256": "42238f977934135d57d4a45d3bc5995790c578af73c0d38259cfc4fcdc43e20d",
+    "resolucao_dpi": 300,
+    "pagina": 2,
+    "bbox_pixels_xywh": [
+      192,
+      1463,
+      1025,
+      93
+    ],
+    "pagina_pdf_pontos": [
+      595.303937007874,
+      841.889763779528
+    ],
+    "ferramenta": "pdftoppm (Poppler)"
+  },
+  "leitura_adotada_preexistente": "orgente, conforme edição publicada",
+  "duvida_visual_do_manuscrito": "primeira letra o/e continua no histórico; consulta editorial não é confirmação visual independente",
+  "confirmacao_da_virgula_no_manuscrito_nesta_consulta": false,
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}

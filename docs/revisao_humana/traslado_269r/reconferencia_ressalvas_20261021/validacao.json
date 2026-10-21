@@ -1,0 +1,81 @@
+{
+  "resultado": "aprovado",
+  "registrado_em_utc": "2026-10-21T19:06:48.142667+00:00",
+  "tipo": "validacao_offline_da_consolidacao_documental",
+  "base_git": "21b8c744b25e11bda059947246806c4414d618d6",
+  "linhas_consolidadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "registros_humanos_individuais": 17,
+  "registros_anteriores_da_rodada_preservados": 30,
+  "readme_anterior": "Resumo atualizado; histórico das etapas mantido; decisões JSON e imagens anteriores não sobrescritas",
+  "arquivos_versionados_anteriores_preservados": 643,
+  "alteracoes_preexistentes_permitidas": [
+    ".gitattributes",
+    "docs/README.md"
+  ],
+  "referencias_externas_de_arquivo_conferidas": 44,
+  "ampliacoes_nearest_conferidas_pixel_a_pixel": 4,
+  "pngs_validos": 8,
+  "links_locais_conferidos": 106,
+  "pacotes_congelados_preservados": true,
+  "ressalvas_historicas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "sem_promocao_automatica_de_duvidas": true,
+  "editor_alterado": false,
+  "alvos_alterados": false,
+  "novas_inferencias": 0,
+  "metricas_publicadas_preservadas": true,
+  "natureza": "diagnóstico de desenvolvimento",
+  "auditorias_originais": [
+    {
+      "comando": ".venv/Scripts/python.exe docs/revisao_humana/traslado_269r/referencia_assistida_20261020/verificar.py",
+      "resultado": "aprovado",
+      "arquivos_conferidos": 58,
+      "linhas": 24,
+      "pendencias_visuais": [
+        11,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24
+      ],
+      "historico_e_bruto_preservados": true
+    },
+    {
+      "comando": ".venv/Scripts/python.exe docs/experimentos/traslado_269r_reconhecedores_24_20261020/verificar.py",
+      "resultado": "aprovado",
+      "arquivos_conferidos": 29,
+      "ressalvas_preservadas": 8,
+      "distancias_conferidas_por_algoritmo_independente": true
+    },
+    {
+      "comando": "tmp/academico_notebook_venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261020/verificar_entrega.py",
+      "resultado": "aprovado",
+      "arquivos_entrega": 24,
+      "celulas_codigo_executadas": 9,
+      "ressalvas": 8,
+      "novas_inferencias": 0,
+      "metricas_identicas_ao_experimento": true
+    }
+  ],
+  "nota_metricas": "Os auditores reproduzem contagens da versão histórica para conferir igualdade; não houve avaliação de nova referência ou novas inferências nesta rodada."
+}

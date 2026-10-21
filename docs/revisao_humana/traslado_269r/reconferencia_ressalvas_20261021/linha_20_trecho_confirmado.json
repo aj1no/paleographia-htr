@@ -1,0 +1,51 @@
+{
+  "tipo": "confirmacao_humana_visual_de_trecho",
+  "registrado_em_utc": "2026-10-21T18:51:48.189905+00:00",
+  "registrado_em_sao_paulo": "2026-10-21T15:51:48.189905-03:00",
+  "folio": "269r",
+  "linha": 20,
+  "revisor": "Rodolfo Vinícius Cima Takemoto",
+  "mensagem_do_usuario": "Sim, também leio muito Grande detrimento de to. Vamos para a próxima dúvida, me mostra o recorte.",
+  "pergunta_respondida": "Você também lê muito Grande detrimento de to?",
+  "trecho_confirmado": "muito Grande detrimento de to",
+  "escopo": "Confirma o trecho específico antes apenas proposto. Não altera confirmações anteriores, pontuação de outras linhas ou referência congelada.",
+  "quebra_fisica_preservada": [
+    "to",
+    "dos"
+  ],
+  "com_maiusculo_anterior": "Com já confirmado em sessão anterior, preservado",
+  "ressalva_original_linha20": "reconferida neste novo registro; versão congelada não alterada",
+  "evidencias_exibidas": [
+    {
+      "arquivo": "docs/revisao_humana/traslado_269r/sessao_20261019/evidencias/linha_20_com_muito_grande_4x.png",
+      "sha256": "d5321b870a8959694781f3ceb837b83e0741d612fe78aa63bc588be1964f6504"
+    },
+    {
+      "arquivo": "docs/revisao_humana/traslado_269r/sessao_20261019/evidencias/linha_20_detrimento_de_to_4x.png",
+      "sha256": "30fca73198fa4f6f95fc97ec9845bfb381d1982f8ff507c0f8580772aadaa6bc"
+    }
+  ],
+  "referencia_congelada_de_origem": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/conferencia.json",
+  "referencia_congelada_sha256": "1620e907b0eace63a56a61cb0815680d6c5d9dcff0f4a90d85c44a4c727a06aa",
+  "referencia_congelada_alterada": false,
+  "gravado_no_editor": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "pendencias_para_proxima_conferencia": [
+    11,
+    23,
+    24
+  ],
+  "duvida_visual_anterior_preservada_linha19": "Primeira letra o/e de orgente; palavra mantida por apoio editorial",
+  "natureza": "diagnóstico de desenvolvimento",
+  "novas_inferencias": 0,
+  "metricas_recalculadas": false
+}
