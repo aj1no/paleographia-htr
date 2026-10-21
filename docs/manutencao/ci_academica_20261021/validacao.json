@@ -1,0 +1,271 @@
+{
+  "data": "2026-10-21",
+  "branch": "main",
+  "base_git": "0691104a7b66c97a79d1d3c56aeee3794f9256e0",
+  "escopo": "CI acadêmica em tarefa separada, sem nova inferência ou edição das evidências congeladas.",
+  "job_academico": {
+    "sistema": "ubuntu-latest",
+    "python": "3.12",
+    "permissoes": {
+      "contents": "read"
+    },
+    "artefatos_retencao_dias": 14
+  },
+  "python_local": {
+    "testes_passaram": 121,
+    "testes_novos": 20,
+    "avisos": 1,
+    "nota": "Em Linux, um dos testes novos é omitido por verificar evento específico do Windows.",
+    "aviso": "Depreciação já existente de anyio.abc.BlockingPortal em Starlette/TestClient."
+  },
+  "javascript": {
+    "testes_passaram": 29
+  },
+  "auditorias": [
+    {
+      "auditor": "docs/testes/lexico_copia_20261019/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "natureza": "teste em cópia isolada",
+        "arquivos_conferidos": 13,
+        "snapshots": 3,
+        "eventos_lexicais": 2,
+        "bruto_paginas_e_outras_linhas_preservados": true,
+        "arquivos_originais_registrados_na_publicacao": 565,
+        "arquivos_de_fonte_conferidos_no_checkout": 1,
+        "nota": "A fonte externa ao pacote foi conferida no checkout."
+      }
+    },
+    {
+      "auditor": "docs/revisao_humana/traslado_269r/sessao_20261019/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos_do_pacote": 105,
+        "arquivos_no_zip": 72,
+        "revisoes_no_zip": 30,
+        "reconhecimentos_conferidos": 6,
+        "linhas_com_notas": 11,
+        "linha_de_retomada": 21,
+        "pendencia_preservada": "Pesueem / pessuhem"
+      }
+    },
+    {
+      "auditor": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "arquivos_conferidos": 58,
+        "linhas": 24,
+        "recortes_identicos": 24,
+        "linhas_validadas": 16,
+        "pendencias_visuais": [
+          11,
+          15,
+          16,
+          17,
+          19,
+          20,
+          23,
+          24
+        ],
+        "historico_e_bruto_preservados": true,
+        "catalogo_valido": true,
+        "avaliacao_integral_apta": false
+      }
+    },
+    {
+      "auditor": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos_conferidos": 29,
+        "linhas": 24,
+        "ressalvas_preservadas": 8,
+        "blocos": 5,
+        "metricas_recalculadas": {
+          "ppocrv5": {
+            "characters": {
+              "substitutions": 200,
+              "deletions": 444,
+              "insertions": 6,
+              "hits": 468,
+              "reference_length": 1112,
+              "errors": 650,
+              "rate": 0.5845323741007195
+            },
+            "words": {
+              "substitutions": 108,
+              "deletions": 84,
+              "insertions": 0,
+              "hits": 11,
+              "reference_length": 203,
+              "errors": 192,
+              "rate": 0.9458128078817734
+            }
+          },
+          "ppocrv6": {
+            "characters": {
+              "substitutions": 96,
+              "deletions": 54,
+              "insertions": 18,
+              "hits": 962,
+              "reference_length": 1112,
+              "errors": 168,
+              "rate": 0.1510791366906475
+            },
+            "words": {
+              "substitutions": 95,
+              "deletions": 22,
+              "insertions": 5,
+              "hits": 86,
+              "reference_length": 203,
+              "errors": 122,
+              "rate": 0.6009852216748769
+            }
+          }
+        },
+        "distancias_conferidas_por_algoritmo_independente": true
+      }
+    },
+    {
+      "auditor": "docs/entregas/pi_iv_pln_20261020/verificar_entrega.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos_entrega": 24,
+        "celulas_codigo_executadas": 9,
+        "figuras_embutidas": 2,
+        "linhas": 24,
+        "ressalvas": 8,
+        "combinacoes_linha_modelo": 48,
+        "novas_inferencias": 0,
+        "metricas_identicas_ao_experimento": true
+      }
+    },
+    {
+      "auditor": "legacy/auxiliares_20261020/verificar.py",
+      "codigo_saida": 0,
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos": 6,
+        "bytes_identicos_aos_blobs_originais": true,
+        "caminhos_anteriores_ausentes": true,
+        "conversoes_checkout_registradas": 4,
+        "novas_inferencias": 0
+      }
+    }
+  ],
+  "reexecucao_local_em_copia": {
+    "resultado": "aprovado",
+    "tipo": "diagnostico_de_desenvolvimento",
+    "novas_inferencias": 0,
+    "linhas": 24,
+    "ressalvas": [
+      11,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24
+    ],
+    "regioes": 5,
+    "metricas": {
+      "ppocrv5": {
+        "characters": {
+          "substitutions": 200,
+          "deletions": 444,
+          "insertions": 6,
+          "hits": 468,
+          "reference_length": 1112,
+          "errors": 650,
+          "rate": 0.5845323741007195
+        },
+        "words": {
+          "substitutions": 108,
+          "deletions": 84,
+          "insertions": 0,
+          "hits": 11,
+          "reference_length": 203,
+          "errors": 192,
+          "rate": 0.9458128078817734
+        }
+      },
+      "ppocrv6": {
+        "characters": {
+          "substitutions": 96,
+          "deletions": 54,
+          "insertions": 18,
+          "hits": 962,
+          "reference_length": 1112,
+          "errors": 168,
+          "rate": 0.1510791366906475
+        },
+        "words": {
+          "substitutions": 95,
+          "deletions": 22,
+          "insertions": 5,
+          "hits": 86,
+          "reference_length": 203,
+          "errors": 122,
+          "rate": 0.6009852216748769
+        }
+      }
+    },
+    "celulas_codigo_executadas": 9,
+    "figuras_incorporadas": 2,
+    "tabelas_identicas": 5,
+    "figuras_png_svg": 4,
+    "arquivos_versionados_preservados": 623,
+    "protecao_executor_e_kernel": true,
+    "entrada_sem_pesos_e_workspace": true
+  },
+  "executores_testados_sha256": {
+    "scripts/ci_academica.py": "eaeff2c893347a2aaa45e1c068fa0f18f3985e0d50a773fa9cb4f96d320afe34",
+    "scripts/ci_academica_guard.py": "2fee20d04624d5379f6d2c62fc8dec17bdc27cb8e56c07642b3d4a11035e525c"
+  },
+  "figuras_locais_identicas_a_versao_arquivada": {
+    "cer_wer.png": true,
+    "cer_wer.svg": true,
+    "cer_blocos.png": true,
+    "cer_blocos.svg": true
+  },
+  "protecao_ativa_executor_e_kernel": true,
+  "tentativas_proibidas_na_reexecucao": 0,
+  "yaml_workflow": "validado com parser local",
+  "compilacao": "aprovada",
+  "ajuda_cli": "aprovada",
+  "git_diff_check": "aprovado",
+  "arquivos_versionados_preexistentes_preservados": 612,
+  "arquivos_workspace_identicos": 82,
+  "sha256_mapa_arquivos_protegidos": "0724a7f40e009dbf8c443ce515e105272408e958d1d9040517215fcd0bf4c54f",
+  "arquivos_modificados": [
+    ".gitattributes",
+    ".github/workflows/ci.yml",
+    "README.md",
+    "docs/README.md",
+    "docs/environment.md",
+    "docs/guia_revisao_gpt.md",
+    "docs/runbook.md"
+  ],
+  "arquivos_novos": [
+    "scripts/ci_academica.py",
+    "scripts/ci_academica_guard.py",
+    "tests/test_ci_academica.py",
+    "docs/manutencao/ci_academica_20261021/README.md",
+    "docs/manutencao/ci_academica_20261021/validacao.json"
+  ],
+  "branches_remotas_antes": [
+    "5879f8538146d36e78a996ac1f604deaec36ab83\trefs/heads/codex/refatoracao-piloto",
+    "0691104a7b66c97a79d1d3c56aeee3794f9256e0\trefs/heads/main",
+    "b2fc01ccdfa87ba36c73a2296514f91606ab437c\trefs/heads/master"
+  ],
+  "pacotes_congelados_inventarios_e_oito_ressalvas_preservados": true,
+  "codigo_produto_e_configuracoes_modelos_preservados": true,
+  "novas_inferencias": 0,
+  "treino": false,
+  "teste_reservado": false,
+  "nota": "Recibo de validações locais antes da publicação; a conclusão remota da CI do novo commit deve ser consultada no GitHub.",
+  "links_locais_conferidos": 83
+}
