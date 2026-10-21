@@ -9,6 +9,13 @@ iniciais e afiliação à FATEC Jundiaí, curso de Ciência de Dados, 5º semest
 Jundiaí – SP. Modelos e rubricas continuam pendentes.
 A revisão bibliográfica inicial não substitui a revisão sistemática de PI IV.
 
+**Atualização de 21/10/2026:** o [protocolo bibliográfico](literature_review.md)
+define PB1–PB3, buscas por componentes e por avaliação de reconhecimento histórico,
+critérios de seleção, extração e síntese para PP-OCRv5 × PP-OCRv6. As buscas de
+estudos e os fichamentos ainda não foram executados sob essa versão. O protocolo
+anterior foi preservado; as oito ressalvas e o diagnóstico de desenvolvimento
+continuam válidos, sem presumir confirmação docente ou revisão concluída.
+
 O [diagnóstico assistido nos 24 recortes](experimentos/traslado_269r_reconhecedores_24_20261020/README.md)
 foi executado em 20/10/2026: PP-OCRv5 × PP-OCRv6, com resultados e ressalvas
 preservados. A execução demonstra a comparação técnica de dois reconhecedores;
