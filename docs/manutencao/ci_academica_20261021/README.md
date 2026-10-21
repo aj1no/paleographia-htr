@@ -39,8 +39,9 @@ Cria os derivados somente em `output/entrega_academica_269r24_20261020/` e usa
 no executor e no kernel. Bloqueia importações de reconhecedores e bibliotecas
 de inferência, acesso a `models/`, conexões externas e escrita nas entradas.
 Permite comunicação em loopback e sockets locais para o Jupyter. Só permite
-iniciar o kernel previsto e os utilitários de consulta de fontes `fc-list` e
-`fc-match`. Tentativas proibidas são registradas e reprovam a execução mesmo
+iniciar o kernel previsto, consultar fontes com `fc-list` e `fc-match` e obter
+o tipo de processador com `uname -p`, usado pelo Python no Linux.
+Tentativas proibidas são registradas e reprovam a execução mesmo
 que alguma biblioteca capture a exceção.
 
 As proteções são testadas com dados sintéticos identificados, sem modelos ou
@@ -80,6 +81,10 @@ acadêmico instalado, usando as fontes desse checkout.
 O [recibo de manutenção](validacao.json) registra testes, auditorias, reexecução
 em cópia sem modelos/workspace e preservação dos originais. As validações locais
 não são apresentadas como resultado da execução remota do novo commit.
+
+A [correção de compatibilidade Linux](correcao_linux.json) registra a liberação
+restrita de `uname -p` após o primeiro ensaio remoto. O recibo original foi
+preservado; as proteções de inferência e integridade continuam ativas.
 
 Configuração de artefatos e permissões conferida nas fontes oficiais:
 [upload-artifact v4](https://github.com/actions/upload-artifact/tree/v4) e
