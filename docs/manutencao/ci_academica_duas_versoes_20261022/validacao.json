@@ -1,0 +1,211 @@
+{
+  "resultado": "aprovado",
+  "registrado_em_utc": "2026-10-22T16:01:17.431839+00:00",
+  "data_da_manutencao_sao_paulo": "2026-10-22",
+  "base_git": "00ae91dc238d167c02352a0a96ff4c21d1d2c634",
+  "tipo": "diagnostico_de_desenvolvimento",
+  "versoes": [
+    "20261020",
+    "20261022"
+  ],
+  "testes_python": {
+    "comando": ".venv/Scripts/python.exe -m pytest -q",
+    "aprovados": 162,
+    "falhas": 0,
+    "avisos": 1,
+    "aviso": "Depreciação preexistente de anyio.abc.BlockingPortal em starlette.testclient"
+  },
+  "testes_regressao_ci_academica": {
+    "comando": ".venv/Scripts/python.exe -m pytest -q tests/test_ci_academica.py",
+    "aprovados": 61,
+    "falhas": 0
+  },
+  "testes_editor": {
+    "comando": "node --test tests/web_review.test.cjs",
+    "aprovados": 29,
+    "falhas": 0
+  },
+  "compilacao_python": "aprovada",
+  "cli_help": "aprovado",
+  "git_diff_check": "aprovado",
+  "auditorias": [
+    {
+      "comando": ".venv/Scripts/python.exe docs/testes/lexico_copia_20261019/verificar.py",
+      "resultado": {
+        "natureza": "teste em cópia isolada",
+        "arquivos_conferidos": 13,
+        "snapshots": 3,
+        "eventos_lexicais": 2,
+        "bruto_paginas_e_outras_linhas_preservados": true,
+        "arquivos_originais_registrados_na_publicacao": 565,
+        "arquivos_de_fonte_conferidos_no_checkout": 1,
+        "nota": "A fonte externa ao pacote foi conferida no checkout."
+      }
+    },
+    {
+      "comando": ".venv/Scripts/python.exe docs/revisao_humana/traslado_269r/sessao_20261019/verificar.py",
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos_do_pacote": 105,
+        "arquivos_no_zip": 72,
+        "revisoes_no_zip": 30,
+        "reconhecimentos_conferidos": 6,
+        "linhas_com_notas": 11,
+        "linha_de_retomada": 21,
+        "pendencia_preservada": "Pesueem / pessuhem"
+      }
+    },
+    {
+      "comando": ".venv/Scripts/python.exe docs/revisao_humana/traslado_269r/referencia_assistida_20261020/verificar.py",
+      "resultado": {
+        "arquivos_conferidos": 58,
+        "linhas": 24,
+        "recortes_identicos": 24,
+        "linhas_validadas": 16,
+        "pendencias_visuais": [
+          11,
+          15,
+          16,
+          17,
+          19,
+          20,
+          23,
+          24
+        ],
+        "historico_e_bruto_preservados": true,
+        "catalogo_valido": true,
+        "avaliacao_integral_apta": false
+      }
+    },
+    {
+      "comando": ".venv/Scripts/python.exe docs/experimentos/traslado_269r_reconhecedores_24_20261020/verificar.py",
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos_conferidos": 29,
+        "linhas": 24,
+        "ressalvas_preservadas": 8,
+        "blocos": 5,
+        "metricas_recalculadas": {
+          "ppocrv5": {
+            "characters": {
+              "substitutions": 200,
+              "deletions": 444,
+              "insertions": 6,
+              "hits": 468,
+              "reference_length": 1112,
+              "errors": 650,
+              "rate": 0.5845323741007195
+            },
+            "words": {
+              "substitutions": 108,
+              "deletions": 84,
+              "insertions": 0,
+              "hits": 11,
+              "reference_length": 203,
+              "errors": 192,
+              "rate": 0.9458128078817734
+            }
+          },
+          "ppocrv6": {
+            "characters": {
+              "substitutions": 96,
+              "deletions": 54,
+              "insertions": 18,
+              "hits": 962,
+              "reference_length": 1112,
+              "errors": 168,
+              "rate": 0.1510791366906475
+            },
+            "words": {
+              "substitutions": 95,
+              "deletions": 22,
+              "insertions": 5,
+              "hits": 86,
+              "reference_length": 203,
+              "errors": 122,
+              "rate": 0.6009852216748769
+            }
+          }
+        },
+        "distancias_conferidas_por_algoritmo_independente": true
+      }
+    },
+    {
+      "comando": ".venv/Scripts/python.exe legacy/auxiliares_20261020/verificar.py",
+      "resultado": {
+        "resultado": "aprovado",
+        "arquivos": 6,
+        "bytes_identicos_aos_blobs_originais": true,
+        "caminhos_anteriores_ausentes": true,
+        "conversoes_checkout_registradas": 4,
+        "novas_inferencias": 0
+      }
+    }
+  ],
+  "reproducao": {
+    "ambiente": "Windows, Python 3.12; clone local isolado, sem pesos/workspace, com alterações desta manutenção aplicadas e versionadas no índice",
+    "versoes_executadas_sequencialmente": [
+      "20261020",
+      "20261022"
+    ],
+    "celulas_codigo": {
+      "20261020": 9,
+      "20261022": 10
+    },
+    "tabelas_identicas": {
+      "20261020": 5,
+      "20261022": 6
+    },
+    "protecao_executor_e_kernel": true,
+    "metricas_identicas_entre_versoes": true,
+    "arquivos_versionados_do_clone_preservados": 713,
+    "comandos": [
+      "python scripts/ci_academica.py --version 20261020",
+      "python scripts/ci_academica.py --version 20261022"
+    ]
+  },
+  "novas_inferencias": 0,
+  "alvos_alterados": false,
+  "catalogo_promovido": false,
+  "referencia_independente_da_edicao": false,
+  "ressalvas_historicas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "duvidas_visuais_mantidas": [
+    11,
+    19,
+    23,
+    24
+  ],
+  "registros_humanos": 17,
+  "arquivos_versionados_anteriores_preservados": 706,
+  "arquivos_workspace_preservados": 74,
+  "alteracoes_versionadas_permitidas": [
+    ".gitattributes",
+    ".github/workflows/ci.yml",
+    "README.md",
+    "docs/README.md",
+    "scripts/ci_academica.py",
+    "tests/test_ci_academica.py"
+  ],
+  "hashes_fontes": {
+    ".github/workflows/ci.yml": "9a31068eec6ef5074498ea7e879b7116f5234d6b877ed20c9e51bd08281941a5",
+    "scripts/ci_academica.py": "25feb72404e531943c873af89189d4255c41d3e15d72501bb469178efe54cf0f",
+    "scripts/ci_academica_guard.py": "223f88c9ae6a448882b78d897666eddffd958b67e86233322ab6497ba3691556",
+    "tests/test_ci_academica.py": "a6d54feb938745d8c910af0ca4e0b122006825b1a5bd75a709acd132dfe31d9a"
+  },
+  "ci_remota": "Resultado deste novo commit será consultado após o push; estas evidências registram validações locais.",
+  "limites": [
+    "Pacotes originais mantidos byte a byte, inclusive seus avisos históricos de CI.",
+    "Mantém diagnóstico de desenvolvimento, sem referência independente, treino ou teste reservado.",
+    "As novas figuras são verificadas estruturalmente; diferenças de renderização entre sistemas não alteram a comparação numérica."
+  ],
+  "links_locais_conferidos": 68
+}

@@ -1,5 +1,6 @@
 """Proteções e comparação do recálculo; fixtures copiadas não são nova inferência."""
 import importlib.util
+import csv
 import json
 import os
 import shutil
@@ -15,60 +16,147 @@ CI = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(CI)
 
 
-@pytest.fixture
-def generated(tmp_path):
+def generated_copy(tmp_path, version):
     output = tmp_path/'derivados'
-    shutil.copytree(ROOT/CI.DELIVERY, output)
+    delivery, _ = CI.delivery_paths(version)
+    shutil.copytree(ROOT/delivery, output)
     receipt = CI.read(output/'resultado_notebook.json')
     receipt.update(workspace_conferido=False, workspace_arquivos_inalterados=None)
     (output/'resultado_notebook.json').write_text(json.dumps(receipt), encoding='utf-8')
     return output
 
 
+@pytest.fixture(params=list(CI.VERSIONS))
+def generated(tmp_path, request):
+    return request.param, generated_copy(tmp_path, request.param)
+
+
+@pytest.fixture
+def reconference_generated(tmp_path):
+    return generated_copy(tmp_path, '20261022')
+
+
 def test_generated_accepts_identical_metrics_tables_and_eight_doubts(generated):
-    result = CI.verify_generated(ROOT, generated)
+    version, output = generated
+    result = CI.verify_generated(ROOT, output, version)
     assert result['linhas'] == 24 and result['ressalvas'] == [11, 15, 16, 17, 19, 20, 23, 24]
-    assert result['tabelas_identicas'] == 5 and result['novas_inferencias'] == 0
+    assert result['tabelas_identicas'] == CI.VERSIONS[version]['tables'] and result['novas_inferencias'] == 0
+    assert result['celulas_codigo_executadas'] == CI.VERSIONS[version]['cells']
+    if version == CI.DEFAULT_VERSION:
+        assert CI.verify_generated(ROOT, output) == result
+    else:
+        assert result['reconferencia']['registros_humanos'] == 17
+        assert result['reconferencia']['linhas_com_duvidas_visuais_mantidas'] == [11, 19, 23, 24]
+        assert result['reconferencia']['catalogo_promovido'] is False
 
 
-@pytest.mark.parametrize('change', ['metricas', 'ressalvas', 'inferencias', 'fonte', 'execucao', 'csv'])
+def test_generated_refuses_the_other_delivery_version(generated):
+    version, output = generated
+    other = next(v for v in CI.VERSIONS if v != version)
+    with pytest.raises(ValueError):
+        CI.verify_generated(ROOT, output, other)
+
+
+@pytest.mark.parametrize('change', ['metricas', 'ressalvas', 'inferencias', 'tipo', 'fonte', 'execucao', 'erro', 'csv'])
 def test_generated_rejects_changed_results_or_partial_execution(generated, change):
-    if change in {'metricas', 'ressalvas', 'inferencias'}:
-        path = generated/'resultado_notebook.json'
+    version, output = generated
+    if change in {'metricas', 'ressalvas', 'inferencias', 'tipo'}:
+        path = output/'resultado_notebook.json'
         value = CI.read(path)
         if change == 'metricas':
             value['metricas']['ppocrv6']['characters']['errors'] += 1
         elif change == 'ressalvas':
             value['ressalvas'] = 7
-        else:
+        elif change == 'inferencias':
             value['novas_inferencias'] = 1
+        else:
+            value['tipo'] = 'teste_reservado'
         path.write_text(json.dumps(value), encoding='utf-8')
-    elif change in {'fonte', 'execucao'}:
-        path = generated/'comparacao_reproduzivel.ipynb'
+    elif change in {'fonte', 'execucao', 'erro'}:
+        path = output/'comparacao_reproduzivel.ipynb'
         value = CI.read(path)
         cell = next(c for c in value['cells'] if c['cell_type'] == 'code')
         if change == 'fonte':
             cell['source'] = ['print("alteração de teste")']
-        else:
+        elif change == 'execucao':
             cell['execution_count'] = None
+        else:
+            cell['outputs'] = [{'output_type': 'error', 'ename': 'RuntimeError',
+                                'evalue': 'erro sintético', 'traceback': ['erro sintético']}]
         path.write_text(json.dumps(value), encoding='utf-8')
     else:
-        path = generated/'tabelas/ressalvas.csv'
+        path = output/'tabelas/ressalvas.csv'
         rows = path.read_text(encoding='utf-8-sig').splitlines(keepends=True)
         path.write_text(''.join(rows[:-1]), encoding='utf-8-sig')
     with pytest.raises(ValueError):
-        CI.verify_generated(ROOT, generated)
+        CI.verify_generated(ROOT, output, version)
 
 
-@pytest.mark.parametrize('directory', ['models', 'data/workspace', 'data/workspace_traslado_269r', str(CI.OUTPUT)])
-def test_preflight_refuses_weights_workspaces_and_existing_outputs(tmp_path, directory):
+@pytest.mark.parametrize('field,value', [
+    ('catalogo_promovido', True), ('alvos_alterados', True),
+    ('leitura_independente_da_edicao', True), ('pacote_20261020_preservado', False),
+    ('registros_humanos', 16), ('linhas', [11, 15, 16, 17, 19, 20, 23]),
+    ('inventario_sha256', '0'*64),
+])
+def test_reconference_refuses_changed_provenance_or_promoted_reference(reconference_generated, field, value):
+    path = reconference_generated/'resultado_notebook.json'
+    result = CI.read(path)
+    result['reconferencia'][field] = value
+    path.write_text(json.dumps(result), encoding='utf-8')
+    with pytest.raises(ValueError, match='reconferência'):
+        CI.verify_generated(ROOT, reconference_generated, '20261022')
+
+
+@pytest.mark.parametrize('field', ['alvo_congelado_20261020', 'ressalva_original_20261020',
+                                 'decisao_reconferencia_20261021', 'confirmacoes_visuais_pontuais',
+                                 'apoio_editorial', 'duvidas_visuais_mantidas', 'revisor',
+                                 'evidencias_caminhos', 'evidencias_sha256'])
+def test_reconference_checks_decisions_against_sources_not_only_archived_csv(reconference_generated, field):
+    path = reconference_generated/'tabelas/reconferencia_ressalvas.csv'
+    with path.open(encoding='utf-8-sig', newline='') as stream:
+        reader = csv.DictReader(stream)
+        headers, rows = reader.fieldnames, list(reader)
+    rows[0][field] = 'alteração sintética de teste'
+    with path.open('w', encoding='utf-8-sig', newline='') as stream:
+        writer = csv.DictWriter(stream, fieldnames=headers)
+        writer.writeheader()
+        writer.writerows(rows)
+    delivery, _ = CI.delivery_paths('20261022')
+    with pytest.raises(ValueError):
+        CI.verify_reconference(ROOT, reconference_generated, ROOT/delivery)
+
+
+@pytest.mark.parametrize('version', list(CI.VERSIONS))
+@pytest.mark.parametrize('directory', ['models', 'data/workspace', 'data/workspace_traslado_269r', 'output'])
+def test_preflight_refuses_weights_workspaces_and_existing_outputs(tmp_path, directory, version):
+    if directory == 'output':
+        _, directory = CI.delivery_paths(version)
     folder = tmp_path/directory
     folder.mkdir(parents=True)
     sentinel = folder/'preservado.txt'
     sentinel.write_bytes(b'nao sobrescrever')
     with pytest.raises(ValueError):
-        CI.check_environment(tmp_path)
+        CI.check_environment(tmp_path, version)
     assert sentinel.read_bytes() == b'nao sobrescrever'
+
+
+@pytest.mark.parametrize('version', list(CI.VERSIONS))
+def test_preflight_preserves_the_other_version_output(tmp_path, version):
+    other = next(v for v in CI.VERSIONS if v != version)
+    _, output = CI.delivery_paths(other)
+    directory = tmp_path/output
+    directory.mkdir(parents=True)
+    sentinel = directory/'preservado.txt'
+    sentinel.write_bytes(b'original')
+    CI.check_environment(tmp_path, version)
+    assert sentinel.read_bytes() == b'original'
+
+
+@pytest.mark.parametrize('version', ['20261021', '../../main', '20261020/..', ''])
+def test_unlisted_versions_do_not_create_outputs(tmp_path, version):
+    with pytest.raises(ValueError, match='não permitida'):
+        CI.run(tmp_path, version)
+    assert list(tmp_path.iterdir()) == []
 
 
 def guarded(tmp_path, code):

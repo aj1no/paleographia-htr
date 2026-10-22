@@ -84,9 +84,10 @@ node --test tests/web_review.test.cjs
 Os testes usam dados sintéticos identificados e evidências congeladas; não
 medem nova qualidade de reconhecimento. A CI executa a suíte e as auditorias
 publicadas em Windows/Ubuntu, Python 3.11/3.12. A tarefa acadêmica separada usa
-Ubuntu/Python 3.12 para auditar a entrega e reexecutar o notebook, sem pesos ou
-nova inferência. Confere métricas, cinco tabelas e as oito ressalvas, preservando
-os arquivos publicados. Veja a [CI acadêmica e seus artefatos](docs/manutencao/ci_academica_20261021/README.md)
+Ubuntu/Python 3.12 para auditar e reexecutar separadamente as entregas de 20/10
+e 22/10, sem pesos ou nova inferência. Confere métricas, cinco ou seis tabelas e
+as oito ressalvas, preservando os pacotes publicados e as decisões posteriores.
+Veja a [CI acadêmica e seus artefatos](docs/manutencao/ci_academica_duas_versoes_20261022/README.md)
 e a [entrega acadêmica original](docs/entregas/pi_iv_pln_20261020/README.md).
 
 ## Organização
