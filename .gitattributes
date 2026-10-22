@@ -9,6 +9,7 @@ docs/manutencao/scripts_numerados_20261020/** -text -whitespace
 scripts/ci_academica*.py text eol=lf
 tests/test_ci_academica.py text eol=lf
 docs/manutencao/ci_academica_20261021/** -text -whitespace
+docs/manutencao/ci_academica_duas_versoes_20261022/** -text -whitespace
 # Protocolo bibliográfico anterior: cópia literal preservada antes da atualização.
 docs/bibliografia/protocolo_anterior_20261021.md -text -whitespace
 # Respostas e recibos da primeira coleta bibliográfica: preservar hashes.

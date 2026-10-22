@@ -1,0 +1,67 @@
+{
+  "resultado": "aprovado",
+  "tipo": "diagnostico_de_desenvolvimento",
+  "versao": "20261020",
+  "novas_inferencias": 0,
+  "linhas": 24,
+  "ressalvas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "regioes": 5,
+  "metricas": {
+    "ppocrv5": {
+      "characters": {
+        "substitutions": 200,
+        "deletions": 444,
+        "insertions": 6,
+        "hits": 468,
+        "reference_length": 1112,
+        "errors": 650,
+        "rate": 0.5845323741007195
+      },
+      "words": {
+        "substitutions": 108,
+        "deletions": 84,
+        "insertions": 0,
+        "hits": 11,
+        "reference_length": 203,
+        "errors": 192,
+        "rate": 0.9458128078817734
+      }
+    },
+    "ppocrv6": {
+      "characters": {
+        "substitutions": 96,
+        "deletions": 54,
+        "insertions": 18,
+        "hits": 962,
+        "reference_length": 1112,
+        "errors": 168,
+        "rate": 0.1510791366906475
+      },
+      "words": {
+        "substitutions": 95,
+        "deletions": 22,
+        "insertions": 5,
+        "hits": 86,
+        "reference_length": 203,
+        "errors": 122,
+        "rate": 0.6009852216748769
+      }
+    }
+  },
+  "celulas_codigo_executadas": 9,
+  "figuras_incorporadas": 2,
+  "tabelas_identicas": 5,
+  "figuras_png_svg": 4,
+  "arquivos_versionados_preservados": 713,
+  "protecao_executor_e_kernel": true,
+  "entrada_sem_pesos_e_workspace": true
+}
