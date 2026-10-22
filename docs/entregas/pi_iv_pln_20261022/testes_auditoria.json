@@ -1,0 +1,22 @@
+{
+  "resultado": "aprovado",
+  "testes_em_copia": [
+    {
+      "cenario": "alvo_alterado",
+      "resultado": "rejeitado_como_esperado",
+      "motivo": "Alvo alterado na tabela de reconferência."
+    },
+    {
+      "cenario": "duvida_apagada",
+      "resultado": "rejeitado_como_esperado",
+      "motivo": "Decisão ou dúvida divergente: duvidas_visuais_mantidas"
+    },
+    {
+      "cenario": "catalogo_promovido",
+      "resultado": "rejeitado_como_esperado",
+      "motivo": "Recibo da reconferência divergente."
+    }
+  ],
+  "pacote_original_alterado": false,
+  "manifestos_de_copia_recalculados": true
+}
