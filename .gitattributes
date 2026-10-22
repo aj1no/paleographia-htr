@@ -61,3 +61,5 @@ docs/experimentos/traslado_269r_reconhecedores_24_20261020/** -text -whitespace
 docs/entregas/pi_iv_pln_20261020/** -text -whitespace
 # Versão aditiva acadêmica: preservar bytes dos derivados e inventários.
 docs/entregas/pi_iv_pln_20261022/** -text -whitespace
+# Diagnóstico integral: conservar bruto, recortes, alvos e recibos por hash.
+docs/experimentos/traslado_269r_integral_edicao_20261022/** -text -whitespace

@@ -1,0 +1,60 @@
+{
+  "criado_em": "2026-10-22T16:41:39.556072+00:00",
+  "tipo": "diagnostico_de_desenvolvimento_contra_edicao_publicada",
+  "pedido": "Comparar o fólio 269 reto inteiro com a transcrição oficial, incluindo cabeçalho e resumo quando cobertos pela edição, preservando bruto e revisões.",
+  "folio": "269r",
+  "unidades_editoriais": 36,
+  "corpo_unidades": 24,
+  "modelo": "PP-OCRv6 medium/Kraken",
+  "segmentacao": "OpenCV/projeção na imagem inteira, configuração existente sem ajuste",
+  "recortes_humanos_usados_na_medicao_principal": false,
+  "referencia": "Texto literal da edição nas páginas PDF 1 e 2 até antes de 269/Verso.; não usar decisões humanas posteriores como alvo.",
+  "ordem_cabecalho": "Villa de Jundiahy; Anno de 1767; 269. Ordem espacial esquerda-centro-direita da imagem, fixada antes da inferência. O PDF dispõe Anno antes de Villa.",
+  "exclusoes_editoriais": [
+    "Metadados, título documental e créditos da edição que não pertencem ao manuscrito",
+    "269 verso e páginas seguintes"
+  ],
+  "normalizacao": "NFC e colapso de espaços igualmente nos dois lados; preservar caixa, grafia, acentos, pontuação e desenvolvimentos editoriais.",
+  "metrica_principal": "Uma sequência do reto completo: concatenar todas as unidades editoriais e todas as saídas automáticas em ordem com espaço, sem excluir recortes ou falhas; CER/WER por distância de edição.",
+  "metricas_por_area": "Diagnóstico separado, sem somar ou tirar média para substituir a taxa principal. Atribuir cada previsão pela posição vertical do centro da caixa; caixas cruzando limites são sinalizadas.",
+  "areas_y": [
+    {
+      "area": "cabecalho",
+      "inicio_inclusivo": 0,
+      "fim_exclusivo": 130
+    },
+    {
+      "area": "titulo",
+      "inicio_inclusivo": 130,
+      "fim_exclusivo": 240
+    },
+    {
+      "area": "resumo",
+      "inicio_inclusivo": 240,
+      "fim_exclusivo": 550
+    },
+    {
+      "area": "corpo",
+      "inicio_inclusivo": 550,
+      "fim_exclusivo": 1873
+    }
+  ],
+  "falhas": "Saída vazia, contando omissões; nenhum recorte difícil removido.",
+  "peso_de_diferencas_editoriais": "Magestade é mantido como na edição; não substituir por Magᵈᵉ. Grafias e escolhas humanas anteriores permanecem no histórico original.",
+  "fonte_nao_fornecida_ao_reconhecedor": true,
+  "treinamento": false,
+  "teste_reservado": false,
+  "referencia_humana_independente": false,
+  "promocao_de_estados_humanos": false,
+  "ressalvas_historicas_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "comparabilidade": "Protocolo diferente do diagnóstico de 24 recortes humanos e referência assistida; não interpretar diferença de taxas como melhora ou piora isolada do reconhecedor."
+}

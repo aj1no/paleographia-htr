@@ -37,6 +37,8 @@ e pré-processamentos diferem; a diferença não pode ser atribuída somente à 
 
 - [Referência assistida, decisões e dúvidas](docs/revisao_humana/traslado_269r/referencia_assistida_20261020/README.md).
 - [Comparação dos 24 recortes, bruto e auditoria](docs/experimentos/traslado_269r_reconhecedores_24_20261020/README.md).
+- [269 reto inteiro contra a edição](docs/experimentos/traslado_269r_integral_edicao_20261022/README.md):
+  diagnóstico separado com segmentação automática e PP-OCRv6, incluindo cabeçalho, título e resumo.
 - [Notebook, artigo e evidências com a reconferência de 21/10](docs/entregas/pi_iv_pln_20261022/README.md),
   preservando o [pacote original de 20/10](docs/entregas/pi_iv_pln_20261020/README.md).
 - [Pendências de PI IV e PLN](docs/entregas/pi_iv_pln_20261022/adequacao_academica.md):
