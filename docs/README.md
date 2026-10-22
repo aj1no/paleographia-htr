@@ -22,6 +22,7 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 | [Reconferência das oito ressalvas](revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/consolidacao.md) | Rodada concluída com dúvidas e apoio editorial preservados; registro aditivo, sem alterar a referência ou as métricas congeladas |
 | [Comparação de reconhecedores](experimentos/traslado_269r_reconhecedores_24_20261020/README.md) | PP-OCRv5 × PP-OCRv6, desenvolvimento |
 | [269 reto inteiro contra a edição](experimentos/traslado_269r_integral_edicao_20261022/README.md) | Diagnóstico separado: segmentação automática + PP-OCRv6; CER 26,97%, WER 60,31%; bruto e revisões preservados |
+| [269 verso inteiro contra a edição](experimentos/traslado_269v_integral_edicao_20261022/README.md) | Diagnóstico de desenvolvimento do mesmo documento, com pesos e parâmetros do reto; CER 16,48%, WER 56,25%; bruto, revisões e dúvidas preservados; sem treinamento ou teste reservado |
 | [Notebook, artigo e evidências — versão de 22/10](entregas/pi_iv_pln_20261022/README.md) | Reconferência posterior incorporada; oito ressalvas históricas e métricas de 20/10 preservadas |
 | [Entrega acadêmica congelada de 20/10](entregas/pi_iv_pln_20261020/README.md) | Pacote original preservado; referência das métricas; verificado junto à versão de 22/10 |
 | [CI acadêmica das duas versões](manutencao/ci_academica_duas_versoes_20261022/README.md) | Auditoria e reexecução de 20/10 e 22/10, sem inferência; saídas e artefatos separados; oito ressalvas e reconferência preservadas |

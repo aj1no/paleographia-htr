@@ -1,0 +1,29 @@
+{
+  "criado_em": "2026-10-22T17:36:37.384953+00:00",
+  "arquivos": {
+    "docs/experimentos/traslado_269r_20261016/support/edition.pdf": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+    "data/raw/import_20261015/6e82cef18b04_5b58a915f024a80e.pdf": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/config.toml": "c6ccec65073fd220f2cc126ec723a78f3da61ffd11af5d9e8453a46ee75c5373",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/comparacao.json": "566da9a6de589c88de8c6491d78a5b2d9f77dd55b851358a6ada168e63933edf",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/alvos_editoriais.jsonl": "9b46135b7f9255b7d6329c38ce87a30a1a8e61f764c9f42b353ebabb2904d164",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/config.toml": "c6ccec65073fd220f2cc126ec723a78f3da61ffd11af5d9e8453a46ee75c5373",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/edicao_extraida.json": "a832c9028c3b0264abe18725c7ed0c35523bd3b79c6bcfda34313e4debcded38",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/imagem_extraida.json": "c0809cfa7528a7052c32c2a1768cc4d11e5c4477ec260b59c6ed0848bcdcaff4",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/manuscrito_269v_original.jpg": "63e18446dc3e31f8c0b444679650b2220035ef3ef602956d4659e762b3107251",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/pagina_reconhecimento.jsonl": "5ae520d0b0e7ff6f90d8c100053f10dcad3dc2f5b19c0553c1ffef868a6aa6d9",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/preservacao_antes.json": "91fffc3581863d8def7f7ed7f919434bb09a3947ddbf6a8943b3c90dfd8cc4cf",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/protocolo.json": "4f0c454b8dfcae57202d5266f426cde0e6939fcc60716810fd0d90cae43db9dc",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/reproduzir.py": "f07c325b776295b3a26b518615358e3efa44d0ae4f3ee5e510e3dfb597e3a5d7",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/texto_oficial.txt": "d2ad0c6b56ba46a7cc2d1522f39b2e4273cd299a7b3e151ac981b05e770bf521",
+    "src/paleographia/segmentation.py": "3ad3e92ae2aac83aefd5ce2ad13b6a59f041868010958b185f3b56288ecf8e58",
+    "src/paleographia/recognition.py": "5627ab0b220924b725792e636fb44f39f1691bb80cb3e2df8a3bed0a7a5ea00d",
+    "src/paleographia/kraken_recognition.py": "48126628f65b79737f8e6a5361494395c377104bb315981e3923e89334d3adcc",
+    "src/paleographia/kraken_recognition_worker.py": "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a",
+    "src/paleographia/evaluation.py": "96995e52c18eb302127a16698ac07cd3872930b331c10adc3b1e938e09b07efd"
+  },
+  "pesos": {
+    "models/kraken_ppocrv6_medium/medium.safetensors": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9"
+  },
+  "imagem_docker": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+  "commit": "1912bb8b0faf541d3b4adfa6887ed8b98169a049"
+}
