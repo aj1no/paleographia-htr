@@ -1,0 +1,19 @@
+{
+  "registrado_em_utc": "2026-10-22T18:12:02.100472+00:00",
+  "base_git": "4d429c9c1a51d616b84452269895e4951f4464c4",
+  "arquivo_versionado": "data/raw/Transcrições.rar",
+  "arquivo_versionado_sha256": "6e82cef18b04d2aaf7a2cc1c1f88bf82d47347b8b123cae92394b153806f7a0d",
+  "membro_original": "Transcrições/Traslado do Auto de Criação da Vila de Jundiahy/Traslado do Auto de Criação da Vila de Jundiahy - Fólio 269 - 273.pdf",
+  "caminho_historico": "data/raw/import_20261015/6e82cef18b04_5b58a915f024a80e.pdf",
+  "pdf_sha256": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0",
+  "pdf_bytes": 16729975,
+  "recuperacao_existente": "paleographia.preparation.ensure_archive_reference",
+  "destino_documentado": "output/fontes/traslado_269_273.pdf",
+  "copia_recuperada_conferida": true,
+  "registro_acervo": "https://jundiai.sismu.app/obra/102201/traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+  "download_observado": "https://acervos.sismu.com.br/api/beta/anexos/original/74780.pdf",
+  "download_observado_bytes": 16729975,
+  "download_observado_sha256": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0",
+  "publicacao_de_novo_pdf": false,
+  "novas_inferencias": 0
+}
