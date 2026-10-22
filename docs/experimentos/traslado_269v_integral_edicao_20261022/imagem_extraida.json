@@ -1,0 +1,15 @@
+{
+  "fonte": "data/raw/import_20261015/6e82cef18b04_5b58a915f024a80e.pdf",
+  "fonte_sha256": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0",
+  "pagina_pdf": 2,
+  "indice_imagem": 0,
+  "nome_imagem_embutida": "X0.jpg",
+  "imagem": "docs/experimentos/traslado_269v_integral_edicao_20261022/manuscrito_269v_original.jpg",
+  "imagem_sha256": "63e18446dc3e31f8c0b444679650b2220035ef3ef602956d4659e762b3107251",
+  "dimensoes": [
+    1195,
+    1883
+  ],
+  "metodo": "Bytes JPEG embutidos extraídos por pypdf, sem renderização, filtros ou reamostragem.",
+  "correspondencia_inspecionada_por": "Codex, assistente de IA; sem nova validação humana."
+}

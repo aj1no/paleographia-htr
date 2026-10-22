@@ -1,0 +1,119 @@
+{
+  "resultado": "aprovado",
+  "registrado_em_utc": "2026-10-22T17:43:56.257368+00:00",
+  "tipo": "diagnostico_de_desenvolvimento_contra_edicao_publicada",
+  "base_git": "1912bb8b0faf541d3b4adfa6887ed8b98169a049",
+  "folio": "269v",
+  "unidades_editoriais": 34,
+  "recortes_automaticos": 36,
+  "novas_inferencias_reais": 36,
+  "inferencias_nas_verificacoes": 0,
+  "falhas_tecnicas": 0,
+  "saidas_vazias_ordens_base_zero": [
+    0,
+    35
+  ],
+  "treinamento": false,
+  "teste_reservado": false,
+  "referencia_humana_independente": false,
+  "alvos_editoriais_congelados_antes_da_inferencia": true,
+  "referencia_nao_fornecida_ao_reconhecedor": true,
+  "configuracao_identica_byte_a_byte_ao_reto": true,
+  "pixels_conferidos": 36,
+  "distancias_conferidas_por_implementacao_independente": true,
+  "metrics": {
+    "characters": {
+      "substitutions": 172,
+      "deletions": 50,
+      "insertions": 15,
+      "hits": 1216,
+      "reference_length": 1438,
+      "errors": 237,
+      "rate": 0.16481223922114047
+    },
+    "words": {
+      "substitutions": 124,
+      "deletions": 25,
+      "insertions": 4,
+      "hits": 123,
+      "reference_length": 272,
+      "errors": 153,
+      "rate": 0.5625
+    }
+  },
+  "testes_em_copia": {
+    "resultado": "aprovado",
+    "testes": [
+      {
+        "cenario": "alterar_referencia_editorial",
+        "resultado": "rejeitado_como_esperado",
+        "motivo": "Texto editorial alterado ou promovido."
+      },
+      {
+        "cenario": "alterar_saida_bruta_textual",
+        "resultado": "rejeitado_como_esperado",
+        "motivo": "Bruto textual alterado."
+      },
+      {
+        "cenario": "alterar_predicao_json",
+        "resultado": "rejeitado_como_esperado",
+        "motivo": "Métricas divergentes."
+      },
+      {
+        "cenario": "alterar_metrica",
+        "resultado": "rejeitado_como_esperado",
+        "motivo": "Métricas divergentes."
+      },
+      {
+        "cenario": "promover_referencia",
+        "resultado": "rejeitado_como_esperado",
+        "motivo": "Resultado promovido indevidamente."
+      }
+    ],
+    "manifestos_das_copias_recalculados": true,
+    "originais_alterados": false,
+    "novas_inferencias": 0
+  },
+  "preservacao": {
+    "arquivos_versionados_inalterados": 789,
+    "arquivos_workspace_inalterados": 82,
+    "editor_alterado": false,
+    "estados_humanos_promovidos": 0
+  },
+  "pacotes_historicos_arquivos_conferidos": 248,
+  "ressalvas_historicas_do_reto_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "duvidas_visuais_anteriores_preservadas": [
+    11,
+    19,
+    23,
+    24
+  ],
+  "edicao_visual": {
+    "fonte_pdf": "docs/experimentos/traslado_269r_20261016/support/edition.pdf",
+    "pagina_pdf": [
+      2,
+      3
+    ],
+    "renderizacao": "pdftoppm -scale-to 1600 -png; página 2 reutilizada byte a byte da rodada do reto",
+    "conteudo_inspecionado": "Após 269/Verso. na página 2 e antes de 270 na página 3: dez e 24 linhas.",
+    "inspecao_por": "Codex, assistente de IA; sem confirmação humana nova"
+  },
+  "limites": [
+    "Outra página do mesmo documento de desenvolvimento, sem teste reservado.",
+    "O protocolo inclui segmentação, reconhecimento e diferenças de representação editorial.",
+    "Não foram isoladas as contribuições do detector e do reconhecedor.",
+    "Mesmo modelo e parâmetros em conteúdo diferente; não demonstra adaptação ou generalização.",
+    "Nenhuma revisão humana ou dúvida histórica foi substituída pela edição.",
+    "Auditoria local; nova pasta ainda não integra automaticamente a matriz acadêmica da CI."
+  ],
+  "links_locais_conferidos": 71
+}

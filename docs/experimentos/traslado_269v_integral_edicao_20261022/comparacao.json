@@ -1,0 +1,35 @@
+{
+  "tipo": "diagnostico_de_desenvolvimento_contra_edicao_publicada",
+  "folio": "269v",
+  "escopo": "269 verso completo, incluindo texto e nomes/assinaturas constantes da edição; sem 269 reto ou 270.",
+  "modelo": "PP-OCRv6 medium/Kraken",
+  "recortes_automaticos": 36,
+  "unidades_editoriais": 34,
+  "falhas": 0,
+  "metrics": {
+    "characters": {
+      "substitutions": 172,
+      "deletions": 50,
+      "insertions": 15,
+      "hits": 1216,
+      "reference_length": 1438,
+      "errors": 237,
+      "rate": 0.16481223922114047
+    },
+    "words": {
+      "substitutions": 124,
+      "deletions": 25,
+      "insertions": 4,
+      "hits": 123,
+      "reference_length": 272,
+      "errors": 153,
+      "rate": 0.5625
+    }
+  },
+  "normalizacao": "NFC e colapso de espaços igualmente nos dois lados; preservar caixa, grafia, acentos, pontuação e desenvolvimentos editoriais.",
+  "treinamento": false,
+  "teste_reservado": false,
+  "referencia_humana_independente": false,
+  "promocao_de_estados_humanos": false,
+  "restricao": "Diagnóstico em outra página do mesmo documento; não é teste reservado nem demonstra generalização entre documentos."
+}

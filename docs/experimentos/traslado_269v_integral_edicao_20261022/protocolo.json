@@ -1,0 +1,45 @@
+{
+  "criado_em": "2026-10-22T17:36:37.371906+00:00",
+  "tipo": "diagnostico_de_desenvolvimento_contra_edicao_publicada",
+  "pedido": "Testar o 269 verso contra a transcrição oficial com os mesmos pesos e parâmetros, preservando bruto e revisões.",
+  "folio": "269v",
+  "unidades_editoriais": 34,
+  "modelo": "PP-OCRv6 medium/Kraken",
+  "segmentacao": "OpenCV/projeção na imagem inteira, sem ajuste de parâmetros.",
+  "configuracao_do_reto_sha256": "c6ccec65073fd220f2cc126ec723a78f3da61ffd11af5d9e8453a46ee75c5373",
+  "parametros_identicos_ao_reto": true,
+  "recortes_humanos_usados_na_medicao_principal": false,
+  "referencia": "Trechos literais da edição nas páginas PDF 2 e 3, após 269/Verso. e antes de 270.",
+  "exclusoes_editoriais": [
+    "Marcador editorial 269/Verso. ausente da imagem manuscrita",
+    "Final do 269 reto e conteúdo do 270 e seguintes",
+    "Metadados e créditos editoriais"
+  ],
+  "normalizacao": "NFC e colapso de espaços igualmente nos dois lados; preservar caixa, grafia, acentos, pontuação e desenvolvimentos editoriais.",
+  "metrica_principal": "Uma sequência do verso completo: concatenar todas as unidades editoriais e todas as saídas automáticas em ordem com espaço, sem excluir recortes ou falhas; CER/WER por distância de edição.",
+  "areas_y": [
+    {
+      "area": "corpo",
+      "inicio_inclusivo": 0,
+      "fim_exclusivo": 1883
+    }
+  ],
+  "falhas": "Saída vazia, contando omissões; nenhum recorte difícil removido.",
+  "convencoes_editoriais": "Mantidos os sinais =, as grafias dos nomes, os espaços e as quebras editoriais. Expansões como Magestade permanecem como na edição.",
+  "fonte_nao_fornecida_ao_reconhecedor": true,
+  "treinamento": false,
+  "teste_reservado": false,
+  "referencia_humana_independente": false,
+  "promocao_de_estados_humanos": false,
+  "ressalvas_historicas_do_reto_preservadas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "comparabilidade": "Mesmo pipeline e parâmetros do reto integral, em conteúdo diferente do mesmo documento; comparação descritiva, sem alegação de generalização entre documentos."
+}

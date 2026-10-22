@@ -5,7 +5,7 @@ conferir recortes e ordem de leitura, consultar vocabulário com fontes e salvar
 revisões humanas com autoria e histórico. Reconhecimento bruto, edição publicada
 e texto humano permanecem separados. A interface é apresentada em português.
 
-**Estado em 21/10/2026 — branch principal e padrão: `main`.** O escopo está
+**Estado em 22/10/2026 — branch principal e padrão: `main`.** O escopo está
 fechado para novas funções; a prioridade é consolidar a avaliação e as entregas
 de PI IV e PLN. Não houve treinamento ou ajuste fino neste corpus.
 
@@ -39,6 +39,10 @@ e pré-processamentos diferem; a diferença não pode ser atribuída somente à 
 - [Comparação dos 24 recortes, bruto e auditoria](docs/experimentos/traslado_269r_reconhecedores_24_20261020/README.md).
 - [269 reto inteiro contra a edição](docs/experimentos/traslado_269r_integral_edicao_20261022/README.md):
   diagnóstico separado com segmentação automática e PP-OCRv6, incluindo cabeçalho, título e resumo.
+- [269 verso inteiro contra a edição](docs/experimentos/traslado_269v_integral_edicao_20261022/README.md):
+  diagnóstico de desenvolvimento com os mesmos pesos e parâmetros do reto; CER 16,48%,
+  WER 56,25%, preservando o bruto, as revisões e as dúvidas anteriores. Mesmo documento,
+  sem treinamento ou teste reservado.
 - [Notebook, artigo e evidências com a reconferência de 21/10](docs/entregas/pi_iv_pln_20261022/README.md),
   preservando o [pacote original de 20/10](docs/entregas/pi_iv_pln_20261020/README.md).
 - [Pendências de PI IV e PLN](docs/entregas/pi_iv_pln_20261022/adequacao_academica.md):
