@@ -1,0 +1,28 @@
+{
+  "resultado": "aprovado",
+  "testes": [
+    {
+      "cenario": "alterar_referencia_editorial",
+      "resultado": "rejeitado_como_esperado",
+      "motivo": "Texto editorial alterado ou promovido."
+    },
+    {
+      "cenario": "alterar_saida_bruta",
+      "resultado": "rejeitado_como_esperado",
+      "motivo": "Bruto textual alterado."
+    },
+    {
+      "cenario": "alterar_metrica",
+      "resultado": "rejeitado_como_esperado",
+      "motivo": "Métricas divergentes."
+    },
+    {
+      "cenario": "promover_referencia",
+      "resultado": "rejeitado_como_esperado",
+      "motivo": "Resultado promovido indevidamente."
+    }
+  ],
+  "manifestos_das_copias_recalculados": true,
+  "originais_alterados": false,
+  "novas_inferencias": 0
+}

@@ -1,0 +1,35 @@
+{
+  "tipo": "diagnostico_de_desenvolvimento_contra_edicao_publicada",
+  "folio": "269r",
+  "escopo": "Reto completo, incluindo cabeçalho, foliação, título, resumo e corpo; sem verso.",
+  "modelo": "PP-OCRv6 medium/Kraken",
+  "recortes_automaticos": 35,
+  "unidades_editoriais": 36,
+  "falhas": 0,
+  "metrics": {
+    "characters": {
+      "substitutions": 124,
+      "deletions": 249,
+      "insertions": 18,
+      "hits": 1077,
+      "reference_length": 1450,
+      "errors": 391,
+      "rate": 0.2696551724137931
+    },
+    "words": {
+      "substitutions": 109,
+      "deletions": 44,
+      "insertions": 5,
+      "hits": 109,
+      "reference_length": 262,
+      "errors": 158,
+      "rate": 0.6030534351145038
+    }
+  },
+  "normalizacao": "NFC e colapso de espaços igualmente nos dois lados; preservar caixa, grafia, acentos, pontuação e desenvolvimentos editoriais.",
+  "treinamento": false,
+  "teste_reservado": false,
+  "referencia_humana_independente": false,
+  "promocao_de_estados_humanos": false,
+  "restricao": "Mede segmentação e reconhecimento contra convenções editoriais; não equivale ao diagnóstico anterior com recortes humanos."
+}

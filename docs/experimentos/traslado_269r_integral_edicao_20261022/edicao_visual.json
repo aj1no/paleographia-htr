@@ -1,0 +1,10 @@
+{
+  "fonte_pdf": "docs/experimentos/traslado_269r_20261016/support/edition.pdf",
+  "pagina_pdf": [
+    1,
+    2
+  ],
+  "renderizacao": "pdftoppm -f 1 -l 2 -scale-to 1600 -png",
+  "conteudo_inspecionado": "Página 1: cabeçalho, foliação, título, resumo e início do corpo. Página 2: fim do reto antes de 269/Verso.; verso excluído.",
+  "inspecao_por": "Codex, assistente de IA; sem confirmação humana nova"
+}

@@ -1,0 +1,25 @@
+{
+  "criado_em": "2026-10-22T16:41:39.568736+00:00",
+  "arquivos": {
+    "docs/experimentos/traslado_269r_20261016/support/edition.pdf": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65",
+    "docs/revisao_humana/traslado_269r/images/manuscrito_269r_original.jpg": "69f5b52cb74e0ea91e406ed0e1d8c6decd2af8ac1f93353fe5bdf619792417f0",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/alvos_editoriais.jsonl": "c92099d950a9411f04de33367d28bffc767ac45b3b0c80d6ef14973e0363f325",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/config.toml": "c6ccec65073fd220f2cc126ec723a78f3da61ffd11af5d9e8453a46ee75c5373",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/edicao_extraida.json": "f3e5912e0b61ebbd2ba500e599391d88a9a4c2a63b4470977213d8b3d3fee960",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/pagina_reconhecimento.jsonl": "fe97f9815dcd3a6db3240ca33c3afc20d5b9fe0907b09021a8e8838b4917b00b",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/preservacao_antes.json": "2fd29b84e9a76463ba0e1ef36060930ae50a46cfb8c63982f8734f24aa0babb9",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/protocolo.json": "9c297bd26def00a07dec4d45e84231303b93c78a319104c7f3d75d0ca22105a2",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/reproduzir.py": "3146cb9ebe26ca933fe34f02f38939c230f598046117a3f79bfdfbcb8c519c18",
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/texto_oficial.txt": "607d52fa257d8935621c10afc67bc69b1d0762749fdea325198e1c003f7c0b9a",
+    "src/paleographia/segmentation.py": "3ad3e92ae2aac83aefd5ce2ad13b6a59f041868010958b185f3b56288ecf8e58",
+    "src/paleographia/recognition.py": "5627ab0b220924b725792e636fb44f39f1691bb80cb3e2df8a3bed0a7a5ea00d",
+    "src/paleographia/kraken_recognition.py": "48126628f65b79737f8e6a5361494395c377104bb315981e3923e89334d3adcc",
+    "src/paleographia/kraken_recognition_worker.py": "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a",
+    "src/paleographia/evaluation.py": "96995e52c18eb302127a16698ac07cd3872930b331c10adc3b1e938e09b07efd"
+  },
+  "pesos": {
+    "models/kraken_ppocrv6_medium/medium.safetensors": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9"
+  },
+  "imagem_docker": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+  "commit": "e901ced3e1d590c2090886ce2119679444f36c0b"
+}

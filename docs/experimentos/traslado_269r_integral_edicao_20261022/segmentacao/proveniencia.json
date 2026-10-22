@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-10-22T16:41:44.454289+00:00",
+  "config": {
+    "paths": {
+      "pages": "data/manifests/traslado_269r/pages.jsonl",
+      "lines": "data/manifests/traslado_269r/lines.jsonl",
+      "workspace": "data/workspace_traslado_269r"
+    },
+    "recognition": {
+      "backend": "kraken_ppocrv6",
+      "model": "models/kraken_ppocrv6_medium/medium.safetensors",
+      "sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+      "docker_image": "paleographia-kraken:7.1.0-cpu",
+      "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+      "device": "cpu",
+      "precision": "float32",
+      "timeout_seconds": 180
+    },
+    "presentation": {
+      "language": "pt-BR",
+      "automatic_transcription_enabled": true,
+      "evaluated_backend": "kraken_ppocrv6",
+      "evaluated_model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+      "evaluated_docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+      "evaluated_worker_sha256": "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a"
+    },
+    "segmentation": {
+      "detector": "projection",
+      "horizontal_margin_ratio": 0.06,
+      "smoothing_ratio": 0.003,
+      "peak_threshold_std": 0.2,
+      "min_peak_distance_ratio": 0.019,
+      "block_size": 31,
+      "threshold_c": 15,
+      "kernel_width_ratio": 0.025,
+      "kernel_height": 3,
+      "iterations": 1,
+      "min_width_ratio": 0.12,
+      "min_height_ratio": 0.002,
+      "max_height_ratio": 0.12,
+      "padding": 4
+    },
+    "neural": {
+      "weights": "models/kraken/segmentation.mlmodel",
+      "device": "cpu"
+    },
+    "experiment": {
+      "seed": 1831,
+      "split": "exploratory",
+      "iou_threshold": 0.5,
+      "overlap_threshold": 0.2
+    },
+    "training": {
+      "seed": 1831,
+      "max_target_length": 128,
+      "epochs": 3,
+      "batch_size": 1,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 5e-05
+    }
+  },
+  "commit": "e901ced3e1d590c2090886ce2119679444f36c0b",
+  "working_tree_dirty": true,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "versions": {
+    "paleographia": "0.2.0",
+    "Pillow": "11.3.0",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "4.12.0.88",
+    "torch": "2.7.1",
+    "transformers": "4.57.1",
+    "jiwer": "4.0.0",
+    "fastapi": "0.116.1"
+  },
+  "manifests": {
+    "C:\\Users\\takem\\OneDrive\\Documentos\\ChatGPT\\PaleographIA\\docs\\experimentos\\traslado_269r_integral_edicao_20261022\\pagina_reconhecimento.jsonl": "fe97f9815dcd3a6db3240ca33c3afc20d5b9fe0907b09021a8e8838b4917b00b",
+    "C:\\Users\\takem\\OneDrive\\Documentos\\ChatGPT\\PaleographIA\\docs\\experimentos\\traslado_269r_integral_edicao_20261022\\entradas_congeladas.json": "aa5d3801dbea2fed42f27b91b4fbf16fdc3811c5641e5e7397fe7941a32ecf47"
+  }
+}
