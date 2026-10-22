@@ -1,0 +1,43 @@
+{
+  "resultado": "aprovado",
+  "tipo": "diagnostico_de_desenvolvimento",
+  "metodo": "copia limpa dos arquivos versionados e da nova entrega, sem pasta .git; derivados isolados",
+  "sem_pesos_e_workspace": true,
+  "novas_inferencias": 0,
+  "arquivos_de_entrada_preservados": 709,
+  "celulas_codigo_executadas": 10,
+  "tabelas_identicas_byte_a_byte": {
+    "24_linhas.csv": "584f2db09d184a2a7ab218dd3a563d8fbfde0a373e339eba3bd572ed89c47fe5",
+    "metricas_blocos.csv": "da2ea780c57c5e90ffdfcd95de8fb8a364841f5a7b40d655ef3d76fdebaa1412",
+    "operacoes.csv": "264f2b1092c9dfc7d59a58c496d58e0aeb20545d9b4e0800a8f45be3b298cbf3",
+    "reconferencia_ressalvas.csv": "ae7aea7fa6b2ac9162b8d5deceaf4f3ec2a132e771e2fb11b830f8934e5ca095",
+    "ressalvas.csv": "58ba01030bef1f7e62df216f3060cb79f01f7d9059ced9f5819b2e9669ca4d44",
+    "resumo_metricas.csv": "fd878902354ef17d3bbe9b53fd7e431f52077260136720fdbd3cd16425e41582"
+  },
+  "figuras_identicas_byte_a_byte": {
+    "cer_blocos.png": "a721e35db58a351b5c2eece7851ae883f31200c73afed14a7e71ac13d73ed041",
+    "cer_blocos.svg": "3cb324bfddb9ab674339f98c09129a4fe98b6067de38be61c9b5d16a359dc4e1",
+    "cer_wer.png": "9fe0457db27fb8597a6cb3a51d5d581c3ff44c217b9e94fc65b2816d0d415f8c",
+    "cer_wer.svg": "d1533916c16875b40da4f16bc210e0d6c6b829ba63772fffc1c727deaf942fdd"
+  },
+  "tabelas_historicas_identicas": 5,
+  "ressalvas_historicas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "metricas_identicas": true,
+  "protecao_executor_e_kernel": true,
+  "fontes_de_execucao_sha256": {
+    "comparacao_reproduzivel.ipynb": "35bc1122d64e33fb12d1eb82977c37bc3d7c8c6701c4436caa3956bbc2b0eaba",
+    "executar_notebook.py": "a1e39a030363090a3ea012d515f5adb57686a3e7d687761391e5938cd42c9fac",
+    "reexecutar_protegido.py": "61349bd9288103e865f1a879586919f87fc8de69c5e98dd1bf22ff8426fde0e2",
+    "verificar_entrega.py": "7edabc20bd68b745cf5e6eaf37d1a14f257167336ec02035656f542ead04206f"
+  },
+  "protecao_sha256": "223f88c9ae6a448882b78d897666eddffd958b67e86233322ab6497ba3691556"
+}

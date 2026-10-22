@@ -1,0 +1,75 @@
+{
+  "resultado": "aprovado",
+  "registrado_em_utc": "2026-10-22T12:48:01.463946+00:00",
+  "data_da_versao_sao_paulo": "2026-10-22",
+  "base_git": "27b547d0203b566ca5cf17c1378f64ce46ae5b1a",
+  "tipo": "diagnostico_de_desenvolvimento",
+  "novas_inferencias": 0,
+  "alvos_alterados": false,
+  "catalogo_promovido": false,
+  "referencia_humana_independente_da_edicao": false,
+  "celulas_codigo_executadas": 10,
+  "figuras_incorporadas": 2,
+  "linhas": 24,
+  "blocos": 5,
+  "ressalvas_historicas": [
+    11,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    24
+  ],
+  "registros_humanos": 17,
+  "metricas_identicas_ao_experimento": true,
+  "tabelas_historicas_identicas_byte_a_byte": 5,
+  "tabela_documental_nova_linhas": 8,
+  "figuras_identicas_byte_a_byte_ao_pacote_20261020": true,
+  "pacote_20261020_preservado": true,
+  "arquivos_pacote_20261020_preservados": 25,
+  "arquivos_versionados_anteriores_preservados": 680,
+  "documentacao_e_atributos_atualizados": [
+    ".gitattributes",
+    "README.md",
+    "docs/README.md"
+  ],
+  "arquivos_workspace_preservados": 74,
+  "protecao_executor_e_kernel": true,
+  "operacoes_proibidas_tentadas": 0,
+  "reexecucao_limpa": "validacao_checkout_limpo.json",
+  "testes_negativos": "testes_auditoria.json",
+  "auditorias_executadas": [
+    {
+      "comando": ".venv/Scripts/python.exe docs/revisao_humana/traslado_269r/referencia_assistida_20261020/verificar.py",
+      "resultado": "aprovado"
+    },
+    {
+      "comando": ".venv/Scripts/python.exe docs/experimentos/traslado_269r_reconhecedores_24_20261020/verificar.py",
+      "resultado": "aprovado"
+    },
+    {
+      "comando": "tmp/academico_notebook_venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261020/verificar_entrega.py",
+      "resultado": "aprovado"
+    },
+    {
+      "comando": "tmp/academico_notebook_venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261022/reexecutar_protegido.py",
+      "resultado": "aprovado",
+      "ambiente": "copia_limpa_sem_pesos_e_workspace"
+    },
+    {
+      "comando": "tmp/academico_notebook_venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261022/verificar_entrega.py",
+      "resultado": "aprovado"
+    }
+  ],
+  "limites": [
+    "Os alvos e as taxas continuam vinculados à referência congelada de 20/10.",
+    "Reconferência posterior não promove estados nem constitui segunda leitura independente.",
+    "A CI automática existente ainda verifica a entrega de 20/10; a versão de 22/10 foi validada localmente.",
+    "Artigo ainda em rascunho; rubricas, modelo, revisão dos autores e triagem/leitura bibliográfica pendentes."
+  ],
+  "links_locais_conferidos": 78,
+  "sintaxe_scripts_academicos": "aprovada",
+  "git_diff_check": "aprovado"
+}

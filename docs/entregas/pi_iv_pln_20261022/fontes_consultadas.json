@@ -1,0 +1,61 @@
+{
+  "revisao_sistematica_realizada": false,
+  "fontes": [
+    {
+      "id": "corpus",
+      "tipo": "catalogo_institucional",
+      "titulo": "Traslado do Auto de Criação da Vila de Jundiaí",
+      "url": "https://jundiai.sismu.app/obra/102201/traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+      "consulta": "Ficha institucional",
+      "uso": "Identificação PT/TT/PBR/0004/026; traslado de 1767 referente ao ato de 1656.",
+      "data_consulta": "2026-10-20"
+    },
+    {
+      "id": "edicao",
+      "tipo": "catalogo_institucional_e_edicao_local",
+      "titulo": "Transcrição paleográfica do Traslado",
+      "url": "https://jundiai.sismu.app/obra/100529/transcricao-paleografica-do-traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+      "consulta": "Ficha e edição local já congelada",
+      "uso": "Autoria da edição e identificação do documento; revisão Thiago Paschoal conforme créditos locais.",
+      "data_consulta": "2026-10-20"
+    },
+    {
+      "id": "sousa2006",
+      "tipo": "artigo",
+      "titulo": "Building a historical corpus for Classical Portuguese: some technological aspects",
+      "url": "https://aclanthology.org/L06-1222/",
+      "consulta": "Metadados e resumo; sem alegação de leitura integral",
+      "uso": "Contexto de representação e organização de corpus histórico.",
+      "data_consulta": "2026-10-20"
+    },
+    {
+      "id": "cui2025",
+      "tipo": "relatorio_tecnico",
+      "titulo": "PaddleOCR 3.0 Technical Report",
+      "url": "https://arxiv.org/html/2507.05595v1",
+      "doi": "10.48550/arXiv.2507.05595",
+      "consulta": "Resumo e seção 2.1",
+      "uso": "Contexto do PP-OCRv5; não extrapolar resultados da configuração server para o checkpoint latino mobile.",
+      "data_consulta": "2026-10-20"
+    },
+    {
+      "id": "rapidocr",
+      "tipo": "documentacao_primaria",
+      "titulo": "Lista de modelos RapidOCR",
+      "url": "https://rapidai.github.io/RapidOCRDocs/main/en/model_list/",
+      "consulta": "Lista e rotas de modelos",
+      "uso": "Conversões ONNX e rota latina PP-OCRv5; checkpoint efetivo identificado por hash no experimento.",
+      "data_consulta": "2026-10-20"
+    },
+    {
+      "id": "kiessling2026",
+      "tipo": "ficha_de_modelo",
+      "titulo": "PP-OCRv6 (medium) multilingual handwritten and printed text recognition model",
+      "url": "https://zenodo.org/records/21788410",
+      "doi": "10.5281/zenodo.21788410",
+      "consulta": "Identificação, descrição e limitações da ficha v1",
+      "uso": "Checkpoint para Kraken e diversidade das convenções. Sobreposição do pré-treino com o manuscrito não auditada.",
+      "data_consulta": "2026-10-20"
+    }
+  ]
+}

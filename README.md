@@ -37,8 +37,9 @@ e pré-processamentos diferem; a diferença não pode ser atribuída somente à 
 
 - [Referência assistida, decisões e dúvidas](docs/revisao_humana/traslado_269r/referencia_assistida_20261020/README.md).
 - [Comparação dos 24 recortes, bruto e auditoria](docs/experimentos/traslado_269r_reconhecedores_24_20261020/README.md).
-- [Notebook executado, artigo, tabelas e figuras](docs/entregas/pi_iv_pln_20261020/README.md).
-- [Pendências de PI IV e PLN](docs/entregas/pi_iv_pln_20261020/adequacao_academica.md):
+- [Notebook, artigo e evidências com a reconferência de 21/10](docs/entregas/pi_iv_pln_20261022/README.md),
+  preservando o [pacote original de 20/10](docs/entregas/pi_iv_pln_20261020/README.md).
+- [Pendências de PI IV e PLN](docs/entregas/pi_iv_pln_20261022/adequacao_academica.md):
   rubricas, modelo de artigo, revisão bibliográfica e revisão final dos autores.
 
 O catálogo anterior de **1831** continua separado: três fólios candidatos, 94

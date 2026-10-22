@@ -1,6 +1,6 @@
 # Índice da documentação
 
-Estado em 21/10/2026, na branch principal e padrão `main`.
+Estado em 22/10/2026, na branch principal e padrão `main`.
 O escopo permanece fechado para novas funções.
 
 Use a `main` para consultar a versão atual e iniciar novas contribuições.
@@ -21,9 +21,10 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 | [Referência assistida do 269r](revisao_humana/traslado_269r/referencia_assistida_20261020/README.md) | 24 linhas, cinco coberturas; 16 validadas e oito ressalvas |
 | [Reconferência das oito ressalvas](revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/consolidacao.md) | Rodada concluída com dúvidas e apoio editorial preservados; registro aditivo, sem alterar a referência ou as métricas congeladas |
 | [Comparação de reconhecedores](experimentos/traslado_269r_reconhecedores_24_20261020/README.md) | PP-OCRv5 × PP-OCRv6, desenvolvimento |
-| [Notebook, artigo e evidências](entregas/pi_iv_pln_20261020/README.md) | Notebook executado; artigo em primeiro rascunho |
+| [Notebook, artigo e evidências — versão de 22/10](entregas/pi_iv_pln_20261022/README.md) | Reconferência posterior incorporada; oito ressalvas históricas e métricas de 20/10 preservadas |
+| [Entrega acadêmica congelada de 20/10](entregas/pi_iv_pln_20261020/README.md) | Pacote original preservado; referência das métricas e da CI atual |
 | [CI acadêmica](manutencao/ci_academica_20261021/README.md) | Auditoria e reexecução do notebook, sem inferência; métricas, tabelas e oito ressalvas conferidas |
-| [Adequação acadêmica](entregas/pi_iv_pln_20261020/adequacao_academica.md) | Rubricas, revisão bibliográfica e revisão dos autores pendentes |
+| [Adequação acadêmica](entregas/pi_iv_pln_20261022/adequacao_academica.md) | Rubricas, demais buscas, triagem/leitura bibliográfica e revisão dos autores pendentes |
 | [Enquadramento das disciplinas](academic_alignment.md) | Dois reconhecedores em PLN; enquadramento PI IV a confirmar |
 | [Protocolo bibliográfico de PI IV](literature_review.md) | PP-OCRv5 × PP-OCRv6; B01/B02 executadas no arXiv, demais buscas e seleção pendentes |
 | [Primeira coleta bibliográfica](bibliografia/arxiv_b01_b02_20261021/README.md) | B01: 3 registros; B02: 2; cinco IDs distintos, todos v1; um já conhecido; sem inclusão definitiva |
