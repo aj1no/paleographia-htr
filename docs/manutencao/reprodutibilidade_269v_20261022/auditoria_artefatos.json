@@ -1,0 +1,46 @@
+{
+  "resultado": "conferencia_parcial_aprovada",
+  "versao_auditoria": 2,
+  "base_git_historica": "4d429c9c1a51d616b84452269895e4951f4464c4",
+  "modo": "artefatos",
+  "auditoria_completa": false,
+  "hash_pdf_original_verificado": false,
+  "comparacao_bytes_imagem_embutida_executada": false,
+  "facsimile_fornecido": null,
+  "caminho_original_preservado": "data/raw/import_20261015/6e82cef18b04_5b58a915f024a80e.pdf",
+  "sha256_pdf_esperado": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0",
+  "checagens_nao_executadas": [
+    "Hash dos bytes do PDF original",
+    "Comparação do JPEG publicado com a imagem embutida no PDF original"
+  ],
+  "novas_inferencias": 0,
+  "tipo": "diagnostico_de_desenvolvimento_contra_edicao_publicada",
+  "arquivos_conferidos": 69,
+  "recortes_automaticos": 36,
+  "unidades_editoriais": 34,
+  "pacotes_historicos_arquivos_conferidos": 248,
+  "editor_alterado": false,
+  "treinamento": false,
+  "referencia_independente": false,
+  "metrics": {
+    "characters": {
+      "substitutions": 172,
+      "deletions": 50,
+      "insertions": 15,
+      "hits": 1216,
+      "reference_length": 1438,
+      "errors": 237,
+      "rate": 0.16481223922114047
+    },
+    "words": {
+      "substitutions": 124,
+      "deletions": 25,
+      "insertions": 4,
+      "hits": 123,
+      "reference_length": 272,
+      "errors": 153,
+      "rate": 0.5625
+    }
+  },
+  "distancias_conferidas_independentemente": true
+}

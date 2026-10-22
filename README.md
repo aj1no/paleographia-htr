@@ -43,6 +43,9 @@ e pré-processamentos diferem; a diferença não pode ser atribuída somente à 
   diagnóstico de desenvolvimento com os mesmos pesos e parâmetros do reto; CER 16,48%,
   WER 56,25%, preservando o bruto, as revisões e as dúvidas anteriores. Mesmo documento,
   sem treinamento ou teste reservado.
+- [Auditoria atual do verso e dependência do PDF](docs/manutencao/reprodutibilidade_269v_20261022/README.md):
+  recuperação da fonte exata pelo RAR versionado, caminho externo com hash obrigatório
+  e distinção entre auditoria completa e conferência parcial. Os pacotes originais foram preservados.
 - [Notebook, artigo e evidências com a reconferência de 21/10](docs/entregas/pi_iv_pln_20261022/README.md),
   preservando o [pacote original de 20/10](docs/entregas/pi_iv_pln_20261020/README.md).
 - [Pendências de PI IV e PLN](docs/entregas/pi_iv_pln_20261022/adequacao_academica.md):
@@ -95,6 +98,10 @@ e 22/10, sem pesos ou nova inferência. Confere métricas, cinco ou seis tabelas
 as oito ressalvas, preservando os pacotes publicados e as decisões posteriores.
 Veja a [CI acadêmica e seus artefatos](docs/manutencao/ci_academica_duas_versoes_20261022/README.md)
 e a [entrega acadêmica original](docs/entregas/pi_iv_pln_20261020/README.md).
+Os diagnósticos integrais do 269 reto e verso não fazem parte dessas verificações
+automáticas. O README congelado da entrega de 22/10 conserva uma orientação anterior
+à matriz; a [nota atual de reprodução e CI](docs/manutencao/reprodutibilidade_269v_20261022/README.md)
+esclarece essa diferença sem modificar o pacote histórico.
 
 ## Organização
 

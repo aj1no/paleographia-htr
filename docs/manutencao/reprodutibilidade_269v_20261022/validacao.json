@@ -1,0 +1,94 @@
+{
+  "registrado_em_utc": "2026-10-22T18:13:26.032280+00:00",
+  "resultado": "aprovado",
+  "base_git": "4d429c9c1a51d616b84452269895e4951f4464c4",
+  "escopo": "Correção aditiva da auditoria do verso e orientação ativa da CI; sem alterar pacotes históricos.",
+  "novas_inferencias": 0,
+  "treinamento": false,
+  "referencia_alterada": false,
+  "metricas_alteradas": false,
+  "teste_reservado": false,
+  "tipo_dos_resultados": "diagnostico_de_desenvolvimento",
+  "testes_novo_comportamento": {
+    "comando": "python -m pytest -q docs/manutencao/reprodutibilidade_269v_20261022/test_verificar.py",
+    "aprovados": 6,
+    "omitidos": 0,
+    "duracao_segundos": 15.57,
+    "ambiente": "git archive HEAD isolado; sem PDF extraído no caminho histórico e sem pesos; recuperação do RAR versionado; sem rede nas auditorias.",
+    "casos": [
+      {
+        "caso": "fonte_ausente",
+        "resultado": "rejeitada_com_mensagem_hash_e_proximo_comando",
+        "codigo_saida": 2
+      },
+      {
+        "caso": "fonte_incorreta_edicao_textual",
+        "resultado": "rejeitada_por_hash",
+        "codigo_saida": 2
+      },
+      {
+        "caso": "fonte_correta_externa",
+        "resultado": "auditoria_completa_aprovada",
+        "codigo_saida": 0
+      },
+      {
+        "caso": "recuperacao_rar_versionado",
+        "resultado": "PDF_exato_confirmado"
+      },
+      {
+        "caso": "modo_artefatos_sem_PDF",
+        "resultado": "conferencia_parcial_aprovada_sem_comparacao_com_PDF",
+        "codigo_saida": 0
+      },
+      {
+        "caso": "bruto_adulterado_em_copia",
+        "resultado": "rejeitado_por_hash",
+        "codigo_saida": 2
+      }
+    ]
+  },
+  "verificadores_afetados": {
+    "completo": "auditoria_completa.json",
+    "artefatos": "auditoria_artefatos.json",
+    "arquivos_historicos_conferidos": 69,
+    "pacotes_historicos_arquivos_conferidos": 248
+  },
+  "preservacao": {
+    "alteracoes_em_versionados_existentes": [
+      ".gitattributes",
+      "README.md",
+      "docs/README.md"
+    ],
+    "arquivos_historicos_alterados": [],
+    "arquivos_workspace_inalterados": 82,
+    "ressalvas_historicas_preservadas": [
+      11,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24
+    ],
+    "autoria_revisoes_preservada": true
+  },
+  "CI": {
+    "workflow_sha256": "9a31068eec6ef5074498ea7e879b7116f5234d6b877ed20c9e51bd08281941a5",
+    "ambientes_leves": 4,
+    "trabalhos_academicos": [
+      "20261020",
+      "20261022"
+    ],
+    "diagnosticos_integrais_cobertos": false,
+    "workflow_alterado": false,
+    "README_congelado_20261022_preservado": true
+  },
+  "links_locais_conferidos": 78,
+  "limitacoes": [
+    "O verificador histórico continua congelado; usar a versão v2 e a orientação ativa.",
+    "Sem PDF, somente conferência parcial pode ser declarada.",
+    "Os diagnósticos integrais permanecem fora da CI automática.",
+    "Nenhum diagnóstico foi promovido a teste reservado ou avaliação entre documentos."
+  ]
+}

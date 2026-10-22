@@ -1,0 +1,43 @@
+{
+  "resultado": "aprovado",
+  "versao_auditoria": 2,
+  "base_git_historica": "4d429c9c1a51d616b84452269895e4951f4464c4",
+  "modo": "completo",
+  "auditoria_completa": true,
+  "hash_pdf_original_verificado": true,
+  "comparacao_bytes_imagem_embutida_executada": true,
+  "facsimile_fornecido": "C:\\Users\\takem\\OneDrive\\Documentos\\ChatGPT\\PaleographIA\\output\\fontes\\traslado_269_273.pdf",
+  "caminho_original_preservado": "data/raw/import_20261015/6e82cef18b04_5b58a915f024a80e.pdf",
+  "sha256_pdf_esperado": "e1c779a4713340adbf5e6102b0c3edc716c12612d18597e9d22228676ab9b3e0",
+  "checagens_nao_executadas": [],
+  "novas_inferencias": 0,
+  "tipo": "diagnostico_de_desenvolvimento_contra_edicao_publicada",
+  "arquivos_conferidos": 69,
+  "recortes_automaticos": 36,
+  "unidades_editoriais": 34,
+  "pacotes_historicos_arquivos_conferidos": 248,
+  "editor_alterado": false,
+  "treinamento": false,
+  "referencia_independente": false,
+  "metrics": {
+    "characters": {
+      "substitutions": 172,
+      "deletions": 50,
+      "insertions": 15,
+      "hits": 1216,
+      "reference_length": 1438,
+      "errors": 237,
+      "rate": 0.16481223922114047
+    },
+    "words": {
+      "substitutions": 124,
+      "deletions": 25,
+      "insertions": 4,
+      "hits": 123,
+      "reference_length": 272,
+      "errors": 153,
+      "rate": 0.5625
+    }
+  },
+  "distancias_conferidas_independentemente": true
+}
