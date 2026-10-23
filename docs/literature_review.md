@@ -8,6 +8,15 @@ As regras operacionais desta versão permanecem iguais. A adequação
 à rubrica de PI IV continua sem confirmação docente. Este documento define
 o trabalho a realizar; não apresenta resultados de revisão sistemática.
 
+**Adendo de 23/10/2026:** a [bibliografia comentada revista](bibliografia/README.md)
+incorpora fontes complementares e fichamentos parciais, com autoria/escopo de
+consulta e vínculos a B01/B02. Este adendo mantém consultas, perguntas, corte
+temporal e critérios da versão de 21/10. Os metadados/trechos consultados não
+equivalem à leitura integral ou inclusão final na síntese. A [expansão e o ensaio
+técnico de ajuste fino](dataset_expansion_20261023/README.md) são evidências
+locais posteriores ao diagnóstico histórico abaixo; o teste científico segue
+pendente, sem reclassificar o 269r como reservado.
+
 ## 1. Objetivo, contexto e limites
 
 Organizar a revisão que fundamentará a comparação de **latin PP-OCRv5

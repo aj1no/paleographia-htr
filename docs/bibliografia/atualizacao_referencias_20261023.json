@@ -1,0 +1,27 @@
+{
+  "updated_on": "2026-10-23",
+  "updated_by": "Codex (IA)",
+  "original": {
+    "path": "docs/bibliografia/origem_referencias_20261023/PaleographIA_Referencias_Comentadas_20261023_original.md",
+    "sha256": "c4e2cd86b40e41ed2b48921ec36782cdc8722a2412547572c44aa91dc311397d"
+  },
+  "revised": {
+    "path": "docs/bibliografia/referencias_comentadas_20261023.md",
+    "sha256": "a4f9f13938a67985b53eb937a9bba88d21c7df3a88c3d8bb4e66f96205dcceb1"
+  },
+  "delivered_copy": {
+    "path": "D:/Downloads/PaleographIA_Referencias_Comentadas_20261023.md",
+    "sha256": "a4f9f13938a67985b53eb937a9bba88d21c7df3a88c3d8bb4e66f96205dcceb1"
+  },
+  "changes": [
+    "Paginação de P3: 213–230; link neutro de P2.",
+    "Estágio real: ensaio técnico executado; avaliação científica pendente.",
+    "Tabela de adaptações das normas, incluindo 1.10 e 2.1.",
+    "Componentes CTC/GTC conforme registros locais.",
+    "Metadados arXiv v1 de T4 e cautela com campos provisórios.",
+    "Fichamentos parciais comparáveis; pendências humanas explícitas.",
+    "Vínculos canônicos para T3/T4/P6; sem recontar estudos ou concluir revisão sistemática."
+  ],
+  "frozen_academic_bundles_modified": false,
+  "reference_registry": "docs/bibliografia/referencias_20261023.json"
+}

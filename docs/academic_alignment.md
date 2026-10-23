@@ -9,6 +9,15 @@ iniciais e afiliação à FATEC Jundiaí, curso de Ciência de Dados, 5º semest
 Jundiaí – SP. Modelos e rubricas continuam pendentes.
 A revisão bibliográfica inicial não substitui a revisão sistemática de PI IV.
 
+**Atualização de 23/10/2026:** a [bibliografia comentada revista](bibliografia/referencias_comentadas_20261023.md)
+integra paleografia, corpus, reconhecimento e documentação de dados, com
+[fichamentos parciais e campos pendentes](bibliografia/fichamentos_parciais_20261023.md).
+O [ensaio técnico de ajuste fino PP-OCRv6](dataset_expansion_20261023/README.md)
+foi executado com dois passos de otimização e recarga do peso. É uma demonstração
+técnica sobre desenvolvimento conhecido; avaliação científica, revisão
+sistemática e adequação à rubrica continuam pendentes. Os pacotes acadêmicos
+anteriores conservam os conteúdos e estados de sua data.
+
 **Atualização de 21/10/2026:** o [protocolo bibliográfico](literature_review.md)
 define PB1–PB3, buscas por componentes e por avaliação de reconhecimento histórico,
 critérios de seleção, extração e síntese para PP-OCRv5 × PP-OCRv6. A

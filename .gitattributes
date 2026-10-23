@@ -77,3 +77,9 @@ scripts/audit_dataset_expansion.py text eol=lf
 tests/test_corpus_expansion.py text eol=lf
 tests/test_dataset_expansion_audit.py text eol=lf
 tests/test_ppocrv6_training.py text eol=lf
+# Bibliografia complementar: preservar original, revisão e recibos por hash.
+docs/bibliografia/origem_referencias_20261023/** -text -whitespace
+docs/bibliografia/referencias_comentadas_20261023.md text eol=lf
+docs/bibliografia/referencias_20261023.json text eol=lf
+docs/bibliografia/atualizacao_referencias_20261023.json text eol=lf
+docs/bibliografia/fichamentos_parciais_20261023.md text eol=lf

@@ -12,6 +12,7 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 - [Apresentação e resultados atuais](../README.md).
 - [Execução e revisão local](runbook.md), [ambientes e modelos](environment.md).
 - [Guia para revisar o projeto](guia_revisao_gpt.md).
+- [Bibliografia comentada, fontes e fichamentos parciais](bibliografia/README.md).
 - [Revisão do repositório e candidatos a organização](revisao_repositorio_20261020.md).
 
 ## Entrega atual de PI IV e PLN
