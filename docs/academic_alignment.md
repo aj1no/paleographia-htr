@@ -9,6 +9,15 @@ iniciais e afiliação à FATEC Jundiaí, curso de Ciência de Dados, 5º semest
 Jundiaí – SP. Modelos e rubricas continuam pendentes.
 A revisão bibliográfica inicial não substitui a revisão sistemática de PI IV.
 
+**Participação da equipe — adição de 23/10/2026:** o [notebook colaborativo](entregas/pi_iv_pln_20261023_equipe/README.md)
+retoma as responsabilidades previstas no primeiro artigo, com atividades por
+integrante e registro de relatos. O solicitante informou discussão coletiva
+e execução prática concentrada nele; tarefas previstas não foram convertidas
+em realizações individuais. Os colegas podem documentar contribuições concretas
+às discussões e às análises, com data, evidência e uso de IA. A demonstração
+foi executada por Codex com quatro formulários vazios. O artigo e os notebooks
+históricos permanecem preservados até a consolidação dos relatos pela equipe.
+
 **Preparação editorial posterior de 23/10/2026:** o [artigo em PDF e Word](entregas/pi_iv_pln_20261023_entrega/README.md)
 foi revisado integralmente e diagramado em três páginas, com referências,
 abstract e seção Comentários identificando ferramenta de IA e utilização.

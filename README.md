@@ -19,6 +19,9 @@ estão disponíveis, com leitura por IA e revisão dos autores pendente.
 A [versão do artigo preparada para entrega](docs/entregas/pi_iv_pln_20261023_entrega/README.md)
 inclui PDF e Word com três páginas, citações conferidas e declaração de IA;
 as pendências de PI IV e PLN estão registradas separadamente.
+O [notebook colaborativo da equipe](docs/entregas/pi_iv_pln_20261023_equipe/README.md)
+recupera a divisão do primeiro artigo e oferece atividades e campos de relato
+para Caio, Guilherme, Tiago e Rodolfo. As contribuições individuais ficam a preencher.
 
 A [versão principal no GitHub](https://github.com/aj1no/paleographia-htr/tree/main)
 contém o programa, a documentação e as evidências publicadas. A branch
