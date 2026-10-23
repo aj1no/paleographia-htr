@@ -6,10 +6,17 @@ em andamento, sem decisão final de inclusão ou leitura integral de todo o lote
 
 - [Referências comentadas revistas](referencias_comentadas_20261023.md): P1–P6,
   T1–T6 e duas fontes documentais; estágio real do treinamento e limites de uso.
-- [Fichamentos parciais](fichamentos_parciais_20261023.md): escopo de consulta,
-  matriz comparável inicial e pendências de T1/T4.
+- [Fichamentos integrais de T1 e T4](leitura_t1_t4_20261023/README.md): leitura
+  por IA concluída, PDFs com licença e hashes, extração e avaliação de qualidade;
+  conferência humana e seleção final pendentes.
+- [Fichamentos parciais anteriores](fichamentos_parciais_20261023.md): histórico
+  da consulta inicial, sucedido pelas fichas integrais de T1/T4.
+- [Artigo com fundamentação ampliada](../entregas/pi_iv_pln_20261023_fundamentacao/README.md):
+  integração das duas leituras em versão aditiva, com resultados preservados.
 - [Registro estruturado das referências](referencias_20261023.json): IDs,
-  fontes, natureza, versões, vínculos e estado real de leitura/seleção.
+  fontes, natureza, versões, vínculos e estado real de leitura/seleção. O campo
+  `consultation_scope` conserva a consulta inicial; `reading_updates` e
+  `current_reading_scope` registram a leitura integral posterior de T1/T4.
 - [Recibo da revisão do Markdown](atualizacao_referencias_20261023.json): hashes
   do original e da revisão; o arquivo em Downloads foi atualizado com os mesmos
   bytes da cópia versionada. O caminho de Downloads é uma cópia de entrega;

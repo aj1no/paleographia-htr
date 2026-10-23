@@ -2,15 +2,22 @@
 
 Seguir o [protocolo de PI IV](../literature_review.md) e vincular cada ocorrência
 ao [registro de buscas](registro_buscas.md). A tabela de ocorrências registra
-somente a recuperação B01/B02 no arXiv. **Triagem formal, leitura integral e
-fichamentos deste lote estão pendentes.** As fontes já conhecidas mantêm origem e escopo
+somente a recuperação B01/B02 no arXiv. **Triagem formal e decisão final estão
+pendentes; T4 já tem leitura integral e fichamento por IA, conforme atualização
+abaixo.** As fontes já conhecidas mantêm origem e escopo
 real de leitura; não herdam aprovação para inclusão.
 
 **Adição de 23/10/2026:** a [seleção comentada](referencias_comentadas_20261023.md)
 e os [fichamentos parciais](fichamentos_parciais_20261023.md) acrescentam consultas
 dirigidas e pendências explícitas. A tabela histórica abaixo continua como
 recuperação de 21/10; ver os vínculos canônicos no [registro complementar](registro_buscas.md#seleção-complementar-de-23102026).
-Nenhuma decisão final de triagem ou leitura integral foi atribuída a essa adição.
+Nenhuma decisão final de triagem ou leitura integral foi atribuída àquela
+consulta inicial.
+
+**Atualização posterior de 23/10/2026:** os [fichamentos integrais de T1/T4](leitura_t1_t4_20261023/README.md)
+completam os campos de extração e qualidade com páginas de evidência. Leitura
+por IA concluída, conferência humana pendente; uso na fundamentação do artigo
+não equivale a decisão final de inclusão na revisão sistemática.
 
 ## Ocorrências, registros canônicos e seleção
 
@@ -29,14 +36,16 @@ Autores completos, URLs, datas UTC e proveniência estão em
 [resultados.json](arxiv_b01_b02_20261021/resultados.json). IDs canônicos agrupam
 ocorrências do mesmo identificador; não afirmam independência entre experimentos.
 O resumo e a seção 2.1 do relatório de 2025 já haviam sido consultados antes;
-nenhuma leitura integral foi atribuída a esta coleta. As tabelas seguintes
-continuam sem decisões de seleção ou fichamentos de artigos.
+nenhuma leitura integral foi atribuída à coleta de 21/10. As linhas datadas
+abaixo registram o progresso posterior sem reclassificar aquela coleta.
 
 Registrar decisões por etapa e por adição. A leitura integral é distinta da
 consulta ao resumo. Não usar ausência de resumo como exclusão automática.
 
 | ID canônico | Etapa | Leitor e data | Decisão: manter/excluir/incluir/pendente | PB atendida e justificativa | Código e motivo principal | Página/seção ou tentativas de acesso | Classe: empírico/apoio técnico/contexto | Conferente e decisão final |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DOI-10.1108/JD-07-2018-0114 (T1) | Leitura integral posterior; uso contextual | Codex (IA), 23/10/2026 | Pendente de conferência e inclusão final | PB2/PB3: referência consistente, fluxo arquivístico e limites dos casos | Sem código de exclusão; não é benchmark comparativo uniforme | PDF UCL, p. 954–976; bloqueio anterior em Edimburgo registrado | Contexto e apoio metodológico | Conferente não registrado; decisão final pendente |
+| ARXIV-2609.20064 (T4) | Leitura integral posterior; extração empírica | Codex (IA), 23/10/2026 | Pendente de conferência e inclusão final | PB1–PB3: arquitetura, adaptação, métricas e domínio | Sem código de exclusão; preprint v1 | PDF arXiv v1, p. 1–14 | Empírico, preprint | Conferente não registrado; decisão final pendente |
 
 ## Ficha a copiar somente quando houver estudo real
 
@@ -82,10 +91,12 @@ ou não aplicável; sempre localizar evidência e justificar não aplicável.
 | Condições para reprodução | a verificar | a preencher | a preencher |
 | Limites das conclusões | a verificar | a preencher | a preencher |
 
-## Matriz de síntese a preencher após a leitura
+## Matriz de síntese após a leitura
 
 | ID canônico | Classe e estado editorial | PB | Corpus/unidade de divisão | Modelo e adaptação | Referência/normalização | Métricas e condições dos resultados | Limitações/qualidade | Relação com o piloto |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| T1 / DOI-10.1108/JD-07-2018-0114 | Contexto, artigo de periódico | PB2/PB3 | Casos heterogêneos; partições não uniformizadas | Transkribus e modelos de diferentes projetos | Consistência recomendada; Unicode/agregação não uniformizados | CER por caso arredondado; não é benchmark comum | [Ficha integral e qualidade](leitura_t1_t4_20261023/T1.md); revisão humana pendente | Fundamenta fluxo e política; não mede esforço local |
+| T4 / ARXIV-2609.20064v1 | Empírico, preprint | PB1–PB3 | Pré-treino multilíngue, CATMuS, CMMHWR, CoMMA, MAKHZAN; restrições de divisão | PP-OCRv6 e CRNN; zero-shot, treino do zero e ajuste | NFD e espaços U+0020; referências dos corpora | CER/WER micro e macro, com resultados negativos; condições na ficha | [Ficha integral e qualidade](leitura_t1_t4_20261023/T4.md); reprodução externa não executada | Fundamenta transferência e limites; sem comparação numérica direta |
 
 Não somar taxas heterogêneas nem ordenar modelos por resultados de conjuntos
 diferentes. A síntese local mantém **diagnóstico de desenvolvimento**, referência
