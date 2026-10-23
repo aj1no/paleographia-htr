@@ -2,8 +2,9 @@
 
 Protocolo: [versão de 21/10/2026](../literature_review.md).
 Estado: **coleta parcial iniciada: B01/B02 concluídas no arXiv; seleção
-complementar recebida e conferida em 23/10; demais buscas, triagem formal e
-leitura integral pendentes**. Não há estudos incluídos por decisão final nem
+complementar recebida e conferida em 23/10; T1/T4 com leitura integral por IA
+concluída; demais buscas e leituras, conferência humana e triagem formal
+pendentes**. Não há estudos incluídos por decisão final nem
 total global apurado da revisão.
 
 ## Identificação antes da primeira execução
@@ -106,4 +107,20 @@ O artigo T4 difere da ficha de modelo Zenodo denominada `kiessling2026` nos
 pacotes acadêmicos. T5 reúne a publicação CACM e a versão arXiv como versões
 relacionadas, sem contá-las automaticamente como dois estudos.
 Os [fichamentos parciais de T1/T4](fichamentos_parciais_20261023.md) localizam
-o que foi consultado e o que falta ler; não conferem inclusão por si mesmos.
+o escopo da consulta inicial; foram sucedidos pela leitura registrada abaixo.
+
+## Leitura integral posterior de T1/T4 — 23/10/2026
+
+Codex (IA) leu integralmente T1 (23 páginas, UCL) e T4 v1 (14 páginas, arXiv),
+incluindo notas e referências, e preencheu os [fichamentos e a avaliação de qualidade](leitura_t1_t4_20261023/README.md).
+T1 foi obtido por URL institucional alternativa após o bloqueio em Edimburgo.
+O [manifesto](leitura_t1_t4_20261023/manifesto.json) fixa URLs, versões, hashes,
+licença e páginas lidas. As fontes externas citadas pelos artigos não foram
+automaticamente consideradas lidas.
+
+Contagem desta etapa: **dois textos integrais lidos por IA, 37 páginas, dois
+fichamentos concluídos**. São os mesmos IDs já registrados: não acrescentam
+ocorrências B01/B02 nem alteram o total de 14 entradas complementares.
+Conferência humana e inclusão final permanecem pendentes. As consultas, o
+corte de 21/10 e a cobertura do protocolo não foram alterados; a data desta
+leitura é posterior, e os dois trabalhos já existiam no corte previsto.

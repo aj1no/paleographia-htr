@@ -18,6 +18,12 @@ técnica sobre desenvolvimento conhecido; avaliação científica, revisão
 sistemática e adequação à rubrica continuam pendentes. Os pacotes acadêmicos
 anteriores conservam os conteúdos e estados de sua data.
 
+**Progresso posterior de 23/10/2026:** os [fichamentos integrais de T1/T4](bibliografia/leitura_t1_t4_20261023/README.md)
+estão concluídos por IA e fundamentam uma [nova versão do artigo](entregas/pi_iv_pln_20261023_fundamentacao/README.md).
+Resultados, referência assistida e oito ressalvas do diagnóstico permanecem.
+A revisão dos autores, a inclusão final na revisão sistemática e as demais
+exigências acadêmicas continuam pendentes.
+
 **Atualização de 21/10/2026:** o [protocolo bibliográfico](literature_review.md)
 define PB1–PB3, buscas por componentes e por avaliação de reconhecimento histórico,
 critérios de seleção, extração e síntese para PP-OCRv5 × PP-OCRv6. A

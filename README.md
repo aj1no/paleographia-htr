@@ -13,6 +13,9 @@ depende de novos pares revisados e partições documentais confirmadas.
 Veja [fontes, recortes para revisão, evidências e explicação para o professor](docs/dataset_expansion_20261023/README.md).
 As [referências comentadas e seus vínculos com o método](docs/bibliografia/README.md)
 foram incorporadas à documentação, distinguindo consulta parcial e leitura integral.
+Os [fichamentos integrais de T1/T4](docs/bibliografia/leitura_t1_t4_20261023/README.md)
+e o [artigo com fundamentação ampliada](docs/entregas/pi_iv_pln_20261023_fundamentacao/README.md)
+estão disponíveis, com leitura por IA e revisão dos autores pendente.
 
 A [versão principal no GitHub](https://github.com/aj1no/paleographia-htr/tree/main)
 contém o programa, a documentação e as evidências publicadas. A branch

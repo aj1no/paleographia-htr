@@ -104,7 +104,21 @@
       "human_review": "pending",
       "final_inclusion": "pending",
       "prior_records": [],
-      "source_document": "docs/bibliografia/referencias_comentadas_20261023.md"
+      "source_document": "docs/bibliografia/referencias_comentadas_20261023.md",
+      "reading_updates": [
+        {
+          "on": "2026-10-23",
+          "reader": "Codex (IA)",
+          "scope": "integral",
+          "pdf_pages": 23,
+          "notes": "docs/bibliografia/leitura_t1_t4_20261023/T1.md",
+          "source_manifest": "docs/bibliografia/leitura_t1_t4_20261023/manifesto.json",
+          "source_sha256": "3131ba418e684029078611d06aa7316818d60a4c83589a4b9245950066b415dd",
+          "human_review": "pending",
+          "final_inclusion": "pending"
+        }
+      ],
+      "current_reading_scope": "integral por IA; conferência humana pendente"
     },
     {
       "id": "T2",
@@ -153,7 +167,21 @@
         "B02-ARXIV-001"
       ],
       "source_document": "docs/bibliografia/referencias_comentadas_20261023.md",
-      "version": "v1"
+      "version": "v1",
+      "reading_updates": [
+        {
+          "on": "2026-10-23",
+          "reader": "Codex (IA)",
+          "scope": "integral",
+          "pdf_pages": 14,
+          "notes": "docs/bibliografia/leitura_t1_t4_20261023/T4.md",
+          "source_manifest": "docs/bibliografia/leitura_t1_t4_20261023/manifesto.json",
+          "source_sha256": "b800bb5de7694472fe417b29131b4f5a7eaffb2488ec37f1e7bbdad406bfbcbe",
+          "human_review": "pending",
+          "final_inclusion": "pending"
+        }
+      ],
+      "current_reading_scope": "integral por IA; conferência humana pendente"
     },
     {
       "id": "T5",

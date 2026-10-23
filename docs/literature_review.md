@@ -1,8 +1,9 @@
 # Protocolo bibliográfico de PI IV — PP-OCRv5 × PP-OCRv6
 
 Versão de **21/10/2026**, registrada no commit `1faf5c2`. Estado atual:
-**B01 e B02 executadas no arXiv; demais buscas, triagem formal e fichamentos
-pendentes**. A [coleta datada](bibliografia/arxiv_b01_b02_20261021/README.md)
+**B01 e B02 executadas no arXiv; T1/T4 com fichamentos integrais por IA;
+demais buscas e leituras, triagem formal e conferência humana pendentes**.
+A [coleta datada](bibliografia/arxiv_b01_b02_20261021/README.md)
 registra cinco ocorrências, versões e proveniência, sem inclusão definitiva.
 As regras operacionais desta versão permanecem iguais. A adequação
 à rubrica de PI IV continua sem confirmação docente. Este documento define
@@ -16,6 +17,13 @@ equivalem à leitura integral ou inclusão final na síntese. A [expansão e o e
 técnico de ajuste fino](dataset_expansion_20261023/README.md) são evidências
 locais posteriores ao diagnóstico histórico abaixo; o teste científico segue
 pendente, sem reclassificar o 269r como reservado.
+
+**Progresso posterior de 23/10/2026:** T1 e T4 v1 foram lidos integralmente por
+IA, com [fichamentos, fontes e avaliação de qualidade](bibliografia/leitura_t1_t4_20261023/README.md).
+Foram incorporados à [fundamentação do artigo](entregas/pi_iv_pln_20261023_fundamentacao/README.md)
+como síntese dirigida. Conferência humana e inclusão final seguem pendentes;
+as demais fontes conservam seu estado real de leitura. Não há emenda das buscas,
+do corte ou dos critérios, nem declaração de conclusão da revisão sistemática.
 
 ## 1. Objetivo, contexto e limites
 

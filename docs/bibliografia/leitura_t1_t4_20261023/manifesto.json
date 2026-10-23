@@ -1,0 +1,121 @@
+{
+  "recorded_on": "2026-10-23",
+  "reader": "Codex (IA)",
+  "language": "en",
+  "scope": "Leitura integral dos dois PDFs, incluindo notas, referências e afiliações; conferência visual de tabelas e passagens críticas.",
+  "total_pdfs": 2,
+  "total_pages": 37,
+  "sources": [
+    {
+      "id": "T1",
+      "canonical_id": "DOI-10.1108/JD-07-2018-0114",
+      "version": "publicação em Journal of Documentation 75(5), 2019",
+      "title": "Transforming scholarship in the archives through handwritten text recognition: Transkribus as a case study",
+      "authors": "Guenter Muehlberger et al.",
+      "pages": 23,
+      "printed_pages": "954–976",
+      "metadata_url": "https://discovery.ucl.ac.uk/id/eprint/10065830/",
+      "download_url": "https://discovery.ucl.ac.uk/10065830/1/Schofield_10-1108_JD-07-2018-0114.pdf",
+      "local_pdf": "fontes/T1.pdf",
+      "sha256": "3131ba418e684029078611d06aa7316818d60a4c83589a4b9245950066b415dd",
+      "bytes": 851996,
+      "pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "notes": "T1.md",
+      "license": "CC BY 4.0; declaração na primeira página do PDF",
+      "ai_reading": "complete",
+      "human_review": "pending",
+      "final_systematic_inclusion": "pending"
+    },
+    {
+      "id": "T4",
+      "canonical_id": "ARXIV-2609.20064",
+      "version": "v1, 2026-09-17",
+      "title": "A Free Lunch? Adapting PP-OCRv6 for Historical Text Recognition",
+      "authors": "Benjamin Kiessling",
+      "pages": 14,
+      "printed_pages": "1–14",
+      "metadata_url": "https://arxiv.org/abs/2609.20064v1",
+      "download_url": "https://arxiv.org/pdf/2609.20064v1",
+      "local_pdf": "fontes/T4.pdf",
+      "sha256": "b800bb5de7694472fe417b29131b4f5a7eaffb2488ec37f1e7bbdad406bfbcbe",
+      "bytes": 1043975,
+      "pages_read": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "notes": "T4.md",
+      "license": "CC BY 4.0; declaração na primeira página do PDF",
+      "ai_reading": "complete",
+      "human_review": "pending",
+      "final_systematic_inclusion": "pending"
+    }
+  ],
+  "source_pdfs_unmodified": true,
+  "cited_works_in_sources_read": false,
+  "external_experiments_reproduced": false,
+  "systematic_review_completed": false,
+  "human_review": "pending",
+  "files": [
+    {
+      "path": "fontes/T1.pdf",
+      "sha256": "3131ba418e684029078611d06aa7316818d60a4c83589a4b9245950066b415dd",
+      "bytes": 851996
+    },
+    {
+      "path": "fontes/T4.pdf",
+      "sha256": "b800bb5de7694472fe417b29131b4f5a7eaffb2488ec37f1e7bbdad406bfbcbe",
+      "bytes": 1043975
+    },
+    {
+      "path": "README.md",
+      "sha256": "83ce13e83895bb5a9c4e5a4b6ed67c6430f3c820d6dd6894735bcb34fda6778e",
+      "bytes": 3289
+    },
+    {
+      "path": "T1.md",
+      "sha256": "d519730f31981038ba56d91e2ba8f70543a28cf14038d2e16820369ba4b9e3ac",
+      "bytes": 9279
+    },
+    {
+      "path": "T4.md",
+      "sha256": "ff7dfec39397c67dc056b35926fd10b970a0b3d01d03ef6694bbe6c125cc3f36",
+      "bytes": 11593
+    }
+  ]
+}

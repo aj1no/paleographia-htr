@@ -83,3 +83,6 @@ docs/bibliografia/referencias_comentadas_20261023.md text eol=lf
 docs/bibliografia/referencias_20261023.json text eol=lf
 docs/bibliografia/atualizacao_referencias_20261023.json text eol=lf
 docs/bibliografia/fichamentos_parciais_20261023.md text eol=lf
+# Leitura integral e artigo aditivo: conservar bytes dos PDFs, notas e recibos.
+docs/bibliografia/leitura_t1_t4_20261023/** -text -whitespace
+docs/entregas/pi_iv_pln_20261023_fundamentacao/** -text -whitespace

@@ -12,13 +12,14 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 - [Apresentação e resultados atuais](../README.md).
 - [Execução e revisão local](runbook.md), [ambientes e modelos](environment.md).
 - [Guia para revisar o projeto](guia_revisao_gpt.md).
-- [Bibliografia comentada, fontes e fichamentos parciais](bibliografia/README.md).
+- [Bibliografia comentada, fontes e fichamentos integrais de T1/T4](bibliografia/README.md).
 - [Revisão do repositório e candidatos a organização](revisao_repositorio_20261020.md).
 
 ## Entrega atual de PI IV e PLN
 
 | Material | Situação |
 | --- | --- |
+| [Artigo com fundamentação ampliada — 23/10](entregas/pi_iv_pln_20261023_fundamentacao/README.md) | T1/T4 lidos integralmente por IA; fundamentos e discussão atualizados; métricas preservadas; revisão dos autores pendente |
 | [Expansão do corpus e ajuste fino](dataset_expansion_20261023/README.md) | 15 fontes, oito novos recortes candidatos, núcleo 16/8 preservado; ensaio PP-OCRv6 com dois passos reais; avaliação científica pendente de revisão |
 | [Referência assistida do 269r](revisao_humana/traslado_269r/referencia_assistida_20261020/README.md) | 24 linhas, cinco coberturas; 16 validadas e oito ressalvas |
 | [Reconferência das oito ressalvas](revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/consolidacao.md) | Rodada concluída com dúvidas e apoio editorial preservados; registro aditivo, sem alterar a referência ou as métricas congeladas |
@@ -37,7 +38,8 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 O [protocolo de avaliação](evaluation_protocol.md) registra a mudança do plano
 de segmentação para o diagnóstico de reconhecedores. O [protocolo bibliográfico](literature_review.md)
 foi atualizado em 21/10/2026 para PP-OCRv5 × PP-OCRv6. B01 e B02 já foram
-executadas no arXiv; outras buscas, seleção e fichamentos continuam pendentes.
+executadas no arXiv; T1/T4 têm fichamentos integrais por IA. Outras buscas e
+leituras, conferência humana e seleção final continuam pendentes.
 Não é revisão sistemática concluída.
 Os [registros de busca](bibliografia/registro_buscas.md) e os
 [modelos de triagem/fichamento](bibliografia/triagem_e_fichamento.md) distinguem
