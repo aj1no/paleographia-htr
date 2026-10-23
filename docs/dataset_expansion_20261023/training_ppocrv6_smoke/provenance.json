@@ -1,0 +1,62 @@
+{
+  "config": {
+    "paths": {
+      "pages": "data/manifests/corpus_expandido_v02/core_pages.jsonl",
+      "lines": "data/manifests/corpus_expandido_v02/core_lines.jsonl"
+    },
+    "recognition": {
+      "backend": "kraken_ppocrv6",
+      "model": "models/kraken_ppocrv6_medium/medium.safetensors",
+      "sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+      "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+      "device": "cpu",
+      "precision": "float32"
+    },
+    "presentation": {
+      "automatic_transcription_enabled": false
+    },
+    "training": {
+      "engine": "ketos",
+      "mode": "technical_smoke",
+      "seed": 1831,
+      "epochs": 1,
+      "batch_size": 1,
+      "learning_rate": 1e-05,
+      "timeout_seconds": 300,
+      "train_line_ids": [
+        "l_traslado_269r_body_01",
+        "l_traslado_269r_body_02"
+      ],
+      "validation_line_ids": [
+        "l_traslado_269r_body_03"
+      ]
+    }
+  },
+  "plan_sha256": "a5e8691aa5912560c20490fe5e6f1ffafd2b1c8f5074967fe09985492f3ea805",
+  "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+  "base_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+  "host_python": "3.12.14",
+  "manifests": [
+    {
+      "path": "data/manifests/corpus_expandido_v02/core_pages.jsonl",
+      "sha256": "437de028e4c30ff4e0d64862379b402e97354233fa6c7b5dd56c80daa2fb827a"
+    },
+    {
+      "path": "data/manifests/corpus_expandido_v02/core_lines.jsonl",
+      "sha256": "1dbb893744e980a06027fa7ae8dce07abf9f18b102e58f6fcb093e04df48cc60"
+    }
+  ],
+  "code": [
+    {
+      "path": "src/paleographia/ppocrv6_training.py",
+      "sha256": "0866c5eea20a40e909ab2faae10435449eb2df6e0babf68468ad4e62aaeff9b1",
+      "snapshot": "implementation/ppocrv6_training.py"
+    },
+    {
+      "path": "src/paleographia/ppocrv6_training_worker.py",
+      "sha256": "a44f31aaad3c747b743447fe29be99e5df7a25bd3d5389d96abcfe0ae72dc700",
+      "snapshot": "implementation/ppocrv6_training_worker.py"
+    }
+  ],
+  "git_commit": "75b7b24aa2f03aa906aedf2c6d3dfecfa89cb627"
+}

@@ -1,0 +1,15 @@
+{
+  "local_only": true,
+  "files": [
+    {
+      "path": "experiments/ppocrv6_smoke_20261023_final/checkpoints/checkpoint_00-0.8750.ckpt",
+      "sha256": "902b9024effc037948853c4eeb1743955a815ee10dff125e1a5244fdf94354d3",
+      "bytes": 421749925
+    },
+    {
+      "path": "experiments/ppocrv6_smoke_20261023_final/checkpoints/best_0.8750.safetensors",
+      "sha256": "f6cc0f072a162772b628a7d71358353c6d0915170504aa5e77382090b4b0efa7",
+      "bytes": 63779636
+    }
+  ]
+}

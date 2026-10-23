@@ -1,7 +1,7 @@
 # Índice da documentação
 
-Estado em 22/10/2026, na branch principal e padrão `main`.
-O escopo permanece fechado para novas funções.
+Estado em 23/10/2026, na branch principal e padrão `main`.
+A expansão de fontes e o ajuste fino passaram a integrar a etapa acadêmica.
 
 Use a `main` para consultar a versão atual e iniciar novas contribuições.
 As branches anteriores e suas referências de publicação foram preservadas;
@@ -18,6 +18,7 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 
 | Material | Situação |
 | --- | --- |
+| [Expansão do corpus e ajuste fino](dataset_expansion_20261023/README.md) | 15 fontes, oito novos recortes candidatos, núcleo 16/8 preservado; ensaio PP-OCRv6 com dois passos reais; avaliação científica pendente de revisão |
 | [Referência assistida do 269r](revisao_humana/traslado_269r/referencia_assistida_20261020/README.md) | 24 linhas, cinco coberturas; 16 validadas e oito ressalvas |
 | [Reconferência das oito ressalvas](revisao_humana/traslado_269r/reconferencia_ressalvas_20261021/consolidacao.md) | Rodada concluída com dúvidas e apoio editorial preservados; registro aditivo, sem alterar a referência ou as métricas congeladas |
 | [Comparação de reconhecedores](experimentos/traslado_269r_reconhecedores_24_20261020/README.md) | PP-OCRv5 × PP-OCRv6, desenvolvimento |

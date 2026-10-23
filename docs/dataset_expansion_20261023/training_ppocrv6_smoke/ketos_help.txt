@@ -1,0 +1,36 @@
+Usage: ketos [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --version                       Show the version and exit.
+  -v, --verbose                   [default: 0]
+  -d, --device TEXT               Select device to use (cpu, cuda:0, cuda:1,
+                                  ...)  [default: auto]
+  --precision [transformer-engine|transformer-engine-float16|16-true|16-mixed|bf16-true|bf16-mixed|32-true|64-true]
+                                  Numerical precision to use for training.
+                                  Default is 32-bit single-point precision.
+                                  [default: 32-true]
+  --workers INTEGER RANGE         Number of data loading worker processes.
+                                  [default: 1; x>=0]
+  --threads INTEGER RANGE         Maximum size of OpenMP/BLAS thread pool.
+                                  [default: 1; x>=1]
+  -s, --seed INTEGER              Seed for numpy's and torch's RNG. Set to a
+                                  fixed value to ensure reproducible random
+                                  splits of data
+  -r, --deterministic / --no-deterministic
+                                  Enables deterministic training. If no seed
+                                  is given and enabled the seed will be set to
+                                  42.  [default: no-deterministic]
+  --config FILENAME               Path to configuration file.
+  --help                          Show this message and exit.
+
+Commands:
+  compile   Precompiles a binary dataset from a collection of XML files.
+  convert   Converts and combines one or more checkpoints/weights.
+  pretrain  Trains a model from image-text pairs.
+  publish   Publishes a model on the zenodo model repository.
+  roadd     Combines a reading order model with a segmentation model.
+  rotrain   Trains a baseline labeling model for layout analysis
+  segtest   Evaluate on a test set.
+  segtrain  Trains a baseline labeling model for layout analysis
+  test      Evaluate on a test set.
+  train     Trains a model from image-text pairs.

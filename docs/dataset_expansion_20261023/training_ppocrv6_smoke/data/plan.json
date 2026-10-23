@@ -1,0 +1,49 @@
+{
+  "mode": "technical_smoke",
+  "seed": 1831,
+  "epochs": 1,
+  "batch_size": 1,
+  "learning_rate": 1e-05,
+  "base_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+  "resize": "fail",
+  "normalization": "NFC",
+  "max_width": 2560,
+  "torch_compile": false,
+  "execution": "eager_autograd; no C++ compiler in pinned image",
+  "checkpoint_selection": "maximum native val_metric; validation only",
+  "data": [
+    {
+      "line_id": "l_traslado_269r_body_01",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "source_crop_sha256": "bf9bfd65b70bf59001d33860ca032c9c10d64ae85eefb986fa562d5a0e052385",
+      "reference_policy": "assisted_by_published_edition",
+      "reviewer": "Rodolfo Vinicius Cima Takemoto",
+      "reviewed_at": "2026-10-16T16:59:49.388536+00:00",
+      "png_sha256": "bf9bfd65b70bf59001d33860ca032c9c10d64ae85eefb986fa562d5a0e052385",
+      "target_sha256": "b8f7b1e986bc6dba5dce51f9396748291e6c9da043c31f688624aabdef7b52d3"
+    },
+    {
+      "line_id": "l_traslado_269r_body_02",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "source_crop_sha256": "61f934eaba26e141ef19387c44c48b5fdc8266c4e942ce5b736e934507ba23b4",
+      "reference_policy": "assisted_by_published_edition",
+      "reviewer": "Rodolfo Vinicius Cima Takemoto",
+      "reviewed_at": "2026-10-16T17:13:33.487710+00:00",
+      "png_sha256": "61f934eaba26e141ef19387c44c48b5fdc8266c4e942ce5b736e934507ba23b4",
+      "target_sha256": "5110501822d7c843b8fa1969a5943d56a2e405f74f5d7f8b2d2d037864a67b5e"
+    },
+    {
+      "line_id": "l_traslado_269r_body_03",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "validation",
+      "source_crop_sha256": "9394efae96505f40e5745967fa96c84d00d13e3bb2f32e299b90aaf1de10fb45",
+      "reference_policy": "assisted_by_published_edition",
+      "reviewer": "Rodolfo Vinicius Cima Takemoto",
+      "reviewed_at": "2026-10-16T17:13:33.532016+00:00",
+      "png_sha256": "9394efae96505f40e5745967fa96c84d00d13e3bb2f32e299b90aaf1de10fb45",
+      "target_sha256": "d0246d2909d5124643d9f144bc24f178616789b557915f2296f86b5804aa4972"
+    }
+  ]
+}

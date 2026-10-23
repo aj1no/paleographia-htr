@@ -147,9 +147,11 @@ O servidor deve permanecer local, com um processo por workspace.
 
 `compare` compara **segmentadores**, com reconhecedor fixo; não é o experimento
 PP-OCRv5 × PP-OCRv6. Essa rota é secundária e não foi medida neste corpus.
-TrOCR e sua preparação estão bloqueados; `train` não oferece treinamento do
-backend Kraken atual. Não houve ajuste fino neste corpus.
+TrOCR e sua preparação estão bloqueados. Desde 23/10, `train` oferece ajuste
+fino do PP-OCRv6 por ketos em experimento separado, exigindo configuração
+explícita e dados aptos. O [ensaio técnico executado](dataset_expansion_20261023/README.md)
+registra otimização real; o experimento científico ainda depende da curadoria.
 
-Para eventual ampliação, congele o protocolo e reserve outros documentos antes
+Para a ampliação em curso, congele o protocolo e reserve outros documentos antes
 de usá-los na seleção. O 269r permanece desenvolvimento. Consulte as
 [pendências acadêmicas](entregas/pi_iv_pln_20261020/adequacao_academica.md).

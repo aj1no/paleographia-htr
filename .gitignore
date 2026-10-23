@@ -25,3 +25,5 @@ data/workspace/
 data/workspace_traslado_269r/
 experiments/*
 !experiments/README.md
+# Recreated from the verified supplied ZIP; catalogs and text stay versioned.
+/data/manifests/corpus_expandido_v02/pdf_images/

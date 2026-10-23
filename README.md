@@ -5,9 +5,12 @@ conferir recortes e ordem de leitura, consultar vocabulário com fontes e salvar
 revisões humanas com autoria e histórico. Reconhecimento bruto, edição publicada
 e texto humano permanecem separados. A interface é apresentada em português.
 
-**Estado em 22/10/2026 — branch principal e padrão: `main`.** O escopo está
-fechado para novas funções; a prioridade é consolidar a avaliação e as entregas
-de PI IV e PLN. Não houve treinamento ou ajuste fino neste corpus.
+**Estado em 23/10/2026 — branch principal e padrão: `main`.** A expansão de
+fontes e o ajuste fino passaram a integrar a etapa acadêmica. O corpus v0.2 foi
+incorporado e houve um **ensaio técnico real de ajuste fino do PP-OCRv6**, com
+dois passos de otimização. A avaliação científica em documentos reservados
+depende de novos pares revisados e partições documentais confirmadas.
+Veja [fontes, recortes para revisão, evidências e explicação para o professor](docs/dataset_expansion_20261023/README.md).
 
 A [versão principal no GitHub](https://github.com/aj1no/paleographia-htr/tree/main)
 contém o programa, a documentação e as evidências publicadas. A branch

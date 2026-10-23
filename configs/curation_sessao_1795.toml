@@ -1,0 +1,11 @@
+[paths]
+pages = "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/pages.jsonl"
+lines = "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/lines.jsonl"
+workspace = "data/workspace/curation_sessao_1795"
+
+[recognition]
+backend = "disabled"
+
+[presentation]
+language = "pt-BR"
+automatic_transcription_enabled = false

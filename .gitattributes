@@ -67,3 +67,13 @@ docs/experimentos/traslado_269r_integral_edicao_20261022/** -text -whitespace
 docs/experimentos/traslado_269v_integral_edicao_20261022/** -text -whitespace
 # Correção aditiva de reprodução: preservar scripts e recibos entre sistemas.
 docs/manutencao/reprodutibilidade_269v_20261022/** -text -whitespace
+# Expansão e otimização: preservar os bytes auditados em Windows/Linux.
+data/manifests/corpus_expandido_v02/** -text -whitespace
+docs/dataset_expansion_20261023/** -text -whitespace
+docs/experimentos/implementation_75b7b24/** -text -whitespace
+configs/curation_sessao_1795* text eol=lf
+configs/training_ppocrv6* text eol=lf
+scripts/audit_dataset_expansion.py text eol=lf
+tests/test_corpus_expansion.py text eol=lf
+tests/test_dataset_expansion_audit.py text eol=lf
+tests/test_ppocrv6_training.py text eol=lf

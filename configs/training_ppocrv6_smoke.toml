@@ -1,0 +1,25 @@
+[paths]
+pages = "data/manifests/corpus_expandido_v02/core_pages.jsonl"
+lines = "data/manifests/corpus_expandido_v02/core_lines.jsonl"
+
+[recognition]
+backend = "kraken_ppocrv6"
+model = "models/kraken_ppocrv6_medium/medium.safetensors"
+sha256 = "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9"
+docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+device = "cpu"
+precision = "float32"
+
+[presentation]
+automatic_transcription_enabled = false
+
+[training]
+engine = "ketos"
+mode = "technical_smoke"
+seed = 1831
+epochs = 1
+batch_size = 1
+learning_rate = 0.00001
+timeout_seconds = 300
+train_line_ids = ["l_traslado_269r_body_01", "l_traslado_269r_body_02"]
+validation_line_ids = ["l_traslado_269r_body_03"]
