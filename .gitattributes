@@ -88,3 +88,6 @@ docs/bibliografia/leitura_t1_t4_20261023/** -text -whitespace
 docs/entregas/pi_iv_pln_20261023_fundamentacao/** -text -whitespace
 # Versão diagramada para entrega: preservar bytes dos arquivos e do manifesto.
 docs/entregas/pi_iv_pln_20261023_entrega/** -text -whitespace
+# Modelo colaborativo e execução de demonstração: preservar inventários publicados.
+docs/entregas/pi_iv_pln_20261023_equipe/** -text -whitespace
+tests/test_participacao_equipe.py text eol=lf

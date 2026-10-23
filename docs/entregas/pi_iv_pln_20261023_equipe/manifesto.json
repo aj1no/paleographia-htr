@@ -1,0 +1,397 @@
+{
+  "recorded_on": "2026-10-23",
+  "prepared_by": "Codex (IA)",
+  "source_commit": "69e98a78aeddf7ee8938d00c94ad5250f6cb936b",
+  "source_planning": {
+    "path": "D:/Downloads/PaleographIA_Artigo_Entrega_Objetivos_Planejamento.docx",
+    "sha256": "37ed22a9e4fdbf6654fd95512871a99c5b8a131a2df390529176a3dbdd37ba78",
+    "section": "Planejamento inicial",
+    "interpretation": "responsabilidades previstas; não comprova execução individual"
+  },
+  "source_notebook": {
+    "path": "docs/entregas/pi_iv_pln_20261022/comparacao_reproduzivel.ipynb",
+    "sha256": "35bc1122d64e33fb12d1eb82977c37bc3d7c8c6701c4436caa3956bbc2b0eaba"
+  },
+  "user_report": {
+    "scope": "Discussão coletiva; execução prática concentrada no solicitante; contribuições dos colegas não individualizadas.",
+    "reported_on": "2026-10-23",
+    "dates_of_discussions": "não informadas"
+  },
+  "execution": {
+    "result": "aprovado",
+    "code_cells": 16,
+    "original_code_cells": 10,
+    "original_code_change": "somente SAIDA",
+    "new_inferences": 0,
+    "historical_tables_identical": [
+      {
+        "name": "24_linhas.csv",
+        "sha256": "584f2db09d184a2a7ab218dd3a563d8fbfde0a373e339eba3bd572ed89c47fe5"
+      },
+      {
+        "name": "metricas_blocos.csv",
+        "sha256": "da2ea780c57c5e90ffdfcd95de8fb8a364841f5a7b40d655ef3d76fdebaa1412"
+      },
+      {
+        "name": "operacoes.csv",
+        "sha256": "264f2b1092c9dfc7d59a58c496d58e0aeb20545d9b4e0800a8f45be3b298cbf3"
+      },
+      {
+        "name": "reconferencia_ressalvas.csv",
+        "sha256": "ae7aea7fa6b2ac9162b8d5deceaf4f3ec2a132e771e2fb11b830f8934e5ca095"
+      },
+      {
+        "name": "ressalvas.csv",
+        "sha256": "58ba01030bef1f7e62df216f3060cb79f01f7d9059ced9f5819b2e9669ca4d44"
+      },
+      {
+        "name": "resumo_metricas.csv",
+        "sha256": "fd878902354ef17d3bbe9b53fd7e431f52077260136720fdbd3cd16425e41582"
+      }
+    ],
+    "individual_records_created": 0,
+    "forms": {
+      "caio": {
+        "salvo": false,
+        "participante": "caio",
+        "estado": "pendente",
+        "motivo": "Nenhuma contribuição individual preenchida; nenhum registro criado."
+      },
+      "guilherme": {
+        "salvo": false,
+        "participante": "guilherme",
+        "estado": "pendente",
+        "motivo": "Nenhuma contribuição individual preenchida; nenhum registro criado."
+      },
+      "tiago": {
+        "salvo": false,
+        "participante": "tiago",
+        "estado": "pendente",
+        "motivo": "Nenhuma contribuição individual preenchida; nenhum registro criado."
+      },
+      "rodolfo": {
+        "salvo": false,
+        "participante": "rodolfo",
+        "estado": "pendente",
+        "motivo": "Nenhuma contribuição individual preenchida; nenhum registro criado."
+      }
+    },
+    "executor": "Codex (IA)",
+    "new_human_readings": 0,
+    "protection_executor_and_kernel": true,
+    "blocked_operations": 0
+  },
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m pytest tests/test_participacao_equipe.py -q",
+    "passed": 4,
+    "synthetic_data": "somente testes em diretórios temporários"
+  },
+  "historical_files_preserved": [
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/adequacao_academica.md",
+      "sha256": "0b1aff3ac473d67f712bc3fa4c0e05bce60e912c65b8784cc5387d43a174d423"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/artigo_rascunho.md",
+      "sha256": "71fa79065c0ef6da25bcb768ee4d4ed943ef24d46d2ff8a728a23325b163aa38"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/autoria.json",
+      "sha256": "03ae8f3182e063780f71846db0642ba26875d4d81f092b1166d6e34ae5abbcbd"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/comparacao_reproduzivel.html",
+      "sha256": "2f2b370eef97d76cd40884afeb8b17dd5c4dfc85d821857ae26954670233c083"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/comparacao_reproduzivel.ipynb",
+      "sha256": "87c5fdaf2d4913e86a5be5d7d2630006ffef1fe6f38aa4faebd4afc9be06722d"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/executar_notebook.py",
+      "sha256": "faa244c3cf070251dca1de659aee738b8296c3c67bd30eb0e548b31b526419fa"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/figuras/cer_blocos.png",
+      "sha256": "a721e35db58a351b5c2eece7851ae883f31200c73afed14a7e71ac13d73ed041"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/figuras/cer_blocos.svg",
+      "sha256": "3cb324bfddb9ab674339f98c09129a4fe98b6067de38be61c9b5d16a359dc4e1"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/figuras/cer_wer.png",
+      "sha256": "9fe0457db27fb8597a6cb3a51d5d581c3ff44c217b9e94fc65b2816d0d415f8c"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/figuras/cer_wer.svg",
+      "sha256": "d1533916c16875b40da4f16bc210e0d6c6b829ba63772fffc1c727deaf942fdd"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/fontes_consultadas.json",
+      "sha256": "d3a296c9e8616540a0db00cfc461d01c7f108e5f67c744c558fe1d3f4e124973"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/manifesto_entrega.json",
+      "sha256": "5f12dcb05db685a30db1344495758348eea2d9562d6965edb9a05cbca7a76604"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/proveniencia_entrega.json",
+      "sha256": "2d16953287b94b8382e368530555b951c78875f322e9bad0004b2d4e6a8813be"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/README.md",
+      "sha256": "f21b66749535b5da0c733c13fb5bf72009e0bc3d4645482078ce86c52b8721d3"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/requirements-ambiente-testado.txt",
+      "sha256": "56f02a78d3b072e5a763c8d8d246385f89ba7e2ceca859a90182828f3c97f8b6"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/requirements-notebook.txt",
+      "sha256": "ce20e43c9ea865b89e5d3cf0da2287b1dceaa73f0972be321aad372cb0d69e96"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/resultado_notebook.json",
+      "sha256": "f8f82328ebb3fbb27d6ab2fd986c7105a79104d5354b4ab5d0892b1e63b0b189"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/24_linhas.csv",
+      "sha256": "584f2db09d184a2a7ab218dd3a563d8fbfde0a373e339eba3bd572ed89c47fe5"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/metricas_blocos.csv",
+      "sha256": "da2ea780c57c5e90ffdfcd95de8fb8a364841f5a7b40d655ef3d76fdebaa1412"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/operacoes.csv",
+      "sha256": "264f2b1092c9dfc7d59a58c496d58e0aeb20545d9b4e0800a8f45be3b298cbf3"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/ressalvas.csv",
+      "sha256": "58ba01030bef1f7e62df216f3060cb79f01f7d9059ced9f5819b2e9669ca4d44"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/resumo_metricas.csv",
+      "sha256": "fd878902354ef17d3bbe9b53fd7e431f52077260136720fdbd3cd16425e41582"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/validacao_checkout_limpo.json",
+      "sha256": "3b5e9c8c3c4f4ca4e97efc4310f2ccc0d8ff37e36e592cf626a90e6a0c145578"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/validacao_execucao.json",
+      "sha256": "066cc1da229ba922b11153b1397d350af0c3614a932d28335b28649590df6a97"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/verificar_entrega.py",
+      "sha256": "fd863d4d29f1340547edde4464fd2f3a9fa4b763a6a424a3e11a8463b5b06f49"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/adequacao_academica.md",
+      "sha256": "7ba76cc6c0789a1d50cca87bf1526a53f75dc618439a91aa1432f5b16d529db7"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/artigo_rascunho.md",
+      "sha256": "41c3ed7313b2541e8b3ec345c7abf30e159b718a80a0074f4e80bfba48f74ed0"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/autoria.json",
+      "sha256": "03ae8f3182e063780f71846db0642ba26875d4d81f092b1166d6e34ae5abbcbd"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/comparacao_reproduzivel.html",
+      "sha256": "fd80807729c80fe6780c3d3a6148fb6e6b98c3d85223630f17d0e5bb049a6ee1"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/comparacao_reproduzivel.ipynb",
+      "sha256": "35bc1122d64e33fb12d1eb82977c37bc3d7c8c6701c4436caa3956bbc2b0eaba"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/executar_notebook.py",
+      "sha256": "a1e39a030363090a3ea012d515f5adb57686a3e7d687761391e5938cd42c9fac"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/figuras/cer_blocos.png",
+      "sha256": "a721e35db58a351b5c2eece7851ae883f31200c73afed14a7e71ac13d73ed041"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/figuras/cer_blocos.svg",
+      "sha256": "3cb324bfddb9ab674339f98c09129a4fe98b6067de38be61c9b5d16a359dc4e1"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/figuras/cer_wer.png",
+      "sha256": "9fe0457db27fb8597a6cb3a51d5d581c3ff44c217b9e94fc65b2816d0d415f8c"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/figuras/cer_wer.svg",
+      "sha256": "d1533916c16875b40da4f16bc210e0d6c6b829ba63772fffc1c727deaf942fdd"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/fontes_consultadas.json",
+      "sha256": "d3a296c9e8616540a0db00cfc461d01c7f108e5f67c744c558fe1d3f4e124973"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/manifesto_entrega.json",
+      "sha256": "37aa7fa3ef79e7e30f658cef47e497e0ded84557281a237d6b2e96831c2c7f8b"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/protecao_execucao.jsonl",
+      "sha256": "59bfe85b7fb1206576e8b8deb9c9d55e3f032f1ac613ae63a7f7c85d9360459a"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/proveniencia_entrega.json",
+      "sha256": "27b6c6cad3e34a23b9be38cbc94559abd90ea7a47d7f10bbfef0f32e206d16f1"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/README.md",
+      "sha256": "30f51a7844a94a303962718060701a7c80ed8f7fff640149f69910e853b11b10"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/reexecutar_protegido.py",
+      "sha256": "61349bd9288103e865f1a879586919f87fc8de69c5e98dd1bf22ff8426fde0e2"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/requirements-ambiente-testado.txt",
+      "sha256": "56f02a78d3b072e5a763c8d8d246385f89ba7e2ceca859a90182828f3c97f8b6"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/requirements-notebook.txt",
+      "sha256": "ce20e43c9ea865b89e5d3cf0da2287b1dceaa73f0972be321aad372cb0d69e96"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/resultado_notebook.json",
+      "sha256": "c085bcf3be828abe7e429d2cf9408f40bcf6f63c99c367e3ad6587de5a0e4231"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/24_linhas.csv",
+      "sha256": "584f2db09d184a2a7ab218dd3a563d8fbfde0a373e339eba3bd572ed89c47fe5"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/metricas_blocos.csv",
+      "sha256": "da2ea780c57c5e90ffdfcd95de8fb8a364841f5a7b40d655ef3d76fdebaa1412"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/operacoes.csv",
+      "sha256": "264f2b1092c9dfc7d59a58c496d58e0aeb20545d9b4e0800a8f45be3b298cbf3"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/reconferencia_ressalvas.csv",
+      "sha256": "ae7aea7fa6b2ac9162b8d5deceaf4f3ec2a132e771e2fb11b830f8934e5ca095"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/ressalvas.csv",
+      "sha256": "58ba01030bef1f7e62df216f3060cb79f01f7d9059ced9f5819b2e9669ca4d44"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/resumo_metricas.csv",
+      "sha256": "fd878902354ef17d3bbe9b53fd7e431f52077260136720fdbd3cd16425e41582"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/testes_auditoria.json",
+      "sha256": "89c2ee6ee2d58a5ab14f269ac9a2574c9f346f727892297314c7e88da6881ca7"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/validacao_checkout_limpo.json",
+      "sha256": "8ef33df6d32ea2540523c18bf87c287cb552148f9216e7248a845d9016c4efcc"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/validacao_execucao.json",
+      "sha256": "9e4837aee4199f6c445ae240d7c001753307803dab5d5178f02ae7dfcbd59e86"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/verificar_entrega.py",
+      "sha256": "7edabc20bd68b745cf5e6eaf37d1a14f257167336ec02035656f542ead04206f"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_fundamentacao/artigo_rascunho.md",
+      "sha256": "4c7d8abb679c007a04f640e22be916167057f7020d59107e5931a3cb5ad3fad4"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_fundamentacao/manifesto.json",
+      "sha256": "73eac03eb5b9e0d06cb8bb005a2d76254e40d0df098ad50454c981cefc159625"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_fundamentacao/README.md",
+      "sha256": "c550e445436ad7aa9426180af84603c6696d74aed5ceb38219f149b7d9e2106e"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_entrega/artigo.docx",
+      "sha256": "01a651aee86df179841b99f02aa1879a4c893d553a3de3bbd14c927bab939fd9"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_entrega/artigo.md",
+      "sha256": "70befaf49158bf91c180198066aacfa21113275cc9141455a46ed9d0c03a0d42"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_entrega/artigo.pdf",
+      "sha256": "448d27427991f5ca8eac369eadd20c36be5c88f51c9483afe97a4e71d7818828"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_entrega/citacoes.json",
+      "sha256": "021e25d2ab34759aba6f51c436326301c462b4ab329ff0d6249693ed2e485ce2"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_entrega/exportar_pdf.ps1",
+      "sha256": "8032e9896d8ce51d814e8eaa62de6e4db792034aaaeb3215029a72619fc5bd23"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_entrega/gerar_artigo.py",
+      "sha256": "255c1e94cdbd2a3a81749fe88e89f21e9506c11360923f6a4138b20192e8a031"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_entrega/manifesto.json",
+      "sha256": "16c9145682a385cf0c25d2dcc76eb0e366f22a3ae49341d48a704de75d103a68"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_entrega/README.md",
+      "sha256": "f5e572ef83011629d0bb961832a45f251b4aa88490b1e57e563aaf470faaca44"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_entrega/revisao_e_adequacao.md",
+      "sha256": "e6aa4c7518a7ac081f4d3c99b2b44e30c8585ca6684e9928379cf4e982ffc509"
+    }
+  ],
+  "files": [
+    {
+      "path": "colaboracao_equipe.html",
+      "bytes": 739591,
+      "sha256": "787327fbd5e4e22faaa26d2b7c8f4bbb924d1a4fa472bc4b9b5823758047546c"
+    },
+    {
+      "path": "colaboracao_equipe.ipynb",
+      "bytes": 652175,
+      "sha256": "b4c601a4511e2c4fa0b614582fe2593b2487850d7911068042264e7d2bd16951"
+    },
+    {
+      "path": "executar_notebook.py",
+      "bytes": 3216,
+      "sha256": "918567f513529c65a514b5980e9f037468a8290006bb96613531a1fd5016245a"
+    },
+    {
+      "path": "gerar_notebook.py",
+      "bytes": 16505,
+      "sha256": "7ea54c7ab1b559a3c00e1ca24fb037dbb52ce1b85279c1b4c7e38c26154d1979"
+    },
+    {
+      "path": "participacao.py",
+      "bytes": 4209,
+      "sha256": "90837611b5c95c588d0a6fc2f8d4e4730697bf8d56dddf998415bd4ae9adfb93"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3375,
+      "sha256": "251bfce3f300f791232c3ba972cae9ed97c79cb4e809e9f8350468f736d752a5"
+    },
+    {
+      "path": "reexecutar_protegido.py",
+      "bytes": 1831,
+      "sha256": "da26414401c0665024c023c8e04f74252ea6687fe829fc163494fd984ccbd332"
+    },
+    {
+      "path": "roteiro_equipe.md",
+      "bytes": 6967,
+      "sha256": "5e184eadb41d5fc47d43207c1d956ad0edc259754dc8a73a5cfa12e66a3e71ce"
+    }
+  ]
+}
