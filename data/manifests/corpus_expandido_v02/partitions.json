@@ -1,0 +1,121 @@
+{
+  "status": "blocked_pending_independent_reviewed_groups",
+  "random_partition": false,
+  "test_reserved": true,
+  "groups": [
+    {
+      "candidate_group": "carta_jose_gomes_1767",
+      "document_id": "carta_jose_gomes_1767",
+      "split_group": "carta_jose_gomes_1767",
+      "source_ids": [
+        "7d9c6e3e9a0728b1",
+        "500a24d6a2ea8b93"
+      ],
+      "image_occurrences": 2,
+      "unique_pixel_pages": 2,
+      "independence_status": "pending_review",
+      "scientific_split": null,
+      "partition": "curation",
+      "historical_catalog": null,
+      "eligible_new_pairs": 0
+    },
+    {
+      "candidate_group": "contrato_livro12_1763",
+      "document_id": "contrato_livro12_1763",
+      "split_group": "contrato_livro12_1763",
+      "source_ids": [
+        "c7ffb34ac9b8c735"
+      ],
+      "image_occurrences": 4,
+      "unique_pixel_pages": 4,
+      "independence_status": "pending_review",
+      "scientific_split": null,
+      "partition": "curation",
+      "historical_catalog": null,
+      "eligible_new_pairs": 0
+    },
+    {
+      "candidate_group": "contrato_livro13_1763",
+      "document_id": "contrato_livro13_1763",
+      "split_group": "contrato_livro13_1763",
+      "source_ids": [
+        "3348a51ef10d9d1b"
+      ],
+      "image_occurrences": 2,
+      "unique_pixel_pages": 2,
+      "independence_status": "pending_review",
+      "scientific_split": null,
+      "partition": "curation",
+      "historical_catalog": null,
+      "eligible_new_pairs": 0
+    },
+    {
+      "candidate_group": "pagamento_thomas_pardo",
+      "document_id": "pagamento_thomas_pardo",
+      "split_group": "pagamento_thomas_pardo",
+      "source_ids": [
+        "37eec7f6ae756ba4",
+        "bfa219c731ebc77b",
+        "ba07a3fb9769e23b"
+      ],
+      "image_occurrences": 3,
+      "unique_pixel_pages": 3,
+      "independence_status": "pending_review",
+      "scientific_split": null,
+      "partition": "curation",
+      "historical_catalog": null,
+      "eligible_new_pairs": 0
+    },
+    {
+      "candidate_group": "posturas_1831",
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split_group": "jundiai_atas_sessao_1831-07-11",
+      "source_ids": [
+        "2d0bc739ae48eeda",
+        "413d1502555f62d4",
+        "c001a2648e01c5c4",
+        "479bc2535feed70e"
+      ],
+      "image_occurrences": 6,
+      "unique_pixel_pages": 6,
+      "independence_status": "pending_review",
+      "scientific_split": null,
+      "partition": "development",
+      "historical_catalog": "data/manifests/pages.jsonl",
+      "eligible_new_pairs": 0
+    },
+    {
+      "candidate_group": "sessao_1795",
+      "document_id": "sessao_1795",
+      "split_group": "sessao_1795",
+      "source_ids": [
+        "3f35cc69b6c96ee1",
+        "3c0132189f5574d5"
+      ],
+      "image_occurrences": 2,
+      "unique_pixel_pages": 2,
+      "independence_status": "pending_review",
+      "scientific_split": null,
+      "partition": "curation",
+      "historical_catalog": null,
+      "eligible_new_pairs": 0
+    },
+    {
+      "candidate_group": "traslado_criacao_vila",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split_group": "tt_pbr_0004_026_traslado_1767",
+      "source_ids": [
+        "e1c779a4713340ad",
+        "3fa01bf328add939"
+      ],
+      "image_occurrences": 9,
+      "unique_pixel_pages": 9,
+      "independence_status": "pending_review",
+      "scientific_split": null,
+      "partition": "development",
+      "historical_catalog": "data/manifests/traslado_269r/pages.jsonl",
+      "eligible_new_pairs": 0
+    }
+  ],
+  "note": "269r e todos os derivados do traslado já são desenvolvimento; não podem virar teste."
+}

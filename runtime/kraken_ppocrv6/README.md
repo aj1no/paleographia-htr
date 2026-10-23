@@ -68,5 +68,7 @@ antes de produzir predições, estão registradas na entrega experimental.
 O worker verifica os pixels recebidos, devolve texto bruto, tokens, tempos e
 identidade. A aplicação serializa o acesso e reutiliza o processo no lote e nas
 solicitações seguintes. Ao encerrar o servidor, fecha o worker. Falha de modelo,
-Docker ou protocolo é explícita; não há fallback para TrOCR. Treinamento desse
-backend não foi implementado nesta entrega.
+Docker ou protocolo é explícita; não há fallback para TrOCR. A entrega original
+era apenas inferência. Desde 23/10, o [experimento separado de ajuste fino](../../docs/dataset_expansion_20261023/README.md)
+usa ketos, dados montados separadamente e a mesma imagem, com autograd eager.
+Sua execução não instala nem ativa o peso ajustado no editor.

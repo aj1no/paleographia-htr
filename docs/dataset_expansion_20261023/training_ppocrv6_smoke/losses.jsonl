@@ -1,0 +1,2 @@
+{"epoch": 0, "batch": 0, "optimizer_step": 1, "loss": 9.595231056213379, "learning_rates": [1e-05]}
+{"epoch": 0, "batch": 1, "optimizer_step": 2, "loss": 9.548118591308594, "learning_rates": [1e-05]}

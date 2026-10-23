@@ -1,0 +1,17 @@
+[
+  {
+    "epoch": 0,
+    "optimizer_step": 2,
+    "metrics": {
+      "train_ctc_loss": 1.8504257202148438,
+      "train_ctc_loss_step": 1.8504257202148438,
+      "train_gtc_loss": 7.697692394256592,
+      "train_gtc_loss_step": 7.697692394256592,
+      "train_loss": 9.548118591308594,
+      "train_loss_step": 9.548118591308594,
+      "val_accuracy": 0.875,
+      "val_word_accuracy": 0.6000000238418579,
+      "val_metric": 0.875
+    }
+  }
+]

@@ -1,0 +1,16 @@
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+Loading from checkpoint /base.safetensors.
+[10/23/26 13:30:28] WARNING  alphabet mismatch: chars in training    vgsl.py:234
+                             set only: {'A', 'l', 'c', ',', 'N',                
+                             'h', 'u', 'S', 'J'} (not included in               
+                             accuracy test during training)                     
+                    WARNING  alphabet mismatch: chars in validation  vgsl.py:238
+                             set only: {'b', 'H', 'D'} (not trained)            
+                    WARNING  Neural network has been trained on     ppocr.py:275
+                             baselines image information but                    
+                             training set is bbox.                              
+`Trainer.fit` stopped: `max_epochs=1` reached.
+Converting best model /output/checkpoints/checkpoint_00-0.8750.ckpt (score: 0.8750) to weights file /output/checkpoints/best_0.8750.safetensors

@@ -1,4 +1,4 @@
-# Ambientes e modelos — 21/10/2026
+# Ambientes e modelos — 23/10/2026
 
 Instale a versão da `main`, branch principal e padrão. Para obter ou atualizar
 o checkout, siga o [guia de execução](runbook.md). Os registros de ambientes e
@@ -25,6 +25,7 @@ Windows/Python 3.12.14.
 | Extração PDF/RAR | `[pdf]`; RAR também exige extrator externo compatível no PATH |
 | PP-OCRv5 latino | `[ocr]` e pesos ONNX; experimento separado do editor |
 | PP-OCRv6 medium | Docker Linux, Kraken 7.1 e pesos; separado da aplicação |
+| Ajuste fino PP-OCRv6 | Experimento ketos isolado, mesma imagem fixada, CPU/float32 e autograd eager; [evidências](dataset_expansion_20261023/README.md) |
 | Notebook e figuras | Ambiente acadêmico Python 3.12, com requisitos próprios |
 | Extra `[htr]` | Histórico TrOCR; não habilita o reconhecedor bloqueado nem treino atual |
 
@@ -69,4 +70,7 @@ continuam auditáveis sem carregar o modelo.
 `neural_worker.py` e `[neural]` referem-se ao segmentador Kraken 6, separado do
 reconhecedor Kraken 7.1. Essa rota não foi medida neste corpus; a tentativa de
 instalação e limitações estão no [relatório histórico](execution_report.md).
-Não é necessária para a comparação atual. Treino Kraken não está implementado.
+Não é necessária para a comparação atual. O ajuste fino PP-OCRv6 por ketos
+agora tem configuração própria e ensaio técnico auditado. Na imagem fixada,
+`TORCHDYNAMO_DISABLE=1` evita a compilação C++ indisponível, mantendo autograd.
+Não houve instalação de pacotes, reconstrução de imagem ou troca dos pesos do editor.

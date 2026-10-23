@@ -1,0 +1,37 @@
+{
+  "archive_name": "PaleographIA_Corpus_Expandido_v0_2_20261023.zip",
+  "archive_sha256": "62e1c3da154b4dcc9bdf63715c01eba788d7a2f6f5cce7a973938755772e25bd",
+  "package": "PaleographIA_Corpus_Expandido_v0_2_20261023",
+  "source_root": "data/raw/corpus_expandido_v02",
+  "generated_root": "data/manifests/corpus_expandido_v02",
+  "sources": 15,
+  "candidate_groups": 7,
+  "pdf_pages": 59,
+  "embedded_image_objects": 80,
+  "manuscript_image_occurrences": 28,
+  "unique_pixel_pages": 28,
+  "frozen_core_lines": 24,
+  "image_count_note": "Ocorrências/reproduções, não fólios independentes; JPEGs e PDFs podem codificar os mesmos manuscritos de maneiras diferentes.",
+  "core_text_statuses": {
+    "validated": 16,
+    "pending_review": 8
+  },
+  "historical_reservations": 8,
+  "new_human_validations": 0,
+  "new_training_pairs": 0,
+  "versions": {
+    "pypdf": "6.1.1",
+    "Pillow": "11.3.0"
+  },
+  "validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 24,
+    "statuses": {
+      "validated": 16,
+      "pending_review": 8
+    },
+    "errors": [],
+    "warnings": []
+  }
+}

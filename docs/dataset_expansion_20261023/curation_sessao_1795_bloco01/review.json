@@ -1,0 +1,24 @@
+{
+  "status": "pending_human_review",
+  "candidate_lines": 8,
+  "new_validations": 0,
+  "spec_path": "configs/curation_sessao_1795_bloco01.json",
+  "spec_sha256": "eefb5f049173eebfead262ece387955e6c653fa69e3174e6ac92b8d2be1b18c7",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 8
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "folio_note": "Nome original e edição identificam o fólio 91r; confirmar o numeral no canto superior direito e a correspondência visual.",
+  "decisions_needed": [
+    "Correspondência da imagem, fólio e lado",
+    "Geometria de cada recorte e cobertura parcial",
+    "Transcrição histórica visível de cada linha, com dúvidas e abreviaturas"
+  ],
+  "published_text_origin": "Transcrito visualmente da edição, página 3; alinhamento ainda candidato."
+}

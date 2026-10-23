@@ -11,6 +11,9 @@ from .recognition import ModelUnavailable
 
 
 def training_run(rows, pages, config, output_dir, root=Path.cwd(), execute=False, manifests=()):
+    if config.get("recognition", {}).get("backend") == "kraken_ppocrv6":
+        from .ppocrv6_training import run
+        return run(rows, pages, config, output_dir, root, execute, manifests)
     output = Path(output_dir)
     if output.exists():
         raise ValueError("Treinamento exige saída nova.")
@@ -24,8 +27,6 @@ def training_run(rows, pages, config, output_dir, root=Path.cwd(), execute=False
         return result
     try:
         recognizer = create_recognizer(config, root)
-        if config.get("recognition", {}).get("backend") == "kraken_ppocrv6":
-            raise ModelUnavailable("Treinamento do backend Kraken não foi implementado neste piloto; use somente reconhecimento e revisão manual.")
         recognizer.load()
         processor, model = recognizer.processor, recognizer.model
         tokenizer = processor.tokenizer

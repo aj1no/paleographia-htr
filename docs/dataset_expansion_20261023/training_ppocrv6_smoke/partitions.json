@@ -1,0 +1,16 @@
+{
+  "mode": "technical_smoke",
+  "scientific_evaluation": false,
+  "assignments": {
+    "train": [
+      "l_traslado_269r_body_01",
+      "l_traslado_269r_body_02"
+    ],
+    "validation": [
+      "l_traslado_269r_body_03"
+    ]
+  },
+  "document_overlap_permitted_for_technical_check_only": true,
+  "test_used": false,
+  "limitation": "Otimização e recarga; não mede generalização."
+}

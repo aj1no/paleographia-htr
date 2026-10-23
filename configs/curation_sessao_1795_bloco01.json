@@ -1,0 +1,19 @@
+{
+  "source_id": "3f35cc69b6c96ee1",
+  "candidate_group": "sessao_1795",
+  "region_id": "body_first8_candidate",
+  "reference_source_id": "3c0132189f5574d5",
+  "reference_page": 3,
+  "credits": "Transcrição e edição: Gilson Santos Lino. Revisão: Isabella Ferraro (AHMJ).",
+  "folio_note": "Nome original e edição identificam o fólio 91r; confirmar o numeral no canto superior direito e a correspondência visual.",
+  "lines": [
+    {"bbox_xyxy": [95, 325, 1030, 377], "published_line": 4, "text_published": "Aos vinte e cinco dias do mês de junho de mil sete"},
+    {"bbox_xyxy": [95, 374, 1030, 421], "published_line": 5, "text_published": "centos e noventa e cinco anos nesta Vila de Nossa"},
+    {"bbox_xyxy": [95, 416, 1030, 468], "published_line": 6, "text_published": "senhora do Desterro de Jundiaí Comarca da Cidade"},
+    {"bbox_xyxy": [95, 466, 1030, 517], "published_line": 7, "text_published": "de São Paulo em casas de morada do Juiz Presidente"},
+    {"bbox_xyxy": [95, 514, 1030, 566], "published_line": 8, "text_published": "Salvador de Oliveira Prado, onde se achavam presentes"},
+    {"bbox_xyxy": [95, 563, 1030, 619], "published_line": 9, "text_published": "os oficiais da Câmara em ato de vereança, trat-"},
+    {"bbox_xyxy": [95, 614, 1030, 669], "published_line": 10, "text_published": "ando sobre o bem comum do povo, na mesma se"},
+    {"bbox_xyxy": [95, 666, 1030, 721], "published_line": 11, "text_published": "abriu uma carta do Senhor Bernardo José de Lorena"}
+  ]
+}

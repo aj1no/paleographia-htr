@@ -1,0 +1,11 @@
+{
+  "status": "not_executed",
+  "mode": "dry_run",
+  "started_at": "2026-10-23T13:31:03.883920+00:00",
+  "engine": "ketos",
+  "backend": "kraken_ppocrv6",
+  "test_used": false,
+  "reason": "ValueError: Partições científicas exigem independência documental confirmada.",
+  "finished_at": "2026-10-23T13:31:03.887985+00:00",
+  "duration_seconds": 0.0
+}

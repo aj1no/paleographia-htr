@@ -20,6 +20,17 @@ def parser():
     c = command("extract", "Extrair ZIP/RAR sem alterar originais")
     c.add_argument("--input-dir", required=True)
     c.add_argument("--output-dir", required=True)
+    c = command("expand-corpus", "Incorporar corpus v0.2 verificado, sem promover referências")
+    c.add_argument("--archive", required=True)
+    c.add_argument("--source-dir", required=True)
+    c.add_argument("--output-dir", required=True)
+    c = command("restore-corpus", "Restaurar fontes locais a partir do ZIP sem reescrever catálogos")
+    c.add_argument("--archive", required=True)
+    c.add_argument("--catalog-dir", default="data/manifests/corpus_expandido_v02")
+    c = command("prepare-review-block", "Preparar recortes candidatos e apoio editorial separado")
+    c.add_argument("--catalog-dir", required=True)
+    c.add_argument("--spec", required=True)
+    c.add_argument("--output-dir", required=True)
     c = command("extract-reference", "Extrair páginas de edição como apoio pendente, nunca labels")
     c.add_argument("--pdf", required=True)
     c.add_argument("--output", required=True)
@@ -100,6 +111,15 @@ def dispatch(args):
                 for i, page in enumerate(PdfReader(args.pdf).pages)]
         write_jsonl(args.output, rows)
         return {"pages": len(rows), "labels_created": 0}
+    if name == "expand-corpus":
+        from .corpus_expansion import incorporate
+        return incorporate(args.archive, args.source_dir, args.output_dir, root)
+    if name == "prepare-review-block":
+        from .corpus_expansion import prepare_review_block
+        return prepare_review_block(args.catalog_dir, args.spec, args.output_dir, root)
+    if name == "restore-corpus":
+        from .corpus_expansion import restore
+        return restore(args.archive, args.catalog_dir, root)
     if name == "associate":
         from .data import associate
         return {"pages": len(associate(args.pages, args.mapping, args.output, root))}
