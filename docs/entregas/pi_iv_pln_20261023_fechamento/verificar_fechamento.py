@@ -129,7 +129,11 @@ def conferir_recibo():
         observed = hashlib.sha256(json.dumps(hashes, sort_keys=True, ensure_ascii=False).encode('utf-8')).hexdigest()
         assert len(hashes) == group['quantidade_arquivos']
         assert observed == group['sha256_do_conjunto'], 'Pacote histórico divergente: ' + group['prefixo']
-    assert sha(ROOT / recibo['baseline']['notebook']) == recibo['baseline']['notebook_sha256']
+    baseline = recibo['baseline']
+    observado = objetos_git_do_trabalho(baseline['notebook'])[baseline['notebook']]
+    assert observado == baseline['notebook_git_blob'], 'Fonte do notebook difere do objeto Git executado.'
+    publicado = subprocess.check_output(['git', 'cat-file', 'blob', observado], cwd=ROOT)
+    assert hashlib.sha256(publicado).hexdigest() == baseline['notebook_publicado_sha256']
     assert recibo['baseline']['resultado'] == 'aprovado'
     assert recibo['baseline']['novos_registros_individuais'] == 0
     assert recibo['submissao']['executada'] is False and recibo['revisao_humana']['novas_validacoes'] == 0

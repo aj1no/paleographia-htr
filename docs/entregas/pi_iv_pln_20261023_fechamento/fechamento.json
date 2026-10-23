@@ -121,7 +121,10 @@
     "figuras_inspecionadas_visualmente": [
       "cer_wer.png",
       "cer_blocos.png"
-    ]
+    ],
+    "notebook_git_blob": "64928f55a781077ee2a30bf85f37994ef76016b4",
+    "notebook_publicado_sha256": "0328f8d1a7ea30f4856440429dc629bd1a0462ee434c0cf98fd9b85304fab0ac",
+    "nota_hash_notebook": "notebook_sha256 identifica os bytes locais usados na execução (CRLF); notebook_publicado_sha256 e notebook_git_blob identificam a fonte publicada (LF). As células são as mesmas; o verificador aplica os filtros de texto do Git."
   },
   "renderizacao": {
     "renderer": "Microsoft Word 16.0",
@@ -239,7 +242,13 @@
     },
     "auditoria_entrega_20261020": "aprovado",
     "auditoria_entrega_20261022": "aprovado",
-    "nota_ambiente": "Auditores acadêmicos exigem o venv de notebook; tentativa inicial no venv da aplicação encontrou nbformat ausente. Ambos passaram no ambiente acadêmico."
+    "nota_ambiente": "Auditores acadêmicos exigem o venv de notebook; tentativa inicial no venv da aplicação encontrou nbformat ausente. Ambos passaram no ambiente acadêmico.",
+    "ci_tentativa_inicial": {
+      "commit": "2b109ee224d941fa828100c7ce6e4799d4592d9b",
+      "job": 120602496809,
+      "resultado": "Verificação nova falhou somente na comparação do hash bruto local CRLF com o checkout Linux LF; texto/PDF, citações, dataset e pacotes históricos passaram antes dessa asserção.",
+      "correcao": "Conferir identidade do notebook pelo objeto Git e pelo SHA-256 dos bytes publicados; preservar o hash bruto original como evidência local."
+    }
   },
   "execucoes": [
     {
@@ -338,6 +347,6 @@
     "README.md": "5225f04806651b8a79500d3f7808e24ca495168059a3c7a252d3ee68f6bcf712",
     "reexecutar_baseline.py": "90a843a86822a647fc89df95034681e4d52e00f515a40017525de174fe6ac850",
     "revisao_pendente.md": "46a0de7c354c6e266dbcf100e2cb48557df5c31c1e979315e807ef3d0b7103ae",
-    "verificar_fechamento.py": "53c9e164ab663d7e84472dfe440f619f7dd3cb08d2a4154dccac4bb3fbc0d1c5"
+    "verificar_fechamento.py": "2d855b3b2c56b20f13fc21f67795676d7349274a158e263a97afe268eb24d1a1"
   }
 }
