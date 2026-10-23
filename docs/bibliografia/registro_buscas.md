@@ -1,9 +1,10 @@
 # Registro de buscas bibliográficas — PI IV
 
 Protocolo: [versão de 21/10/2026](../literature_review.md).
-Estado: **coleta parcial iniciada: B01/B02 concluídas no arXiv; demais buscas,
-triagem formal e leitura integral pendentes**. Não há estudos incluídos por
-decisão final nem total global apurado da revisão.
+Estado: **coleta parcial iniciada: B01/B02 concluídas no arXiv; seleção
+complementar recebida e conferida em 23/10; demais buscas, triagem formal e
+leitura integral pendentes**. Não há estudos incluídos por decisão final nem
+total global apurado da revisão.
 
 ## Identificação antes da primeira execução
 
@@ -76,8 +77,33 @@ total deduplicado; distinguir retirada de duplicata de exclusão por conteúdo.
 
 ## Emendas posteriores à versão de 21/10/2026
 
-Sem emendas registradas. Preencher por adição quando necessário; não apagar
-uma consulta ou decisão anterior.
+Não houve alteração de consultas, corte temporal ou critérios em 23/10. O registro
+complementar abaixo é aditivo; não substitui uma busca planejada nem uma decisão
+de inclusão. Preencher emendas de protocolo quando necessárias, sem apagar
+consultas ou decisões anteriores.
 
 | ID/data | Responsável | Regra anterior | Regra nova e motivo | Resultados já vistos ao decidir | Execuções/decisões afetadas e necessidade de repetição |
 | --- | --- | --- | --- | --- | --- |
+
+## Seleção complementar de 23/10/2026
+
+Origem: Markdown bibliográfico recebido do usuário, atualizado após conferência
+dirigida de registros institucionais e trechos de fontes. Responsável pela
+organização/consulta: Codex (IA); conferência humana e seleção final pendentes.
+[Original e recibo](README.md), [referências revistas](referencias_comentadas_20261023.md)
+e [registro estruturado das 14 entradas](referencias_20261023.json).
+As 12 entradas P1–P6/T1–T6 e duas fontes documentais não são 14 estudos empíricos
+incluídos. Não atualizar totais globais com essa contagem de entradas.
+
+| Ocorrência complementar | Identidade / vínculo anterior | Consulta e tratamento |
+| --- | --- | --- |
+| COMP-20261023-T3 | `ARXIV-2507.05595`; `B01-ARXIV-003`; fonte conhecida `cui2025` | Mesmo trabalho; preservar origem e contagem anterior |
+| COMP-20261023-T4 | `ARXIV-2609.20064`; `B02-ARXIV-001` | Mesma v1; metadados/trechos conferidos; ficha parcial, sem inclusão final |
+| COMP-20261023-P6 | `ACL-L06-1222`; fonte conhecida `sousa2006` | Mesmo artigo já citado em `fontes_consultadas.json`; não presumir novidade |
+| Demais COMP-20261023-P*/T*/D* | Identificadores e fontes no JSON complementar | Origem complementar; consulta e leitura descritas por entrada; independência científica não apurada |
+
+O artigo T4 difere da ficha de modelo Zenodo denominada `kiessling2026` nos
+pacotes acadêmicos. T5 reúne a publicação CACM e a versão arXiv como versões
+relacionadas, sem contá-las automaticamente como dois estudos.
+Os [fichamentos parciais de T1/T4](fichamentos_parciais_20261023.md) localizam
+o que foi consultado e o que falta ler; não conferem inclusão por si mesmos.

@@ -15,3 +15,13 @@ Cabeçalhos, créditos e números editoriais devem ser separados por **trechos i
 Estados: `pending_review`, `validated`, `rejected`. Validar texto exige `text_diplomatic`, `reference_kind=human_diplomatic`, revisor identificado e instante com fuso. Geometria tem estado próprio. Correspondência de página e cobertura de região também precisam de conferência. A interface oferece rascunho e confirmação explícita; simples edição não inclui automaticamente no experimento.
 
 Normalização de avaliação: Unicode NFC e redução de espaços, igualmente na referência e hipótese. Caixa, acentos, grafia, números e sinais permanecem. Não aplicar stopwords, lowercase, stemming ou lematização. CER/WER são taxas de edição por contagens e podem exceder 100%; não são convertidas em “acurácia”.
+
+## Fundamentação e adaptações documentadas — 23/10/2026
+
+A [seleção bibliográfica comentada](bibliografia/referencias_comentadas_20261023.md#p5--normas-de-transcrição-referência-para-decisões-explícitas)
+compara as normas de transcrição do Arquivo Nacional com esta política, item a
+item. P2/P4/P6 contextualizam modalidades editoriais e corpus histórico; T5
+orienta a documentação do dataset. Essas relações são aplicações metodológicas
+do projeto, sem atribuir aos autores decisões específicas que não formularam.
+O adendo explicita a fundamentação das regras existentes; não é confirmação
+humana de texto, geometria, cobertura ou correspondência.

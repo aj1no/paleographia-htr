@@ -11,6 +11,8 @@ incorporado e houve um **ensaio técnico real de ajuste fino do PP-OCRv6**, com
 dois passos de otimização. A avaliação científica em documentos reservados
 depende de novos pares revisados e partições documentais confirmadas.
 Veja [fontes, recortes para revisão, evidências e explicação para o professor](docs/dataset_expansion_20261023/README.md).
+As [referências comentadas e seus vínculos com o método](docs/bibliografia/README.md)
+foram incorporadas à documentação, distinguindo consulta parcial e leitura integral.
 
 A [versão principal no GitHub](https://github.com/aj1no/paleographia-htr/tree/main)
 contém o programa, a documentação e as evidências publicadas. A branch

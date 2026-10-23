@@ -6,6 +6,12 @@ somente a recuperação B01/B02 no arXiv. **Triagem formal, leitura integral e
 fichamentos deste lote estão pendentes.** As fontes já conhecidas mantêm origem e escopo
 real de leitura; não herdam aprovação para inclusão.
 
+**Adição de 23/10/2026:** a [seleção comentada](referencias_comentadas_20261023.md)
+e os [fichamentos parciais](fichamentos_parciais_20261023.md) acrescentam consultas
+dirigidas e pendências explícitas. A tabela histórica abaixo continua como
+recuperação de 21/10; ver os vínculos canônicos no [registro complementar](registro_buscas.md#seleção-complementar-de-23102026).
+Nenhuma decisão final de triagem ou leitura integral foi atribuída a essa adição.
+
 ## Ocorrências, registros canônicos e seleção
 
 Uma ocorrência conserva sua base/consulta ou origem complementar. Um registro
