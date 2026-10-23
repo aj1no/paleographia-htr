@@ -10,13 +10,18 @@ fontes e o ajuste fino passaram a integrar a etapa acadêmica. O corpus v0.2 foi
 incorporado e houve um **ensaio técnico real de ajuste fino do PP-OCRv6**, com
 dois passos de otimização. A avaliação científica em documentos reservados
 depende de novos pares revisados e partições documentais confirmadas.
+
+**[Entrega acadêmica atual: artigo, notebook baseline e links de submissão](docs/entregas/pi_iv_pln_20261023_fechamento/README.md).**
+O guia reúne a versão atual do artigo, o notebook indicado, a reprodução e os
+pontos de revisão dos autores e dos oito novos recortes. Submissões e confirmações
+humanas continuam pendentes; o baseline recalcula predições arquivadas.
 Veja [fontes, recortes para revisão, evidências e explicação para o professor](docs/dataset_expansion_20261023/README.md).
 As [referências comentadas e seus vínculos com o método](docs/bibliografia/README.md)
 foram incorporadas à documentação, distinguindo consulta parcial e leitura integral.
 Os [fichamentos integrais de T1/T4](docs/bibliografia/leitura_t1_t4_20261023/README.md)
 e o [artigo com fundamentação ampliada](docs/entregas/pi_iv_pln_20261023_fundamentacao/README.md)
 estão disponíveis, com leitura por IA e revisão dos autores pendente.
-A [versão do artigo preparada para entrega](docs/entregas/pi_iv_pln_20261023_entrega/README.md)
+A [versão editorial anterior do artigo](docs/entregas/pi_iv_pln_20261023_entrega/README.md)
 inclui PDF e Word com três páginas, citações conferidas e declaração de IA;
 as pendências de PI IV e PLN estão registradas separadamente.
 O [notebook colaborativo da equipe](docs/entregas/pi_iv_pln_20261023_equipe/README.md)

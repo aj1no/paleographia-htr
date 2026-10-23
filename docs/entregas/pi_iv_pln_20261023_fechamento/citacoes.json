@@ -1,0 +1,170 @@
+{
+  "recorded_on": "2026-10-23",
+  "reference_entries": 9,
+  "all_entries_cited": true,
+  "orphan_citations": false,
+  "human_review": "pending",
+  "references": [
+    {
+      "key": "cui2025",
+      "author": "CUI, Cheng",
+      "pattern": "Cui et al\\. \\(2025\\)",
+      "url": "https://arxiv.org/abs/2507.05595v1",
+      "scope": "Registro e resumo reconferidos; resumo e seção 2.1 consultados na etapa histórica.",
+      "uses": [
+        "Reconhecimento multilíngue PP-OCRv5"
+      ],
+      "consulted_on": "2026-10-23",
+      "reviewer": "Codex (IA)",
+      "human_review": "pending",
+      "cited_in_article": true,
+      "reference_present": true
+    },
+    {
+      "key": "google_antigravity2025",
+      "author": "GOOGLE ANTIGRAVITY TEAM.",
+      "pattern": "Google Antigravity Team, 2025",
+      "url": "https://developers.googleblog.com/en/build-with-google-antigravity-our-new-agentic-development-platform/",
+      "scope": "Página institucional consultada integralmente nesta etapa; identifica a ferramenta, não o uso efetivo ou arquivos gerados no projeto.",
+      "uses": [
+        "Identificação institucional da ferramenta mencionada no registro encaminhado pelo solicitante"
+      ],
+      "consulted_on": "2026-10-23",
+      "reviewer": "Codex (IA)",
+      "human_review": "pending",
+      "cited_in_article": true,
+      "reference_present": true
+    },
+    {
+      "key": "jundiai_sd",
+      "author": "JUNDIAÍ.",
+      "pattern": "Jundiaí, s\\.d\\.",
+      "url": "https://jundiai.sismu.app/obra/102201/traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+      "scope": "Ficha institucional reconferida.",
+      "uses": [
+        "PT/TT/PBR/0004/026",
+        "Traslado 1767; evento 1656"
+      ],
+      "consulted_on": "2026-10-23",
+      "reviewer": "Codex (IA)",
+      "human_review": "pending",
+      "cited_in_article": true,
+      "reference_present": true
+    },
+    {
+      "key": "kiessling2026a",
+      "author": "KIESSLING, Benjamin. A Free Lunch?",
+      "pattern": "Kiessling \\(2026a",
+      "url": "https://arxiv.org/abs/2609.20064v1",
+      "scope": "Leitura integral por IA na etapa anterior e cotejo nesta revisão; preprint v1.",
+      "pages": {
+        "arquitetura_dados_normalizacao": "3–6",
+        "resultados_negativos": "8–9"
+      },
+      "local_source": "docs/bibliografia/leitura_t1_t4_20261023/fontes/T4.pdf",
+      "uses": [
+        "Configuração do preprint: 96 px, 37 línguas reais",
+        "CTC e decodificador auxiliar",
+        "NFD e U+0020",
+        "Desenhos/independência e tabela 5"
+      ],
+      "consulted_on": "2026-10-23",
+      "reviewer": "Codex (IA)",
+      "human_review": "pending",
+      "cited_in_article": true,
+      "reference_present": true,
+      "source_sha256": "b800bb5de7694472fe417b29131b4f5a7eaffb2488ec37f1e7bbdad406bfbcbe"
+    },
+    {
+      "key": "kiessling2026b",
+      "author": "KIESSLING, Benjamin. PP-OCRv6",
+      "pattern": "2026b\\)",
+      "url": "https://zenodo.org/records/21788410",
+      "scope": "Descrição da ficha do checkpoint v1 reconferida, sem auditoria de todos os dados externos.",
+      "uses": [
+        "Descrição da ficha: 128 px, 44 línguas",
+        "Mistura de convenções de transcrição"
+      ],
+      "consulted_on": "2026-10-23",
+      "reviewer": "Codex (IA)",
+      "human_review": "pending",
+      "cited_in_article": true,
+      "reference_present": true
+    },
+    {
+      "key": "miranda_sd",
+      "author": "MIRANDA, Ana Caroline",
+      "pattern": "Miranda, s\\.d\\.",
+      "url": "https://jundiai.sismu.app/obra/100529/transcricao-paleografica-do-traslado-do-auto-de-criacao-da-vila-de-jundiai-no-ano-de-1656-a-14-dezembro",
+      "scope": "Ficha reconferida; crédito do revisor conferido visualmente no rodapé da página 11 do PDF editorial preservado.",
+      "pages": {
+        "credito_revisor": "11 (página do PDF)"
+      },
+      "local_source": "docs/experimentos/traslado_269r_20261016/support/edition.pdf",
+      "uses": [
+        "Edição de apoio",
+        "Revisão de Thiago Paschoal"
+      ],
+      "consulted_on": "2026-10-23",
+      "reviewer": "Codex (IA)",
+      "human_review": "pending",
+      "cited_in_article": true,
+      "reference_present": true,
+      "source_sha256": "3fa01bf328add9393c8a79896f94d39db292fe51543c49ea679b33a3ec069b65"
+    },
+    {
+      "key": "muehlberger2019",
+      "author": "MUEHLBERGER, Guenter",
+      "pattern": "Muehlberger et al\\. \\(2019",
+      "url": "https://doi.org/10.1108/JD-07-2018-0114",
+      "scope": "Leitura integral por IA na etapa anterior; cotejo das passagens utilizadas.",
+      "pages": {
+        "fluxo_referencia": "958–963",
+        "busca_transcricao": "963"
+      },
+      "local_source": "docs/bibliografia/leitura_t1_t4_20261023/fontes/T1.pdf",
+      "uses": [
+        "Fluxo arquivístico e referência consistente",
+        "Casos heterogêneos",
+        "Busca versus exatidão da transcrição"
+      ],
+      "consulted_on": "2026-10-23",
+      "reviewer": "Codex (IA)",
+      "human_review": "pending",
+      "cited_in_article": true,
+      "reference_present": true,
+      "source_sha256": "3131ba418e684029078611d06aa7316818d60a4c83589a4b9245950066b415dd"
+    },
+    {
+      "key": "rapidai_sd",
+      "author": "RAPIDAI.",
+      "pattern": "RapidAI, s\\.d\\.",
+      "url": "https://rapidai.github.io/RapidOCRDocs/main/en/model_list/",
+      "scope": "Página oficial de modelos e conversões reconferida.",
+      "uses": [
+        "Conversões e ambientes ONNX"
+      ],
+      "consulted_on": "2026-10-23",
+      "reviewer": "Codex (IA)",
+      "human_review": "pending",
+      "cited_in_article": true,
+      "reference_present": true
+    },
+    {
+      "key": "sousa_trippel2006",
+      "author": "SOUSA, Maria Clara",
+      "pattern": "Sousa e Trippel \\(2006\\)",
+      "url": "https://aclanthology.org/L06-1222/",
+      "scope": "Registro e resumo da ACL reconferidos, sem leitura integral atribuída.",
+      "uses": [
+        "Reestruturação de corpus, marcação e padrões abertos"
+      ],
+      "consulted_on": "2026-10-23",
+      "reviewer": "Codex (IA)",
+      "human_review": "pending",
+      "cited_in_article": true,
+      "reference_present": true
+    }
+  ],
+  "source_citation_audit": "docs/entregas/pi_iv_pln_20261023_entrega/citacoes.json"
+}

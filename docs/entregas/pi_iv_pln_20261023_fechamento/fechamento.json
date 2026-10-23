@@ -1,0 +1,343 @@
+{
+  "data": "2026-10-23",
+  "source_commit": "dbcd8ce100147ba066233d9b4d6078b7159dcec9",
+  "working_tree_modified_during_preparation": true,
+  "request": {
+    "arquivo": "PaleographIA_Fechamento_Entrega_e_Dataset_Codex.md",
+    "sha256": "dbe745bc74a20887088b8c9893c194c44e9087a039b7b33ffdb8c73badc99a0d",
+    "autorizacao": "Solicitante autorizou executar o fechamento e publicar no GitHub, mantendo submissões e confirmações pendentes."
+  },
+  "artigo": {
+    "paginas": 3,
+    "referencias": 9,
+    "blocos_e_celulas_conferidos": 76,
+    "links_conferidos": 13,
+    "texto_markdown_docx_pdf_correspondente": true
+  },
+  "dataset": {
+    "fontes": 15,
+    "paginas_pdf": 59,
+    "ocorrencias_manuscrito": 28,
+    "grupos_candidatos": 7,
+    "grupos_com_independencia_confirmada": 0,
+    "linhas_historicas": 24,
+    "linhas_historicas_validadas": 16,
+    "ressalvas": 8,
+    "novos_candidatos": 8,
+    "novos_pares_aptos": 0,
+    "particoes_cientificas": {
+      "train": 0,
+      "validation": 0,
+      "test": 0
+    }
+  },
+  "baseline": {
+    "resultado": "aprovado",
+    "tipo": "checkout_local",
+    "servico_colab_hospedado_testado": false,
+    "download_no_navegador_testado": false,
+    "celulas_codigo_executadas": 18,
+    "tabelas_identicas_a_20261022": 6,
+    "linhas": 24,
+    "ressalvas": 8,
+    "metricas": {
+      "ppocrv5": {
+        "characters": {
+          "substitutions": 200,
+          "deletions": 444,
+          "insertions": 6,
+          "hits": 468,
+          "reference_length": 1112,
+          "errors": 650,
+          "rate": 0.5845323741007195
+        },
+        "words": {
+          "substitutions": 108,
+          "deletions": 84,
+          "insertions": 0,
+          "hits": 11,
+          "reference_length": 203,
+          "errors": 192,
+          "rate": 0.9458128078817734
+        }
+      },
+      "ppocrv6": {
+        "characters": {
+          "substitutions": 96,
+          "deletions": 54,
+          "insertions": 18,
+          "hits": 962,
+          "reference_length": 1112,
+          "errors": 168,
+          "rate": 0.1510791366906475
+        },
+        "words": {
+          "substitutions": 95,
+          "deletions": 22,
+          "insertions": 5,
+          "hits": 86,
+          "reference_length": 203,
+          "errors": 122,
+          "rate": 0.6009852216748769
+        }
+      }
+    },
+    "registros_humanos_historicos": 17,
+    "novos_registros_individuais": 0,
+    "novas_inferencias": 0,
+    "notebook_sha256": "085dbf747c8699521d6bcf8a730edbb974e21e426c913e0b9a72b9d6955a0580",
+    "python": "3.12.14",
+    "sistema": "Windows",
+    "ambiente": {
+      "nbformat": "5.10.4",
+      "nbclient": "0.10.2",
+      "ipykernel": "6.30.1"
+    },
+    "ambiente_kernel": {
+      "jiwer": "4.0.0",
+      "Pillow": "11.3.0",
+      "numpy": "2.2.6",
+      "matplotlib": "3.10.6",
+      "nbformat": "5.10.4",
+      "nbclient": "0.10.2"
+    },
+    "notebook": "docs/entregas/pi_iv_pln_20261023_colab/colaboracao_colab.ipynb",
+    "revisao_dados_colab": "c8a3e9a7f1cc55b66d630c510eff17ff95dfdece",
+    "protecao_executor_e_kernel": true,
+    "eventos_protecao": [
+      {
+        "evento": "protecao_ativa",
+        "pid": 36536,
+        "kernel": false
+      },
+      {
+        "evento": "protecao_ativa",
+        "pid": 7788,
+        "kernel": true
+      }
+    ],
+    "operacoes_bloqueadas": 0,
+    "figuras_png_svg_conferidas": 4,
+    "figuras_inspecionadas_visualmente": [
+      "cer_wer.png",
+      "cer_blocos.png"
+    ]
+  },
+  "renderizacao": {
+    "renderer": "Microsoft Word 16.0",
+    "source_opened_read_only": true,
+    "paginas": 3,
+    "qa_dpi": 150,
+    "paginas_inspecionadas": [
+      1,
+      2,
+      3
+    ],
+    "resultado_visual": "sem cortes, sobreposições ou glifos ausentes observados",
+    "helper": "render_docx.py",
+    "fallback": "LibreOffice indisponível; rasterização do helper sobre PDF exportado pelo Word, usando Poppler do runtime."
+  },
+  "preservacao": {
+    "arquivos_versionados_na_partida": 1049,
+    "arquivos_anteriores_inalterados": 1043,
+    "arquivos_anteriores_atualizados": [
+      ".gitattributes",
+      ".github/workflows/ci.yml",
+      "README.md",
+      "docs/README.md",
+      "docs/academic_alignment.md",
+      "docs/ai_comments.md"
+    ],
+    "pacotes": [
+      {
+        "prefixo": "docs/entregas/pi_iv_pln_20261020/",
+        "quantidade_arquivos": 25,
+        "sha256_do_conjunto": "fd7e62b46e110f3af7f45bed8699bb63eb6f0cc8d92daef220c1b188fc7abe63"
+      },
+      {
+        "prefixo": "docs/entregas/pi_iv_pln_20261022/",
+        "quantidade_arquivos": 29,
+        "sha256_do_conjunto": "9f8a18f6045d63e5f4446a840478bc5ae125911fa21776f1e1066a441b4ac6b9"
+      },
+      {
+        "prefixo": "docs/entregas/pi_iv_pln_20261023_fundamentacao/",
+        "quantidade_arquivos": 3,
+        "sha256_do_conjunto": "b6735477e22813b7b79ca176473a4222a21178a2b62fb10cdfea521b5c22da7b"
+      },
+      {
+        "prefixo": "docs/entregas/pi_iv_pln_20261023_entrega/",
+        "quantidade_arquivos": 9,
+        "sha256_do_conjunto": "8cd91e2a4a1ba0b8d4e3e1a65f96cc7a1ce9049d893aa6077c6de88d53862b91"
+      },
+      {
+        "prefixo": "docs/entregas/pi_iv_pln_20261023_equipe/",
+        "quantidade_arquivos": 9,
+        "sha256_do_conjunto": "44cd21f80329b85628eb1d80f3fdf8db737a36a146f9eba763b1b06c06071fdd"
+      },
+      {
+        "prefixo": "docs/entregas/pi_iv_pln_20261023_colab/",
+        "quantidade_arquivos": 9,
+        "sha256_do_conjunto": "da6a9f1b37c54d97f382298df470df321b00833260027b26e3ad8abb718c7237"
+      },
+      {
+        "prefixo": "docs/revisao_humana/traslado_269r/",
+        "quantidade_arquivos": 261,
+        "sha256_do_conjunto": "3c6a1c22e716d67a76159e98d1ceef26ffee4a1dca26229a3eea76e6061fed58"
+      },
+      {
+        "prefixo": "docs/experimentos/",
+        "quantidade_arquivos": 253,
+        "sha256_do_conjunto": "ba853f71b570ac09e5368ffb12959316e8b36419d664c826d4b137e874ba7bce"
+      },
+      {
+        "prefixo": "docs/bibliografia/leitura_t1_t4_20261023/",
+        "quantidade_arquivos": 6,
+        "sha256_do_conjunto": "202433498415954464e64aaf8753311afb3808fbb946c9bd4fb3e832d5e9b3b3"
+      },
+      {
+        "prefixo": "docs/dataset_expansion_20261023/",
+        "quantidade_arquivos": 55,
+        "sha256_do_conjunto": "2d8e37fd0da3b16dea54f723ce20e3ea99fd07af9eba5a56219c1a6962c2d0c9"
+      },
+      {
+        "prefixo": "data/manifests/corpus_expandido_v02/",
+        "quantidade_arquivos": 68,
+        "sha256_do_conjunto": "107878848f6cd54d78125eb27315afc88f33bd9a0ca76f7c2e48271283016254"
+      },
+      {
+        "prefixo": "data/manifests/traslado_269r/",
+        "quantidade_arquivos": 2,
+        "sha256_do_conjunto": "e165b830b1712d478aae13a9fe14f81fc2db49180d85f30326eb47696366b1a0"
+      },
+      {
+        "prefixo": "src/paleographia/",
+        "quantidade_arquivos": 27,
+        "sha256_do_conjunto": "34c1b64dfbf477358240589b4cfea40e4acff84c11a3d80c3295fc18cc46115b"
+      },
+      {
+        "prefixo": "configs/",
+        "quantidade_arquivos": 8,
+        "sha256_do_conjunto": "28fe3e6a1de5485c3d036ff31b0f882b9f264167383a833a93f091654257a256"
+      },
+      {
+        "prefixo": "runtime/kraken_ppocrv6/",
+        "quantidade_arquivos": 4,
+        "sha256_do_conjunto": "e58668650f3f5fe94aa04424296f566ebdb4d093d11ddefb2a82cf52c8ee3c7a"
+      }
+    ],
+    "referencias_predicoes_revisoes_e_pesos_preservados": true,
+    "metodo_pacotes": "SHA-256 do mapa ordenado caminho -> objeto Git do conteúdo, com filtros de fim de linha; sem gravar objetos. SHA-256 dos bytes locais conferido contra snapshot inicial durante a preparação."
+  },
+  "testes": {
+    "pytest_passed": 192,
+    "pytest_warnings": 1,
+    "warning": "DeprecationWarning existente no starlette/testclient sobre anyio.BlockingPortal",
+    "auditoria_expansao": {
+      "valid": true,
+      "files_verified": 126,
+      "local_artifacts_checked": true
+    },
+    "auditoria_entrega_20261020": "aprovado",
+    "auditoria_entrega_20261022": "aprovado",
+    "nota_ambiente": "Auditores acadêmicos exigem o venv de notebook; tentativa inicial no venv da aplicação encontrou nbformat ausente. Ambos passaram no ambiente acadêmico."
+  },
+  "execucoes": [
+    {
+      "comando": "tmp/academico_notebook_venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261023_fechamento/reexecutar_baseline.py",
+      "resultado": "18 células e cálculos aprovados; rotina terminou com erro na limpeza do cache temporário no Windows."
+    },
+    {
+      "comando": "tmp/academico_notebook_venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261023_fechamento/reexecutar_baseline.py --saida output/fechamento_20261023/baseline_final",
+      "exit_code": 0,
+      "resultado": "aprovado; cache da rodada preservado em tmp"
+    },
+    {
+      "comando": ".venv/Scripts/python.exe -m pytest -q",
+      "exit_code": 0
+    },
+    {
+      "comando": ".venv/Scripts/python.exe scripts/audit_dataset_expansion.py --local-artifacts",
+      "exit_code": 0
+    },
+    {
+      "comando": "tmp/academico_notebook_venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261020/verificar_entrega.py",
+      "exit_code": 0
+    },
+    {
+      "comando": "tmp/academico_notebook_venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261022/verificar_entrega.py",
+      "exit_code": 0
+    },
+    {
+      "comando": ".venv/Scripts/python.exe docs/entregas/pi_iv_pln_20261023_fechamento/verificar_fechamento.py",
+      "exit_code": 0
+    }
+  ],
+  "experimento_cientifico": {
+    "executado": false,
+    "dry_run": {
+      "status": "not_executed",
+      "mode": "dry_run",
+      "started_at": "2026-10-23T18:52:29.024562+00:00",
+      "engine": "ketos",
+      "backend": "kraken_ppocrv6",
+      "test_used": false,
+      "reason": "ValueError: Partições científicas exigem independência documental confirmada.",
+      "finished_at": "2026-10-23T18:52:29.026563+00:00",
+      "duration_seconds": 0.0
+    },
+    "comando": ".venv/Scripts/python.exe -m paleographia train --config configs/training_ppocrv6_scientific.toml --output-dir output/fechamento_20261023/bloqueio_cientifico",
+    "docker_iniciado": false,
+    "novas_inferencias": 0,
+    "novos_passos_otimizacao": 0,
+    "teste_utilizado": false,
+    "configuracao_candidata": "configs/training_ppocrv6_scientific.toml",
+    "proxima_acao": "Revisão dos oito candidatos, confirmação documental e partições persistentes antes de selecionar configurações; novo orçamento deve considerar o pico anterior próximo de 4 GiB."
+  },
+  "submissao": {
+    "executada": false,
+    "planilha": "https://docs.google.com/spreadsheets/d/1QlHVMDzOaElIdInD9BIDEun_v5TgPhD36OWzQlFH8EQ/edit",
+    "aba": "Página1",
+    "gid": 0,
+    "grupo": 4,
+    "linhas": [
+      11,
+      14
+    ],
+    "link_notebook_1": "F11:F14",
+    "celula_inicial": "F11",
+    "situacao_observada": "vazia",
+    "link_artigo": "E11:E14",
+    "planilha_consultada_sem_edicao": true,
+    "classroom": "não submetido",
+    "docentes_e_colegas_contatados": false
+  },
+  "revisao_humana": {
+    "novas_validacoes": 0,
+    "confirmacoes_colegas": "pendentes",
+    "artigo": "revisão dos quatro autores pendente",
+    "curadoria": "oito candidatos pendentes; alvos diplomáticos vazios",
+    "pi_iv": "enquadramento docente pendente",
+    "revisao_sistematica": "não concluída",
+    "planilha_uso_ia": "PaleographIA_Documentacao_Uso_IA.xlsx não localizada; original precisa ser disponibilizado; não foi criada substituta",
+    "prompts_antigravity": "não recuperados; versão, modelo, datas e alterações específicas não individualizados"
+  },
+  "fontes_adicionais": [
+    {
+      "titulo": "Apresentação institucional do Google Antigravity Team",
+      "url": "https://developers.googleblog.com/en/build-with-google-antigravity-our-new-agentic-development-platform/",
+      "consulta": "2026-10-23",
+      "limite": "Identifica a ferramenta; uso inicial é relato no documento encaminhado pelo solicitante, sem atribuir arquivos ao software."
+    }
+  ],
+  "arquivos": {
+    "artigo.docx": "05cfd0c3fb82dbbe87e92c11bfeb6bb431aefffcae9333d7d3996ef0b194eb17",
+    "artigo.md": "6a0e29701441a01f357f456e4ba1dedbb430387e67cc8c8c13689e48939e0026",
+    "artigo.pdf": "0bc9c41690153f9187348e6247df96420007082fb135b16e8bc7363684eb3836",
+    "citacoes.json": "ced6a067272df0004a04513774e19743b67a1f3bbac437e64551ab6794e1b780",
+    "gerar_artigo.py": "0d4b578514aaba73c379fc84e96ac15d8faae0e7efbdc632f410514bc2dc5502",
+    "README.md": "5225f04806651b8a79500d3f7808e24ca495168059a3c7a252d3ee68f6bcf712",
+    "reexecutar_baseline.py": "90a843a86822a647fc89df95034681e4d52e00f515a40017525de174fe6ac850",
+    "revisao_pendente.md": "46a0de7c354c6e266dbcf100e2cb48557df5c31c1e979315e807ef3d0b7103ae",
+    "verificar_fechamento.py": "53c9e164ab663d7e84472dfe440f619f7dd3cb08d2a4154dccac4bb3fbc0d1c5"
+  }
+}
