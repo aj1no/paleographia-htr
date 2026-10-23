@@ -23,6 +23,11 @@ O [notebook colaborativo da equipe](docs/entregas/pi_iv_pln_20261023_equipe/READ
 recupera a divisão do primeiro artigo e oferece atividades e campos de relato
 para Caio, Guilherme, Tiago e Rodolfo. As contribuições individuais ficam a preencher.
 
+[![Abrir notebook da equipe no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aj1no/paleographia-htr/blob/main/docs/entregas/pi_iv_pln_20261023_colab/colaboracao_colab.ipynb)
+
+Para preencher no navegador: salve uma cópia no Drive, execute tudo, preencha sua
+seção e baixe o ZIP dos relatos. Veja o [guia dos alunos](docs/entregas/pi_iv_pln_20261023_colab/README.md).
+
 A [versão principal no GitHub](https://github.com/aj1no/paleographia-htr/tree/main)
 contém o programa, a documentação e as evidências publicadas. A branch
 `codex/refatoracao-piloto` foi preservada como registro da etapa anterior.
