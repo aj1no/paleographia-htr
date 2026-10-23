@@ -1,0 +1,71 @@
+{
+  "resultado": "aprovado",
+  "tipo": "linux_com_preparacao_remota",
+  "servico_colab_hospedado_testado": false,
+  "download_no_navegador_testado": false,
+  "celulas_codigo_executadas": 18,
+  "tabelas_identicas_a_20261022": 6,
+  "linhas": 24,
+  "ressalvas": 8,
+  "metricas": {
+    "ppocrv5": {
+      "characters": {
+        "substitutions": 200,
+        "deletions": 444,
+        "insertions": 6,
+        "hits": 468,
+        "reference_length": 1112,
+        "errors": 650,
+        "rate": 0.5845323741007195
+      },
+      "words": {
+        "substitutions": 108,
+        "deletions": 84,
+        "insertions": 0,
+        "hits": 11,
+        "reference_length": 203,
+        "errors": 192,
+        "rate": 0.9458128078817734
+      }
+    },
+    "ppocrv6": {
+      "characters": {
+        "substitutions": 96,
+        "deletions": 54,
+        "insertions": 18,
+        "hits": 962,
+        "reference_length": 1112,
+        "errors": 168,
+        "rate": 0.1510791366906475
+      },
+      "words": {
+        "substitutions": 95,
+        "deletions": 22,
+        "insertions": 5,
+        "hits": 86,
+        "reference_length": 203,
+        "errors": 122,
+        "rate": 0.6009852216748769
+      }
+    }
+  },
+  "registros_humanos_historicos": 17,
+  "novos_registros_individuais": 0,
+  "novas_inferencias": 0,
+  "notebook_sha256": "74bef9ee74a836aa628d3eea00dbf20d29699c255b4a689483d75a50e914b496",
+  "python": "3.12.15",
+  "sistema": "Linux",
+  "ambiente": {
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2",
+    "ipykernel": "6.30.1"
+  },
+  "ambiente_kernel": {
+    "jiwer": "4.0.0",
+    "Pillow": "12.3.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "nbformat": "5.10.4",
+    "nbclient": "0.10.2"
+  }
+}

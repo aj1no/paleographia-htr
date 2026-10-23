@@ -19,6 +19,7 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 
 | Material | Situação |
 | --- | --- |
+| [Abrir e preencher no Google Colab](entregas/pi_iv_pln_20261023_colab/README.md) | Botão direto, preparação do ambiente, formulários por aluno e download do ZIP de relatos para conferência |
 | [Notebook colaborativo e cronograma da equipe](entregas/pi_iv_pln_20261023_equipe/README.md) | Atividades por integrante e registro de discussão/análise; 16 células executadas por IA, formulários individuais vazios; núcleo numérico preservado |
 | [Artigo preparado para entrega — PDF e Word](entregas/pi_iv_pln_20261023_entrega/README.md) | Três páginas no layout PLN2026; revisão integral de texto/citações; declaração de IA e nota de adequação a PI IV/PLN; revisão dos autores e enquadramento docente pendentes |
 | [Artigo com fundamentação ampliada — 23/10](entregas/pi_iv_pln_20261023_fundamentacao/README.md) | T1/T4 lidos integralmente por IA; fundamentos e discussão atualizados; métricas preservadas; revisão dos autores pendente |
