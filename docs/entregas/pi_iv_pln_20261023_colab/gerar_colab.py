@@ -1,6 +1,7 @@
 """Versão Colab aditiva; preserva o notebook e os cálculos anteriores."""
 from pathlib import Path
 import hashlib
+import json
 import re
 
 import nbformat as nbf
@@ -26,6 +27,14 @@ def gerar():
     for cell in nb.cells:
         if cell.cell_type == 'markdown':
             cell.source = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', link_absoluto, cell.source)
+            if cell.id == 'ced5cb39':
+                cell.source = '''## 1. Ambiente e localização dos arquivos
+
+A célula **Preparar o projeto** acima busca os dados e prepara as bibliotecas no
+Colab. Execute as células em ordem. Os resultados derivados podem ser recriados;
+os pacotes históricos são somente lidos. Fora do Colab, use o checkout local com
+as dependências de notebook já instaladas.
+'''
             for pid in ['caio', 'guilherme', 'tiago', 'rodolfo']:
                 cell.source = cell.source.replace('Preencha `resposta_' + pid + '`', 'Preencha os campos do formulário')
         elif cell.cell_type == 'code':
@@ -43,7 +52,8 @@ def gerar():
                     ('evidencias', 'Caminho, URL ou relato: descrição; separe itens com ponto e vírgula'),
                     ('uso_de_ia', 'Ferramenta e função, ou declaração de não utilização'),
                 ]:
-                    campos.append(campo + '_' + pid + ' = "" # @param {type:"string", placeholder:"' + rotulo + '"}')
+                    configuracao = json.dumps({'type': 'string', 'placeholder': rotulo}, ensure_ascii=False)
+                    campos.append(campo + '_' + pid + ' = "" # @param ' + configuracao)
                 cell.source = '# @title ' + pid.capitalize() + ' — preencher e executar { display-mode: "form" }\n' + prefixo + '\n'.join(campos) + '\n'
                 cell.source += 'resposta_' + pid + ' = {\n'
                 for campo in ['preenchido_por', 'data_atividade', 'relato', 'evidencias', 'uso_de_ia']:
