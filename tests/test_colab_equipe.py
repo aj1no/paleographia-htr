@@ -71,6 +71,11 @@ def test_notebook_prepara_antes_das_dependencias_e_inicia_vazio(tmp_path):
     for pid in ['caio', 'guilherme', 'tiago', 'rodolfo']:
         cell = next(c for c in codigo if c['id'] == 'equipe-' + pid + '-formulario')
         source = ''.join(cell['source'])
+        # O parser de formulários do Colab exige JSON válido, inclusive quando
+        # a dica contém dois-pontos ("relato: descrição").
+        configuracoes = [line.split('# @param ', 1)[1] for line in source.splitlines() if '# @param {' in line]
+        assert len(configuracoes) == 5
+        assert all(json.loads(config)['type'] == 'string' for config in configuracoes)
         # Avalia somente o formulário, sem o material automático de consulta.
         form = source[source.index('preenchido_por_' + pid + ' ='):]
         env = {'RAIZ': tmp_path, 'registrar_participacao': PART['registrar']}
