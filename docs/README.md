@@ -19,6 +19,7 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 
 | Material | Situação |
 | --- | --- |
+| [Artigo preparado para entrega — PDF e Word](entregas/pi_iv_pln_20261023_entrega/README.md) | Três páginas no layout PLN2026; revisão integral de texto/citações; declaração de IA e nota de adequação a PI IV/PLN; revisão dos autores e enquadramento docente pendentes |
 | [Artigo com fundamentação ampliada — 23/10](entregas/pi_iv_pln_20261023_fundamentacao/README.md) | T1/T4 lidos integralmente por IA; fundamentos e discussão atualizados; métricas preservadas; revisão dos autores pendente |
 | [Expansão do corpus e ajuste fino](dataset_expansion_20261023/README.md) | 15 fontes, oito novos recortes candidatos, núcleo 16/8 preservado; ensaio PP-OCRv6 com dois passos reais; avaliação científica pendente de revisão |
 | [Referência assistida do 269r](revisao_humana/traslado_269r/referencia_assistida_20261020/README.md) | 24 linhas, cinco coberturas; 16 validadas e oito ressalvas |

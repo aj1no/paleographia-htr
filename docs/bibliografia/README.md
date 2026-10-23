@@ -13,6 +13,9 @@ em andamento, sem decisão final de inclusão ou leitura integral de todo o lote
   da consulta inicial, sucedido pelas fichas integrais de T1/T4.
 - [Artigo com fundamentação ampliada](../entregas/pi_iv_pln_20261023_fundamentacao/README.md):
   integração das duas leituras em versão aditiva, com resultados preservados.
+- [Artigo revisto e diagramado para entrega](../entregas/pi_iv_pln_20261023_entrega/README.md):
+  PDF e Word, oito referências conferidas, abstract e declaração de IA;
+  distingue as configurações do preprint e da ficha do checkpoint.
 - [Registro estruturado das referências](referencias_20261023.json): IDs,
   fontes, natureza, versões, vínculos e estado real de leitura/seleção. O campo
   `consultation_scope` conserva a consulta inicial; `reading_updates` e

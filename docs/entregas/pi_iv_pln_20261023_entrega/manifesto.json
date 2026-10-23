@@ -1,0 +1,597 @@
+{
+  "recorded_on": "2026-10-23",
+  "source_commit": "7f048a34ab9f406e42d22241e98146b85b81bf51",
+  "source_article": "docs/entregas/pi_iv_pln_20261023_fundamentacao/artigo_rascunho.md",
+  "source_article_sha256": "4c7d8abb679c007a04f640e22be916167057f7020d59107e5931a3cb5ad3fad4",
+  "editorial_reviewer": "Codex (IA)",
+  "author_review": "pending",
+  "teacher_approval": "not_recorded",
+  "systematic_review_completed": false,
+  "new_inferences": 0,
+  "new_human_validations": 0,
+  "metrics": {
+    "ppocrv5": {
+      "metrics": {
+        "characters": {
+          "substitutions": 200,
+          "deletions": 444,
+          "insertions": 6,
+          "hits": 468,
+          "reference_length": 1112,
+          "errors": 650,
+          "rate": 0.5845323741007195
+        },
+        "words": {
+          "substitutions": 108,
+          "deletions": 84,
+          "insertions": 0,
+          "hits": 11,
+          "reference_length": 203,
+          "errors": 192,
+          "rate": 0.9458128078817734
+        }
+      },
+      "linhas": 24,
+      "blocos": 5,
+      "falhas": 0,
+      "tempo_externo_segundos": 2.8650009999983013,
+      "soma_tempos_inferencia_segundos": 2.039137900035712
+    },
+    "ppocrv6": {
+      "metrics": {
+        "characters": {
+          "substitutions": 96,
+          "deletions": 54,
+          "insertions": 18,
+          "hits": 962,
+          "reference_length": 1112,
+          "errors": 168,
+          "rate": 0.1510791366906475
+        },
+        "words": {
+          "substitutions": 95,
+          "deletions": 22,
+          "insertions": 5,
+          "hits": 86,
+          "reference_length": 203,
+          "errors": 122,
+          "rate": 0.6009852216748769
+        }
+      },
+      "linhas": 24,
+      "blocos": 5,
+      "falhas": 0,
+      "tempo_externo_segundos": 40.550116700003855,
+      "soma_tempos_inferencia_segundos": 25.430323610999835
+    }
+  },
+  "layout": {
+    "authority": "D:/Downloads/Modelo_Artigo_PLN2026.zip:main.tex",
+    "page_mm": [
+      210,
+      297
+    ],
+    "margins_mm": {
+      "left": 10,
+      "right": 10,
+      "top": 13,
+      "bottom": 13
+    },
+    "body_columns": 2,
+    "column_gap_mm": 10,
+    "body_font": "Times New Roman 10 pt / 12 pt",
+    "heading_font": "Arial 12 pt",
+    "title_font": "Arial 14 pt",
+    "abstracts": "largura total",
+    "page_number": "000 | Página",
+    "rendered_pages": 3
+  },
+  "external_sources": [
+    {
+      "path": "D:/Downloads/Modelo_Artigo_PLN2026.zip",
+      "bytes": 101065,
+      "sha256": "ee858aa190810f2deb69ef15c567032c64a1092fb284c28add6e82e5cee5d342",
+      "redistributed": false
+    },
+    {
+      "path": "D:/Downloads/PLN2025_Mod_Artigo_.docx",
+      "bytes": 151805,
+      "sha256": "b720cbb98ffc9749986562ccbd47ea20de6ae8830e7c33fcc69e1a950e4a96c3",
+      "redistributed": false
+    },
+    {
+      "path": "D:/Downloads/PaleographIA_Artigo_Entrega_Objetivos_Planejamento.docx",
+      "bytes": 153007,
+      "sha256": "37ed22a9e4fdbf6654fd95512871a99c5b8a131a2df390529176a3dbdd37ba78",
+      "redistributed": false
+    },
+    {
+      "path": "D:/Downloads/01_Apresentação_Projeto Integrador PI IV 2026 _ 2 (1).pdf",
+      "bytes": 1052245,
+      "sha256": "bd15ea3bc7a8f4efec309a0ce66d20088c2e4e76cdb23f968af1b01c4cc346bf",
+      "redistributed": false
+    },
+    {
+      "path": "D:/Downloads/01_Apresentação_Projeto Integrador PI IV 2026 _ 2.pdf",
+      "bytes": 1051931,
+      "sha256": "25cf8d5d9c7c66dcae03cf377b334057cb260c1ba4b326b3805e2300f971b4f6",
+      "redistributed": false
+    }
+  ],
+  "historical_files_preserved": [
+    {
+      "path": "docs/bibliografia/leitura_t1_t4_20261023/README.md",
+      "sha256": "83ce13e83895bb5a9c4e5a4b6ed67c6430f3c820d6dd6894735bcb34fda6778e"
+    },
+    {
+      "path": "docs/bibliografia/leitura_t1_t4_20261023/T1.md",
+      "sha256": "d519730f31981038ba56d91e2ba8f70543a28cf14038d2e16820369ba4b9e3ac"
+    },
+    {
+      "path": "docs/bibliografia/leitura_t1_t4_20261023/T4.md",
+      "sha256": "ff7dfec39397c67dc056b35926fd10b970a0b3d01d03ef6694bbe6c125cc3f36"
+    },
+    {
+      "path": "docs/bibliografia/leitura_t1_t4_20261023/fontes/T1.pdf",
+      "sha256": "3131ba418e684029078611d06aa7316818d60a4c83589a4b9245950066b415dd"
+    },
+    {
+      "path": "docs/bibliografia/leitura_t1_t4_20261023/fontes/T4.pdf",
+      "sha256": "b800bb5de7694472fe417b29131b4f5a7eaffb2488ec37f1e7bbdad406bfbcbe"
+    },
+    {
+      "path": "docs/bibliografia/leitura_t1_t4_20261023/manifesto.json",
+      "sha256": "bc3c296f68f6300d752100e562eb73ba0fc2e8b23335df895347537bd37b3496"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/README.md",
+      "sha256": "f21b66749535b5da0c733c13fb5bf72009e0bc3d4645482078ce86c52b8721d3"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/adequacao_academica.md",
+      "sha256": "0b1aff3ac473d67f712bc3fa4c0e05bce60e912c65b8784cc5387d43a174d423"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/artigo_rascunho.md",
+      "sha256": "71fa79065c0ef6da25bcb768ee4d4ed943ef24d46d2ff8a728a23325b163aa38"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/autoria.json",
+      "sha256": "03ae8f3182e063780f71846db0642ba26875d4d81f092b1166d6e34ae5abbcbd"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/comparacao_reproduzivel.html",
+      "sha256": "2f2b370eef97d76cd40884afeb8b17dd5c4dfc85d821857ae26954670233c083"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/comparacao_reproduzivel.ipynb",
+      "sha256": "87c5fdaf2d4913e86a5be5d7d2630006ffef1fe6f38aa4faebd4afc9be06722d"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/executar_notebook.py",
+      "sha256": "faa244c3cf070251dca1de659aee738b8296c3c67bd30eb0e548b31b526419fa"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/figuras/cer_blocos.png",
+      "sha256": "a721e35db58a351b5c2eece7851ae883f31200c73afed14a7e71ac13d73ed041"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/figuras/cer_blocos.svg",
+      "sha256": "3cb324bfddb9ab674339f98c09129a4fe98b6067de38be61c9b5d16a359dc4e1"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/figuras/cer_wer.png",
+      "sha256": "9fe0457db27fb8597a6cb3a51d5d581c3ff44c217b9e94fc65b2816d0d415f8c"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/figuras/cer_wer.svg",
+      "sha256": "d1533916c16875b40da4f16bc210e0d6c6b829ba63772fffc1c727deaf942fdd"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/fontes_consultadas.json",
+      "sha256": "d3a296c9e8616540a0db00cfc461d01c7f108e5f67c744c558fe1d3f4e124973"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/manifesto_entrega.json",
+      "sha256": "5f12dcb05db685a30db1344495758348eea2d9562d6965edb9a05cbca7a76604"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/proveniencia_entrega.json",
+      "sha256": "2d16953287b94b8382e368530555b951c78875f322e9bad0004b2d4e6a8813be"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/requirements-ambiente-testado.txt",
+      "sha256": "56f02a78d3b072e5a763c8d8d246385f89ba7e2ceca859a90182828f3c97f8b6"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/requirements-notebook.txt",
+      "sha256": "ce20e43c9ea865b89e5d3cf0da2287b1dceaa73f0972be321aad372cb0d69e96"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/resultado_notebook.json",
+      "sha256": "f8f82328ebb3fbb27d6ab2fd986c7105a79104d5354b4ab5d0892b1e63b0b189"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/24_linhas.csv",
+      "sha256": "584f2db09d184a2a7ab218dd3a563d8fbfde0a373e339eba3bd572ed89c47fe5"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/metricas_blocos.csv",
+      "sha256": "da2ea780c57c5e90ffdfcd95de8fb8a364841f5a7b40d655ef3d76fdebaa1412"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/operacoes.csv",
+      "sha256": "264f2b1092c9dfc7d59a58c496d58e0aeb20545d9b4e0800a8f45be3b298cbf3"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/ressalvas.csv",
+      "sha256": "58ba01030bef1f7e62df216f3060cb79f01f7d9059ced9f5819b2e9669ca4d44"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/tabelas/resumo_metricas.csv",
+      "sha256": "fd878902354ef17d3bbe9b53fd7e431f52077260136720fdbd3cd16425e41582"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/validacao_checkout_limpo.json",
+      "sha256": "3b5e9c8c3c4f4ca4e97efc4310f2ccc0d8ff37e36e592cf626a90e6a0c145578"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/validacao_execucao.json",
+      "sha256": "066cc1da229ba922b11153b1397d350af0c3614a932d28335b28649590df6a97"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261020/verificar_entrega.py",
+      "sha256": "fd863d4d29f1340547edde4464fd2f3a9fa4b763a6a424a3e11a8463b5b06f49"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/README.md",
+      "sha256": "30f51a7844a94a303962718060701a7c80ed8f7fff640149f69910e853b11b10"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/adequacao_academica.md",
+      "sha256": "7ba76cc6c0789a1d50cca87bf1526a53f75dc618439a91aa1432f5b16d529db7"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/artigo_rascunho.md",
+      "sha256": "41c3ed7313b2541e8b3ec345c7abf30e159b718a80a0074f4e80bfba48f74ed0"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/autoria.json",
+      "sha256": "03ae8f3182e063780f71846db0642ba26875d4d81f092b1166d6e34ae5abbcbd"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/comparacao_reproduzivel.html",
+      "sha256": "fd80807729c80fe6780c3d3a6148fb6e6b98c3d85223630f17d0e5bb049a6ee1"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/comparacao_reproduzivel.ipynb",
+      "sha256": "35bc1122d64e33fb12d1eb82977c37bc3d7c8c6701c4436caa3956bbc2b0eaba"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/executar_notebook.py",
+      "sha256": "a1e39a030363090a3ea012d515f5adb57686a3e7d687761391e5938cd42c9fac"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/figuras/cer_blocos.png",
+      "sha256": "a721e35db58a351b5c2eece7851ae883f31200c73afed14a7e71ac13d73ed041"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/figuras/cer_blocos.svg",
+      "sha256": "3cb324bfddb9ab674339f98c09129a4fe98b6067de38be61c9b5d16a359dc4e1"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/figuras/cer_wer.png",
+      "sha256": "9fe0457db27fb8597a6cb3a51d5d581c3ff44c217b9e94fc65b2816d0d415f8c"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/figuras/cer_wer.svg",
+      "sha256": "d1533916c16875b40da4f16bc210e0d6c6b829ba63772fffc1c727deaf942fdd"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/fontes_consultadas.json",
+      "sha256": "d3a296c9e8616540a0db00cfc461d01c7f108e5f67c744c558fe1d3f4e124973"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/manifesto_entrega.json",
+      "sha256": "37aa7fa3ef79e7e30f658cef47e497e0ded84557281a237d6b2e96831c2c7f8b"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/protecao_execucao.jsonl",
+      "sha256": "59bfe85b7fb1206576e8b8deb9c9d55e3f032f1ac613ae63a7f7c85d9360459a"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/proveniencia_entrega.json",
+      "sha256": "27b6c6cad3e34a23b9be38cbc94559abd90ea7a47d7f10bbfef0f32e206d16f1"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/reexecutar_protegido.py",
+      "sha256": "61349bd9288103e865f1a879586919f87fc8de69c5e98dd1bf22ff8426fde0e2"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/requirements-ambiente-testado.txt",
+      "sha256": "56f02a78d3b072e5a763c8d8d246385f89ba7e2ceca859a90182828f3c97f8b6"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/requirements-notebook.txt",
+      "sha256": "ce20e43c9ea865b89e5d3cf0da2287b1dceaa73f0972be321aad372cb0d69e96"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/resultado_notebook.json",
+      "sha256": "c085bcf3be828abe7e429d2cf9408f40bcf6f63c99c367e3ad6587de5a0e4231"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/24_linhas.csv",
+      "sha256": "584f2db09d184a2a7ab218dd3a563d8fbfde0a373e339eba3bd572ed89c47fe5"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/metricas_blocos.csv",
+      "sha256": "da2ea780c57c5e90ffdfcd95de8fb8a364841f5a7b40d655ef3d76fdebaa1412"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/operacoes.csv",
+      "sha256": "264f2b1092c9dfc7d59a58c496d58e0aeb20545d9b4e0800a8f45be3b298cbf3"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/reconferencia_ressalvas.csv",
+      "sha256": "ae7aea7fa6b2ac9162b8d5deceaf4f3ec2a132e771e2fb11b830f8934e5ca095"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/ressalvas.csv",
+      "sha256": "58ba01030bef1f7e62df216f3060cb79f01f7d9059ced9f5819b2e9669ca4d44"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/tabelas/resumo_metricas.csv",
+      "sha256": "fd878902354ef17d3bbe9b53fd7e431f52077260136720fdbd3cd16425e41582"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/testes_auditoria.json",
+      "sha256": "89c2ee6ee2d58a5ab14f269ac9a2574c9f346f727892297314c7e88da6881ca7"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/validacao_checkout_limpo.json",
+      "sha256": "8ef33df6d32ea2540523c18bf87c287cb552148f9216e7248a845d9016c4efcc"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/validacao_execucao.json",
+      "sha256": "9e4837aee4199f6c445ae240d7c001753307803dab5d5178f02ae7dfcbd59e86"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261022/verificar_entrega.py",
+      "sha256": "7edabc20bd68b745cf5e6eaf37d1a14f257167336ec02035656f542ead04206f"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_fundamentacao/README.md",
+      "sha256": "c550e445436ad7aa9426180af84603c6696d74aed5ceb38219f149b7d9e2106e"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_fundamentacao/artigo_rascunho.md",
+      "sha256": "4c7d8abb679c007a04f640e22be916167057f7020d59107e5931a3cb5ad3fad4"
+    },
+    {
+      "path": "docs/entregas/pi_iv_pln_20261023_fundamentacao/manifesto.json",
+      "sha256": "73eac03eb5b9e0d06cb8bb005a2d76254e40d0df098ad50454c981cefc159625"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/README.md",
+      "sha256": "80efffaeec821a9aa4c8a884eb32f61122605840c01057bef6d636249d364c5f"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/alvos_assistidos.jsonl",
+      "sha256": "026bbb5ccbbb145190999bf293e868c9d814b7caef18f377c0aba4c07488128e"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/auditoria_copia.json",
+      "sha256": "b45ca536fc3b6f1ce90e202449d2cf2f8a6fbdea5e778959c47639a5cdc90f98"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/catalogo_origem.jsonl",
+      "sha256": "a6659a3cd669563fe359c53be3db1593a711e58338a29877fd5cb63af30fd787"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/comparacao.json",
+      "sha256": "afa204df80786a58d21b4fb23a8f01a2c8bbeb61c8dc1d662aedaa57384fd731"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/config_ppocrv6.toml",
+      "sha256": "c6ccec65073fd220f2cc126ec723a78f3da61ffd11af5d9e8453a46ee75c5373"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/entradas_congeladas.json",
+      "sha256": "6c64e4b480b324115fce0f7d468608d075a868944087209708c59e944e936158"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/erros_caracteres.jsonl",
+      "sha256": "521c41a0c4ed9800104d4e36dd6b35e6be646778638cfa0d42bbd56208ca861d"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/erros_palavras.jsonl",
+      "sha256": "a68f89aeb0dde737332a6c4ea59f81acbf08ef2efd959cb41aacccfeb3ba41d5"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/inventario.json",
+      "sha256": "98195f0bcfc159baabd7cd8e51a671f4dc8c505246e9f658a286191585800a64"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/linhas_comparadas.md",
+      "sha256": "2a9364883f54513bee45a6f8f798df8e358fab5720782d4d13b4c8a662ab80d0"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/paginas.jsonl",
+      "sha256": "9d56424453d6e8cf43046d3c902a327add609c8ec1460b158ff35237f4703f1d"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/politica_textual_origem.json",
+      "sha256": "46ab344fb379c5e45e18b312605e942ae43e2cc211ed1769e9f6e486da11b1c0"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/por_linha.csv",
+      "sha256": "e07e63ac34477ba5418975e57aa1ba6f02fac4687a72d6765ff46eca0038f88f"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/por_linha.jsonl",
+      "sha256": "838b207072b88dd675033469545f52022914ff6ea8db12ee069410259ac09cdc"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/ppocrv5/predictions.jsonl",
+      "sha256": "cf0b4bd742ee83b14c622d14bbd489b5096e278cd8f19c8faf85b7ee117cd1a7"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/ppocrv5/predictions.run.json",
+      "sha256": "7acf4989bc07d5e262442b273955aca7b29001e0909cbd7250e471e7edf36059"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/ppocrv5/provenance.json",
+      "sha256": "264db4dd6a50f5069859aa0616251525376e9bfba6f843af6804d3c89304add4"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/ppocrv6/predictions.jsonl",
+      "sha256": "9c6bdd4539ae995b23b34a02a8b13c1fd9947b5e9caa97523163b3379a01d063"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/ppocrv6/predictions.run.json",
+      "sha256": "58d299c9ad24091c414fef92910d6eaa0329165a0f230881c6daae4eb24ca3b7"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/ppocrv6/provenance.json",
+      "sha256": "048e303155d5949ea51d06e6d3879eef0810841569652d7384f3beebaf9b0535"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/preservacao_depois.json",
+      "sha256": "cd39e295f4fa63429b17285a82aac585298795d2ec5e0fa72b17879b3e78bf19"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/preservacao_workspace_antes.json",
+      "sha256": "a46860ec557c6a91babebd81ec39c60ce23b883f56d0ddd56907ba39bc7d5eea"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/protocolo.json",
+      "sha256": "81d4ad837af73661615ed0781658719ae001bbb166057dfc762b3d492d49733f"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/proveniencia_preparacao.json",
+      "sha256": "116c6634fc50bdb634afd40a5ad994141ae2f2ac999e2ef8a9ae77da708e5036"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/recortes_congelados.json",
+      "sha256": "c3d236430d57526a1292b62090028088b552c7fcaa578792a1fc252b4ae794ea"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/recortes_reconhecimento.jsonl",
+      "sha256": "d1beb6394d8b0d3a5040e170b65442ee706674b5b6fcd3cd95e1b576f29a9d89"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/regioes.jsonl",
+      "sha256": "47f7617ee54d215c27298bc730fd078edba1aeb5bb3939db9af82882e5e8d0f7"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/reproduzir.py",
+      "sha256": "deebde2e1efcbc6d9019e275a487166bb1872926fc55678565ff70ac89ec9668"
+    },
+    {
+      "path": "docs/experimentos/traslado_269r_reconhecedores_24_20261020/verificar.py",
+      "sha256": "2a162326f11d8d0e155ead434f9fcbff735b71023d5b40fd0a5a091e1c79012a"
+    }
+  ],
+  "validation": {
+    "result": "aprovado",
+    "pdf_pages": 3,
+    "all_pdf_pages_visually_inspected": true,
+    "visual_dpi": 150,
+    "qa_images": "tmp/entrega_artigo_20261023/qa_final_sem_borda",
+    "text_paragraphs_covered": 65,
+    "reference_entries": 8,
+    "all_references_cited": true,
+    "unique_links_preserved": 10,
+    "no_title_border": true,
+    "metrics_and_counts_preserved": true,
+    "mag_abbreviation_preserved": true,
+    "renderer": "Microsoft Word 16.0; DOCX somente leitura; PNGs com rasterizador da skill e Poppler do runtime",
+    "original_renderer_attempt": "LibreOffice soffice.exe ausente; nenhum LibreOffice do desktop foi utilizado",
+    "authoring_python": "C:\\Users\\takem\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "existing_delivery_audits": [
+      {
+        "version": "20261020",
+        "result": {
+          "resultado": "aprovado",
+          "arquivos_entrega": 24,
+          "celulas_codigo_executadas": 9,
+          "figuras_embutidas": 2,
+          "linhas": 24,
+          "ressalvas": 8,
+          "combinacoes_linha_modelo": 48,
+          "novas_inferencias": 0,
+          "metricas_identicas_ao_experimento": true
+        }
+      },
+      {
+        "version": "20261022",
+        "result": {
+          "resultado": "aprovado",
+          "arquivos_entrega": 28,
+          "linhas": 24,
+          "ressalvas_historicas": [
+            11,
+            15,
+            16,
+            17,
+            19,
+            20,
+            23,
+            24
+          ],
+          "registros_humanos": 17,
+          "celulas_codigo_executadas": 10,
+          "figuras_incorporadas": 2,
+          "tabelas_historicas_identicas": 5,
+          "tabela_nova_reconferencia": 8,
+          "pacote_20261020_preservado": true,
+          "metricas_identicas_ao_experimento": true,
+          "novas_inferencias": 0,
+          "protecao_executor_e_kernel": true
+        }
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "artigo.docx",
+      "bytes": 46723,
+      "sha256": "01a651aee86df179841b99f02aa1879a4c893d553a3de3bbd14c927bab939fd9"
+    },
+    {
+      "path": "artigo.md",
+      "bytes": 18440,
+      "sha256": "70befaf49158bf91c180198066aacfa21113275cc9141455a46ed9d0c03a0d42"
+    },
+    {
+      "path": "artigo.pdf",
+      "bytes": 258787,
+      "sha256": "448d27427991f5ca8eac369eadd20c36be5c88f51c9483afe97a4e71d7818828"
+    },
+    {
+      "path": "citacoes.json",
+      "bytes": 5551,
+      "sha256": "021e25d2ab34759aba6f51c436326301c462b4ab329ff0d6249693ed2e485ce2"
+    },
+    {
+      "path": "exportar_pdf.ps1",
+      "bytes": 1357,
+      "sha256": "8032e9896d8ce51d814e8eaa62de6e4db792034aaaeb3215029a72619fc5bd23"
+    },
+    {
+      "path": "gerar_artigo.py",
+      "bytes": 9423,
+      "sha256": "255c1e94cdbd2a3a81749fe88e89f21e9506c11360923f6a4138b20192e8a031"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3671,
+      "sha256": "f5e572ef83011629d0bb961832a45f251b4aa88490b1e57e563aaf470faaca44"
+    },
+    {
+      "path": "revisao_e_adequacao.md",
+      "bytes": 7462,
+      "sha256": "e6aa4c7518a7ac081f4d3c99b2b44e30c8585ca6684e9928379cf4e982ffc509"
+    }
+  ]
+}

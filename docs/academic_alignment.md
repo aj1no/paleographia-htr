@@ -9,6 +9,16 @@ iniciais e afiliação à FATEC Jundiaí, curso de Ciência de Dados, 5º semest
 Jundiaí – SP. Modelos e rubricas continuam pendentes.
 A revisão bibliográfica inicial não substitui a revisão sistemática de PI IV.
 
+**Preparação editorial posterior de 23/10/2026:** o [artigo em PDF e Word](entregas/pi_iv_pln_20261023_entrega/README.md)
+foi revisado integralmente e diagramado em três páginas, com referências,
+abstract e seção Comentários identificando ferramenta de IA e utilização.
+Os modelos PLN2026/PLN2025 e as duas cópias dos slides de PI IV foram
+efetivamente consultados nesta etapa. A [nota de adequação](entregas/pi_iv_pln_20261023_entrega/revisao_e_adequacao.md)
+localiza as orientações por documento/página e distingue requisitos verificados
+dos relatados anteriormente. Essa consulta sucede as pendências documentais
+históricas abaixo, sem afirmar aprovação docente, revisão sistemática concluída
+ou submissão no Classroom.
+
 **Atualização de 23/10/2026:** a [bibliografia comentada revista](bibliografia/referencias_comentadas_20261023.md)
 integra paleografia, corpus, reconhecimento e documentação de dados, com
 [fichamentos parciais e campos pendentes](bibliografia/fichamentos_parciais_20261023.md).
