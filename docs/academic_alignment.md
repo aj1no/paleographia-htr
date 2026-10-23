@@ -2,6 +2,15 @@
 
 Produto: protótipo local de transcrição assistida de manuscritos delimitados de Jundiaí.
 
+**Fechamento de 23/10/2026:** o [ponto de entrada atual](entregas/pi_iv_pln_20261023_fechamento/README.md)
+liga o artigo ao notebook baseline já disponível no Colab, com recálculo de
+predições congeladas, sem nova inferência ou treino. O link para “Link Notebook 1”
+está preparado para o grupo 4, célula F11 da planilha consultada; nada foi inserido
+ou submetido. Revisão dos autores, relatos individuais, planilha original de uso
+de IA e enquadramento de PI IV continuam pendentes. As datas de presença relatadas
+não foram convertidas em prazos de entrega. A rodada dos oito candidatos de 1795
+está preparada, sem novas validações; o experimento científico segue bloqueado.
+
 O [notebook executado e o primeiro rascunho do artigo](entregas/pi_iv_pln_20261020/README.md)
 foram preparados com as 24 linhas e oito ressalvas preservadas, sem novas
 inferências ou funções no sistema. A entrega inclui autoria informada, fontes

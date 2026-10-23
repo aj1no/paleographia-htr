@@ -19,9 +19,10 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 
 | Material | Situação |
 | --- | --- |
+| [Ponto de entrada da entrega atual](entregas/pi_iv_pln_20261023_fechamento/README.md) | Artigo atualizado e notebook indicado; links prontos para o grupo 4, célula F11; rodada humana preparada; submissão e confirmações pendentes |
 | [Abrir e preencher no Google Colab](entregas/pi_iv_pln_20261023_colab/README.md) | Botão direto, preparação do ambiente, formulários por aluno e download do ZIP de relatos para conferência |
 | [Notebook colaborativo e cronograma da equipe](entregas/pi_iv_pln_20261023_equipe/README.md) | Atividades por integrante e registro de discussão/análise; 16 células executadas por IA, formulários individuais vazios; núcleo numérico preservado |
-| [Artigo preparado para entrega — PDF e Word](entregas/pi_iv_pln_20261023_entrega/README.md) | Três páginas no layout PLN2026; revisão integral de texto/citações; declaração de IA e nota de adequação a PI IV/PLN; revisão dos autores e enquadramento docente pendentes |
+| [Versão editorial anterior — PDF e Word](entregas/pi_iv_pln_20261023_entrega/README.md) | Três páginas preservadas; sucedida pelo ponto de entrada atual, com vínculo ao Colab e declaração de Antigravity |
 | [Artigo com fundamentação ampliada — 23/10](entregas/pi_iv_pln_20261023_fundamentacao/README.md) | T1/T4 lidos integralmente por IA; fundamentos e discussão atualizados; métricas preservadas; revisão dos autores pendente |
 | [Expansão do corpus e ajuste fino](dataset_expansion_20261023/README.md) | 15 fontes, oito novos recortes candidatos, núcleo 16/8 preservado; ensaio PP-OCRv6 com dois passos reais; avaliação científica pendente de revisão |
 | [Referência assistida do 269r](revisao_humana/traslado_269r/referencia_assistida_20261020/README.md) | 24 linhas, cinco coberturas; 16 validadas e oito ressalvas |
