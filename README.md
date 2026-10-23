@@ -16,6 +16,9 @@ foram incorporadas à documentação, distinguindo consulta parcial e leitura in
 Os [fichamentos integrais de T1/T4](docs/bibliografia/leitura_t1_t4_20261023/README.md)
 e o [artigo com fundamentação ampliada](docs/entregas/pi_iv_pln_20261023_fundamentacao/README.md)
 estão disponíveis, com leitura por IA e revisão dos autores pendente.
+A [versão do artigo preparada para entrega](docs/entregas/pi_iv_pln_20261023_entrega/README.md)
+inclui PDF e Word com três páginas, citações conferidas e declaração de IA;
+as pendências de PI IV e PLN estão registradas separadamente.
 
 A [versão principal no GitHub](https://github.com/aj1no/paleographia-htr/tree/main)
 contém o programa, a documentação e as evidências publicadas. A branch
