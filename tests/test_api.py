@@ -85,3 +85,38 @@ def test_exif_preview_and_path_validation(corpus):
             assert preview.size == (200, 100) and not preview.getexif()
         response = client.patch(f"/api/pages/{page['page_id']}", json={"changes": {"source_image": "../secret"}})
         assert response.status_code == 422
+
+
+def test_geometry_edit_refreshes_existing_crop_hash_in_export(corpus):
+    import io
+    import json
+    import zipfile
+
+    from paleographia.io import sha256
+
+    root, config, pages, lines = corpus
+    original = lines[0]
+    original["crop_sha256"] = sha256(root / original["crop_image"])
+    old_crop_bytes = (root / original["crop_image"]).read_bytes()
+    app = create_app(root, config, TestRecognizer())
+    app.state.service.import_catalog(pages, lines)
+    with TestClient(app) as client:
+        before = client.get("/api/catalog").json()
+        revision_path = (root / config["paths"]["workspace"] / "revisions"
+                         / (before["revision"] + ".json"))
+        original_revision_bytes = revision_path.read_bytes()
+        box = list(original["bbox_xyxy"])
+        box[1] = max(0, box[1] - 10)
+        response = client.patch(f"/api/lines/{original['line_id']}", json={
+            "revision": before["revision"], "changes": {"bbox_xyxy": box}})
+        assert response.status_code == 200
+        saved = response.json()
+        assert saved["line_id"] == original["line_id"]
+        assert saved["crop_image"] != original["crop_image"]
+        assert saved["crop_sha256"] == sha256(root / saved["crop_image"])
+        assert saved["crop_sha256"] != original["crop_sha256"]
+        assert (root / original["crop_image"]).read_bytes() == old_crop_bytes
+        assert revision_path.read_bytes() == original_revision_bytes
+        with zipfile.ZipFile(io.BytesIO(client.get("/api/export").content)) as archive:
+            exported = [json.loads(row) for row in archive.read("lines.jsonl").splitlines()]
+        assert next(row for row in exported if row["line_id"] == saved["line_id"]) == saved

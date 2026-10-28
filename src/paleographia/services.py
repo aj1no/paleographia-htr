@@ -203,6 +203,8 @@ class ReviewService:
                 output.mkdir(parents=True)
                 crop = crop_line(page, updated["bbox_xyxy"], updated["reading_order"], updated["region_id"], output, self.root, "human", "manual_"+run_id())
                 updated.update(crop_image=crop["crop_image"], transform_id=crop["transform_id"], split=None)
+                if "crop_sha256" in updated:
+                    updated["crop_sha256"] = sha256(safe_path(self.root, crop["crop_image"]))
                 updated["geometry_status"] = changes.get("geometry_status", "pending_review")
                 updated["review_status"] = changes.get("review_status", "pending_review")
             if updated["review_status"] == "validated" or updated["geometry_status"] == "validated":
