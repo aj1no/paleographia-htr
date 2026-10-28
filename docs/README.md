@@ -1,6 +1,6 @@
 # Índice da documentação
 
-Estado em 23/10/2026, na branch principal e padrão `main`.
+Estado em 28/10/2026, na branch principal e padrão `main`.
 A expansão de fontes e o ajuste fino passaram a integrar a etapa acadêmica.
 
 Use a `main` para consultar a versão atual e iniciar novas contribuições.
@@ -53,6 +53,7 @@ preservado como histórico.
 ## Uso e dados
 
 - [Esquema e estados](data_schema.md), [política de transcrição](transcription_policy.md).
+- [Curadoria de 1795 — consolidação de 28/10](revisao_humana/sessao_1795/consolidacao_20261028/README.md): oito geometrias validadas, textos pendentes e quarta linha parcial; zero pares elegíveis para treino.
 - [Consulta lexical](lexico_historico.md), [entrega lexical](lexico_entrega_20261019.md).
 - [Teste lexical em cópia](testes/lexico_copia_20261019/README.md): não é revisão original.
 - [Repertório do 100r](repertorio_100r.md): confirmações parciais.

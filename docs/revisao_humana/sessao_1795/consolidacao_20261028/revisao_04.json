@@ -1,0 +1,13 @@
+{
+  "line_id": "l_98962db568a2f74aab38",
+  "parent_revision": "20261028T160355_628232f4",
+  "revision": "20261028T160355_7c462649",
+  "reviewed_at": "2026-10-28T16:03:55.551662+00:00",
+  "changes": {
+    "geometry_status": "validated",
+    "reviewer": "Rodolfo Vinicius Cima Takemoto",
+    "exclusion_reason": "TRANSCRIÇÃO PARCIAL: o rascunho termina em Luiz, mas há continuação visível no recorte ainda não resolvida. Leitura humana de Luiz preservada (observações 016–017); alternativa do Juiz Presidente pertence à edição e ao parecer assistido por IA, sem adoção textual. Bloqueada como alvo completo para treino e avaliação até nova decisão humana. Ver docs/revisao_humana/sessao_1795/consolidacao_20261028/README.md."
+  },
+  "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_016_linha04_releitura_parcial_limites_ressalva.json",
+  "human_decision_date": "2026-10-28"
+}
