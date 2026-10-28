@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-28T17:42:42.115206+00:00",
+  "valid": true,
+  "observation": "observacao_023_linha04_virgula_apos_Paulo.json",
+  "human_decision": "Vírgula física após Paulo confirmada; texto já continha o sinal e foi preservado.",
+  "before_revision": "20261028T173901_de8e7296",
+  "after_revision": "20261028T174241_b3767c92",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 8
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "historical_files_preserved": 27,
+  "all_eight_texts_preserved": true,
+  "other_seven_lines_pages_predictions_preserved": true,
+  "geometry_validated": 8,
+  "text_pending": 8,
+  "new_text_validations": 0,
+  "eligible_pairs": 0,
+  "export_matches_editor": true,
+  "recognition_executed": false,
+  "training_executed": false,
+  "metrics_calculated": false
+}
