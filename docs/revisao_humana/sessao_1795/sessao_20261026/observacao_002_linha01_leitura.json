@@ -1,0 +1,30 @@
+{
+  "tipo": "leitura_humana_assistida_parcial",
+  "data_resposta": "2026-10-26",
+  "registrado_em": "2026-10-26T17:07:34.060222+00:00",
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_24b904b9ad9473450172",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_24b904b9ad9473450172.png",
+  "imagem_apresentada_sha256": "d9487e1e5d4b60e55ed066140fa2adf08b51877ea8b92465aea066e284b8e71a",
+  "original_message": "Eu tbm li aos vintes e cinco dias do mes de junho de mil sete...",
+  "autor_resposta": "solicitante neste chat",
+  "nome_completo_informado_nesta_rodada": null,
+  "identidade_autenticada": false,
+  "edicao_modernizada_mostrada_antes_da_resposta": "Aos vinte e cinco dias do mês de junho de mil sete",
+  "leitura_independente_da_edicao": false,
+  "escopo": "Leitura comunicada pelo solicitante após apresentação da imagem e da edição modernizada; grafia literal ainda por esclarecer.",
+  "questoes_pendentes": [
+    "Esclarecer se o s de vintes foi observado no manuscrito ou é digitação na mensagem.",
+    "Conferir forma gráfica/abreviatura da palavra correspondente a dias.",
+    "Conferir grafia, caixa, espaços, sinais, limites e cobertura da linha."
+  ],
+  "texto_diplomatico_adotado": null,
+  "transcricao_validada": false,
+  "geometria_validada": false,
+  "correspondencia_documental_validada": false,
+  "cobertura_validada": false,
+  "novos_pares_validados": 0,
+  "estado": "observacao_parcial_sem_promocao_do_catalogo",
+  "efeito": "Preservar a mensagem literal; não converter automaticamente a leitura de apoio em alvo diplomático.",
+  "coleta": "Resposta humana direta; registro estruturado por Codex (IA)."
+}

@@ -1,0 +1,27 @@
+{
+  "tipo": "leitura_humana_assistida_parcial",
+  "data_resposta": "2026-10-26",
+  "registrado_em": "2026-10-26T17:16:20.091999+00:00",
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_24b904b9ad9473450172",
+  "original_message": "eu li dias",
+  "autor_resposta": "solicitante neste chat",
+  "nome_completo_informado_nesta_rodada": null,
+  "identidade_autenticada": false,
+  "leitura_independente_da_edicao": false,
+  "escopo": "Registra dias como a leitura informada pelo solicitante. A resposta não descreve as letras individuais ou eventual abreviatura gráfica.",
+  "texto_do_rascunho": "aos vinte e cinco dias do mes de junho de mil sete",
+  "composicao_do_rascunho": "Trecho de leitura da observação 002, aplicando a retificação vintes -> vinte da observação 003 e mantendo dias conforme esta resposta. Prefixo de fala Eu tbm li e reticências da mensagem não foram tratados como caracteres do manuscrito.",
+  "referencias_da_rodada": [
+    "observacao_002_linha01_leitura.json",
+    "observacao_003_linha01_retificacao.json"
+  ],
+  "grafia_caixa_e_abreviaturas_integralmente_conferidas": false,
+  "transcricao_validada": false,
+  "geometria_validada": false,
+  "cobertura_validada": false,
+  "correspondencia_documental_validada": false,
+  "novos_pares_validados": 0,
+  "estado": "rascunho_assistido_pendente_de_conferencia",
+  "coleta": "Resposta humana direta; registro e montagem do rascunho por Codex (IA)."
+}
