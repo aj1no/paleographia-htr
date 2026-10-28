@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-10-28T17:39:01.528819+00:00",
+  "valid": true,
+  "human_decision": "Presidente após Juiz, com ressalva de escrita apagada",
+  "observation": "observacao_022_linha04_Presidente_ressalva.json",
+  "before_revision": "20261028T173254_d714ff5a",
+  "after_revision": "20261028T173901_de8e7296",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 8
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "reference_validation": {
+    "valid": false,
+    "purpose": "evaluation",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 8
+    },
+    "errors": [
+      "l_24b904b9ad9473450172: Correspondência de página pendente.",
+      "l_b8a06d58bd7cced4f3a2: Correspondência de página pendente.",
+      "l_4882de66b18aa948f2a4: Correspondência de página pendente.",
+      "l_98962db568a2f74aab38: Correspondência de página pendente.",
+      "l_27cb89d5763a6e64c484: Correspondência de página pendente.",
+      "l_6077eea6d3ac418348ec: Correspondência de página pendente.",
+      "l_40d2333b12328973de24: Correspondência de página pendente.",
+      "l_53dcba6fe1e315e30873: Correspondência de página pendente."
+    ],
+    "warnings": []
+  },
+  "historical_files_preserved": 19,
+  "other_seven_lines_pages_predictions_preserved": true,
+  "geometry_validated": 8,
+  "text_pending": 8,
+  "new_text_validations": 0,
+  "eligible_pairs": 0,
+  "export_matches_editor": true,
+  "exclusion_reason_updated": "Continuação não é mais omitida no rascunho; motivo atual é leitura com ressalva visual, pontuação e revisão textual pendentes.",
+  "recognition_executed": false,
+  "training_executed": false,
+  "metrics_calculated": false
+}
