@@ -1,0 +1,35 @@
+{
+  "tipo": "inspecao_visual_de_fontes_por_ia",
+  "registrado_em": "2026-10-26T17:58:56.509924+00:00",
+  "revisor_desta_inspecao": "Codex (IA)",
+  "line_id": "l_98962db568a2f74aab38",
+  "motivacao_humana": "observacao_009_linha04_leitura_ressalva.json",
+  "fontes_inspecionadas": [
+    {
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "width": 1130,
+      "height": 1638,
+      "pdf_page": null
+    },
+    {
+      "path": "data/manifests/corpus_expandido_v02/pdf_images/3c0132189f5574d5/p004_i00.jpg",
+      "sha256": "982974430be3451569f30d4395dd8b86492a2e2dea211b30228224183fb93b53",
+      "width": 1184,
+      "height": 1661,
+      "pdf_page": 4
+    }
+  ],
+  "observacao_visual": "Na região da quarta linha, a imagem original e a reprodução do PDF exibem traços de baixo contraste. A inspeção não estabeleceu uma melhora suficiente para resolver as dúvidas de leitura.",
+  "limitacao": "Avaliação visual por IA, sem alinhamento geométrico ou comparação quantitativa entre as representações. A dificuldade não foi atribuída exclusivamente ao recorte ou ao suporte físico.",
+  "mesmo_documento_candidato": true,
+  "independencia_documental_confirmada": false,
+  "fontes_e_recortes_alterados": false,
+  "nova_inferencia": false,
+  "nova_validacao_humana": false,
+  "destino_da_linha": "Manter rascunho e ressalva; aguardar conferência de grafia e limites.",
+  "apoio_tecnico": {
+    "url": "https://kraken.re/6.0.0/tutorials/training.html",
+    "escopo": "Documentação primária sobre exemplos de linha/transcrição e influência da qualidade de aquisição; não fornece previsão para este recorte."
+  }
+}

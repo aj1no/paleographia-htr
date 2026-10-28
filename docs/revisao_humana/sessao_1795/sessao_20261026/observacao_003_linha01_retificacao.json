@@ -1,0 +1,28 @@
+{
+  "tipo": "retificacao_de_observacao_humana_parcial",
+  "data_resposta": "2026-10-26",
+  "registrado_em": "2026-10-26T17:08:40.149499+00:00",
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_24b904b9ad9473450172",
+  "original_message": "eu digitei errado",
+  "autor_resposta": "solicitante neste chat",
+  "nome_completo_informado_nesta_rodada": null,
+  "identidade_autenticada": false,
+  "observacao_retificada": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_002_linha01_leitura.json",
+  "contexto_da_pergunta": "O s de vintes aparece no manuscrito ou foi digitação na mensagem?",
+  "retificacao": {
+    "forma_na_mensagem_anterior": "vintes",
+    "forma_corrigida": "vinte",
+    "natureza": "erro de digitação reconhecido pelo solicitante"
+  },
+  "escopo": "Corrige apenas vintes para vinte na leitura relatada; não aprova automaticamente o restante da grafia, abreviaturas ou sinais.",
+  "leitura_independente_da_edicao": false,
+  "texto_diplomatico_adotado": null,
+  "transcricao_validada": false,
+  "geometria_validada": false,
+  "correspondencia_documental_validada": false,
+  "cobertura_validada": false,
+  "novos_pares_validados": 0,
+  "estado": "observacao_parcial_sem_promocao_do_catalogo",
+  "coleta": "Resposta humana direta; registro estruturado por Codex (IA)."
+}

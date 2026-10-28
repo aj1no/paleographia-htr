@@ -1,0 +1,38 @@
+{
+  "tipo": "identificacao_do_revisor_da_rodada",
+  "data_resposta": "2026-10-26",
+  "registrado_em": "2026-10-26T17:22:07.028063+00:00",
+  "original_message": "Pode registrar Rodolfo Vinicius Cima Takemoto como revisor dessa rodada.",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "origem_da_identificacao": "Nome informado diretamente pelo solicitante neste chat.",
+  "identidade_autenticada": false,
+  "escopo": "Identifica o revisor das observações humanas desta rodada, sem validar automaticamente as transcrições ou o catálogo.",
+  "observacoes_anteriores_atribuidas_ao_revisor": [
+    "observacao_001_foliacao.json",
+    "observacao_002_linha01_leitura.json",
+    "observacao_003_linha01_retificacao.json",
+    "observacao_004_linha01_dias.json",
+    "observacao_005_linha01_limites.json"
+  ],
+  "sha256_das_observacoes_anteriores": {
+    "observacao_001_foliacao.json": "7b87dbd652da1dfef2f998e74c95d1e7b136b1662b16d32ae023c3ec0b446e2d",
+    "observacao_002_linha01_leitura.json": "a9c342a91e2a3bcfea89bf607e386ddfdde9e5cc9b399e449d98b91565d2fc5a",
+    "observacao_003_linha01_retificacao.json": "3ea2a716dacc737adfaac7461154a91750c05df56b5449b10ce6effcf101e6ce",
+    "observacao_004_linha01_dias.json": "2e2448429244019f2035b0639c68bfb7bba18082429a5f8efea5c018c00edf2a",
+    "observacao_005_linha01_limites.json": "9df25892287ad254402cdc29354e0e7cdf053c1687508b250b9ed7e6faeaaa08"
+  },
+  "resumo_confirmacoes_existentes": {
+    "numeral_superior_direito": "91",
+    "retificacao_de_digitacao": "vintes -> vinte",
+    "leitura_relatada_da_palavra_apos_cinco": "dias",
+    "limites_linha01_confirmados": true
+  },
+  "confirmacoes_que_permanecem_pendentes": [
+    "Grafia histórica integral e abreviaturas da linha 1.",
+    "Ordem de leitura, correspondência documental completa e cobertura da região.",
+    "Leituras e limites dos sete recortes seguintes."
+  ],
+  "transcricoes_validadas": 0,
+  "novos_pares_validados": 0,
+  "coleta": "Resposta humana direta; atribuição estruturada por Codex (IA)."
+}
