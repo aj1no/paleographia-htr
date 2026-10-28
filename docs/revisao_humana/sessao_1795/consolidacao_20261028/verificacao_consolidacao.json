@@ -1,0 +1,310 @@
+{
+  "checked_at": "2026-10-28T16:07:01.810666+00:00",
+  "valid": true,
+  "scope": "Integridade e estados de curadoria; sem reconhecimento, treinamento ou cálculo de métricas.",
+  "source_commit": "bf1db30a93fee10808b1509054524ae572fe1864",
+  "before_revision": "20261028T145912_c649c938",
+  "after_revision": "20261028T160355_969eab97",
+  "catalog_matches_live_editor": true,
+  "native_export_matches_catalog": true,
+  "partiality_survives_native_export": true,
+  "line_field_sets_preserved": true,
+  "line_changes": [
+    {
+      "line_id": "l_24b904b9ad9473450172",
+      "changed_fields": [
+        "reviewed_at",
+        "geometry_status"
+      ]
+    },
+    {
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "changed_fields": [
+        "reviewed_at",
+        "geometry_status"
+      ]
+    },
+    {
+      "line_id": "l_4882de66b18aa948f2a4",
+      "changed_fields": [
+        "reviewed_at",
+        "geometry_status"
+      ]
+    },
+    {
+      "line_id": "l_98962db568a2f74aab38",
+      "changed_fields": [
+        "reviewed_at",
+        "geometry_status",
+        "exclusion_reason"
+      ]
+    },
+    {
+      "line_id": "l_27cb89d5763a6e64c484",
+      "changed_fields": [
+        "reviewed_at",
+        "geometry_status"
+      ]
+    },
+    {
+      "line_id": "l_6077eea6d3ac418348ec",
+      "changed_fields": [
+        "reviewed_at",
+        "geometry_status"
+      ]
+    },
+    {
+      "line_id": "l_40d2333b12328973de24",
+      "changed_fields": [
+        "reviewed_at",
+        "geometry_status"
+      ]
+    },
+    {
+      "line_id": "l_53dcba6fe1e315e30873",
+      "changed_fields": [
+        "reviewed_at",
+        "geometry_status"
+      ]
+    }
+  ],
+  "historical_files_unchanged": [
+    "docs/revisao_humana/sessao_1795/ANALISE_CHATGPT.md",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/inspecao_linha04_fontes_por_ia.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_001_foliacao.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_002_linha01_leitura.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_003_linha01_retificacao.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_004_linha01_dias.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_005_linha01_limites.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_007_linha02_leitura_limites.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_008_linha03_leitura.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_009_linha04_leitura_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_010_linha05_leitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_011_linha06_leitura_sinal_final_pendente.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_012_linha06_confirmacao_hifen.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_013_linha07_leitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_014_linha08_leitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_015_linha03_releitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_016_linha04_releitura_parcial_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_017_linha04_Luiz_continuacao_incerta.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_018_linha06_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_019_sequencia_visual_bloco01.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/README.md",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/verificacao_publicacao_20261028.json",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/context.jpg",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_24b904b9ad9473450172.png",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_40d2333b12328973de24.png",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_53dcba6fe1e315e30873.png",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_b8a06d58bd7cced4f3a2.png",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/lines.jsonl",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/overlay.jpg",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/pages.jsonl",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/README.md",
+    "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/review.json",
+    "data/workspace/curation_sessao_1795/revisions/20261026T123847_64afff84.json",
+    "data/workspace/curation_sessao_1795/revisions/20261026T171620_b014a310.json",
+    "data/workspace/curation_sessao_1795/revisions/20261026T172207_532df44f.json",
+    "data/workspace/curation_sessao_1795/revisions/20261026T172656_1e7f62d9.json",
+    "data/workspace/curation_sessao_1795/revisions/20261026T174814_41b6b0c6.json",
+    "data/workspace/curation_sessao_1795/revisions/20261026T175629_9f342c0b.json",
+    "data/workspace/curation_sessao_1795/revisions/20261028T133851_f660adff.json",
+    "data/workspace/curation_sessao_1795/revisions/20261028T134019_611e7a28.json",
+    "data/workspace/curation_sessao_1795/revisions/20261028T134200_8f6cca72.json",
+    "data/workspace/curation_sessao_1795/revisions/20261028T134324_2b333cb2.json",
+    "data/workspace/curation_sessao_1795/revisions/20261028T135624_dece55b9.json",
+    "data/workspace/curation_sessao_1795/revisions/20261028T135841_cde2b1d2.json",
+    "data/workspace/curation_sessao_1795/revisions/20261028T145419_ab3f13f7.json",
+    "data/workspace/curation_sessao_1795/revisions/20261028T145912_c649c938.json"
+  ],
+  "historical_files_unchanged_count": 53,
+  "index_changes": [
+    {
+      "path": "docs/revisao_humana/sessao_1795/README.md",
+      "before_sha256": "054edf83bd1e1e74b9854217036605e732b1e867abf2d1cc420ecde978497c02",
+      "after_sha256": "16030ee89d6a37c0d4a0b583d99a3309374dc20374d9cdc77031ddfe8862b326",
+      "reason": "Índice atualizado com link para a consolidação e distinção explícita do estado publicado anterior."
+    }
+  ],
+  "prior_workspace_revisions_preserved": true,
+  "derived_revision_chain": [
+    {
+      "revision": "20261028T160355_11103669",
+      "parent_revision": "20261028T145912_c649c938",
+      "sha256": "ee5a11af80e5c31967c06cfa44a9d4ecb692a1b659cfabeaf3d80ccd8497184d"
+    },
+    {
+      "revision": "20261028T160355_c382f90d",
+      "parent_revision": "20261028T160355_11103669",
+      "sha256": "fdef64e2038bff9770d2fae51d3df8c39e8a2d1072808aefb6434f93216b636b"
+    },
+    {
+      "revision": "20261028T160355_628232f4",
+      "parent_revision": "20261028T160355_c382f90d",
+      "sha256": "cc85b191c3af115836c8fc3dbe52caf8790ab079e991a71945deb9c368f8f61e"
+    },
+    {
+      "revision": "20261028T160355_7c462649",
+      "parent_revision": "20261028T160355_628232f4",
+      "sha256": "a311fbf6f75d07ffb91144b1699f93709f4aba53d433f554caa3df9b0fc90182"
+    },
+    {
+      "revision": "20261028T160355_eff6f91a",
+      "parent_revision": "20261028T160355_7c462649",
+      "sha256": "ee37476ebeae6366f82251cf251972fb518321575e04b1e4d8b0d9541aeccfb4"
+    },
+    {
+      "revision": "20261028T160355_7293cf3e",
+      "parent_revision": "20261028T160355_eff6f91a",
+      "sha256": "35c55f7c12f7d68818ad12b3d7a718cd92a9a9809b50e1ef789ede169e47a7ab"
+    },
+    {
+      "revision": "20261028T160355_37c2614a",
+      "parent_revision": "20261028T160355_7293cf3e",
+      "sha256": "e5f8ecb33933c3af945cc6ab0973bc4503e22b7256251f82cc5b0f04c1f97a4c"
+    },
+    {
+      "revision": "20261028T160355_969eab97",
+      "parent_revision": "20261028T160355_37c2614a",
+      "sha256": "3930ccd03ca09bec0a15785e0883410d69c85c3d3e2e2ba5624814547668b5ff"
+    }
+  ],
+  "texts_source_images_crops_order_pages_predictions_preserved": true,
+  "physical_hyphenation_preserved": true,
+  "received_report_preserved_byte_for_byte": true,
+  "local_markdown_links_checked": 21,
+  "validator_reports": {
+    "catalog": {
+      "valid": true,
+      "purpose": "catalog",
+      "rows": 8,
+      "statuses": {
+        "pending_review": 8
+      },
+      "errors": [],
+      "warnings": []
+    },
+    "evaluation": {
+      "valid": false,
+      "purpose": "evaluation",
+      "rows": 8,
+      "statuses": {
+        "pending_review": 8
+      },
+      "errors": [
+        "l_24b904b9ad9473450172: Correspondência de página pendente.",
+        "l_b8a06d58bd7cced4f3a2: Correspondência de página pendente.",
+        "l_4882de66b18aa948f2a4: Correspondência de página pendente.",
+        "l_98962db568a2f74aab38: Correspondência de página pendente.",
+        "l_27cb89d5763a6e64c484: Correspondência de página pendente.",
+        "l_6077eea6d3ac418348ec: Correspondência de página pendente.",
+        "l_40d2333b12328973de24: Correspondência de página pendente.",
+        "l_53dcba6fe1e315e30873: Correspondência de página pendente."
+      ],
+      "warnings": []
+    },
+    "training": {
+      "valid": false,
+      "purpose": "training",
+      "rows": 8,
+      "statuses": {
+        "pending_review": 8
+      },
+      "errors": [
+        "l_24b904b9ad9473450172: Correspondência de página pendente.",
+        "l_b8a06d58bd7cced4f3a2: Correspondência de página pendente.",
+        "l_4882de66b18aa948f2a4: Correspondência de página pendente.",
+        "l_98962db568a2f74aab38: Correspondência de página pendente.",
+        "l_27cb89d5763a6e64c484: Correspondência de página pendente.",
+        "l_6077eea6d3ac418348ec: Correspondência de página pendente.",
+        "l_40d2333b12328973de24: Correspondência de página pendente.",
+        "l_53dcba6fe1e315e30873: Correspondência de página pendente.",
+        "Treino exige grupos separados em train, validation e test."
+      ],
+      "warnings": []
+    }
+  },
+  "line_reference_preconditions": [
+    {
+      "line_id": "l_24b904b9ad9473450172",
+      "passes_reference_preconditions": false,
+      "blocking_errors": [
+        "l_24b904b9ad9473450172: Correspondência de página pendente."
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "passes_reference_preconditions": false,
+      "blocking_errors": [
+        "l_b8a06d58bd7cced4f3a2: Correspondência de página pendente."
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "line_id": "l_4882de66b18aa948f2a4",
+      "passes_reference_preconditions": false,
+      "blocking_errors": [
+        "l_4882de66b18aa948f2a4: Correspondência de página pendente."
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "line_id": "l_98962db568a2f74aab38",
+      "passes_reference_preconditions": false,
+      "blocking_errors": [
+        "l_98962db568a2f74aab38: Correspondência de página pendente."
+      ],
+      "exclusion_reason": "TRANSCRIÇÃO PARCIAL: o rascunho termina em Luiz, mas há continuação visível no recorte ainda não resolvida. Leitura humana de Luiz preservada (observações 016–017); alternativa do Juiz Presidente pertence à edição e ao parecer assistido por IA, sem adoção textual. Bloqueada como alvo completo para treino e avaliação até nova decisão humana. Ver docs/revisao_humana/sessao_1795/consolidacao_20261028/README.md."
+    },
+    {
+      "line_id": "l_27cb89d5763a6e64c484",
+      "passes_reference_preconditions": false,
+      "blocking_errors": [
+        "l_27cb89d5763a6e64c484: Correspondência de página pendente."
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "line_id": "l_6077eea6d3ac418348ec",
+      "passes_reference_preconditions": false,
+      "blocking_errors": [
+        "l_6077eea6d3ac418348ec: Correspondência de página pendente."
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "line_id": "l_40d2333b12328973de24",
+      "passes_reference_preconditions": false,
+      "blocking_errors": [
+        "l_40d2333b12328973de24: Correspondência de página pendente."
+      ],
+      "exclusion_reason": null
+    },
+    {
+      "line_id": "l_53dcba6fe1e315e30873",
+      "passes_reference_preconditions": false,
+      "blocking_errors": [
+        "l_53dcba6fe1e315e30873: Correspondência de página pendente."
+      ],
+      "exclusion_reason": null
+    }
+  ],
+  "eligible_training_pairs": 0,
+  "new_text_validations": 0,
+  "geometry_validations_applied": 8,
+  "text_pending": 8,
+  "page_correspondence_pending": true,
+  "coverage_pending_and_incomplete": true,
+  "warnings": [
+    "reviewed_at é compartilhado pelo esquema e nesta aplicação registra validação geométrica; review_status permanece pendente.",
+    "O índice da sessão foi atualizado; snapshots, observações e revisões anteriores permanecem íntegros."
+  ],
+  "errors": []
+}

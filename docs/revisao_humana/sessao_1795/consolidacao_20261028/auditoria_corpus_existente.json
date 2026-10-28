@@ -1,0 +1,14 @@
+{
+  "valid": true,
+  "files_verified": 126,
+  "core_lines": 24,
+  "new_validated_pairs": 0,
+  "candidate_lines": 8,
+  "training_status": "technical_smoke_executed",
+  "optimizer_steps": 2,
+  "changed_trainable_tensors": 318,
+  "reloaded_for_inference": true,
+  "scientific_experiment_completed": false,
+  "test_used": false,
+  "large_artifacts_checked": false
+}

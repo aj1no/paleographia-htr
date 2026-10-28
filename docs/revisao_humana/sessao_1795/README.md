@@ -1,8 +1,10 @@
 # Revisão humana — sessão de 1795, bloco 01
 
+**Atualização de 28/10/2026:** a [consolidação posterior](consolidacao_20261028/README.md) aplicou as oito confirmações geométricas no editor e tornou explícita a parcialidade da quarta linha em `exclusion_reason`. As oito transcrições continuam pendentes, com zero pares elegíveis para treino. O estado publicado em `bf1db30`, descrito abaixo, foi preservado nos snapshots e observações históricos.
+
 Rodadas de 26 e 28/10/2026. Revisor informado: Rodolfo Vinicius Cima Takemoto.
 
-A rodada registrou oito leituras humanas assistidas pela edição modernizada. Os limites dos oito recortes e a sequência das marcações 1–8 foram confirmados pelo revisor. A quarta linha tem leitura parcial; as demais sete têm rascunho para o trecho apresentado. As ressalvas de escrita apagada e degradação permanecem registradas. Todos os estados textuais e geométricos do editor seguem `pending_review`; novos pares formalmente validados: **zero**. Não houve nova inferência ou treinamento nesta rodada.
+A rodada registrou oito leituras humanas assistidas pela edição modernizada. Os limites dos oito recortes e a sequência das marcações 1–8 foram confirmados pelo revisor. A quarta linha tem leitura parcial; as demais sete têm rascunho para o trecho apresentado. As ressalvas de escrita apagada e degradação permanecem registradas. No snapshot publicado em `bf1db30`, todos os estados textuais e geométricos do editor estavam em `pending_review`; novos pares formalmente validados: **zero**. Não houve nova inferência ou treinamento nesta rodada.
 
 - [Leituras atuais, ressalvas e pendências](sessao_20261028/README.md).
 - [Estado final do catálogo](sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json).

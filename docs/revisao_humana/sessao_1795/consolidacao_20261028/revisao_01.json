@@ -1,0 +1,12 @@
+{
+  "line_id": "l_24b904b9ad9473450172",
+  "parent_revision": "20261028T145912_c649c938",
+  "revision": "20261028T160355_11103669",
+  "reviewed_at": "2026-10-28T16:03:55.377541+00:00",
+  "changes": {
+    "geometry_status": "validated",
+    "reviewer": "Rodolfo Vinicius Cima Takemoto"
+  },
+  "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_005_linha01_limites.json",
+  "human_decision_date": "2026-10-26"
+}

@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-10-28T16:03:10.572357+00:00",
+  "studies": [
+    {
+      "output": "docs/revisao_humana/sessao_1795/consolidacao_20261028/estudo_visual/linha04_original_contexto.png",
+      "output_sha256": "c0dd1efb186e2ceda3a3497d71e911d340ca6324bb3e29544f919ea3736e3854",
+      "source": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "source_size": [
+        1130,
+        1638
+      ],
+      "source_bbox_xyxy": [
+        500,
+        454,
+        1030,
+        566
+      ],
+      "scale": 2,
+      "resampling": "nearest_neighbor",
+      "purpose": "Ampliação de pixels existentes para conferência; sem reconstrução ou correção de traços; não substitui o recorte canônico."
+    },
+    {
+      "output": "docs/revisao_humana/sessao_1795/consolidacao_20261028/estudo_visual/linha04_pdf_contexto.png",
+      "output_sha256": "df69916055326e4a2d151fc7113c4c1358cd44db65fda028e2d4c012dedf2ebf",
+      "source": "data/manifests/corpus_expandido_v02/pdf_images/3c0132189f5574d5/p004_i00.jpg",
+      "source_sha256": "982974430be3451569f30d4395dd8b86492a2e2dea211b30228224183fb93b53",
+      "source_size": [
+        1184,
+        1661
+      ],
+      "source_bbox_xyxy": [
+        600,
+        480,
+        1085,
+        590
+      ],
+      "scale": 2,
+      "resampling": "nearest_neighbor",
+      "purpose": "Ampliação de pixels existentes para conferência; sem reconstrução ou correção de traços; não substitui o recorte canônico."
+    }
+  ],
+  "geometric_registration_between_sources": false,
+  "quantitative_quality_comparison": false,
+  "new_human_decisions": 0
+}

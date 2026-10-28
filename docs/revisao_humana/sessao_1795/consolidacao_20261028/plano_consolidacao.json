@@ -1,0 +1,85 @@
+{
+  "created_at": "2026-10-28T16:03:55.354830+00:00",
+  "expected_initial_revision": "20261028T145912_c649c938",
+  "actor": "Codex (IA), aplicando confirmações humanas anteriores sob autorização direta nesta conversa.",
+  "reviewer_for_geometry": "Rodolfo Vinicius Cima Takemoto",
+  "changes": [
+    {
+      "line_id": "l_24b904b9ad9473450172",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_005_linha01_limites.json",
+      "human_decision_date": "2026-10-26"
+    },
+    {
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_007_linha02_leitura_limites.json",
+      "human_decision_date": "2026-10-26"
+    },
+    {
+      "line_id": "l_4882de66b18aa948f2a4",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_015_linha03_releitura_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_98962db568a2f74aab38",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto",
+        "exclusion_reason": "TRANSCRIÇÃO PARCIAL: o rascunho termina em Luiz, mas há continuação visível no recorte ainda não resolvida. Leitura humana de Luiz preservada (observações 016–017); alternativa do Juiz Presidente pertence à edição e ao parecer assistido por IA, sem adoção textual. Bloqueada como alvo completo para treino e avaliação até nova decisão humana. Ver docs/revisao_humana/sessao_1795/consolidacao_20261028/README.md."
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_016_linha04_releitura_parcial_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_27cb89d5763a6e64c484",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_010_linha05_leitura_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_6077eea6d3ac418348ec",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_018_linha06_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_40d2333b12328973de24",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_013_linha07_leitura_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_53dcba6fe1e315e30873",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_014_linha08_leitura_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    }
+  ],
+  "reading_order": "Valores 0–7 já conferem com a observação 019; preservados. Não há estado separado de sequência no esquema atual.",
+  "page_and_coverage": "Correspondência documental e cobertura mantidas pendentes, complete=false.",
+  "text_policy": "Nenhuma alteração de text_diplomatic, text_modernized, review_status ou reference_kind.",
+  "shared_reviewed_at": "Carimbo do serviço na aplicação da validação geométrica. Não é aprovação textual nem a data original da declaração humana."
+}

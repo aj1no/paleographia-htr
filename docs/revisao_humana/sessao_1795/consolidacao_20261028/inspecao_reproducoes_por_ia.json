@@ -1,0 +1,25 @@
+{
+  "type": "inspecao_assistida_por_IA_de_reproducoes_locais",
+  "recorded_at": "2026-10-28T16:05:08.131317+00:00",
+  "actor": "Codex (IA)",
+  "previous_readings_and_edition_known": true,
+  "independent_paleographic_review": false,
+  "source_manifest": "estudo_visual/proveniencia.json",
+  "sources_inspected": [
+    "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+    "data/manifests/corpus_expandido_v02/pdf_images/3c0132189f5574d5/p004_i00.jpg"
+  ],
+  "observations": "As reproduções mostram a mesma região com formas e contraste ligeiramente diferentes. Nas duas, a pequena forma antes da inicial alta é compatível com o; a inicial curva e a palavra seguinte são compatíveis com a hipótese do Juiz Presidente do parecer recebido. Esta inspeção assistida não resolveu a leitura de cada grafema ou sua grafia histórica e não constitui confirmação humana. A leitura de Luiz e a continuação incerta permanecem como rascunho humano.",
+  "quality_conclusion": "Não foi estabelecida vantagem suficiente de uma reprodução para resolver a disputa. Dimensões e tamanho de arquivo não foram usados como prova de maior detalhe.",
+  "limitations": [
+    "Regiões extraídas manualmente de fontes com enquadramentos distintos; sem registro geométrico entre as versões.",
+    "Ampliação de vizinho mais próximo apenas repete pixels existentes; sem recuperação ou reconstrução de letras.",
+    "A inspeção não decide a identificação documental ou o lado do fólio."
+  ],
+  "text_changes": 0,
+  "new_human_decisions": 0,
+  "new_validated_pairs": 0,
+  "recognition_executed": false,
+  "training_executed": false,
+  "metrics_calculated": false
+}

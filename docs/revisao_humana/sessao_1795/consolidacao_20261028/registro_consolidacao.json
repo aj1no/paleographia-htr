@@ -1,0 +1,122 @@
+{
+  "type": "consolidacao_administrativa_de_confirmacoes_humanas_previas",
+  "recorded_at": "2026-10-28T16:03:55.786409+00:00",
+  "actor": "Codex (IA)",
+  "human_authorization": "Sim, pode aplicar as orientações ao projeto e ao editor, mantendo as transcrições pendentes e preservando o histórico e as dúvidas da quarta linha.",
+  "source_commit": "bf1db30a93fee10808b1509054524ae572fe1864",
+  "reviewer_for_existing_geometry_decisions": "Rodolfo Vinicius Cima Takemoto",
+  "before_revision": "20261028T145912_c649c938",
+  "after_revision": "20261028T160355_969eab97",
+  "receipts": [
+    {
+      "line_id": "l_24b904b9ad9473450172",
+      "parent_revision": "20261028T145912_c649c938",
+      "revision": "20261028T160355_11103669",
+      "reviewed_at": "2026-10-28T16:03:55.377541+00:00",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_005_linha01_limites.json",
+      "human_decision_date": "2026-10-26"
+    },
+    {
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "parent_revision": "20261028T160355_11103669",
+      "revision": "20261028T160355_c382f90d",
+      "reviewed_at": "2026-10-28T16:03:55.444209+00:00",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_007_linha02_leitura_limites.json",
+      "human_decision_date": "2026-10-26"
+    },
+    {
+      "line_id": "l_4882de66b18aa948f2a4",
+      "parent_revision": "20261028T160355_c382f90d",
+      "revision": "20261028T160355_628232f4",
+      "reviewed_at": "2026-10-28T16:03:55.499509+00:00",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_015_linha03_releitura_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_98962db568a2f74aab38",
+      "parent_revision": "20261028T160355_628232f4",
+      "revision": "20261028T160355_7c462649",
+      "reviewed_at": "2026-10-28T16:03:55.551662+00:00",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto",
+        "exclusion_reason": "TRANSCRIÇÃO PARCIAL: o rascunho termina em Luiz, mas há continuação visível no recorte ainda não resolvida. Leitura humana de Luiz preservada (observações 016–017); alternativa do Juiz Presidente pertence à edição e ao parecer assistido por IA, sem adoção textual. Bloqueada como alvo completo para treino e avaliação até nova decisão humana. Ver docs/revisao_humana/sessao_1795/consolidacao_20261028/README.md."
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_016_linha04_releitura_parcial_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_27cb89d5763a6e64c484",
+      "parent_revision": "20261028T160355_7c462649",
+      "revision": "20261028T160355_eff6f91a",
+      "reviewed_at": "2026-10-28T16:03:55.603706+00:00",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_010_linha05_leitura_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_6077eea6d3ac418348ec",
+      "parent_revision": "20261028T160355_eff6f91a",
+      "revision": "20261028T160355_7293cf3e",
+      "reviewed_at": "2026-10-28T16:03:55.652882+00:00",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_018_linha06_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_40d2333b12328973de24",
+      "parent_revision": "20261028T160355_7293cf3e",
+      "revision": "20261028T160355_37c2614a",
+      "reviewed_at": "2026-10-28T16:03:55.706561+00:00",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_013_linha07_leitura_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    },
+    {
+      "line_id": "l_53dcba6fe1e315e30873",
+      "parent_revision": "20261028T160355_37c2614a",
+      "revision": "20261028T160355_969eab97",
+      "reviewed_at": "2026-10-28T16:03:55.754764+00:00",
+      "changes": {
+        "geometry_status": "validated",
+        "reviewer": "Rodolfo Vinicius Cima Takemoto"
+      },
+      "human_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_014_linha08_leitura_limites_ressalva.json",
+      "human_decision_date": "2026-10-28"
+    }
+  ],
+  "human_order_confirmation": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_019_sequencia_visual_bloco01.json",
+  "reading_order_preserved": true,
+  "new_human_text_decisions": 0,
+  "human_decision_dates_are_in_receipts": true,
+  "geometry_validated": 8,
+  "text_pending": 8,
+  "new_eligible_training_pairs": 0,
+  "text_and_images_preserved": true,
+  "partial_line_id": "l_98962db568a2f74aab38",
+  "partiality_field": "exclusion_reason",
+  "page_correspondence": "pending_review",
+  "coverage_complete": false,
+  "coverage_status": "pending_review"
+}
