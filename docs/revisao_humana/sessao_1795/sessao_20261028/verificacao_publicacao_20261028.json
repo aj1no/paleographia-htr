@@ -1,0 +1,244 @@
+{
+  "verified_at": "2026-10-28T15:08:34.006239+00:00",
+  "valid": true,
+  "scope": "Integridade local do pacote documental para publicação; não constitui validação paleográfica.",
+  "json_files_checked": 22,
+  "local_markdown_links_checked": 19,
+  "file_hash_comparisons": 37,
+  "json_files": [
+    "docs/revisao_humana/sessao_1795/sessao_20261026/inspecao_linha04_fontes_por_ia.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_001_foliacao.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_002_linha01_leitura.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_003_linha01_retificacao.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_004_linha01_dias.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_005_linha01_limites.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_007_linha02_leitura_limites.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_008_linha03_leitura.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_009_linha04_leitura_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_010_linha05_leitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_011_linha06_leitura_sinal_final_pendente.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_012_linha06_confirmacao_hifen.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_013_linha07_leitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_014_linha08_leitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_015_linha03_releitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_016_linha04_releitura_parcial_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_017_linha04_Luiz_continuacao_incerta.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_018_linha06_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_019_sequencia_visual_bloco01.json"
+  ],
+  "hash_comparisons": [
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261026/inspecao_linha04_fontes_por_ia.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261026/inspecao_linha04_fontes_por_ia.json",
+      "path": "data/manifests/corpus_expandido_v02/pdf_images/3c0132189f5574d5/p004_i00.jpg",
+      "sha256": "982974430be3451569f30d4395dd8b86492a2e2dea211b30228224183fb93b53"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_001_foliacao.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_001_foliacao.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/context.jpg",
+      "sha256": "ae968812bb277e1e5a6cff22c61b9dfa095fce5342964a1314eddfa1aa7bb9a2"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_002_linha01_leitura.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_24b904b9ad9473450172.png",
+      "sha256": "d9487e1e5d4b60e55ed066140fa2adf08b51877ea8b92465aea066e284b8e71a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_005_linha01_limites.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_24b904b9ad9473450172.png",
+      "sha256": "d9487e1e5d4b60e55ed066140fa2adf08b51877ea8b92465aea066e284b8e71a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_007_linha02_leitura_limites.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_b8a06d58bd7cced4f3a2.png",
+      "sha256": "43f95998e00abb5811307921795e20d80e986251c00d0a8008e6b60c63f936dd"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_008_linha03_leitura.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+      "sha256": "711df1e41d53b3a56e569e3524654ddee21a15773b70af3fa2083698a6bd8638"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_009_linha04_leitura_ressalva.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+      "sha256": "c1f69b1194d1d355cfb9324d34abcb6035959a6f8c73ec46a63982b5f9923892"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_010_linha05_leitura_limites_ressalva.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+      "sha256": "7dd177110e9160aaaabbdd05a5ebac536c774779cf3c6aeec18704e7e365cabd"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_011_linha06_leitura_sinal_final_pendente.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+      "sha256": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_012_linha06_confirmacao_hifen.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+      "sha256": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_013_linha07_leitura_limites_ressalva.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_40d2333b12328973de24.png",
+      "sha256": "7536043f5561f3ce3c96bae54b69b7d095bb69e5c926f31d1b14ceb4ee374199"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_014_linha08_leitura_limites_ressalva.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_53dcba6fe1e315e30873.png",
+      "sha256": "f2d6c3c302e765c6440f5e335e5aa45e28888309ee4a89b37d8e1274fa9b905f"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_015_linha03_releitura_limites_ressalva.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+      "sha256": "711df1e41d53b3a56e569e3524654ddee21a15773b70af3fa2083698a6bd8638"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_016_linha04_releitura_parcial_limites_ressalva.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+      "sha256": "c1f69b1194d1d355cfb9324d34abcb6035959a6f8c73ec46a63982b5f9923892"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_017_linha04_Luiz_continuacao_incerta.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+      "sha256": "c1f69b1194d1d355cfb9324d34abcb6035959a6f8c73ec46a63982b5f9923892"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_018_linha06_limites_ressalva.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+      "sha256": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17"
+    },
+    {
+      "record": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_019_sequencia_visual_bloco01.json",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/overlay.jpg",
+      "sha256": "f0c0c1780c9ffdefac6b0b578fee0e1671e2d1e020cf1ab075f7dc8b2f183722"
+    }
+  ],
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 8
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "final_revision": "20261028T145912_c649c938",
+  "final_snapshot_matches_editor": true,
+  "changed_lines_between_snapshots": [
+    3,
+    4
+  ],
+  "pages_and_predictions_preserved_between_snapshots": true,
+  "review_statuses": {
+    "pending_review": 8
+  },
+  "geometry_statuses": {
+    "pending_review": 8
+  },
+  "new_formally_validated_pairs": 0,
+  "errors": []
+}

@@ -1,0 +1,42 @@
+{
+  "tipo": "reconferencia_humana_de_leitura_e_limites_com_ressalva_visual",
+  "data_resposta": "2026-10-28",
+  "registrado_em": "2026-10-28T13:58:41.561550+00:00",
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_4882de66b18aa948f2a4",
+  "original_message": "Sim, o recorte da terceira linha está completo, sem cortar as letras, mas a escrita continua um pouco apagada. além de poder ler o recorte \"senhora do Desterro de jundiahy comarca da cidade",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "reconferencia_da_observacao": "../sessao_20261026/observacao_008_linha03_leitura.json",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+  "imagem_apresentada_sha256": "711df1e41d53b3a56e569e3524654ddee21a15773b70af3fa2083698a6bd8638",
+  "bbox_xyxy_conferido": [
+    95,
+    416,
+    1030,
+    468
+  ],
+  "edicao_modernizada_mostrada_em_rodada_anterior": "senhora do Desterro de Jundiaí Comarca da Cidade",
+  "leitura_independente_da_edicao": false,
+  "texto_do_rascunho_anterior": "senhora do Desterro de Jundiaí Comarca da Cidade",
+  "texto_do_rascunho": "senhora do Desterro de jundiahy comarca da cidade",
+  "grafias_explicitamente_informadas": [
+    "jundiahy",
+    "comarca",
+    "cidade"
+  ],
+  "tratamento_da_mensagem": "Trecho de leitura após a aspa de abertura transferido literalmente para o rascunho, preservando grafia e caixa; aspa introdutória não adotada como sinal do manuscrito.",
+  "limites_confirmados_na_resposta": true,
+  "ressalva_humana": "O recorte da terceira linha está completo, sem cortar letras, mas a escrita continua um pouco apagada.",
+  "escopo": "Releitura humana assistida e confirmação dos limites do recorte mostrado. Adoção final da transcrição, geometria no editor, correspondência e cobertura aguardam consolidação.",
+  "transcricao_formalmente_validada": false,
+  "geometria_formalmente_validada_no_editor": false,
+  "correspondencia_documental_validada": false,
+  "cobertura_da_regiao_validada": false,
+  "estado": "rascunho_assistido_reconferido_e_limites_conferidos_com_ressalva_visual",
+  "reconhecimento_executado_nesta_rodada": false,
+  "novos_pares_validados": 0,
+  "revisao_editor_antes": "20261028T135624_dece55b9",
+  "coleta": "Resposta humana direta; registro estruturado e transferência ao editor por Codex (IA)."
+}

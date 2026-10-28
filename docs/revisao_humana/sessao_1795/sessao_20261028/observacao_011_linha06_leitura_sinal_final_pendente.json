@@ -1,0 +1,48 @@
+{
+  "tipo": "leitura_humana_assistida_com_limites_provisorios_e_sinal_final_pendente",
+  "data_resposta": "2026-10-28",
+  "registrado_em": "2026-10-28T13:40:19.293998+00:00",
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_6077eea6d3ac418348ec",
+  "original_message": "Eu li os officiaes da Camara em acto de Vereança, trat. O recorte parece completo, mas consigo confirmar se tem hífen no final.",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+  "imagem_apresentada_sha256": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17",
+  "bbox_xyxy_apresentado": [
+    95,
+    563,
+    1030,
+    619
+  ],
+  "edicao_modernizada_mostrada_antes_da_resposta": "os oficiais da Câmara em ato de vereança, trat-",
+  "leitura_independente_da_edicao": false,
+  "texto_do_rascunho": "os officiaes da Camara em acto de Vereança, trat",
+  "grafias_explicitamente_informadas": [
+    "officiaes",
+    "Camara",
+    "acto",
+    "Vereança",
+    "trat"
+  ],
+  "tratamento_da_mensagem": "Prefixo Eu li e ponto que separa a leitura do comentário não foram adotados como caracteres do manuscrito; vírgula informada preservada no rascunho. Nenhum hífen acrescentado ou negado. A frase mas consigo confirmar se tem hífen no final é ambígua e requer esclarecimento direto.",
+  "avaliacao_humana_dos_limites": "O recorte parece completo.",
+  "limites_confirmados_na_resposta": false,
+  "limites_avaliados_provisoriamente": true,
+  "sinal_final_confirmado": false,
+  "pendencias": [
+    "Esclarecer se o revisor consegue ou não confirmar o hífen final e qual sinal observa.",
+    "Confirmar os limites do recorte, relatados como aparentemente completos.",
+    "Consolidar transcrição, pontuação física, correspondência e cobertura."
+  ],
+  "transcricao_formalmente_validada": false,
+  "geometria_formalmente_validada_no_editor": false,
+  "correspondencia_documental_validada": false,
+  "cobertura_da_regiao_validada": false,
+  "estado": "rascunho_assistido_com_limites_provisorios_e_sinal_final_pendente",
+  "reconhecimento_executado_nesta_rodada": false,
+  "novos_pares_validados": 0,
+  "revisao_editor_antes": "20261028T133851_f660adff",
+  "coleta": "Resposta humana direta; registro estruturado e transferência ao editor por Codex (IA)."
+}
