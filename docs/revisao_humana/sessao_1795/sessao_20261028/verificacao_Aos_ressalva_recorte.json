@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-28T17:47:14.090399+00:00",
+  "valid": true,
+  "observation": "observacao_024_linha01_Aos_ressalva_recorte.json",
+  "before_revision": "20261028T174241_b3767c92",
+  "after_revision": "20261028T174713_238de76e",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 8
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "historical_files_preserved": 14,
+  "source_box_crop_order_pages_predictions_preserved": true,
+  "other_seven_lines_preserved": true,
+  "geometry_validated": 7,
+  "geometry_pending": 1,
+  "text_pending": 8,
+  "new_text_validations": 0,
+  "eligible_pairs": 0,
+  "export_matches_editor": true,
+  "geometry_reopened_due_to_new_human_caveat": true,
+  "reviewed_at_note": "O serviço zerou reviewed_at ao deixar texto e geometria pendentes; o carimbo anterior permanece nos snapshots e revisões históricas.",
+  "recognition_executed": false,
+  "training_executed": false,
+  "metrics_calculated": false
+}
