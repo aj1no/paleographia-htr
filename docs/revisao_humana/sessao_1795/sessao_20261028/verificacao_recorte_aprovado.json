@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-10-28T18:07:24.519850+00:00",
+  "valid": true,
+  "before_revision": "20261028T175052_20cb47e2",
+  "after_revision": "20261028T180724_27824fbb",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 8
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "reference_validation": {
+    "valid": false,
+    "purpose": "evaluation",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 8
+    },
+    "errors": [
+      "l_24b904b9ad9473450172: Correspondência de página pendente.",
+      "l_b8a06d58bd7cced4f3a2: Correspondência de página pendente.",
+      "l_4882de66b18aa948f2a4: Correspondência de página pendente.",
+      "l_98962db568a2f74aab38: Correspondência de página pendente.",
+      "l_27cb89d5763a6e64c484: Correspondência de página pendente.",
+      "l_6077eea6d3ac418348ec: Correspondência de página pendente.",
+      "l_40d2333b12328973de24: Correspondência de página pendente.",
+      "l_53dcba6fe1e315e30873: Correspondência de página pendente."
+    ],
+    "warnings": []
+  },
+  "geometries_validated": 8,
+  "texts_pending": 8,
+  "new_text_validations": 0,
+  "eligible_pairs": 0,
+  "previous_workspace_revisions_preserved": 28,
+  "old_crop_preserved": true,
+  "canonical_crop_matches_approved_pixels": true,
+  "canonical_crop_hash_correct": true,
+  "browser_crop_response_hash_correct": true,
+  "published_copy_matches_runtime_crop": true,
+  "native_export_matches_catalog": true,
+  "all_line_hashes_checked": 8,
+  "all_lines_within_pending_region_bounds": true,
+  "synthetic_regression_test": {
+    "baseline": "Falha reproduzida: crop_sha256 antigo após mudança da caixa.",
+    "fixed_result": "19 passed em tests/test_api.py e tests/test_data.py; imagens sintéticas e reconhecedores simulados, sem inferência real."
+  },
+  "recognition_executed": false,
+  "training_executed": false,
+  "metrics_calculated": false
+}

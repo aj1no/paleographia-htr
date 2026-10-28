@@ -1,0 +1,38 @@
+{
+  "tipo": "aprovacao_humana_de_novo_recorte_com_margem_superior",
+  "data_resposta": "2026-10-28",
+  "registrado_em": "2026-10-28T18:05:23.869798+00:00",
+  "original_message": "Sim, agora a primeira linha está completa, sem cortar as letras e sem pegar as palavras da linha de baixo. Pode usar esse recorte.",
+  "contexto_da_pergunta": "Agora a primeira linha está completa, sem cortar letras e sem incluir palavras da linha de baixo?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_24b904b9ad9473450172",
+  "imagem_apresentada": "docs/revisao_humana/sessao_1795/sessao_20261028/linha01_proposta_margem_superior.png",
+  "imagem_apresentada_sha256": "0ad8bfc4c5d60d45113e990e2ed61ff7b22c9463398a216e3db6026146fb5d02",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "bbox_xyxy_anterior": [
+    95,
+    325,
+    1030,
+    377
+  ],
+  "bbox_xyxy_aprovado": [
+    95,
+    305,
+    1030,
+    377
+  ],
+  "limites_confirmados_na_resposta": true,
+  "linha_inteira_sem_corte_confirmada": true,
+  "sem_palavras_da_linha_inferior_confirmado": true,
+  "scope": "Aprova a geometria da proposta mostrada e autoriza seu uso, após ressalvas 024–025. Não aprova a transcrição integral, a identificação documental ou a cobertura textual.",
+  "texto_do_rascunho_preservado": "Aos vinte e cinco dias do mes de junho de mil sete",
+  "transcricao_formalmente_validada": false,
+  "estado_textual_esperado": "pending_review",
+  "estado_geometrico_aprovado": "validated",
+  "revisao_editor_antes": "20261028T175052_20cb47e2",
+  "coleta": "Aprovação humana direta; aplicação no fluxo existente por Codex (IA)."
+}
