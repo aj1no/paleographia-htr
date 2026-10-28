@@ -1,21 +1,23 @@
 # Revisão humana — sessão de 1795, bloco 01
 
-**Atualização de 28/10/2026:** a [consolidação posterior](consolidacao_20261028/README.md) aplicou as oito confirmações geométricas no editor e tornou explícita a parcialidade da quarta linha em `exclusion_reason`. As oito transcrições continuam pendentes, com zero pares elegíveis para treino. O estado publicado em `bf1db30`, descrito abaixo, foi preservado nos snapshots e observações históricos.
+**Estado atual — 28/10/2026:** a [retificação humana posterior](retificacao_juiz_20261028/README.md) substituiu Luiz por **Juiz** no rascunho da quarta linha. A [consolidação geométrica](consolidacao_20261028/README.md) validou os oito recortes; as oito transcrições continuam pendentes, com zero pares elegíveis para treino. A continuação da quarta linha permanece não resolvida e sinalizada em `exclusion_reason`. Os snapshots e as observações anteriores foram preservados.
 
 Rodadas de 26 e 28/10/2026. Revisor informado: Rodolfo Vinicius Cima Takemoto.
 
 A rodada registrou oito leituras humanas assistidas pela edição modernizada. Os limites dos oito recortes e a sequência das marcações 1–8 foram confirmados pelo revisor. A quarta linha tem leitura parcial; as demais sete têm rascunho para o trecho apresentado. As ressalvas de escrita apagada e degradação permanecem registradas. No snapshot publicado em `bf1db30`, todos os estados textuais e geométricos do editor estavam em `pending_review`; novos pares formalmente validados: **zero**. Não houve nova inferência ou treinamento nesta rodada.
 
-- [Leituras atuais, ressalvas e pendências](sessao_20261028/README.md).
-- [Estado final do catálogo](sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json).
-- [Roteiro para análise no ChatGPT](ANALISE_CHATGPT.md).
+- [Estado atual e retificação para Juiz](retificacao_juiz_20261028/README.md).
+- [Leituras anteriores e ressalvas publicadas em bf1db30](sessao_20261028/README.md).
+- [Catálogo atual após a retificação](retificacao_juiz_20261028/catalogo_depois.json).
+- [Snapshot histórico de bf1db30](sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json).
+- [Roteiro da análise inicial no ChatGPT — anterior à retificação](ANALISE_CHATGPT.md).
 - [Observações iniciais de 26/10](sessao_20261026/).
 - [Continuação e esclarecimentos de 28/10](sessao_20261028/).
 - [Página contextual](../../dataset_expansion_20261023/curation_sessao_1795_bloco01/context.jpg) e [marcações dos oito recortes](../../dataset_expansion_20261023/curation_sessao_1795_bloco01/overlay.jpg).
 
-## Ponto principal para análise
+## Histórico da dúvida e retificação posterior
 
-A quarta linha ilustra uma divergência ainda aberta. A edição modernizada apresenta “de São Paulo em casas de morada do Juiz Presidente”. Após concordância assistida inicial, o revisor relatou a leitura parcial “de São Paulo, em casas de morada de Luiz”, afirmando distinguir “Luiz” e expressando dúvida sobre o trecho seguinte, interpretado por ele como sobrenome. As observações 009, 016 e 017 preservam essa evolução. A certeza relatada pelo revisor e sua interpretação estão registradas como evidência humana, com correspondência paleográfica ainda pendente de análise. O catálogo final contém a leitura parcial mais recente.
+A quarta linha ilustra uma divergência ainda aberta. A edição modernizada apresenta “de São Paulo em casas de morada do Juiz Presidente”. Após concordância assistida inicial, o revisor relatou a leitura parcial “de São Paulo, em casas de morada de Luiz”, afirmando distinguir “Luiz” e expressando dúvida sobre o trecho seguinte, interpretado por ele como sobrenome. As observações 009, 016 e 017 preservam essa evolução. A certeza relatada pelo revisor e sua interpretação estão registradas como evidência humana, com correspondência paleográfica ainda pendente de análise. O snapshot de bf1db30 conserva essa leitura parcial anterior. Posteriormente, o próprio revisor corrigiu Luiz para Juiz na observação 020; o catálogo atual contém a palavra corrigida, com a continuação ainda pendente.
 
 O numeral 91 foi relatado no canto superior direito. O nome original e a edição indicam 91r, mas identificação documental completa, lado do fólio e cobertura parcial ainda precisam de consolidação. Oito linhas revisadas representam um bloco da página.
 

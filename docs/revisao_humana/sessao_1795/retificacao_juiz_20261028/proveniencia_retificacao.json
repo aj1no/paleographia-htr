@@ -1,0 +1,231 @@
+{
+  "aplicado_em": "2026-10-28T16:23:18.793269+00:00",
+  "actor": "Codex (IA)",
+  "decision_author": "Rodolfo Vinicius Cima Takemoto",
+  "human_decision_record": "observacao_020_linha04_retificacao_Juiz.json",
+  "before_revision": "20261028T160355_969eab97",
+  "after_revision": "20261028T162318_8769604b",
+  "source_commit": "4008e3cf7ab8de66831b1ef5a27ef35a08ceb6a1",
+  "protected_files": [
+    {
+      "path": "docs/revisao_humana/sessao_1795/ANALISE_CHATGPT.md",
+      "sha256": "5165b5d938459157d0d51e40582fd2edd3c02f45df0e8299ffcbe288b32ba8f2"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/auditoria_corpus_existente.json",
+      "sha256": "0845d1743656a830133a24559ac1fdb6654bdef231f1bb9b0c8d8dac3b6f08e8"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/catalogo_antes.json",
+      "sha256": "fabce3d1a840492f81098374f28de09b28e13ab13ad1daa461f9ae259cccf7cc"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/catalogo_depois.json",
+      "sha256": "30c48653599be1f7109314d338a96794a957a0c37f31028127d3e8b04da2b2f1"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/conferencia_textual_pendente.md",
+      "sha256": "acec25db7a74a6809f966aae13f356ab58357766629ba0ef302ae780efb3988e"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/estudo_visual/linha04_original_contexto.png",
+      "sha256": "c0dd1efb186e2ceda3a3497d71e911d340ca6324bb3e29544f919ea3736e3854"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/estudo_visual/linha04_pdf_contexto.png",
+      "sha256": "df69916055326e4a2d151fc7113c4c1358cd44db65fda028e2d4c012dedf2ebf"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/estudo_visual/proveniencia.json",
+      "sha256": "3419c0d16e611fdafcdceded5fa7d89697c14ff00b2c87dfcc4e21ebb3ae669f"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor/lines.jsonl",
+      "sha256": "c6d1d40630a8f3227802ea3443aef1be7615370ede76f4720da06df0cbce6ac2"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor/pages.jsonl",
+      "sha256": "b4b63ab3426080b038ffd0b23424652581d756f29f0f6234e7b1f1cae68eb393"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor/predictions.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor/provenance.json",
+      "sha256": "ccf55146a3b8e83cf85d7d3d75917844cd20827779506d0ee29778542c60ab90"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor.zip",
+      "sha256": "1295bf5e2055f5f2b8eb1cec01130503a2848b26486e823976c7723857c4625a"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/inspecao_reproducoes_por_ia.json",
+      "sha256": "b8692afd40bf08c71fa62c15fbc8a509dd328923d1fa794881dedaeb5b3089db"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/parecer_recebido_chatgpt.md",
+      "sha256": "a69f70d85705817165dcd7c6a6182e8e4e838a4850a42269e71880c4f1f6d389"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/plano_consolidacao.json",
+      "sha256": "dbd81fb3fbd1c1f6987307ddc1ca38c6c9a77606dbb92a1b109ded8aa33db087"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/preflight.json",
+      "sha256": "5e7238296f0717207d0bf86307c3fd5620032d57507b19ccf5e07bafd5fe71b7"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/README.md",
+      "sha256": "cc58290cc163edc440df90174b15e9a3e468a4a03e44e0b895ce2502290aeee5"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/registro_consolidacao.json",
+      "sha256": "435676a296034281155c98984cd1abf51d110892fe8c07979ff19b2a4adf0be6"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_01.json",
+      "sha256": "81a737570f023a4435879cff4bd27c77cab80235378e9a11333d96e3dee02739"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_02.json",
+      "sha256": "03477261ff399239bb3bd90d0cfc7278029990910b797466c72f03aba5f5c945"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_03.json",
+      "sha256": "7220d9bc3cab22071036a742215543b4f01facdf2f88812f86070fe1627f4e64"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_04.json",
+      "sha256": "4a28ae5c1fce51656cd417dc7ee9b72e84dc9e9f05a321c56f985c2948d481a1"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_05.json",
+      "sha256": "bed1faf8fd6ed7f8f4d8130ef46646e41585874b195525bb7014605aad67a5e7"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_06.json",
+      "sha256": "b523e327964b82222b785f4e9613733a5fd17ba6fb123ca99fac1c96d63966c3"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_07.json",
+      "sha256": "32d06e75f14e7bbf7d0a73ee5e824b95f4712d5216d5aceb52a81c0169521239"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_08.json",
+      "sha256": "6609bb29abad64b862749d0aeb7dd652f8d91c192b742eb85102dfcaf83a3cb9"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/consolidacao_20261028/verificacao_consolidacao.json",
+      "sha256": "926c33f3a5912edf896d9df0d676f25796126c2950b097b4e2b8baa4dc3d8a6d"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/inspecao_linha04_fontes_por_ia.json",
+      "sha256": "b1d8bd13bb49d85c789a4312cd347d9966b7ebf4cc5269dc1705a47d5c3d607c"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_001_foliacao.json",
+      "sha256": "7b87dbd652da1dfef2f998e74c95d1e7b136b1662b16d32ae023c3ec0b446e2d"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_002_linha01_leitura.json",
+      "sha256": "a9c342a91e2a3bcfea89bf607e386ddfdde9e5cc9b399e449d98b91565d2fc5a"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_003_linha01_retificacao.json",
+      "sha256": "3ea2a716dacc737adfaac7461154a91750c05df56b5449b10ce6effcf101e6ce"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_004_linha01_dias.json",
+      "sha256": "2e2448429244019f2035b0639c68bfb7bba18082429a5f8efea5c018c00edf2a"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_005_linha01_limites.json",
+      "sha256": "9df25892287ad254402cdc29354e0e7cdf053c1687508b250b9ed7e6faeaaa08"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+      "sha256": "54e9f7a85ede96c258bbe7627c51c38b93b467866b09d345a625c7ecf38cea8e"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_007_linha02_leitura_limites.json",
+      "sha256": "60511f7aa662ce217367c97863b52f6e97869fde499c4f94ad61a2f5b8056e7c"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_008_linha03_leitura.json",
+      "sha256": "bdc34478ac23eee527e7868268f89074922adef6a0404e6da260126b53211d74"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_009_linha04_leitura_ressalva.json",
+      "sha256": "16b2607d362d98ea8f41521773e2c4642ece521f0b132c6d07d1d63f9e83f05a"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+      "sha256": "ae917a3d1dc746f5b78b5379d1a68aaaff116119960b5858da4984ac9abd6f88"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+      "sha256": "fabce3d1a840492f81098374f28de09b28e13ab13ad1daa461f9ae259cccf7cc"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_010_linha05_leitura_limites_ressalva.json",
+      "sha256": "eb8929178686eb7b356eed283ac911440d6b261a7618da05f2f2f8ed130bf767"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_011_linha06_leitura_sinal_final_pendente.json",
+      "sha256": "ffd9cd33f0e06558f65265a71380c597e33287681c0087bc361d2909cb3c2ebe"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_012_linha06_confirmacao_hifen.json",
+      "sha256": "224aa1110c53901b72b7c14d53b100be6e835c1fbea753f19fc5cf6c5e210195"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_013_linha07_leitura_limites_ressalva.json",
+      "sha256": "0d3c5836e3e60f2454f1924624e14dbec5f3ce53b58ad80b8496c9ecb16e1ed9"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_014_linha08_leitura_limites_ressalva.json",
+      "sha256": "29d8c95b1cda71d51a673c91881915be92c457efaa1aa52f7d6d1a01887001a9"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_015_linha03_releitura_limites_ressalva.json",
+      "sha256": "19250244ed8b677063f5b728a39c518210dd4e7f7498f154bf1c3156fe9cd0f0"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_016_linha04_releitura_parcial_limites_ressalva.json",
+      "sha256": "96c4410b1cd5605e1e6cf44b745f56594a3e8655dcf6507bedd27482fc37fd95"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_017_linha04_Luiz_continuacao_incerta.json",
+      "sha256": "63fcba301f16c701ccafa8f389eda0114f54e5d4a53504f5cdf52c2691c5edb7"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_018_linha06_limites_ressalva.json",
+      "sha256": "58ec54726087a98cd50a62a8ff55edce2cb7dddfe3a4fa4fa1ce8d921e4f2795"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_019_sequencia_visual_bloco01.json",
+      "sha256": "5c86c0d8519a97e63f94921b28ea0fbe06b8231989f7959d177636d95148ffaa"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/README.md",
+      "sha256": "db2490f4f19f9f8f52cfa72e6075ab71502eab06820c085eb7aec6f30b94331e"
+    },
+    {
+      "path": "docs/revisao_humana/sessao_1795/sessao_20261028/verificacao_publicacao_20261028.json",
+      "sha256": "5355e534067626f4ba97775a60153ba601bea8c849eb23f6e9b9a39f828f0b21"
+    }
+  ],
+  "changed_line_id": "l_98962db568a2f74aab38",
+  "changed_line_fields": [
+    "text_diplomatic",
+    "exclusion_reason",
+    "reviewed_at"
+  ],
+  "shared_reviewed_at": "O serviço atualiza o carimbo de aplicação porque geometry_status permanece validated; não corresponde a aprovação textual.",
+  "recognition_executed": false,
+  "training_executed": false,
+  "metrics_calculated": false,
+  "text_validations": 0,
+  "training_eligible_pairs": 0
+}
