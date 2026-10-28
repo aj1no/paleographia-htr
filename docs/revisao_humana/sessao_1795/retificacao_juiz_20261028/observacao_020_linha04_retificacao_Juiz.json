@@ -1,0 +1,35 @@
+{
+  "tipo": "retificacao_humana_explicita_de_leitura",
+  "data_resposta": "2026-10-28",
+  "registrado_em": "2026-10-28T16:23:18.674584+00:00",
+  "original_message": "Pode fazer o commit dessas alterações e enviar para o GitHub, porem vamos utilizar Juiz no lugar de LUIZ, foi um erro meu",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_98962db568a2f74aab38",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+  "imagem_apresentada_sha256": "c1f69b1194d1d355cfb9324d34abcb6035959a6f8c73ec46a63982b5f9923892",
+  "texto_do_rascunho_anterior": "de São Paulo, em casas de morada de Luiz",
+  "texto_do_rascunho": "de São Paulo, em casas de morada de Juiz",
+  "retificacao": {
+    "de": "Luiz",
+    "para": "Juiz"
+  },
+  "historico_preservado": [
+    "../sessao_20261026/observacao_009_linha04_leitura_ressalva.json",
+    "../sessao_20261028/observacao_016_linha04_releitura_parcial_limites_ressalva.json",
+    "../sessao_20261028/observacao_017_linha04_Luiz_continuacao_incerta.json"
+  ],
+  "escopo": "Corrige somente Luiz para Juiz por decisão humana explícita. A preposição, a pontuação e a continuação não receberam nova decisão nesta resposta. O trecho seguinte permanece não resolvido; não foi adotada a palavra Presidente por contexto ou pela edição.",
+  "leitura_independente_da_edicao": false,
+  "leitura_parcial": true,
+  "final_da_linha_pendente": true,
+  "transcricao_formalmente_validada": false,
+  "geometry_status_preservado": "validated",
+  "review_status_preservado": "pending_review",
+  "exclusion_reason_atualizado": "TRANSCRIÇÃO PARCIAL: o rascunho termina em Juiz, mas há continuação visível no recorte ainda não resolvida. O revisor corrigiu expressamente Luiz para Juiz em 28/10/2026 (observação 020); leituras anteriores preservadas no histórico. A preposição de/do, a continuação e a pontuação permanecem pendentes. A edição e o parecer apresentam do Juiz Presidente, sem adoção automática da continuação. Bloqueada como alvo completo para treino e avaliação. Ver docs/revisao_humana/sessao_1795/retificacao_juiz_20261028/README.md.",
+  "revisao_editor_antes": "20261028T160355_969eab97",
+  "head_antes_da_retificacao": "4008e3cf7ab8de66831b1ef5a27ef35a08ceb6a1",
+  "coleta": "Correção humana direta; aplicação no editor por Codex (IA)."
+}

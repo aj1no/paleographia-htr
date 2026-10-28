@@ -1,0 +1,165 @@
+{
+  "checked_at": "2026-10-28T16:24:16.467737+00:00",
+  "valid": true,
+  "before_revision": "20261028T160355_969eab97",
+  "after_revision": "20261028T162318_8769604b",
+  "human_correction": "Luiz → Juiz",
+  "text_change_scope": "Substituição literal somente na quarta linha; preposição, pontuação e continuação preservadas como pendentes.",
+  "line_changes": [
+    {
+      "line_id": "l_24b904b9ad9473450172",
+      "changed_fields": []
+    },
+    {
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "changed_fields": []
+    },
+    {
+      "line_id": "l_4882de66b18aa948f2a4",
+      "changed_fields": []
+    },
+    {
+      "line_id": "l_98962db568a2f74aab38",
+      "changed_fields": [
+        "text_diplomatic",
+        "reviewed_at",
+        "exclusion_reason"
+      ]
+    },
+    {
+      "line_id": "l_27cb89d5763a6e64c484",
+      "changed_fields": []
+    },
+    {
+      "line_id": "l_6077eea6d3ac418348ec",
+      "changed_fields": []
+    },
+    {
+      "line_id": "l_40d2333b12328973de24",
+      "changed_fields": []
+    },
+    {
+      "line_id": "l_53dcba6fe1e315e30873",
+      "changed_fields": []
+    }
+  ],
+  "editor_matches_after_snapshot": true,
+  "native_export_matches_snapshot": true,
+  "partiality_preserved_in_export": true,
+  "historical_files_preserved_count": 52,
+  "historical_files_preserved": [
+    "docs/revisao_humana/sessao_1795/ANALISE_CHATGPT.md",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/auditoria_corpus_existente.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/catalogo_antes.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/catalogo_depois.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/conferencia_textual_pendente.md",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/estudo_visual/linha04_original_contexto.png",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/estudo_visual/linha04_pdf_contexto.png",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/estudo_visual/proveniencia.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor/lines.jsonl",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor/pages.jsonl",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor/predictions.jsonl",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor/provenance.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/exportacao_editor.zip",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/inspecao_reproducoes_por_ia.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/parecer_recebido_chatgpt.md",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/plano_consolidacao.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/preflight.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/README.md",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/registro_consolidacao.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_01.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_02.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_03.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_04.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_05.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_06.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_07.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/revisao_08.json",
+    "docs/revisao_humana/sessao_1795/consolidacao_20261028/verificacao_consolidacao.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/inspecao_linha04_fontes_por_ia.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_001_foliacao.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_002_linha01_leitura.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_003_linha01_retificacao.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_004_linha01_dias.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_005_linha01_limites.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_007_linha02_leitura_limites.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_008_linha03_leitura.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_009_linha04_leitura_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_20261028.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_010_linha05_leitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_011_linha06_leitura_sinal_final_pendente.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_012_linha06_confirmacao_hifen.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_013_linha07_leitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_014_linha08_leitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_015_linha03_releitura_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_016_linha04_releitura_parcial_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_017_linha04_Luiz_continuacao_incerta.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_018_linha06_limites_ressalva.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_019_sequencia_visual_bloco01.json",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/README.md",
+    "docs/revisao_humana/sessao_1795/sessao_20261028/verificacao_publicacao_20261028.json"
+  ],
+  "geometry_validated": 8,
+  "text_pending": 8,
+  "eligible_training_pairs": 0,
+  "new_text_validations": 0,
+  "local_markdown_links_checked": 11,
+  "validator_reports": {
+    "catalog": {
+      "valid": true,
+      "purpose": "catalog",
+      "rows": 8,
+      "statuses": {
+        "pending_review": 8
+      },
+      "errors": [],
+      "warnings": []
+    },
+    "evaluation": {
+      "valid": false,
+      "purpose": "evaluation",
+      "rows": 8,
+      "statuses": {
+        "pending_review": 8
+      },
+      "errors": [
+        "l_24b904b9ad9473450172: Correspondência de página pendente.",
+        "l_b8a06d58bd7cced4f3a2: Correspondência de página pendente.",
+        "l_4882de66b18aa948f2a4: Correspondência de página pendente.",
+        "l_98962db568a2f74aab38: Correspondência de página pendente.",
+        "l_27cb89d5763a6e64c484: Correspondência de página pendente.",
+        "l_6077eea6d3ac418348ec: Correspondência de página pendente.",
+        "l_40d2333b12328973de24: Correspondência de página pendente.",
+        "l_53dcba6fe1e315e30873: Correspondência de página pendente."
+      ],
+      "warnings": []
+    },
+    "training": {
+      "valid": false,
+      "purpose": "training",
+      "rows": 8,
+      "statuses": {
+        "pending_review": 8
+      },
+      "errors": [
+        "l_24b904b9ad9473450172: Correspondência de página pendente.",
+        "l_b8a06d58bd7cced4f3a2: Correspondência de página pendente.",
+        "l_4882de66b18aa948f2a4: Correspondência de página pendente.",
+        "l_98962db568a2f74aab38: Correspondência de página pendente.",
+        "l_27cb89d5763a6e64c484: Correspondência de página pendente.",
+        "l_6077eea6d3ac418348ec: Correspondência de página pendente.",
+        "l_40d2333b12328973de24: Correspondência de página pendente.",
+        "l_53dcba6fe1e315e30873: Correspondência de página pendente.",
+        "Treino exige grupos separados em train, validation e test."
+      ],
+      "warnings": []
+    }
+  },
+  "pages_predictions_and_other_seven_lines_preserved": true,
+  "recognition_executed": false,
+  "training_executed": false,
+  "metrics_calculated": false,
+  "errors": []
+}
