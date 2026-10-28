@@ -7,6 +7,7 @@ Rodadas de 26 e 28/10/2026. Revisor informado: Rodolfo Vinicius Cima Takemoto.
 A rodada registrou oito leituras humanas assistidas pela edição modernizada. Os limites dos oito recortes e a sequência das marcações 1–8 foram confirmados pelo revisor. A quarta linha tem leitura parcial; as demais sete têm rascunho para o trecho apresentado. As ressalvas de escrita apagada e degradação permanecem registradas. No snapshot publicado em `bf1db30`, todos os estados textuais e geométricos do editor estavam em `pending_review`; novos pares formalmente validados: **zero**. Não houve nova inferência ou treinamento nesta rodada.
 
 - [Estado atual e retificação para Juiz](retificacao_juiz_20261028/README.md).
+- [Contexto da preparação histórica e conferência textual pendente](revisao_documental_20261028/README.md).
 - [Leituras anteriores e ressalvas publicadas em bf1db30](sessao_20261028/README.md).
 - [Catálogo atual após a retificação](retificacao_juiz_20261028/catalogo_depois.json).
 - [Snapshot histórico de bf1db30](sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json).
@@ -23,6 +24,6 @@ O numeral 91 foi relatado no canto superior direito. O nome original e a ediçã
 
 ## Preservação
 
-Os JSONs de observação preservam mensagens, autoria informada, contexto da pergunta, recortes, hashes e escopo de cada confirmação. A inspeção visual por IA de 26/10 tem identificação própria. O snapshot inicial de 28/10 conserva o estado anterior às releituras das linhas 3 e 4; o snapshot final conserva o estado textual atual. Os manifests candidatos de 23/10 e as imagens originais foram preservados.
+Os JSONs de observação preservam mensagens, autoria informada, contexto da pergunta, recortes, hashes e escopo de cada confirmação. A inspeção visual por IA de 26/10 tem identificação própria. O [snapshot inicial de 28/10](sessao_20261028/catalogo_rascunhos_bloco01_20261028.json) conserva o estado anterior às releituras das linhas 3 e 4. O [snapshot final daquela rodada](sessao_20261028/catalogo_rascunhos_bloco01_final_20261028.json) conserva as leituras anteriores à observação 020. O [estado atual após a retificação para Juiz](retificacao_juiz_20261028/catalogo_depois.json) está no catálogo posterior da retificação. Os manifests candidatos de 23/10 e as imagens originais foram preservados.
 
-Os recortes e a página contextual estão versionados na pasta de preparação de 23/10. As fontes brutas e o histórico mutável do editor ficam fora do Git; os caminhos e hashes permitem conferir as cópias locais. A confirmação visual da sequência está documentada na observação 019 e não foi convertida automaticamente em aprovação formal no editor.
+Os recortes e a página contextual estão versionados na pasta de preparação de 23/10. As fontes brutas e o histórico mutável do editor ficam fora do Git; os caminhos e hashes permitem conferir as cópias locais. A confirmação visual da sequência está documentada na observação 019. Os estados geométricos foram consolidados posteriormente; o texto continua pendente, conforme o relatório de consolidação e a retificação atual.
