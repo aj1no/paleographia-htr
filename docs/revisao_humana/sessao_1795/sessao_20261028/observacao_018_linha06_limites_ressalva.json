@@ -1,0 +1,39 @@
+{
+  "tipo": "confirmacao_humana_de_limites_com_ressalva_visual",
+  "data_resposta": "2026-10-28",
+  "registrado_em": "2026-10-28T15:01:46.530420+00:00",
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_6077eea6d3ac418348ec",
+  "original_message": "Sim, o recorte da sexta linha está completo, sem cortar as letras, mas a escrita continua um pouco apagada.",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "complementa_observacoes": [
+    "observacao_011_linha06_leitura_sinal_final_pendente.json",
+    "observacao_012_linha06_confirmacao_hifen.json"
+  ],
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+  "imagem_apresentada_sha256": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17",
+  "bbox_xyxy_conferido": [
+    95,
+    563,
+    1030,
+    619
+  ],
+  "texto_do_rascunho_preservado": "os officiaes da Camara em acto de Vereança, trat-",
+  "limites_confirmados_na_resposta": true,
+  "ressalva_humana": "O recorte da sexta linha está completo, sem cortar letras, mas a escrita continua um pouco apagada.",
+  "escopo": "Confirma os limites do sexto recorte mostrado, antes relatados como aparentemente completos. A resposta não acrescenta nova leitura textual ou confirmação de ordem, correspondência e cobertura.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "geometria_formalmente_validada_no_editor": false,
+  "ordem_de_leitura_validada": false,
+  "correspondencia_documental_validada": false,
+  "cobertura_da_regiao_validada": false,
+  "estado": "limites_conferidos_com_ressalva_visual_aguardando_consolidacao",
+  "reconhecimento_executado_nesta_rodada": false,
+  "novos_pares_validados": 0,
+  "revisao_editor_consultada": "20261028T145912_c649c938",
+  "catalogo_editor_alterado": false,
+  "coleta": "Confirmação humana direta; registro estruturado por Codex (IA)."
+}

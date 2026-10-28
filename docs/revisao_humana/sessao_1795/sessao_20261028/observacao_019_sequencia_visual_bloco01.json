@@ -1,0 +1,124 @@
+{
+  "tipo": "confirmacao_humana_da_sequencia_e_correspondencia_visual_do_bloco",
+  "data_resposta": "2026-10-28",
+  "registrado_em": "2026-10-28T15:04:05.871865+00:00",
+  "page_id": "p_c02_b86f393193192c9b",
+  "original_message": "Sim, esta conforme oq revisamos",
+  "contexto_da_pergunta": "As marcações de 1 a 8 acompanham corretamente as oito linhas que revisamos, sem pular ou repetir nenhuma?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/overlay.jpg",
+  "imagem_apresentada_sha256": "f0c0c1780c9ffdefac6b0b578fee0e1671e2d1e020cf1ab075f7dc8b2f183722",
+  "sequencia_confirmada": [
+    {
+      "marcacao": 1,
+      "line_id": "l_24b904b9ad9473450172",
+      "bbox_xyxy": [
+        95,
+        325,
+        1030,
+        377
+      ],
+      "reading_order": 0
+    },
+    {
+      "marcacao": 2,
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "bbox_xyxy": [
+        95,
+        374,
+        1030,
+        421
+      ],
+      "reading_order": 1
+    },
+    {
+      "marcacao": 3,
+      "line_id": "l_4882de66b18aa948f2a4",
+      "bbox_xyxy": [
+        95,
+        416,
+        1030,
+        468
+      ],
+      "reading_order": 2
+    },
+    {
+      "marcacao": 4,
+      "line_id": "l_98962db568a2f74aab38",
+      "bbox_xyxy": [
+        95,
+        466,
+        1030,
+        517
+      ],
+      "reading_order": 3
+    },
+    {
+      "marcacao": 5,
+      "line_id": "l_27cb89d5763a6e64c484",
+      "bbox_xyxy": [
+        95,
+        514,
+        1030,
+        566
+      ],
+      "reading_order": 4
+    },
+    {
+      "marcacao": 6,
+      "line_id": "l_6077eea6d3ac418348ec",
+      "bbox_xyxy": [
+        95,
+        563,
+        1030,
+        619
+      ],
+      "reading_order": 5
+    },
+    {
+      "marcacao": 7,
+      "line_id": "l_40d2333b12328973de24",
+      "bbox_xyxy": [
+        95,
+        614,
+        1030,
+        669
+      ],
+      "reading_order": 6
+    },
+    {
+      "marcacao": 8,
+      "line_id": "l_53dcba6fe1e315e30873",
+      "bbox_xyxy": [
+        95,
+        666,
+        1030,
+        721
+      ],
+      "reading_order": 7
+    }
+  ],
+  "sequencia_visual_confirmada_na_resposta": true,
+  "sem_saltos_ou_repeticoes_no_bloco_confirmado": true,
+  "correspondencia_recortes_marcacoes_confirmada": true,
+  "escopo": "Confirma a correspondência visual e a sequência das oito marcações apresentadas com as oito linhas revisadas. Não confirma cobertura integral da página, lado do fólio ou identificação documental completa, nem resolve a continuação textual incerta da linha 4.",
+  "cobertura_integral_da_pagina_validada": false,
+  "correspondencia_documental_validada": false,
+  "transcricoes_formalmente_validadas": false,
+  "geometrias_formalmente_validadas_no_editor": false,
+  "leitura_independente_da_edicao": false,
+  "ressalvas_visuais_anteriores_preservadas": true,
+  "pendencias": [
+    "Conferir a continuação incerta da linha 4.",
+    "Conferir a identificação documental completa e o lado do fólio, além do numeral 91 já relatado.",
+    "Consolidar transcrições, geometria e cobertura parcial no editor com as ressalvas registradas."
+  ],
+  "estado": "sequencia_visual_do_bloco_confirmada_aguardando_consolidacao",
+  "reconhecimento_executado_nesta_rodada": false,
+  "novos_pares_validados": 0,
+  "revisao_editor_consultada": "20261028T145912_c649c938",
+  "catalogo_editor_alterado": false,
+  "coleta": "Confirmação humana direta; registro estruturado por Codex (IA)."
+}

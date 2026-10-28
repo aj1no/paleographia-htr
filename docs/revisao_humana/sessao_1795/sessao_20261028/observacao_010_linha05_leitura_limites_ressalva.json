@@ -1,0 +1,38 @@
+{
+  "tipo": "leitura_humana_assistida_e_conferencia_de_limites_com_ressalva_visual",
+  "data_resposta": "2026-10-28",
+  "registrado_em": "2026-10-28T13:38:51.517429+00:00",
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_27cb89d5763a6e64c484",
+  "original_message": "Eu li Salvador de Oliveira Prado, onde se achavão presentes. O recorte está completo, sem cortar as letras, porem com aquele detalhe da escrita esta um pouco apagada",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+  "imagem_apresentada_sha256": "7dd177110e9160aaaabbdd05a5ebac536c774779cf3c6aeec18704e7e365cabd",
+  "bbox_xyxy_conferido": [
+    95,
+    514,
+    1030,
+    566
+  ],
+  "edicao_modernizada_mostrada_antes_da_resposta": "Salvador de Oliveira Prado, onde se achavam presentes",
+  "leitura_independente_da_edicao": false,
+  "texto_do_rascunho": "Salvador de Oliveira Prado, onde se achavão presentes",
+  "grafias_explicitamente_informadas": [
+    "achavão"
+  ],
+  "tratamento_da_mensagem": "Prefixo Eu li e ponto que separa a leitura do comentário não foram adotados como caracteres do manuscrito; vírgula informada na leitura preservada no rascunho, com pontuação física ainda por conferir.",
+  "limites_confirmados_na_resposta": true,
+  "ressalva_humana": "O recorte está completo, sem cortar letras, mas a escrita está um pouco apagada.",
+  "escopo": "Leitura humana assistida e confirmação dos limites do recorte mostrado, com ressalva de escrita apagada. Adoção final da transcrição, geometria no editor, correspondência e cobertura aguardam consolidação.",
+  "transcricao_formalmente_validada": false,
+  "geometria_formalmente_validada_no_editor": false,
+  "correspondencia_documental_validada": false,
+  "cobertura_da_regiao_validada": false,
+  "estado": "rascunho_assistido_e_limites_conferidos_com_ressalva_visual",
+  "reconhecimento_executado_nesta_rodada": false,
+  "novos_pares_validados": 0,
+  "revisao_editor_antes": "20261026T175629_9f342c0b",
+  "coleta": "Resposta humana direta; registro estruturado e transferência ao editor por Codex (IA)."
+}
