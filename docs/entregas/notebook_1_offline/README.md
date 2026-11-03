@@ -1,5 +1,7 @@
 # PaleographIA — entrega do Notebook 1
 
+**[Ver o Notebook 1 já executado](PaleographIA_Notebook_1_Entrega.ipynb)** — consulte o código, os gráficos e as tabelas com as saídas salvas diretamente no GitHub.
+
 **[Baixar o pacote completo (ZIP)](https://raw.githubusercontent.com/aj1no/paleographia-htr/main/docs/entregas/notebook_1_offline/PaleographIA_Entrega_Offline.zip)**
 
 1. Baixe o ZIP e escolha **Extrair tudo**. Abra os arquivos na pasta extraída.
