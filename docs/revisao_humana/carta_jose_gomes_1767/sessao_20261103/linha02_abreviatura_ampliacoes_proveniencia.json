@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-11-03T18:24:07.786225+00:00",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "resampling": "nearest-neighbor",
+  "views": [
+    {
+      "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_tem_abreviatura_contexto_3x.png",
+      "bbox_xyxy_no_original": [
+        70,
+        20,
+        500,
+        185
+      ],
+      "scale": 3,
+      "sha256": "1cf936c01ef4fef36a445da94082aea1a7459063ce0b872bf5876dffe390a168",
+      "pixels_nativos_recuperaveis_exatamente": true
+    },
+    {
+      "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_abreviatura_detalhe_5x.png",
+      "bbox_xyxy_no_original": [
+        190,
+        35,
+        345,
+        160
+      ],
+      "scale": 5,
+      "sha256": "431786dfaaedd8ac4d60993afa4ee1ff2112ceaa7495a7c779378130b2f90b43",
+      "pixels_nativos_recuperaveis_exatamente": true
+    },
+    {
+      "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_abreviatura_apos_tem_5x.png",
+      "bbox_xyxy_no_original": [
+        135,
+        50,
+        255,
+        165
+      ],
+      "scale": 5,
+      "sha256": "c3599e4462144c4acaca1ebe0e25c850e5296d74dc2c194c36bd81468f77082f",
+      "pixels_nativos_recuperaveis_exatamente": true,
+      "finalidade": "Detalhe com margem esquerda suficiente para abranger o sinal logo após tem."
+    }
+  ],
+  "limite": "Visualização contextual com linhas vizinhas, sem reconstrução de traços ou confirmação de letras.",
+  "preliminary_detail_not_used_for_reading": "linha02_abreviatura_detalhe_5x.png: enquadramento preliminar excessivamente deslocado à direita; usar linha02_abreviatura_apos_tem_5x.png."
+}

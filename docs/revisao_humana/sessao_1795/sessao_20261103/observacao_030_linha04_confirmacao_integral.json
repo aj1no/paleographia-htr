@@ -1,0 +1,43 @@
+{
+  "tipo": "confirmacao_humana_integral_de_transcricao_assistida",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T15:21:34.805793+00:00",
+  "original_message": "Confirmo a linha completa assim: de São Paulo, em casas de morada do Juiz Presidente. Pode registrar e seguir para a próxima linha.",
+  "contexto_da_pergunta": "Você consegue confirmar a linha completa assim, ou algum trecho deve continuar incerto por estar apagado?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_98962db568a2f74aab38",
+  "page_id": "p_c02_b86f393193192c9b",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+  "imagem_apresentada_sha256": "c1f69b1194d1d355cfb9324d34abcb6035959a6f8c73ec46a63982b5f9923892",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "bbox_xyxy": [
+    95,
+    466,
+    1030,
+    517
+  ],
+  "texto_confirmado": "de São Paulo, em casas de morada do Juiz Presidente",
+  "transcricao_formalmente_validada": true,
+  "leitura_independente_da_edicao": false,
+  "tratamento_da_mensagem": "O ponto final encerra a mensagem do revisor e não foi solicitado como sinal físico. Mantido o texto apresentado e confirmado, sem acrescentar pontuação final.",
+  "scope": "Confirma integralmente o texto mostrado da quarta linha, incluindo a vírgula após Paulo. Autoriza consolidar a aprovação textual; não confirma correspondência documental, cobertura regional ou partições científicas.",
+  "ressalva_visual_historica": "Escrita um pouco apagada relatada na observação 022. A condição da imagem permanece no histórico; a nova confirmação integral resolve o impedimento textual específico da quarta linha.",
+  "review_status_anterior": "pending_review",
+  "review_status_atual": "validated",
+  "reference_kind_atual": "human_diplomatic",
+  "exclusion_reason_anterior": "REVISÃO TEXTUAL AINDA PENDENTE: leituras Juiz, do Juiz e Presidente registradas nas observações 020–022; vírgula após Paulo confirmada visualmente pelo revisor na observação 023. A continuação antes omitida e a dúvida desta vírgula estão resolvidas no rascunho. A ressalva de escrita apagada permanece; detalhes gráficos, eventuais outros sinais e aprovação textual integral ainda requerem consolidação. Mantida a exclusão como alvo aprovado para treino e avaliação até revisão integral, sem retirar a linha do bloco. Ver docs/revisao_humana/sessao_1795/README.md.",
+  "exclusion_reason_atual": null,
+  "geometry_status_preservado": "validated",
+  "revisao_editor_antes": "20261103T151708_749539ce",
+  "novas_transcricoes_validadas": 1,
+  "novos_pares_elegiveis": 0,
+  "motivo_elegibilidade_pendente": "Correspondência da página, cobertura regional e partições documentais continuam pendentes.",
+  "proxima_linha": {
+    "numero": 5,
+    "line_id": "l_27cb89d5763a6e64c484",
+    "conferencia_pendente": "Presença e posição do til em achavão e vírgula após Prado."
+  }
+}

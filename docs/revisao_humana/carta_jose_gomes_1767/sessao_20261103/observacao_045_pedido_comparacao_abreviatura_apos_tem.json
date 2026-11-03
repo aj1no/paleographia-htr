@@ -1,0 +1,23 @@
+{
+  "tipo": "melhora_de_visualizacao_relatada_e_pedido_de_comparacao_editorial",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T18:25:03.103493+00:00",
+  "original_message": "Agora ficou melhor. Pode ampliar a abreviatura logo depois de “tem” e comparar com a transcrição para conferirmos?",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_anterior": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_contexto_amplo_2x.png",
+  "relato": "A nova visualização ficou melhor; solicita ampliação da abreviatura após tem e comparação com a transcrição.",
+  "confirmacao_geometrica_integral": false,
+  "nova_leitura_literal_confirmada": false,
+  "transcricao_formalmente_validada": false,
+  "apoio_editorial": {
+    "pdf": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/modernized_edition_500a24d6a2ea8b93.pdf",
+    "pagina_base_1": 3,
+    "linha_modernizada": "tem dinheiro é por somentes negligências, que",
+    "expansao_correspondente": "dinheiro",
+    "fonte_da_expansao": "Edição modernizada; não leitura humana literal recebida nesta resposta."
+  },
+  "tratamento": "A expansão dinheiro não foi adotada automaticamente no alvo. Letras e sinais da abreviatura permanecem para conferência humana.",
+  "scope": "Registra melhora percebida e pedido de apoio; não equivale a aprovação de limites ou de leitura.",
+  "novos_pares_validados": 0
+}

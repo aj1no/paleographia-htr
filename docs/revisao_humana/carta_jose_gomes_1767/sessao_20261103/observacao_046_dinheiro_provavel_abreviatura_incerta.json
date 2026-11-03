@@ -1,0 +1,33 @@
+{
+  "tipo": "decisao_humana_de_expansao_provavel_com_abreviatura_incerta",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T18:33:57.171406+00:00",
+  "original_message": "Vejo algo parecido com um d e o ponto à direita. Vamos manter dinheiro como provável, com a dúvida sobre a abreviatura registrada. Pode registrar e seguir.",
+  "contexto_da_pergunta": "Você distingue alguma letra nesse sinal? O ponto à direita também está visível para você?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "trecho": "Abreviatura após tem na segunda linha da anotação superior.",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_abreviatura_apos_tem_5x.png",
+  "imagem_apresentada_sha256": "c3599e4462144c4acaca1ebe0e25c850e5296d74dc2c194c36bd81468f77082f",
+  "observacao_literal": {
+    "letra_sugerida": "d",
+    "certeza_da_letra": "parecido com d; não definitivo",
+    "ponto_a_direita_visivel": true,
+    "funcao_do_ponto": "nao definida nesta resposta"
+  },
+  "decisao": {
+    "leitura_expandida": "dinheiro",
+    "certeza": "provavel",
+    "abreviatura_literal": "incerta",
+    "duvida_preservada": true
+  },
+  "apoio_editorial": "Edição modernizada, página 3, desenvolve o sinal como dinheiro. O uso da edição já foi informado ao revisor.",
+  "scope": "Registra ponto à direita, possível d e dinheiro provável. Não confirma composição literal da abreviatura, interpretação do ponto, restante da linha ou geometria. Autoriza continuar a leitura.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "proximo_trecho": "Restante da segunda linha, após a abreviatura, incluindo grafia, eventuais abreviaturas e pontuação."
+}

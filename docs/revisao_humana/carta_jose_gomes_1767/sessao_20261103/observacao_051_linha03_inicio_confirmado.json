@@ -1,0 +1,23 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_texto",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T19:09:36.931169+00:00",
+  "original_message": "Sim, leio “se as não tivessem seriam”. Pode registrar e seguir para o restante da linha.",
+  "contexto_da_pergunta": "Antes de Srs, você lê se as não tivessem seriam ou identifica alguma grafia diferente?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha03_contexto_amplo_2x.png",
+  "imagem_apresentada_sha256": "b47eb5c88e73c42713722dcf4afa6a16f8f61b4afe7d63c346bb09976271e878",
+  "confirmacoes": {
+    "texto": "se as não tivessem seriam",
+    "posicao": "inicio da terceira linha da anotação superior, antes da abreviatura Srs"
+  },
+  "scope": "Confirma apenas o segmento informado. Preserva Srs como leitura proposta na observação 050, sem acrescentar ponto ou elevação. Final da linha ainda pendente.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir o final da terceira linha, correspondente a dos Desco na edição modernizada."
+}

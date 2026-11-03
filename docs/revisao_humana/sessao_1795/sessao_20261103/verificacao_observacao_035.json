@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-11-03T16:16:01.873628+00:00",
+  "before_revision": "20261103T160604_ca0e3939",
+  "after_revision": "20261103T161601_0e5955f8",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 6,
+      "validated": 2
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "textos_validados": 2,
+  "textos_pendentes": 6,
+  "geometrias_validadas": 8,
+  "novos_pares_elegiveis": 0,
+  "forma_literal": "Nˢᵃ",
+  "exclusao_especifica_da_abreviatura_resolvida": true,
+  "text_statuses_preserved": true,
+  "pages_preserved": true,
+  "predictions_preserved": true,
+  "geometry_and_crops_preserved": true,
+  "modernized_and_published_texts_preserved": true,
+  "recognition_executed": false,
+  "training_executed": false
+}

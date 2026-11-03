@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-11-03T16:06:04.537974+00:00",
+  "before_revision": "20261103T155131_309185a9",
+  "after_revision": "20261103T160604_ca0e3939",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 6,
+      "validated": 2
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "textos_validados": 2,
+  "textos_pendentes": 6,
+  "geometrias_validadas": 8,
+  "novos_pares_elegiveis": 0,
+  "text_change": {
+    "line_id": "l_53dcba6fe1e315e30873",
+    "before": "abriu huma carta do Senhor Bernardo José de Lorena",
+    "after": "abriu huma carta do Snr Bernardo José de Lorena"
+  },
+  "duvida_inicial_preservada": true,
+  "pages_preserved": true,
+  "predictions_preserved": true,
+  "geometry_and_crops_preserved": true,
+  "modernized_and_published_texts_preserved": true,
+  "recognition_executed": false,
+  "training_executed": false
+}

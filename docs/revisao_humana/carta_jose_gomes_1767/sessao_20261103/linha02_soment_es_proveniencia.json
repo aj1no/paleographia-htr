@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-11-03T18:59:50.573201+00:00",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_forma_somentes_contexto_3x.png",
+  "sha256": "55e2294b15a336eb32262c0d408ef7f4665b7f4b81198d5338ad8c6076a47e49",
+  "bbox_xyxy_no_original": [
+    235,
+    10,
+    640,
+    215
+  ],
+  "scale": 3,
+  "resampling": "nearest-neighbor",
+  "native_pixels_exactly_recoverable": true,
+  "purpose": "Conferência da disposição de letras da forma correspondente a somentes, com contexto de linhas vizinhas. Não é geometria canônica aprovada.",
+  "initial_view_preserved": {
+    "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_soment_es_contexto_3x.png",
+    "sha256": "9955346efae424bd424a184c5b6a7420cb6d7b601982700bc9a25efe6144f0a7",
+    "bbox_xyxy_no_original": [
+      335,
+      20,
+      640,
+      210
+    ],
+    "note": "Enquadramento preliminar mais à direita; usar o contexto ampliado à esquerda para a palavra completa."
+  }
+}

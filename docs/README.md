@@ -1,6 +1,6 @@
 # Índice da documentação
 
-Estado em 28/10/2026, na branch principal e padrão `main`.
+Estado em 03/11/2026, na branch principal e padrão `main`.
 A expansão de fontes e o ajuste fino passaram a integrar a etapa acadêmica.
 
 Use a `main` para consultar a versão atual e iniciar novas contribuições.
@@ -9,6 +9,9 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 
 ## Para começar
 
+- [Retomar o trabalho de 03/11](entregas/continuidade_20261103/RETOMADA.md): curadoria salva até a observação 052; próxima conferência na quarta linha da carta de 1767.
+
+- [Preparação da apresentação de 12/11/2026](entregas/apresentacao_20261112/README.md): retomada em 03/11, cronograma proposto, roteiro inicial e pendências para o fechamento.
 - [Apresentação e resultados atuais](../README.md).
 - [Execução e revisão local](runbook.md), [ambientes e modelos](environment.md).
 - [Guia para revisar o projeto](guia_revisao_gpt.md).
@@ -19,6 +22,8 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 
 | Material | Situação |
 | --- | --- |
+| [Continuidade após o Notebook 1](entregas/continuidade_20261103/README.md) | Requisitos originais recuperados em 03/11; sequência das próximas etapas e notebook de conferência dos dados executado |
+| [Notebook 1: pacote offline e versão executada](entregas/notebook_1_offline/README.md) | Publicado em 03/11; script e notebook reduzido reproduzem as métricas com dados incorporados; versão detalhada disponível para consulta |
 | [Ponto de entrada da entrega atual](entregas/pi_iv_pln_20261023_fechamento/README.md) | Artigo atualizado e notebook indicado; links prontos para o grupo 4, célula F11; rodada humana preparada; submissão e confirmações pendentes |
 | [Abrir e preencher no Google Colab](entregas/pi_iv_pln_20261023_colab/README.md) | Botão direto, preparação do ambiente, formulários por aluno e download do ZIP de relatos para conferência |
 | [Notebook colaborativo e cronograma da equipe](entregas/pi_iv_pln_20261023_equipe/README.md) | Atividades por integrante e registro de discussão/análise; 16 células executadas por IA, formulários individuais vazios; núcleo numérico preservado |
@@ -53,7 +58,8 @@ preservado como histórico.
 ## Uso e dados
 
 - [Esquema e estados](data_schema.md), [política de transcrição](transcription_policy.md).
-- [Curadoria de 1795 — estado atual de 28/10](revisao_humana/sessao_1795/retificacao_juiz_20261028/README.md): retificação humana para Juiz, oito geometrias validadas e textos pendentes; quarta linha parcial e zero pares elegíveis para treino.
+- [Curadoria de 1795 — fechamento após 038 em 03/11](revisao_humana/sessao_1795/sessao_20261103/fechamento_curadoria_038.md): sete referências por linha validadas, oitava provável/excluída, identificação e cobertura parcial confirmadas; treino científico ainda sem partições prontas.
+- [Próxima curadoria: carta de José Gomes de Gouveia de 1767](revisao_humana/carta_jose_gomes_1767/preparacao_20261103/README.md): primeiro recorte proposto, sem aprovação humana ou transcrição diplomática.
 - [Consulta lexical](lexico_historico.md), [entrega lexical](lexico_entrega_20261019.md).
 - [Teste lexical em cópia](testes/lexico_copia_20261019/README.md): não é revisão original.
 - [Repertório do 100r](repertorio_100r.md): confirmações parciais.

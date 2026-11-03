@@ -1,0 +1,11 @@
+{
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "bbox_xyxy": [
+    40,
+    8,
+    775,
+    107
+  ],
+  "scope": "Primeira linha da anotação superior; candidata à conferência geométrica e textual. Não inclui o endereço da direita nem pretende cobrir a página."
+}

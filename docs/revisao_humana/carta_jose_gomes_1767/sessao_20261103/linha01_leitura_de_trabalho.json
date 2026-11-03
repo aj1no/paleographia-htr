@@ -1,0 +1,27 @@
+{
+  "line_id": "l_14a4c7eba267e1e592e7",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "leitura_de_trabalho_expandida": "Paguem as Camaras, e a Razão por que não",
+  "segmentos_confirmados": [
+    "Paguem as Camaras,",
+    "e a Razão por",
+    "não"
+  ],
+  "grupo_probavel": {
+    "leitura_interpretativa": "que",
+    "forma_literal_observada": "q com haste descendente",
+    "sinal_grafico": "incerto",
+    "letra_elevada": "nao confirmada"
+  },
+  "observacoes": [
+    39,
+    40,
+    42,
+    43
+  ],
+  "text_diplomatic": null,
+  "reference_status": "pending_review",
+  "exclusion_reason": "Linha com leitura provável no grupo que e sinal não resolvido; representação diplomática integral e limites ainda pendentes.",
+  "nota": "Leitura expandida destinada à conferência, não arquivo de alvo ou referência validada. Não foram inseridos colchetes, ponto, interrogação ou letras elevadas no alvo."
+}

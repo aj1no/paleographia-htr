@@ -1,0 +1,42 @@
+{
+  "tipo": "hipotese_humana_sobre_funcao_de_sinal_e_habito_grafico",
+  "data": "2026-11-03",
+  "registrado_em": "2026-11-03T17:38:05.619349+00:00",
+  "original_message": "Seria uma forma de pontuação desse escriba? pq sei que algumas pessoas tem vicios de esccrita, tanto que conseguem ver quem são as pessoas que escreveu so por ver esse tipo de coisa. pq ali o não e visivel ser um acento, seria o ? no final do que? ja que leio que",
+  "line_id": "l_14a4c7eba267e1e592e7",
+  "hipoteses_propostas": [
+    "Traço como hábito gráfico do escriba.",
+    "Possível pontuação, inclusive ponto de interrogação após que."
+  ],
+  "leitura_relacionada_informada": "que",
+  "tipo_da_leitura": "proposta no contexto da pergunta, sem especificar a sequência literal de letras ou sinais",
+  "interpretacao_de_nao_na_resposta": "Resposta distingue o possível til sobre não do traço descendente no grupo anterior, sem converter a pergunta em confirmação de novo sinal.",
+  "analise_por_IA": {
+    "hipotese_preferida": "Forma de q/ligação gráfica ou marca abreviativa; a hipótese de interrogação não está demonstrada.",
+    "evidencias": [
+      "Comparadores da mesma anotação superior apresentam q com laço e haste descendente semelhantes.",
+      "O arco sobre a última palavra é compatível com o til de não.",
+      "Não foi isolado com segurança um ponto de interrogação independente.",
+      "A edição modernizada e a continuação da frase apoiam o sentido por que não tem..., sem determinar os sinais literais."
+    ],
+    "limites": [
+      "Não é necessário haver letra elevada para uma abreviatura ser possível.",
+      "Traços recorrentes ajudam a comparar mãos, mas um sinal isolado não identifica nominalmente o escriba.",
+      "Mesma página não implica automaticamente mesma mão."
+    ]
+  },
+  "fontes_de_apoio": [
+    {
+      "url": "https://revistas.ufpr.br/letras/article/view/36430",
+      "uso": "Estudo de abreviaturas setecentistas; distinção entre sinal abreviativo e pontuação."
+    },
+    {
+      "url": "https://archives.fbi.gov/archives/about-us/lab/forensic-science-communications/fsc/oct2009/review/2009_10_review02.htm",
+      "uso": "Comparação de conjuntos de características de escrita e limites da atribuição."
+    }
+  ],
+  "alteracao_canonica": false,
+  "novo_sinal_validado": false,
+  "transcricao_integral_validada": false,
+  "novos_pares_validados": 0
+}

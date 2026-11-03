@@ -1,0 +1,49 @@
+{
+  "tipo": "confirmacao_humana_de_identificacao_e_cobertura_parcial",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T16:35:09.625243+00:00",
+  "original_message": "Sim, confirmo a associação com o fólio 91r da sessão de 25/06/1795 e que o bloco cobre apenas as oito primeiras linhas do corpo, sem representar a página inteira. Pode registrar e seguir.,",
+  "contexto_da_pergunta": "Você confirma essa associação documental e que nosso bloco cobre apenas as oito primeiras linhas do corpo, sem representar a página inteira?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "page_id": "p_c02_b86f393193192c9b",
+  "document_id": "sessao_1795",
+  "folio_id": "91r",
+  "side": "recto",
+  "data_da_sessao": "1795-06-25",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "conferencia_apresentada": "docs/revisao_humana/sessao_1795/sessao_20261103/identificacao_e_cobertura_20261103.md",
+  "conferencia_apresentada_sha256": "8bf6fa0b32225f299ffc8db65fb13f9b8927b159651250b4614f2e0af062a291",
+  "confirmacoes": {
+    "associacao_documental": true,
+    "folio_e_lado": "91r",
+    "cobertura": "oito primeiras linhas do corpo",
+    "pagina_inteira": false
+  },
+  "coverage_region": "body_first8_candidate",
+  "coverage_bbox_xyxy": [
+    95,
+    305,
+    1030,
+    721
+  ],
+  "linhas_textualmente_validadas_preservadas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "linha08_preservada": "abriu provável, alternativa abrio, dúvida e exclusão explícitas",
+  "scope": "Valida associação documental e descrição da cobertura parcial de oito linhas. Não aprova o texto provável da oitava linha, não declara a página nem a referência da região inteira completas e não confirma independência documental ou partições científicas.",
+  "complete_preservado": false,
+  "motivo_complete_false": "A página é parcialmente coberta e a região de oito linhas contém a oitava com referência incerta. Não declarar referência integral completa dessa região.",
+  "correspondence_status_atual": "validated",
+  "coverage_review_status_atual": "validated",
+  "condicoes_de_uso_aprovadas_por_esta_resposta": false,
+  "revisao_editor_antes": "20261103T162802_a5ea1d0e"
+}

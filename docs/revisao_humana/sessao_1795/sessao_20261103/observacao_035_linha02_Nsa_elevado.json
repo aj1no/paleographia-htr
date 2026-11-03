@@ -1,0 +1,50 @@
+{
+  "tipo": "confirmacao_humana_da_forma_literal_de_abreviatura_com_letras_elevadas",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T16:16:01.758802+00:00",
+  "original_message": "Vejo um N com “sa” elevado, sem pontuação depois. Pode registrar e seguir.",
+  "contexto_da_pergunta": "Quais letras você distingue nessa abreviatura? Alguma aparece elevada, acima das demais?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_b8a06d58bd7cced4f3a2",
+  "page_id": "p_c02_b86f393193192c9b",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_b8a06d58bd7cced4f3a2.png",
+  "imagem_apresentada_sha256": "43f95998e00abb5811307921795e20d80e986251c00d0a8008e6b60c63f936dd",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "bbox_xyxy": [
+    95,
+    374,
+    1030,
+    421
+  ],
+  "confirmacoes": {
+    "letra_base": "N",
+    "letras_elevadas": "sa",
+    "pontuacao_apos": false
+  },
+  "representacao_aplicada": "Nˢᵃ",
+  "convencao_de_representacao": {
+    "autor_da_serializacao": "Codex (IA), aplicando a descrição humana",
+    "base": "N",
+    "s_elevado": "U+02E2",
+    "a_elevado": "U+1D43",
+    "descricao": "N de base seguido de s e a elevados em Unicode, sem acrescentar ponto. A descrição visual é humana; os pontos de código são a representação operacional aplicada."
+  },
+  "forma_desenvolvida": "Nossa",
+  "forma_desenvolvida_aplicada_ao_alvo": false,
+  "texto_do_rascunho_anterior": "centos e noventa e cinco annos nesta Villa de Nossa",
+  "texto_do_rascunho_atual": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+  "scope": "Confirma N com sa elevado e ausência de pontuação depois. Resolve a representação literal pendente da observação 028, sem confirmar transcrição integral, correspondência/cobertura documental ou partições.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "review_status_preservado": "pending_review",
+  "geometry_status_preservado": "validated",
+  "exclusion_reason_anterior": "ABREVIATURA CONFIRMADA, REPRESENTAÇÃO LITERAL PENDENTE: na observação 028 de 03/11/2026, o revisor informou Nossa abreviada e sem pontuação depois. Nossa por extenso permanece apenas como expansão provisória no rascunho; letras, eventual elevação/sinal e convenção de transcrição não foram especificados. Não usar como alvo aprovado para treino/avaliação até consolidação. Ver docs/revisao_humana/sessao_1795/sessao_20261103/observacao_028_linha02_Nossa_abreviada.json.",
+  "exclusion_reason_atual": null,
+  "motivo_remocao_exclusao": "O impedimento específico de representação literal da abreviatura foi resolvido. A linha permanece pending_review para aprovação textual integral.",
+  "revisao_editor_antes": "20261103T160604_ca0e3939",
+  "novos_pares_validados": 0,
+  "continuidade": "Retomar a dúvida abrio/abriu da linha 8; Snr e acento de José já confirmados."
+}

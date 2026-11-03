@@ -1,0 +1,43 @@
+{
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "scope": "Terceira linha da anotação superior; leitura parcial, sem alvo diplomático aprovado.",
+  "segmentos_informados": [
+    {
+      "forma": "se as não tivessem seriam",
+      "natureza": "texto",
+      "estatuto": "segmento confirmado pelo revisor",
+      "posicao": "antes de Srs",
+      "observacao": 51
+    },
+    {
+      "forma": "Srs",
+      "natureza": "abreviatura",
+      "estatuto": "leitura proposta pelo revisor",
+      "ponto": null,
+      "letras_elevadas": null,
+      "observacao": 50
+    },
+    {
+      "forma": "dos Desco-",
+      "natureza": "texto e hifen de quebra",
+      "estatuto": "segmento confirmado pelo revisor",
+      "posicao": "final da terceira linha",
+      "observacao": 52
+    }
+  ],
+  "contexto_editorial": "se as não tivessem seriam senhores dos Desco",
+  "nota_do_contexto": "A edição modernizada desenvolve senhores e não apresenta o hífen nesta quebra; a leitura humana dos Desco- foi preservada separadamente.",
+  "text_diplomatic": null,
+  "review_status": "pending_review",
+  "geometry_status": "pending_review",
+  "exclusion_reason": "Representação literal da abreviatura Srs, consolidação diplomática integral e geometria ainda pendentes.",
+  "observacoes": [
+    50,
+    51,
+    52
+  ],
+  "nenhum_alvo_de_treinamento_gerado": true,
+  "leitura_de_trabalho_parcial": "se as não tivessem seriam Srs dos Desco-",
+  "nota_da_leitura_parcial": "Início confirmado na 051; Srs proposto na 050, com ponto e elevação ainda não informados; final dos Desco e hífen confirmados na 052. Consolidação diplomática integral e geometria pendentes."
+}

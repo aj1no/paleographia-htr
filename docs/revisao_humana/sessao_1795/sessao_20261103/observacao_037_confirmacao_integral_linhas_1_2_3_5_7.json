@@ -1,0 +1,67 @@
+{
+  "tipo": "confirmacao_humana_integral_de_cinco_transcricoes_assistidas",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T16:28:02.140888+00:00",
+  "original_message": "Sim, confirmo integralmente os textos das linhas 1, 2, 3, 5 e 7 como estão no quadro. Pode registrar e seguir, mantendo a linha 8 como provável, com a dúvida preservada.",
+  "contexto_da_pergunta": "Você confirma integralmente os textos das linhas 1, 2, 3, 5 e 7 como estão acima?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "quadro_apresentado": "docs/revisao_humana/sessao_1795/sessao_20261103/consolidacao_linhas_20261103.json",
+  "quadro_apresentado_sha256": "ced62cbc9aeb783e8d0c46c3e5c17a79857d0e3af935d30c10e856a2b284b195",
+  "linhas_confirmadas": [
+    {
+      "numero": 1,
+      "line_id": "l_24b904b9ad9473450172",
+      "texto": "Aos vinte e cinco dias do mes de junho de mil sete",
+      "crop_image": "data/workspace/curation_sessao_1795/crops/20261028T180723_c80a33f8/l_46885e82a1448e83690e.png",
+      "crop_sha256": "0ad8bfc4c5d60d45113e990e2ed61ff7b22c9463398a216e3db6026146fb5d02"
+    },
+    {
+      "numero": 2,
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "texto": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_b8a06d58bd7cced4f3a2.png",
+      "crop_sha256": "43f95998e00abb5811307921795e20d80e986251c00d0a8008e6b60c63f936dd"
+    },
+    {
+      "numero": 3,
+      "line_id": "l_4882de66b18aa948f2a4",
+      "texto": "senhora do Desterro de jundiahy comarca da cidade",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+      "crop_sha256": "711df1e41d53b3a56e569e3524654ddee21a15773b70af3fa2083698a6bd8638"
+    },
+    {
+      "numero": 5,
+      "line_id": "l_27cb89d5763a6e64c484",
+      "texto": "Salvador de Oliveira Prado, onde se achavão presentes",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+      "crop_sha256": "7dd177110e9160aaaabbdd05a5ebac536c774779cf3c6aeec18704e7e365cabd"
+    },
+    {
+      "numero": 7,
+      "line_id": "l_40d2333b12328973de24",
+      "texto": "ando sobre o bem commum do povo, na mesma se",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_40d2333b12328973de24.png",
+      "crop_sha256": "7536043f5561f3ce3c96bae54b69b7d095bb69e5c926f31d1b14ceb4ee374199"
+    }
+  ],
+  "linhas_previamente_validadas_preservadas": [
+    4,
+    6
+  ],
+  "linha08": {
+    "forma": "abriu",
+    "certeza": "provavel",
+    "alternativa_historica": "abrio",
+    "duvida_preservada": true,
+    "exclusion_reason_preservado": true
+  },
+  "scope": "Confirma integralmente os cinco textos do quadro e autoriza registrar. Mantém os textos já validados de 4 e 6 e a linha 8 pendente/provável com exclusão explícita. Não aprova correspondência documental, cobertura de região ou partições.",
+  "leitura_independente_da_edicao": false,
+  "novas_transcricoes_validadas": 5,
+  "total_textos_validados_apos": 7,
+  "total_textos_pendentes_apos": 1,
+  "novos_pares_elegiveis": 0,
+  "revisao_editor_antes": "20261103T161812_55a981b3"
+}

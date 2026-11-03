@@ -1,0 +1,46 @@
+{
+  "tipo": "confirmacao_humana_da_grafia_caixa_e_pontuacao_da_linha_apresentada",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T15:51:31.851692+00:00",
+  "original_message": "Sim, confirmo a grafia e as maiúsculas, incluindo a cedilha de Vereança e a vírgula logo depois. Pode registrar e seguir para a próxima linha.",
+  "contexto_da_pergunta": "Você confirma a grafia e as maiúsculas acima, incluindo a cedilha de “Vereança” e a vírgula logo depois?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_6077eea6d3ac418348ec",
+  "page_id": "p_c02_b86f393193192c9b",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+  "imagem_apresentada_sha256": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "bbox_xyxy": [
+    95,
+    563,
+    1030,
+    619
+  ],
+  "texto_confirmado": "os officiaes da Camara em acto de Vereança, trat-",
+  "confirmacoes": {
+    "grafia_do_texto_apresentado": true,
+    "caixa_do_texto_apresentado": true,
+    "cedilha_em_Vereança": true,
+    "virgula_apos_Vereança": true
+  },
+  "hifen_final_ja_confirmado": "../sessao_20261028/observacao_012_linha06_confirmacao_hifen.json",
+  "quebra_fisica_preservada": "trat- ao fim da linha 6; ando ao início da linha 7.",
+  "scope": "Confirma grafia, caixa e pontuação do rascunho completo apresentado. Em conjunto com o hífen já confirmado na observação 012, consolida a revisão textual da sexta linha. Não confirma correspondência documental, cobertura regional ou partições.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": true,
+  "review_status_anterior": "pending_review",
+  "review_status_atual": "validated",
+  "reference_kind_atual": "human_diplomatic",
+  "revisao_editor_antes": "20261103T152134_2547325b",
+  "novas_transcricoes_validadas": 1,
+  "novos_pares_elegiveis": 0,
+  "ressalva_visual_historica_preservada": "Condição de escrita apagada documentada nas rodadas anteriores, sem apagar os registros.",
+  "proxima_linha": {
+    "numero": 7,
+    "line_id": "l_40d2333b12328973de24",
+    "conferencia_pendente": "Grafia commum e pontuação; preservar ando em linha física separada de trat-."
+  }
+}

@@ -2,6 +2,22 @@
 
 Produto: protótipo local de transcrição assistida de manuscritos delimitados de Jundiaí.
 
+**Requisitos recuperados em 03/11/2026:** os arquivos originais foram localizados
+em `D:/Downloads/Faculdade/`. A p. 45 de `05_The Transformer Revolution.pdf`
+registra a decisão da turma de PLN: notebook comparando dois modelos, artigo
+de até cinco páginas sem modelo obrigatório, até dez minutos de apresentação
+e cinco minutos de perguntas, com dispensa de revisão sistemática. Isso
+complementa as consultas anteriores aos modelos e confirma diretamente
+requisitos que antes estavam apenas relatados. Os slides de PI IV, p. 12–13,
+mantêm a sequência de dados tratados, primeiro modelo, deep learning,
+apresentação e projeto final. O enquadramento de HTR na expressão
+“classificação” continua sem confirmação. A p. 9 contém um calendário em
+imagem; uma versão o identifica como proposta. A apresentação informada
+pelo solicitante para este trabalho é 12/11, com limite total de 15 minutos.
+O [plano de continuidade](entregas/continuidade_20261103/README.md) reúne
+as evidências e o notebook iniciado para a etapa de dados. As menções
+históricas abaixo a requisitos pendentes descrevem o estado de suas datas.
+
 **Fechamento de 23/10/2026:** o [ponto de entrada atual](entregas/pi_iv_pln_20261023_fechamento/README.md)
 liga o artigo ao notebook baseline já disponível no Colab, com recálculo de
 predições congeladas, sem nova inferência ou treino. O link para “Link Notebook 1”

@@ -1,0 +1,29 @@
+{
+  "tipo": "leitura_humana_de_letras_em_dois_niveis_com_interpretacao_de_correcao",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T18:59:50.579761+00:00",
+  "original_message": "Ele esta por extenso, so que ha uma correção a cima, esta em baixo soment em cima pequeno o es",
+  "contexto_da_pergunta": "A forma correspondente a “somentes” aparece por extenso ou abreviada? Quais letras você distingue?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "trecho": "Forma correspondente a somentes na segunda linha da anotação superior.",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_contexto_amplo_2x.png",
+  "leitura_humana": {
+    "forma_na_linha": "soment",
+    "forma_pequena_acima": "es",
+    "por_extenso_segundo_o_revisor": true,
+    "interpretacao_do_revisor": "correção acima"
+  },
+  "leitura_integrada_de_trabalho": "somentes",
+  "tratamento": "Preservar separadamente as letras na linha e acima. A leitura integrada de trabalho concatena soment e es, sem apagar a disposição descrita. Não converter automaticamente em abreviatura ou inferir cancelamento, rasura, deslocamento exato ou sequência cronológica da correção.",
+  "caixa_da_inicial_confirmada_isoladamente": false,
+  "convencao_diplomatica_definitiva": null,
+  "scope": "Confirma as letras e a disposição informadas. A palavra foi descrita pelo revisor como por extenso, com correção acima; a classificação material exata e a representação diplomática ainda não foram fixadas. Não valida toda a linha, os limites ou os demais sinais.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "proximo_trecho": "Forma correspondente a negligências, presença de acento e vírgula antes do que final."
+}

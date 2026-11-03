@@ -1,0 +1,30 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_grafia_e_pontuacao",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T19:05:17.636861+00:00",
+  "original_message": "Leio negligencias sem acento e vejo a vírgula antes do que final. Pode registrar e seguir, mantendo dinheiro como provável.",
+  "contexto_da_pergunta": "Você lê “negligencias” com ou sem acento? E vê a vírgula antes do “que” final?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_contexto_amplo_2x.png",
+  "imagem_apresentada_sha256": "56fbd20568f92b3cb4a54031c90201d93fc34109a0b42d6ff3ac7c953907d0cc",
+  "confirmacoes": {
+    "palavra": "negligencias",
+    "acento": false,
+    "pontuacao": ",",
+    "posicao_da_virgula": "antes do que final da segunda linha"
+  },
+  "dinheiro_preservado": {
+    "leitura": "dinheiro",
+    "certeza": "provavel",
+    "forma_literal_da_abreviatura": "incerta"
+  },
+  "scope": "Confirma a grafia sem acento e a vírgula na posição informada. Preserva dinheiro provável e os demais registros; não aprova por extensão texto ou geometria integral.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Terceira linha da anotação superior, com manuscrito e edição lado a lado."
+}

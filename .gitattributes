@@ -95,3 +95,7 @@ tests/test_participacao_equipe.py text eol=lf
 docs/entregas/pi_iv_pln_20261023_fechamento/** -text -whitespace
 # Curadoria de 1795: preservar bytes de pareceres, observacoes e snapshots.
 docs/revisao_humana/sessao_1795/** -text -whitespace
+# Continuidade e curadoria de 03/11: conservar bytes dos registros e inventarios.
+docs/revisao_humana/carta_jose_gomes_1767/** -text -whitespace
+docs/entregas/continuidade_20261103/** -text -whitespace
+docs/entregas/apresentacao_20261112/** -text -whitespace

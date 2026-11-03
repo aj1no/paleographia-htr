@@ -1,0 +1,46 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_grafia_e_caixa",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T13:44:00.217310+00:00",
+  "original_message": "Sim, leio dias por extenso e junho com inicial minúscula. Pode registrar e seguir para a próxima linha.",
+  "contexto_da_pergunta": "O rascunho é: “Aos vinte e cinco dias do mes de junho de mil sete”. Você lê “dias” por extenso e “junho” com inicial minúscula?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "page_id": "p_c02_b86f393193192c9b",
+  "line_id": "l_24b904b9ad9473450172",
+  "imagem_apresentada": "docs/revisao_humana/sessao_1795/sessao_20261028/linha01_recorte_aprovado.png",
+  "imagem_apresentada_sha256": "0ad8bfc4c5d60d45113e990e2ed61ff7b22c9463398a216e3db6026146fb5d02",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "bbox_xyxy": [
+    95,
+    305,
+    1030,
+    377
+  ],
+  "confirmacoes": {
+    "dias": {
+      "forma": "dias",
+      "por_extenso": true
+    },
+    "junho": {
+      "forma": "junho",
+      "inicial": "minuscula"
+    }
+  },
+  "texto_do_rascunho_preservado": "Aos vinte e cinco dias do mes de junho de mil sete",
+  "scope": "Confirma somente dias por extenso e junho com inicial minúscula. A instrução de seguir é aplicada à próxima linha. Não amplia a confirmação para transcrição integral, correspondência ou cobertura documental.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "review_status_preservado": "pending_review",
+  "geometry_status_preservado": "validated",
+  "novos_pares_validados": 0,
+  "revisao_editor_preservada": "20261028T180724_27824fbb",
+  "aplicacao": "O rascunho já contém as formas confirmadas. Decisão registrada aditivamente nesta observação, sem regravar o texto ou criar uma revisão idêntica no editor.",
+  "proxima_linha": {
+    "line_id": "l_b8a06d58bd7cced4f3a2",
+    "numero": 2,
+    "conferencia_pendente": "Forma por extenso ou abreviada de Nossa, caixa e pontuação. A leitura annos/Villa e a geometria já estão registradas."
+  }
+}
