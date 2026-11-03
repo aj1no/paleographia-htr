@@ -1,0 +1,38 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_segmentos_caixa_e_pontuacao",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T18:09:07.871707+00:00",
+  "original_message": "Leio “e a Razão por”, com R maiúsculo e vírgula após Camaras. Confirmo “não” como última palavra. Pode registrar e seguir, mantendo “que” como provável.",
+  "contexto_da_pergunta": "Como você lê o trecho entre “Camaras” e o “q”, incluindo a pontuação e a inicial de “razão”? E confirma “não” como última palavra?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_14a4c7eba267e1e592e7",
+  "page_id": "p_c02_7b71d03c0d1bf8c7",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha01_apos_Camaras_3x.png",
+  "imagem_apresentada_sha256": "4d3654e7d0bf81407de8d854f2f218820c0047b93a04a37fe93a489db678e332",
+  "confirmacoes": {
+    "segmento": "e a Razão por",
+    "Razão": {
+      "inicial": "maiuscula",
+      "forma_informada": "Razão"
+    },
+    "Camaras": {
+      "pontuacao_apos": ","
+    },
+    "ultima_palavra": "não"
+  },
+  "decisao_anterior_preservada": {
+    "leitura_interpretativa": "que",
+    "certeza": "provavel",
+    "sinal_grafico": "incerto",
+    "observacao": 42
+  },
+  "scope": "Confirma os segmentos e sinais informados; mantém que provável. Não aprova uma representação literal definitiva da abreviatura, transcrição integral ou limites do recorte.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "proximo_trecho": "Segunda linha da anotação superior."
+}

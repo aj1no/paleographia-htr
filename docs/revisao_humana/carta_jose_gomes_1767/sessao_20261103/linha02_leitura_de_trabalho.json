@@ -1,0 +1,55 @@
+{
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "scope": "Segunda linha da anotação superior; leitura parcial, sem alvo diplomático aprovado.",
+  "segmento_em_conferencia": "Sinal após tem",
+  "leitura_expandida_do_sinal": "dinheiro",
+  "certeza": "provavel",
+  "observacao_literal": {
+    "letra_sugerida": "d",
+    "certeza_da_letra": "parecido com d; não definitivo",
+    "ponto_a_direita_visivel": true,
+    "funcao_do_ponto": "nao definida nesta resposta"
+  },
+  "restante_da_linha": "Consolidação integral e representação literal ainda pendentes; revisão prossegue à terceira linha com dinheiro provável.",
+  "text_diplomatic": null,
+  "review_status": "pending_review",
+  "geometry_status": "pending_review",
+  "exclusion_reason": "Dinheiro provável e forma literal da abreviatura incerta; representação da correção soment/es e consolidação integral/geométrica pendentes.",
+  "observacoes": [
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "nenhum_alvo_de_treinamento_gerado": true,
+  "segmentos_confirmados": [
+    {
+      "posicao": "depois da abreviatura desenvolvida como dinheiro",
+      "texto": "he",
+      "diacritico": "nao conferido isoladamente",
+      "observacao": 47
+    },
+    {
+      "posicao": "forma correspondente a somentes",
+      "texto_na_linha": "soment",
+      "texto_pequeno_acima": "es",
+      "interpretacao_humana": "por extenso, com correção acima",
+      "leitura_integrada_de_trabalho": "somentes",
+      "convencao_diplomatica": null,
+      "observacao": 48
+    },
+    {
+      "posicao": "final da segunda linha",
+      "texto": "negligencias",
+      "acento": false,
+      "pontuacao_apos": ",",
+      "antes_de": "que final",
+      "observacao": 49
+    }
+  ],
+  "leitura_de_trabalho_integrada": "tem dinheiro he por somentes negligencias, que",
+  "nota_da_leitura_integrada": "Leitura assistida de trabalho: dinheiro provável, he informado pelo revisor, soment com es pequeno acima e negligencias sem acento. Palavras de contexto provenientes da edição não foram convertidas em confirmações humanas individuais ou alvo diplomático."
+}

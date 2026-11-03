@@ -1,0 +1,27 @@
+{
+  "tipo": "decisao_humana_de_leitura_provavel_com_sinal_incerto",
+  "data": "2026-11-03",
+  "registrado_em": "2026-11-03T17:57:47.451629+00:00",
+  "original_message": "Vamos manter a leitura de “que” como provável, com a dúvida sobre o sinal registrada. Pode registrar e seguir para o restante da linha.",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_14a4c7eba267e1e592e7",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "imagem_de_comparacao": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_A_linha01_grupo_q_4x.png",
+  "imagem_sha256": "ef4d8a84b74a8861086a6145a84e167a9131a4301abd7e00ae46ad3d109472f9",
+  "decisao": {
+    "leitura_interpretativa": "que",
+    "certeza": "provavel",
+    "sinal_grafico": "incerto",
+    "interrogacao_confirmada": false,
+    "letra_elevada_confirmada": false
+  },
+  "observacao_literal_anterior_preservada": "q com haste descendente, conforme observação 040.",
+  "tratamento": "A leitura interpretativa que permanece separada da forma literal da abreviatura. Não inserir automaticamente que, qᵉ, ? ou ponto no alvo diplomático.",
+  "scope": "Autoriza registrar que como provável e continuar a leitura do restante. Não confirma os demais segmentos, a transcrição integral, a geometria ou a correspondência documental.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "proximo_trecho": "Palavras entre Camaras e o grupo q, incluindo pontuação e caixa; última palavra da linha."
+}

@@ -1,0 +1,23 @@
+{
+  "tipo": "leitura_humana_parcial_com_duvida_e_pedido_de_ampliacao",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T17:08:37.957960+00:00",
+  "original_message": "Leio “Paguem as Camaras”, mas tenho dúvida no restante da linha. Pode ampliar esse trecho para conferirmos as abreviaturas?",
+  "contexto_da_pergunta": "Qual leitura você consegue fazer da primeira linha? Preserve as abreviaturas e indique os trechos incertos.",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_14a4c7eba267e1e592e7",
+  "page_id": "p_c02_7b71d03c0d1bf8c7",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_14a4c7eba267e1e592e7.png",
+  "imagem_apresentada_sha256": "44cfce738bc01e09f6585232e754c5100984628d932423cf7d98cb8bb3b137de",
+  "trecho_lido": "Paguem as Camaras",
+  "restante_da_linha": "leitura pendente",
+  "scope": "Registra somente o trecho informado e a dúvida no restante. Autoriza ampliação para inspeção, sem validar transcrição integral, geometria, correspondência documental ou cobertura.",
+  "geometria_aprovada": false,
+  "transcricao_formalmente_validada": false,
+  "leitura_independente_da_edicao": false,
+  "novos_pares_validados": 0
+}

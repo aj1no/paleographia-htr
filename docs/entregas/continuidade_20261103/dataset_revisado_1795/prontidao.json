@@ -1,0 +1,54 @@
+{
+  "data": "2026-11-03",
+  "source_revision": "20261103T163509_58d6a0ee",
+  "source_export": "docs/revisao_humana/sessao_1795/sessao_20261103/exportacao_apos_observacao_038",
+  "line_reference_validation": {
+    "valid": true,
+    "purpose": "evaluation",
+    "rows": 7,
+    "statuses": {
+      "validated": 7
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "training_validation": {
+    "valid": false,
+    "purpose": "training",
+    "rows": 7,
+    "statuses": {
+      "validated": 7
+    },
+    "errors": [
+      "l_24b904b9ad9473450172: Treino exige split persistido.",
+      "l_b8a06d58bd7cced4f3a2: Treino exige split persistido.",
+      "l_4882de66b18aa948f2a4: Treino exige split persistido.",
+      "l_98962db568a2f74aab38: Treino exige split persistido.",
+      "l_27cb89d5763a6e64c484: Treino exige split persistido.",
+      "l_6077eea6d3ac418348ec: Treino exige split persistido.",
+      "l_40d2333b12328973de24: Treino exige split persistido.",
+      "Treino exige grupos separados em train, validation e test."
+    ],
+    "warnings": []
+  },
+  "scientific_selection_blocked": true,
+  "scientific_block_reason": "Partições científicas exigem independência documental confirmada.",
+  "reviewed_reference_pairs": 7,
+  "excluded_probable_lines": 1,
+  "independent_document_groups_in_this_package": 1,
+  "page_correspondence": "validated",
+  "coverage_description": "validated",
+  "full_region_reference_complete": false,
+  "region_metrics_ready": false,
+  "scientific_training_ready": false,
+  "split_assignments_created": false,
+  "recognition_executed": false,
+  "training_executed": false,
+  "test_used": false,
+  "limits": [
+    "Sete pares revisados pertencem à mesma sessão documental.",
+    "A cobertura confirmada é parcial; a referência da região de oito linhas não é completa pela dúvida da oitava.",
+    "Protocolo atual exige independência documental e partições explícitas.",
+    "Condições de uso das fontes ainda não foram esclarecidas."
+  ]
+}

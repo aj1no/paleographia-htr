@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-11-03T15:51:32.053248+00:00",
+  "before_revision": "20261103T152134_2547325b",
+  "after_revision": "20261103T155131_309185a9",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 6,
+      "validated": 2
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "reference_validation": {
+    "valid": false,
+    "purpose": "evaluation",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 6,
+      "validated": 2
+    },
+    "errors": [
+      "l_24b904b9ad9473450172: Correspondência de página pendente.",
+      "l_b8a06d58bd7cced4f3a2: Correspondência de página pendente.",
+      "l_4882de66b18aa948f2a4: Correspondência de página pendente.",
+      "l_98962db568a2f74aab38: Correspondência de página pendente.",
+      "l_27cb89d5763a6e64c484: Correspondência de página pendente.",
+      "l_6077eea6d3ac418348ec: Correspondência de página pendente.",
+      "l_40d2333b12328973de24: Correspondência de página pendente.",
+      "l_53dcba6fe1e315e30873: Correspondência de página pendente."
+    ],
+    "warnings": []
+  },
+  "textos_validados": 2,
+  "linhas_validadas": [
+    4,
+    6
+  ],
+  "textos_pendentes": 6,
+  "geometrias_validadas": 8,
+  "novos_pares_elegiveis": 0,
+  "texts_preserved": true,
+  "pages_preserved": true,
+  "predictions_preserved": true,
+  "geometry_and_crops_preserved": true,
+  "recognition_executed": false,
+  "training_executed": false
+}

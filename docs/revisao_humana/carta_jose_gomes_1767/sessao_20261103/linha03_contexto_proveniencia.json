@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-11-03T19:05:17.798756+00:00",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha03_contexto_amplo_2x.png",
+  "sha256": "b47eb5c88e73c42713722dcf4afa6a16f8f61b4afe7d63c346bb09976271e878",
+  "bbox_xyxy_no_original": [
+    0,
+    50,
+    1000,
+    325
+  ],
+  "scale": 2,
+  "resampling": "nearest-neighbor",
+  "native_pixels_exactly_recoverable": true,
+  "purpose": "Contexto da terceira linha, incluindo linhas vizinhas para preservar hastes e volutas. Não é recorte canônico validado.",
+  "geometry_human_approved": false,
+  "text_diplomatic": null,
+  "recognition_executed": false,
+  "training_executed": false
+}

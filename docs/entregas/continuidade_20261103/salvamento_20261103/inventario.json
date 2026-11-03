@@ -1,0 +1,235 @@
+{
+  "created_at": "2026-11-03T19:15:39.596402+00:00",
+  "motivo": "Encerramento do dia solicitado pelo usuário; salvar e enviar os avanços ao GitHub.",
+  "ultima_observacao_humana": 52,
+  "editor_revision": "20261103T163509_58d6a0ee",
+  "editor_workspace_original": "data/workspace/curation_sessao_1795",
+  "workspace_archive": "workspace_1795.zip",
+  "workspace_files": [
+    {
+      "path": "crops/20261028T180723_c80a33f8/l_46885e82a1448e83690e.png",
+      "sha256": "0ad8bfc4c5d60d45113e990e2ed61ff7b22c9463398a216e3db6026146fb5d02",
+      "bytes": 94350
+    },
+    {
+      "path": "current.json",
+      "sha256": "6a8a9931c87e828df50131388dc8b4a5c268d1434b7d68b502828eb211980043",
+      "bytes": 45
+    },
+    {
+      "path": "revisions/20261026T123847_64afff84.json",
+      "sha256": "e91d6d8a37754e2dcc7c5106557a456fccb952f71381b31c9829de3c44365cfa",
+      "bytes": 21661
+    },
+    {
+      "path": "revisions/20261026T171620_b014a310.json",
+      "sha256": "a507da16edb5697ae888b4875d3acd8addc8451570793d00ddc9883b7b9591e5",
+      "bytes": 21717
+    },
+    {
+      "path": "revisions/20261026T172207_532df44f.json",
+      "sha256": "9175be55797d1f607d4be318bf146405e14a2c0b7387aac8031ae918f42c9766",
+      "bytes": 21745
+    },
+    {
+      "path": "revisions/20261026T172656_1e7f62d9.json",
+      "sha256": "3b6f5b6a6d2f69eb69d1ea33dafe6d3935cc222d5b423115cb63c8df8aee981b",
+      "bytes": 21811
+    },
+    {
+      "path": "revisions/20261026T174814_41b6b0c6.json",
+      "sha256": "0f96df9e0ae9b379498e5cb81530cca5985d642cc834bc8ff8c4741a4895530a",
+      "bytes": 21875
+    },
+    {
+      "path": "revisions/20261026T175629_9f342c0b.json",
+      "sha256": "f0c934600bdc1ef7972bfc3820c33a179b68afc82ecfbd7e75d7408dfc887452",
+      "bytes": 21941
+    },
+    {
+      "path": "revisions/20261028T133851_f660adff.json",
+      "sha256": "2bd60680cac42b927c0485d7bd81268bd52c48619288e8b26c19b6e2c8f259ce",
+      "bytes": 22010
+    },
+    {
+      "path": "revisions/20261028T134019_611e7a28.json",
+      "sha256": "c48f74299c9508ae75b5d64b1ef2523ccd00f664d73e0d7ca9243272213c792a",
+      "bytes": 22074
+    },
+    {
+      "path": "revisions/20261028T134200_8f6cca72.json",
+      "sha256": "2f38df37ce948c7a1825f4de1965cfad30ce5468b2ada81e266d3f57bac4d5e9",
+      "bytes": 22075
+    },
+    {
+      "path": "revisions/20261028T134324_2b333cb2.json",
+      "sha256": "63e826e6b871ecf75d502d88f3d6ebb49c142450e9ca10a77e4b0f78217590b0",
+      "bytes": 22134
+    },
+    {
+      "path": "revisions/20261028T135624_dece55b9.json",
+      "sha256": "6eecca2056d98493dd560d0e4ba4c5985ee43d67e87d001175d3c04930a295fa",
+      "bytes": 22200
+    },
+    {
+      "path": "revisions/20261028T135841_cde2b1d2.json",
+      "sha256": "f70dde9c4801449b1d77e6a1182ed626bad7ccea925d2b13b7b95a9c6d6e6e27",
+      "bytes": 22200
+    },
+    {
+      "path": "revisions/20261028T145419_ab3f13f7.json",
+      "sha256": "164c33848a7e3566129566f0d8cbeedd52a1a742328905804af52a424750f4d9",
+      "bytes": 22190
+    },
+    {
+      "path": "revisions/20261028T145912_c649c938.json",
+      "sha256": "8fa4d8ff3c6eb2ba31e00ed43514e1ddd685243c1f8f4d44316cb93ced75fb09",
+      "bytes": 22190
+    },
+    {
+      "path": "revisions/20261028T160355_11103669.json",
+      "sha256": "ee5a11af80e5c31967c06cfa44a9d4ecb692a1b659cfabeaf3d80ccd8497184d",
+      "bytes": 22215
+    },
+    {
+      "path": "revisions/20261028T160355_37c2614a.json",
+      "sha256": "e5f8ecb33933c3af945cc6ab0973bc4503e22b7256251f82cc5b0f04c1f97a4c",
+      "bytes": 22794
+    },
+    {
+      "path": "revisions/20261028T160355_628232f4.json",
+      "sha256": "cc85b191c3af115836c8fc3dbe52caf8790ab079e991a71945deb9c368f8f61e",
+      "bytes": 22265
+    },
+    {
+      "path": "revisions/20261028T160355_7293cf3e.json",
+      "sha256": "35c55f7c12f7d68818ad12b3d7a718cd92a9a9809b50e1ef789ede169e47a7ab",
+      "bytes": 22769
+    },
+    {
+      "path": "revisions/20261028T160355_7c462649.json",
+      "sha256": "a311fbf6f75d07ffb91144b1699f93709f4aba53d433f554caa3df9b0fc90182",
+      "bytes": 22719
+    },
+    {
+      "path": "revisions/20261028T160355_969eab97.json",
+      "sha256": "3930ccd03ca09bec0a15785e0883410d69c85c3d3e2e2ba5624814547668b5ff",
+      "bytes": 22819
+    },
+    {
+      "path": "revisions/20261028T160355_c382f90d.json",
+      "sha256": "fdef64e2038bff9770d2fae51d3df8c39e8a2d1072808aefb6434f93216b636b",
+      "bytes": 22240
+    },
+    {
+      "path": "revisions/20261028T160355_eff6f91a.json",
+      "sha256": "ee37476ebeae6366f82251cf251972fb518321575e04b1e4d8b0d9541aeccfb4",
+      "bytes": 22744
+    },
+    {
+      "path": "revisions/20261028T162318_8769604b.json",
+      "sha256": "ea7a9ca5ed891bee431257f792a9b7b74e6354bbc24e5accee10550fd96222f1",
+      "bytes": 22933
+    },
+    {
+      "path": "revisions/20261028T173254_d714ff5a.json",
+      "sha256": "15e08390e9223449d4c793c8fea96ed329b2f7bc57fbc324cbfefd5ee2632250",
+      "bytes": 22852
+    },
+    {
+      "path": "revisions/20261028T173901_de8e7296.json",
+      "sha256": "28ee6dfacfe69d26c5651b7ebda254b82b2817aeb8c624ad5282fc4ff28e56ab",
+      "bytes": 22959
+    },
+    {
+      "path": "revisions/20261028T174241_b3767c92.json",
+      "sha256": "a260b3320ce1f71665a3ec8c22bf4728810f98d775595451448abf06ffa86d4f",
+      "bytes": 22987
+    },
+    {
+      "path": "revisions/20261028T174713_238de76e.json",
+      "sha256": "fb670a3c9d862ed04eced74be7c998c24fd2a8d90358e6ab63f0022712deee8e",
+      "bytes": 23323
+    },
+    {
+      "path": "revisions/20261028T175052_20cb47e2.json",
+      "sha256": "88cf6d01dab9e4dcd426d599f9c3ce98f9a8bb581bcda4e6345f2ac92d3f3fb5",
+      "bytes": 23381
+    },
+    {
+      "path": "revisions/20261028T180723_2e80f2b5.json",
+      "sha256": "cb9040e25a1f4375207f7bce8021d56c84297e9a9e269c682a650ee79dea328d",
+      "bytes": 22960
+    },
+    {
+      "path": "revisions/20261028T180724_27824fbb.json",
+      "sha256": "690253173a225cdb3276f1c70015c5782259ca51a70848fd7f2600d98ddaada2",
+      "bytes": 23019
+    },
+    {
+      "path": "revisions/20261103T151708_749539ce.json",
+      "sha256": "180fc0563d5b11576444864610bc23022474a79c405541558b750241b98ed65e",
+      "bytes": 23507
+    },
+    {
+      "path": "revisions/20261103T152134_2547325b.json",
+      "sha256": "062119d2c81e02fab208127a5b8f01515458e220913181d91b94d5f11a79a145",
+      "bytes": 23079
+    },
+    {
+      "path": "revisions/20261103T155131_309185a9.json",
+      "sha256": "819d540833422c82785b8ef83ba3c3795f15ae156e95765a79c04d4d8b811e35",
+      "bytes": 23204
+    },
+    {
+      "path": "revisions/20261103T160604_ca0e3939.json",
+      "sha256": "4a0f99307107351d60d3bfc1e470c374cba23d23d54c20a9b32ae989a6b07a65",
+      "bytes": 23626
+    },
+    {
+      "path": "revisions/20261103T161601_0e5955f8.json",
+      "sha256": "fc4b84e3d639d65f973a74238e7e00a98dc1ebef3f8e1834cf475b98051f3946",
+      "bytes": 23139
+    },
+    {
+      "path": "revisions/20261103T161812_55a981b3.json",
+      "sha256": "a09a5329d54f5b9c8bcef50435538f9984506492ab075a3441c1d8445abdd69c",
+      "bytes": 23145
+    },
+    {
+      "path": "revisions/20261103T162802_a5ea1d0e.json",
+      "sha256": "875c4c55a8bd246590d1077c48f3435f0c5d5633560d71d68ed4863645f18cab",
+      "bytes": 23866
+    },
+    {
+      "path": "revisions/20261103T163509_58d6a0ee.json",
+      "sha256": "7cff936ec83a59c0f329a65eaabb2b8a4a9f847286f16f6c32d0a726de5df52b",
+      "bytes": 24330
+    },
+    {
+      "path": "revisions/20261103T163509_a073ea39.json",
+      "sha256": "094715c92f8f2971dcc7fad610aca2fdcebbda4976c8a5c86496ac4df734deaa",
+      "bytes": 24585
+    },
+    {
+      "path": "server_crop_fix_stderr.log",
+      "sha256": "db330e173ddc72abd28efd72b765661e81b458a2e529d21de317ba491e9696fd",
+      "bytes": 202
+    },
+    {
+      "path": "server_crop_fix_stdout.log",
+      "sha256": "6490a48c4657e2ae858722770aa7a9feefbe2d0ce347b905e18a185165b04c57",
+      "bytes": 665
+    }
+  ],
+  "artifacts": {
+    "catalogo_editor_1795.json": "7cff936ec83a59c0f329a65eaabb2b8a4a9f847286f16f6c32d0a726de5df52b",
+    "prontidao_dataset.json": "ea5da0cad42b1e422609f519065320775b0ab283e150ea40c990686c42a68c82",
+    "workspace_1795.zip": "3d52819cb4b1b73344adc90ab98edb7d4eae4a2f2236eee656c04fb7054dac8c"
+  },
+  "retomada": "Quarta linha da anotação superior da carta de 1767; conferir caixa de campo/verde e prosseguir para o restante.",
+  "scientific_training_ready": false,
+  "recognition_executed": false,
+  "training_executed": false,
+  "observacao": "Fontes brutas e modelos seguem preservados nos caminhos locais e nas proveniências existentes. O ZIP guarda todo o workspace de 1795 (ponteiro, revisões e recortes); não contém modelos ou ambientes."
+}

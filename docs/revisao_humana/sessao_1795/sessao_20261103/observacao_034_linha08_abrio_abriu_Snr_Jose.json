@@ -1,0 +1,58 @@
+{
+  "tipo": "leitura_humana_com_alternativa_inicial_e_confirmacao_de_abreviatura_e_diacritico",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T16:06:04.357494+00:00",
+  "original_message": "Leio abrio, mas acredito eu que seja pela grafia, na realidade acredito ser um U Senhor abreviado como Snr e o acento de José está visível. Pode registrar e seguir.",
+  "contexto_da_pergunta": {
+    "primeira_palavra": "A primeira palavra é abriu ou abrio?",
+    "Senhor": "Senhor está por extenso ou abreviado? Se abreviado, quais letras aparecem?",
+    "José": "O acento em José está visível?"
+  },
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_53dcba6fe1e315e30873",
+  "page_id": "p_c02_b86f393193192c9b",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_53dcba6fe1e315e30873.png",
+  "imagem_apresentada_sha256": "f2d6c3c302e765c6440f5e335e5aa45e28888309ee4a89b37d8e1274fa9b905f",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "bbox_xyxy": [
+    95,
+    666,
+    1030,
+    721
+  ],
+  "primeira_palavra": {
+    "leitura_inicial_informada": "abrio",
+    "ponderacao_posterior": "O revisor acredita que a letra possa ser u.",
+    "alternativas": [
+      "abrio",
+      "abriu"
+    ],
+    "forma_provisoria_no_rascunho": "abriu",
+    "decisao_definitiva": false
+  },
+  "confirmacoes": {
+    "Senhor": {
+      "abreviada": true,
+      "forma_informada": "Snr"
+    },
+    "José": {
+      "acento_visivel": true,
+      "forma": "José"
+    }
+  },
+  "convencao_aplicada": "Snr transcrito em caracteres comuns conforme a forma informada. Não foram acrescentados ponto ou caracteres elevados não especificados.",
+  "texto_do_rascunho_anterior": "abriu huma carta do Senhor Bernardo José de Lorena",
+  "texto_do_rascunho_atual": "abriu huma carta do Snr Bernardo José de Lorena",
+  "scope": "Confirma Snr e acento em José; preserva a dúvida expressa sobre abrio/abriu. Autoriza registrar e seguir, sem validar integralmente a linha nem aprovar correspondência/cobertura documental.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "review_status_preservado": "pending_review",
+  "geometry_status_preservado": "validated",
+  "exclusion_reason_atual": "LEITURA INICIAL INCERTA: na observação 034 de 03/11/2026, o revisor informou abrio, mas em seguida ponderou que a letra seria u. Mantido abriu como leitura provisória do rascunho, com alternativa abrio registrada. Snr e acento em José foram confirmados. A decisão sobre o ou u da primeira palavra e a aprovação textual integral permanecem pendentes. Ver docs/revisao_humana/sessao_1795/sessao_20261103/observacao_034_linha08_abrio_abriu_Snr_Jose.json.",
+  "revisao_editor_antes": "20261103T155131_309185a9",
+  "novos_pares_validados": 0,
+  "continuidade": "O bloco preparado tem oito linhas. Consolidar as pendências e retomar a forma literal de Nossa na linha 2, sem criar uma nona linha sem revisão."
+}

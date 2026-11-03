@@ -1,0 +1,241 @@
+{
+  "data": "2026-11-03",
+  "snapshot_revision": "20261103T162802_a5ea1d0e",
+  "exportacao": "docs/revisao_humana/sessao_1795/sessao_20261103/exportacao_apos_observacao_037",
+  "linhas": [
+    {
+      "linha": 1,
+      "line_id": "l_24b904b9ad9473450172",
+      "texto": "Aos vinte e cinco dias do mes de junho de mil sete",
+      "situacao": "Texto validado",
+      "review_status": "validated",
+      "geometry_status": "validated",
+      "exclusion_reason": null,
+      "crop_image": "data/workspace/curation_sessao_1795/crops/20261028T180723_c80a33f8/l_46885e82a1448e83690e.png",
+      "crop_sha256": "0ad8bfc4c5d60d45113e990e2ed61ff7b22c9463398a216e3db6026146fb5d02",
+      "observacoes": [
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_024_linha01_Aos_ressalva_recorte.json",
+          "sha256": "6393ba6b00d69595ca4bb7090fa30c504096e8eca3d13e955c5592b9d8111f2c"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_026_linha01_recorte_aprovado.json",
+          "sha256": "2e450caa7661e93c3b36224f0ae0629f941798e72010498af8ffd80032101c04"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_027_linha01_dias_junho.json",
+          "sha256": "320659ecfd1ed58c20913007d17bca6f2cdff4a852d951718636ced26364a2c5"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_037_confirmacao_integral_linhas_1_2_3_5_7.json",
+          "sha256": "d18c5da19bea907be395d9347f635bcb8d11dde3d932b0af2e69c611d2b4e45a"
+        }
+      ]
+    },
+    {
+      "linha": 2,
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "texto": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+      "situacao": "Texto validado",
+      "review_status": "validated",
+      "geometry_status": "validated",
+      "exclusion_reason": null,
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_b8a06d58bd7cced4f3a2.png",
+      "crop_sha256": "43f95998e00abb5811307921795e20d80e986251c00d0a8008e6b60c63f936dd",
+      "observacoes": [
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_007_linha02_leitura_limites.json",
+          "sha256": "60511f7aa662ce217367c97863b52f6e97869fde499c4f94ad61a2f5b8056e7c"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_028_linha02_Nossa_abreviada.json",
+          "sha256": "7db5dc6790c8b65013385cfe731006fb0c2218dc9789949e86da28adc40590d6"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_035_linha02_Nsa_elevado.json",
+          "sha256": "fcfcfdab5e48bd3ca99941ec9753d3498b5d042b8a87c0c36b30760cdf50ab0a"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_037_confirmacao_integral_linhas_1_2_3_5_7.json",
+          "sha256": "d18c5da19bea907be395d9347f635bcb8d11dde3d932b0af2e69c611d2b4e45a"
+        }
+      ]
+    },
+    {
+      "linha": 3,
+      "line_id": "l_4882de66b18aa948f2a4",
+      "texto": "senhora do Desterro de jundiahy comarca da cidade",
+      "situacao": "Texto validado",
+      "review_status": "validated",
+      "geometry_status": "validated",
+      "exclusion_reason": null,
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+      "crop_sha256": "711df1e41d53b3a56e569e3524654ddee21a15773b70af3fa2083698a6bd8638",
+      "observacoes": [
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_008_linha03_leitura.json",
+          "sha256": "bdc34478ac23eee527e7868268f89074922adef6a0404e6da260126b53211d74"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_029_linha03_iniciais_minusculas.json",
+          "sha256": "e098b6b3cf0231ce025716a83bbc89c6dfd9acf3f9d7dc1e78aaa6e291c2372d"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_037_confirmacao_integral_linhas_1_2_3_5_7.json",
+          "sha256": "d18c5da19bea907be395d9347f635bcb8d11dde3d932b0af2e69c611d2b4e45a"
+        }
+      ]
+    },
+    {
+      "linha": 4,
+      "line_id": "l_98962db568a2f74aab38",
+      "texto": "de São Paulo, em casas de morada do Juiz Presidente",
+      "situacao": "Texto validado",
+      "review_status": "validated",
+      "geometry_status": "validated",
+      "exclusion_reason": null,
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+      "crop_sha256": "c1f69b1194d1d355cfb9324d34abcb6035959a6f8c73ec46a63982b5f9923892",
+      "observacoes": [
+        {
+          "path": "docs/revisao_humana/sessao_1795/retificacao_juiz_20261028/observacao_020_linha04_retificacao_Juiz.json",
+          "sha256": "9443772f56708145a32016947ac490a7309eb6d5ac3385254d9d87facbf9027e"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/retificacao_juiz_20261028/observacao_021_linha04_preposicao_do.json",
+          "sha256": "cc02ca5d8203d01c883c2b95a4a7777e4cdbfc0afb264672d4ebb24b532b2830"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/retificacao_juiz_20261028/observacao_022_linha04_Presidente_ressalva.json",
+          "sha256": "d7b3a4bc8ea992a5d4e686aead762756cec9f3bc3b90df5871e1eac3bc03c468"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/retificacao_juiz_20261028/observacao_023_linha04_virgula_apos_Paulo.json",
+          "sha256": "142aee82c13273873da82b7c57bed180d9aa6bd5836fc524123869f76ad715d1"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_030_linha04_confirmacao_integral.json",
+          "sha256": "f473ff8ee7f716d45ade02f4221c29e628fb16042b0921e70e99758c0cb2cb63"
+        }
+      ]
+    },
+    {
+      "linha": 5,
+      "line_id": "l_27cb89d5763a6e64c484",
+      "texto": "Salvador de Oliveira Prado, onde se achavão presentes",
+      "situacao": "Texto validado",
+      "review_status": "validated",
+      "geometry_status": "validated",
+      "exclusion_reason": null,
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+      "crop_sha256": "7dd177110e9160aaaabbdd05a5ebac536c774779cf3c6aeec18704e7e365cabd",
+      "observacoes": [
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_010_linha05_leitura_limites_ressalva.json",
+          "sha256": "eb8929178686eb7b356eed283ac911440d6b261a7618da05f2f2f8ed130bf767"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_031_linha05_til_virgula.json",
+          "sha256": "21d4c48624fe8f4900024bb3d6fd8d33decbafe962da9ef1f6b89710b2a2b5af"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_037_confirmacao_integral_linhas_1_2_3_5_7.json",
+          "sha256": "d18c5da19bea907be395d9347f635bcb8d11dde3d932b0af2e69c611d2b4e45a"
+        }
+      ]
+    },
+    {
+      "linha": 6,
+      "line_id": "l_6077eea6d3ac418348ec",
+      "texto": "os officiaes da Camara em acto de Vereança, trat-",
+      "situacao": "Texto validado",
+      "review_status": "validated",
+      "geometry_status": "validated",
+      "exclusion_reason": null,
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+      "crop_sha256": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17",
+      "observacoes": [
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_011_linha06_leitura_sinal_final_pendente.json",
+          "sha256": "ffd9cd33f0e06558f65265a71380c597e33287681c0087bc361d2909cb3c2ebe"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_012_linha06_confirmacao_hifen.json",
+          "sha256": "224aa1110c53901b72b7c14d53b100be6e835c1fbea753f19fc5cf6c5e210195"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_032_linha06_grafia_caixa_pontuacao.json",
+          "sha256": "abe26008ef05629d7ef0cad49c345925210c17c2492a4bbca0d444948fb22e82"
+        }
+      ]
+    },
+    {
+      "linha": 7,
+      "line_id": "l_40d2333b12328973de24",
+      "texto": "ando sobre o bem commum do povo, na mesma se",
+      "situacao": "Texto validado",
+      "review_status": "validated",
+      "geometry_status": "validated",
+      "exclusion_reason": null,
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_40d2333b12328973de24.png",
+      "crop_sha256": "7536043f5561f3ce3c96bae54b69b7d095bb69e5c926f31d1b14ceb4ee374199",
+      "observacoes": [
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_013_linha07_leitura_limites_ressalva.json",
+          "sha256": "0d3c5836e3e60f2454f1924624e14dbec5f3ce53b58ad80b8496c9ecb16e1ed9"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_033_linha07_commum_virgula.json",
+          "sha256": "048503d6d19f8434627a3e4c1420b640eb145283649fbcdf8d31264e4c7bbe92"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_037_confirmacao_integral_linhas_1_2_3_5_7.json",
+          "sha256": "d18c5da19bea907be395d9347f635bcb8d11dde3d932b0af2e69c611d2b4e45a"
+        }
+      ]
+    },
+    {
+      "linha": 8,
+      "line_id": "l_53dcba6fe1e315e30873",
+      "texto": "abriu huma carta do Snr Bernardo José de Lorena",
+      "situacao": "Provável, excluída como alvo aprovado",
+      "review_status": "pending_review",
+      "geometry_status": "validated",
+      "exclusion_reason": "LEITURA PROVÁVEL COM DÚVIDA PRESERVADA: na observação 036 de 03/11/2026, o revisor decidiu manter abriu como provável, com a dúvida registrada. A alternativa abrio da observação 034 permanece no histórico. Snr e o acento de José estão confirmados. Não usar a oitava linha como alvo aprovado para treino ou avaliação enquanto a leitura permanecer incerta. Ver docs/revisao_humana/sessao_1795/sessao_20261103/observacao_036_linha08_abriu_provavel.json.",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_53dcba6fe1e315e30873.png",
+      "crop_sha256": "f2d6c3c302e765c6440f5e335e5aa45e28888309ee4a89b37d8e1274fa9b905f",
+      "observacoes": [
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261028/observacao_014_linha08_leitura_limites_ressalva.json",
+          "sha256": "29d8c95b1cda71d51a673c91881915be92c457efaa1aa52f7d6d1a01887001a9"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_034_linha08_abrio_abriu_Snr_Jose.json",
+          "sha256": "ffb16783a797ba63af3aa1955f2fd8986b30e273f9b27266c52a723bc16eeba1"
+        },
+        {
+          "path": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_036_linha08_abriu_provavel.json",
+          "sha256": "ed69542971a8062a68a650aec379e07e416175d664c10a5271a3103e5524204b"
+        }
+      ]
+    }
+  ],
+  "linhas_ja_validadas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "linhas_para_confirmacao_integral": [],
+  "linha_provavel_excluida": 8,
+  "texto_linha08_probavel": "abriu",
+  "alternativa_linha08": "abrio",
+  "correspondencia_e_cobertura_documental": "pending_review",
+  "novos_pares_elegiveis": 0,
+  "novas_inferencias": 0,
+  "novo_treinamento": false,
+  "observacao_de_confirmacao": 37
+}

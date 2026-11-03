@@ -1,0 +1,26 @@
+{
+  "tipo": "observacao_humana_localizada_com_pedido_de_comparacao_e_consulta_da_transcricao",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T17:16:38.501706+00:00",
+  "original_message": "Vejo um q com a haste descendo, mas não consigo confirmar se há letra elevada. Pode comparar com outras abreviaturas da mesma página? esse texto tem a trascrição?",
+  "contexto_da_pergunta": "Quais letras você distingue agora no grupo com a haste que desce, no centro da segunda imagem? Há alguma letra elevada?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_14a4c7eba267e1e592e7",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha01_final_abreviaturas_4x.png",
+  "imagem_apresentada_sha256": "a22f94880f60f2dbe5a0cc63166919a836c01b818e416fb1e01d84201a844f51",
+  "confirmacao_localizada": {
+    "letra": "q",
+    "haste_descendente": true,
+    "letra_elevada_confirmada": false,
+    "estado_da_elevacao": "incerto, sem decisão sobre presença ou ausência"
+  },
+  "pedido_de_apoio": "Comparar ocorrências da mesma página e consultar a transcrição disponível.",
+  "scope": "Confirma somente q com haste descendente no grupo mostrado; mantém incerta a presença de letra elevada. Não completa por inferência a abreviatura nem valida transcrição integral ou geometria.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0
+}

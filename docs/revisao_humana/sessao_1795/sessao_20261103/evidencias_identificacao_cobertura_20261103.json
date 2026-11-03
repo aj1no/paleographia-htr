@@ -1,0 +1,64 @@
+{
+  "verificado_em": "2026-11-03T16:29:35.410056+00:00",
+  "responsavel_pela_conferencia": "Codex (IA)",
+  "ficha_edicao": {
+    "url": "https://jundiai.sismu.app/obra/101813/nomeacao-de-cinco-capitaes-de-mato-transcricao-da-sessao-da-camara-municipal-de-jundiai-do-25-de-junho-de-1795",
+    "documento": "Sessão de 25 de junho de 1795",
+    "folio": "91r",
+    "registro_do_livro": "0006",
+    "pagina_indicada_no_pdf_integral": 185,
+    "registro_da_edicao": "02332"
+  },
+  "ficha_livro": {
+    "url": "https://jundiai.sismu.app/obra/91824/atas-da-camara-municipal-1787-a-1795",
+    "periodo": "1787–1795",
+    "numero_registro": "0006"
+  },
+  "pdf_oficial": {
+    "url": "https://acervos.sismu.com.br/api/beta/anexos/original/73734.pdf",
+    "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2",
+    "bytes": 508026,
+    "identico_ao_arquivo_local": true,
+    "arquivo_local": "data/raw/corpus_expandido_v02/fontes/sessao_1795/modernized_edition_3c0132189f5574d5.pdf",
+    "paginas": 4,
+    "pagina_texto_base_1": 3,
+    "pagina_reproducao_base_1": 4
+  },
+  "inspecao_visual": {
+    "realizada_por": "Codex (IA)",
+    "imagens_comparadas": [
+      "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "tmp/conferencia_documental_1795_20261103/pagina_04.png"
+    ],
+    "observacoes": "Mesmo fólio aparente na foto e na reprodução: numeral 91, rubricas superiores, bloco iniciado por Aos, posição das manchas e danos, conteúdo e assinaturas inferiores. Inspeção assistida, sem nova confirmação humana documental.",
+    "limite": "A referência à página 185 vem da ficha oficial; o PDF integral do livro não foi baixado nem inspecionado nesta etapa."
+  },
+  "cobertura_preparada": {
+    "regiao": "body_first8_candidate",
+    "bbox_xyxy": [
+      95,
+      305,
+      1030,
+      721
+    ],
+    "linhas_fisicas": 8,
+    "linhas_da_edicao_base_1": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "pagina_inteira_transcrita": false,
+    "linha08_provavel_e_excluida": true
+  },
+  "confirmacao_humana_previa_do_numeral": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_001_foliacao.json",
+  "estado_canonico_documental_preservado": "pending_review",
+  "correspondencia_e_cobertura_promovidas_por_esta_conferencia": false,
+  "condicoes_de_reuso": "Não foi localizada autorização de redistribuição ou treino na ficha consultada. Acesso público não foi interpretado como licença MIT. Mantidas as condições de uso como não esclarecidas.",
+  "novo_treinamento": false,
+  "novas_inferencias": 0
+}

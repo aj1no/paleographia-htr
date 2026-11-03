@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-11-03T16:28:02.376070+00:00",
+  "before_revision": "20261103T161812_55a981b3",
+  "after_revision": "20261103T162802_a5ea1d0e",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "validated": 7,
+      "pending_review": 1
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "evaluation_validation": {
+    "valid": false,
+    "purpose": "evaluation",
+    "rows": 8,
+    "statuses": {
+      "validated": 7,
+      "pending_review": 1
+    },
+    "errors": [
+      "l_24b904b9ad9473450172: Correspondência de página pendente.",
+      "l_b8a06d58bd7cced4f3a2: Correspondência de página pendente.",
+      "l_4882de66b18aa948f2a4: Correspondência de página pendente.",
+      "l_98962db568a2f74aab38: Correspondência de página pendente.",
+      "l_27cb89d5763a6e64c484: Correspondência de página pendente.",
+      "l_6077eea6d3ac418348ec: Correspondência de página pendente.",
+      "l_40d2333b12328973de24: Correspondência de página pendente.",
+      "l_53dcba6fe1e315e30873: Correspondência de página pendente."
+    ],
+    "warnings": []
+  },
+  "textos_validados": 7,
+  "textos_pendentes": 1,
+  "geometrias_validadas": 8,
+  "novos_pares_elegiveis": 0,
+  "linha08_preservada_integralmente": true,
+  "texts_preserved": true,
+  "pages_preserved": true,
+  "predictions_preserved": true,
+  "geometry_and_crops_preserved": true,
+  "recognition_executed": false,
+  "training_executed": false
+}

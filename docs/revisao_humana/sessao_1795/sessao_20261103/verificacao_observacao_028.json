@@ -1,0 +1,29 @@
+{
+  "registrado_em": "2026-11-03T15:17:08.390996+00:00",
+  "observacao": "docs/revisao_humana/sessao_1795/sessao_20261103/observacao_028_linha02_Nossa_abreviada.json",
+  "before_revision": "20261028T180724_27824fbb",
+  "after_revision": "20261103T151708_749539ce",
+  "exportacao": "docs/revisao_humana/sessao_1795/sessao_20261103/exportacao_apos_observacao_028",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "pending_review": 8
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "texts_preserved": true,
+  "geometries_preserved": true,
+  "pages_preserved": true,
+  "predictions_preserved": true,
+  "text_statuses_preserved": true,
+  "changed_line_fields": [
+    "exclusion_reason",
+    "reviewed_at"
+  ],
+  "new_validated_pairs": 0,
+  "recognition_executed": false,
+  "training_executed": false
+}

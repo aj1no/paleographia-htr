@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-11-03T18:20:54.806287+00:00",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "supersedes_display_only": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_contexto_2x.png",
+  "old_display_preserved": true,
+  "views": [
+    {
+      "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/anotacao_superior_contexto_aberto.png",
+      "bbox_xyxy_no_original": [
+        0,
+        0,
+        1050,
+        410
+      ],
+      "scale": 1,
+      "sha256": "40a2d41805fba7e2802d2d5eb98c9b4a246c0c7c03e07b19d2edad1162522f91",
+      "native_pixels_exactly_recoverable": true
+    },
+    {
+      "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_contexto_amplo_2x.png",
+      "bbox_xyxy_no_original": [
+        15,
+        0,
+        845,
+        245
+      ],
+      "scale": 2,
+      "sha256": "56fbd20568f92b3cb4a54031c90201d93fc34109a0b42d6ff3ac7c953907d0cc",
+      "native_pixels_exactly_recoverable": true
+    }
+  ],
+  "processing": "Recorte mais amplo e, na segunda visualização, repetição inteira de pixels. Sem rotação, correção de perspectiva, contraste, nitidez ou reconstrução.",
+  "purpose": "Visualização para acompanhar a segunda linha sem isolar suas hastes em uma faixa estreita; não é recorte canônico aprovado."
+}

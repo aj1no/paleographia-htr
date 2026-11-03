@@ -1,0 +1,39 @@
+{
+  "tipo": "decisao_humana_de_manter_leitura_provavel_com_duvida",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T16:18:12.318244+00:00",
+  "original_message": "Prefiro manter abriu como provável, com a dúvida registrada. Pode registrar e seguir para a consolidação das linhas.",
+  "contexto_da_pergunta": "Você consegue confirmar “abriu” pela imagem ou prefere manter essa leitura como provável, com dúvida registrada?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_53dcba6fe1e315e30873",
+  "page_id": "p_c02_b86f393193192c9b",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_53dcba6fe1e315e30873.png",
+  "imagem_apresentada_sha256": "f2d6c3c302e765c6440f5e335e5aa45e28888309ee4a89b37d8e1274fa9b905f",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "bbox_xyxy": [
+    95,
+    666,
+    1030,
+    721
+  ],
+  "decisao": {
+    "forma_adotada": "abriu",
+    "certeza": "provavel",
+    "duvida_preservada": true,
+    "alternativa_historica": "abrio",
+    "leitura_definitivamente_confirmada": false
+  },
+  "texto_do_rascunho_preservado": "abriu huma carta do Snr Bernardo José de Lorena",
+  "exclusion_reason_atual": "LEITURA PROVÁVEL COM DÚVIDA PRESERVADA: na observação 036 de 03/11/2026, o revisor decidiu manter abriu como provável, com a dúvida registrada. A alternativa abrio da observação 034 permanece no histórico. Snr e o acento de José estão confirmados. Não usar a oitava linha como alvo aprovado para treino ou avaliação enquanto a leitura permanecer incerta. Ver docs/revisao_humana/sessao_1795/sessao_20261103/observacao_036_linha08_abriu_provavel.json.",
+  "scope": "Registra a escolha explícita de abriu como provável e autoriza preparar a consolidação. Não resolve visualmente a dúvida, não aprova integralmente a linha 8 nem aprova por extensão as demais linhas pendentes.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "review_status_preservado": "pending_review",
+  "geometry_status_preservado": "validated",
+  "novos_pares_validados": 0,
+  "revisao_editor_antes": "20261103T161601_0e5955f8",
+  "continuidade": "Preparar quadro completo com os textos atuais e decisões. Linhas 4 e 6 já validadas; linhas 1,2,3,5,7 para consolidação integral; linha 8 permanece provável e excluída como alvo aprovado."
+}

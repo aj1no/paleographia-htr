@@ -1,0 +1,67 @@
+{
+  "conferido_em": "2026-11-03",
+  "fontes": [
+    {
+      "disciplina": "PI IV",
+      "path": "D:/Downloads/Faculdade/Projetos integradores/01_Apresentação_Projeto Integrador PI IV 2026 _ 2 (1).pdf",
+      "sha256": "bd15ea3bc7a8f4efec309a0ce66d20088c2e4e76cdb23f968af1b01c4cc346bf",
+      "paginas_base_1": [
+        9,
+        10,
+        12,
+        13,
+        16,
+        17
+      ],
+      "redistribuido": false
+    },
+    {
+      "disciplina": "PI IV",
+      "path": "D:/Downloads/Faculdade/Projetos integradores/01_Apresentação_Projeto Integrador PI IV 2026 _ 2.pdf",
+      "sha256": "25cf8d5d9c7c66dcae03cf377b334057cb260c1ba4b326b3805e2300f971b4f6",
+      "paginas_base_1": [
+        9,
+        10,
+        12,
+        13,
+        16,
+        17
+      ],
+      "redistribuido": false
+    },
+    {
+      "disciplina": "PLN",
+      "path": "D:/Downloads/Faculdade/Processamento de Linguagem Natural/05_The Transformer Revolution.pdf",
+      "sha256": "8a90cd52130adb5b701c72a60922c35449b5e5c0e9b7106682e6c6fc7e99f434",
+      "paginas_base_1": [
+        45
+      ],
+      "redistribuido": false
+    },
+    {
+      "disciplina": "PLN",
+      "path": "D:/Downloads/Faculdade/Processamento de Linguagem Natural/01_Processamento de Linguagem Natural.pdf",
+      "sha256": "5ed6f104fc75250f6a1f9800cb9c31382be2b4b56e4797278440316d3778f67a",
+      "paginas_base_1": [
+        6
+      ],
+      "redistribuido": false
+    },
+    {
+      "disciplina": "PLN",
+      "path": "D:/Downloads/Faculdade/Processamento de Linguagem Natural/04_ML_PLN_WordEmbeddings.pdf",
+      "sha256": "733eb6699a033ad01eb3c57526cf8841ddb89e6e1aedc9b059b4fb9331d2b1fe",
+      "paginas_base_1": [
+        37
+      ],
+      "redistribuido": false
+    },
+    {
+      "disciplina": "Histórico",
+      "path": "D:/Downloads/Faculdade/PaleographIA/PaleographIA_Artigo_Entrega_Objetivos_Planejamento.docx",
+      "sha256": "37ed22a9e4fdbf6654fd95512871a99c5b8a131a2df390529176a3dbdd37ba78",
+      "paginas_base_1": [],
+      "redistribuido": false
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "data_conferencia": "2026-11-03",
+  "tipo": "prontidao_dataset_sem_treino",
+  "snapshot": "20261103T163509_58d6a0ee",
+  "linhas": 8,
+  "textos_pendentes": 1,
+  "geometrias_validadas": 8,
+  "textos_validados": 7,
+  "pares_revisados_validos_por_linha": 7,
+  "particoes_cientificas_prontas": 0,
+  "experimento_cientifico_pronto": false,
+  "novas_inferencias": 0,
+  "novo_treinamento": false,
+  "integridade": [
+    {
+      "line_id": "l_24b904b9ad9473450172",
+      "tipo": "fonte",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "existe": true,
+      "hash_declarado": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "hash_obtido": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "confere": true
+    },
+    {
+      "line_id": "l_24b904b9ad9473450172",
+      "tipo": "recorte",
+      "path": "data/workspace/curation_sessao_1795/crops/20261028T180723_c80a33f8/l_46885e82a1448e83690e.png",
+      "existe": true,
+      "hash_declarado": "0ad8bfc4c5d60d45113e990e2ed61ff7b22c9463398a216e3db6026146fb5d02",
+      "hash_obtido": "0ad8bfc4c5d60d45113e990e2ed61ff7b22c9463398a216e3db6026146fb5d02",
+      "confere": true
+    },
+    {
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "tipo": "fonte",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "existe": true,
+      "hash_declarado": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "hash_obtido": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "confere": true
+    },
+    {
+      "line_id": "l_b8a06d58bd7cced4f3a2",
+      "tipo": "recorte",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_b8a06d58bd7cced4f3a2.png",
+      "existe": true,
+      "hash_declarado": "43f95998e00abb5811307921795e20d80e986251c00d0a8008e6b60c63f936dd",
+      "hash_obtido": "43f95998e00abb5811307921795e20d80e986251c00d0a8008e6b60c63f936dd",
+      "confere": true
+    },
+    {
+      "line_id": "l_4882de66b18aa948f2a4",
+      "tipo": "fonte",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "existe": true,
+      "hash_declarado": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "hash_obtido": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "confere": true
+    },
+    {
+      "line_id": "l_4882de66b18aa948f2a4",
+      "tipo": "recorte",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+      "existe": true,
+      "hash_declarado": "711df1e41d53b3a56e569e3524654ddee21a15773b70af3fa2083698a6bd8638",
+      "hash_obtido": "711df1e41d53b3a56e569e3524654ddee21a15773b70af3fa2083698a6bd8638",
+      "confere": true
+    },
+    {
+      "line_id": "l_98962db568a2f74aab38",
+      "tipo": "fonte",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "existe": true,
+      "hash_declarado": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "hash_obtido": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "confere": true
+    },
+    {
+      "line_id": "l_98962db568a2f74aab38",
+      "tipo": "recorte",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+      "existe": true,
+      "hash_declarado": "c1f69b1194d1d355cfb9324d34abcb6035959a6f8c73ec46a63982b5f9923892",
+      "hash_obtido": "c1f69b1194d1d355cfb9324d34abcb6035959a6f8c73ec46a63982b5f9923892",
+      "confere": true
+    },
+    {
+      "line_id": "l_27cb89d5763a6e64c484",
+      "tipo": "fonte",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "existe": true,
+      "hash_declarado": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "hash_obtido": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "confere": true
+    },
+    {
+      "line_id": "l_27cb89d5763a6e64c484",
+      "tipo": "recorte",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+      "existe": true,
+      "hash_declarado": "7dd177110e9160aaaabbdd05a5ebac536c774779cf3c6aeec18704e7e365cabd",
+      "hash_obtido": "7dd177110e9160aaaabbdd05a5ebac536c774779cf3c6aeec18704e7e365cabd",
+      "confere": true
+    },
+    {
+      "line_id": "l_6077eea6d3ac418348ec",
+      "tipo": "fonte",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "existe": true,
+      "hash_declarado": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "hash_obtido": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "confere": true
+    },
+    {
+      "line_id": "l_6077eea6d3ac418348ec",
+      "tipo": "recorte",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+      "existe": true,
+      "hash_declarado": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17",
+      "hash_obtido": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17",
+      "confere": true
+    },
+    {
+      "line_id": "l_40d2333b12328973de24",
+      "tipo": "fonte",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "existe": true,
+      "hash_declarado": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "hash_obtido": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "confere": true
+    },
+    {
+      "line_id": "l_40d2333b12328973de24",
+      "tipo": "recorte",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_40d2333b12328973de24.png",
+      "existe": true,
+      "hash_declarado": "7536043f5561f3ce3c96bae54b69b7d095bb69e5c926f31d1b14ceb4ee374199",
+      "hash_obtido": "7536043f5561f3ce3c96bae54b69b7d095bb69e5c926f31d1b14ceb4ee374199",
+      "confere": true
+    },
+    {
+      "line_id": "l_53dcba6fe1e315e30873",
+      "tipo": "fonte",
+      "path": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+      "existe": true,
+      "hash_declarado": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "hash_obtido": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+      "confere": true
+    },
+    {
+      "line_id": "l_53dcba6fe1e315e30873",
+      "tipo": "recorte",
+      "path": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_53dcba6fe1e315e30873.png",
+      "existe": true,
+      "hash_declarado": "f2d6c3c302e765c6440f5e335e5aa45e28888309ee4a89b37d8e1274fa9b905f",
+      "hash_obtido": "f2d6c3c302e765c6440f5e335e5aa45e28888309ee4a89b37d8e1274fa9b905f",
+      "confere": true
+    }
+  ],
+  "pendencias": [
+    "Manter a linha 8 com abriu provável, alternativa abrio e exclusão explícita como alvo aprovado.",
+    "Confirmar independência dos grupos e definir partições científicas com pares aptos."
+  ]
+}

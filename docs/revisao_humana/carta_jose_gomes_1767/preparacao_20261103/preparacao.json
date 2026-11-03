@@ -1,0 +1,17 @@
+{
+  "candidate_group": "carta_jose_gomes_1767",
+  "catalog_url": "https://jundiai.sismu.app/obra/102967/registro-oficial-da-carta-enviada-por-jose-gomes-de-gouveia-nos-anais-da-camara-com-sugestoes-e-metodos-para-eliminar-movimentos-de-resistencia-pela-liberdade-de-africanos-afro-brasileiros-e-povos-originarios-em-1767",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "folio_declared_by_catalog": "4r",
+  "document_date_declared_by_catalog": "1767-12-23",
+  "book_register_declared_by_catalog": "0146",
+  "prior_1795_book_register": "0006",
+  "independence_status": "pending_review",
+  "scientific_split": null,
+  "text_diplomatic": null,
+  "geometry_human_approved": false,
+  "new_validated_pairs": 0,
+  "credits": "Transcrição e edição: Júlia Munhoz e Matheus Bellodi (AHMJ). Revisão: Isabella Ferraro (AHMJ).",
+  "next_action": "Confirmar se o recorte contém a primeira linha completa, sem excluir letras. Depois registrar leitura humana histórica, com abreviaturas e dúvidas."
+}

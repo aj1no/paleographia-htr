@@ -1,0 +1,56 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_caixa",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T15:19:26.403624+00:00",
+  "original_message": "Leio jundiahy, comarca e cidade com iniciais minúsculas. Pode registrar e seguir para a próxima linha.",
+  "contexto_da_pergunta": "Você lê “jundiahy”, “comarca” e “cidade” com iniciais minúsculas, ou alguma delas começa com maiúscula?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_4882de66b18aa948f2a4",
+  "page_id": "p_c02_b86f393193192c9b",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+  "imagem_apresentada_sha256": "711df1e41d53b3a56e569e3524654ddee21a15773b70af3fa2083698a6bd8638",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "bbox_xyxy": [
+    95,
+    416,
+    1030,
+    468
+  ],
+  "confirmacoes": {
+    "jundiahy": {
+      "forma": "jundiahy",
+      "inicial": "minuscula"
+    },
+    "comarca": {
+      "forma": "comarca",
+      "inicial": "minuscula"
+    },
+    "cidade": {
+      "forma": "cidade",
+      "inicial": "minuscula"
+    }
+  },
+  "texto_do_rascunho_preservado": "senhora do Desterro de jundiahy comarca da cidade",
+  "scope": "Confirma as iniciais minúsculas de jundiahy, comarca e cidade. A instrução de seguir é aplicada à quarta linha. Não amplia a confirmação para todos os grafemas, sinais, aprovação textual integral ou correspondência/cobertura documental.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "review_status_preservado": "pending_review",
+  "geometry_status_preservado": "validated",
+  "novos_pares_validados": 0,
+  "revisao_editor_preservada": "20261103T151708_749539ce",
+  "aplicacao": "O rascunho já contém as três iniciais minúsculas. Registro aditivo, sem regravar texto ou criar revisão idêntica no editor.",
+  "proxima_linha": {
+    "numero": 4,
+    "line_id": "l_98962db568a2f74aab38",
+    "confirmacoes_anteriores_preservadas": [
+      "Juiz",
+      "do Juiz",
+      "Presidente com ressalva visual",
+      "vírgula após Paulo"
+    ],
+    "conferencia_pendente": "Consolidação textual integral e demais detalhes gráficos, mantendo explícita qualquer incerteza pela escrita apagada."
+  }
+}

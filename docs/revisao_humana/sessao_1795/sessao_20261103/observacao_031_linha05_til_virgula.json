@@ -1,0 +1,46 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_diacritico_e_pontuacao",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T15:23:19.456714+00:00",
+  "original_message": "Sim, vejo o til sobre o a de achavão e a vírgula após Prado. Pode registrar e seguir para a próxima linha.",
+  "contexto_da_pergunta": "Você vê o til sobre o “a” de “achavão” e a vírgula após “Prado”?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "../sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_27cb89d5763a6e64c484",
+  "page_id": "p_c02_b86f393193192c9b",
+  "imagem_apresentada": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+  "imagem_apresentada_sha256": "7dd177110e9160aaaabbdd05a5ebac536c774779cf3c6aeec18704e7e365cabd",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/sessao_1795/manuscript_image_3f35cc69b6c96ee1.jpg",
+  "source_sha256": "3f35cc69b6c96ee1847c068693f095f56d0dc21538d3d12d84e0a2cfb60e559a",
+  "bbox_xyxy": [
+    95,
+    514,
+    1030,
+    566
+  ],
+  "confirmacoes": {
+    "achavão": {
+      "diacritico": "til",
+      "posicao": "sobre o a da terminação ão"
+    },
+    "Prado": {
+      "pontuacao_apos": ","
+    }
+  },
+  "texto_do_rascunho_preservado": "Salvador de Oliveira Prado, onde se achavão presentes",
+  "scope": "Confirma o til sobre o a de achavão e a vírgula após Prado. Não amplia a confirmação para transcrição integral, demais grafemas ou correspondência/cobertura documental. Prosseguir para a sexta linha conforme solicitado.",
+  "ressalva_visual_historica_preservada": "Escrita um pouco apagada, relatada na observação 010.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "review_status_preservado": "pending_review",
+  "geometry_status_preservado": "validated",
+  "novos_pares_validados": 0,
+  "revisao_editor_preservada": "20261103T152134_2547325b",
+  "aplicacao": "Os sinais confirmados já constam no rascunho. Registro aditivo sem regravar o texto ou criar uma revisão idêntica no editor.",
+  "proxima_linha": {
+    "numero": 6,
+    "line_id": "l_6077eea6d3ac418348ec",
+    "conferencia_pendente": "Caixa, cedilha em Vereança e pontuação; manter hífen final já confirmado na observação 012."
+  }
+}

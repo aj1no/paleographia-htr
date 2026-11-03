@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-11-03T17:15:38.944077+00:00",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "scale": 4,
+  "resampling": "nearest-neighbor",
+  "views": [
+    {
+      "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_A_linha01_grupo_q_4x.png",
+      "bbox_xyxy": [
+        540,
+        15,
+        740,
+        125
+      ],
+      "sha256": "ef4d8a84b74a8861086a6145a84e167a9131a4301abd7e00ae46ad3d109472f9",
+      "note": "Grupo em discussão na primeira linha da anotação superior."
+    },
+    {
+      "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_B_linha02_final_4x.png",
+      "bbox_xyxy": [
+        610,
+        90,
+        800,
+        190
+      ],
+      "sha256": "b9ddf7728cd6ff239fb9d1975e2c94ff711d73774e9af99e7a247df0ec89de25",
+      "note": "Final da segunda linha da anotação superior, para comparação gráfica."
+    },
+    {
+      "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_C_linha04_grupo_4x.png",
+      "bbox_xyxy": [
+        470,
+        170,
+        880,
+        305
+      ],
+      "sha256": "a5f18689b3b7aa94de471949a1420efb9daf627edfbc95fb527f75dbde7cb7fa",
+      "note": "Trecho intermediário da anotação superior com outras formas candidatas de abreviatura."
+    }
+  ],
+  "limit": "Comparação visual por IA; mesma página não demonstra mesma mão. Os comparadores foram escolhidos na anotação superior para reduzir a diferença de escrita em relação ao corpo principal.",
+  "analysis": {
+    "responsavel": "Codex (IA)",
+    "apoio_editorial": {
+      "pdf": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/modernized_edition_500a24d6a2ea8b93.pdf",
+      "sha256": "500a24d6a2ea8b93ea2fc7d94388b26c5facbef75f094b8c0964a58f0b0b2368",
+      "pagina_base_1": 3,
+      "primeira_linha_modernizada": "Paguem as Câmaras, e a razão por que não",
+      "tipo": "Edição modernizada; desenvolve abreviaturas e atualiza grafia/pontuação."
+    },
+    "observacoes_visuais": [
+      "O grupo em discussão tem laço e haste descendente compatíveis com o q visto no final da segunda linha.",
+      "O final da segunda linha e o trecho intermediário da anotação superior oferecem outras ocorrências para comparação do desenho de q e suas ligações.",
+      "A ocorrência do final da segunda linha parece apresentar que por extenso; é comparador de desenho, não aprovação de uma abreviatura específica.",
+      "Não é possível confirmar com segurança uma letra elevada no grupo da primeira linha a partir destes recortes."
+    ],
+    "inferencias": [
+      "A expansão por que na edição apoia interpretar o grupo como contendo que nesse contexto, mas não decide se a escrita literal é q, q com letra elevada ou outra convenção."
+    ],
+    "decisao_canonica": "Preservar q e haste descendente como observação humana; elevação incerta. Não adotar qᵉ, q., porq ou a frase editorial como alvo validado sem nova decisão humana.",
+    "state_changes": "Nenhuma geometria ou transcrição integral foi validada; fontes e candidatos preservados."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-11-03T16:35:09.867485+00:00",
+  "before_revision": "20261103T162802_a5ea1d0e",
+  "page_revision": "20261103T163509_a073ea39",
+  "after_revision": "20261103T163509_58d6a0ee",
+  "catalog_validation": {
+    "valid": true,
+    "purpose": "catalog",
+    "rows": 8,
+    "statuses": {
+      "validated": 7,
+      "pending_review": 1
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "selected_seven_line_reference_validation": {
+    "valid": true,
+    "purpose": "evaluation",
+    "rows": 7,
+    "statuses": {
+      "validated": 7
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "all_eight_line_reference_validation": {
+    "valid": false,
+    "purpose": "evaluation",
+    "rows": 8,
+    "statuses": {
+      "validated": 7,
+      "pending_review": 1
+    },
+    "errors": [
+      "l_53dcba6fe1e315e30873: Exige referência paleográfica e geometria revisadas, crop e proveniência; modernizada/pendente/excluída não é alvo."
+    ],
+    "warnings": []
+  },
+  "textos_validados": 7,
+  "textos_pendentes": 1,
+  "geometrias_validadas": 8,
+  "page_correspondence_validated": true,
+  "partial_coverage_description_validated": true,
+  "coverage_complete": false,
+  "line_reference_pairs_structurally_valid": 7,
+  "scientific_training_ready": false,
+  "ready_scientific_splits": 0,
+  "texts_preserved": true,
+  "text_statuses_preserved": true,
+  "line08_uncertainty_and_exclusion_preserved": true,
+  "geometry_and_crops_preserved": true,
+  "recognition_executed": false,
+  "training_executed": false
+}

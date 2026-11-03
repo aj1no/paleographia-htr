@@ -1,0 +1,29 @@
+{
+  "tipo": "ressalva_humana_de_recorte_com_hipotese_de_distorcao",
+  "data_resposta": "2026-11-03",
+  "registrado_em": "2026-11-03T18:20:54.801752+00:00",
+  "original_message": "esse recorte esta cortado, acredito pela forma que foi digitalizado ele teve uma distorção no recorte",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_questionada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_contexto_2x.png",
+  "imagem_questionada_sha256": "07396131dbb24ee960799ed3c3b89f031f4021b5b5991752b8c3784b26aa4803",
+  "bbox_questionado": [
+    40,
+    80,
+    805,
+    185
+  ],
+  "ressalva_confirmada_pelo_usuario": "O recorte mostrado está cortado.",
+  "hipotese_do_usuario": "Possível distorção relacionada à digitalização.",
+  "conferencia_por_IA": {
+    "recorte_anterior_insuficiente": true,
+    "observacao": "A faixa horizontal estreita deixa fora contexto vertical e partes de hastes/volutas da escrita inclinada. A foto apresenta curvatura do suporte e perspectiva; não foi demonstrada distorção causada pelo processo de digitalização.",
+    "exif_orientation": 1,
+    "zoom_anterior": "Ampliação inteira por repetição de pixels, sem transformação geométrica da escrita."
+  },
+  "escopo": "A ressalva refere-se à visualização da segunda linha. Nenhuma geometria dessa linha estava validada. Não altera as leituras registradas da primeira linha ou os dados já aprovados de 1795.",
+  "acao": "Preservar a imagem anterior e gerar visualizações mais abertas a partir da fonte, sem retificação, reconstrução ou filtro.",
+  "geometria_validada": false,
+  "transcricao_validada": false,
+  "novos_pares_validados": 0
+}
