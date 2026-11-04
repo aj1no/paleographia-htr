@@ -1,0 +1,209 @@
+{
+  "document_id": "contrato_livro13_1763",
+  "pdf_page": 5,
+  "source_image": "data/manifests/corpus_expandido_v02/pdf_images/3348a51ef10d9d1b/p005_i00.jpg",
+  "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+  "kind": "exploratory_fixed_preprocessing_before_reference_validation",
+  "preprocessing_source": "docs/revisao_humana/contrato_livro13_1763/preparacao_20261104/diagnostico_ppocrv6_linha_a_retificada.json",
+  "model": {
+    "name": "PP-OCRv6 medium / Kraken 7.1",
+    "base_weights_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+    "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+  },
+  "inputs": "image_only",
+  "decoding": "Kraken greedy CTC; no correction",
+  "comparison_method": "Correspondência qualitativa pelo conteúdo e pela ordem das linhas. Saída principal da faixa tratada inteira. Metades sobrepostas analisadas separadamente, sem fundir saídas. Trechos da edição separados em palavras após a inferência.",
+  "editorial_support": {
+    "path": "data/manifests/corpus_expandido_v02/editorial/3348a51ef10d9d1b/p003.txt",
+    "sha256": "ec54b8ac3ed8c63cbe6d1be518ac44ef72ebe882833ed9a9187f6de1349918ae",
+    "edition_page": 3,
+    "kind": "modernized_edition",
+    "diplomatic_reference_validated": false
+  },
+  "lines": {
+    "B": {
+      "editorial_excerpt": "por falta de pessoas ou gente que queira se meter ao",
+      "observations": [
+        "A linha inteira recupera por, de e meter. O recorte direito separa que.",
+        "tisia e padoos correspondem à posição de falta e pessoas. puginteque e quelrale fundem ou trocam letras nas palavras intermediárias."
+      ],
+      "line_id": "l_e03ee95c58f85355bb74",
+      "results": [
+        {
+          "variant": "original",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/l_e03ee95c58f85355bb74.png",
+          "sha256": "abe125f3a5ff42c9e60558f25a833476d17466cc1ba02434bbed27cf4cf23455",
+          "size": [
+            1770,
+            171
+          ],
+          "text_raw": "   ",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        },
+        {
+          "variant": "antitrama_inteira",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/B_antitrama_inteira.png",
+          "sha256": "331116997dd7043f9c3e8530d9baa9f69ef2ce7016c1dbafad987db732261047",
+          "size": [
+            1770,
+            99
+          ],
+          "text_raw": "por tisia de padoos puginteque quelrale meter aõ.",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        },
+        {
+          "variant": "antitrama_esquerda",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/B_antitrama_esquerda.png",
+          "sha256": "514f9853521e896113d0caf848fdca8a801208f7617861fc6c5b76c7ffc68ecb",
+          "size": [
+            1000,
+            99
+          ],
+          "text_raw": "por tilia de pulog ougentee",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        },
+        {
+          "variant": "antitrama_direita",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/B_antitrama_direita.png",
+          "sha256": "7ada5f0053464a4a8ad738f69b15717ea77ea0bf692da6d3666160c50d003b40",
+          "size": [
+            1000,
+            99
+          ],
+          "text_raw": "uente que quelrale meter aõ.",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        }
+      ]
+    },
+    "C": {
+      "editorial_excerpt": "sertão porque na dita paragem ao pé de uma serra",
+      "observations": [
+        "Recupera porque na dita e a sequência final ao pe de huma Serra.",
+        "Certaõ e par asem divergem de sertão e paragem. A forma huma é compatível com grafia histórica e a edição usa uma."
+      ],
+      "line_id": "l_be846c7fb522f7fff924",
+      "results": [
+        {
+          "variant": "original",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/l_be846c7fb522f7fff924.png",
+          "sha256": "00d03721d711b806ba41d3a94b4678d362462efc16569b95bf01575912884b1c",
+          "size": [
+            1770,
+            150
+          ],
+          "text_raw": " E ",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        },
+        {
+          "variant": "antitrama_inteira",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/C_antitrama_inteira.png",
+          "sha256": "419b168a5ffe2fdc71d1815011fbf31890667911c75be99d6e7cc5602e39dbba",
+          "size": [
+            1770,
+            99
+          ],
+          "text_raw": "Certaõ porque na dita par asem ao pe de huma Serra",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        },
+        {
+          "variant": "antitrama_esquerda",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/C_antitrama_esquerda.png",
+          "sha256": "16f1c7c50145b8e51607b87fbaf5cbbb74c7126d9e36ffa4ded8872a7e861c13",
+          "size": [
+            1000,
+            99
+          ],
+          "text_raw": "Certaõ porque na dita paras",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        },
+        {
+          "variant": "antitrama_direita",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/C_antitrama_direita.png",
+          "sha256": "7c63a3b9d75a13aa8606d5168683071699a781c0ca7c18fd9fd2bca968196782",
+          "size": [
+            1000,
+            99
+          ],
+          "text_raw": "par asem ao pe de huma Serra",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        }
+      ]
+    },
+    "D": {
+      "editorial_excerpt": "da parte de onde se tem feito as diligência adiante",
+      "observations": [
+        "A posição de tedondeCetem é compatível com parte de onde se tem, com fusões e trocas.",
+        "feyto é compatível com grafia histórica e a edição usa feito. O final saiu fragmentado em sede legencis satemto."
+      ],
+      "line_id": "l_e38cdd19539d27186088",
+      "results": [
+        {
+          "variant": "original",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/l_e38cdd19539d27186088.png",
+          "sha256": "2c15942fe6d5098a162ddc4a6eeccb8bbb394f92511714801f0689e0f46f2b60",
+          "size": [
+            1770,
+            148
+          ],
+          "text_raw": "א   ",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        },
+        {
+          "variant": "antitrama_inteira",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/D_antitrama_inteira.png",
+          "sha256": "1df8c217bf64dc2aab2f6211a2b35ebdef2fcc434ba8883b4f1d39a92adb1e26",
+          "size": [
+            1770,
+            99
+          ],
+          "text_raw": "de por tedondeCetem feyto a sede legencis satemto",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        },
+        {
+          "variant": "antitrama_esquerda",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/D_antitrama_esquerda.png",
+          "sha256": "2524844ea41198a659531ecccc610677d41c16a6a69e7d9bfddb1d46d3f27e7d",
+          "size": [
+            1000,
+            99
+          ],
+          "text_raw": "de par tedonheCetem feyto a",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        },
+        {
+          "variant": "antitrama_direita",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/D_antitrama_direita.png",
+          "sha256": "87be3a4e1d0f054da79fa79072d620dfe5141a5595036bbdee6fca2e26c373b4",
+          "size": [
+            1000,
+            99
+          ],
+          "text_raw": "feyto a sede legencis hatemto",
+          "execution_id": "20261104T185006_64fb3254",
+          "status": "ok"
+        }
+      ]
+    }
+  },
+  "local_artifact_hashes": {
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/entradas.jsonl": "d04c22df105854f91c3d44646800913a3c1dae38131d20645b08958b86af3088",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/predictions.jsonl": "44fbc75466271b2b5010377154e7071d6bb77470e74c390341b6644f710d9895",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/predictions.run.json": "3633279422a6447c6831c6fa4b529e1a4dae04d342b0630db2a74505cfae57b6",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/tratamento.json": "9f1ea5f29908db0f182a86ef9bcce25a0c5395eabcd5c66a4945da0f46d9ccc7",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/linhas_bcd_tratadas.png": "afc24b772d6a94a20a1159262a1a7a240823855687ccbc8cab834cfb06d0d40c"
+  },
+  "metrics": null,
+  "training_executed": false,
+  "scientific_split": null
+}

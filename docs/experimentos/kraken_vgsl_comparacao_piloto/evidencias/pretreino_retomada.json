@@ -1,0 +1,22 @@
+[
+  "ketos",
+  "-v",
+  "-d",
+  "cpu",
+  "-s",
+  "1831",
+  "-r",
+  "--workers",
+  "0",
+  "--threads",
+  "2",
+  "train",
+  "--resume",
+  "/model/checkpoints/checkpoint_24-0.1061.ckpt",
+  "-N",
+  "75",
+  "-F",
+  "75",
+  "-o",
+  "/model/extended"
+]

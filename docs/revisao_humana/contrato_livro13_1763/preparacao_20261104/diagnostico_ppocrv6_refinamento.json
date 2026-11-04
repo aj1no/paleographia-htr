@@ -1,0 +1,351 @@
+{
+  "document_id": "contrato_livro13_1763",
+  "pdf_page": 5,
+  "model": {
+    "name": "PP-OCRv6 medium / Kraken 7.1",
+    "base_weights_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+    "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+  },
+  "method": "Menor soma de distâncias de edição entre hipóteses. Empates preservam a ordem, começando pela variante anterior. A saída escolhida é mantida na forma bruta.",
+  "min_exact_votes": 4,
+  "variants_per_line": 6,
+  "selection_before_editorial_comparison": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/selecao_visual.json",
+  "selection_sha256": "c4166f5c11145d57bc1bfed03e9a8e1af85a45e8ebd22af2c939964eaeb3103d",
+  "input_artifacts": {
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/entradas.jsonl": "d0422d9dc4baf171c98c115f1f48713431a9e6f2078d78e32efc0e452963a399",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/predictions.jsonl": "927130c53f699907ce14262a29885225bb3b597ad8b1696ba630bc7c3f1a1392",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/entradas.jsonl": "d04c22df105854f91c3d44646800913a3c1dae38131d20645b08958b86af3088",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/predictions.jsonl": "44fbc75466271b2b5010377154e7071d6bb77470e74c390341b6644f710d9895",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/entradas.jsonl": "6dcfcb92f298b59ab0a4eb05dffee93ffa89dc4a3ff7e171997b8c86eb05253f",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/predictions.jsonl": "963d7efb6712eaf73e7907075d7570a0cf7e9787bc23bf03d7d986344736599e",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/tratamentos.json": "a606c0947fdf4e13fccba4518fd2f80f7761e87d27821f57c285016e0f3a873c"
+  },
+  "editorial_note": "Distância exploratória à edição modernizada apenas para B, C e D. A linha A tem palavra dividida na quebra da linha física e trecho editorial ilegível. Nenhuma distância constitui CER diplomático.",
+  "lines": {
+    "A": {
+      "hypotheses": [
+        {
+          "line": "A",
+          "variant": "antitrama_inteira",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/antitrama_inteira.png",
+          "image_sha256": "6302ef2d95b9d24d10ebdb1b62398658dc4002045c43b7dc42d0812d18b4fbed",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T184544_6c551ea8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "vrigrar o qe isto po sa ser sem mayoneLigenca"
+        },
+        {
+          "line": "A",
+          "variant": "faixa_estreita",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/A_faixa_estreita.png",
+          "image_sha256": "b05ad646cd1b6b5b17c587f83a96b6faf400ae93c4762e66256c9a5aee43755e",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "vrig.ar o qe isto po sa ser Sem moyonlaLienci"
+        },
+        {
+          "line": "A",
+          "variant": "tracos_nitidos",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/A_tracos_nitidos.png",
+          "image_sha256": "361b1f8ecb1befd032b54e79c72423ed0cc7db59222ca6faa7230c106eb75480",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "vrigrar o que isto po sa ser sem mayenseLigenca"
+        },
+        {
+          "line": "A",
+          "variant": "fundo_uniforme",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/A_fundo_uniforme.png",
+          "image_sha256": "976cab05cedc5d5535281ca31316c5a4de192c7025a20d935f772d31543daf37",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "vrigrar o qe isto po sa ser sem mayonleLigenca"
+        },
+        {
+          "line": "A",
+          "variant": "clahe_suave",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/A_clahe_suave.png",
+          "image_sha256": "4ea578c486ee0d240dba0aa7a8e57bd2fe3fb962b47dc4f1ac9173cf520b20e5",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "vrigrar o pe isto poda ser sem mogenleLigenci"
+        },
+        {
+          "line": "A",
+          "variant": "escrita_alargada",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/A_escrita_alargada.png",
+          "image_sha256": "4b72e5126edfaebe2d1e12593cc066d785ab64d0d493e64514aec5da89b46e6f",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "vrig.ar o qe isto po sa sersem moyonseLigenci"
+        }
+      ],
+      "selected_variant": "fundo_uniforme",
+      "selected_text_raw": "vrigrar o qe isto po sa ser sem mayonleLigenca",
+      "exact_votes": 1,
+      "pseudolabel_candidate_for_review": false
+    },
+    "B": {
+      "hypotheses": [
+        {
+          "line": "B",
+          "variant": "antitrama_inteira",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/B_antitrama_inteira.png",
+          "image_sha256": "331116997dd7043f9c3e8530d9baa9f69ef2ce7016c1dbafad987db732261047",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185006_64fb3254",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "por tisia de padoos puginteque quelrale meter aõ."
+        },
+        {
+          "line": "B",
+          "variant": "faixa_estreita",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/B_faixa_estreita.png",
+          "image_sha256": "ef452bd5b01d23c5b7754cad2ae95d88eb0f1194812cddef0e474d4d8cc8ab4b",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "por filia depeoougentague querale meter ao."
+        },
+        {
+          "line": "B",
+          "variant": "tracos_nitidos",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/B_tracos_nitidos.png",
+          "image_sha256": "1d370466487dfe389fb9bea5242ea19f153fddffbd44193b58c016fa9c2de6da",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "por tisia de padoo puginteque quelrale meter aõ."
+        },
+        {
+          "line": "B",
+          "variant": "fundo_uniforme",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/B_fundo_uniforme.png",
+          "image_sha256": "6fad792c80f52898c442a52518106df19066967c01470ff54f3ba2dd19dd4de2",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "por fisia de pedoo pugenteque quelrale meter aõ."
+        },
+        {
+          "line": "B",
+          "variant": "clahe_suave",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/B_clahe_suave.png",
+          "image_sha256": "1dca6607d55e236945a43cb7980c6919cff7598dbb1975b5b467c667085af63b",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "por fisia de padog pugenteque quesrale meter aõ."
+        },
+        {
+          "line": "B",
+          "variant": "escrita_alargada",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/B_escrita_alargada.png",
+          "image_sha256": "d8fddc4b5d936171d9b122c0ae3adb8ae671cfb64d0b2ed4deaef1931a2875cb",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "por tilia depedos ugintague quelrale meter aõ."
+        }
+      ],
+      "selected_variant": "tracos_nitidos",
+      "selected_text_raw": "por tisia de padoo puginteque quelrale meter aõ.",
+      "exact_votes": 1,
+      "pseudolabel_candidate_for_review": false,
+      "editorial_excerpt": "por falta de pessoas ou gente que queira se meter ao",
+      "editorial_character_edits": {
+        "antitrama_inteira": 17,
+        "faixa_estreita": 16,
+        "tracos_nitidos": 18,
+        "fundo_uniforme": 15,
+        "clahe_suave": 16,
+        "escrita_alargada": 18
+      }
+    },
+    "C": {
+      "hypotheses": [
+        {
+          "line": "C",
+          "variant": "antitrama_inteira",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/C_antitrama_inteira.png",
+          "image_sha256": "419b168a5ffe2fdc71d1815011fbf31890667911c75be99d6e7cc5602e39dbba",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185006_64fb3254",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "Certaõ porque na dita par asem ao pe de huma Serra"
+        },
+        {
+          "line": "C",
+          "variant": "faixa_estreita",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/C_faixa_estreita.png",
+          "image_sha256": "d65c537e8bab3aadc79931ddef41eed7c171f68737dbbb2cb79959dcd2b567eb",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "Crtaõ porque na dita por asem ao pe delema Serra"
+        },
+        {
+          "line": "C",
+          "variant": "tracos_nitidos",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/C_tracos_nitidos.png",
+          "image_sha256": "0d7e5f2651eb2366c149dfe4269399565f7b869dc5d38f0205beb192503512a4",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "Certaõ porque na dita por asem ao pe de huma Serra"
+        },
+        {
+          "line": "C",
+          "variant": "fundo_uniforme",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/C_fundo_uniforme.png",
+          "image_sha256": "b3e3d6ba03a9ea33e12ff7c60524cf61c10ac692e3e2bbfe9ee2de32488e71f2",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "Certaõ porque na dita par asem ao pe de huma Serra"
+        },
+        {
+          "line": "C",
+          "variant": "clahe_suave",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/C_clahe_suave.png",
+          "image_sha256": "031568c78bd5bf2cf78422e6958fbdd1dbf4c7492ecab7f0ab8d81f194e7362d",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "Certaõ porque na dita porasem ao pe de huma serra"
+        },
+        {
+          "line": "C",
+          "variant": "escrita_alargada",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/C_escrita_alargada.png",
+          "image_sha256": "5b77288645a35d60ac3e400b25c4240909b513444d575e62cf7226d46c367753",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "Certaõ porque na dita porasem ao pe de huma Serra"
+        }
+      ],
+      "selected_variant": "tracos_nitidos",
+      "selected_text_raw": "Certaõ porque na dita por asem ao pe de huma Serra",
+      "exact_votes": 1,
+      "pseudolabel_candidate_for_review": false,
+      "editorial_excerpt": "sertão porque na dita paragem ao pé de uma serra",
+      "editorial_character_edits": {
+        "antitrama_inteira": 7,
+        "faixa_estreita": 10,
+        "tracos_nitidos": 8,
+        "fundo_uniforme": 7,
+        "clahe_suave": 7,
+        "escrita_alargada": 7
+      }
+    },
+    "D": {
+      "hypotheses": [
+        {
+          "line": "D",
+          "variant": "antitrama_inteira",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/D_antitrama_inteira.png",
+          "image_sha256": "1df8c217bf64dc2aab2f6211a2b35ebdef2fcc434ba8883b4f1d39a92adb1e26",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185006_64fb3254",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "de por tedondeCetem feyto a sede legencis satemto"
+        },
+        {
+          "line": "D",
+          "variant": "faixa_estreita",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/D_faixa_estreita.png",
+          "image_sha256": "00c4dc0cbdb027b4d99b1618347c82fe286c30363e57345d9b14032004bc9a53",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "de por tidondeCetem feyto a sede ligencisatemto"
+        },
+        {
+          "line": "D",
+          "variant": "tracos_nitidos",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/D_tracos_nitidos.png",
+          "image_sha256": "d19b91936a5a8ff5520cc967bdc4f444ce44a2d668043f6f9894ffc33539cd32",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "de por tedondeCetem feyto asede legencisseatemto"
+        },
+        {
+          "line": "D",
+          "variant": "fundo_uniforme",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/D_fundo_uniforme.png",
+          "image_sha256": "1acbc6ca8461d8d93dfc23d3d422e91851bf58d4a5c755219cb0f8bd68705b6d",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "de por tedondeCetem feyto a sede legencis satemto"
+        },
+        {
+          "line": "D",
+          "variant": "clahe_suave",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/D_clahe_suave.png",
+          "image_sha256": "a6a2808a5fbd06385a7ca5ecfb09941e740e62a2f3c93f0b206eb409c180aca1",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "de por tedondeCetem feyto asedelegencis hatemto"
+        },
+        {
+          "line": "D",
+          "variant": "escrita_alargada",
+          "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_refinamento_01/D_escrita_alargada.png",
+          "image_sha256": "2fa19540e024643aabe62befd87ca8e9ca89f14f4e9cb773165e2a9b2505e1fe",
+          "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "execution_id": "20261104T185330_144b5bf8",
+          "model_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+          "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+          "text_raw": "de por tedondeCetem feyto a sedehegencis satemto"
+        }
+      ],
+      "selected_variant": "antitrama_inteira",
+      "selected_text_raw": "de por tedondeCetem feyto a sede legencis satemto",
+      "exact_votes": 2,
+      "pseudolabel_candidate_for_review": false,
+      "editorial_excerpt": "da parte de onde se tem feito as diligência adiante",
+      "editorial_character_edits": {
+        "antitrama_inteira": 23,
+        "faixa_estreita": 23,
+        "tracos_nitidos": 23,
+        "fundo_uniforme": 23,
+        "clahe_suave": 21,
+        "escrita_alargada": 23
+      }
+    }
+  },
+  "training_executed": false,
+  "scientific_split": null
+}

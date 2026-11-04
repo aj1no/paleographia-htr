@@ -1,0 +1,141 @@
+{
+  "document_id": "contrato_livro13_1763",
+  "pdf_page": 5,
+  "pilot_label": "A",
+  "line_id": "l_dde7529e3b232e190cc3",
+  "model": {
+    "name": "PP-OCRv6 medium / Kraken 7.1",
+    "base_weights_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+    "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+  },
+  "editorial_support": {
+    "path": "data/manifests/corpus_expandido_v02/editorial/3348a51ef10d9d1b/p003.txt",
+    "edition_page": 3,
+    "excerpt": "… averiguar [†] o que isto possa ser sem maior diligência",
+    "diplomatic_reference_validated": false
+  },
+  "kind": "exploratory_preprocessing_before_reference_validation",
+  "previous_record": "docs/revisao_humana/contrato_livro13_1763/preparacao_20261104/diagnostico_ppocrv6_linha_a.json",
+  "source_image": "data/manifests/corpus_expandido_v02/pdf_images/3348a51ef10d9d1b/p005_i00.jpg",
+  "source_sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+  "inputs": "image_only",
+  "decoding": "Kraken greedy CTC; no correction",
+  "results": [
+    {
+      "variant": "retificada_rgb",
+      "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/retificada_rgb.png",
+      "sha256": "030038141775eafd35bd1c45ef0c15ea34da1392e9cc96eba47bda744d43e4b1",
+      "size": [
+        1770,
+        99
+      ],
+      "execution_id": "20261104T184349_fa9adec9",
+      "text_raw": "     ",
+      "status": "ok"
+    },
+    {
+      "variant": "retificada_niveis",
+      "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/retificada_niveis.png",
+      "sha256": "0fedb9d634ca80e94c0b7a66b440cfabe375191a273dab46035f1c691beedf12",
+      "size": [
+        1770,
+        99
+      ],
+      "execution_id": "20261104T184349_fa9adec9",
+      "text_raw": "vrig o itpdde de m li",
+      "status": "ok"
+    },
+    {
+      "variant": "retificada_clahe",
+      "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/retificada_clahe.png",
+      "sha256": "b085cf9536a8581a1638385c3e116966f9a0ab9097ba17de9d59ccf2cb880371",
+      "size": [
+        1770,
+        99
+      ],
+      "execution_id": "20261104T184349_fa9adec9",
+      "text_raw": "ig o t d de mg Li",
+      "status": "ok"
+    },
+    {
+      "variant": "retificada_fundo",
+      "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/retificada_fundo.png",
+      "sha256": "ca2760fdb0465f377228053887440ed879742c7f899208fa434e2d1598d15d5e",
+      "size": [
+        1770,
+        99
+      ],
+      "execution_id": "20261104T184349_fa9adec9",
+      "text_raw": "  ם  ",
+      "status": "ok"
+    },
+    {
+      "variant": "retificada_binaria",
+      "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/retificada_binaria.png",
+      "sha256": "fc6648f216b0e4330779875f276363094298ee1d0cd29fbf5dc72d1fd9662530",
+      "size": [
+        1770,
+        99
+      ],
+      "execution_id": "20261104T184349_fa9adec9",
+      "text_raw": "",
+      "status": "ok"
+    },
+    {
+      "variant": "antitrama_inteira",
+      "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/antitrama_inteira.png",
+      "sha256": "6302ef2d95b9d24d10ebdb1b62398658dc4002045c43b7dc42d0812d18b4fbed",
+      "size": [
+        1770,
+        99
+      ],
+      "execution_id": "20261104T184544_6c551ea8",
+      "text_raw": "vrigrar o qe isto po sa ser sem mayoneLigenca",
+      "status": "ok"
+    },
+    {
+      "variant": "antitrama_esquerda",
+      "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/antitrama_esquerda.png",
+      "sha256": "caa6a3d43914e9c0c8b3d98103d2ce5d018bc8a61391aaa0d206a77d1cc5d0cb",
+      "size": [
+        1000,
+        99
+      ],
+      "execution_id": "20261104T184544_6c551ea8",
+      "text_raw": "vrigrar o qe isto po sa ser sem",
+      "status": "ok"
+    },
+    {
+      "variant": "antitrama_direita",
+      "image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/antitrama_direita.png",
+      "sha256": "77f6e1d78b2eab03cfa3500d9ecf1bc033cb65392bfe6d433ae2f4d81f530f5d",
+      "size": [
+        1000,
+        99
+      ],
+      "execution_id": "20261104T184544_6c551ea8",
+      "text_raw": "ser semmoyondeLigenci",
+      "status": "ok"
+    }
+  ],
+  "local_artifact_hashes": {
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/entradas.jsonl": "d0422d9dc4baf171c98c115f1f48713431a9e6f2078d78e32efc0e452963a399",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/predictions.jsonl": "927130c53f699907ce14262a29885225bb3b597ad8b1696ba630bc7c3f1a1392",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/predictions.run.json": "edcbed8bc0d7aeac37970963d14b85bdced1506d4c0bda0ff08ea13ebb781b3b",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/tratamento.json": "93fca8b1c763bf22384b2c504dc7ffe68ad4a50242216ca4ec3294dfb3ab0c2d",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/entradas.jsonl": "d330a3ea21a4f789a0cf3579f3a7857d0137229d5a210d67dbd72c1cd7097ad6",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/predictions.jsonl": "0a2491df98a31e50f6e0f5d5396962c63a6fffeb5cf64afed0c47b2b96e1d535",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/predictions.provenance.json": "33f30270a9d4bca376d2d1936d4d65a67f0cd70f5c67df00dd02426d7ea14593",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/predictions.run.json": "71df712e0d42e13ab20c8f622f42debb7d8ea3de001b0985b83d22b08e0960cb",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/tratamentos.json": "13ba40896264bbdb0fa0840cb5b5cb9a8c9531f8f001d9ac548b3ffe859da900"
+  },
+  "interpretation": {
+    "rectification": "Manual guideline; grayscale levels and CLAHE yielded fragments.",
+    "periodic_texture_reduction": "Full strip yielded isto and ser sem as exact editorial tokens. vrigrar, qe, po sa and mayoneLigenca resemble parts of the editorial reading.",
+    "editorial_comparison": "Qualitative comparison after inference with a modernized edition containing an unreadable marker. Diplomatic reference awaits validation."
+  },
+  "metrics": null,
+  "training_executed": false,
+  "scientific_split": null,
+  "evaluation_scope": "Group contratos_olgado_1763 was exposed to preprocessing selection. Reserve an independent group for final testing of this refinement."
+}

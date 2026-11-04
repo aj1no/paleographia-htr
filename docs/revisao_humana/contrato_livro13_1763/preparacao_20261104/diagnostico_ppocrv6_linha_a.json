@@ -1,0 +1,45 @@
+{
+  "document_id": "contrato_livro13_1763",
+  "pdf_page": 5,
+  "pilot_label": "A",
+  "line_id": "l_dde7529e3b232e190cc3",
+  "kind": "exploratory_inference_before_reference_validation",
+  "model": {
+    "name": "PP-OCRv6 medium / Kraken 7.1",
+    "base_weights_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+    "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+  },
+  "results": [
+    {
+      "variant": "original",
+      "crop_image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/l_dde7529e3b232e190cc3.png",
+      "crop_sha256": "300dec554861e4a48f619a3e78aeca35eeb97fe0eaf815610f8345545b8a9cc2",
+      "text_raw": "   ",
+      "status": "ok"
+    },
+    {
+      "variant": "clahe",
+      "crop_image": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/tratamentos_linha_a/02_clahe.png",
+      "crop_sha256": "4765fef8a46fac9b0e575bb7001292aff70846691e92024a6d2b55adf058fa79",
+      "text_raw": "  ",
+      "status": "ok"
+    }
+  ],
+  "editorial_support": {
+    "path": "data/manifests/corpus_expandido_v02/editorial/3348a51ef10d9d1b/p003.txt",
+    "edition_page": 3,
+    "excerpt": "… averiguar [†] o que isto possa ser sem maior diligência",
+    "diplomatic_reference_validated": false
+  },
+  "prediction_files": {
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_ppocrv6_linha_a_01/entradas.jsonl": "1ef7d8e07d1855d917f214f29c2396c7f2075b3d4d6c9e81ea37557a066b260c",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_ppocrv6_linha_a_01/predictions.jsonl": "bae1a0cce051692a1320e3d2f1f09156f9171178852896bb3f378f24f75cbf6b",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_ppocrv6_linha_a_01/predictions.provenance.json": "9d110364fa5b8da836bdf88855ce8caecb8dc8f3246deb3f65ccb32aad08a8b4",
+    "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_ppocrv6_linha_a_01/predictions.run.json": "49da088f8f09b2c5784801e791fe1294af3c7fd8e8db4f876a7b7d539f19d59b"
+  },
+  "metrics": null,
+  "training_executed": false,
+  "scientific_split": null,
+  "interpretation": "Execuções sem erro de runtime, com saídas formadas apenas por espaços. Não há palavras para alinhar à edição. A causa da saída vazia não foi isolada.",
+  "evaluation_scope": "A linha A já foi vista em inferência exploratória. Se esta observação orientar refinamento de pré-processamento, treinamento ou decodificação, usar outro grupo independente para teste final."
+}

@@ -1,0 +1,151 @@
+{
+  "document_id": "contrato_livro13_1763",
+  "pdf_page": 5,
+  "pilot_label": "A",
+  "line_id": "l_dde7529e3b232e190cc3",
+  "bbox_xyxy_in_original": [
+    200,
+    782,
+    1970,
+    940
+  ],
+  "input_size": [
+    1770,
+    158
+  ],
+  "purpose": "Apoio à leitura humana. O recorte original permanece como entrada prevista para ambos os modelos.",
+  "scope": "Ajustes determinísticos do JPEG visível. As versões mantêm a geometria do recorte. Sem nova captura espectral, reconstrução de traços ou inferência.",
+  "opencv_version": "4.12.0",
+  "views": {
+    "original": {
+      "path": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/l_dde7529e3b232e190cc3.png",
+      "sha256": "300dec554861e4a48f619a3e78aeca35eeb97fe0eaf815610f8345545b8a9cc2",
+      "method": "recorte RGB original"
+    },
+    "niveis": {
+      "path": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/tratamentos_linha_a/01_niveis_cinza.png",
+      "sha256": "8720cd9a29f291821e9a1eeedd69871140972289528f7fa27db22f28779bc340",
+      "method": "Conversão RGB para cinza e ajuste linear de níveis",
+      "parameters": {
+        "percentiles": [
+          0.5,
+          99.5
+        ],
+        "input_levels": [
+          45.0,
+          182.0
+        ],
+        "output_levels": [
+          10,
+          245
+        ]
+      }
+    },
+    "clahe": {
+      "path": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/tratamentos_linha_a/02_clahe.png",
+      "sha256": "4765fef8a46fac9b0e575bb7001292aff70846691e92024a6d2b55adf058fa79",
+      "method": "Contraste local em cinza",
+      "parameters": {
+        "clip_limit": 1.8,
+        "tile_grid_size": [
+          12,
+          2
+        ]
+      }
+    },
+    "negativo": {
+      "path": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/tratamentos_linha_a/03_negativo.png",
+      "sha256": "0f3593949223f9533c2baf74920c96161de89750f0f01c8cff6cb94585c0e316",
+      "method": "Inversão dos níveis de cinza ajustados",
+      "parameters": {
+        "source_view": "niveis",
+        "formula": "255 - pixel"
+      }
+    },
+    "vermelho": {
+      "path": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/tratamentos_linha_a/04_canal_vermelho.png",
+      "sha256": "772bc0b268cfda64343fc35cb642230fe0594523a36e47a6743947cdc3de7989",
+      "method": "Canal RGB em cinza com ajuste linear de níveis",
+      "parameters": {
+        "channel": "vermelho",
+        "percentiles": [
+          0.5,
+          99.5
+        ],
+        "input_levels": [
+          49.0,
+          179.0
+        ],
+        "output_levels": [
+          10,
+          245
+        ]
+      }
+    },
+    "verde": {
+      "path": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/tratamentos_linha_a/05_canal_verde.png",
+      "sha256": "6e092f8123e7eadbb55c06d549fdca6a97f70c7eb0829ac744aaef03c9396be5",
+      "method": "Canal RGB em cinza com ajuste linear de níveis",
+      "parameters": {
+        "channel": "verde",
+        "percentiles": [
+          0.5,
+          99.5
+        ],
+        "input_levels": [
+          44.0,
+          182.0
+        ],
+        "output_levels": [
+          10,
+          245
+        ]
+      }
+    },
+    "azul": {
+      "path": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/tratamentos_linha_a/06_canal_azul.png",
+      "sha256": "97b7e63f5a451090b5fd64ba8b17f3ea31b888e66fa97134f509b5fc9a2ce8b7",
+      "method": "Canal RGB em cinza com ajuste linear de níveis",
+      "parameters": {
+        "channel": "azul",
+        "percentiles": [
+          0.5,
+          99.5
+        ],
+        "input_levels": [
+          40.0,
+          188.0
+        ],
+        "output_levels": [
+          10,
+          245
+        ]
+      }
+    }
+  },
+  "panels": [
+    {
+      "path": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/tratamentos_linha_a/comparacao_contraste_negativo.png",
+      "sha256": "bd4ecbe98eac69be0f4ac9bce8ca2affe4f02161ddf56e71c6fcfacb4e387ac8",
+      "views": [
+        "original",
+        "niveis",
+        "clahe",
+        "negativo"
+      ]
+    },
+    {
+      "path": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/tratamentos_linha_a/comparacao_canais_rgb.png",
+      "sha256": "3f22d3d9b4e18dbd3ce6181f14ac5f1127cd421fb26acbda64de89fb8bad84b5",
+      "views": [
+        "original",
+        "vermelho",
+        "verde",
+        "azul"
+      ]
+    }
+  ],
+  "text_diplomatic": null,
+  "scientific_split": null,
+  "validated_lines": 0
+}

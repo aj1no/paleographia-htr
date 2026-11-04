@@ -1,0 +1,1632 @@
+{
+  "scope": "exploratory_document_holdout",
+  "scientific_split": null,
+  "normalization": "NFC + whitespace collapse; case and diacritics preserved",
+  "aggregation": "Sum of edit counts per line divided by sum of reference lengths",
+  "architecture": "[1,48,0,1 Cr{C_0}3,3,16 Mp{Mp_1}2,2 Cr{C_2}3,3,24 Mp{Mp_3}2,2 Cr{C_4}3,3,32 S{S_5}1(1x0)1,3 Lbx{L_6}48 Lbx{L_7}48 O{O_8}1c41]",
+  "models": {
+    "zero": {
+      "weights_sha256": "0e0ba17587a64569f4bfa763d2be6ae396bb1bd2b7363f82fa87635b910a0115",
+      "overall": {
+        "lines": 10,
+        "blank_predictions": 0,
+        "metrics": {
+          "characters": {
+            "substitutions": 5,
+            "deletions": 453,
+            "insertions": 0,
+            "hits": 15,
+            "reference_length": 473,
+            "errors": 458,
+            "rate": 0.9682875264270613
+          },
+          "words": {
+            "substitutions": 10,
+            "deletions": 83,
+            "insertions": 0,
+            "hits": 0,
+            "reference_length": 93,
+            "errors": 93,
+            "rate": 1.0
+          }
+        },
+        "character_patterns": [
+          {
+            "operation": "omissao",
+            "reference": " ",
+            "prediction": "",
+            "count": 83
+          },
+          {
+            "operation": "omissao",
+            "reference": "e",
+            "prediction": "",
+            "count": 54
+          },
+          {
+            "operation": "omissao",
+            "reference": "o",
+            "prediction": "",
+            "count": 42
+          },
+          {
+            "operation": "omissao",
+            "reference": "a",
+            "prediction": "",
+            "count": 33
+          },
+          {
+            "operation": "omissao",
+            "reference": "s",
+            "prediction": "",
+            "count": 32
+          },
+          {
+            "operation": "omissao",
+            "reference": "d",
+            "prediction": "",
+            "count": 27
+          },
+          {
+            "operation": "omissao",
+            "reference": "r",
+            "prediction": "",
+            "count": 21
+          },
+          {
+            "operation": "omissao",
+            "reference": "n",
+            "prediction": "",
+            "count": 20
+          },
+          {
+            "operation": "omissao",
+            "reference": "m",
+            "prediction": "",
+            "count": 19
+          },
+          {
+            "operation": "omissao",
+            "reference": "i",
+            "prediction": "",
+            "count": 16
+          },
+          {
+            "operation": "omissao",
+            "reference": "c",
+            "prediction": "",
+            "count": 15
+          },
+          {
+            "operation": "omissao",
+            "reference": "t",
+            "prediction": "",
+            "count": 10
+          }
+        ],
+        "word_patterns": [
+          {
+            "operation": "omissao",
+            "reference": "de",
+            "prediction": "",
+            "count": 8
+          },
+          {
+            "operation": "omissao",
+            "reference": "do",
+            "prediction": "",
+            "count": 5
+          },
+          {
+            "operation": "omissao",
+            "reference": "e",
+            "prediction": "",
+            "count": 5
+          },
+          {
+            "operation": "omissao",
+            "reference": "as",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "cinco",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "da",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "em",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "não",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "se",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "Camara",
+            "prediction": "",
+            "count": 1
+          },
+          {
+            "operation": "omissao",
+            "reference": "Camaras,",
+            "prediction": "",
+            "count": 1
+          },
+          {
+            "operation": "omissao",
+            "reference": "Desco-",
+            "prediction": "",
+            "count": 1
+          }
+        ]
+      },
+      "documents": {
+        "carta_jose_gomes_1767": {
+          "lines": 3,
+          "blank_predictions": 0,
+          "metrics": {
+            "characters": {
+              "substitutions": 2,
+              "deletions": 122,
+              "insertions": 0,
+              "hits": 4,
+              "reference_length": 128,
+              "errors": 124,
+              "rate": 0.96875
+            },
+            "words": {
+              "substitutions": 3,
+              "deletions": 23,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 26,
+              "errors": 26,
+              "rate": 1.0
+            }
+          },
+          "character_patterns": [
+            {
+              "operation": "omissao",
+              "reference": " ",
+              "prediction": "",
+              "count": 23
+            },
+            {
+              "operation": "omissao",
+              "reference": "e",
+              "prediction": "",
+              "count": 14
+            },
+            {
+              "operation": "omissao",
+              "reference": "o",
+              "prediction": "",
+              "count": 12
+            },
+            {
+              "operation": "omissao",
+              "reference": "s",
+              "prediction": "",
+              "count": 12
+            },
+            {
+              "operation": "omissao",
+              "reference": "a",
+              "prediction": "",
+              "count": 7
+            },
+            {
+              "operation": "omissao",
+              "reference": "r",
+              "prediction": "",
+              "count": 7
+            },
+            {
+              "operation": "omissao",
+              "reference": "m",
+              "prediction": "",
+              "count": 6
+            },
+            {
+              "operation": "omissao",
+              "reference": "d",
+              "prediction": "",
+              "count": 4
+            },
+            {
+              "operation": "omissao",
+              "reference": "u",
+              "prediction": "",
+              "count": 4
+            },
+            {
+              "operation": "omissao",
+              "reference": "ã",
+              "prediction": "",
+              "count": 4
+            },
+            {
+              "operation": "omissao",
+              "reference": "t",
+              "prediction": "",
+              "count": 3
+            },
+            {
+              "operation": "omissao",
+              "reference": ",",
+              "prediction": "",
+              "count": 2
+            }
+          ],
+          "word_patterns": [
+            {
+              "operation": "omissao",
+              "reference": "as",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "e",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "não",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "Camaras,",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Desco-",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Razão",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Srsˢ",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "a",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "campo",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "de",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "do",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "dos",
+              "prediction": "",
+              "count": 1
+            }
+          ]
+        },
+        "sessao_1795": {
+          "lines": 7,
+          "blank_predictions": 0,
+          "metrics": {
+            "characters": {
+              "substitutions": 3,
+              "deletions": 331,
+              "insertions": 0,
+              "hits": 11,
+              "reference_length": 345,
+              "errors": 334,
+              "rate": 0.9681159420289855
+            },
+            "words": {
+              "substitutions": 7,
+              "deletions": 60,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 67,
+              "errors": 67,
+              "rate": 1.0
+            }
+          },
+          "character_patterns": [
+            {
+              "operation": "omissao",
+              "reference": " ",
+              "prediction": "",
+              "count": 60
+            },
+            {
+              "operation": "omissao",
+              "reference": "e",
+              "prediction": "",
+              "count": 40
+            },
+            {
+              "operation": "omissao",
+              "reference": "o",
+              "prediction": "",
+              "count": 30
+            },
+            {
+              "operation": "omissao",
+              "reference": "a",
+              "prediction": "",
+              "count": 26
+            },
+            {
+              "operation": "omissao",
+              "reference": "d",
+              "prediction": "",
+              "count": 23
+            },
+            {
+              "operation": "omissao",
+              "reference": "s",
+              "prediction": "",
+              "count": 20
+            },
+            {
+              "operation": "omissao",
+              "reference": "n",
+              "prediction": "",
+              "count": 18
+            },
+            {
+              "operation": "omissao",
+              "reference": "i",
+              "prediction": "",
+              "count": 14
+            },
+            {
+              "operation": "omissao",
+              "reference": "r",
+              "prediction": "",
+              "count": 14
+            },
+            {
+              "operation": "omissao",
+              "reference": "c",
+              "prediction": "",
+              "count": 13
+            },
+            {
+              "operation": "omissao",
+              "reference": "m",
+              "prediction": "",
+              "count": 13
+            },
+            {
+              "operation": "omissao",
+              "reference": "t",
+              "prediction": "",
+              "count": 7
+            }
+          ],
+          "word_patterns": [
+            {
+              "operation": "omissao",
+              "reference": "de",
+              "prediction": "",
+              "count": 7
+            },
+            {
+              "operation": "omissao",
+              "reference": "do",
+              "prediction": "",
+              "count": 4
+            },
+            {
+              "operation": "omissao",
+              "reference": "e",
+              "prediction": "",
+              "count": 3
+            },
+            {
+              "operation": "omissao",
+              "reference": "cinco",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "da",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "em",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "se",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "Camara",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Desterro",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Juiz",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Nˢᵃ",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Oliveira",
+              "prediction": "",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "lines": [
+        {
+          "line_id": "l_14a4c7eba267e1e592e7",
+          "document_id": "carta_jose_gomes_1767",
+          "reading_order": 0,
+          "reference": "Paguem as Camaras, e a Razão por não",
+          "image": "l_14a4c7eba267e1e592e7.png",
+          "prediction": "ta",
+          "metrics": {
+            "characters": {
+              "substitutions": 1,
+              "deletions": 34,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 36,
+              "errors": 35,
+              "rate": 0.9722222222222222
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 7,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 8,
+              "errors": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_5e33f0d507567e36dd02",
+          "document_id": "carta_jose_gomes_1767",
+          "reading_order": 2,
+          "reference": "se as não tivessem seriam Srsˢ dos Desco-",
+          "image": "l_5e33f0d507567e36dd02.png",
+          "prediction": "pa",
+          "metrics": {
+            "characters": {
+              "substitutions": 1,
+              "deletions": 39,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 41,
+              "errors": 40,
+              "rate": 0.975609756097561
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 7,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 8,
+              "errors": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_99b58f3e657c7885a0de",
+          "document_id": "carta_jose_gomes_1767",
+          "reading_order": 3,
+          "reference": "bertos do campo verde, e de outros muⁱᵗᵒˢ que estão",
+          "image": "l_99b58f3e657c7885a0de.png",
+          "prediction": "ta",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 49,
+              "insertions": 0,
+              "hits": 2,
+              "reference_length": 51,
+              "errors": 49,
+              "rate": 0.9607843137254902
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 9,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 10,
+              "errors": 10,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_24b904b9ad9473450172",
+          "document_id": "sessao_1795",
+          "reading_order": 0,
+          "reference": "Aos vinte e cinco dias do mes de junho de mil sete",
+          "image": "l_24b904b9ad9473450172.png",
+          "prediction": "ta",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 48,
+              "insertions": 0,
+              "hits": 2,
+              "reference_length": 50,
+              "errors": 48,
+              "rate": 0.96
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 11,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 12,
+              "errors": 12,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_b8a06d58bd7cced4f3a2",
+          "document_id": "sessao_1795",
+          "reading_order": 1,
+          "reference": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+          "image": "l_b8a06d58bd7cced4f3a2.png",
+          "prediction": "ta",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 47,
+              "insertions": 0,
+              "hits": 2,
+              "reference_length": 49,
+              "errors": 47,
+              "rate": 0.9591836734693877
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 9,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 10,
+              "errors": 10,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_4882de66b18aa948f2a4",
+          "document_id": "sessao_1795",
+          "reading_order": 2,
+          "reference": "senhora do Desterro de jundiahy comarca da cidade",
+          "image": "l_4882de66b18aa948f2a4.png",
+          "prediction": "ta",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 47,
+              "insertions": 0,
+              "hits": 2,
+              "reference_length": 49,
+              "errors": 47,
+              "rate": 0.9591836734693877
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 7,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 8,
+              "errors": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_98962db568a2f74aab38",
+          "document_id": "sessao_1795",
+          "reading_order": 3,
+          "reference": "de São Paulo, em casas de morada do Juiz Presidente",
+          "image": "l_98962db568a2f74aab38.png",
+          "prediction": "ta",
+          "metrics": {
+            "characters": {
+              "substitutions": 1,
+              "deletions": 49,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 51,
+              "errors": 50,
+              "rate": 0.9803921568627451
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 9,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 10,
+              "errors": 10,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_27cb89d5763a6e64c484",
+          "document_id": "sessao_1795",
+          "reading_order": 4,
+          "reference": "Salvador de Oliveira Prado, onde se achavão presentes",
+          "image": "l_27cb89d5763a6e64c484.png",
+          "prediction": "ta",
+          "metrics": {
+            "characters": {
+              "substitutions": 1,
+              "deletions": 51,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 53,
+              "errors": 52,
+              "rate": 0.9811320754716981
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 7,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 8,
+              "errors": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_6077eea6d3ac418348ec",
+          "document_id": "sessao_1795",
+          "reading_order": 5,
+          "reference": "os officiaes da Camara em acto de Vereança, trat-",
+          "image": "l_6077eea6d3ac418348ec.png",
+          "prediction": "ta",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 47,
+              "insertions": 0,
+              "hits": 2,
+              "reference_length": 49,
+              "errors": 47,
+              "rate": 0.9591836734693877
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 8,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 9,
+              "errors": 9,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_40d2333b12328973de24",
+          "document_id": "sessao_1795",
+          "reading_order": 6,
+          "reference": "ando sobre o bem commum do povo, na mesma se",
+          "image": "l_40d2333b12328973de24.png",
+          "prediction": "ta",
+          "metrics": {
+            "characters": {
+              "substitutions": 1,
+              "deletions": 42,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 44,
+              "errors": 43,
+              "rate": 0.9772727272727273
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 9,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 10,
+              "errors": 10,
+              "rate": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "pretreino": {
+      "weights_sha256": "a515b8d21f6223368fbc7d564aa5d7310c4b32cae2f40afff0651fa776ba9736",
+      "overall": {
+        "lines": 10,
+        "blank_predictions": 0,
+        "metrics": {
+          "characters": {
+            "substitutions": 1,
+            "deletions": 443,
+            "insertions": 0,
+            "hits": 29,
+            "reference_length": 473,
+            "errors": 444,
+            "rate": 0.9386892177589852
+          },
+          "words": {
+            "substitutions": 15,
+            "deletions": 75,
+            "insertions": 0,
+            "hits": 3,
+            "reference_length": 93,
+            "errors": 90,
+            "rate": 0.967741935483871
+          }
+        },
+        "character_patterns": [
+          {
+            "operation": "omissao",
+            "reference": " ",
+            "prediction": "",
+            "count": 75
+          },
+          {
+            "operation": "omissao",
+            "reference": "e",
+            "prediction": "",
+            "count": 43
+          },
+          {
+            "operation": "omissao",
+            "reference": "o",
+            "prediction": "",
+            "count": 42
+          },
+          {
+            "operation": "omissao",
+            "reference": "a",
+            "prediction": "",
+            "count": 34
+          },
+          {
+            "operation": "omissao",
+            "reference": "s",
+            "prediction": "",
+            "count": 33
+          },
+          {
+            "operation": "omissao",
+            "reference": "d",
+            "prediction": "",
+            "count": 27
+          },
+          {
+            "operation": "omissao",
+            "reference": "r",
+            "prediction": "",
+            "count": 21
+          },
+          {
+            "operation": "omissao",
+            "reference": "n",
+            "prediction": "",
+            "count": 20
+          },
+          {
+            "operation": "omissao",
+            "reference": "m",
+            "prediction": "",
+            "count": 19
+          },
+          {
+            "operation": "omissao",
+            "reference": "i",
+            "prediction": "",
+            "count": 16
+          },
+          {
+            "operation": "omissao",
+            "reference": "c",
+            "prediction": "",
+            "count": 15
+          },
+          {
+            "operation": "omissao",
+            "reference": "t",
+            "prediction": "",
+            "count": 15
+          }
+        ],
+        "word_patterns": [
+          {
+            "operation": "omissao",
+            "reference": "de",
+            "prediction": "",
+            "count": 6
+          },
+          {
+            "operation": "omissao",
+            "reference": "do",
+            "prediction": "",
+            "count": 4
+          },
+          {
+            "operation": "omissao",
+            "reference": "as",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "da",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "e",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "em",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "não",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "se",
+            "prediction": "",
+            "count": 2
+          },
+          {
+            "operation": "omissao",
+            "reference": "Aos",
+            "prediction": "",
+            "count": 1
+          },
+          {
+            "operation": "omissao",
+            "reference": "Camara",
+            "prediction": "",
+            "count": 1
+          },
+          {
+            "operation": "omissao",
+            "reference": "Camaras,",
+            "prediction": "",
+            "count": 1
+          },
+          {
+            "operation": "omissao",
+            "reference": "Desco-",
+            "prediction": "",
+            "count": 1
+          }
+        ]
+      },
+      "documents": {
+        "carta_jose_gomes_1767": {
+          "lines": 3,
+          "blank_predictions": 0,
+          "metrics": {
+            "characters": {
+              "substitutions": 1,
+              "deletions": 121,
+              "insertions": 0,
+              "hits": 6,
+              "reference_length": 128,
+              "errors": 122,
+              "rate": 0.953125
+            },
+            "words": {
+              "substitutions": 3,
+              "deletions": 22,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 26,
+              "errors": 25,
+              "rate": 0.9615384615384616
+            }
+          },
+          "character_patterns": [
+            {
+              "operation": "omissao",
+              "reference": " ",
+              "prediction": "",
+              "count": 22
+            },
+            {
+              "operation": "omissao",
+              "reference": "s",
+              "prediction": "",
+              "count": 13
+            },
+            {
+              "operation": "omissao",
+              "reference": "e",
+              "prediction": "",
+              "count": 12
+            },
+            {
+              "operation": "omissao",
+              "reference": "o",
+              "prediction": "",
+              "count": 12
+            },
+            {
+              "operation": "omissao",
+              "reference": "a",
+              "prediction": "",
+              "count": 7
+            },
+            {
+              "operation": "omissao",
+              "reference": "r",
+              "prediction": "",
+              "count": 7
+            },
+            {
+              "operation": "omissao",
+              "reference": "m",
+              "prediction": "",
+              "count": 6
+            },
+            {
+              "operation": "omissao",
+              "reference": "t",
+              "prediction": "",
+              "count": 4
+            },
+            {
+              "operation": "omissao",
+              "reference": "u",
+              "prediction": "",
+              "count": 4
+            },
+            {
+              "operation": "omissao",
+              "reference": "ã",
+              "prediction": "",
+              "count": 4
+            },
+            {
+              "operation": "omissao",
+              "reference": "d",
+              "prediction": "",
+              "count": 3
+            },
+            {
+              "operation": "omissao",
+              "reference": ",",
+              "prediction": "",
+              "count": 2
+            }
+          ],
+          "word_patterns": [
+            {
+              "operation": "omissao",
+              "reference": "as",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "não",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "Camaras,",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Desco-",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Razão",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Srsˢ",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "a",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "bertos",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "campo",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "do",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "dos",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "e",
+              "prediction": "",
+              "count": 1
+            }
+          ]
+        },
+        "sessao_1795": {
+          "lines": 7,
+          "blank_predictions": 0,
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 322,
+              "insertions": 0,
+              "hits": 23,
+              "reference_length": 345,
+              "errors": 322,
+              "rate": 0.9333333333333333
+            },
+            "words": {
+              "substitutions": 12,
+              "deletions": 53,
+              "insertions": 0,
+              "hits": 2,
+              "reference_length": 67,
+              "errors": 65,
+              "rate": 0.9701492537313433
+            }
+          },
+          "character_patterns": [
+            {
+              "operation": "omissao",
+              "reference": " ",
+              "prediction": "",
+              "count": 53
+            },
+            {
+              "operation": "omissao",
+              "reference": "e",
+              "prediction": "",
+              "count": 31
+            },
+            {
+              "operation": "omissao",
+              "reference": "o",
+              "prediction": "",
+              "count": 30
+            },
+            {
+              "operation": "omissao",
+              "reference": "a",
+              "prediction": "",
+              "count": 27
+            },
+            {
+              "operation": "omissao",
+              "reference": "d",
+              "prediction": "",
+              "count": 24
+            },
+            {
+              "operation": "omissao",
+              "reference": "s",
+              "prediction": "",
+              "count": 20
+            },
+            {
+              "operation": "omissao",
+              "reference": "n",
+              "prediction": "",
+              "count": 18
+            },
+            {
+              "operation": "omissao",
+              "reference": "i",
+              "prediction": "",
+              "count": 14
+            },
+            {
+              "operation": "omissao",
+              "reference": "r",
+              "prediction": "",
+              "count": 14
+            },
+            {
+              "operation": "omissao",
+              "reference": "c",
+              "prediction": "",
+              "count": 13
+            },
+            {
+              "operation": "omissao",
+              "reference": "m",
+              "prediction": "",
+              "count": 13
+            },
+            {
+              "operation": "omissao",
+              "reference": "t",
+              "prediction": "",
+              "count": 11
+            }
+          ],
+          "word_patterns": [
+            {
+              "operation": "omissao",
+              "reference": "de",
+              "prediction": "",
+              "count": 6
+            },
+            {
+              "operation": "omissao",
+              "reference": "do",
+              "prediction": "",
+              "count": 3
+            },
+            {
+              "operation": "omissao",
+              "reference": "da",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "em",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "se",
+              "prediction": "",
+              "count": 2
+            },
+            {
+              "operation": "omissao",
+              "reference": "Aos",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Camara",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Desterro",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Juiz",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Nˢᵃ",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Oliveira",
+              "prediction": "",
+              "count": 1
+            },
+            {
+              "operation": "omissao",
+              "reference": "Paulo,",
+              "prediction": "",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "lines": [
+        {
+          "line_id": "l_14a4c7eba267e1e592e7",
+          "document_id": "carta_jose_gomes_1767",
+          "reading_order": 0,
+          "reference": "Paguem as Camaras, e a Razão por não",
+          "image": "l_14a4c7eba267e1e592e7.png",
+          "prediction": "  ea",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 34,
+              "insertions": 0,
+              "hits": 2,
+              "reference_length": 36,
+              "errors": 34,
+              "rate": 0.9444444444444444
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 7,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 8,
+              "errors": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_5e33f0d507567e36dd02",
+          "document_id": "carta_jose_gomes_1767",
+          "reading_order": 2,
+          "reference": "se as não tivessem seriam Srsˢ dos Desco-",
+          "image": "l_5e33f0d507567e36dd02.png",
+          "prediction": "  a",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 40,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 41,
+              "errors": 40,
+              "rate": 0.975609756097561
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 7,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 8,
+              "errors": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_99b58f3e657c7885a0de",
+          "document_id": "carta_jose_gomes_1767",
+          "reading_order": 3,
+          "reference": "bertos do campo verde, e de outros muⁱᵗᵒˢ que estão",
+          "image": "l_99b58f3e657c7885a0de.png",
+          "prediction": " e ea",
+          "metrics": {
+            "characters": {
+              "substitutions": 1,
+              "deletions": 47,
+              "insertions": 0,
+              "hits": 3,
+              "reference_length": 51,
+              "errors": 48,
+              "rate": 0.9411764705882353
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 8,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 10,
+              "errors": 9,
+              "rate": 0.9
+            }
+          }
+        },
+        {
+          "line_id": "l_24b904b9ad9473450172",
+          "document_id": "sessao_1795",
+          "reading_order": 0,
+          "reference": "Aos vinte e cinco dias do mes de junho de mil sete",
+          "image": "l_24b904b9ad9473450172.png",
+          "prediction": "e ea",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 46,
+              "insertions": 0,
+              "hits": 4,
+              "reference_length": 50,
+              "errors": 46,
+              "rate": 0.92
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 10,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 12,
+              "errors": 11,
+              "rate": 0.9166666666666666
+            }
+          }
+        },
+        {
+          "line_id": "l_b8a06d58bd7cced4f3a2",
+          "document_id": "sessao_1795",
+          "reading_order": 1,
+          "reference": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+          "image": "l_b8a06d58bd7cced4f3a2.png",
+          "prediction": "e ea",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 45,
+              "insertions": 0,
+              "hits": 4,
+              "reference_length": 49,
+              "errors": 45,
+              "rate": 0.9183673469387755
+            },
+            "words": {
+              "substitutions": 1,
+              "deletions": 8,
+              "insertions": 0,
+              "hits": 1,
+              "reference_length": 10,
+              "errors": 9,
+              "rate": 0.9
+            }
+          }
+        },
+        {
+          "line_id": "l_4882de66b18aa948f2a4",
+          "document_id": "sessao_1795",
+          "reading_order": 2,
+          "reference": "senhora do Desterro de jundiahy comarca da cidade",
+          "image": "l_4882de66b18aa948f2a4.png",
+          "prediction": "e a",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 46,
+              "insertions": 0,
+              "hits": 3,
+              "reference_length": 49,
+              "errors": 46,
+              "rate": 0.9387755102040817
+            },
+            "words": {
+              "substitutions": 2,
+              "deletions": 6,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 8,
+              "errors": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_98962db568a2f74aab38",
+          "document_id": "sessao_1795",
+          "reading_order": 3,
+          "reference": "de São Paulo, em casas de morada do Juiz Presidente",
+          "image": "l_98962db568a2f74aab38.png",
+          "prediction": "e a",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 48,
+              "insertions": 0,
+              "hits": 3,
+              "reference_length": 51,
+              "errors": 48,
+              "rate": 0.9411764705882353
+            },
+            "words": {
+              "substitutions": 2,
+              "deletions": 8,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 10,
+              "errors": 10,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_27cb89d5763a6e64c484",
+          "document_id": "sessao_1795",
+          "reading_order": 4,
+          "reference": "Salvador de Oliveira Prado, onde se achavão presentes",
+          "image": "l_27cb89d5763a6e64c484.png",
+          "prediction": "e a",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 50,
+              "insertions": 0,
+              "hits": 3,
+              "reference_length": 53,
+              "errors": 50,
+              "rate": 0.9433962264150944
+            },
+            "words": {
+              "substitutions": 2,
+              "deletions": 6,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 8,
+              "errors": 8,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_6077eea6d3ac418348ec",
+          "document_id": "sessao_1795",
+          "reading_order": 5,
+          "reference": "os officiaes da Camara em acto de Vereança, trat-",
+          "image": "l_6077eea6d3ac418348ec.png",
+          "prediction": "e a",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 46,
+              "insertions": 0,
+              "hits": 3,
+              "reference_length": 49,
+              "errors": 46,
+              "rate": 0.9387755102040817
+            },
+            "words": {
+              "substitutions": 2,
+              "deletions": 7,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 9,
+              "errors": 9,
+              "rate": 1.0
+            }
+          }
+        },
+        {
+          "line_id": "l_40d2333b12328973de24",
+          "document_id": "sessao_1795",
+          "reading_order": 6,
+          "reference": "ando sobre o bem commum do povo, na mesma se",
+          "image": "l_40d2333b12328973de24.png",
+          "prediction": "e a",
+          "metrics": {
+            "characters": {
+              "substitutions": 0,
+              "deletions": 41,
+              "insertions": 0,
+              "hits": 3,
+              "reference_length": 44,
+              "errors": 41,
+              "rate": 0.9318181818181818
+            },
+            "words": {
+              "substitutions": 2,
+              "deletions": 8,
+              "insertions": 0,
+              "hits": 0,
+              "reference_length": 10,
+              "errors": 10,
+              "rate": 1.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "inputs_sha256": {
+    "output/kraken_vgsl_comparacao_01/predictions/predictions.json": "06753125812ef9ec5d0ed62357e519d2721fc3e057db81577d7ce3df4f6a06f1",
+    "output/kraken_vgsl_comparacao_01/evaluation_references.jsonl": "231096f3f26ae0524239a424f6cc55ddf47eb71e11dba7ade37a30c73a009605",
+    "output/kraken_vgsl_comparacao_01/inventory.json": "ca6ad9b51f8e0b610304dd671a4aeb7e8336dc5e6b438b3f9403c4b8337988ac",
+    "output/kraken_vgsl_comparacao_01/models/zero/command.json": "7eeabdbba10f2ca04844fcf94684dff6632b334a9df9458286e769359c428252",
+    "output/kraken_vgsl_comparacao_01/models/zero/train.log": "269526660fc9e8a41fb711a154e27e269c7972d057f7acc595bb338c3a597f2c",
+    "output/kraken_vgsl_comparacao_01/models/zero/resume_command.json": "6a76c8de391b799932b4cc79f77b2fddac94b502bb07de046e848621e3532a06",
+    "output/kraken_vgsl_comparacao_01/models/zero/resume.log": "30c0ff09342f0e6cd7d64a62f50939d809f288b21ff7d21689a2b02f724f1aed",
+    "output/kraken_vgsl_comparacao_01/models/zero/extended/best_0.0335.safetensors": "0e0ba17587a64569f4bfa763d2be6ae396bb1bd2b7363f82fa87635b910a0115",
+    "output/kraken_vgsl_comparacao_01/models/zero/extended/checkpoint_74-0.0335.ckpt": "4b3a88415676bf88389d67f12b9ded3577987c23d6487a664d9303d975416428",
+    "output/kraken_vgsl_comparacao_01/models/pretreino/command.json": "c02d051413a85a5554ba7f997c4e963a90f2b57648032d2feac2a62994b5057b",
+    "output/kraken_vgsl_comparacao_01/models/pretreino/train.log": "80eaf2c12e58dfc2aabe0ca062a31fad5fe52741a63494b0f2f0f9237fda1405",
+    "output/kraken_vgsl_comparacao_01/models/pretreino/resume_command.json": "9530afbaebc7dd3b65bfa2425a771e0fccfbb2181bee2dd0e671d5b5731fb7f7",
+    "output/kraken_vgsl_comparacao_01/models/pretreino/resume.log": "e64304c9d75f6547cc6ca8b2edb95fbce5d8a7e59a699a5b032b54053ffe55a0",
+    "output/kraken_vgsl_comparacao_01/models/pretreino/extended/best_0.0782.safetensors": "a515b8d21f6223368fbc7d564aa5d7310c4b32cae2f40afff0651fa776ba9736",
+    "output/kraken_vgsl_comparacao_01/models/pretreino/extended/checkpoint_74-0.0782.ckpt": "3d8b5c05084ee71342a29c339ac5e92096726039cc297ac805861f0ae527b7f4"
+  }
+}

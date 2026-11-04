@@ -99,3 +99,8 @@ docs/revisao_humana/sessao_1795/** -text -whitespace
 docs/revisao_humana/carta_jose_gomes_1767/** -text -whitespace
 docs/entregas/continuidade_20261103/** -text -whitespace
 docs/entregas/apresentacao_20261112/** -text -whitespace
+
+# Evidências da curadoria de 04/11 e dos ensaios VGSL conservam hashes entre sistemas.
+docs/revisao_humana/contrato_livro13_1763/** -text whitespace=cr-at-eol
+docs/experimentos/kraken_vgsl_pretrain_piloto/** -text whitespace=cr-at-eol
+docs/experimentos/kraken_vgsl_comparacao_piloto/** -text whitespace=cr-at-eol
