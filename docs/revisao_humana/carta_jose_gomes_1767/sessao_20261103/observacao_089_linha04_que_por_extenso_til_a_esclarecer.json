@@ -1,0 +1,22 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_palavra_por_extenso",
+  "data_resposta": "2026-11-04",
+  "original_message": "Na ampliação, vejo “que” por extenso, mas ainda consigo confirmar o til sobre o a de “estão”. ",
+  "contexto_da_pergunta": "No final da quarta linha, você consegue confirmar se que está por extenso e se há um til sobre o a de estão?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_99b58f3e657c7885a0de",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_C_linha04_grupo_4x.png",
+  "imagem_apresentada_sha256": "a5f18689b3b7aa94de471949a1420efb9daf627edfbc95fb527f75dbde7cb7fa",
+  "confirmacoes": {
+    "forma_diplomatica_confirmada": "que",
+    "que_por_extenso": true,
+    "til_sobre_a_em_estao": null
+  },
+  "observacoes_anteriores": [56, 88],
+  "scope": "Confirma que por extenso. A frase sobre o til foi preservada e aguarda esclarecimento por admitir a leitura literal positiva ou a possibilidade de um não omitido.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Esclarecer se o til sobre o a foi confirmado na ampliação ou continua indistinto."
+}

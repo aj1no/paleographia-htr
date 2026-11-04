@@ -1,0 +1,25 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_palavra_por_extenso",
+  "data_resposta": "2026-11-04",
+  "original_message": "Depois da vírgula, leio “que” por extenso. O traço no final parece um floreio. Pode registrar e seguir, deixando pendente a forma depois de tem.",
+  "contexto_da_pergunta": "Depois da vírgula de negligencias, você lê que por extenso ou vê alguma abreviação?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_90945ed471090b684539",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_B_linha02_final_4x.png",
+  "imagem_apresentada_sha256": "b9ddf7728cd6ff239fb9d1975e2c94ff711d73774e9af99e7a247df0ec89de25",
+  "leitura_humana": {
+    "palavra_final_confirmada": "que",
+    "por_extenso": true,
+    "traco_final_observado": true,
+    "interpretacao_do_traco": "possível floreio",
+    "classificacao_definitiva_do_traco": null,
+    "forma_diplomatica_apos_tem": null
+  },
+  "observacoes_anteriores": [49, 80, 81],
+  "scope": "Confirma que por extenso depois da vírgula e registra o traço final como possível floreio. A forma literal após tem e a transcrição integral continuam pendentes por decisão do revisor.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Terceira linha: conferir as letras elevadas e a presença de ponto na abreviatura lida como Srs."
+}

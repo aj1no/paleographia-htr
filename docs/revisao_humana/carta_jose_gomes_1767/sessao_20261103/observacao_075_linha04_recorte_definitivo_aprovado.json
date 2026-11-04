@@ -1,0 +1,25 @@
+{
+  "tipo": "aprovacao_humana_de_geometria_do_recorte",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, pode manter esse recorte como definitivo para a quarta linha. Os traços das linhas vizinhas nas bordas não atrapalham a leitura.",
+  "contexto_da_pergunta": "Podemos manter o recorte atual como definitivo, com os traços das linhas vizinhas nas bordas?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_99b58f3e657c7885a0de",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_aprovada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_99b58f3e657c7885a0de.png",
+  "imagem_aprovada_sha256": "99a1b84e23edb915aa9e1e0f2549011e7c023631c10bc388f878379f02085c7d",
+  "bbox_xyxy_no_original": [43, 177, 877, 293],
+  "confirmacoes": {
+    "limites_retangulares_definitivos_aprovados": true,
+    "tracos_das_linhas_vizinhas_nas_bordas_aceitos": true,
+    "tracos_prejudicam_a_leitura": false
+  },
+  "observacoes_anteriores": [74],
+  "scope": "Aprova os limites do recorte da quarta linha com os traços vizinhos nas bordas. A transcrição diplomática segue pendente.",
+  "geometry_human_approved": true,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0
+}

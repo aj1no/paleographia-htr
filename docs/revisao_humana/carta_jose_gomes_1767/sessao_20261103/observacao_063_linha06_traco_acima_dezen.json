@@ -1,0 +1,28 @@
+{
+  "tipo": "observacao_humana_localizada_de_traco_com_funcao_incerta",
+  "data_resposta": "2026-11-04",
+  "original_message": "Vejo um traço pequeno acima de Dezen, mas não consigo distinguir se é uma letra ou só uma marca de abreviação.",
+  "contexto_da_pergunta": "Na forma abreviada do mês, que você leu como algo parecido com Dezen, consegue distinguir alguma letra pequena ou marca acima ou logo depois do trecho?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/anotacao_superior_contexto_aberto.png",
+  "imagem_apresentada_sha256": "40a2d41805fba7e2802d2d5eb98c9b4a246c0c7c03e07b19d2edad1162522f91",
+  "leitura_humana": {
+    "forma_aproximada_do_mes": "Dezen",
+    "sinal_observado": "traço pequeno",
+    "posicao_do_sinal": "acima da forma aproximada Dezen",
+    "hipoteses_do_revisor": ["letra", "marca de abreviação"],
+    "classificacao_do_sinal": null,
+    "forma_literal_do_mes": null
+  },
+  "observacao_de_origem_da_leitura_do_mes": "observacao_061_linha06_dia_23_dezen_ano_pendente.json",
+  "contexto_editorial": "23 de dezembro de 1767",
+  "scope": "Registra a presença do traço acima da forma lida aproximadamente como Dezen. A natureza do traço e a representação diplomática do mês permanecem indeterminadas.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir se há letra ou sinal imediatamente antes de 23 no começo da sexta linha."
+}

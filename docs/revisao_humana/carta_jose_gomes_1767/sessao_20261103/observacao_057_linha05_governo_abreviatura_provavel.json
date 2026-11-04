@@ -1,0 +1,28 @@
+{
+  "tipo": "leitura_humana_localizada_com_abreviatura_provavel",
+  "data_resposta": "2026-11-04",
+  "original_message": "Leio “sujeitos ao Governo” no início da quinta linha, mas no manuscrito vejo um G maiúsculo e algo como “ov” seguido de um ponto. Parece abreviado.",
+  "contexto_da_pergunta": "Na quinta linha, a edição traz sujeitos ao Governo. Como você lê esse início no manuscrito? Quais letras distingue na forma que a edição apresenta como Governo?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/anotacao_superior_contexto_aberto.png",
+  "imagem_apresentada_sha256": "40a2d41805fba7e2802d2d5eb98c9b4a246c0c7c03e07b19d2edad1162522f91",
+  "leitura_humana": {
+    "leitura_de_trabalho": "sujeitos ao Governo",
+    "inicial_observada": "G",
+    "letras_seguintes_provaveis": "ov",
+    "ponto_informado": true,
+    "abreviatura": "provável",
+    "forma_literal_definitiva": null,
+    "letras_elevadas": null
+  },
+  "contexto_editorial": "sujeitos ao Governo de Minas Gerais. São Paulo",
+  "scope": "Registra o início da quinta linha e a descrição da forma correspondente a Governo. A leitura das letras após G e a representação diplomática da forma continuam pendentes.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir a grafia no manuscrito do trecho correspondente a de Minas Gerais na edição."
+}

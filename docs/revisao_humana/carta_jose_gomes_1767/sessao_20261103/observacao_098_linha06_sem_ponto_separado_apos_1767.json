@@ -1,0 +1,23 @@
+{
+  "tipo": "observacao_humana_localizada_de_fecho_da_data",
+  "data_resposta": "2026-11-04",
+  "original_message": "Não vejo um ponto separado depois de 1767, só o traço comprido abaixo da data, que parece um floreio. Pode registrar e seguir.",
+  "contexto_da_pergunta": "No recorte da sexta linha, você distingue um ponto logo após 1767, separado do traço comprido abaixo da data?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_5ae79db91a78f1a9aada",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_5ae79db91a78f1a9aada.png",
+  "imagem_apresentada_sha256": "62039aa7001c7bda8087fa432213a487ffc0dca6d563f7f13a1b5ff1ec97aa82",
+  "leitura_humana": {
+    "ponto_separado_apos_1767_observado": false,
+    "traco_comprido_abaixo_da_data_observado": true,
+    "interpretacao_do_traco": "possível floreio",
+    "classificacao_definitiva_do_traco": null
+  },
+  "observacoes_anteriores": [65, 96, 97],
+  "scope": "Registra que o revisor não distingue um ponto separado após o ano. O ponto da edição permanece no texto modernizado. O mês segue com forma literal pendente e dezembro na leitura de apoio.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir a correspondência da fotografia com a reprodução da edição e a identificação do fólio 4r."
+}

@@ -1,0 +1,8 @@
+{
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "bbox_xyxy": [43, 115, 802, 227],
+  "reading_order": 2,
+  "region_id": "nota_superior_linha03_candidata",
+  "scope": "Terceira linha da anotação superior, de se as ao hífen de Desco-. A faixa inclui margem à esquerda perto da dobra e espaço abaixo das hastes. Há traços das linhas vizinhas nas bordas. Cobertura e limites pendentes de conferência humana."
+}

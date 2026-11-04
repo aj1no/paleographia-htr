@@ -1,0 +1,22 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_cobertura_em_contorno_visual",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, entre as marcas vejo a segunda linha inteira.",
+  "contexto_da_pergunta": "Entre as duas marcas, você vê a segunda linha inteira? Alguma parte do es acima de soment ou das hastes de negligencias e do que final fica de fora?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_90945ed471090b684539",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/linha02_contorno_proposto_2x.png",
+  "imagem_apresentada_sha256": "df185332528c2955398b947281b47542debfe5e3f54bcfdd04c1036363709c22",
+  "recorte_retangular_de_base": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_90945ed471090b684539.png",
+  "recorte_retangular_de_base_sha256": "0d24c40fd890d81de8f39aa6dcf0283612187ddc5021d65ae84cee21b58e9ba8",
+  "confirmacoes": {
+    "linha_inteira_visivel_entre_as_marcas": true
+  },
+  "scope": "Confirma a cobertura da linha entre as marcas em ciano. A aceitação dos traços vizinhos e dos limites definitivos do recorte retangular segue pendente.",
+  "geometry_human_approved": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Decidir se os limites retangulares atuais podem ser adotados com os traços das linhas vizinhas nas bordas."
+}

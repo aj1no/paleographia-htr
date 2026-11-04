@@ -1,0 +1,22 @@
+{
+  "tipo": "confirmacao_humana_integral_de_transcricao_diplomatica",
+  "data_resposta": "2026-11-04",
+  "registrado_em": "2026-11-04T16:08:39.7425515Z",
+  "original_message": "Sim, confirmo: “se as não tivessem seriam Srsˢ dos Desco-”, com o hífen final e o ponto só na nota. Pode validar a terceira linha e seguir para a quarta.",
+  "contexto_da_pergunta": "Você confirma a transcrição diplomática completa da terceira linha, incluindo o hífen final? se as não tivessem seriam Srsˢ dos Desco-",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_5e33f0d507567e36dd02",
+  "recorte_aprovado": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_5e33f0d507567e36dd02.png",
+  "recorte_aprovado_sha256": "243963b72f2591d706d5e3fc923cbd88938f2d9147d594ac1359fd5c7e95f185",
+  "observacao_de_geometria": 73,
+  "observacoes_da_abreviatura": [83, 84, 85],
+  "text_diplomatic": "se as não tivessem seriam Srsˢ dos Desco-",
+  "nota_diplomatica": "Srs está na linha e há um s elevado, possivelmente uma correção. O ponto à direita fica apenas na nota. O hífen final pertence à linha.",
+  "contexto_editorial": "se as não tivessem seriam senhores dos Desco",
+  "scope": "Valida a transcrição diplomática integral da terceira linha. A correspondência documental, a cobertura de região e a partição científica continuam pendentes.",
+  "transcricao_formalmente_validada": true,
+  "novos_pares_validados": 1,
+  "continuidade": "Quarta linha: conferir o início junto à dobra correspondente a bertos na leitura de apoio."
+}

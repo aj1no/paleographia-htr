@@ -1,0 +1,28 @@
+{
+  "tipo": "confirmacao_humana_de_cobertura_e_aprovacao_de_geometria",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, vejo a data inteira e os dois traços. A parte da quinta linha na borda superior não atrapalha a leitura, pode manter esse recorte como definitivo para a sexta linha.",
+  "contexto_da_pergunta": "Você vê a data e os traços inteiros? Se a borda superior não atrapalhar a leitura, podemos manter este recorte como definitivo?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_5ae79db91a78f1a9aada",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_aprovada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_5ae79db91a78f1a9aada.png",
+  "imagem_aprovada_sha256": "62039aa7001c7bda8087fa432213a487ffc0dca6d563f7f13a1b5ff1ec97aa82",
+  "bbox_xyxy_no_original": [41, 271, 615, 417],
+  "confirmacoes": {
+    "linha_inteira_visivel": true,
+    "data_inteira_visivel": true,
+    "dois_tracos_visiveis": true,
+    "limites_retangulares_definitivos_aprovados": true,
+    "trecho_da_quinta_linha_na_borda_superior_aceito": true,
+    "trecho_da_quinta_linha_prejudica_a_leitura": false
+  },
+  "observacoes_dos_tracos": [64, 65],
+  "scope": "Confirma a cobertura da data e dos dois traços e aprova os limites da sexta linha com parte da quinta linha na borda superior. A função dos traços e a transcrição diplomática seguem pendentes.",
+  "geometry_human_approved": true,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0
+}

@@ -1,0 +1,27 @@
+{
+  "tipo": "observacao_humana_localizada_de_tracos_vizinhos_e_legibilidade",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, vejo alguns traços da segunda linha entrando pela borda inferior do recorte, porem não atrapalha em nada a leitura da linha",
+  "contexto_da_pergunta": "Comparando com a anotação completa, você identifica algum traço da segunda linha entrando pela borda inferior do recorte?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_14a4c7eba267e1e592e7",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_14a4c7eba267e1e592e7.png",
+  "imagem_apresentada_sha256": "44cfce738bc01e09f6585232e754c5100984628d932423cf7d98cb8bb3b137de",
+  "imagem_de_contexto": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/anotacao_superior_contexto_aberto.png",
+  "imagem_de_contexto_sha256": "40a2d41805fba7e2802d2d5eb98c9b4a246c0c7c03e07b19d2edad1162522f91",
+  "bbox_xyxy_no_original": [40, 8, 775, 107],
+  "confirmacoes": {
+    "tracos_da_segunda_linha_na_borda_inferior": true,
+    "tracos_prejudicam_a_leitura_da_primeira_linha": false
+  },
+  "observacao_de_cobertura": "observacao_066_linha01_cobertura_do_recorte_confirmada.json",
+  "scope": "Confirma a presença de traços vizinhos na borda inferior e a legibilidade da primeira linha. A decisão sobre os limites definitivos do recorte permanece pendente.",
+  "geometry_human_approved": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Decidir se os limites atuais podem ser adotados com os traços vizinhos registrados."
+}

@@ -1,0 +1,25 @@
+{
+  "tipo": "leitura_humana_localizada_com_pontuacao_e_abreviatura_provavel",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, vejo um ponto depois de Gerays. Depois leio “São Paulo”, mas o São parece abreviado.",
+  "contexto_da_pergunta": "A edição traz um ponto antes de São Paulo. Você vê esse ponto no manuscrito? Como lê as palavras que vêm depois dele?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/anotacao_superior_contexto_aberto.png",
+  "imagem_apresentada_sha256": "40a2d41805fba7e2802d2d5eb98c9b4a246c0c7c03e07b19d2edad1162522f91",
+  "leitura_humana": {
+    "ponto_apos_toponimo_lido_como_gerays": true,
+    "leitura_de_trabalho_apos_ponto": "São Paulo",
+    "abreviatura_de_sao": "provável",
+    "forma_literal_de_sao": null
+  },
+  "contexto_editorial": "sujeitos ao Governo de Minas Gerais. São Paulo",
+  "scope": "Confirma o ponto depois do topônimo e registra São Paulo como leitura de trabalho. A dúvida sobre o s final de Gerays permanece conforme a observação 058. A forma literal de São continua indeterminada.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir as letras e os sinais visíveis imediatamente antes de Paulo."
+}

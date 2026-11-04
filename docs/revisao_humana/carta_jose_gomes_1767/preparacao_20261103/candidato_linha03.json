@@ -1,0 +1,39 @@
+{
+  "line_id": "l_5e33f0d507567e36dd02",
+  "page_id": "p_c02_7b71d03c0d1bf8c7",
+  "document_id": "carta_jose_gomes_1767",
+  "folio_id": "4r",
+  "region_id": "anotacao_superior_esquerda_seis_linhas",
+  "reading_order": 2,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "crop_image": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_5e33f0d507567e36dd02.png",
+  "bbox_xyxy": [
+    43,
+    115,
+    802,
+    227
+  ],
+  "source_width": 1237,
+  "source_height": 1807,
+  "text_diplomatic": "se as não tivessem seriam Srsˢ dos Desco-",
+  "text_modernized": "se as não tivessem seriam senhores dos Desco",
+  "reference_source": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/modernized_edition_500a24d6a2ea8b93.pdf",
+  "reference_pages": [
+    3
+  ],
+  "reference_kind": "human_diplomatic",
+  "review_status": "validated",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "reviewed_at": "2026-11-04T16:08:39.7425515Z",
+  "text_review_observation": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/observacao_086_linha03_transcricao_diplomatica_validada.json",
+  "geometry_status": "validated",
+  "geometry_review_observation": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/observacao_073_linha03_recorte_definitivo_aprovado.json",
+  "split": null,
+  "split_group": "carta_jose_gomes_1767",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "transform_id": "25d97e3ffd39afcc1e3a88ed401238c5748e4a5919791617916627fc9dc659e0",
+  "exclusion_reason": null,
+  "derived_from": null,
+  "segmentation_method": "manual_candidate_not_human_approved",
+  "crop_sha256": "243963b72f2591d706d5e3fc923cbd88938f2d9147d594ac1359fd5c7e95f185"
+}

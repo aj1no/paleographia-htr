@@ -1,0 +1,24 @@
+{
+  "tipo": "leitura_humana_localizada_com_abreviacao_e_diacritico_incertos",
+  "data_resposta": "2026-11-04",
+  "original_message": "Leio “que estão” no final da quarta linha, mas não consigo distinguir bem se o que está abreviado nem se tem um til sobre o a.",
+  "contexto_da_pergunta": "A edição termina a quarta linha com que estão. Quais letras e sinais você distingue nesse trecho do manuscrito?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha04_contexto_amplo_2x.png",
+  "imagem_apresentada_sha256": "6ed53b9494a6974badaee08e69c5dedd21f736393b7017ba74d5a72b36376a89",
+  "leitura_humana": {
+    "leitura_de_trabalho": "que estão",
+    "que_abreviado": null,
+    "til_sobre_a_em_estao": null
+  },
+  "contexto_editorial": "bertos do Campo verde, e de outros muitos que estão",
+  "scope": "Leitura interpretativa do final da quarta linha. A forma literal de que e a presença de til sobre a em estão permanecem indeterminadas.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Quinta linha: conferir o início correspondente a sujeitos ao Governo na edição."
+}

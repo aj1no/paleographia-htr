@@ -1,0 +1,23 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_grafia",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, confirmo o y e o s final. Leio “Gerays”. Pode registrar e seguir.",
+  "contexto_da_pergunta": "No recorte da quinta linha, você consegue confirmar o y e o s final de Gerays?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_119f8864ca552d4d0f7d",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_119f8864ca552d4d0f7d.png",
+  "imagem_apresentada_sha256": "edad9c5933f9621b0c407f30710de941ff7b92e540c7780c49f0ccfc4414b431",
+  "confirmacoes": {
+    "forma_diplomatica_do_segmento": "Gerays",
+    "y_confirmado": true,
+    "s_final_confirmado": true
+  },
+  "contexto_editorial_do_segmento": "Gerais",
+  "observacoes_anteriores": [58, 59, 76, 92],
+  "scope": "Confirma Gerays e resolve as dúvidas anteriores sobre y e s final. O ponto após o topônimo foi confirmado na observação 059. A transcrição integral da quinta linha segue pendente.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir como representar S e o pequeno acima na forma antes de Paulo."
+}

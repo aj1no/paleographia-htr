@@ -1,0 +1,24 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_ligacao_grafica",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, confirmo o S, ele esta ligado ao P de Paulo, acredito que foi uma forma utilizado pelo próprio escriba ",
+  "contexto_da_pergunta": "Você confirma Sᵒ como forma diplomática ou distingue também um a ou outro sinal?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_119f8864ca552d4d0f7d",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_119f8864ca552d4d0f7d.png",
+  "imagem_apresentada_sha256": "edad9c5933f9621b0c407f30710de941ff7b92e540c7780c49f0ccfc4414b431",
+  "leitura_humana": {
+    "letra_confirmada": "S",
+    "ligacao_visual_ao_p_de_paulo": true,
+    "interpretacao_do_revisor": "possível maneira de escrever do próprio escriba",
+    "o_elevado_reconfirmado_nesta_resposta": null,
+    "representacao_diplomatica_do_segmento": null
+  },
+  "observacoes_anteriores": [59, 60, 93],
+  "scope": "Confirma o S e a ligação gráfica ao P de Paulo. Preserva a observação anterior de o elevado e deixa a representação diplomática do trecho em aberto.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Esclarecer se a forma diplomática será Sᵒ Paulo, mantendo a ligação gráfica em nota."
+}

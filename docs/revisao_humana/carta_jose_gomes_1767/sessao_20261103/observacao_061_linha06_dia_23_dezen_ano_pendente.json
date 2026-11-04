@@ -1,0 +1,30 @@
+{
+  "tipo": "leitura_humana_localizada_de_data_com_ano_pendente",
+  "data_resposta": "2026-11-04",
+  "original_message": "Leio dia 23, provavelmente de Dezembro 1967, porem o Dezembro esta abreviado, ja que leio algo com Dezen",
+  "contexto_da_pergunta": "Na sexta linha, você lê 23 como o dia? Consegue distinguir alguma letra ou sinal imediatamente antes do número?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/anotacao_superior_contexto_aberto.png",
+  "imagem_apresentada_sha256": "40a2d41805fba7e2802d2d5eb98c9b4a246c0c7c03e07b19d2edad1162522f91",
+  "leitura_humana": {
+    "dia_confirmado": "23",
+    "mes_provavel": "Dezembro",
+    "mes_descrito_como_abreviado": true,
+    "forma_aproximada_do_mes": "Dezen",
+    "forma_literal_do_mes": null,
+    "ano_mencionado": "1967",
+    "ano_confirmado": null,
+    "forma_antes_do_dia": null
+  },
+  "contexto_editorial": "23 de dezembro de 1767",
+  "fonte_do_contexto_editorial": "data/manifests/corpus_expandido_v02/editorial/500a24d6a2ea8b93/p003.txt",
+  "scope": "Confirma 23 e preserva a leitura aproximada da forma do mês. O ano mencionado diverge do ano da edição e precisa de conferência no manuscrito. A forma antes de 23 segue indeterminada.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir os algarismos do ano na sexta linha, em especial o segundo."
+}

@@ -1,0 +1,23 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_representacao_diplomatica",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, pode registrar como somentᵉˢ, com o es elevado. A forma depois de tem fica pendente e dinheiro só na leitura de apoio.",
+  "contexto_da_pergunta": "Podemos registrar essa disposição como somentᵉˢ na transcrição diplomática?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_90945ed471090b684539",
+  "observacao_da_disposicao_das_letras": 48,
+  "observacao_da_forma_apos_tem": 80,
+  "confirmacoes": {
+    "forma_diplomatica_do_segmento": "somentᵉˢ",
+    "texto_na_linha": "soment",
+    "texto_elevado": "es",
+    "forma_diplomatica_apos_tem": null,
+    "leitura_apenas_de_apoio_apos_tem": "dinheiro"
+  },
+  "scope": "Aprova somentᵉˢ como representação do segmento. A forma depois de tem e a transcrição diplomática integral seguem pendentes.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir a forma literal da palavra após a vírgula no fim da segunda linha."
+}

@@ -1,0 +1,24 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_representacao_diplomatica",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, vejo Gov. com as três letras na linha e o ponto à direita. Não vejo nenhuma letra elevada. Pode registrar e seguir.",
+  "contexto_da_pergunta": "Você confirma a forma Gov., com as três letras na linha e o ponto, ou vê alguma letra elevada ou outro sinal?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_119f8864ca552d4d0f7d",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_119f8864ca552d4d0f7d.png",
+  "imagem_apresentada_sha256": "edad9c5933f9621b0c407f30710de941ff7b92e540c7780c49f0ccfc4414b431",
+  "confirmacoes": {
+    "forma_diplomatica_do_segmento": "Gov.",
+    "letras_na_linha": "Gov",
+    "ponto_a_direita": true,
+    "letras_elevadas_observadas": false
+  },
+  "contexto_editorial_do_segmento": "Governo",
+  "observacoes_anteriores": [57, 76],
+  "scope": "Confirma a forma Gov. com ponto à direita. Governo permanece como desenvolvimento editorial. A transcrição integral da quinta linha segue pendente.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir o y e o s final na forma lida como Gerays."
+}

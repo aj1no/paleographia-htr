@@ -1,0 +1,25 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_cobertura_do_recorte",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, vejo a terceira linha inteira, incluindo o se junto à dobra e o hífen depois de Desco.",
+  "contexto_da_pergunta": "Você vê a linha inteira, incluindo o se junto à dobra e o hífen depois de Desco?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_5e33f0d507567e36dd02",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_5e33f0d507567e36dd02.png",
+  "imagem_apresentada_sha256": "243963b72f2591d706d5e3fc923cbd88938f2d9147d594ac1359fd5c7e95f185",
+  "bbox_xyxy_no_original": [43, 115, 802, 227],
+  "confirmacoes": {
+    "linha_inteira_visivel": true,
+    "se_junto_a_dobra_visivel": true,
+    "hifen_apos_desco_visivel": true
+  },
+  "scope": "Confirma a cobertura da terceira linha, inclusive o início junto à dobra e o hífen final. A aceitação dos traços vizinhos e a aprovação dos limites definitivos ainda estão pendentes.",
+  "geometry_human_approved": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir se os traços vizinhos nas bordas permitem adotar o recorte atual como definitivo."
+}

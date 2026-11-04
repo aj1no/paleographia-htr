@@ -1,0 +1,23 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_ponto_visivel",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, vejo um ponto logo depois da abreviatura do mês, antes do segundo “de”. Pode registrar e seguir, mantendo “dezembro” na leitura de apoio.",
+  "contexto_da_pergunta": "No recorte da sexta linha, você vê um ponto logo depois da abreviatura do mês, antes do segundo de?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_5ae79db91a78f1a9aada",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_5ae79db91a78f1a9aada.png",
+  "imagem_apresentada_sha256": "62039aa7001c7bda8087fa432213a487ffc0dca6d563f7f13a1b5ff1ec97aa82",
+  "confirmacoes": {
+    "ponto_logo_apos_abreviatura_do_mes": true,
+    "posicao_do_ponto": "antes do segundo de",
+    "leitura_apenas_de_apoio_do_mes": "dezembro",
+    "forma_literal_do_mes": null
+  },
+  "observacoes_anteriores": [63, 65, 95, 96],
+  "scope": "Confirma a presença e a posição do ponto junto à abreviatura do mês. A forma literal do mês e a pontuação imediatamente após 1767 seguem pendentes.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Distinguir se existe um ponto ao fim de 1767, separado do traço comprido abaixo da data."
+}

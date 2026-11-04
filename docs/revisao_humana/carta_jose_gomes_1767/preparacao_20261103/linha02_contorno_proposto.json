@@ -1,0 +1,22 @@
+{
+  "line_id": "l_90945ed471090b684539",
+  "recorte_de_base": "l_90945ed471090b684539.png",
+  "recorte_de_base_sha256": "0d24c40fd890d81de8f39aa6dcf0283612187ddc5021d65ae84cee21b58e9ba8",
+  "visualizacao": "linha02_contorno_proposto_2x.png",
+  "visualizacao_sha256": "df185332528c2955398b947281b47542debfe5e3f54bcfdd04c1036363709c22",
+  "borda_superior_xy_no_original": [
+    [43, 67], [100, 71], [150, 76], [186, 72], [213, 67], [235, 75], [278, 80],
+    [315, 78], [348, 74], [377, 76], [402, 76], [422, 85], [462, 97], [502, 89],
+    [542, 92], [570, 99], [601, 103], [628, 96], [657, 98], [683, 92], [764, 91]
+  ],
+  "borda_inferior_xy_no_original": [
+    [43, 143], [95, 140], [135, 137], [174, 137], [210, 139], [230, 156], [252, 161],
+    [275, 150], [306, 145], [350, 147], [405, 145], [432, 157], [444, 170], [476, 171],
+    [516, 172], [556, 172], [587, 169], [609, 172], [639, 172], [670, 157], [707, 148], [764, 149]
+  ],
+  "visualizacao_metodo": "Ampliação de 2 vezes por repetição de pixels, com bordas ciano sobrepostas. Não houve rotação, correção de perspectiva ou aplicação de máscara ao recorte de base.",
+  "finalidade": "Conferir visualmente um contorno que acompanha a linha e pode reduzir traços vizinhos. O editor atual registra caixas retangulares.",
+  "cobertura_integral_confirmada": true,
+  "observacao_de_cobertura": "../sessao_20261103/observacao_070_linha02_cobertura_entre_marcas_confirmada.json",
+  "geometry_human_approved": false
+}

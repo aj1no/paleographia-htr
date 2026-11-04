@@ -1,0 +1,22 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_inicio_de_linha",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, confirmo a leitura “bertos do” no início da quarta linha, como continuação de “Desco-”. Pode registrar e seguir.",
+  "contexto_da_pergunta": "Você consegue confirmar a leitura bertos do no início da linha?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_99b58f3e657c7885a0de",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_99b58f3e657c7885a0de.png",
+  "imagem_apresentada_sha256": "99a1b84e23edb915aa9e1e0f2549011e7c023631c10bc388f878379f02085c7d",
+  "confirmacoes": {
+    "inicio_da_quarta_linha": "bertos do",
+    "continua_o_final_da_terceira_linha": "Desco-",
+    "manter_quebra_fisica": true
+  },
+  "observacoes_anteriores": [52, 75, 86],
+  "scope": "Confirma bertos do no início da quarta linha como continuação de Desco-. Mantém as duas linhas físicas separadas. A transcrição integral da quarta linha segue pendente.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir como representar itos acima de mu na transcrição diplomática."
+}
