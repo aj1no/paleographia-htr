@@ -1,6 +1,6 @@
 # Continuidade após a primeira entrega
 
-**Pausa em 03/11/2026:** consulte o [ponto exato de retomada](RETOMADA.md) e o [salvamento do editor](salvamento_20261103/README.md). A carta de 1767 avançou até a terceira linha; a próxima conferência é a quarta linha.
+**Atualização de 04/11/2026.** Consulte o [notebook executado da carta de 1767](avaliacao_linhas_1767/PaleographIA_Notebook_2_Carta_1767.ipynb), o [ponto de retomada atualizado](RETOMADA_20261104.md) e o [salvamento do editor](salvamento_20261103/README.md).
 
 Retomada em **03/11/2026**. O solicitante identifica o Notebook 1 como sua primeira entrega e pede continuidade do desenvolvimento. Esse nome não foi convertido na numeração oficial de PI IV: a entrega 1 dos slides de PI IV é uma apresentação pessoal.
 
@@ -59,3 +59,5 @@ O seletor de treinamento científico continua recusando o protocolo antes de Doc
 Na carta de José Gomes de Gouveia de 1767, foram confirmados o fólio **4r** e a cobertura parcial de seis linhas da anotação superior à esquerda. Os seis recortes têm geometria aprovada. As linhas **1, 3 e 4** passaram na validação de referência para avaliação por linha, e as linhas **2, 5 e 6** seguem com texto diplomático pendente. A referência da região está incompleta, e as partições científicas continuam pendentes. [Curadoria da carta de 1767](../../revisao_humana/carta_jose_gomes_1767/preparacao_20261103/README.md).
 
 Na avaliação exploratória dessas três linhas, o PP-OCRv5 teve CER de **79,69%** e WER de **100,00%**, e o PP-OCRv6 teve CER de **25,78%** e WER de **65,38%**. O pacote registra as exclusões, as entradas congeladas, as previsões brutas, as métricas por linha e os comandos para reprodução. [Avaliação por linha de 1767](avaliacao_linhas_1767/README.md).
+
+A proposta para o ajuste fino separa 19 referências candidatas a treino e sete a validação. Os contratos de 1763 ficam em desenvolvimento exploratório e o grupo de teste independente ainda precisa ser selecionado. O plano registra a situação de cada documento e a pré-verificação do alfabeto do PP-OCRv6. [Divisão candidata e próximos documentos a validar](particoes_ppocrv6_20261104/README.md).

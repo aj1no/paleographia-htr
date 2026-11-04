@@ -1,0 +1,27 @@
+{
+  "tipo": "observacao_humana_de_cobertura_e_legibilidade_do_piloto",
+  "data_resposta": "2026-11-04",
+  "original_message": "os recortes estão certinhos, mesmo que pela distorção da pagina e possivel sim ler a linha inteira",
+  "contexto_da_pergunta": "Na linha A, você consegue acompanhar a escrita do início ao fim?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "document_id": "contrato_livro13_1763",
+  "pdf_page": 5,
+  "page_id": "p_c02_bad76602e2443507",
+  "line_id": "l_dde7529e3b232e190cc3",
+  "pilot_label": "A",
+  "recorte_apresentado": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/l_dde7529e3b232e190cc3.png",
+  "recorte_apresentado_sha256": "300dec554861e4a48f619a3e78aeca35eeb97fe0eaf815610f8345545b8a9cc2",
+  "comparacao_apresentada": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/piloto_quatro_linhas.png",
+  "comparacao_apresentada_sha256": "c7004dfb0d815bdab30535dd8af6542ec129e8dfea53a447e95156bb1bf8bf05",
+  "leitura_humana": {
+    "recortes_considerados_adequados": true,
+    "linha_a_pode_ser_lida_inteira": true,
+    "distorcao_da_pagina_observada": true
+  },
+  "scope": "Registra a avaliação favorável dos recortes e a legibilidade integral informada no contexto da linha A. A leitura literal, a validação geométrica definitiva e a identificação de fólio e face seguem em aberto.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Solicitar a leitura diplomática da linha A pelo revisor, preservando dúvidas em nota."
+}

@@ -1,0 +1,651 @@
+{
+  "mode": "technical_pretraining",
+  "test_used": false,
+  "transcribed_labels": 0,
+  "source_manifests": {
+    "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl": "50d51776cd1f65a89a514be45d2e7f28c6918f3a7e9b3e3e7eb0833678d65b90",
+    "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl": "fe5addb4028dbe069ee4ff59ae348bb233b7602dab3498ef9004cc7bce083cf1",
+    "docs/revisao_humana/contrato_livro13_1763/preparacao_20261104/piloto_pagina_05.json": "1ffe2d01426de9ab8fdc42cfb33f8b9f7fbaeb3a52e58219a0703deb5355f42c"
+  },
+  "records": [
+    {
+      "role": "train",
+      "line_id": "l_b4240a7a536eb0487a33",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_b4240a7a536eb0487a33.png",
+      "source_sha256": "330f1ff0a826089cf6cb0aee2a97f06a61eb59cd8f088fabd88d4c5b423b4f0f",
+      "input_sha256": "5f9c2a24d24555117ca31e7b50018718b176e2efa75eb0dfd282bb0b1091d20c"
+    },
+    {
+      "role": "train",
+      "line_id": "l_8fc8b1b7c29d7ee5a3c2",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_8fc8b1b7c29d7ee5a3c2.png",
+      "source_sha256": "64dba892f2cfd5b92f38e4d4953ac40be77515ba427d85b861c7c155b8509a98",
+      "input_sha256": "834fe2391d218d737ea099e6085ee4294cde1721831e24d4853f96e3a8a8a6b1"
+    },
+    {
+      "role": "train",
+      "line_id": "l_66e0b857d4acd83c01f4",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_66e0b857d4acd83c01f4.png",
+      "source_sha256": "b44cfd2d0e094e9f53411c8b91654de8dfa8d08935158ec5c0bac9d2c9c47cfd",
+      "input_sha256": "8055553549ad8d196b1a08fbf2d2484986657d301d2b8d6a5ce731c28857ffac"
+    },
+    {
+      "role": "train",
+      "line_id": "l_ea27ee28942b08508f17",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_ea27ee28942b08508f17.png",
+      "source_sha256": "51bcff71cdafadea70ebf704f4db4efa48c7358e55257dd24b60237d93f4fd52",
+      "input_sha256": "cf27675d3597784cd59581908ebf7eb9b7d4341ba1100479ae1f7095f374f0c3"
+    },
+    {
+      "role": "train",
+      "line_id": "l_2dcae2d3e73d9a529ce8",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_2dcae2d3e73d9a529ce8.png",
+      "source_sha256": "7a4b466f4bc57f8a1c69ab8cc22adbacd089534c7b18448d3d0b117e75a6900b",
+      "input_sha256": "12599db25e988f6c43fed934ee0c2ad454f1e9df8b0384b729e9d22ca7f4b6b5"
+    },
+    {
+      "role": "train",
+      "line_id": "l_85f2fe8819e2ee5320b4",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_85f2fe8819e2ee5320b4.png",
+      "source_sha256": "7c9018e521776968283d04819bf8ec691e862e36d7a85fa41fae2b38d50eac2c",
+      "input_sha256": "9d80cc91d7393059834be931b19d76b601c9d183292510a60ccb3c135ddde775"
+    },
+    {
+      "role": "train",
+      "line_id": "l_feb81ca1866f435a102d",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_feb81ca1866f435a102d.png",
+      "source_sha256": "71edecf00b6521e1f5d7036a9581cdc724146051e45422fc53751235876af370",
+      "input_sha256": "037b402b006e5c4fd72ebffae7e19d9adbf8f20e4147954746674e14e082ae17"
+    },
+    {
+      "role": "train",
+      "line_id": "l_13558073cd7266bbef41",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_13558073cd7266bbef41.png",
+      "source_sha256": "eba9b162f57ecbe8a4c712d1f8da25247d2d56a84ce0af5eaba82eb2fdba77fc",
+      "input_sha256": "be95c67d28194056e882401598181bd2d4539370416d3740f8b6e2d5408fbe98"
+    },
+    {
+      "role": "train",
+      "line_id": "l_b41b3213cc94d5b6800a",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_b41b3213cc94d5b6800a.png",
+      "source_sha256": "c38f9216d9ac0fc0c88add509c2f3fc90679a2f178ce6ff9f8204c9f6544c533",
+      "input_sha256": "609c9dae94f76ae41687b4ffc78119b509abf837032d7e8ec00512639b42fe27"
+    },
+    {
+      "role": "train",
+      "line_id": "l_1770be64b6defa64b7f3",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_1770be64b6defa64b7f3.png",
+      "source_sha256": "5758d54b8c063d6e0470dbb54f0ce0b3cc0d3d73f33e2c3ffae58a6826cc446f",
+      "input_sha256": "aa92ecf470bd8a8cd6f64ebd542ea3014e501b9a90b142bdaadf7b31506ce11f"
+    },
+    {
+      "role": "train",
+      "line_id": "l_4e820638127e2b576cd2",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_4e820638127e2b576cd2.png",
+      "source_sha256": "10e5c2af64ea0d43dd9983fc74784439c31e82a61a2cc28ec43b24c1d68edcb4",
+      "input_sha256": "16466f97cf0470aeaba48129a64640cccc90714995abf65061942fdee9bfa249"
+    },
+    {
+      "role": "train",
+      "line_id": "l_5d6ccdc0cc99c3ecbdc1",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_5d6ccdc0cc99c3ecbdc1.png",
+      "source_sha256": "9daee5a1c2afcc8a0f70aab2ac662730f117f6e414b42b721922de8b83cdf52c",
+      "input_sha256": "27c3d65bb15114d594e11ccc7583a84192ebb9ae3710417c10f77fcc087d2434"
+    },
+    {
+      "role": "train",
+      "line_id": "l_7e759a99b6a85f9f582d",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_7e759a99b6a85f9f582d.png",
+      "source_sha256": "54eccdeed22d3a911246abd4ce841f61fd775e49db1dcdb66a2084a22609ec33",
+      "input_sha256": "76c3f48a937fb31b45c8b07cb59fdb14efea15010857da291ed264a57ec16fc3"
+    },
+    {
+      "role": "train",
+      "line_id": "l_3c7e4f25071cb35eae77",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_3c7e4f25071cb35eae77.png",
+      "source_sha256": "236d0b9be97a3d3086b1825569ba60edc06137819860048ff7b1d6eafcbcf2b7",
+      "input_sha256": "7638e8bc962f8072fbde10857209c6d9a60264058959a0ee19ce5f43ce26589a"
+    },
+    {
+      "role": "train",
+      "line_id": "l_63d2c392cb772edae0ad",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_63d2c392cb772edae0ad.png",
+      "source_sha256": "1e380582dbb506333705d9e475a41c8b9c5d3899e0fcc1b86662443393695e40",
+      "input_sha256": "66a0c5bcc77763cc3251474a3a9457d209d8f9dc59d59a45d573962699cd6ce6"
+    },
+    {
+      "role": "train",
+      "line_id": "l_f2a8ea36ca0d83115c88",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_f2a8ea36ca0d83115c88.png",
+      "source_sha256": "26b6a8b35bfb5fc992ce3753609398980e61525b4863b417067f17a57e0f3398",
+      "input_sha256": "6765d256d2f28f84e1ae155d2f354d94f775f2baaf09679d9aead0e4d1657433"
+    },
+    {
+      "role": "train",
+      "line_id": "l_497642a4bb8623295652",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_497642a4bb8623295652.png",
+      "source_sha256": "53f9dbf3b156a21800dce905411185c25119db82c4138a35c574af739c539ae8",
+      "input_sha256": "382165f4f4ae8b3638402fb37bbd253a743c0a39b544677a0fa7e8b7d49a4e77"
+    },
+    {
+      "role": "train",
+      "line_id": "l_ca3c181bcfdc1487e6e1",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_ca3c181bcfdc1487e6e1.png",
+      "source_sha256": "23ff096154228639874cf2814af17520008d0bde4dc8985cfaebe3f07de693df",
+      "input_sha256": "b9c3d9e6a259c72405a25314c490cad8e4feac7e88b49ab210861dfd97bfe421"
+    },
+    {
+      "role": "train",
+      "line_id": "l_fff0fc4da63c9dc32b41",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_fff0fc4da63c9dc32b41.png",
+      "source_sha256": "321db29ce3cf106337dcad1b662240ffc48e552f4d2d8c93141c8b9232d9601a",
+      "input_sha256": "d2241eac63f91b5167b68bac1764c8f348f7cd4d6fb0f8f8c64fa9a5d4f9644b"
+    },
+    {
+      "role": "train",
+      "line_id": "l_9e6cf1cee0ffe230f355",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_9e6cf1cee0ffe230f355.png",
+      "source_sha256": "13c11cd21f0835a4cb751188559b46b1e939ac0010616cf873f3778629f53bb5",
+      "input_sha256": "97d1ebb0c6b559d72ac6e46f258f34b46d669de863fc650d2a27f476fb54cff2"
+    },
+    {
+      "role": "train",
+      "line_id": "l_e75978eacb9a69ac2d03",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_e75978eacb9a69ac2d03.png",
+      "source_sha256": "49a7aa648d20825e4c3fcfd08c36555d967beb5b20ea4ab0aabf9b406f566a95",
+      "input_sha256": "d745c5e821b857d63af0e69bc17de6b085dec64b8d5697ed6bd7a4c59ad1e0bd"
+    },
+    {
+      "role": "train",
+      "line_id": "l_8a19fb46ba8e48a95c19",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_8a19fb46ba8e48a95c19.png",
+      "source_sha256": "f19fbc4eae3c774e0f60b193fa8e63d2e52f0c1d84fb8318a85bd600221827a9",
+      "input_sha256": "880b488cf1cc92a3402595d109a2b99ba319bd4b1b957fc49a31f987fdbab6cf"
+    },
+    {
+      "role": "train",
+      "line_id": "l_85262acce56f2c323499",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_85262acce56f2c323499.png",
+      "source_sha256": "f8ae59b62df6a2acd5dbb69f02bc341b58839c95a141efb1b40856d9b0232691",
+      "input_sha256": "93bafdfed6d60ecf54e9b0dbdf86f2b54f66364e99ccc9f60e5323958b3e7911"
+    },
+    {
+      "role": "train",
+      "line_id": "l_580f056191cc66caeac2",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_580f056191cc66caeac2.png",
+      "source_sha256": "3584c8655b84a21ceb449d98eb72050af1175507a8e4f5473e4125624c8872f9",
+      "input_sha256": "13993700852dae9d6858169f7d331dc425b260ee865dd42ab7c8a0b7e242529f"
+    },
+    {
+      "role": "train",
+      "line_id": "l_59a14c5d9ff09cc9b61f",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_59a14c5d9ff09cc9b61f.png",
+      "source_sha256": "f9353d85baaf36a53cec0cfc51e277029d992250dd439a23b339186621cbfdd7",
+      "input_sha256": "97d6ea0e0a4cc3cdd60c0a30a817e03421906613da2113783e6db1f2e3b97e7e"
+    },
+    {
+      "role": "train",
+      "line_id": "l_ccfbb91e9b9fa5fa90d5",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_ccfbb91e9b9fa5fa90d5.png",
+      "source_sha256": "426f73931e7897b2f4633368f9701c7274dab58e2700ad36056ff1cceeeab77e",
+      "input_sha256": "1d356ddd1c361c194bc22e6e0629da1f24c7411d8fe7bf54c50eea9211e93550"
+    },
+    {
+      "role": "train",
+      "line_id": "l_447e42c644ac0ae9e9d4",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_447e42c644ac0ae9e9d4.png",
+      "source_sha256": "c8c79d01087f81f4dc76c56a08fb1422188f56d4a8cbc8e8e1b9ef7207d65ebe",
+      "input_sha256": "28ae402d6c9cddd9f061f931f84a2b0467035a152e14e7a9f0f7f791c8360f81"
+    },
+    {
+      "role": "train",
+      "line_id": "l_7ccaa218593fb4fafb54",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_7ccaa218593fb4fafb54.png",
+      "source_sha256": "5a7792c0e8739cb7924ebdad8fb286c99a3c01e7ea8b249e2e577fb32f32f7e5",
+      "input_sha256": "8c751b7ffe72af23a3abcb5334232a157801169e0ce422e95b1d791c2b8a376d"
+    },
+    {
+      "role": "train",
+      "line_id": "l_2e8ab6ed4aa2a1033ec9",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_2e8ab6ed4aa2a1033ec9.png",
+      "source_sha256": "a9163a38d01c83df5a177608c30457de156aba5a175af95a9a441670518195f8",
+      "input_sha256": "c5ace29e4a948c22eaff8ecdb4d64d61d25e1a2a362d64a1627aa83ab44f4403"
+    },
+    {
+      "role": "train",
+      "line_id": "l_4d86748b8e77d276e49b",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_4d86748b8e77d276e49b.png",
+      "source_sha256": "87691420e24b05c2aeb8f491797e71c342b6796b0cb2906e1e4515b308788ac0",
+      "input_sha256": "4fd5c5a0e917c578e17982e6a230d13108d697dde920c74d0bf511f8b87686ec"
+    },
+    {
+      "role": "train",
+      "line_id": "l_1f897c9239eb538eae1a",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_1f897c9239eb538eae1a.png",
+      "source_sha256": "437e8731e77dd5744ffe12adc9c87b6c5020d2dbf404e7ca4a72ddcdcaba22e0",
+      "input_sha256": "1a78b4087a1f88a34b2a742346ed680a12cac3feab83566544aa883e9d03ebbb"
+    },
+    {
+      "role": "train",
+      "line_id": "l_d8f78d5a1c5f58902314",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_d8f78d5a1c5f58902314.png",
+      "source_sha256": "3ee9a1c159cf55e7a2dd9bb0dd135b4322d438b475a11cc7c25870e08846aa6b",
+      "input_sha256": "96c1adc0e643723866feb0ffaa47773500635bda23b495d404e2f9eeacd44e7b"
+    },
+    {
+      "role": "train",
+      "line_id": "l_68b196e01322b0a0d24a",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269r_integral_edicao_20261022/segmentacao/l_68b196e01322b0a0d24a.png",
+      "source_sha256": "3c8940ec928d8f03b334bb779568063934e0856513faab1953f3634d26ddac56",
+      "input_sha256": "09ed03ceac5c21328f47690559f62304a9b70531762e419f3bb82a8d6c33e44a"
+    },
+    {
+      "role": "train",
+      "line_id": "l_92dc3719722246d9f175",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_92dc3719722246d9f175.png",
+      "source_sha256": "2ba6c8beb1742ad9144f2d274d59ad431d40702691089ab4e706f17d87eaa5f3",
+      "input_sha256": "bc44d7d304096618f89864a831215276b5cc3e6f625b1374bf9907245191d41b"
+    },
+    {
+      "role": "train",
+      "line_id": "l_88ea238378f39875ae40",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_88ea238378f39875ae40.png",
+      "source_sha256": "d4df8d556fa7526cdd61028c16f71c29d3bd5e6929c095dd9ff9ffb17ff1cc98",
+      "input_sha256": "aaa7930b504c59680d3e44c2c4ce3c9da5dd28db603d49a62aeccae999b78227"
+    },
+    {
+      "role": "train",
+      "line_id": "l_cf434372e13b67fa1a68",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_cf434372e13b67fa1a68.png",
+      "source_sha256": "be0d413b1fa4828d96bc8c552a0a5fef4cbd4bcb50cd0ebebef2afebf945bdf4",
+      "input_sha256": "dec219c7df4f26cea08e8f5cc76b7bfa569a3a8394219e87ed2fa058b099e695"
+    },
+    {
+      "role": "train",
+      "line_id": "l_abac58b3bc0939aad970",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_abac58b3bc0939aad970.png",
+      "source_sha256": "9423a1a1062f2bf578ef642c2b851c3788940cc1b5de321f4d6b96bb15f4e3fc",
+      "input_sha256": "ef91ed3b6ebe6432f620c827d383d03910342d8cb528c676212e5bc6a1b7242f"
+    },
+    {
+      "role": "train",
+      "line_id": "l_098bcb7fc8d2ed24d82e",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_098bcb7fc8d2ed24d82e.png",
+      "source_sha256": "985df04c146e590710e9bf795726a46bd2445037ecf61679535de26eec53e9a4",
+      "input_sha256": "712b7c9964604302deedbe358987649c218d2bb0f3c41f08a424d0ee5bab9b15"
+    },
+    {
+      "role": "train",
+      "line_id": "l_6fba5ad50de45057c178",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_6fba5ad50de45057c178.png",
+      "source_sha256": "66e972f827f0c695f6a1481d09eaa121f8b3619cf26b03a96c3bbfd9242ac2ee",
+      "input_sha256": "047f5bafb6d05f1257b77f0bdd333c787a93da22a137b9cdfc2898de93f7e56f"
+    },
+    {
+      "role": "train",
+      "line_id": "l_928163f3617a33ddd3bb",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_928163f3617a33ddd3bb.png",
+      "source_sha256": "f76805dffdbe91cc8f1ee71e177efb61075e051a97a76dd00254292a4116b057",
+      "input_sha256": "2a1aafd0226cf791a3da44c601fa2983655c458c2e0988caa61bbf93a75a8ab3"
+    },
+    {
+      "role": "train",
+      "line_id": "l_b36859204245539c2d99",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_b36859204245539c2d99.png",
+      "source_sha256": "42347cc29496b336faa869028d4afac41e03a2a84444a047597c4dfad392b3c0",
+      "input_sha256": "bd6221ae38b76fff6fdd6109693efd8091d77c9ffe569363c273f93acc8cc119"
+    },
+    {
+      "role": "train",
+      "line_id": "l_caa87ce34716d7dfab0b",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_caa87ce34716d7dfab0b.png",
+      "source_sha256": "670879e1c2a9e135144ae6631c9e4451b2d7f3ac7d672c884e76d667f203cb49",
+      "input_sha256": "0b6f29ed48f59f141dfcc277647bf85c58fa91d03c788159e0fc57d0542ed806"
+    },
+    {
+      "role": "train",
+      "line_id": "l_3a562fe81edbbdfba0f6",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_3a562fe81edbbdfba0f6.png",
+      "source_sha256": "bfee8f4688fe30bd8c31e107b7f9c1bedd1b0b143d3137745a4f736ca19c310a",
+      "input_sha256": "faebce46d4414388986f659c40cefafcfd395a3436e413ccba32db9605698da9"
+    },
+    {
+      "role": "train",
+      "line_id": "l_e237954ab2eda85689dd",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_e237954ab2eda85689dd.png",
+      "source_sha256": "2137cab8be60f29c215a86bdc7752895a43b7e4698abda97509bc0d346799698",
+      "input_sha256": "8df30cf3ca992ff961ad313943f48cf3f3fca67581d3ab6ec2b010332e354637"
+    },
+    {
+      "role": "train",
+      "line_id": "l_fcb8cee9916464920a00",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_fcb8cee9916464920a00.png",
+      "source_sha256": "ad6a6b7791258e488ab069570d97e0f51930c460bc83bd5f1a683a331384de8a",
+      "input_sha256": "d688dc686ba2efeb6ffea5960f7df8495ff7229977e16726b82cf38547f21905"
+    },
+    {
+      "role": "train",
+      "line_id": "l_e8952b652855ce78be2a",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_e8952b652855ce78be2a.png",
+      "source_sha256": "5cab12d9346b160924ddfb1d56a4595e991dbbcc15085300a2724db062bc4af3",
+      "input_sha256": "375ce0653e5a0c5e312bdf0f124ca69a6756d10911b8f3b3d0d7e77a50235224"
+    },
+    {
+      "role": "train",
+      "line_id": "l_93855e714f5b8e82c430",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_93855e714f5b8e82c430.png",
+      "source_sha256": "cd49f5d6cdffe74a93ea4cea975fe206f26836828d4e31daa028ec44d39d3489",
+      "input_sha256": "cc3334e698a0a031df93096ad9f0e66d57d8a10630a5e78176a1b2099bc617d0"
+    },
+    {
+      "role": "train",
+      "line_id": "l_14e59a487920333b045c",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_14e59a487920333b045c.png",
+      "source_sha256": "e9d57784282cf607fc790d3bb046a850145fce019dc003494b3cb447dda58d1d",
+      "input_sha256": "63bf9b28f2b975939ba28febb0c7f508d5a4b7ac7dccba78c6619d72b2e1a515"
+    },
+    {
+      "role": "train",
+      "line_id": "l_a4feae03e8cc3551e4c3",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_a4feae03e8cc3551e4c3.png",
+      "source_sha256": "36b6bb8b3b65a523b78459e512fe50d824c6bc042388f15c05bec4c509b443db",
+      "input_sha256": "34fed2e67f90f581cf4abc649ea1b4c7939e26ab568f62f65ccaa7e86fc9e4dc"
+    },
+    {
+      "role": "train",
+      "line_id": "l_42852840511969650e90",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_42852840511969650e90.png",
+      "source_sha256": "b55ae02970be84009c2dd2635afadde27d67962a5a32c2ff7163fcc8538a430b",
+      "input_sha256": "1dfaea9c98b53a9d3f147bf3440a0d6d2945af60af6701012af088be853821ca"
+    },
+    {
+      "role": "train",
+      "line_id": "l_59290713550f30507252",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_59290713550f30507252.png",
+      "source_sha256": "b190740cf4d13779e5d7b9d1c54f0b68a7c94d67b160bfd78f793f60462a6a5d",
+      "input_sha256": "3ddc1e3c76ce17e4f23b77e0b27eb7b2721f1ffd2cb9f8f6cff7dd7eee31e3d5"
+    },
+    {
+      "role": "train",
+      "line_id": "l_849624e17ee6fc8c1b91",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_849624e17ee6fc8c1b91.png",
+      "source_sha256": "9d0df9133dbbd94daeb8472be72efa56a183972157f37a454e6ea39a149af239",
+      "input_sha256": "26b6d842ddc2d566b1d46279cb56c148ac6c060504295c9e21e933e06b24632a"
+    },
+    {
+      "role": "train",
+      "line_id": "l_11cef2f51452ffe1ed23",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_11cef2f51452ffe1ed23.png",
+      "source_sha256": "bf9a11cd16bd3472e643038388bbfce29bffcdf34523e53becaa8cfd772c1336",
+      "input_sha256": "cb4b02f068c70f49877c4d2ead41778712afdcf2e70f467993ed6a410e112e61"
+    },
+    {
+      "role": "train",
+      "line_id": "l_fcd0c84a84781b888f44",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_fcd0c84a84781b888f44.png",
+      "source_sha256": "6af298726b64471f53c8e521b6a5530dc2a69b8909950e52f4008e88199e8e89",
+      "input_sha256": "4faa5bf4c4d13f9e2e56a9d7d44646de795e5381db8863343934819cae9fb555"
+    },
+    {
+      "role": "train",
+      "line_id": "l_0199f6af074acc51f908",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_0199f6af074acc51f908.png",
+      "source_sha256": "b0f0c2f3ab6de05f8f90e812c01ab05663cebe26ac56826e07abd62c5c2b5697",
+      "input_sha256": "f05d136e51739c694fd0086a7bf2b543365e7875777dc06af2e0063a18ffb5cf"
+    },
+    {
+      "role": "train",
+      "line_id": "l_a1d87a28e3bf45012235",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_a1d87a28e3bf45012235.png",
+      "source_sha256": "89e3ee853f147398395e67104013e1ae0b2a8b04ff0ea39dcd510ba8eca2eb55",
+      "input_sha256": "44b035282be577b9973ddaf7365e57c5cf48745a5ab8a2f348623010ed1b6c6f"
+    },
+    {
+      "role": "train",
+      "line_id": "l_48ef71202b67e4b1bd86",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_48ef71202b67e4b1bd86.png",
+      "source_sha256": "ddfc750ccd8c495724ebb24604770f82e65539265f3b6053a4a57499c8357577",
+      "input_sha256": "551116f83ef716481a10e49561476d4f2f9bf954d9826a8caf026a6ad0346e17"
+    },
+    {
+      "role": "train",
+      "line_id": "l_755c5a88a7eeee0af040",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_755c5a88a7eeee0af040.png",
+      "source_sha256": "8e91ad4b6f44d7f0c9533f63cf582609dfb3ae460afae394244df27713830eda",
+      "input_sha256": "ab75dc3a1e31c686e0ecaa1bf1900ae8b2ec93ba03ea2af1e6e9ac485a40ce66"
+    },
+    {
+      "role": "train",
+      "line_id": "l_8f40fb1a62f7b121ee80",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_8f40fb1a62f7b121ee80.png",
+      "source_sha256": "7de340d718466bfae0cb3b076c38d6dc4966fa36843794f5910ea5a51bd5185f",
+      "input_sha256": "bc38ca289dcc7ce52fe3620d38e1e270e08772e3b63bd93f4a21d308f77f2dfe"
+    },
+    {
+      "role": "train",
+      "line_id": "l_e07dea2114d0f98d1b7e",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_e07dea2114d0f98d1b7e.png",
+      "source_sha256": "da73766ea0b9082ebcee11fa84a1d7bcdc945e9111555d42df41a5a9c30fd43b",
+      "input_sha256": "7a40a1a38ea36d27ea3d07c63332bde82321a6b0292bc7136f305c77daaf36b1"
+    },
+    {
+      "role": "train",
+      "line_id": "l_c0ca87a30e8affcb02e1",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_c0ca87a30e8affcb02e1.png",
+      "source_sha256": "76ef84b3e012db422213832178bf85848fc47ffa9d8a4ee3e904d02016c886e7",
+      "input_sha256": "799fe4fdcc60787807ae28ae8477d6bd86a85a151de756cc11cbb2ceb003e1a8"
+    },
+    {
+      "role": "train",
+      "line_id": "l_5f90c6731492dcfa610d",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_5f90c6731492dcfa610d.png",
+      "source_sha256": "fe3b8ada3f4e2922cd00a72f6c28b2a6540d7873cf276e41ac0f24cbf38a7fcf",
+      "input_sha256": "9151847d16332cdf546c41c8ebb3e47875cc0fe8aaca3965749502e67dc13bb9"
+    },
+    {
+      "role": "train",
+      "line_id": "l_b703734141a18793839e",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_b703734141a18793839e.png",
+      "source_sha256": "a5eeec9f2c1bc554e9723002f298f04dec1df0264075dde911c5b565b5c6b688",
+      "input_sha256": "3f17f16ddd659a1e69bcc5ac555fc4ac153db3a4259f2a21c4a5db8fdc751cf7"
+    },
+    {
+      "role": "train",
+      "line_id": "l_04fa2680d63f25bea65c",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_04fa2680d63f25bea65c.png",
+      "source_sha256": "ca706cb98bc8d0acdbd83070555a40357adab52a5a8aa767881cc94ab7d46e7d",
+      "input_sha256": "5ed98eba3ae69e019327cd83d1b92d9b79536537ca9e899d0cb9d5826b80f8c8"
+    },
+    {
+      "role": "train",
+      "line_id": "l_d997e67d8912cf0e43cc",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_d997e67d8912cf0e43cc.png",
+      "source_sha256": "3a4ecf3e403661bad67f991272aa36d21c3352c7638d2d1f2957259f9db90346",
+      "input_sha256": "c987c5183e33b5fa56e74ab532f3fa4703bea65431f4e65b055a078dfc4e5fec"
+    },
+    {
+      "role": "train",
+      "line_id": "l_42c4010f15afe0f83e5a",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_42c4010f15afe0f83e5a.png",
+      "source_sha256": "19e91b915b3f270bb015885c370fdbecc8aa0efb6aafefed592170141dabf2cb",
+      "input_sha256": "6d238c79bd53bf7672d423a57825f4b7a6cd18f1f88ed17c2478112d38e6b5dc"
+    },
+    {
+      "role": "train",
+      "line_id": "l_1e87b988b20561966abc",
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "manifest": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/lines.jsonl",
+      "source": "docs/experimentos/traslado_269v_integral_edicao_20261022/segmentacao/l_1e87b988b20561966abc.png",
+      "source_sha256": "f5cc70ab98a2c4ac1df9af326057ac65ffddea99cf1350bb56db3119e855139f",
+      "input_sha256": "abb31aa64d03b49b068357f01974b226a167c7000fe4fa1d47daa173132d478b"
+    },
+    {
+      "role": "validation",
+      "line_id": "l_dde7529e3b232e190cc3",
+      "document_id": "contrato_livro13_1763",
+      "manifest": "docs/revisao_humana/contrato_livro13_1763/preparacao_20261104/piloto_pagina_05.json",
+      "source": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linha_a_retificada_01/complemento_textura/antitrama_inteira.png",
+      "source_sha256": "6302ef2d95b9d24d10ebdb1b62398658dc4002045c43b7dc42d0812d18b4fbed",
+      "input_sha256": "6302ef2d95b9d24d10ebdb1b62398658dc4002045c43b7dc42d0812d18b4fbed"
+    },
+    {
+      "role": "validation",
+      "line_id": "l_e03ee95c58f85355bb74",
+      "document_id": "contrato_livro13_1763",
+      "manifest": "docs/revisao_humana/contrato_livro13_1763/preparacao_20261104/piloto_pagina_05.json",
+      "source": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/B_antitrama_inteira.png",
+      "source_sha256": "331116997dd7043f9c3e8530d9baa9f69ef2ce7016c1dbafad987db732261047",
+      "input_sha256": "331116997dd7043f9c3e8530d9baa9f69ef2ce7016c1dbafad987db732261047"
+    },
+    {
+      "role": "validation",
+      "line_id": "l_be846c7fb522f7fff924",
+      "document_id": "contrato_livro13_1763",
+      "manifest": "docs/revisao_humana/contrato_livro13_1763/preparacao_20261104/piloto_pagina_05.json",
+      "source": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/C_antitrama_inteira.png",
+      "source_sha256": "419b168a5ffe2fdc71d1815011fbf31890667911c75be99d6e7cc5602e39dbba",
+      "input_sha256": "419b168a5ffe2fdc71d1815011fbf31890667911c75be99d6e7cc5602e39dbba"
+    },
+    {
+      "role": "validation",
+      "line_id": "l_e38cdd19539d27186088",
+      "document_id": "contrato_livro13_1763",
+      "manifest": "docs/revisao_humana/contrato_livro13_1763/preparacao_20261104/piloto_pagina_05.json",
+      "source": "output/curadoria_contrato_livro13_1763/piloto_pagina_05/diagnostico_linhas_bcd_01/D_antitrama_inteira.png",
+      "source_sha256": "1df8c217bf64dc2aab2f6211a2b35ebdef2fcc434ba8883b4f1d39a92adb1e26",
+      "input_sha256": "1df8c217bf64dc2aab2f6211a2b35ebdef2fcc434ba8883b4f1d39a92adb1e26"
+    }
+  ]
+}

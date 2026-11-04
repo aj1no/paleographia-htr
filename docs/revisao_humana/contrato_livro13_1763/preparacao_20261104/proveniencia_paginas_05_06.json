@@ -1,0 +1,69 @@
+{
+  "document_id": "contrato_livro13_1763",
+  "record_number": "02321",
+  "catalog_folios": [
+    "10",
+    "11"
+  ],
+  "edition": "data/raw/corpus_expandido_v02/fontes/contrato_livro13_1763/modernized_edition_3348a51ef10d9d1b.pdf",
+  "edition_sha256": "3348a51ef10d9d1b1c79a780d701a250e4ab300433d267c6411234828511afaf",
+  "source_catalog": "data/manifests/corpus_expandido_v02/embedded_images.jsonl",
+  "images": [
+    {
+      "pdf_page": 5,
+      "image_id": "3348a51ef10d9d1b_p005_i00",
+      "page_id": "p_c02_bad76602e2443507",
+      "path": "data/manifests/corpus_expandido_v02/pdf_images/3348a51ef10d9d1b/p005_i00.jpg",
+      "sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+      "width": 2048,
+      "height": 2020,
+      "folio_id": null,
+      "side": "unknown",
+      "correspondence_status": "pending_review"
+    },
+    {
+      "pdf_page": 6,
+      "image_id": "3348a51ef10d9d1b_p006_i00",
+      "page_id": "p_c02_9e2cb919366eb669",
+      "path": "data/manifests/corpus_expandido_v02/pdf_images/3348a51ef10d9d1b/p006_i00.jpg",
+      "sha256": "45c1d1d858a01600563f64daa03375f7dd9268a4bbb52b80baa1837d33149aa1",
+      "width": 1561,
+      "height": 2048,
+      "folio_id": null,
+      "side": "unknown",
+      "correspondence_status": "pending_review"
+    }
+  ],
+  "local_comparison": {
+    "path": "output/curadoria_contrato_livro13_1763/comparacao_paginas_05_06.png",
+    "sha256": "6e1ffa8d989801f1410861693de7b91caecf4943f52c0f108265c26c788de893",
+    "frames": [
+      {
+        "pdf_page": 5,
+        "position": [
+          16,
+          94
+        ],
+        "size": [
+          760,
+          750
+        ]
+      },
+      {
+        "pdf_page": 6,
+        "position": [
+          808,
+          94
+        ],
+        "size": [
+          744,
+          976
+        ]
+      }
+    ],
+    "method": "Imagens integrais reduzidas proporcionalmente, com rótulos externos. Sem rotação ou ajuste de contraste."
+  },
+  "proposed_role": "reserved_test_candidate",
+  "scientific_split": null,
+  "validated_lines": 0
+}

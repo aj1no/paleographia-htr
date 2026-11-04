@@ -1,5 +1,7 @@
 # Avaliação por linha da carta de 1767
 
+**[Notebook executado para apresentação](PaleographIA_Notebook_2_Carta_1767.ipynb).** Abra no Colab ou no Jupyter e execute todas as células para recalcular CER e WER a partir das previsões incorporadas. Para testar os dois reconhecedores ao vivo, abra o notebook no Jupyter local a partir do checkout preparado e mude `EXECUTAR_INFERENCIA_LOCAL` para `True`. A última seção reúne a evidência do ajuste fino técnico e o plano para avaliar base e ajustado em documentos reservados.
+
 Diagnóstico exploratório de reconhecimento manuscrito no fólio **4r**. A seleção congela as linhas físicas **1, 3 e 4**, com recortes e transcrições diplomáticas aprovados. As linhas **2, 5 e 6** têm geometria aprovada e referência diplomática pendente. A região das seis linhas mantém `complete=false`. A partição científica está pendente. [Histórico da curadoria](../../../revisao_humana/carta_jose_gomes_1767/sessao_20261103/anotacao_superior_leitura_de_trabalho.md).
 
 | Arquivo | Conteúdo |

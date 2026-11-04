@@ -1,0 +1,194 @@
+{
+  "prepared_at": "2026-11-04T18:02:03.259194+00:00",
+  "status": "draft_not_for_training",
+  "official_assignments_applied": false,
+  "counts_of_currently_validated_references_by_proposed_split": {
+    "train": 19,
+    "validation": 7,
+    "test": 0
+  },
+  "groups": [
+    {
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "proposed_split": "train",
+      "scientific_split": null,
+      "independence_status": "pending_review",
+      "eligible_reference_count": 16,
+      "reference_manifest": "data/manifests/corpus_expandido_v02/core_lines.jsonl",
+      "reference_manifest_sha256": "1dbb893744e980a06027fa7ae8dce07abf9f18b102e58f6fcb093e04df48cc60",
+      "page_manifest": "data/manifests/corpus_expandido_v02/core_pages.jsonl",
+      "page_manifest_sha256": "437de028e4c30ff4e0d64862379b402e97354233fa6c7b5dd56c80daa2fb827a",
+      "line_ids": [
+        "l_traslado_269r_body_01",
+        "l_traslado_269r_body_02",
+        "l_traslado_269r_body_03",
+        "l_traslado_269r_body_04",
+        "l_traslado_269r_body_05",
+        "l_traslado_269r_body_06",
+        "l_traslado_269r_body_07",
+        "l_traslado_269r_body_08",
+        "l_traslado_269r_body_09",
+        "l_traslado_269r_body_10",
+        "l_traslado_269r_body_12",
+        "l_traslado_269r_body_13",
+        "l_traslado_269r_body_14",
+        "l_traslado_269r_body_18_candidata",
+        "l_traslado_269r_body_21_candidata",
+        "l_traslado_269r_body_22_candidata"
+      ],
+      "max_normalized_width_at_height_96": 1294
+    },
+    {
+      "document_id": "carta_jose_gomes_1767",
+      "proposed_split": "train",
+      "scientific_split": null,
+      "independence_status": "pending_review",
+      "eligible_reference_count": 3,
+      "reference_manifest": "docs/entregas/continuidade_20261103/avaliacao_linhas_1767/referencias.jsonl",
+      "reference_manifest_sha256": "d6e2424a314f071c26ef65264f0540131f2bceec5737d5de8e9072c84919e992",
+      "page_manifest": "docs/entregas/continuidade_20261103/avaliacao_linhas_1767/paginas.jsonl",
+      "page_manifest_sha256": "7873ca2e31bd58a5061190cd123a7afab06543e27d2025613051e4d06892c6b7",
+      "line_ids": [
+        "l_14a4c7eba267e1e592e7",
+        "l_5e33f0d507567e36dd02",
+        "l_99b58f3e657c7885a0de"
+      ],
+      "max_normalized_width_at_height_96": 713
+    },
+    {
+      "document_id": "sessao_1795",
+      "proposed_split": "validation",
+      "scientific_split": null,
+      "independence_status": "pending_review",
+      "eligible_reference_count": 7,
+      "reference_manifest": "docs/entregas/continuidade_20261103/dataset_revisado_1795/linhas_revisadas_7.jsonl",
+      "reference_manifest_sha256": "6e7c739cd30d060a6632e454ac5689d678678fb764bf19ce806c2c3b5610d301",
+      "page_manifest": "docs/entregas/continuidade_20261103/dataset_revisado_1795/pages.jsonl",
+      "page_manifest_sha256": "dc534fadbd722aa3d950a9fdac5bb52960da48244e57269d68a6b0eddc6f1841",
+      "line_ids": [
+        "l_24b904b9ad9473450172",
+        "l_b8a06d58bd7cced4f3a2",
+        "l_4882de66b18aa948f2a4",
+        "l_98962db568a2f74aab38",
+        "l_27cb89d5763a6e64c484",
+        "l_6077eea6d3ac418348ec",
+        "l_40d2333b12328973de24"
+      ],
+      "max_normalized_width_at_height_96": 1910
+    },
+    {
+      "document_id": "contrato_livro13_1763",
+      "proposed_split": null,
+      "scientific_split": null,
+      "independence_status": "pending_review",
+      "eligible_reference_count": 0,
+      "proposed_split_group": "contratos_olgado_1763",
+      "test_reservation_status": "ineligible_for_final_test_after_group_preprocessing_exploration",
+      "source_occurrences": [
+        {
+          "image_id": "3348a51ef10d9d1b_p005_i00",
+          "path": "data/manifests/corpus_expandido_v02/pdf_images/3348a51ef10d9d1b/p005_i00.jpg",
+          "sha256": "bff16be3f99c2179b10a9d8d7783c8e9d1562fc9e0b924dd4fa6f0fbab0cd9e6",
+          "pdf_page": 5
+        },
+        {
+          "image_id": "3348a51ef10d9d1b_p006_i00",
+          "path": "data/manifests/corpus_expandido_v02/pdf_images/3348a51ef10d9d1b/p006_i00.jpg",
+          "sha256": "45c1d1d858a01600563f64daa03375f7dd9268a4bbb52b80baa1837d33149aa1",
+          "pdf_page": 6
+        }
+      ],
+      "line_ids": [],
+      "exploratory_exposure": {
+        "line_id": "l_dde7529e3b232e190cc3",
+        "record": "docs/revisao_humana/contrato_livro13_1763/preparacao_20261104/diagnostico_ppocrv6_linha_a.json",
+        "variants": [
+          "original",
+          "clahe"
+        ],
+        "used_for_training": false,
+        "followup_record": "docs/revisao_humana/contrato_livro13_1763/preparacao_20261104/diagnostico_ppocrv6_linha_a_retificada.json",
+        "used_to_compare_preprocessing": true
+      },
+      "proposed_role": "exploratory_development"
+    },
+    {
+      "document_id": "contrato_livro12_1763",
+      "proposed_split": null,
+      "scientific_split": null,
+      "independence_status": "pending_review",
+      "eligible_reference_count": 0,
+      "proposed_split_group": "contratos_olgado_1763",
+      "test_reservation_status": "ineligible_for_final_test_after_group_preprocessing_exploration",
+      "source_occurrences": [
+        {
+          "image_id": "c7ffb34ac9b8c735_p009_i00",
+          "path": "data/manifests/corpus_expandido_v02/pdf_images/c7ffb34ac9b8c735/p009_i00.jpg",
+          "sha256": "a147ae6a5c9bd3f5eac9e2db0520c6948cc2e4f651de02a857d2a312f30baf45",
+          "pdf_page": 9
+        },
+        {
+          "image_id": "c7ffb34ac9b8c735_p010_i00",
+          "path": "data/manifests/corpus_expandido_v02/pdf_images/c7ffb34ac9b8c735/p010_i00.jpg",
+          "sha256": "08a5eb976ab0320038d215bca761b66bf29d01c420b3d139c8ac0306ee7bbb25",
+          "pdf_page": 10
+        },
+        {
+          "image_id": "c7ffb34ac9b8c735_p011_i00",
+          "path": "data/manifests/corpus_expandido_v02/pdf_images/c7ffb34ac9b8c735/p011_i00.jpg",
+          "sha256": "3b4aa4ecb7e0b683d2118e2a0979d28d2398bcee24e85c32f97249e25bfa864e",
+          "pdf_page": 11
+        },
+        {
+          "image_id": "c7ffb34ac9b8c735_p012_i00",
+          "path": "data/manifests/corpus_expandido_v02/pdf_images/c7ffb34ac9b8c735/p012_i00.jpg",
+          "sha256": "43456b368c7d1a00d4f7909d58b914266f836d117d8e1fd44f0604202a67e92b",
+          "pdf_page": 12
+        }
+      ],
+      "line_ids": [],
+      "proposed_role": "exploratory_development"
+    },
+    {
+      "document_id": "pagamento_thomas_pardo",
+      "proposed_split": null,
+      "scientific_split": null,
+      "independence_status": "pending_review",
+      "eligible_reference_count": 0,
+      "priority": "expansao_de_treino",
+      "reason": "Mesmo livro 0146 da carta de 1767. Conferir 113v/114r, a divergência 1751/1759, duplicatas e pares."
+    },
+    {
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "proposed_split": null,
+      "scientific_split": null,
+      "independence_status": "pending_review",
+      "eligible_reference_count": 0,
+      "priority": "expansao_de_treino",
+      "reason": "Desenvolvimento exposto; 94 registros do piloto em revisão. Somente candidato a treino após validação."
+    }
+  ],
+  "grouping_policy": "Um documento, suas páginas, reproduções e derivados ficam no mesmo conjunto. Os livros 12 e 13 ficam juntos em desenvolvimento exploratório devido à relação cartorial.",
+  "duplicate_check": {
+    "catalog_image_occurrences": 28,
+    "identical_pixel_hashes_across_document_ids": 0,
+    "identical_crop_pixels_across_proposed_train_and_validation": 0,
+    "limit": "Hashes exatos não descartam recompressões, cópias textuais ou relações arquivísticas."
+  },
+  "scientific_preflight_current_configuration": "Partições científicas exigem independência documental confirmada.",
+  "codec_preflight": {
+    "base_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+    "runtime": "Kraken 7.1 no Docker fixado, PytorchCodec strict=True",
+    "NFC_encodable": 11,
+    "NFD_encodable": 26,
+    "checked_train_validation_references": 26,
+    "NFC_missing_characters": [
+      "ã",
+      "ç",
+      "õ"
+    ],
+    "test_data_used": false,
+    "recommended_next_check": "Testar NFD nas etiquetas de treino e validação, mantendo as referências arquivadas e o cálculo CER/WER em NFC."
+  },
+  "test_access_policy": "Reservar outro grupo independente para o teste final. Conferir fontes e referências humanas sem inferência. Congelar a seleção e a política. Manter teste fora do treino, do codec, da seleção de checkpoint e dos ajustes de configuração."
+}
