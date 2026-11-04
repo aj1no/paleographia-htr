@@ -14,14 +14,25 @@
     "sinal_grafico": "incerto",
     "letra_elevada": "nao confirmada"
   },
+  "reconferencia_do_traco": {
+    "observacao": 78,
+    "interpretacao_atual": "possível ligação da escrita feita sem levantar a caneta",
+    "transcrever_q_isolado": false,
+    "sequencia_diplomatica_confirmada": "por não",
+    "observacao_de_confirmacao": 79
+  },
   "observacoes": [
     39,
     40,
     42,
-    43
+    43,
+    78,
+    79
   ],
-  "text_diplomatic": null,
-  "reference_status": "pending_review",
-  "exclusion_reason": "Linha com leitura provável no grupo que e sinal não resolvido; representação diplomática integral e limites ainda pendentes.",
-  "nota": "Leitura expandida destinada à conferência, não arquivo de alvo ou referência validada. Não foram inseridos colchetes, ponto, interrogação ou letras elevadas no alvo."
+  "text_diplomatic": "Paguem as Camaras, e a Razão por não",
+  "reference_status": "validated",
+  "geometry_status": "validated",
+  "geometry_review_observation": 68,
+  "exclusion_reason": null,
+  "nota": "A observação 079 valida a forma diplomática por não. A leitura de trabalho expandida conserva que como apoio. As observações anteriores sobre o traço permanecem no histórico."
 }

@@ -1,0 +1,32 @@
+{
+  "document_id": "carta_jose_gomes_1767",
+  "source_page_id": "p_c02_7b71d03c0d1bf8c7",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "reproduction_page_id": "p_c02_d66997ce85e479f8",
+  "reproduction_image": "data/manifests/corpus_expandido_v02/pdf_images/500a24d6a2ea8b93/p005_i00.jpg",
+  "reproduction_sha256": "f23354f8ed3db8ea7283ae30f22a9a6272fbc3b74542f237907a9cf4cc3bff93",
+  "edition_pdf_sha256": "500a24d6a2ea8b93ea2fc7d94388b26c5facbef75f094b8c0964a58f0b0b2368",
+  "reproduction_pdf_page": 5,
+  "editorial_folio_label": "4r",
+  "editorial_folio_label_source": "data/manifests/corpus_expandido_v02/editorial/500a24d6a2ea8b93/p003.txt",
+  "visualization": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_fotografia_reproducao_folio4r.png",
+  "visualization_sha256": "bcb079002e48dc983eda75b64f44ba749c97eaffe60d89956a5cec5bae74ed39",
+  "visualization_scope": "A montagem da folha inteira é evidência local apresentada ao revisor.",
+  "published_detail": {
+    "path": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_anotacao_superior_folio4r.png",
+    "sha256": "246a6e0790b8f9fdd1a97fa84a83b927d6b9a79b474236eff50e467131d6c35c",
+    "bbox_xyxy_in_visualization": [0, 0, 1256, 269]
+  },
+  "visualization_method": {
+    "source_bbox_xyxy": [0, 0, 1237, 1807],
+    "reproduction_bbox_xyxy": [0, 56, 1237, 1863],
+    "display_size_per_image": [610, 891],
+    "display_resampling": "Lanczos",
+    "scope": "A reprodução é enquadrada na mesma área da fotografia para comparação visual. Os arquivos de origem e os recortes aprovados são preservados."
+  },
+  "visible_matches": ["anotação superior e data", "inicial ornamentada do corpo", "rasgo à esquerda e vincos da folha"],
+  "assessment": "A inspeção visual encontrou correspondência entre a fotografia e a reprodução. A edição identifica como 4r a página cujo texto começa pela anotação superior.",
+  "human_correspondence_status": "validated",
+  "human_correspondence_observation": "observacao_099_folio_4r_correspondencia_confirmada.json"
+}

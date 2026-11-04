@@ -1,0 +1,8 @@
+{
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "bbox_xyxy": [43, 227, 930, 347],
+  "reading_order": 4,
+  "region_id": "nota_superior_linha05_candidata",
+  "scope": "Quinta linha da anotação superior, do início lido como sujeitos até Paulo. A faixa inclui margem junto à dobra, acima da forma lida como São e abaixo das hastes. Há traços das linhas vizinhas nas bordas. Cobertura e limites pendentes de conferência humana."
+}

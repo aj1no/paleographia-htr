@@ -1,0 +1,27 @@
+{
+  "tipo": "reconferencia_humana_de_forma_abreviada_com_leitura_de_apoio",
+  "data_resposta": "2026-11-04",
+  "original_message": "Nessa ampliação vejo algo parecido com um d, um laço em cima e um ponto à direita. Não consigo confirmar se o laço é outra letra. Pode registrar isso e deixar “dinheiro” só na leitura de apoio.",
+  "contexto_da_pergunta": "Nesta ampliação, que letras e sinais você consegue confirmar para a transcrição diplomática?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_90945ed471090b684539",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/linha02_abreviatura_apos_tem_5x.png",
+  "imagem_apresentada_sha256": "c3599e4462144c4acaca1ebe0e25c850e5296d74dc2c194c36bd81468f77082f",
+  "leitura_humana": {
+    "letra_sugerida": "d",
+    "certeza_da_letra": "parecida com d",
+    "laco_acima_visivel": true,
+    "laco_e_outra_letra": null,
+    "ponto_a_direita_visivel": true,
+    "funcao_do_ponto": null,
+    "leitura_de_apoio": "dinheiro",
+    "forma_literal_integral": null
+  },
+  "observacoes_anteriores": [46, 71],
+  "scope": "Registra a descrição visual após tem. Dinheiro fica apenas na leitura de apoio. A forma literal do grupo e a transcrição diplomática integral seguem pendentes.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir a convenção diplomática para representar o es elevado acima de soment, já descrito na observação 048."
+}

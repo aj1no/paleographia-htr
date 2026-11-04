@@ -1,0 +1,8 @@
+{
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "bbox_xyxy": [41, 271, 615, 417],
+  "reading_order": 5,
+  "region_id": "nota_superior_linha06_candidata",
+  "scope": "Sexta linha da anotação superior, com a data lida como 23 de Dezembro de 1767. A faixa inclui margem para o traço antes de 23, a marca acima da forma lida como Dezen e o traço comprido abaixo da data. Há traços vizinhos nas bordas. Cobertura e limites pendentes de conferência humana."
+}

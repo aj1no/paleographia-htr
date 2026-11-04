@@ -1,0 +1,21 @@
+{
+  "tipo": "confirmacao_humana_integral_de_transcricao_diplomatica",
+  "data_resposta": "2026-11-04",
+  "registrado_em": "2026-11-04T15:27:43.1097086Z",
+  "original_message": "Sim, confirmo: “Paguem as Camaras, e a Razão por não”, com “que” só na leitura de apoio. Pode validar a primeira linha e seguir para a segunda.",
+  "contexto_da_pergunta": "Para fechar a primeira linha, você confirma que a transcrição diplomática fica Paguem as Camaras, e a Razão por não, com que apenas na leitura de apoio?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_14a4c7eba267e1e592e7",
+  "recorte_aprovado": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_14a4c7eba267e1e592e7.png",
+  "recorte_aprovado_sha256": "44cfce738bc01e09f6585232e754c5100984628d932423cf7d98cb8bb3b137de",
+  "observacao_de_geometria": 68,
+  "observacao_de_reconferencia": 78,
+  "text_diplomatic": "Paguem as Camaras, e a Razão por não",
+  "leitura_de_apoio": "Paguem as Camaras, e a Razão por que não",
+  "scope": "Valida a transcrição diplomática integral da primeira linha. O que pertence à leitura de apoio. A correspondência documental, a cobertura de região e a partição científica continuam pendentes.",
+  "transcricao_formalmente_validada": true,
+  "novos_pares_validados": 1,
+  "continuidade": "Retomar na segunda linha a forma literal da abreviatura após tem, lida como dinheiro na edição."
+}

@@ -1,0 +1,39 @@
+{
+  "line_id": "l_5ae79db91a78f1a9aada",
+  "page_id": "p_c02_7b71d03c0d1bf8c7",
+  "document_id": "carta_jose_gomes_1767",
+  "folio_id": "4r",
+  "region_id": "anotacao_superior_esquerda_seis_linhas",
+  "reading_order": 5,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "crop_image": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_5ae79db91a78f1a9aada.png",
+  "bbox_xyxy": [
+    41,
+    271,
+    615,
+    417
+  ],
+  "source_width": 1237,
+  "source_height": 1807,
+  "text_diplomatic": null,
+  "text_modernized": "23 de dezembro de 1767.",
+  "reference_source": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/modernized_edition_500a24d6a2ea8b93.pdf",
+  "reference_pages": [
+    3
+  ],
+  "reference_kind": "modernized_edition",
+  "review_status": "pending_review",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "reviewed_at": "2026-11-04T17:31:13.3218460Z",
+  "geometry_status": "validated",
+  "geometry_review_observation": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/observacao_077_linha06_recorte_definitivo_aprovado.json",
+  "split": null,
+  "split_group": "carta_jose_gomes_1767",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "transform_id": "3fdcf11687863388891edd078c8dce9847635651ec2671c6ef285d4f9e716476",
+  "exclusion_reason": "Forma literal do mês e sinais da data pendentes para referência diplomática. Dezembro adotado da edição na leitura assistida.",
+  "derived_from": null,
+  "segmentation_method": "manual_candidate_not_human_approved",
+  "crop_sha256": "62039aa7001c7bda8087fa432213a487ffc0dca6d563f7f13a1b5ff1ec97aa82",
+  "reviewed_at_basis": "coverage_review_observation_100; diplomatic review pending"
+}

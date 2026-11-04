@@ -1,0 +1,26 @@
+{
+  "tipo": "observacao_humana_localizada_de_possivel_floreio",
+  "data_resposta": "2026-11-04",
+  "original_message": "Existe algo, mas acredito ser um floreio do proprio escriba",
+  "contexto_da_pergunta": "No começo da sexta linha, junto à margem esquerda, você distingue alguma letra ou sinal imediatamente antes de 23?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/anotacao_superior_contexto_aberto.png",
+  "imagem_apresentada_sha256": "40a2d41805fba7e2802d2d5eb98c9b4a246c0c7c03e07b19d2edad1162522f91",
+  "leitura_humana": {
+    "presenca_de_traco_antes_de_23": true,
+    "posicao": "junto à margem esquerda, imediatamente antes de 23",
+    "interpretacao_do_revisor": "possível floreio do escriba",
+    "classificacao_definitiva": null,
+    "caractere_identificado": null
+  },
+  "contexto_editorial": "23 de dezembro de 1767",
+  "scope": "Registra a presença do traço e a hipótese do revisor. A natureza do traço e a eventual presença de um caractere permanecem indeterminadas.",
+  "leitura_independente_da_edicao": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir se há pontuação visível imediatamente após 1767, no fecho da anotação."
+}

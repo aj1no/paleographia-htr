@@ -1,0 +1,23 @@
+{
+  "tipo": "confirmacao_humana_de_correspondencia_documental",
+  "data_resposta": "2026-11-04",
+  "registrado_em": "2026-11-04T17:28:33.1598601Z",
+  "original_message": "Sim, confirmo que as duas imagens mostram a mesma face do fólio 4r. Pode registrar e seguir.",
+  "contexto_da_pergunta": "Você confirma que as duas imagens mostram a mesma face do fólio 4r?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "document_id": "carta_jose_gomes_1767",
+  "source_page_id": "p_c02_7b71d03c0d1bf8c7",
+  "reproduction_page_id": "p_c02_d66997ce85e479f8",
+  "reproduction_pdf_page": 5,
+  "folio_id": "4r",
+  "side": "recto",
+  "comparacao_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_fotografia_reproducao_folio4r.png",
+  "comparacao_apresentada_sha256": "bcb079002e48dc983eda75b64f44ba749c97eaffe60d89956a5cec5bae74ed39",
+  "proveniencia_da_comparacao": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_fotografia_reproducao_folio4r.json",
+  "correspondence_status": "validated",
+  "scope": "Confirma que a fotografia usada nos recortes e a reprodução da edição mostram a mesma face, 4r. A descrição da cobertura, a independência documental e a partição científica seguem pendentes.",
+  "novos_pares_validados": 0,
+  "continuidade": "Confirmar que a região curada cobre as seis linhas da anotação superior à esquerda, de Paguem até a data, com o cabeçalho à direita e o corpo da carta fora da região."
+}

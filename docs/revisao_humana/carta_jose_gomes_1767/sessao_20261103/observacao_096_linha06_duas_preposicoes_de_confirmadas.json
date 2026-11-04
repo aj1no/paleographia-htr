@@ -1,0 +1,24 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_segmentos",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, confirmo os dois “de”, um depois de 23 e outro antes de 1767. Pode registrar e seguir.",
+  "contexto_da_pergunta": "No recorte da data, você consegue confirmar os dois de, um depois de 23 e outro antes de 1767?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_5ae79db91a78f1a9aada",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_5ae79db91a78f1a9aada.png",
+  "imagem_apresentada_sha256": "62039aa7001c7bda8087fa432213a487ffc0dca6d563f7f13a1b5ff1ec97aa82",
+  "confirmacoes": {
+    "preposicao_depois_do_dia": "de",
+    "preposicao_antes_do_ano": "de"
+  },
+  "leitura_assistida": "23 de dezembro de 1767",
+  "trecho_adotado_da_edicao": "dezembro",
+  "contexto_editorial": "23 de dezembro de 1767. [Rubrica]",
+  "observacoes_anteriores": [61, 62, 63, 77, 95],
+  "scope": "Confirma os dois de. A forma literal do mês, seus sinais e a pontuação depois do ano continuam pendentes. A leitura de dezembro segue o critério de apoio editorial registrado na observação 095.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir a marca visível entre a forma abreviada do mês e o segundo de."
+}

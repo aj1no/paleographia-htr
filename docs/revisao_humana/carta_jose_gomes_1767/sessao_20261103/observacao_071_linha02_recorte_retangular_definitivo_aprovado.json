@@ -1,0 +1,25 @@
+{
+  "tipo": "aprovacao_humana_de_geometria_do_recorte",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, pode manter esse recorte retangular como definitivo para a segunda linha. Os traços das outras linhas nas bordas não atrapalham a leitura.",
+  "contexto_da_pergunta": "Podemos manter este recorte como definitivo, com os traços vizinhos nas bordas, como fizemos na primeira linha?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_90945ed471090b684539",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_aprovada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_90945ed471090b684539.png",
+  "imagem_aprovada_sha256": "0d24c40fd890d81de8f39aa6dcf0283612187ddc5021d65ae84cee21b58e9ba8",
+  "bbox_xyxy_no_original": [43, 50, 765, 174],
+  "confirmacoes": {
+    "limites_retangulares_definitivos_aprovados": true,
+    "tracos_das_linhas_vizinhas_nas_bordas_aceitos": true,
+    "tracos_prejudicam_a_leitura": false
+  },
+  "observacoes_anteriores": [69, 70],
+  "scope": "Aprova a caixa retangular da segunda linha com os traços vizinhos nas bordas. O contorno em ciano documenta a conferência visual. A transcrição diplomática segue pendente.",
+  "geometry_human_approved": true,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0
+}

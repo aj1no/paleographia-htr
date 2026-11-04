@@ -1,0 +1,30 @@
+{
+  "tipo": "confirmacao_humana_de_cobertura_parcial_do_folio",
+  "data_resposta": "2026-11-04",
+  "registrado_em": "2026-11-04T17:31:13.3218460Z",
+  "original_message": "Sim, confirmo que a região revisada cobre só as seis linhas da anotação superior à esquerda, de Paguem até a data, sem incluir o cabeçalho à direita nem o corpo da carta. Pode registrar e seguir.",
+  "contexto_da_pergunta": "Você confirma que a região revisada abrange apenas as seis linhas da anotação superior à esquerda, de Paguem até a data, deixando de fora o cabeçalho à direita e o corpo da carta abaixo?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "document_id": "carta_jose_gomes_1767",
+  "page_id": "p_c02_7b71d03c0d1bf8c7",
+  "folio_id": "4r",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_fotografia_reproducao_folio4r.png",
+  "imagem_apresentada_sha256": "bcb079002e48dc983eda75b64f44ba749c97eaffe60d89956a5cec5bae74ed39",
+  "observacao_de_correspondencia": 99,
+  "confirmacoes": {
+    "regiao": "seis linhas da anotação superior à esquerda, de Paguem até a data",
+    "pagina_inteira": false,
+    "cabecalho_a_direita_incluido": false,
+    "corpo_da_carta_incluido": false
+  },
+  "coverage_region": "anotacao_superior_esquerda_seis_linhas",
+  "coverage_bbox_xyxy": [40, 8, 930, 417],
+  "coverage_review_status": "validated",
+  "complete": false,
+  "linhas_com_referencia_diplomatica_validada": [1, 3, 4],
+  "linhas_com_referencia_diplomatica_pendente": [2, 5, 6],
+  "scope": "Valida a descrição da cobertura parcial. A caixa é o envelope dos seis recortes, e a cobertura é delimitada pelos recortes individuais. A referência integral da região segue incompleta. Nenhuma partição científica foi atribuída.",
+  "novos_pares_validados": 0
+}

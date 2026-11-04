@@ -1,0 +1,27 @@
+{
+  "tipo": "decisao_humana_de_adocao_de_leitura_editorial_em_trecho_incerto",
+  "data_resposta": "2026-11-04",
+  "original_message": "Então analisando agora me parece um pouco mais a questão da escrita que um º, na transcrição esta como São Paulo ne, vamos levar a trascrição ofical que foi feita por um expecialista, quando surgir duvidas ",
+  "contexto_da_pergunta": "Você mantém a leitura do o elevado que viu antes? Se sim, a proposta fica Sᵒ Paulo, com a ligação entre as letras registrada na nota.",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_119f8864ca552d4d0f7d",
+  "observacoes_anteriores": [60, 92, 93, 94],
+  "decisao": {
+    "interpretacao_atual_do_traco": "parece mais uma característica da escrita do que um o elevado",
+    "forma_literal_confirmada": null,
+    "trecho_adotado_da_edicao": "São Paulo",
+    "leitura_assistida_da_linha": "sujeitos ao Gov. de Minas Gerays. São Paulo",
+    "orientacao_para_duvidas": "Adotar a leitura da edição de apoio nos trechos que permanecerem incertos e registrar a origem da escolha."
+  },
+  "edicao_de_apoio": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/modernized_edition_500a24d6a2ea8b93.pdf",
+    "pagina": 3,
+    "credito": "Transcrição e edição: Júlia Munhoz e Matheus Bellodi (AHMJ). Revisão: Isabella Ferraro (AHMJ)."
+  },
+  "scope": "Adota São Paulo na leitura assistida da quinta linha e preserva Gov. e Gerays, confirmados no manuscrito. A representação literal do trecho antes de Paulo segue em aberto para fins de referência diplomática do corpus.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Sexta linha: conferir no manuscrito os trechos entre 23, a abreviatura do mês e 1767, com a edição como apoio."
+}

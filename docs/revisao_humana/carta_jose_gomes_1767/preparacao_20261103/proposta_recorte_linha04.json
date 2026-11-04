@@ -1,0 +1,8 @@
+{
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "bbox_xyxy": [43, 177, 877, 293],
+  "reading_order": 3,
+  "region_id": "nota_superior_linha04_candidata",
+  "scope": "Quarta linha da anotação superior, da continuação lida como bertos até o final lido como que estão. A faixa inclui margem junto à dobra, acima de mu e abaixo das hastes. Há traços das linhas vizinhas nas bordas. Cobertura e limites pendentes de conferência humana."
+}

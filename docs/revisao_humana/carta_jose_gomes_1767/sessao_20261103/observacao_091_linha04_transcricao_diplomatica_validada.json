@@ -1,0 +1,22 @@
+{
+  "tipo": "confirmacao_humana_integral_de_transcricao_diplomatica",
+  "data_resposta": "2026-11-04",
+  "registrado_em": "2026-11-04T16:51:44.5611745Z",
+  "original_message": "Sim, confirmo: “bertos do campo verde, e de outros muⁱᵗᵒˢ que estão”. Pode deixar o ponto só na nota, validar a quarta linha e seguir para a quinta.",
+  "contexto_da_pergunta": "Você confirma a linha bertos do campo verde, e de outros muⁱᵗᵒˢ que estão, com o ponto visível à direita de muⁱᵗᵒˢ apenas na nota, ou o ponto deve entrar na transcrição?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_99b58f3e657c7885a0de",
+  "recorte_aprovado": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_99b58f3e657c7885a0de.png",
+  "recorte_aprovado_sha256": "99a1b84e23edb915aa9e1e0f2549011e7c023631c10bc388f878379f02085c7d",
+  "observacao_de_geometria": 75,
+  "observacoes_textuais_anteriores": [53, 54, 55, 87, 88, 89, 90],
+  "text_diplomatic": "bertos do campo verde, e de outros muⁱᵗᵒˢ que estão",
+  "nota_diplomatica": "Mu tem itos elevado, cuja função continua em aberto. O ponto visível à direita fica apenas na nota. A quebra com Desco- da terceira linha foi preservada.",
+  "contexto_editorial": "bertos do Campo verde, e de outros muitos que estão",
+  "scope": "Valida a transcrição diplomática integral da quarta linha. A correspondência documental, a cobertura de região e a partição científica continuam pendentes.",
+  "transcricao_formalmente_validada": true,
+  "novos_pares_validados": 1,
+  "continuidade": "Quinta linha: conferir as letras, a posição e o ponto da forma que a edição desenvolve como Governo."
+}

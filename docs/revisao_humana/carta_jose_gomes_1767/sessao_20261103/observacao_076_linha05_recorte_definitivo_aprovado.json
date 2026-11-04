@@ -1,0 +1,27 @@
+{
+  "tipo": "confirmacao_humana_de_cobertura_e_aprovacao_de_geometria",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, vejo a quinta linha inteira, incluindo o início junto à dobra e o o pequeno antes de Paulo. Os traços das linhas vizinhas não atrapalham a leitura, pode manter esse recorte como definitivo.",
+  "contexto_da_pergunta": "Você vê a linha inteira, incluindo o início junto à dobra e o o pequeno antes de Paulo? Se os traços vizinhos não atrapalham a leitura, podemos manter este recorte como definitivo?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_119f8864ca552d4d0f7d",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_aprovada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_119f8864ca552d4d0f7d.png",
+  "imagem_aprovada_sha256": "edad9c5933f9621b0c407f30710de941ff7b92e540c7780c49f0ccfc4414b431",
+  "bbox_xyxy_no_original": [43, 227, 930, 347],
+  "confirmacoes": {
+    "linha_inteira_visivel": true,
+    "inicio_junto_a_dobra_visivel": true,
+    "o_pequeno_antes_de_paulo_visivel": true,
+    "limites_retangulares_definitivos_aprovados": true,
+    "tracos_das_linhas_vizinhas_nas_bordas_aceitos": true,
+    "tracos_prejudicam_a_leitura": false
+  },
+  "scope": "Confirma a cobertura e aprova os limites do recorte da quinta linha com os traços vizinhos nas bordas. A transcrição diplomática segue pendente.",
+  "geometry_human_approved": true,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0
+}

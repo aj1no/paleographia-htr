@@ -1,0 +1,21 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_representacao_diplomatica",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, pode registrar como muⁱᵗᵒˢ, com o itos elevado, deixando em aberto se foi abreviação ou correção. Pode registrar e seguir.",
+  "contexto_da_pergunta": "Podemos representar essa disposição como muⁱᵗᵒˢ na transcrição diplomática, deixando em aberto se foi abreviação ou correção?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_99b58f3e657c7885a0de",
+  "observacao_da_disposicao_das_letras": 55,
+  "confirmacoes": {
+    "texto_na_linha": "mu",
+    "texto_elevado": "itos",
+    "forma_diplomatica_do_segmento": "muⁱᵗᵒˢ",
+    "classificacao_como_abreviacao_ou_correcao": null
+  },
+  "scope": "Aprova a representação do segmento com itos elevado. A função da disposição e a transcrição integral da quarta linha continuam pendentes.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir a forma literal de que e a presença de til em estão no fim da quarta linha."
+}

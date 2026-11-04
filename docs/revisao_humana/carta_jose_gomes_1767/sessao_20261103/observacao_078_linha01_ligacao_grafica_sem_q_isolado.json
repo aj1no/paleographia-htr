@@ -1,0 +1,23 @@
+{
+  "tipo": "reconferencia_humana_de_ligacao_grafica",
+  "data_resposta": "2026-11-04",
+  "original_message": "Vendo assim ampliado, me dar a sençasão de ser algo da escrita, algo com não tirar a caneta do papel, fazendo assim essa ligação, confirmamos na trascrição que não há esse q no texto, logo vamos serguir essa orientação",
+  "contexto_da_pergunta": "Nesta ampliação, você consegue confirmar que o grupo pode ser transcrito como q sozinho, ou ainda fica dúvida sobre alguma letra ou sinal adicional?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_14a4c7eba267e1e592e7",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/comparacao_A_linha01_grupo_q_4x.png",
+  "imagem_apresentada_sha256": "ef4d8a84b74a8861086a6145a84e167a9131a4301abd7e00ae46ad3d109472f9",
+  "leitura_humana": {
+    "interpretacao_do_traco": "possível ligação da escrita feita sem levantar a caneta",
+    "transcrever_q_isolado": false,
+    "forma_diplomatica_integral_confirmada": null
+  },
+  "contexto_editorial": "Paguem as Câmaras, e a razão por que não",
+  "observacoes_anteriores": [40, 42, 43, 68],
+  "scope": "Atualiza a interpretação do traço e registra a orientação de não transcrever um q isolado. A leitura editorial por que não permanece separada. A sequência diplomática exata ainda precisa de confirmação.",
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Confirmar se a transcrição diplomática fica por não, com que reservado à leitura de apoio."
+}

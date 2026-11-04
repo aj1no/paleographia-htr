@@ -1,0 +1,26 @@
+{
+  "tipo": "confirmacao_humana_localizada_de_cobertura_do_recorte",
+  "data_resposta": "2026-11-04",
+  "original_message": "Sim, vejo a quarta linha inteira, incluindo o início junto à dobra, o itos acima de mu e os traços finais à direita.",
+  "contexto_da_pergunta": "Você vê a quarta linha inteira, incluindo o início junto à dobra, o itos acima de mu e os traços finais à direita?",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto",
+  "identificacao_do_revisor": "docs/revisao_humana/sessao_1795/sessao_20261026/observacao_006_identificacao_revisor.json",
+  "identidade_autenticada": false,
+  "line_id": "l_99b58f3e657c7885a0de",
+  "source_image": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg",
+  "source_sha256": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+  "imagem_apresentada": "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_99b58f3e657c7885a0de.png",
+  "imagem_apresentada_sha256": "99a1b84e23edb915aa9e1e0f2549011e7c023631c10bc388f878379f02085c7d",
+  "bbox_xyxy_no_original": [43, 177, 877, 293],
+  "confirmacoes": {
+    "linha_inteira_visivel": true,
+    "inicio_junto_a_dobra_visivel": true,
+    "itos_acima_de_mu_visivel": true,
+    "tracos_finais_a_direita_visiveis": true
+  },
+  "scope": "Confirma a cobertura integral da quarta linha no recorte apresentado. A aprovação dos limites e a transcrição diplomática seguem pendentes.",
+  "geometry_human_approved": false,
+  "transcricao_formalmente_validada": false,
+  "novos_pares_validados": 0,
+  "continuidade": "Conferir se os traços vizinhos nas bordas permitem adotar o recorte atual como definitivo."
+}
