@@ -1,5 +1,9 @@
 # Ponto de retomada — pausa em 03/11/2026
 
+**Atualização de 04/11.** Os seis recortes da anotação superior à esquerda do fólio **4r** estão aprovados, com transcrições diplomáticas validadas nas linhas 1, 3 e 4. A forma após **tem** na linha 2 fica pendente. **São Paulo** na linha 5 e **dezembro** na linha 6 foram adotados da edição para as leituras assistidas. A observação 100 confirma a cobertura parcial, com a referência integral da região ainda incompleta e partições científicas pendentes. [Estado atual da leitura](../../revisao_humana/carta_jose_gomes_1767/sessao_20261103/anotacao_superior_leitura_de_trabalho.md) e [registro da cobertura](../../revisao_humana/carta_jose_gomes_1767/sessao_20261103/observacao_100_cobertura_seis_linhas_anotacao_superior.json). O registro da pausa de 03/11 permanece abaixo.
+
+A comparação exploratória PP-OCRv5 × PP-OCRv6 das linhas 1, 3 e 4 foi executada e arquivada com CER/WER e previsões brutas. [Resultados e protocolo](avaliacao_linhas_1767/README.md).
+
 Trabalho pausado a pedido do usuário, após a observação 052. Não continuar a conferência humana até sua retomada. Os arquivos de hoje incluem o notebook executado, requisitos recuperados, planejamento da apresentação, decisões humanas, exportações e ampliações com proveniência. O [salvamento do editor e do relatório](salvamento_20261103/README.md) preserva também os artefatos locais necessários à retomada.
 
 ## Ponto exato da leitura

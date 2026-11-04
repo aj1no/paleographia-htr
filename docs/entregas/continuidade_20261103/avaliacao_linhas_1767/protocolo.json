@@ -1,0 +1,61 @@
+{
+  "prepared_at": "2026-11-04T17:37:14.385291+00:00",
+  "scope": "diagnostico_exploratorio_por_linha_carta_1767_folio_4r",
+  "source_commit": "8ba92bda5770b41166be8551fa6bfae6bef131ce",
+  "included_lines": [
+    1,
+    3,
+    4
+  ],
+  "included_line_ids": [
+    "l_14a4c7eba267e1e592e7",
+    "l_5e33f0d507567e36dd02",
+    "l_99b58f3e657c7885a0de"
+  ],
+  "excluded_lines": [
+    2,
+    5,
+    6
+  ],
+  "region_reference_complete": false,
+  "scientific_split": null,
+  "reference_policy": "Transcrição diplomática validada, com alvos congelados antes de inferência.",
+  "inputs": "Mesmos PNGs e mesma ordem para os dois reconhecedores, sem segmentação ou pós-correção.",
+  "normalization": "Unicode NFC e colapso de espaços. Preservar caixa, diacríticos, grafia e pontuação.",
+  "aggregation": "CER e WER por linha, com microagregação pela soma de operações e denominadores.",
+  "failure_policy": "Falha explícita conta como previsão vazia. Previsão ausente ou metadados divergentes invalidam a execução.",
+  "models": {
+    "ppocrv5": {
+      "name": "latin PP-OCRv5 mobile / ONNX",
+      "weights": "models/latin_PP-OCRv5_mobile_rec/model.onnx",
+      "loaded_model": {
+        "sha256": "b20bd37c168a570f583afbc8cd7925603890efbcdc000a59e22c269d160b5f5a"
+      }
+    },
+    "ppocrv6": {
+      "name": "PP-OCRv6 medium / Kraken 7.1",
+      "weights": "models/kraken_ppocrv6_medium/medium.safetensors",
+      "docker_image": "paleographia-kraken:7.1.0-cpu",
+      "loaded_model": {
+        "sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+        "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",
+        "worker_sha256": "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a"
+      }
+    }
+  },
+  "input_sha256": {
+    "configs/traslado_269r.toml": "c6ccec65073fd220f2cc126ec723a78f3da61ffd11af5d9e8453a46ee75c5373",
+    "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/manuscript_image_7d9c6e3e9a0728b1.jpg": "7d9c6e3e9a0728b155d6a6d390b5e70622e7724ac1bbe527e1cebd89ab45f546",
+    "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/modernized_edition_500a24d6a2ea8b93.pdf": "500a24d6a2ea8b93ea2fc7d94388b26c5facbef75f094b8c0964a58f0b0b2368",
+    "docs/entregas/continuidade_20261103/avaliacao_linhas_1767/avaliar.py": "8da080f1048fac9ea251e52fa408c79924500aef08728d65bf0c6a57269660fd",
+    "docs/entregas/continuidade_20261103/avaliacao_linhas_1767/exclusoes.jsonl": "7c361685eec2a60f14fac26d64a1e7baf09c695294713137aedc0ea517d114b5",
+    "docs/entregas/continuidade_20261103/avaliacao_linhas_1767/paginas.jsonl": "7873ca2e31bd58a5061190cd123a7afab06543e27d2025613051e4d06892c6b7",
+    "docs/entregas/continuidade_20261103/avaliacao_linhas_1767/recortes.jsonl": "671ea8e80449d3f9b363e747b2de46fab99d86adc443513370a9a82745c7954d",
+    "docs/entregas/continuidade_20261103/avaliacao_linhas_1767/referencias.jsonl": "d6e2424a314f071c26ef65264f0540131f2bceec5737d5de8e9072c84919e992",
+    "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_14a4c7eba267e1e592e7.png": "44cfce738bc01e09f6585232e754c5100984628d932423cf7d98cb8bb3b137de",
+    "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_5e33f0d507567e36dd02.png": "243963b72f2591d706d5e3fc923cbd88938f2d9147d594ac1359fd5c7e95f185",
+    "docs/revisao_humana/carta_jose_gomes_1767/preparacao_20261103/l_99b58f3e657c7885a0de.png": "99a1b84e23edb915aa9e1e0f2549011e7c023631c10bc388f878379f02085c7d",
+    "src/paleographia/evaluation.py": "96995e52c18eb302127a16698ac07cd3872930b331c10adc3b1e938e09b07efd",
+    "src/paleographia/kraken_recognition_worker.py": "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a"
+  }
+}
