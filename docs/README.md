@@ -9,6 +9,7 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 
 ## Para começar
 
+- [Contexto completo do projeto](CONTEXTO_COMPLETO_PROJETO.md): mapa de pastas, arquitetura, Docker, API, dados, CI e pendências (retrato de 05/11).
 - [Retomada de 05/11](entregas/continuidade_20261103/RETOMADA_20261105.md): editor de fólio inteiro, grupo de teste reservado e ajuste fino do PP-OCRv6 ([experimento](experimentos/ppocrv6_ajuste_fino_20261105/README.md)).
 - [Retomar o trabalho de 03/11](entregas/continuidade_20261103/RETOMADA.md): curadoria salva até a observação 052; próxima conferência na quarta linha da carta de 1767.
 
