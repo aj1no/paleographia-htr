@@ -1,0 +1,13 @@
+{
+ "regra": "pares alinhados: sem colchetes editoriais, sem abreviatura com ponto ou sobrescrito na leitura-guia, CER-guia <= 0,35",
+ "descartados": {
+  "abreviatura_na_leitura": 92,
+  "cer_guia_acima_0_35": 7,
+  "colchete_editorial": 3
+ },
+ "mantidos": {
+  "train/edition_aligned_paleographic": 175,
+  "validation/human_diplomatic": 7,
+  "train/human_diplomatic": 16
+ }
+}

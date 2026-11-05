@@ -1,0 +1,74 @@
+[
+  {
+    "folio": "269r",
+    "blla_lines": 37,
+    "edition_lines": 35,
+    "aligned_pairs": 33,
+    "page_cer_vs_edition": 0.1916,
+    "median_pair_cer": 0.1818
+  },
+  {
+    "folio": "269v",
+    "blla_lines": 34,
+    "edition_lines": 34,
+    "aligned_pairs": 34,
+    "page_cer_vs_edition": 0.1892,
+    "median_pair_cer": 0.1905
+  },
+  {
+    "folio": "270r",
+    "blla_lines": 36,
+    "edition_lines": 35,
+    "aligned_pairs": 35,
+    "page_cer_vs_edition": 0.1861,
+    "median_pair_cer": 0.1951
+  },
+  {
+    "folio": "270v",
+    "blla_lines": 36,
+    "edition_lines": 35,
+    "aligned_pairs": 34,
+    "page_cer_vs_edition": 0.2262,
+    "median_pair_cer": 0.2
+  },
+  {
+    "folio": "271r",
+    "blla_lines": 38,
+    "edition_lines": 35,
+    "aligned_pairs": 29,
+    "page_cer_vs_edition": 0.3349,
+    "median_pair_cer": 0.3125
+  },
+  {
+    "folio": "271v",
+    "blla_lines": 35,
+    "edition_lines": 34,
+    "aligned_pairs": 34,
+    "page_cer_vs_edition": 0.2676,
+    "median_pair_cer": 0.2821
+  },
+  {
+    "folio": "272r",
+    "blla_lines": 40,
+    "edition_lines": 35,
+    "aligned_pairs": 35,
+    "page_cer_vs_edition": 0.281,
+    "median_pair_cer": 0.2826
+  },
+  {
+    "folio": "272v",
+    "blla_lines": 38,
+    "edition_lines": 35,
+    "aligned_pairs": 32,
+    "page_cer_vs_edition": 0.2807,
+    "median_pair_cer": 0.2683
+  },
+  {
+    "folio": "273r",
+    "blla_lines": 17,
+    "edition_lines": 16,
+    "aligned_pairs": 11,
+    "page_cer_vs_edition": 0.3892,
+    "median_pair_cer": 0.2131
+  }
+]
