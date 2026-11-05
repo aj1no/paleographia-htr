@@ -200,7 +200,9 @@ def create_app(root=None, config=None, recognizer=None):
                           height_percent=100*(l["bbox_xyxy"][3]-l["bbox_xyxy"][1])/page["height"]) for l in lines]}
 
     @app.post("/api/pages/{page_id}/segment")
-    def segment(page_id: str, method: str = "opencv"):
+    def segment(page_id: str, method: str | None = None):
+        if method not in (None, "opencv", "kraken", "kraken_blla"):
+            raise HTTPException(422, "Método de segmentação desconhecido.")
         return service.segment(page_id, method)
 
     @app.post("/api/pages/{page_id}/recognize")
@@ -219,6 +221,37 @@ def create_app(root=None, config=None, recognizer=None):
     @app.patch("/api/lines/{line_id}")
     def edit_line(line_id: str, edit: Edit):
         return service.update_line(line_id, edit.changes, edit.revision)
+
+    @app.get("/folio-texto")
+    def folio_text_page():
+        return FileResponse(Path(__file__).parent/"web/folio_texto.html")
+
+    @app.get("/api/pages/{page_id}/text")
+    def folio_text(page_id: str):
+        """Pre-version of the whole folio: human reading when present, else the current suggestion."""
+        state = service.state()
+        page = service.get_page(page_id, state)
+        if not page:
+            raise HTTPException(404, "Página não encontrada.")
+        lines = sorted((l for l in state["lines"] if l["page_id"] == page_id and l["review_status"] != "rejected"),
+                       key=lambda l: l["reading_order"])
+        latest = {}
+        for row in present_predictions(state["predictions"], lines, config):
+            latest[row["line_id"]] = row  # predictions are appended in execution order
+        rows = []
+        for line in lines:
+            suggestion = latest.get(line["line_id"], {}).get("presentation", {})
+            human = (line.get("text_diplomatic") or "").strip()
+            if human:
+                text, source = human, "humana_validada" if line["review_status"] == "validated" else "humana_rascunho"
+            elif suggestion.get("status") == "candidate":
+                text, source = suggestion["text"], "sugestao_modelo"
+            else:
+                text, source = "", suggestion.get("status") or "sem_reconhecimento"
+            rows.append({"line_id": line["line_id"], "reading_order": line["reading_order"], "region_id": line["region_id"],
+                         "text": text, "source": source})
+        return {"page_id": page_id, "original_name": page.get("original_name"), "revision": state["revision"],
+                "lines": rows, "text": "\n".join(r["text"] for r in rows if r["region_id"] != "margem")}
 
     @app.get("/api/pages/{page_id}/image")
     def image(page_id: str):

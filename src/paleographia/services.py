@@ -97,7 +97,8 @@ class ReviewService:
     def get_page(self, page_id, state=None):
         return next((p for p in (state or self.state())["pages"] if p["page_id"] == page_id), None)
 
-    def segment(self, page_id, method="opencv"):
+    def segment(self, page_id, method=None):
+        method = method or self.config.get("segmentation", {}).get("default_method", "opencv")
         with self.lock:
             state = self.state()
             page = self.get_page(page_id, state)
@@ -106,7 +107,11 @@ class ReviewService:
             if any(l["page_id"] == page_id for l in state["lines"]):
                 raise Conflict("A página já tem linhas. Ajuste ou rejeite os recortes existentes para preservar suas revisões.")
             output = self.workspace/"segments"/run_id()
-            lines, _ = segment_pages([page], method, self.config, output, self.root)
+            if method == "kraken_blla":
+                from .blla_segmentation import segment_page_blla
+                lines = segment_page_blla(page, output, self.root, self.config.get("recognition", {}))
+            else:
+                lines, _ = segment_pages([page], method, self.config, output, self.root)
             state["lines"].extend(lines)
             self.save(state, "segment")
             return lines
