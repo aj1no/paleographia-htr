@@ -9,13 +9,18 @@ from pathlib import Path
 from PIL import Image, UnidentifiedImageError
 
 from .data import Line, Page, bbox_valid, check_reviewer
-from .io import now, read_jsonl, relative, run_id, safe_path, sha256, write_json, write_jsonl
+from .io import now, relative, run_id, safe_path, sha256, write_json, write_jsonl
 from .backends import create_recognizer
 from .segmentation import crop_line, segment_pages
 
 
 class Conflict(ValueError):
     pass
+
+
+# Fields whose change means the reviewer is attesting something new.
+ATTESTED_LINE_FIELDS = ("text_diplomatic", "bbox_xyxy", "reading_order", "region_id", "reviewer",
+                        "review_status", "geometry_status", "reference_kind", "reference_source", "reference_pages")
 
 
 class ReviewService:
@@ -208,7 +213,10 @@ class ReviewService:
                 updated["geometry_status"] = changes.get("geometry_status", "pending_review")
                 updated["review_status"] = changes.get("review_status", "pending_review")
             if updated["review_status"] == "validated" or updated["geometry_status"] == "validated":
-                updated["reviewed_at"] = now()
+                # reviewed_at dates the human attestation. Saving unrelated fields
+                # (modernized text, exclusion note, lexical history) keeps it.
+                if not line.get("reviewed_at") or any(updated.get(key) != line.get(key) for key in ATTESTED_LINE_FIELDS):
+                    updated["reviewed_at"] = now()
                 check_reviewer(updated)
             else:
                 updated["reviewed_at"] = None

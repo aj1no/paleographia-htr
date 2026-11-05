@@ -139,11 +139,11 @@ def test_api_application_persists_provenance_without_promoting_or_rewriting_hist
         assert current["pages"] == state["pages"] and current["predictions"] == state["predictions"]
         assert old_file.read_bytes() == old_bytes
         assert client.patch(f'/api/lines/{lid}', json={"changes": changes, "revision": state["revision"]}).status_code == 409
-        assert client.patch(f'/api/lines/{lid}', json={"changes": {"lexical_assistance": []}}).status_code == 422
+        assert client.patch(f'/api/lines/{lid}', json={"changes": {"lexical_assistance": []}, "revision": client.get('/api/catalog').json()['revision']}).status_code == 422
         # An unavailable lexicon must not block manual editing or preservation of prior events.
         (root/'data/lexicon/sources.json').write_text('{}', encoding='utf-8')
         assert not client.post('/api/lexicon/query', json={"text": "Anno"}).json()["available"]
-        assert client.patch(f'/api/lines/{lid}', json={"changes": {"text_diplomatic": "Outra leitura", "lexical_assistance": saved["lexical_assistance"]}}).status_code == 200
+        assert client.patch(f'/api/lines/{lid}', json={"changes": {"text_diplomatic": "Outra leitura", "lexical_assistance": saved["lexical_assistance"]}, "revision": client.get('/api/catalog').json()['revision']}).status_code == 200
     assert create_app(root, config, TestRecognizer()).state.service.state()["lines"][0]["lexical_assistance"] == saved["lexical_assistance"]
 
 
@@ -159,7 +159,7 @@ def test_api_rejects_stale_or_forged_application(corpus, damage):
     elif damage == "after": event["after"] = "texto sem fonte"
     else: event["start"] = 100
     with TestClient(app) as client:
-        assert client.patch(f'/api/lines/{lines[0]["line_id"]}', json={"changes": {"lexical_assistance": [event]}}).status_code == 422
+        assert client.patch(f'/api/lines/{lines[0]["line_id"]}', json={"changes": {"lexical_assistance": [event]}, "revision": initial["revision"]}).status_code == 422
         assert client.get('/api/catalog').json()["revision"] == initial["revision"]
 
 
