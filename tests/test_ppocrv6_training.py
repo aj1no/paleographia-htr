@@ -1,12 +1,11 @@
 import copy
 import json
-from pathlib import Path
 from types import SimpleNamespace
 
 import pytest
 
 from conftest import reviewed
-from paleographia.io import read_jsonl, sha256, write_json
+from paleographia.io import sha256, write_json
 from paleographia.ppocrv6_training import docker_command, run, select_data
 
 

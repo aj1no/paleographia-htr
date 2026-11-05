@@ -1,6 +1,5 @@
 """Contribuição preenchida não deve virar aprovação, identidade ou revisão humana."""
 from pathlib import Path
-import json
 import runpy
 
 import pytest
