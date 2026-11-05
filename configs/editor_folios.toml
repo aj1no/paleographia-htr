@@ -30,6 +30,9 @@ evaluated_docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d9
 evaluated_worker_sha256 = "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a"
 
 [segmentation]
+# Segmentação neural de linhas (Kraken blla, na mesma imagem Docker). O botão
+# "Detectar linhas" usa este método; a projeção continua disponível via API.
+default_method = "kraken_blla"
 detector = "projection"
 horizontal_margin_ratio = 0.06
 smoothing_ratio = 0.003

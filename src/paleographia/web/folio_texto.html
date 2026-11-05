@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PaleographIA · Texto do fólio</title>
+<style>
+  :root { --ink:#1f2a24; --muted:#6b7068; --line:#e3ded4; --paper:#faf8f4; --accent:#1d4d3a; --model:#fdf1e4; --human:#e8f3ec; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.5 system-ui, sans-serif; color:var(--ink); background:var(--paper); }
+  header { background:var(--accent); color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; }
+  header h1 { font:600 20px Georgia, serif; margin:0; }
+  header a { color:#fff; }
+  main { max-width:1100px; margin:0 auto; padding:20px 24px 40px; }
+  .toolbar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:14px; }
+  select, button { font:inherit; padding:7px 12px; border-radius:6px; border:1px solid #c9c3b6; background:#fff; }
+  button { background:var(--accent); color:#fff; border-color:var(--accent); cursor:pointer; }
+  button.secondary { background:#fff; color:var(--accent); }
+  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; color:var(--muted); margin:6px 0 16px; }
+  .chip { display:inline-block; width:12px; height:12px; border-radius:3px; vertical-align:-1px; margin-right:4px; border:1px solid #ccc; }
+  .panel { background:#fff; border:1px solid var(--line); border-radius:8px; padding:6px 0; }
+  .row { display:grid; grid-template-columns:44px 1fr 150px; gap:10px; padding:5px 16px; border-bottom:1px solid #f1ede6; align-items:baseline; }
+  .row:last-child { border-bottom:0; }
+  .n { color:var(--muted); font-size:12px; text-align:right; }
+  .t { font:17px/1.45 Georgia, serif; white-space:pre-wrap; }
+  .src { font-size:12px; color:var(--muted); }
+  .sugestao_modelo .t { background:var(--model); }
+  .humana_validada .t, .humana_rascunho .t { background:var(--human); }
+  .margem { opacity:.55; }
+  .vazio .t { color:#aaa; font-style:italic; }
+  .note { font-size:13px; color:var(--muted); margin-top:14px; }
+  #status { font-size:13px; color:var(--muted); }
+</style>
+</head>
+<body>
+<header><h1>PaleographIA · Texto do fólio</h1><a href="/">Voltar ao editor</a></header>
+<main>
+  <div class="toolbar">
+    <select id="pages" aria-label="Selecionar fólio"></select>
+    <button id="copy">Copiar texto</button>
+    <button id="download" class="secondary">Baixar .txt</button>
+    <label><input type="checkbox" id="margins"> Mostrar margens</label>
+    <span id="status" role="status"></span>
+  </div>
+  <div class="legend">
+    <span><span class="chip" style="background:var(--model)"></span>Sugestão do modelo (conferir na imagem)</span>
+    <span><span class="chip" style="background:var(--human)"></span>Leitura humana registrada</span>
+    <span><span class="chip"></span>Sem leitura</span>
+  </div>
+  <div class="panel" id="text"></div>
+  <p class="note">Pré-versão do texto em ordem de leitura. Cada linha usa a leitura humana quando existe e, caso contrário, a
+    sugestão experimental do reconhecedor. Sugestões não são transcrição validada: confira cada palavra no manuscrito e
+    registre a leitura no editor.</p>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const labels = {sugestao_modelo: 'sugestão do modelo', humana_validada: 'humana · validada', humana_rascunho: 'humana · rascunho',
+                empty: 'sem escrita detectada', sem_reconhecimento: 'sem reconhecimento', outdated: 'recorte alterado',
+                unavailable_in_portuguese: 'sugestões desativadas', historical_model: 'outro modelo', failed: 'falhou', truncated: 'incompleta'};
+let current = null;
+async function json(url) { const r = await fetch(url); if (!r.ok) throw Error((await r.json()).detail || r.statusText); return r.json(); }
+function visible() { return current.lines.filter(l => $('margins').checked || l.region_id !== 'margem'); }
+function plain() { return visible().map(l => l.text).join('\n'); }
+function render() {
+  const box = $('text'); box.textContent = '';
+  for (const l of visible()) {
+    const row = document.createElement('div');
+    row.className = `row ${l.source} ${l.region_id === 'margem' ? 'margem' : ''} ${l.text ? '' : 'vazio'}`;
+    row.innerHTML = '<span class="n"></span><span class="t"></span><span class="src"></span>';
+    row.children[0].textContent = l.reading_order;
+    row.children[1].textContent = l.text || '—';
+    row.children[2].textContent = labels[l.source] || l.source;
+    box.appendChild(row);
+  }
+  const counts = visible().reduce((a, l) => (a[l.source] = (a[l.source] || 0) + 1, a), {});
+  $('status').textContent = `${visible().length} linhas · ` + Object.entries(counts).map(([k, v]) => `${v} ${labels[k] || k}`).join(' · ');
+}
+async function load(pageId) {
+  current = await json(`/api/pages/${pageId}/text`);
+  history.replaceState(null, '', `?page=${encodeURIComponent(pageId)}`);
+  render();
+}
+$('pages').onchange = () => load($('pages').value);
+$('margins').onchange = render;
+$('copy').onclick = async () => { await navigator.clipboard.writeText(plain()); $('status').textContent = 'Texto copiado.'; };
+$('download').onclick = () => {
+  const blob = new Blob([plain() + '\n'], {type: 'text/plain;charset=utf-8'});
+  const a = Object.assign(document.createElement('a'), {href: URL.createObjectURL(blob), download: `${current.page_id}_pre_versao.txt`});
+  a.click(); URL.revokeObjectURL(a.href);
+};
+(async () => {
+  const catalog = await json('/api/catalog');
+  for (const p of catalog.pages) $('pages').add(new Option(`${p.original_name} · ${p.page_id}`, p.page_id));
+  const wanted = new URLSearchParams(location.search).get('page');
+  const pageId = catalog.pages.some(p => p.page_id === wanted) ? wanted : catalog.pages.at(-1)?.page_id;
+  if (pageId) { $('pages').value = pageId; await load(pageId); } else { $('status').textContent = 'Importe um fólio no editor.'; }
+})().catch(e => { $('status').textContent = e.message; });
+</script>
+</body>
+</html>

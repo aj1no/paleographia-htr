@@ -102,3 +102,18 @@ def test_reserved_test_curation_never_shows_model_suggestions():
     assert config["recognition"]["backend"] == "disabled"
     assert review_policy(config)["automatic_transcription_enabled"] is False
     assert create_recognizer(config, root).status()["backend"] == "disabled"
+
+
+def test_folio_text_prefers_human_reading_then_suggestion(corpus):
+    app, lines = client_for(corpus, validated=False)
+    with TestClient(app) as client:
+        page_id = client.get("/api/catalog").json()["pages"][0]["page_id"]
+        assert client.post(f"/api/pages/{page_id}/recognize").status_code == 200
+        assert patch_line(client, lines[0]["line_id"], {"text_diplomatic": "Leitura humana"}).status_code == 200
+        data = client.get(f"/api/pages/{page_id}/text").json()
+        assert data["lines"][0] == dict(data["lines"][0], text="Leitura humana", source="humana_rascunho")
+        # pilot.toml keeps suggestions hidden, so the other lines carry no model text.
+        assert all(r["text"] == "" and r["source"] == "unavailable_in_portuguese" for r in data["lines"][1:])
+        assert data["text"].splitlines()[0] == "Leitura humana"
+        assert client.get("/folio-texto").status_code == 200
+        assert client.get("/api/pages/inexistente/text").status_code == 404
