@@ -1,0 +1,45 @@
+# Ajuste fino do PP-OCRv6 medium (src/paleographia/ppocrv6_finetune.py).
+#
+# Treino: linhas do Traslado (fac-símile 269r–273r) com rótulo alinhado à
+# transcrição paleográfica publicada, mais as 16 linhas humanas do 269r.
+# Validação (seleção de checkpoint e parada antecipada): 7 linhas humanas da
+# sessão de 1795. Teste reservado (pagamento a Thomas Pardo) recusado no código.
+
+[recognition]
+model = "models/kraken_ppocrv6_medium/medium.safetensors"
+sha256 = "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9"
+docker_image = "paleographia-kraken:7.1.0-cpu"
+docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+
+[finetune]
+# Treino na GPU NVIDIA com a imagem de treino CUDA (runtime/kraken_ppocrv6_gpu).
+# O modelo ajustado roda na imagem de CPU avaliada, como o base.
+device = "cuda:0"
+# FP32 (16-mixed dá perda NaN na CTC) e modo não determinístico, mais rápido na GTX 1650.
+precision = "32-true"
+deterministic = false
+docker_image = "paleographia-kraken:7.1.0-cu126"
+docker_image_id = "sha256:b5e275eb694b25aeac0b159181953b8c3824e777ed9c8d49996db5347b6a0c1a"
+seed = 1831
+threads = 4
+memory = "7g"
+# NFD: o alfabeto do checkpoint codifica ã, ç e õ como letra + marca combinante
+# (26/26 referências passam em NFD, 11/26 em NFC). A avaliação segue em NFC.
+normalization = "NFD"
+augment_variants = 1
+# BatchNorm congelada: com lotes de 1–2 linhas, as estatísticas desandam e a validação
+# caiu para 0,3% de acerto mesmo com taxa de aprendizado baixa.
+freeze_batchnorm = true
+batch_size = 2
+accumulate = 4
+# 1e-4 derrubou a validação de 86,8% para 45,1% de acerto na 1ª época (esquecimento).
+learning_rate = 0.00002
+min_learning_rate = 0.000001
+warmup_steps = 40
+weight_decay = 0.0
+max_epochs = 12
+min_epochs = 2
+# Validação a cada quarto de época; lag conta validações, então 8 = duas épocas sem melhora.
+freq = 0.25
+lag = 8
+min_delta = 0.001
