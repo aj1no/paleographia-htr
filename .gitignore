@@ -23,6 +23,7 @@ data/raw/inbox/*
 data/processed/*
 data/workspace/
 data/workspace_traslado_269r/
+data/workspace_folios/
 experiments/*
 !experiments/README.md
 # Recreated from the verified supplied ZIP; catalogs and text stay versioned.

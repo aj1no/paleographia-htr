@@ -101,8 +101,13 @@ py -3.12 -m venv .venv
 Abra [o editor do Traslado](http://127.0.0.1:8011/). Em Linux, use
 `.venv/bin/python`. A documentação da API fica em `/docs`.
 
+Para **transcrever fólios novos** com sugestões do PP-OCRv6, abra o Docker Desktop
+e execute `iniciar_editor.bat` (ou use `configs/editor_folios.toml` na porta 8010).
+O atalho confere Docker, imagem e peso antes de abrir o navegador.
+
 | Configuração | Uso | Porta sugerida |
 | --- | --- | --- |
+| `configs/editor_folios.toml` | Fólios novos, com sugestões do PP-OCRv6 (`iniciar_editor.bat`) | 8010 |
 | `configs/traslado_269r.toml` | Editor do Traslado, com sugestões experimentais | 8011 |
 | `configs/pilot.toml` | Piloto de 1831, sugestões desativadas (`start_safe.bat`) | 8000 |
 | `configs/curation_sessao_1795.toml` | Curadoria manual da sessão de 1795 | 8012 |
