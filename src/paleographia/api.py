@@ -20,7 +20,19 @@ from .services import Conflict, ReviewService
 class Edit(BaseModel):
     model_config = ConfigDict(extra="forbid")
     changes: dict
-    revision: str | None = None
+    # Required: an edit must name the revision it was based on, so a stale
+    # client gets 409 instead of silently overwriting newer human work.
+    revision: str = Field(min_length=1)
+
+
+WRITE_METHODS = {"POST", "PUT", "PATCH", "DELETE"}
+
+
+def same_origin(origin, host):
+    """True when the browser Origin points at the host serving this API."""
+    from urllib.parse import urlsplit
+    parts = urlsplit(origin)
+    return parts.scheme in {"http", "https"} and bool(host) and parts.netloc.lower() == host.lower()
 
 
 class AddLine(BaseModel):
@@ -51,6 +63,17 @@ def create_app(root=None, config=None, recognizer=None):
 
     app = FastAPI(title="PaleographIA — revisão local", lifespan=lifespan)
     app.state.service = service
+
+    @app.middleware("http")
+    async def reject_cross_origin_writes(request, call_next):
+        # A page from another site can submit a plain form to 127.0.0.1 without
+        # a CORS preflight. Browsers always send Origin on such writes; local
+        # tools (curl, scripts, tests) send none and remain allowed.
+        origin = request.headers.get("origin")
+        if request.method in WRITE_METHODS and origin is not None and not same_origin(origin, request.headers.get("host")):
+            from fastapi.responses import JSONResponse
+            return JSONResponse(status_code=403, content={"detail": "Origem não autorizada para alterar o workspace."})
+        return await call_next(request)
 
     @app.exception_handler(ModelUnavailable)
     async def unavailable(request, exc):

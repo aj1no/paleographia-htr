@@ -51,7 +51,7 @@ def test_api_processing_crop_geometry_review_and_raw_history(corpus):
         assert client.post(f"/api/pages/{pid}/recognize").status_code == 200
         state = client.get("/api/catalog").json()
         changes = {"text_diplomatic": "Humano", "review_status": "validated", "reference_kind": "human_diplomatic", "geometry_status": "validated"}
-        assert client.patch(f"/api/lines/{lid}", json={"changes": changes}).status_code == 422
+        assert client.patch(f"/api/lines/{lid}", json={"changes": changes, "revision": state["revision"]}).status_code == 422
         changes["reviewer"] = "Test reviewer"
         response = client.patch(f"/api/lines/{lid}", json={"changes": changes, "revision": state["revision"]})
         assert response.status_code == 200 and response.json()["reviewed_at"]
@@ -60,7 +60,7 @@ def test_api_processing_crop_geometry_review_and_raw_history(corpus):
         assert state["predictions"][0]["text_raw"] == "TEST ONLY"
         assert next(l for l in state["lines"] if l["line_id"] == lid)["text_diplomatic"] == "Humano"
         assert len(list((root/config["paths"]["workspace"]/"revisions").glob("*.json"))) >= 4
-        response = client.patch(f"/api/lines/{lid}", json={"changes": {"bbox_xyxy": [50, 40, 500, 90]}})
+        response = client.patch(f"/api/lines/{lid}", json={"changes": {"bbox_xyxy": [50, 40, 500, 90]}, "revision": state["revision"]})
         assert response.status_code == 200 and response.json()["review_status"] == "pending_review"
         assert client.get("/api/export").headers["content-type"] == "application/zip"
         assert client.get("/").status_code == 200
@@ -83,7 +83,7 @@ def test_exif_preview_and_path_validation(corpus):
         response = client.get(f"/api/pages/{page['page_id']}/image")
         with Image.open(io.BytesIO(response.content)) as preview:
             assert preview.size == (200, 100) and not preview.getexif()
-        response = client.patch(f"/api/pages/{page['page_id']}", json={"changes": {"source_image": "../secret"}})
+        response = client.patch(f"/api/pages/{page['page_id']}", json={"changes": {"source_image": "../secret"}, "revision": client.get("/api/catalog").json()["revision"]})
         assert response.status_code == 422
 
 
