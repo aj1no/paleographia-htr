@@ -1,88 +1,96 @@
 # PaleographIA — transcrição assistida de manuscritos
 
-Protótipo local de apoio à leitura de manuscritos históricos de Jundiaí. Permite
-conferir recortes e ordem de leitura, consultar vocabulário com fontes e salvar
-revisões humanas com autoria e histórico. Reconhecimento bruto, edição publicada
-e texto humano permanecem separados. A interface é apresentada em português.
+[![CI](https://github.com/aj1no/paleographia-htr/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/aj1no/paleographia-htr/actions/workflows/ci.yml)
+[![Licença do código: MIT](https://img.shields.io/badge/c%C3%B3digo-MIT-blue.svg)](LICENSE)
+![Python 3.11 | 3.12](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue.svg)
 
-**Estado em 23/10/2026 — branch principal e padrão: `main`.** A expansão de
-fontes e o ajuste fino passaram a integrar a etapa acadêmica. O corpus v0.2 foi
-incorporado e houve um **ensaio técnico real de ajuste fino do PP-OCRv6**, com
-dois passos de otimização. A avaliação científica em documentos reservados
-depende de novos pares revisados e partições documentais confirmadas.
+Protótipo local de apoio à leitura de manuscritos históricos de Jundiaí
+(séculos XVII a XIX). O editor permite importar imagens, identificar
+documento e fólio, ajustar recortes e ordem de leitura, pedir uma sugestão
+experimental de reconhecimento, consultar vocabulário histórico com fontes e
+salvar revisões humanas com autoria, proveniência e histórico.
 
-**[Entrega acadêmica atual: artigo, notebook baseline e links de submissão](docs/entregas/pi_iv_pln_20261023_fechamento/README.md).**
-O guia reúne a versão atual do artigo, o notebook indicado, a reprodução e os
-pontos de revisão dos autores e dos oito novos recortes. Submissões e confirmações
-humanas continuam pendentes; o baseline recalcula predições arquivadas.
-Veja [fontes, recortes para revisão, evidências e explicação para o professor](docs/dataset_expansion_20261023/README.md).
-As [referências comentadas e seus vínculos com o método](docs/bibliografia/README.md)
-foram incorporadas à documentação, distinguindo consulta parcial e leitura integral.
-Os [fichamentos integrais de T1/T4](docs/bibliografia/leitura_t1_t4_20261023/README.md)
-e o [artigo com fundamentação ampliada](docs/entregas/pi_iv_pln_20261023_fundamentacao/README.md)
-estão disponíveis, com leitura por IA e revisão dos autores pendente.
-A [versão editorial anterior do artigo](docs/entregas/pi_iv_pln_20261023_entrega/README.md)
-inclui PDF e Word com três páginas, citações conferidas e declaração de IA;
-as pendências de PI IV e PLN estão registradas separadamente.
-O [notebook colaborativo da equipe](docs/entregas/pi_iv_pln_20261023_equipe/README.md)
-recupera a divisão do primeiro artigo e oferece atividades e campos de relato
-para Caio, Guilherme, Tiago e Rodolfo. As contribuições individuais ficam a preencher.
+**Reconhecimento bruto, edição publicada e transcrição humana validada
+permanecem separados em todos os registros.** Nenhuma sugestão de OCR vira
+referência sem conferência humana na imagem.
 
-[![Abrir notebook da equipe no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aj1no/paleographia-htr/blob/main/docs/entregas/pi_iv_pln_20261023_colab/colaboracao_colab.ipynb)
+<p align="center">
+  <img src="docs/revisao_humana/traslado_269r/images/editor_revisao.jpg" width="420"
+       alt="Editor de revisão: recorte da linha, resultado do reconhecimento, edição publicada de apoio e campo da transcrição paleográfica humana">
+</p>
 
-Para preencher no navegador: salve uma cópia no Drive, execute tudo, preencha sua
-seção e baixe o ZIP dos relatos. Veja o [guia dos alunos](docs/entregas/pi_iv_pln_20261023_colab/README.md).
+Projeto Integrador IV e Processamento de Linguagem Natural. Interface em
+português do Brasil.
 
-A [versão principal no GitHub](https://github.com/aj1no/paleographia-htr/tree/main)
-contém o programa, a documentação e as evidências publicadas. A branch
-`codex/refatoracao-piloto` foi preservada como registro da etapa anterior.
-Referências a ela nos pacotes datados indicam a origem das entregas; consulte
-a [nota sobre a adoção da main](docs/manutencao/main_20261020/README.md).
+## Estado em 05/11/2026
 
-## Referência e resultados atuais
+| Documento | Situação da referência humana | Uso atual |
+| --- | --- | --- |
+| Traslado da criação da vila, fólio 269r | 24 linhas em cinco blocos: 16 validadas e 8 com ressalvas visuais | Diagnóstico de desenvolvimento dos reconhecedores |
+| Sessão de 25/06/1795, fólio 91r | 8 geometrias confirmadas; 7 referências diplomáticas validadas; 1 pendente | Sete pares no [dataset revisado](docs/entregas/continuidade_20261103/dataset_revisado_1795/README.md) |
+| Carta de José Gomes de Gouveia, 1767, fólio 4r | 6 recortes aprovados; linhas 1, 3 e 4 validadas | [Notebook 2: avaliação por linha](docs/entregas/continuidade_20261103/avaliacao_linhas_1767/README.md) |
+| Contrato de 1763, livro 13, p. 5 | 4 recortes exploratórios; faces e referências pendentes | Exploração de pré-processamento; nenhum pseudorrótulo aprovado |
+| Catálogo de 1831 | 3 fólios, 94 recortes pendentes, nenhuma linha validada | Piloto inicial do editor |
 
-O corpo selecionado do **fólio 269r do Traslado do Auto de Criação da Vila** tem
-24 linhas com geometria e cobertura conferidas em cinco blocos. Há **16 linhas
-validadas e oito com ressalvas visuais**. Nas dúvidas, a referência assistida
-adota a edição com proveniência; isso não equivale a confirmação visual nem a
-referência humana independente da edição.
+**Próximo passo científico:** selecionar e reservar um grupo documental
+independente para o teste final, conferir sua proveniência e preparar
+referências diplomáticas *antes* de ajustar modelos ou escolher parâmetros.
+Veja a [retomada de 04/11](docs/entregas/continuidade_20261103/RETOMADA_20261104.md).
 
-Os mesmos 24 recortes foram usados para comparar dois reconhecedores:
+## Resultados de desenvolvimento
 
-| Reconhecedor e implementação | CER | WER |
-| --- | ---: | ---: |
-| latin PP-OCRv5 mobile / ONNX | 58,45% | 94,58% |
-| PP-OCRv6 medium / Kraken 7.1 | 15,11% | 60,10% |
+CER e WER (menor é melhor) com normalização NFC e redução de espaços,
+preservando maiúsculas, acentos e pontuação. **São diagnósticos de
+desenvolvimento, sem teste reservado: não demonstram generalização.**
+Implementações e pré-processamentos diferem entre os reconhecedores, então a
+diferença não se atribui somente à versão do modelo.
 
-**Diagnóstico de desenvolvimento**, com oito ressalvas preservadas: um documento,
-sem teste reservado ou conclusão de generalização. As métricas microagregam os
-cinco blocos completos: 1.112 caracteres e 203 palavras. Variantes, implementações
-e pré-processamentos diferem; a diferença não pode ser atribuída somente à versão.
+| Conjunto | Reconhecedor | CER | WER |
+| --- | --- | ---: | ---: |
+| Traslado 269r, 24 recortes (1.112 caracteres, 203 palavras) | latin PP-OCRv5 mobile / ONNX | 58,45% | 94,58% |
+| | PP-OCRv6 medium / Kraken 7.1 | 15,11% | 60,10% |
+| Carta de 1767, 3 linhas validadas (128 caracteres, 26 palavras) | PP-OCRv5 | 79,69% | 100,00% |
+| | PP-OCRv6 | 25,78% | 65,38% |
+| Piloto VGSL, 10 linhas fora do treino do piloto | Kraken VGSL do zero | 96,83% | 100,00% |
+| | Kraken VGSL com pré-treino autossupervisionado | 93,87% | 96,77% |
 
-- [Referência assistida, decisões e dúvidas](docs/revisao_humana/traslado_269r/referencia_assistida_20261020/README.md).
-- [Comparação dos 24 recortes, bruto e auditoria](docs/experimentos/traslado_269r_reconhecedores_24_20261020/README.md).
-- [269 reto inteiro contra a edição](docs/experimentos/traslado_269r_integral_edicao_20261022/README.md):
-  diagnóstico separado com segmentação automática e PP-OCRv6, incluindo cabeçalho, título e resumo.
-- [269 verso inteiro contra a edição](docs/experimentos/traslado_269v_integral_edicao_20261022/README.md):
-  diagnóstico de desenvolvimento com os mesmos pesos e parâmetros do reto; CER 16,48%,
-  WER 56,25%, preservando o bruto, as revisões e as dúvidas anteriores. Mesmo documento,
-  sem treinamento ou teste reservado.
-- [Auditoria atual do verso e dependência do PDF](docs/manutencao/reprodutibilidade_269v_20261022/README.md):
-  recuperação da fonte exata pelo RAR versionado, caminho externo com hash obrigatório
-  e distinção entre auditoria completa e conferência parcial. Os pacotes originais foram preservados.
-- [Notebook, artigo e evidências com a reconferência de 21/10](docs/entregas/pi_iv_pln_20261022/README.md),
-  preservando o [pacote original de 20/10](docs/entregas/pi_iv_pln_20261020/README.md).
-- [Pendências de PI IV e PLN](docs/entregas/pi_iv_pln_20261022/adequacao_academica.md):
-  rubricas, modelo de artigo, revisão bibliográfica e revisão final dos autores.
+- [Referência assistida do 269r, decisões e dúvidas](docs/revisao_humana/traslado_269r/referencia_assistida_20261020/README.md)
+  e [comparação dos 24 recortes](docs/experimentos/traslado_269r_reconhecedores_24_20261020/README.md).
+- Diagnósticos integrais contra a edição, com outra seleção e fluxo:
+  [269r](docs/experimentos/traslado_269r_integral_edicao_20261022/README.md) (CER 26,97%, WER 60,31%) e
+  [269v](docs/experimentos/traslado_269v_integral_edicao_20261022/README.md) (CER 16,48%, WER 56,25%).
+- Pilotos VGSL, com uma semente e leitura ainda insuficiente:
+  [pré-treino](docs/experimentos/kraken_vgsl_pretrain_piloto/README.md) e
+  [comparação](docs/experimentos/kraken_vgsl_comparacao_piloto/README.md).
+- O [ensaio de ajuste fino do PP-OCRv6](docs/dataset_expansion_20261023/README.md) de 23/10 foi
+  uma verificação técnica com dois passos de otimização. A
+  [partição candidata](docs/entregas/continuidade_20261103/particoes_ppocrv6_20261104/README.md)
+  tem 19 pares de treino, 7 de validação e **nenhum de teste** até a reserva do grupo independente.
 
-O catálogo anterior de **1831** continua separado: três fólios candidatos, 94
-recortes pendentes e nenhuma linha completa validada. Seu repertório contém 13
-exemplos e seis confirmações parciais; “hum” permanece provável. As métricas do
-269r não avaliam esse catálogo.
+## Como funciona
+
+```mermaid
+flowchart LR
+    A[Imagens e edições históricas] --> B[Catálogos JSONL<br/>com proveniência]
+    B --> C[API FastAPI<br/>Windows ou Linux]
+    D[Editor no navegador] <-->|HTTP local| C
+    C --> E[Workspace: revisões imutáveis,<br/>recortes e predições]
+    C -->|recorte PNG via stdin| F[Worker Docker Linux<br/>Kraken 7.1 + PP-OCRv6<br/>sem rede, somente leitura]
+    F -->|texto bruto e identidade| C
+    E --> G[Exportação, CER/WER,<br/>notebooks e artigo]
+```
+
+- **Persistência em arquivos**, sem servidor de banco de dados. Cada salvamento
+  gera `revisions/<revisão>.json` com a revisão pai e atualiza `current.json`.
+- **O reconhecedor roda sob demanda** em um contêiner com `--network none`,
+  CPU, memória limitada e peso montado somente para leitura. Sem Docker, a
+  revisão manual continua disponível.
+- **Identidades conferidas:** o editor do Traslado só apresenta sugestões para o
+  peso, a imagem Docker e o worker avaliados. Uma imagem reconstruída exige nova avaliação.
 
 ## Instalar e abrir
 
-Na raiz do repositório, use **Python 3.11 ou 3.12**. Exemplo no Windows:
+Na raiz do repositório, com **Python 3.11 ou 3.12**:
 
 ```powershell
 py -3.12 -m venv .venv
@@ -91,59 +99,78 @@ py -3.12 -m venv .venv
 ```
 
 Abra [o editor do Traslado](http://127.0.0.1:8011/). Em Linux, use
-`.venv/bin/python` no lugar de `.venv/Scripts/python.exe`.
+`.venv/bin/python`. A documentação da API fica em `/docs`.
 
-Um checkout novo começa sem workspace; iniciar o servidor não importa as revisões
-salvas nesta máquina. O [guia de execução](docs/runbook.md) explica a importação
-do catálogo congelado em workspace vazio, os históricos e o piloto de 1831.
-Use um processo por workspace.
+| Configuração | Uso | Porta sugerida |
+| --- | --- | --- |
+| `configs/traslado_269r.toml` | Editor do Traslado, com sugestões experimentais | 8011 |
+| `configs/pilot.toml` | Piloto de 1831, sugestões desativadas (`start_safe.bat`) | 8000 |
+| `configs/curation_sessao_1795.toml` | Curadoria manual da sessão de 1795 | 8012 |
 
-O **PP-OCRv6 é o reconhecedor experimental do editor do Traslado**. Inferência
-exige pesos e [runtime Linux/Docker separados](runtime/kraken_ppocrv6/README.md),
-com identidades conferidas. A instalação básica não os baixa; a revisão manual
-continua disponível sem o reconhecedor. PP-OCRv5 é usado no experimento separado;
-TrOCR está bloqueado para novas execuções. `start_safe.bat` abre o piloto de 1831
-na porta 8000, onde a apresentação de sugestões permanece desativada.
+Um clone novo começa **sem workspace**: iniciar o servidor não importa revisões
+de outra máquina. O [guia de execução](docs/runbook.md) explica a importação do
+catálogo congelado em workspace vazio. Use um único processo por workspace.
+
+O reconhecimento exige pesos e o [runtime Docker separado](runtime/kraken_ppocrv6/README.md);
+a instalação básica não os baixa. PP-OCRv5 fica no experimento comparativo, e o
+TrOCR está bloqueado para novas execuções, preservado só para rastreabilidade.
 
 ## Conferir sem reconhecer novamente
 
 ```powershell
 .venv/Scripts/python.exe -m pytest -q
 node --test tests/web_review.test.cjs
+.venv/Scripts/python.exe scripts/audit_dataset_expansion.py
 .venv/Scripts/python.exe docs/revisao_humana/traslado_269r/referencia_assistida_20261020/verificar.py
 .venv/Scripts/python.exe docs/experimentos/traslado_269r_reconhecedores_24_20261020/verificar.py
 ```
 
-Os testes usam dados sintéticos identificados e evidências congeladas; não
-medem nova qualidade de reconhecimento. A CI executa a suíte e as auditorias
-publicadas em Windows/Ubuntu, Python 3.11/3.12. A tarefa acadêmica separada usa
-Ubuntu/Python 3.12 para auditar e reexecutar separadamente as entregas de 20/10
-e 22/10, sem pesos ou nova inferência. Confere métricas, cinco ou seis tabelas e
-as oito ressalvas, preservando os pacotes publicados e as decisões posteriores.
-Veja a [CI acadêmica e seus artefatos](docs/manutencao/ci_academica_duas_versoes_20261022/README.md)
-e a [entrega acadêmica original](docs/entregas/pi_iv_pln_20261020/README.md).
-Os diagnósticos integrais do 269 reto e verso não fazem parte dessas verificações
-automáticas. O README congelado da entrega de 22/10 conserva uma orientação anterior
-à matriz; a [nota atual de reprodução e CI](docs/manutencao/reprodutibilidade_269v_20261022/README.md)
-esclarece essa diferença sem modificar o pacote histórico.
+Os testes usam dados sintéticos e evidências congeladas; não medem nova
+qualidade de reconhecimento. A CI roda a suíte e as auditorias em Windows e
+Ubuntu, Python 3.11 e 3.12. Uma tarefa acadêmica separada reexecuta as entregas
+de 20/10 e 22/10 sem pesos nem inferência, e confere o fechamento de 23/10 no
+commit em que ele foi fechado. Veja a [CI acadêmica](docs/manutencao/ci_academica_duas_versoes_20261022/README.md).
+
+## Entregas acadêmicas
+
+[![Abrir notebook da equipe no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aj1no/paleographia-htr/blob/main/docs/entregas/pi_iv_pln_20261023_colab/colaboracao_colab.ipynb)
+
+| Material | Conteúdo |
+| --- | --- |
+| [Continuidade de 03–04/11](docs/entregas/continuidade_20261103/README.md) | Retomada, dataset de 1795, Notebook 2 da carta, partições candidatas |
+| [Apresentação de 12/11](docs/entregas/apresentacao_20261112/README.md) | Roteiro e pendências da apresentação |
+| [Fechamento de 23/10](docs/entregas/pi_iv_pln_20261023_fechamento/README.md) | Artigo atual, notebook baseline e verificador |
+| [Notebook 1 offline](docs/entregas/notebook_1_offline/README.md) | Reprodução das métricas com dados incorporados |
+| [Notebook da equipe no Colab](docs/entregas/pi_iv_pln_20261023_colab/README.md) | Guia para salvar uma cópia, executar e enviar relatos |
+| [Artigo com fundamentação ampliada](docs/entregas/pi_iv_pln_20261023_fundamentacao/README.md) | Fichamentos de T1/T4; revisão dos autores pendente |
+| [Pacotes de 20/10](docs/entregas/pi_iv_pln_20261020/README.md) e [22/10](docs/entregas/pi_iv_pln_20261022/README.md) | Entregas congeladas, conferidas pela CI |
+
+As [referências comentadas](docs/bibliografia/README.md) distinguem consulta
+parcial e leitura integral. Pacotes datados e com hashes **não são editados**
+para recontar o estado atual; atualizações entram em novos registros.
 
 ## Organização
 
 | Caminho | Papel |
 | --- | --- |
 | `src/paleographia/` | Pacote atual: CLI, API, editor, revisão e avaliação |
-| `configs/`, `runtime/` | Configurações e ambiente separado do reconhecedor |
+| `configs/`, `runtime/` | Configurações e ambiente Docker do reconhecedor |
 | `data/manifests/`, `data/lexicon/` | Catálogos, repertório e base lexical |
 | `docs/revisao_humana/`, `docs/experimentos/` | Revisões e experimentos publicados com hashes |
-| `docs/entregas/` | Notebook, artigo e evidências acadêmicas |
+| `docs/entregas/` | Notebooks, artigos e evidências acadêmicas |
 | `tests/`, `.github/workflows/` | Testes e CI |
-| `legacy/`, scripts numerados, `client` | Histórico e compatibilidade; consultar o inventário antes de remover |
+| `legacy/`, scripts numerados, `client/` | Histórico e compatibilidade; consulte o [inventário](docs/manutencao/scripts_numerados_20261020/README.md) antes de remover |
 
-[Índice da documentação](docs/README.md) · [Guia de revisão](docs/guia_revisao_gpt.md) ·
-[Revisão do repositório](docs/revisao_repositorio_20261020.md) ·
-[Consulta lexical](docs/lexico_historico.md) · [Política textual](docs/transcription_policy.md) ·
-[Contribuição](CONTRIBUTING.md).
+[Índice da documentação](docs/README.md) · [Esquema dos dados](docs/data_schema.md) ·
+[Política textual](docs/transcription_policy.md) · [Protocolo de avaliação](docs/evaluation_protocol.md) ·
+[Consulta lexical](docs/lexico_historico.md) · [Contribuição](CONTRIBUTING.md)
 
-Código sob MIT. Imagens, manuscritos e edições têm créditos e condições de uso
-próprios; a licença do código não concede automaticamente permissão para esses
-materiais. Consulte [fontes](docs/sources.md) e [uso de IA](docs/ai_comments.md).
+A branch principal é `main`. A branch `codex/refatoracao-piloto` foi preservada
+como registro da etapa anterior; veja a [nota sobre a adoção da main](docs/manutencao/main_20261020/README.md).
+
+## Licença e fontes
+
+Código sob [MIT](LICENSE). Imagens, manuscritos e edições têm créditos e
+condições de uso próprios: a licença do código não concede permissão sobre
+esses materiais. Consulte as [fontes](docs/sources.md) e a
+[declaração de uso de IA](docs/ai_comments.md).
