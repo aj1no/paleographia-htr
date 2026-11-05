@@ -13,7 +13,23 @@ from starlette.concurrency import run_in_threadpool
 from .config import load_config
 from .io import safe_path
 from .recognition import ModelUnavailable
-from .presentation import present_predictions, review_policy
+from .presentation import present_predictions as present_frozen, review_policy
+
+
+EMPTY_SUGGESTION = {"status": "empty", "text": "O reconhecedor não encontrou escrita neste recorte.",
+                    "message": "Confira se o recorte contém texto ou só margem e borda da página. "
+                               "Se houver escrita, ajuste os limites ou registre a leitura manualmente."}
+
+
+def present_predictions(predictions, lines, config):
+    # presentation.py is byte-pinned by frozen PP-OCRv6 audits, so the empty case
+    # is handled here: a model that ran and returned nothing must not look like
+    # "recognition unavailable" in the editor.
+    rows = present_frozen(predictions, lines, config)
+    for row in rows:
+        if row["presentation"]["status"] == "candidate" and not (row.get("text_raw") or "").strip():
+            row["presentation"] = dict(EMPTY_SUGGESTION)
+    return rows
 from .services import Conflict, ReviewService
 
 

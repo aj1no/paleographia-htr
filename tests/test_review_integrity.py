@@ -73,3 +73,19 @@ def test_cross_origin_writes_are_refused(corpus):
         own = client.patch(f"/api/lines/{lines[0]['line_id']}", headers={"Origin": "http://testserver"},
                            json={"changes": {"text_diplomatic": "Rascunho"}, "revision": before})
         assert own.status_code == 200, own.text
+
+
+def test_empty_model_output_is_reported_as_no_writing_found():
+    from paleographia.api import present_predictions
+    from paleographia.config import load_config
+    from pathlib import Path
+    config = load_config(Path(__file__).parents[1] / "configs/editor_folios.toml")
+    settings, policy = config["recognition"], config["presentation"]
+    identity = {"backend": "kraken_ppocrv6", "sha256": settings["sha256"],
+                "docker_image_id": settings["docker_image_id"], "worker_sha256": policy["evaluated_worker_sha256"]}
+    line = {"line_id": "l1", "bbox_xyxy": [0, 0, 10, 10]}
+    rows = present_predictions([dict(line, status="ok", text_raw=raw, model=identity) for raw in ("", "  ", "Aos vinte")],
+                               [line], config)
+    assert [r["presentation"]["status"] for r in rows] == ["empty", "empty", "candidate"]
+    assert "não encontrou escrita" in rows[0]["presentation"]["text"]
+    assert rows[2]["presentation"]["text"] == "Aos vinte" and rows[0]["text_raw"] == ""
