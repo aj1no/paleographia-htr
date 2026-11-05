@@ -85,7 +85,13 @@ Validação (acerto de caracteres do `ketos`, 7 linhas e 348 caracteres de 1795)
 | TraPrInq (Kraken, Inquisição) | 75,0% | 32,8% |
 | PP-OCRv6 base | 86,8% | 46,3% |
 | PP-OCRv6 ajustado A (Traslado), melhor checkpoint | 90,2% | 61,2% |
-| PP-OCRv6 ajustado B (Traslado + Inquisição) | em andamento | — |
+| PP-OCRv6 ajustado B (Traslado + Inquisição), parcial | **90,5%** | **64,2%** |
+
+Treino B (191 linhas do Traslado com 1 variante cada + 550 linhas da Inquisição, 932 amostras):
+interrompido às 15h21 de 05/11 após duas validações (90,5% / 64,2% no passo 29; 90,2% / 62,7% no
+passo 58). Ainda não houve parada antecipada nem exportação; o melhor checkpoint está em
+`output/fase3_finetune_20261105_B_traslado_inquisicao/checkpoints/checkpoint_00-0.9052.ckpt` (fora do Git).
+A diferença para A é de cerca de 1 caractere em 348; ainda não foi avaliado em NFC pelo worker do editor.
 
 Mesmas 7 linhas pelo worker de inferência do editor (imagem de CPU avaliada), CER/WER em NFC, a
 métrica do projeto ([linhas](dados/avaliacao_validacao_base_A_nfc.json)):
