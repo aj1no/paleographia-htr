@@ -1,0 +1,92 @@
+models/kraken_ppocrv6_medium/medium.safetensors CER 0.142 WER 0.5672
+models/ppocrv6_ajustado_A_20261105/medium_ajustado_A.safetensors CER 0.1217 WER 0.5075
+{
+ "models/kraken_ppocrv6_medium/medium.safetensors": {
+  "sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+  "lines": 7,
+  "chars": 345,
+  "cer": 0.142,
+  "wer": 0.5672,
+  "rows": [
+   {
+    "ref": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "hyp": "Aos vinte ecenco dia domes de Iunho demil sette",
+    "cer": 0.14
+   },
+   {
+    "ref": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "hyp": "centos e noventa ainco annos nesta villa da Nossa",
+    "cer": 0.1837
+   },
+   {
+    "ref": "senhora do Desterro de jundiahy comarca da cidade",
+    "hyp": "senhora do Desterro de Iundiahi Comarca da Cidade",
+    "cer": 0.0816
+   },
+   {
+    "ref": "de São Paulo, em casas de morada do Juiz Presidente",
+    "hyp": "de Saõ Paulo em Cazas de morada do Iuis Prezidente",
+    "cer": 0.1569
+   },
+   {
+    "ref": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "hyp": "Selvador de Oliviera Prado, onde se achavaõ prezenty",
+    "cer": 0.1509
+   },
+   {
+    "ref": "os officiaes da Camara em acto de Vereança, trat-",
+    "hyp": "os Officiays de Camara em acto de Vercança, trac",
+    "cer": 0.1224
+   },
+   {
+    "ref": "ando sobre o bem commum do povo, na mesma se",
+    "hyp": "lando sobre obem commûm dopovo, namyma se",
+    "cer": 0.1591
+   }
+  ]
+ },
+ "models/ppocrv6_ajustado_A_20261105/medium_ajustado_A.safetensors": {
+  "sha256": "65e0ad8846b07d57f212e0c9a3f4630642cab7d42d9103ea1686669ef1c73dd8",
+  "lines": 7,
+  "chars": 345,
+  "cer": 0.1217,
+  "wer": 0.5075,
+  "rows": [
+   {
+    "ref": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "hyp": "Aos vinte ecenco dias do mes de Iunho demil sette",
+    "cer": 0.1
+   },
+   {
+    "ref": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "hyp": "centos e noventa ainco annos nesta villa da Nossa",
+    "cer": 0.1837
+   },
+   {
+    "ref": "senhora do Desterro de jundiahy comarca da cidade",
+    "hyp": "senhora do Desterro de Iundiahi Comarca da Cidade",
+    "cer": 0.0816
+   },
+   {
+    "ref": "de São Paulo, em casas de morada do Juiz Presidente",
+    "hyp": "de Saõ Paulo em Cazas de morada do Iuis Prezidente",
+    "cer": 0.1569
+   },
+   {
+    "ref": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "hyp": "Selvador de Oliveera Prado, onde se achavaõ prezente",
+    "cer": 0.1132
+   },
+   {
+    "ref": "os officiaes da Camara em acto de Vereança, trat-",
+    "hyp": "os Officiaes da Camara em acto de vercança, trac",
+    "cer": 0.102
+   },
+   {
+    "ref": "ando sobre o bem commum do povo, na mesma se",
+    "hyp": "lando sobre obem commûm dopovo, namesma se",
+    "cer": 0.1136
+   }
+  ]
+ }
+}
