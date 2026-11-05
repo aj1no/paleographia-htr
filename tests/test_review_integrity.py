@@ -89,3 +89,16 @@ def test_empty_model_output_is_reported_as_no_writing_found():
     assert [r["presentation"]["status"] for r in rows] == ["empty", "empty", "candidate"]
     assert "não encontrou escrita" in rows[0]["presentation"]["text"]
     assert rows[2]["presentation"]["text"] == "Aos vinte" and rows[0]["text_raw"] == ""
+
+
+def test_reserved_test_curation_never_shows_model_suggestions():
+    # The test reference must be written blind to model output.
+    from pathlib import Path
+    from paleographia.backends import create_recognizer
+    from paleographia.config import load_config
+    from paleographia.presentation import review_policy
+    root = Path(__file__).parents[1]
+    config = load_config(root / "configs/curation_teste_pagamento.toml")
+    assert config["recognition"]["backend"] == "disabled"
+    assert review_policy(config)["automatic_transcription_enabled"] is False
+    assert create_recognizer(config, root).status()["backend"] == "disabled"

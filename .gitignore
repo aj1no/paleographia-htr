@@ -24,6 +24,7 @@ data/processed/*
 data/workspace/
 data/workspace_traslado_269r/
 data/workspace_folios/
+data/workspace_teste_pagamento/
 experiments/*
 !experiments/README.md
 # Recreated from the verified supplied ZIP; catalogs and text stay versioned.
