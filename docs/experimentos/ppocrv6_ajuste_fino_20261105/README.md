@@ -84,8 +84,21 @@ Validação (acerto de caracteres do `ketos`, 7 linhas e 348 caracteres de 1795)
 | --- | ---: | ---: |
 | TraPrInq (Kraken, Inquisição) | 75,0% | 32,8% |
 | PP-OCRv6 base | 86,8% | 46,3% |
-| PP-OCRv6 ajustado A (Traslado), melhor checkpoint | 90,2% | 62,7% |
+| PP-OCRv6 ajustado A (Traslado), melhor checkpoint | 90,2% | 61,2% |
 | PP-OCRv6 ajustado B (Traslado + Inquisição) | em andamento | — |
+
+Mesmas 7 linhas pelo worker de inferência do editor (imagem de CPU avaliada), CER/WER em NFC, a
+métrica do projeto ([linhas](dados/avaliacao_validacao_base_A_nfc.json)):
+
+| Modelo | CER | WER |
+| --- | ---: | ---: |
+| PP-OCRv6 base | 14,20% | 56,72% |
+| PP-OCRv6 ajustado A | **12,17%** | **50,75%** |
+
+A melhora 4 das 7 linhas e não piora nenhuma ("dia domes" → "dias do mes"; "Officiays de Camara" →
+"Officiaes da Camara"). Peso A: `models/ppocrv6_ajustado_A_20261105/medium_ajustado_A.safetensors`
+(fora do Git), SHA-256 `65e0ad8846b07d57f212e0c9a3f4630642cab7d42d9103ea1686669ef1c73dd8`, checkpoint da
+1ª validação (passo 11); treino encerrado por parada antecipada após 107 passos (4 épocas, 103 min).
 
 Limitações: validação muito pequena (diferenças de 1–2 pontos podem ser ruído); três sinais
 da validação (ᵃ, ˢ, -) não aparecem no treino; o TraPrInq recebeu recortes retangulares, embora
