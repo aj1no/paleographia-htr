@@ -1,0 +1,1936 @@
+[
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_61a03587f9faa267436b.png",
+  "text": "Traslado de Auto e Criação desta",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2188,
+  "guide_text": "Prylado do Huto e Criaçaõ desta"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_578af314b5981fdae24a.png",
+  "text": "Auto que mandou fazer o Capitão",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.129,
+  "guide_text": "Auto que mandoce fazer o Capirao"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_e16ec78b02f4d644b845.png",
+  "text": "mõr e ouvidor da Capitania de São",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1212,
+  "guide_text": "mor ouvidor da Capitania de Sao"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_937857786e03cfcfce5e.png",
+  "text": "viçente. Miguel de Cabedo de vazcon",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1714,
+  "guide_text": "vicente. Iigiedl de Cabedo devascon"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_f3f4f9429398b6a22873.png",
+  "text": "çellos ouvidor Com o liado em toda",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2647,
+  "guide_text": "collos ouvidor com olsada emsada"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_81fbc66fd403b1e46eb8.png",
+  "text": "ella o requerimento dos Povoadores",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2059,
+  "guide_text": "ello a Requerimento dos Pauoadones,"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_9e3598e5ca9461d5d6aa.png",
+  "text": "E moradores  desta Freguezia de Nossa Se",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2051,
+  "guide_text": "e moradore desta Trequizia de Nola se"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_83f2ef71b7f236c1b75f.png",
+  "text": "nhora do DesTerro de Jundiahy",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2069,
+  "guide_text": "miora do Des Perro de Pundiaby"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_8a86869e7d8d6db17dd8.png",
+  "text": "Anno do Nacimento de Nosso Senhor Jezus christo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1915,
+  "guide_text": "modo Nacimento de Nofo Senhor Sezas chritto"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_f4d7e45a7114f739e357.png",
+  "text": "de mil seis centos sincoenta e seis annos, aos ca",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1837,
+  "guide_text": "de mil sues Curtos Sincenta e sus annos, aos ca"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_c0989c7ae7b4e5ec3c51.png",
+  "text": "torze dias do mes de Dezembro da dita Hera nesta",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1458,
+  "guide_text": "ionze dios do mes de Dezenbro da ditaCira nesta"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_6e40604eb6ece517cc8e.png",
+  "text": "povoação e Freguezia de Nossa senhora do Deste",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1304,
+  "guide_text": "pauoaçaõ eTreguezia de Nossa senhora do Deste"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_e6bf2818783e4071d9ff.png",
+  "text": "rro de Jundiahy, aonde Eu Publico Tabelião ao di",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1458,
+  "guide_text": "rro de Iundiahy, aonde Ce Publico TabaLiaõ ao di"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_ec31d004569e294adf29.png",
+  "text": "ante nomeado fui Em Companhia do Capitão",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1,
+  "guide_text": "ante nomeado fui em Companhia do Capitaõ."
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_51f80762d713e3a7dcd1.png",
+  "text": "mõr e ouvidor desta Capitania de Sam viçente",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0909,
+  "guide_text": "môre ouvidor desta Capitania de Samvicente"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_4a6d7b216e8ee841c583.png",
+  "text": "Miguel de Cabedo de vasconçellos perante elle a",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1489,
+  "guide_text": "Mliguel de Cabe do devos conçelhos perante ele a"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_573718c38a2176b62d56.png",
+  "text": "pareçerão todos os povoadores E moradores os abai",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3265,
+  "guide_text": "LconeÇeraõ todos os pauoa dores Cemoxa doresosabai"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_2730bf4aee4b069b675b.png",
+  "text": "xo assignados, e todos juntos e Cada Hum Em par",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1915,
+  "guide_text": "to asignados, e todos iuentos e Cadahum empor"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_b35d2cbd4b4e57e6373f.png",
+  "text": "ticular Requererão Em altas vozes ao dito Capi",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1739,
+  "guide_text": "ticullar Requereraõ. Cem altos voses ao dito Capi"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_ff7eaafdcff598bc8e02.png",
+  "text": "tão mõr e ouvidor Em como elles Herão povoa",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2558,
+  "guide_text": "tao moi eouvidon Emcomo Elles Eera pouoa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_399b0774d1e2cec92901.png",
+  "text": "dores e Freguezes desta dita Freguezia de Nossa",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0638,
+  "guide_text": "dore, e Freguezes desta disa treguezia de Nossa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_16d2a8abb58a005bb701.png",
+  "text": "Senhora do DesTerro de Jundiahy onde Heram",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2381,
+  "guide_text": "senhoraelo, des Terro de Sundiaho on de heram"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_5063899182e88091c1cb.png",
+  "text": "mais de oitenta moradores, e ficaram mui dis",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1818,
+  "guide_text": "mais de ostenta mona dores, e feiarem meidis"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_e37f973212094c973edc.png",
+  "text": "tantes da villa de Sam Paulo, e da villa de Par",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0851,
+  "guide_text": "tantes davilla de Sam Sauto, e davilla de Par"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_c64937dea381aee1a96e.png",
+  "text": "nahiba, e não poderem vir os ministros de Jus",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2222,
+  "guide_text": "nacibe, enaõ poderem vir os menistro, ae las"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_3db8c653904e59c2b12b.png",
+  "text": "tissa fazer deligençias por ser Longe devendo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1111,
+  "guide_text": "isca fazer deLigencias por sen Longe devendo"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_00b1f09fe97517b3293a.png",
+  "text": "por alguã duvida orgente, virem alguns menis",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1818,
+  "guide_text": "por alguaõ duvila ergente, virem Agcens menis"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_36bb35fe6e621a09b0b8.png",
+  "text": "tros e Hera com muito Grande detrimento de to",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1556,
+  "guide_text": "ros ehera Com maito Grande de trimento deto"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_46c13bb4916a2be55297.png",
+  "text": "dos como Tambem pessoas que pessuhem Terras",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2093,
+  "guide_text": "dos 'omo tambem pusçoos que pesenhem Porras"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_d659dff46737131e22e9.png",
+  "text": "por titullos de Sismaria as Lavrão outros que mais",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.18,
+  "guide_text": "pos Litcllos de Sismario a Lavraõ outros quemeis"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_c63750e8f94c255da756.png",
+  "text": "posses tem por falta de Justissa pello que",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2381,
+  "guide_text": "poses som non falso de dastisse pello que"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_83a0135f634b9998330d.png",
+  "text": "Magestade Huã e muitas vezes Como Cap",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1892,
+  "guide_text": "Magesta de Euaõ e mueitas vezes como Cop"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_d7de26df2de07b4fb8e1.png",
+  "text": "pitão Mõr e ouvidor que Hera desta Capita",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2927,
+  "guide_text": "pista mon couvidon que cera desta Copisa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_bf093730c748d0fa6621.png",
+  "text": "nia e ouvidor Com o Liado Em toda ella",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2895,
+  "guide_text": "nia couvidor Comolsada emto da lla"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_f7568697cc8f29fac118.png",
+  "text": "lhe formasse villa Levantando pelourinho",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.125,
+  "guide_text": "lhe fosmasce villa Leuantando peLoarinho"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_0debad10a22182727c3b.png",
+  "text": "Em nome da Magestade pellos poderes que",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1282,
+  "guide_text": "Em nome de mogesta de pellos paderes que"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_3163dea2b320ca48d47f.png",
+  "text": "o dito Senhor Consedia ao Marques do Rosario",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1136,
+  "guide_text": "o dito senhor Consedia ao Marques oo Vazario"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_7ec6d8355f29e3e9602d.png",
+  "text": "e o seu Capitão mõr por bem deste povo e por",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3182,
+  "guide_text": "e a sue Capisaõ mor ponbem deste pour, e scor"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_f557e92807696656785e.png",
+  "text": "Servisso de El Rey Nosso Senhor Dom João o quarto",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2245,
+  "guide_text": "lexvises del Rey Nosso senhor Dom Ioaõ o querto"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_7c3aba40a468eaa2e75c.png",
+  "text": "de Portugal Deos o goarde e Em bem e conser",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.186,
+  "guide_text": "de Porsugal Deos agoor de e embem e consor"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_fe16f8c6759fa64d818e.png",
+  "text": "vação das Terras e aumento do Marques de Cas",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2273,
+  "guide_text": "uaçaõ das Ternas coumonto do Marque de cas"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_a0eabeb9bb3a05a3456c.png",
+  "text": "Cais Senhor Prepetuo desta Capitania por Sua",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1136,
+  "guide_text": "Cais senhoa Trepetuo desta Capotania por sua"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_093ced5df9f3a1a5a7b0.png",
+  "text": "Magestade o que tudo visto pello dito Capi",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0714,
+  "guide_text": "Magesta de o que sudo visto peslo dito Capi"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_7417622432f673531459.png",
+  "text": "tam mõr e ouvidor desta Capitania Seus",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2105,
+  "guide_text": "lam mon couvidor desta Capisania hus"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_aac5315285f62d13cab1.png",
+  "text": "requerimentos mandou a mim Tabelião",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2286,
+  "guide_text": "Requrimentos mandaa a mim Tobaliaõ"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_f610593cc210f9121158.png",
+  "text": "lhe tomasse e continuasse na forma do Es",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.225,
+  "guide_text": "lhe somasu e consinuass na foa ma does"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_9d98bb6abd632ae209ad.png",
+  "text": "tillo e lhe autuasse com a petição que elles",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2045,
+  "guide_text": "tillo elhe autuase Com aperiçaõ quelles"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_3e1f817628662081eaa7.png",
+  "text": "ditos povoadores Haviam feito ao dito Capi",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2381,
+  "guide_text": "ditos pacoa dos Eauiaõ feito aadito Capi"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_b891076426ddb76a0767.png",
+  "text": "tão mõr e ouvidor de que mandara dar",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1944,
+  "guide_text": "rao mon eocvidon de que mandara dar"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_1c89b578c4ea1053ee22.png",
+  "text": "vista a Camara da villa de Sam Paulo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0833,
+  "guide_text": "vista a camera da villa de Sam PauLo"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_0ef04e4dccd8fbce99d0.png",
+  "text": "e a Resposta dos ditos officiais della e que",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0455,
+  "guide_text": "e a Res posta dos ditos officiais desla e que"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_d692ce84fae8295c7de0.png",
+  "text": "tudo junto lhe fizesse concluzo para de",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1538,
+  "guide_text": "sudo junto lhe fizesa comoluzo parade"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_0464ef08627e353f7732.png",
+  "text": "ferir com justissa de que de tudo fiz este",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1905,
+  "guide_text": "firir Comzistissa deque detado fiz este"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_04e98ddda9bbdb6d42a6.png",
+  "text": "auto Em que assignou o dito Capitam",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1429,
+  "guide_text": "auto Emque a Signou a dito Capisam"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_beaa8bbac582aa0482d0.png",
+  "text": "mõr Com todos os ditos freguezes abaixo a",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1707,
+  "guide_text": "mor Comta dos osditos frequezes abaito a"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_68d396fb487163b3d641.png",
+  "text": "signados e Eu Francisco Novo de Mandonssa",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2195,
+  "guide_text": "signados e heFrancyco Nouo de Mendonpa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_b35d7f3cda3b21734488.png",
+  "text": "Tabelião o Escrevy = Miguel de Cabedo de",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.35,
+  "guide_text": "Nobaliaõ o Cerevy = Mlliquel de Cobe dode"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_001abea8aec483f62181.png",
+  "text": "vasconcellos = Paschoal Ribeiro de Faria = Pe",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1778,
+  "guide_text": "uas Coneellos = Panhoal Rebeiro de Fario = Pe"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_e002fca281bfc057b820.png",
+  "text": "dro Lemeda Prado = Gaspar Sardinha da Sil",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0976,
+  "guide_text": "dro Leme da Pra do = Gaspar serdinha da Sil"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_bff22bd764629caa7eda.png",
+  "text": "va = Alberto de Oliveira = Antonio Gil =",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.275,
+  "guide_text": "uo= Alberta deo Leveiro = Ansonio Gil="
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_00bc47e745ee851f81ab.png",
+  "text": "Estevão Fernandes Gaya = Manoel Fernandes =",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.186,
+  "guide_text": "Estuuaõ Fernan des Gaya = ManoR Fernandes="
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_0e04c450404ea2bfab59.png",
+  "text": "Gaspar de Souza Falcão = Estácio Ferreyra =",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.186,
+  "guide_text": "Gaspar de Souza Faleaõ = Estacio Ternyra="
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_3b786d90a6ce580b2e9e.png",
+  "text": "Pedro Cabral de Mello = Salvador Ribeiro =",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1667,
+  "guide_text": " Pidro Cabral de Mollo= Saluodor Rebeiro="
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_bb1da2aac10182361c92.png",
+  "text": "João Leme do Prado = João Pais Mello = Mathias",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3478,
+  "guide_text": "Ioao Seme da Prado = Ioao Vais malho= Tllallias"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_6d036d67751757c2a30b.png",
+  "text": "Machado Castello Branco = Antonio Luis da penha",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "269v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1915,
+  "guide_text": "Tacha do Castollo Brenco = Antonios Lius daponha"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_825fea1beb46d5e44542.png",
+  "text": "Da penha = Lourenço vaz Ferreyra = Francisco Ga",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2553,
+  "guide_text": "ODepenhe = Lourenço vaz Fernyre= Tronasco Ga"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_7183f7ffe9e4fa03888d.png",
+  "text": "ya = Joze de oliveira = Antonio Alvres Bezerra",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2826,
+  "guide_text": "ya= Iose de oLivcira= Antonio Hory Rezorra"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_cdec328d370fc882a787.png",
+  "text": "= Francisco Cabral de Tavora = Domingos Cor",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.093,
+  "guide_text": "=Francisco Cobral de Tavori = Domingor Cor"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_8c469656dd41102387a7.png",
+  "text": "deiro = Jozê Fernandes de oliveira = Joâo Leme",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2391,
+  "guide_text": "deiro= Iose Fernandes de o Leveira = Ioaõ Lome"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_4b4a23b9002e3d078759.png",
+  "text": "o mosso = Francisco Fanacho = Joâo Ribeiro = Se",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1915,
+  "guide_text": "omospo = Trancisco Faccacho = Ioao Ribeiro= le"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_de7c906036432802c089.png",
+  "text": "bastião Martins = Pedro Ferreira = Bento Gil =",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.087,
+  "guide_text": "bastiao Maztins = Pedro Ferreira = Rento Gil="
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_15b45d083a760659acc9.png",
+  "text": "Estevão Cobral = Antonio Fernandes Preto =",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1667,
+  "guide_text": "Esticaõ Cobral= Antonio Fernandes Proto="
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_7c3f74237ab6ee231df8.png",
+  "text": "Joze Duarte = Pedro da Silva = João de Lourei",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2444,
+  "guide_text": "dose Duerte= Pedro da Silua = Ioaõ de Lonci"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_f7c83ed2c9d5423e86b2.png",
+  "text": "ra da Costa = Joze Rapozo Bocarro = Pedro Pe",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1136,
+  "guide_text": "ra da Costa= Ioze Rapozo Rocarro = Pondro Pe"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_3b449dc082c037ff2d3f.png",
+  "text": "res de Freitas = Jaçinto Nogueira Pais = Mano",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2222,
+  "guide_text": "re de Preitos=Iocinzo Nogueira Pais= Mano"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_f2b13fe5c92f2e154d96.png",
+  "text": "Senhor Capitão mor e ouvidor",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3214,
+  "guide_text": "Senzon lapitaõ moxcouvidor"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_42eb86c87c53d3d38fe1.png",
+  "text": "Os abaixo assignados fazemos saber a vossa",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0952,
+  "guide_text": "Os obaixo a Signados fazemos saber avossa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_221db26b80443edbb1df.png",
+  "text": "merce Em como Somos moradores em hum",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.25,
+  "guide_text": "mereo emeomo somos moradoses Emhum"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_edaffa632aa09e76221b.png",
+  "text": "lugar e citio chamado Jundiahy doze Legoas",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.119,
+  "guide_text": "Lugar e citio chama do Iundiazy doze Ligoas"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_6c30444ac1b797c67399.png",
+  "text": "distante da villa de Sam Paulo, cito da villa",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0444,
+  "guide_text": "distante da villa de Sam PauLo, oito da villa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_f72989e8ce3e20c0b49c.png",
+  "text": "de Santa Anna de Parnahiba, e porquanto no",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0952,
+  "guide_text": "de Santo Anno de Parnahibo, e porquantono"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_f41d36f9bad0b30c55d1.png",
+  "text": "dito Çitio Esta Huã Parochia da avocação",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.225,
+  "guide_text": "dito Citio esta Euaõ Parachia daavocaçaõ"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_dca8d73ec0bfc9f251df.png",
+  "text": "Titullo de Capella Curada de que elles mo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2195,
+  "guide_text": "Fitullo de Capono Carada de que essesmo"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_5bb56eff0dc95e0be8f6.png",
+  "text": "radores Gozão e nella sustentão Hum viga",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.175,
+  "guide_text": "radores Gozaõ e n ella sustentaõ Eumviga"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_789a842f64cb44f9a87c.png",
+  "text": "rio Com despendio de Suas fazendas e ade",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1,
+  "guide_text": "rio Com despendio de Suas fatendas ca de"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_c59bf8f43515cf010a8e.png",
+  "text": "menistra os officios devinos Como He notorio",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0909,
+  "guide_text": "menistra, os officios devinos, Comole notorio"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_83de7f4e0ae8b2a64c59.png",
+  "text": "E nos ajuntamentos que se fazem ordinaria",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1951,
+  "guide_text": "enos asienta meitos que se fazem ondinaria"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_9e172c99f8f6ccfbfaa5.png",
+  "text": "mente em expecial nas festas principais",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1026,
+  "guide_text": "mente e mEtpecial nas festas principais"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_79ee046f7f8ce9dcffbc.png",
+  "text": "andão muitas pessoas Publicamente Com Ar",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2,
+  "guide_text": "andaõ meirtas pessoos Preblicamente ComoAr"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_7ef16c7af65212ee35c2.png",
+  "text": "Risco de Haver alvorosos e mortes como ja por",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1333,
+  "guide_text": "Risco de Eaver alvorosos emostes Comoia por"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_fe26696547dbb6c03505.png",
+  "text": "vezes Susedeo, e Tambem muitos pobres pe",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.175,
+  "guide_text": "veze su ledeo, e Tambem mertos pobres pa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_4d4bc1e34bbc12a3477e.png",
+  "text": "resse de justissa em cobramento de dividas que",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2391,
+  "guide_text": "rsu ne jastisa emcobra mento de dicidosque"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_be59e46d8c3d77504b7f.png",
+  "text": "se lhe deve por estarem Longe as villas assima",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2174,
+  "guide_text": "selle deue por esterem Longe, os villos a Sime"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_c919667443e78540e249.png",
+  "text": "nomeadas, E não poderem vir os menistros de",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0698,
+  "guide_text": "nomeodas, e nao poderem vir os menistros de"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_03e2f4efd9c6cd426a40.png",
+  "text": "Justissa falar delegençia por ser Longe e Se",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2273,
+  "guide_text": "destipso foler de legencio por ser Longe e de"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_fd8b01aa2e29d98d2498.png",
+  "text": "talves Susede vir algum menistro He com muito dis",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3265,
+  "guide_text": "solces sa se de vit algam memstro Ee Com mo dis"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_945ac776602067d19f9e.png",
+  "text": "suem Terras por Titullos de Sismaria outras que",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1277,
+  "guide_text": "suem berros por Petullos de Sirmaria outros que"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_2c3de570a10fd893093c.png",
+  "text": "mais posse tem lhes Lavrão pedindo lhe aviri",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1364,
+  "guide_text": "maes posse sem lhos Lavraõ pedindolhe aviri"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_ac2a7bc9f4331cbf18ee.png",
+  "text": "guação dellas isto por falta de Justissa e por",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1957,
+  "guide_text": "guaçaõ dellos isto por folra de Iastisso epor"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_3d0b76f9e2bf69845d72.png",
+  "text": "quanto o Capitão Rafael de oliveira que Deos",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.25,
+  "guide_text": "quanto a Capiitaõ Rofael deo Leveira que dos"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_9869de4d7694feee4d60.png",
+  "text": "Hoie aqui Tambem morador Conçederan",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2571,
+  "guide_text": "Eaio aqui Tambum mona dor Concedoram"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_071b7b70a041f975b5ff.png",
+  "text": "do o que acima se dis alcansou Procoiran",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.15,
+  "guide_text": "do a que aSima se dis alcansoa Procizam"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_a034a31f7b6d2ad67b13.png",
+  "text": "do Capitão João Luis Mafra para no Lu",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3243,
+  "guide_text": "do Capitaõ doao Lius Rofra pora nola"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_3fe7db4c952cab524eb7.png",
+  "text": "gar acima dito fazer hum villa e Levantar",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.122,
+  "guide_text": "gar asimo dito fazer Cumvilla eLevantar"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_d3edf9062d4228048f85.png",
+  "text": "Pelourinho, e Ser Capitão della Como mais",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.122,
+  "guide_text": "Pelourinho, e ser Capitaõ deslo Como mais"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_bd304ca8fa81e9d87dbb.png",
+  "text": "claramente consta da Provizão a qual es",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2051,
+  "guide_text": "chara merte Consta da Prouizaõ a quales"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_97fa9a1f35f97f7c3d6e.png",
+  "text": "a merçe que se lhe Havia Conçedido alcan",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.15,
+  "guide_text": "amerço quee se lhe Cavia Concedido alean"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_8fa49eb10269e66b8cc8.png",
+  "text": "sou Lisenssa do Senhor Prelado para fazer",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0732,
+  "guide_text": "sou Lisencea do Senhor PreLado para fazer"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_a0253a2d158473c6c18b.png",
+  "text": "a Igreja acima dita, e a fez muim suntuoza",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1667,
+  "guide_text": "aIgreja asima dita, e o fezmuim seintuosa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_08480e6e52a9208fc54b.png",
+  "text": "que no dito Lugar Havião Estando para tra",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.122,
+  "guide_text": "que no dito Lugar Eauiaõ Estando paratra"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_12f00dbfcf49e16c748f.png",
+  "text": "tar de Levantar Pelourinho Faleçeu e ficou",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2143,
+  "guide_text": "ter de C_entar Pelourinho Foleco e ficou"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_a66fefa72f843aa66bd9.png",
+  "text": "sem efetuarçe seu intento e dos mais mora",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.122,
+  "guide_text": "sem e fetuarço lue intento e dos mais mora"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_c603a69c776493bffd49.png",
+  "text": "e de posse como se vera pellos que vão assigna",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2391,
+  "guide_text": "edeposse Comoscuera peslos qua vao asigna"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_816d5bb034c97d15f666.png",
+  "text": "das = Pedem Geralmente a vossa merçe Ha",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3077,
+  "guide_text": "dos= Gedim Geral merte avosca mexev Ea"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_ae6b3f85d34d6a9ec990.png",
+  "text": "vendo Respeito ao que em sua petição a",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1579,
+  "guide_text": "uendo Respirto ao que em sua pesiçaõ a"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_19713263f5e1ef81ec78.png",
+  "text": "vidor Em nome de Sua Magestade Levantar lhes",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2727,
+  "guide_text": "vidor Eem nome de sua Mogoo Leuantarthes"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_4fb35d399db5f3c394d9.png",
+  "text": "çita Em Jundiahy, Repartição da Capi",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1944,
+  "guide_text": "cito Em Iundibhy, Reppartiçaõ da Capi"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_dfbf46ac501dc2638693.png",
+  "text": "tania de Sam viçente e dar lhe nome de villa",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1364,
+  "guide_text": "tanio de sam vicente e darlhe nome devisla"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_74b7a9fdd44b21ee7f6b.png",
+  "text": "que se chamara villa formoza do desTerro",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.125,
+  "guide_text": "que sechamara villa termozo do des Terro"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_cc9307b75631e7d1c6e4.png",
+  "text": "e Eleger Justissa Juridicamente porque os di",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3182,
+  "guide_text": "eEleger dastiCo Iuridecam par que os di"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_6cb3a32e5c1e3417320e.png",
+  "text": "tos moradores adeministrem com o que se po",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "270v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0952,
+  "guide_text": "tos moradores a demenistrem Com o que sepo"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_6d183cb77df5d5de87e1.png",
+  "text": "Conçece a todos os que povoão Em seus Reynos",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3182,
+  "guide_text": "Conede atados osquee pausaõ em sues Reynos"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_a20987fbe645d59f19cc.png",
+  "text": "novas Povoaçoens com mais os que pello Fo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3171,
+  "guide_text": "novos Pauraçoens Com mas qque pusloto"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_1b0a37659adbd70f7703.png",
+  "text": "berto de oliveira Costa = Hieronimo de Camargo =",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1875,
+  "guide_text": "berto deo Livra dossa = Hieronimo de Camorgo="
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_a51c153d62753f8d76a4.png",
+  "text": "dre Luis = Pedro Cabral de Mello = Andre",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.225,
+  "guide_text": "dre Lu= Pedr Cobrel de MMo = Andre"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_41300c2d81b973ce5045.png",
+  "text": "Luis = Alberto Maçiel = Joâo Paulo = Joze",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3415,
+  "guide_text": "Lu= Alerto Macid= Ioao PanLo= Ioze"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_f479ce5c67054e81af02.png",
+  "text": "Falcão = Gaspar Sardinha = João Leme do Pra",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3488,
+  "guide_text": "Falcao= Gaipar sandento Ioaõ teme do Vra"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_f0e8c3af419a83f7e4ac.png",
+  "text": "do = Joâo Bernardes = Joâo de oliveira An",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3171,
+  "guide_text": "do= Ioao Bernardes = Ioao deo Lievr= Ta"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_8188a82847dca3620755.png",
+  "text": "= Pedro Leme o mosso = Manoel Cabral =",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2632,
+  "guide_text": "=PedroLeme omosco= Tllanoel Cobral="
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_bb1370e9834a32238400.png",
+  "text": "Manoel de Freitas = Paschoal Dias Rodrigues",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.186,
+  "guide_text": "Manool demestos = Paschoal dios Rodrigues"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_4b9d3c96384287224d3e.png",
+  "text": "= Paschoal Dias o mosso = Alonço peres = Ma",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3023,
+  "guide_text": "= Poschoal Dios omosc= Ahonco pery= Tha"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_f53125316fc17b4e8651.png",
+  "text": "me do Prado = Joâo Leme o mosso = Despacho",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1667,
+  "guide_text": "me do Prado = Io0õ Leme omopo= Despacho"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_0650deb214485f947e77.png",
+  "text": "Cabedo de vasconçellos = Resposta da Camara",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2326,
+  "guide_text": "Cabedo devas Concelhos = Resporta da canere"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_1aa2a45848ebefdec806.png",
+  "text": "a esta, e ficar muin distante. Em camara São",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3409,
+  "guide_text": "o esto, e ficar meimiccistant. Emeamoral."
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_73bebc64273a34c1f8d2.png",
+  "text": "Paulo 9 de dezembro de 1656. Cunha = Porto =",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2955,
+  "guide_text": "Pau So 9 de de7br^o de 1656 = Canho= Corto="
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_b61fedf979a8eeef1307.png",
+  "text": "clusão                  E logo no mesmo dia mes e Anno",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3243,
+  "guide_text": "Elgo no mes mo dio mes esAnno"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_5be8d71cc4ed21891f85.png",
+  "text": "atras declarado, Eu Tabelião fiz Comclu",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2821,
+  "guide_text": "atros aeclarado, e EuTaboliaõ fiz comela"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_e9f56d7a10711ae99a26.png",
+  "text": "zo ao ouvidor destas Capitanias o Capitão",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1707,
+  "guide_text": "zo ao oucidor destas Capisanios o Copitaõ."
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_6a8ce9eb6fb3f6e73d22.png",
+  "text": "para provar E mandar o que lhe parecer Jus",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1429,
+  "guide_text": "para prover Emandar a que lhe paretor Ius"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_890624a05480bf2e08db.png",
+  "text": "dores E moradores de Jundiahy de que fiz",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.15,
+  "guide_text": "clores Emoradore de dundiohy de que fiz"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_a3a0205408a3fea1f786.png",
+  "text": "Vistos a petição dos Povoadores e moradores da",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1957,
+  "guide_text": "Vistos apetiçaõ des Pauoadores e moradoreaa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_5723e80c153c302c8091.png",
+  "text": "querimentos por todos eles feitos Resposta dos",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2609,
+  "guide_text": "querim. ponsodos e lle feitos Resposta aos"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_442b10a206a5d2d4fe74.png",
+  "text": "que lhe mandey dar E não porem duvida al",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.225,
+  "guide_text": "q̄ lhe mander dar e naõ porem decvidaal"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_12c73fd3538e8098e174.png",
+  "text": "das em Sua petiçam e Requerimentos, e Ser tu",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2273,
+  "guide_text": "dos em sua pamo e Requerimentos, e serta"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_41e73a064c0b52251484.png",
+  "text": "servação a este povo e aumento das Terras do",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2727,
+  "guide_text": "seruaçao deste pouo e aum dos Terrosdo"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_c8301523d5c872465d20.png",
+  "text": "Marques do Rosario Perpeteo desta capita",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.15,
+  "guide_text": "Manques do Notario Perpeseo cesta capiza"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_f20eff0ea7c52bc658e7.png",
+  "text": "to o donatario desta Capitania pellos pode",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.0952,
+  "guide_text": "ta a donatario cesta Capitania pezlos pode"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_c7b7d195968b73db3502.png",
+  "text": "res que lhe conçede e o Seus Capitaens mores",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "271v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2955,
+  "guide_text": "res q̄ lhe Concede casus Capisaons mones"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_1184279d5c9e2e765972.png",
+  "text": "Como lhes He Conçecido, mando a todos os povo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1778,
+  "guide_text": "Como lhesce Concesido, mando alodos os paco"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_0bb1cd1b09d0081633a0.png",
+  "text": "de Cabedo de vasconcellos.    Termo de torna dos",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2,
+  "guide_text": "de Cabe do devos concelhes. Tormo detornados"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_7e1567aa54d0af3ccf61.png",
+  "text": "autos         Foi me tornado este Requerimento  e peti",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.3111,
+  "guide_text": "Foime tornado este Requerrim. e posi"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_2f9734b8052472499629.png",
+  "text": "ção dos Povoadores E moradores da povoação nova",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2979,
+  "guide_text": "çaõ dos Pauradores emonadores dapanoaçaõ noua"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_e289a9635db436d306a2.png",
+  "text": "de Jundiahy Com o despacho atras e assima do ou",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1489,
+  "guide_text": "de Pandiahy Com a desparho atras, e a Sima do ou"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_f75233c31c3eac894e24.png",
+  "text": "Comprisse assim e da maneira que nella Se conti",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2553,
+  "guide_text": "Compriss a Sim e damanoirs que nesca Sccomi"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_9c940dd4ec5056d90f3c.png",
+  "text": "do Proprietario que o escrevy.",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1667,
+  "guide_text": "do Proprietario que o Curevȳ"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_692419561e3bca0da1af.png",
+  "text": "E logo no mesmo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2667,
+  "guide_text": "Egolo nomesmo"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_b61f5eee87a3243fad26.png",
+  "text": "dia mes e Anno atras declarado Eu Tabelião",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2857,
+  "guide_text": "dia mes Anno atros desLara do Eusoboliaõ"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_60eca59ba74443ffb5c4.png",
+  "text": "os Povoadores E moradores os abaixo assignados",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2391,
+  "guide_text": "as Paaradose E monadones os obaixo aSignados"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_d392f0686cb1c19a5981.png",
+  "text": "môr fez Lista de todos os povoadores e morado",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2444,
+  "guide_text": "mor Tez Lesta detodos ospanradones emonado"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_ec7ace6915235fbf78c8.png",
+  "text": "pellos poderes que lhe herão conçedidos pello foral",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1569,
+  "guide_text": "pillos podenes que lhe heraõ concedidos posso foral"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_d11f6c9e0c0fb96bd864.png",
+  "text": "que Hera desta Capitania pois lhe contou Ha",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.186,
+  "guide_text": "que hera desta Capetanca pois lhe constandEa"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_13ee47281d9b1ac58c33.png",
+  "text": "todos juntos Armados com estandarte Real es",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.093,
+  "guide_text": "todos justos Armados Com estanderte Reales"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_523a968e789e503286bd.png",
+  "text": "Reais que sâo a cinco quinas de Portogal mandan",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2553,
+  "guide_text": "Riis q̄ saõ a Sineo quinos ee Postagal mandan"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_649421a3d03e505de496.png",
+  "text": "do Logo apregoar ponto da a prassa tres vezes",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2,
+  "guide_text": "de Logo apreyoa ponso da aproseo tresvezes"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_f2f154c7b4d833189382.png",
+  "text": "pessoas que empedisse ou alegasse alguns em",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2558,
+  "guide_text": "pescoas que Empdisu ou olegosu Algung em"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_1bd51d3b39fdd5cd0dd3.png",
+  "text": "haver pessoa alguã a Empedisse Lançou Huã",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2683,
+  "guide_text": "Caver pessoa alquao a empedise Lançoo Eaaõ"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_87f3ba6b22c7ddb6db76.png",
+  "text": "moeda de cruzado Com as Armas Reais e pegan",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.093,
+  "guide_text": "mada decruzado Com as Armas Riais e pegan"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_e1c42384c1c1427c498e.png",
+  "text": "mado Caburehûba Com Suas as pos do mesmo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.225,
+  "guide_text": "mado Cuburchubo Com suos aspos domes mo"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_5cabe5ac45d3aba962e2.png",
+  "text": "paô e ficados em quatro quinas e o assentou",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1395,
+  "guide_text": "paõ e ficados Emquatro quinos, e o a sentou"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_90ddaac4656f1f23bb75.png",
+  "text": "villa nova de Jundiahy e aclamando o nome",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "272v",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2195,
+  "guide_text": "Villo noud de Iundiahy, e o cLamando o nome"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_ddfbee677c15dcfc54dd.png",
+  "text": "viçente Miguel de Cabedo de vas Concelhos para por ele formar",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "273r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.2131,
+  "guide_text": "vicente Tliguel de Cobedo aevos coneeltos para porol formar"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_c16786aae5c502df7bcf.png",
+  "text": "eleição criar e fazer Justissa e officiais da Camara para",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "273r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.193,
+  "guide_text": "eLeiçaõ Criar e fazor dastisa e offeciais do Camora para"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_edf434cbf6a7468fdf8b.png",
+  "text": "servirem nesta Republica da villa nova do desTerro",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "273r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.16,
+  "guide_text": "servirem nesta Repubsico da o illa noud da des Terro"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_eb6925c236bc6c556e6e.png",
+  "text": "Jesus Christo de mil seis centos setenta e sinco annos aos ca",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "273r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1639,
+  "guide_text": "deses christo de mil sus cintos sé lenta esinco annos aos ca"
+ },
+ {
+  "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_87263ea56f735a289957.png",
+  "text": "torze dias do mes de dezenbro da dita hera nesta villa nova",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "folio": "273r",
+  "split": "train",
+  "label_source": "edition_aligned_paleographic",
+  "guide_cer": 0.1525,
+  "guide_text": "torze dios comes de dezenbro da dita Eera neslavillanoao"
+ },
+ {
+  "crop_image": "data/workspace/curation_sessao_1795/crops/20261028T180723_c80a33f8/l_46885e82a1448e83690e.png",
+  "text": "Aos vinte e cinco dias do mes de junho de mil sete",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_b8a06d58bd7cced4f3a2.png",
+  "text": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+  "text": "senhora do Desterro de jundiahy comarca da cidade",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+  "text": "de São Paulo, em casas de morada do Juiz Presidente",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+  "text": "Salvador de Oliveira Prado, onde se achavão presentes",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+  "text": "os officiaes da Camara em acto de Vereança, trat-",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_40d2333b12328973de24.png",
+  "text": "ando sobre o bem commum do povo, na mesma se",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_01.png",
+  "text": "Anno do Nacimento de Nosso Senhor Jezus christo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_02.png",
+  "text": "de mil seis centos sincoenta e seis annos, aos ca",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_03.png",
+  "text": "torze Dias do mes de Dezembro da dita Hera nesta",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_04.png",
+  "text": "povoação e Freguezia de Nossa senhora do Deste",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_05.png",
+  "text": "rro de Jundiahy, aonde Eu Publico Tabelião ao di",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_78df4fbf307720b1c60f.png",
+  "text": "ante nomeado fui Em Companhia do Capitão",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_e1732d5cda17352c8f01.png",
+  "text": "mõr e ouvidor desta Capitania de Sam viçente",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_c84c4b48757eaa2ebd30.png",
+  "text": "Miguel de Cabedo de vasconçellos perante elle a",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_37060d08eb8ed4580154.png",
+  "text": "pareçerão todos os povoadores E moradores os abai",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_400d9ff8f70ad49591e0.png",
+  "text": "xo assignados, e todos juntos e Cada Hum Em par",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "data/workspace_traslado_269r/preparacao_11_15/l_9bf3fc735495610596ca.png",
+  "text": "tão mõr e ouvidor Em como elles Herão povoa",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinícius Cima Takemoto"
+ },
+ {
+  "crop_image": "data/workspace_traslado_269r/preparacao_11_15/l_b26c97ac60108324fe92.png",
+  "text": "dores e Freguezes desta dita Freguezia de Nossa",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinícius Cima Takemoto"
+ },
+ {
+  "crop_image": "data/workspace_traslado_269r/preparacao_11_15/l_49690c30e489edcf5e4d.png",
+  "text": "Senhora do DesTerro de Jundiahy onde Eram",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinícius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_18.png",
+  "text": "tissa fazer deligençias por ser Longe devendo",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinícius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_21.png",
+  "text": "dos Como Tambem pessoas que pessuhem Terras",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinícius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_22.png",
+  "text": "por titullos de Sismaria as Lavrão outros que mais",
+  "document_id": "tt_pbr_0004_026_traslado_1767",
+  "split": "train",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinícius Cima Takemoto"
+ }
+]
