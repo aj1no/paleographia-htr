@@ -57,6 +57,7 @@ preservado como histórico.
 
 ## Uso e dados
 
+- [Grupo de teste reservado — pagamento a Thomas Pardo, 05/11](revisao_humana/pagamento_thomas_pardo_teste/README.md): decisão, partição proposta, ressalvas e protocolo de curadoria sem sugestões de modelo.
 - [Esquema e estados](data_schema.md), [política de transcrição](transcription_policy.md).
 - [Curadoria de 1795 — fechamento após 038 em 03/11](revisao_humana/sessao_1795/sessao_20261103/fechamento_curadoria_038.md): sete referências por linha validadas, oitava provável/excluída, identificação e cobertura parcial confirmadas; treino científico ainda sem partições prontas.
 - [Próxima curadoria: carta de José Gomes de Gouveia de 1767](revisao_humana/carta_jose_gomes_1767/preparacao_20261103/README.md): primeiro recorte proposto, sem aprovação humana ou transcrição diplomática.
