@@ -136,6 +136,34 @@ Ubuntu, Python 3.11 e 3.12. Uma tarefa acadêmica separada reexecuta as entregas
 de 20/10 e 22/10 sem pesos nem inferência, e confere o fechamento de 23/10 no
 commit em que ele foi fechado. Veja a [CI acadêmica](docs/manutencao/ci_academica_duas_versoes_20261022/README.md).
 
+## Reproduzir o ajuste fino
+
+Registro completo do experimento de 05/11: [fólio inteiro e ajuste fino do PP-OCRv6](docs/experimentos/ppocrv6_ajuste_fino_20261105/README.md).
+Na validação de 1795, o modelo ajustado no Traslado baixou o CER de 14,20% para 12,17% (WER de 56,72% para 50,75%).
+
+1. **Modelos e dados públicos** (Zenodo; MD5 conferido; só os arquivos necessários):
+
+   ```powershell
+   .venv/Scripts/python.exe scripts/baixar_dados_publicos.py
+   ```
+
+   Baixa o PP-OCRv6 base, o modelo TraPrInq e o lote de 505 páginas do dataset
+   *Portuguese Handwriting 16th–19th c.* (CC BY 4.0), cerca de 730 MB no total.
+2. **Imagens do acervo de Jundiaí** (Traslado, sessão de 1795 e pagamento): vêm do
+   [Arquivo Histórico de Jundiaí / SISMU](https://jundiai.sismu.app/) e são restauradas por
+   `restore-corpus` a partir do pacote do corpus v0.2. **Pendência:** o pacote ainda não está
+   publicado; a forma de distribuí-lo depende das condições de uso do acervo.
+3. **Treino:** `configs/finetune_ppocrv6.toml` e `src/paleographia/ppocrv6_finetune.py`. Requer
+   Docker; com GPU NVIDIA, construa a imagem de treino:
+
+   ```powershell
+   docker build --provenance=false -t paleographia-kraken:7.1.0-cu126 runtime/kraken_ppocrv6_gpu
+   ```
+
+   Tempos medidos numa GTX 1650 (4 GB): cerca de 6 s por linha, 40 min por época com 382 amostras.
+   Em CPU são cerca de 18 s por linha, o que torna o treino completo inviável; um notebook com
+   caminho no Google Colab (GPU) e um modo de demonstração em CPU estão em preparação.
+
 ## Entregas acadêmicas
 
 [![Abrir notebook da equipe no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aj1no/paleographia-htr/blob/main/docs/entregas/pi_iv_pln_20261023_colab/colaboracao_colab.ipynb)
