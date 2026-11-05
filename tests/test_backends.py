@@ -1,6 +1,5 @@
 """All worker outputs below are synthetic protocol fixtures, never HTR evidence."""
 import copy
-import hashlib
 import io
 import json
 import subprocess
