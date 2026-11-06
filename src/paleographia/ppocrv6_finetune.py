@@ -83,7 +83,26 @@ def prepare(pairs, output, root, augment=3, seed=1831, max_width=2560):
     return evidence, {k: len(v) for k, v in lists.items()}
 
 
-def run(pairs, config, output, root, execute=True, timeout_hours=10.0):
+def _run_streaming(command, log_path, timeout_seconds, stream):
+    """Run the container; always write console.log, and also echo it live when ``stream`` is set."""
+    import sys
+    deadline = time.monotonic() + timeout_seconds
+    with log_path.open("w", encoding="utf-8") as log:
+        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                                   text=True, encoding="utf-8", errors="replace", bufsize=1)
+        for line in process.stdout:
+            log.write(line)
+            log.flush()
+            if stream and not line.startswith("VALIDATION {"):  # JSON stays in the log only
+                sys.stdout.write(line)
+                sys.stdout.flush()
+            if time.monotonic() > deadline:
+                process.kill()
+                raise subprocess.TimeoutExpired(command, timeout_seconds)
+        return process.wait()
+
+
+def run(pairs, config, output, root, execute=True, timeout_hours=10.0, stream=False):
     root, output = Path(root).resolve(), Path(output).resolve()
     if output.exists():
         raise ValueError("Treinamento exige saída nova.")
@@ -102,7 +121,8 @@ def run(pairs, config, output, root, execute=True, timeout_hours=10.0):
             "weight_decay": settings.get("weight_decay", 0.0), "warmup_steps": settings.get("warmup_steps", 100),
             "device": settings.get("device", "cpu"), "precision": settings.get("precision", "32-true"),
             "deterministic": settings.get("deterministic", True), "freq": settings.get("freq", 1.0),
-            "freeze_batchnorm": settings.get("freeze_batchnorm", True),
+            "freeze_batchnorm": settings.get("freeze_batchnorm", True), "log_every": settings.get("log_every", 0),
+            "quit": settings.get("quit", "early"),
             "base_sha256": rec["sha256"], "counts": counts, "data": evidence,
             "checkpoint_selection": "ketos val_metric on validation only; reserved test never mounted"}
     write_json(output / "data" / "plan.json", plan)
@@ -131,16 +151,15 @@ def run(pairs, config, output, root, execute=True, timeout_hours=10.0):
     if execute:
         started = time.monotonic()
         try:
-            with (output / "console.log").open("w", encoding="utf-8") as log:
-                done = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT, timeout=timeout_hours * 3600)
+            returncode = _run_streaming(command, output / "console.log", timeout_hours * 3600, stream)
         except subprocess.TimeoutExpired:
             subprocess.run(["docker", "rm", "-f", name], capture_output=True, timeout=60)
             raise ValueError("Orçamento de tempo excedido; contêiner interrompido.") from None
         proof_path = output / "worker_result.json"
         # 137 = SIGKILL, usually the container memory limit; no worker result is written then.
         proof = json.loads(proof_path.read_bytes()) if proof_path.exists() else {
-            "status": "failed", "reason": f"contêiner encerrou sem resultado (código {done.returncode}; 137 indica falta de memória)"}
-        result.update(status=proof.get("status"), returncode=done.returncode, evidence=proof,
+            "status": "failed", "reason": f"contêiner encerrou sem resultado (código {returncode}; 137 indica falta de memória)"}
+        result.update(status=proof.get("status"), returncode=returncode, evidence=proof,
                       duration_seconds=time.monotonic() - started, finished_at=now())
         if sha256(model) != rec["sha256"]:
             raise ValueError("Checkpoint inicial alterado.")
