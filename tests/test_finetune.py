@@ -52,5 +52,5 @@ def test_live_training_refuses_to_start_while_another_runs(monkeypatch, capsys):
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     monkeypatch.setattr(module, "treino_em_andamento", lambda: ["paleographia-finetune-abc"])
-    assert module.main(["demo"]) == 2
+    assert module.main(["A"]) == 2
     assert "Já existe um treino rodando" in capsys.readouterr().out
