@@ -31,6 +31,16 @@ def gpu():
         return None
 
 
+def treino_em_andamento():
+    """Nomes de contêineres de treino já rodando (dois treinos juntos esgotam GPU e memória)."""
+    try:
+        out = subprocess.run(["docker", "ps", "--filter", "name=paleographia-finetune", "--format", "{{.Names}}"],
+                             capture_output=True, text=True, timeout=30)
+        return [n for n in out.stdout.split() if n]
+    except (OSError, subprocess.TimeoutExpired):
+        return []
+
+
 def pares(modo):
     if modo == "B":
         return json.loads((DADOS / "pares_traslado_mais_inquisicao.json").read_text(encoding="utf-8"))
@@ -49,6 +59,11 @@ def main(argv=None):
     from paleographia.config import load_config
     from paleographia.ppocrv6_finetune import run
 
+    rodando = treino_em_andamento()
+    if rodando:
+        print(f"Já existe um treino rodando ({', '.join(rodando)}). Espere terminar ou pare-o antes:")
+        print("  docker rm -f " + " ".join(rodando))
+        return 2
     config = load_config(ROOT / "configs/finetune_ppocrv6.toml")
     settings = config["finetune"]
     placa = gpu()
@@ -56,7 +71,9 @@ def main(argv=None):
         settings.update(device="cpu", docker_image_id=config["recognition"]["docker_image_id"])
     settings["log_every"] = 1
     if args.modo == "demo":
-        settings.update(max_epochs=1, min_epochs=1, freq=0.5, augment_variants=0, lag=2, quit="fixed")
+        # Folga para o gravador de tela e o Windows: menos núcleos e memória no contêiner.
+        settings.update(max_epochs=1, min_epochs=1, freq=0.5, augment_variants=0, lag=2, quit="fixed",
+                        threads=3, memory="5g")
     selecionados = pares(args.modo)
     faltando = [p["crop_image"] for p in selecionados if not (ROOT / p["crop_image"]).is_file()]
     contagem = {}
