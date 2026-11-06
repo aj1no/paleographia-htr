@@ -84,8 +84,15 @@ def main():
 
             def on_train_batch_end(self, trainer, module, outputs, batch, batch_idx):
                 self.steps = trainer.global_step
+                loss = outputs.get("loss") if isinstance(outputs, dict) else outputs
+                every = int(plan.get("log_every", 0))
+                if every and batch_idx % every == 0:
+                    # Human-readable progress line for watching or recording the run.
+                    total = trainer.num_training_batches
+                    print(f"TREINO  época {trainer.current_epoch + 1}  lote {batch_idx + 1}/{total}  "
+                          f"passo {trainer.global_step}  perda {scalar(loss):.4f}  "
+                          f"{(time.monotonic() - started) / 60:5.1f} min", flush=True)
                 if trainer.global_step % 50 == 0:
-                    loss = outputs.get("loss") if isinstance(outputs, dict) else outputs
                     with (output / "losses.jsonl").open("a", encoding="utf-8") as stream:
                         stream.write(json.dumps({"epoch": trainer.current_epoch, "step": trainer.global_step,
                                                  "loss": scalar(loss), "elapsed_s": time.monotonic() - started}) + "\n")
@@ -97,6 +104,11 @@ def main():
                 self.validations.append(item)
                 write(output / "validation_history.json", self.validations)
                 print("VALIDATION", json.dumps(item), flush=True)
+                m = item["metrics"]
+                if "val_accuracy" in m:
+                    print(f"VALIDAÇÃO  época {item['epoch'] + 1}  passo {item['step']}  "
+                          f"acerto de caracteres {float(m['val_accuracy']):.2%}  "
+                          f"acerto de palavras {float(m.get('val_word_accuracy', 0)):.2%}", flush=True)
 
         audit = Evidence()
         original = kraken.train.KrakenTrainer
@@ -117,7 +129,7 @@ def main():
                    "--output", "/output/checkpoints", "--weights-format", "safetensors",
                    "--resize", "fail", "--normalization", plan["normalization"], "--normalize-whitespace",
                    "--no-reorder", "--height", "96", "--max-width", str(plan["max_width"]), "--pad", "16",
-                   "--freq", str(plan.get("freq", 1.0)), "--quit", "early", "--lag", str(plan["lag"]), "--min-delta", str(plan["min_delta"]),
+                   "--freq", str(plan.get("freq", 1.0)), "--quit", plan.get("quit", "early"), "--lag", str(plan["lag"]), "--min-delta", str(plan["min_delta"]),
                    "--epochs", str(plan["max_epochs"]), "--min-epochs", str(plan["min_epochs"]),
                    "--batch-size", str(plan["batch_size"]), "--accumulate-grad-batches", str(plan["accumulate"]),
                    "--optimizer", "AdamW", "--lrate", str(plan["learning_rate"]), "--weight-decay", str(plan["weight_decay"]),
