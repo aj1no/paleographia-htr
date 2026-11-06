@@ -49,6 +49,20 @@ treino A de 05/11 parou em 90,2% / 61,2%. Com só 7 linhas de validação, uma l
 mais ou a menos certa move bastante o número. As oscilações acima são desse tamanho.
 A comparação definitiva fica para o teste reservado, rodado uma única vez no fim.
 
+## CER e WER em NFC (métrica do projeto)
+
+Mesmas 7 linhas, pelo worker de inferência do editor (imagem de CPU avaliada), com
+`scripts/avaliar_validacao.py` ([linhas](../../dados/avaliacao_validacao_base_A_A2_nfc.json)):
+
+| Modelo | CER | WER |
+|---|---|---|
+| PP-OCRv6 base | 14,20% | 56,72% |
+| Ajustado A de 05/11 | 12,17% | 50,75% |
+| **Ajustado A gravado (este treino)** | **10,72%** | **41,79%** |
+
+Exemplo, linha 7: referência "ando sobre o bem commum do povo, na mesma se"; base "lando sobre
+obem commûm dopovo, namyma se"; este modelo "lando sobre o bem commum dopovo, namesma se".
+
 ## Arquivos
 
 - `prints/treino_A_*.png`: a janela do terminal a cada 10 min e o resumo final (`*_final.png`).
