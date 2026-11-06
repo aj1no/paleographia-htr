@@ -99,12 +99,24 @@ métrica do projeto ([linhas](dados/avaliacao_validacao_base_A_nfc.json)):
 | Modelo | CER | WER |
 | --- | ---: | ---: |
 | PP-OCRv6 base | 14,20% | 56,72% |
-| PP-OCRv6 ajustado A | **12,17%** | **50,75%** |
+| PP-OCRv6 ajustado A | 12,17% | 50,75% |
+| PP-OCRv6 ajustado A, treino gravado em 06/11 (passo 95) | **10,72%** | **41,79%** |
 
 A melhora 4 das 7 linhas e não piora nenhuma ("dia domes" → "dias do mes"; "Officiays de Camara" →
 "Officiaes da Camara"). Peso A: `models/ppocrv6_ajustado_A_20261105/medium_ajustado_A.safetensors`
 (fora do Git), SHA-256 `65e0ad8846b07d57f212e0c9a3f4630642cab7d42d9103ea1686669ef1c73dd8`, checkpoint da
 1ª validação (passo 11); treino encerrado por parada antecipada após 107 passos (4 épocas, 103 min).
+
+**Treino A gravado ao vivo (06/11)**, mesma configuração, com prints e log
+([provas](gravacao_20261106/treino_A/README.md), [linhas](dados/avaliacao_validacao_base_A_A2_nfc.json)):
+melhor validação no passo 95 (90,80% / 64,18% no `ketos`), parada antecipada no passo 191 (141,7 min).
+Em NFC: CER 10,72% e WER 41,79%. Contra o A de 05/11, melhora 3 linhas ("Saõ … Iuis" → "São … Juis",
+"Oliveera" → "Oliveira", "obem commûm" → "o bem commum"), empata 2 e piora 2 (na linha 1 acerta
+"Junho" e "de mil", mas lê "cunco" e "selle"; na linha 3, "da Cidade" → "de Cidade"). Peso fora do Git:
+`models/ppocrv6_ajustado_A_20261106/medium_ajustado_A_gravado.safetensors`, SHA-256
+`04194328e5d12b4f7a72bb2764a0c4c76f5030e9856e5c41ce96d04ab8b7c148`. As duas execuções de A têm a mesma
+configuração e semente, mas o treino em GPU não é determinístico; a diferença entre elas mostra
+quanto o resultado varia de uma execução para outra.
 
 Limitações: validação muito pequena (diferenças de 1–2 pontos podem ser ruído); três sinais
 da validação (ᵃ, ˢ, -) não aparecem no treino; o TraPrInq recebeu recortes retangulares, embora

@@ -139,7 +139,8 @@ commit em que ele foi fechado. Veja a [CI acadêmica](docs/manutencao/ci_academi
 ## Reproduzir o ajuste fino
 
 Registro completo do experimento de 05/11: [fólio inteiro e ajuste fino do PP-OCRv6](docs/experimentos/ppocrv6_ajuste_fino_20261105/README.md).
-Na validação de 1795, o modelo ajustado no Traslado baixou o CER de 14,20% para 12,17% (WER de 56,72% para 50,75%).
+Na validação de 1795, o modelo ajustado no Traslado baixou o CER de 14,20% para 10,72% (WER de 56,72% para 41,79%)
+no treino gravado ao vivo em 06/11 ([provas: prints, log e resultado](docs/experimentos/ppocrv6_ajuste_fino_20261105/gravacao_20261106/treino_A/README.md)).
 
 1. **Modelos e dados públicos** (Zenodo; MD5 conferido; só os arquivos necessários):
 
@@ -170,6 +171,13 @@ Na validação de 1795, o modelo ajustado no Traslado baixou o CER de 14,20% par
 
    Para gravar em vídeo, use `gravar_treino.bat`: ele pergunta o treino (A ou B), abre o monitor da
    GPU e espera uma tecla antes de começar. Rode um treino por vez; o script recusa iniciar outro.
+   Durante o treino, `scripts/prints_treino.ps1` tira prints da janela do treino e do Docker Desktop
+   a cada 10 minutos e no fim (`output/prints_treino_*`).
+4. **Avaliação em CER/WER (NFC)** pelo worker de inferência do editor, nas linhas de validação:
+
+   ```powershell
+   .venv/Scripts/python.exe scripts/avaliar_validacao.py . docs/experimentos/ppocrv6_ajuste_fino_20261105/dados/pares_filtrados.json validation models/kraken_ppocrv6_medium/medium.safetensors CAMINHO/DO/PESO.safetensors
+   ```
    Tempos medidos numa GTX 1650 (4 GB): cerca de 6 s por linha, 40 min por época com 382 amostras.
    Em CPU são cerca de 18 s por linha, o que torna o treino completo inviável; um notebook com
    caminho no Google Colab (GPU) está em preparação.
