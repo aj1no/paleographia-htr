@@ -1,7 +1,6 @@
 """Roda o ajuste fino do PP-OCRv6 mostrando o progresso no terminal (para acompanhar ou gravar).
 
 Uso, na raiz do projeto, com Docker Desktop aberto:
-    python scripts/treinar_ao_vivo.py demo   # ~6 min na GTX 1650: 40 linhas do Traslado, 1 época
     python scripts/treinar_ao_vivo.py A      # Traslado (191 linhas), até 12 épocas
     python scripts/treinar_ao_vivo.py B      # Traslado + 550 linhas públicas da Inquisição
 
@@ -44,17 +43,13 @@ def treino_em_andamento():
 def pares(modo):
     if modo == "B":
         return json.loads((DADOS / "pares_traslado_mais_inquisicao.json").read_text(encoding="utf-8"))
-    todos = json.loads((DADOS / "pares_filtrados.json").read_text(encoding="utf-8"))
-    if modo == "demo":
-        treino = [p for p in todos if p["split"] == "train"][:40]
-        return treino + [p for p in todos if p["split"] == "validation"]
-    return todos
+    return json.loads((DADOS / "pares_filtrados.json").read_text(encoding="utf-8"))
 
 
 def main(argv=None):
     sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("modo", choices=["demo", "A", "B"])
+    parser.add_argument("modo", choices=["A", "B"])
     args = parser.parse_args(argv)
     from paleographia.config import load_config
     from paleographia.ppocrv6_finetune import run
@@ -70,10 +65,8 @@ def main(argv=None):
     if not placa:
         settings.update(device="cpu", docker_image_id=config["recognition"]["docker_image_id"])
     settings["log_every"] = 1
-    if args.modo == "demo":
-        # Folga para o gravador de tela e o Windows: menos núcleos e memória no contêiner.
-        settings.update(max_epochs=1, min_epochs=1, freq=0.5, augment_variants=0, lag=2, quit="fixed",
-                        threads=3, memory="5g")
+    # Folga para o gravador de tela e o Windows: menos núcleos e memória no contêiner.
+    settings.update(threads=3, memory="5g")
     selecionados = pares(args.modo)
     faltando = [p["crop_image"] for p in selecionados if not (ROOT / p["crop_image"]).is_file()]
     contagem = {}

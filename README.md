@@ -164,15 +164,15 @@ Na validação de 1795, o modelo ajustado no Traslado baixou o CER de 14,20% par
    validação e o resumo final; tudo também fica em `output/treino_ao_vivo_*/console.log`):
 
    ```powershell
-   .venv/Scripts/python.exe scripts/treinar_ao_vivo.py demo   # cerca de 6 min: 40 linhas, 1 época
    .venv/Scripts/python.exe scripts/treinar_ao_vivo.py A      # Traslado
    .venv/Scripts/python.exe scripts/treinar_ao_vivo.py B      # Traslado + Inquisição
    ```
 
-   Em 06/11, a demonstração levou a validação de 86,8% (base) a 88,8% de acerto de caracteres.
+   Para gravar em vídeo, use `gravar_treino.bat`: ele pergunta o treino (A ou B), abre o monitor da
+   GPU e espera uma tecla antes de começar. Rode um treino por vez; o script recusa iniciar outro.
    Tempos medidos numa GTX 1650 (4 GB): cerca de 6 s por linha, 40 min por época com 382 amostras.
    Em CPU são cerca de 18 s por linha, o que torna o treino completo inviável; um notebook com
-   caminho no Google Colab (GPU) e um modo de demonstração em CPU estão em preparação.
+   caminho no Google Colab (GPU) está em preparação.
 
 ## Entregas acadêmicas
 
