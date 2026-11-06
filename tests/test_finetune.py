@@ -43,3 +43,14 @@ def test_per_pair_augment_override_balances_sources(tmp_path):
              {"crop_image": crop(tmp_path, "c.png"), "text": "val", "document_id": "doc_c", "split": "validation"}]
     _, counts = prepare(pairs, tmp_path / "run", tmp_path, augment=5)
     assert counts == {"train": 4, "validation": 1}
+
+
+def test_live_training_refuses_to_start_while_another_runs(monkeypatch, capsys):
+    import importlib.util
+    from pathlib import Path
+    spec = importlib.util.spec_from_file_location("ao_vivo", Path(__file__).parents[1] / "scripts/treinar_ao_vivo.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    monkeypatch.setattr(module, "treino_em_andamento", lambda: ["paleographia-finetune-abc"])
+    assert module.main(["demo"]) == 2
+    assert "Já existe um treino rodando" in capsys.readouterr().out
