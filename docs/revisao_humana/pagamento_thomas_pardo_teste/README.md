@@ -81,3 +81,22 @@ PDF do livro. Edição: Gilson Santos (AHMJ), revisão Isabella Ferraro (AHMJ).
 O workspace `data/workspace_teste_pagamento/` fica fora do Git, como os demais workspaces locais.
 Ele foi criado em 05/11/2026 com as duas páginas apontando para os arquivos originais acima e
 com a segmentação automática por projeção; nenhuma linha foi revisada.
+
+## Recortes refeitos com o blla (07/11/2026)
+
+A pedido do solicitante, os 53 recortes por projeção (nenhum com texto, revisão ou ajuste
+humano) foram trocados pelos do segmentador **blla** do Kraken, o mesmo usado nos outros fólios,
+com [`scripts/resegmentar_teste_blla.py`](../../../scripts/resegmentar_teste_blla.py).
+
+- **Só segmentação.** O blla desenha linhas de base e polígonos; não lê texto. Nenhum
+  reconhecedor rodou nestas imagens, o workspace continua com `backend = "disabled"` e não há
+  predições nele. O modelo blla é o padrão do Kraken, sem treino nem ajuste nosso.
+- **Ambiente:** imagem Docker `paleographia-kraken:7.1.0-cpu` (`sha256:511fb2e2b76d…`), sem rede;
+  modelo `kraken/blla.mlmodel` da própria imagem.
+- **Resultado:** 113v com 26 linhas (5 marcadas como margem, cerca de 49 s); 114r com 34 linhas
+  (9 marcadas como margem, cerca de 43 s). Revisão do workspace: `20261107T161456_e70c2bfa`.
+  As revisões de 05/11 continuam no histórico do workspace.
+- **O que a curadoria ainda precisa fazer:** os polígonos acompanham as linhas, mas há linhas
+  partidas em dois pedaços, fragmentos de assinatura e de rubrica e as anotações de margem
+  (por exemplo, "1000" e "27/11/1759" em 113v). Conferir cada recorte, juntar ou ajustar os
+  pedaços, rejeitar o que estiver fora da cobertura e só então transcrever (passos 3 e 4 acima).
