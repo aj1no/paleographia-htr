@@ -12,6 +12,7 @@ from starlette.concurrency import run_in_threadpool
 
 from .config import load_config
 from .io import safe_path
+from .modernizacao import modernizar_linhas
 from .recognition import ModelUnavailable
 from .presentation import present_predictions as present_frozen, review_policy
 
@@ -238,6 +239,13 @@ def create_app(root=None, config=None, recognizer=None):
         latest = {}
         for row in present_predictions(state["predictions"], lines, config):
             latest[row["line_id"]] = row  # predictions are appended in execution order
+        # Leitura modernizada automática: só sobre a leitura humana, por região, em ordem de leitura,
+        # para respeitar palavras divididas na quebra de linha. Nunca sobre a sugestão do modelo.
+        automatic = {}
+        for region in {l["region_id"] for l in lines}:
+            same = [l for l in lines if l["region_id"] == region]
+            readings = modernizar_linhas([(l.get("text_diplomatic") or "").strip() for l in same])
+            automatic.update({l["line_id"]: r for l, r in zip(same, readings)})
         rows = []
         for line in lines:
             suggestion = latest.get(line["line_id"], {}).get("presentation", {})
@@ -248,10 +256,19 @@ def create_app(root=None, config=None, recognizer=None):
                 text, source = suggestion["text"], "sugestao_modelo"
             else:
                 text, source = "", suggestion.get("status") or "sem_reconhecimento"
+            # A edição modernizada registrada na linha tem precedência sobre a sugestão automática.
+            edition = (line.get("text_modernized") or "").strip()
+            if edition:
+                modern, modern_source = edition, "edicao"
+            elif human:
+                modern, modern_source = automatic[line["line_id"]], "automatica"
+            else:
+                modern, modern_source = "", None
             rows.append({"line_id": line["line_id"], "reading_order": line["reading_order"], "region_id": line["region_id"],
-                         "text": text, "source": source})
+                         "text": text, "source": source, "modernized": modern, "modernized_source": modern_source})
         return {"page_id": page_id, "original_name": page.get("original_name"), "revision": state["revision"],
-                "lines": rows, "text": "\n".join(r["text"] for r in rows if r["region_id"] != "margem")}
+                "lines": rows, "text": "\n".join(r["text"] for r in rows if r["region_id"] != "margem"),
+                "modernized_text": "\n".join(r["modernized"] for r in rows if r["region_id"] != "margem")}
 
     @app.get("/api/pages/{page_id}/image")
     def image(page_id: str):

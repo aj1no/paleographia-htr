@@ -1,0 +1,135 @@
+{
+ "descricao": "Pares diplomática (validada por humano) × edição modernizada do AHMJ, linha a linha. Edições: sessão de 1795, transcrição e edição de Gilson Santos Lino; carta de 1767, Júlia Munhoz e Matheus Bellodi; revisão de Isabella Ferraro (AHMJ). Uso sem fins comerciais, com crédito. O teste reservado (pagamento a Thomas Pardo) não entra.",
+ "pares": [
+  {
+   "document_id": "sessao_1795",
+   "linha": 1,
+   "diplomatica": "Aos vinte e cinco dias do mes de junho de mil sete",
+   "edicao": "Aos vinte e cinco dias do mês de junho de mil sete",
+   "fonte_diplomatica": "docs/experimentos/ppocrv6_ajuste_fino_20261105/dados/pares_traslado_mais_inquisicao.json (split validation)",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/sessao_1795/modernized_edition_3c0132189f5574d5.pdf",
+    "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 1
+   }
+  },
+  {
+   "document_id": "sessao_1795",
+   "linha": 2,
+   "diplomatica": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+   "edicao": "centos e noventa e cinco anos nesta Vila de Nossa",
+   "fonte_diplomatica": "docs/experimentos/ppocrv6_ajuste_fino_20261105/dados/pares_traslado_mais_inquisicao.json (split validation)",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/sessao_1795/modernized_edition_3c0132189f5574d5.pdf",
+    "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 2
+   }
+  },
+  {
+   "document_id": "sessao_1795",
+   "linha": 3,
+   "diplomatica": "senhora do Desterro de jundiahy comarca da cidade",
+   "edicao": "senhora do Desterro de Jundiaí Comarca da Cidade",
+   "fonte_diplomatica": "docs/experimentos/ppocrv6_ajuste_fino_20261105/dados/pares_traslado_mais_inquisicao.json (split validation)",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/sessao_1795/modernized_edition_3c0132189f5574d5.pdf",
+    "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 3
+   }
+  },
+  {
+   "document_id": "sessao_1795",
+   "linha": 4,
+   "diplomatica": "de São Paulo, em casas de morada do Juiz Presidente",
+   "edicao": "de São Paulo em casas de morada do Juiz Presidente",
+   "fonte_diplomatica": "docs/experimentos/ppocrv6_ajuste_fino_20261105/dados/pares_traslado_mais_inquisicao.json (split validation)",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/sessao_1795/modernized_edition_3c0132189f5574d5.pdf",
+    "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 4
+   }
+  },
+  {
+   "document_id": "sessao_1795",
+   "linha": 5,
+   "diplomatica": "Salvador de Oliveira Prado, onde se achavão presentes",
+   "edicao": "Salvador de Oliveira Prado, onde se achavam presentes",
+   "fonte_diplomatica": "docs/experimentos/ppocrv6_ajuste_fino_20261105/dados/pares_traslado_mais_inquisicao.json (split validation)",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/sessao_1795/modernized_edition_3c0132189f5574d5.pdf",
+    "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 5
+   }
+  },
+  {
+   "document_id": "sessao_1795",
+   "linha": 6,
+   "diplomatica": "os officiaes da Camara em acto de Vereança, trat-",
+   "edicao": "os oficiais da Câmara em ato de vereança, trat-",
+   "fonte_diplomatica": "docs/experimentos/ppocrv6_ajuste_fino_20261105/dados/pares_traslado_mais_inquisicao.json (split validation)",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/sessao_1795/modernized_edition_3c0132189f5574d5.pdf",
+    "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 6
+   }
+  },
+  {
+   "document_id": "sessao_1795",
+   "linha": 7,
+   "diplomatica": "ando sobre o bem commum do povo, na mesma se",
+   "edicao": "ando sobre o bem comum do povo, na mesma se",
+   "fonte_diplomatica": "docs/experimentos/ppocrv6_ajuste_fino_20261105/dados/pares_traslado_mais_inquisicao.json (split validation)",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/sessao_1795/modernized_edition_3c0132189f5574d5.pdf",
+    "sha256": "3c0132189f5574d554adca5fe0421d387828dcb05f352f870ede48349c7f9dd2",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 7
+   }
+  },
+  {
+   "document_id": "carta_jose_gomes_1767",
+   "linha": 1,
+   "diplomatica": "Paguem as Camaras, e a Razão por não",
+   "edicao": "Paguem as Câmaras, e a razão por que não",
+   "fonte_diplomatica": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/observacao_079_linha01_transcricao_diplomatica_validada.json",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/modernized_edition_500a24d6a2ea8b93.pdf",
+    "sha256": "500a24d6a2ea8b93ea2fc7d94388b26c5facbef75f094b8c0964a58f0b0b2368",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 1
+   }
+  },
+  {
+   "document_id": "carta_jose_gomes_1767",
+   "linha": 3,
+   "diplomatica": "se as não tivessem seriam Srsˢ dos Desco-",
+   "edicao": "se as não tivessem seriam senhores dos Desco",
+   "fonte_diplomatica": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/observacao_086_linha03_transcricao_diplomatica_validada.json",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/modernized_edition_500a24d6a2ea8b93.pdf",
+    "sha256": "500a24d6a2ea8b93ea2fc7d94388b26c5facbef75f094b8c0964a58f0b0b2368",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 3
+   }
+  },
+  {
+   "document_id": "carta_jose_gomes_1767",
+   "linha": 4,
+   "diplomatica": "bertos do campo verde, e de outros muⁱᵗᵒˢ que estão",
+   "edicao": "bertos do Campo verde, e de outros muitos que estão",
+   "fonte_diplomatica": "docs/revisao_humana/carta_jose_gomes_1767/sessao_20261103/observacao_091_linha04_transcricao_diplomatica_validada.json",
+   "fonte_edicao": {
+    "arquivo": "data/raw/corpus_expandido_v02/fontes/carta_jose_gomes_1767/modernized_edition_500a24d6a2ea8b93.pdf",
+    "sha256": "500a24d6a2ea8b93ea2fc7d94388b26c5facbef75f094b8c0964a58f0b0b2368",
+    "pagina_pdf": 3,
+    "linha_da_edicao": 4
+   }
+  }
+ ]
+}

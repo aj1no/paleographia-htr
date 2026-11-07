@@ -10,7 +10,7 @@ requires-python = ">=3.11,<3.13"
 dependencies = [
   "Pillow==11.3.0", "numpy==2.2.6", "opencv-python-headless==4.12.0.88",
   "fastapi==0.116.1", "uvicorn==0.35.0", "python-multipart==0.0.20",
-  "jiwer==4.0.0", "pydantic==2.11.7"
+  "jiwer==4.0.0", "pydantic==2.11.7", "pyspellchecker==0.8.3"
 ]
 
 [project.optional-dependencies]

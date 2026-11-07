@@ -195,6 +195,7 @@ A diferença entre A e B (cerca de 2 caracteres) está dentro da variação entr
 | [Continuidade de 03–04/11](docs/entregas/continuidade_20261103/README.md) | Retomada, dataset de 1795, Notebook 2 da carta, partições candidatas |
 | [Artigo de 07/11](docs/entregas/artigo_20261107/README.md) | Ajuste fino, análise de erros e pós-correção; 3 páginas, layout PLN2026 |
 | [Notebook 3 — PLN](docs/entregas/notebook_3_pln/README.md) | Base × ajustados, análise linguística dos erros e pós-correção Levenshtein × TF-IDF |
+| [Leitura modernizada (07/11)](docs/experimentos/modernizacao_20261107/README.md) | Normalização ortográfica histórica para leitura e busca, separada da diplomática; WER contra a edição do AHMJ de 14,9% para 2,1% em 10 linhas de desenvolvimento |
 | [Roteiro de 5 minutos](docs/entregas/apresentacao_20261119/ROTEIRO.md) | Apresentação de 19/11 (ou 12/11) e perguntas prováveis |
 | [Apresentação de 12/11](docs/entregas/apresentacao_20261112/README.md) | Roteiro e pendências da apresentação |
 | [Fechamento de 23/10](docs/entregas/pi_iv_pln_20261023_fechamento/README.md) | Artigo atual, notebook baseline e verificador |
