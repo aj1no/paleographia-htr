@@ -155,8 +155,9 @@ A diferença entre A e B (cerca de 2 caracteres) está dentro da variação entr
    *Portuguese Handwriting 16th–19th c.* (CC BY 4.0), cerca de 730 MB no total.
 2. **Imagens do acervo de Jundiaí** (Traslado, sessão de 1795 e pagamento): vêm do
    [Arquivo Histórico de Jundiaí / SISMU](https://jundiai.sismu.app/) e são restauradas por
-   `restore-corpus` a partir do pacote do corpus v0.2. **Pendência:** o pacote ainda não está
-   publicado; a forma de distribuí-lo depende das condições de uso do acervo.
+   `restore-corpus` a partir do pacote do corpus v0.2. As imagens são públicas no Acervo Digital da
+   prefeitura, e o Arquivo Histórico autorizou o uso sem fins comerciais, com crédito ao acervo. O
+   pacote v0.2 ainda não foi publicado no repositório.
 3. **Treino:** `configs/finetune_ppocrv6.toml` e `src/paleographia/ppocrv6_finetune.py`. Requer
    Docker; com GPU NVIDIA, construa a imagem de treino:
 
@@ -192,6 +193,9 @@ A diferença entre A e B (cerca de 2 caracteres) está dentro da variação entr
 | Material | Conteúdo |
 | --- | --- |
 | [Continuidade de 03–04/11](docs/entregas/continuidade_20261103/README.md) | Retomada, dataset de 1795, Notebook 2 da carta, partições candidatas |
+| [Artigo de 07/11](docs/entregas/artigo_20261107/README.md) | Ajuste fino, análise de erros e pós-correção; 3 páginas, layout PLN2026 |
+| [Notebook 3 — PLN](docs/entregas/notebook_3_pln/README.md) | Base × ajustados, análise linguística dos erros e pós-correção Levenshtein × TF-IDF |
+| [Roteiro de 5 minutos](docs/entregas/apresentacao_20261119/ROTEIRO.md) | Apresentação de 19/11 (ou 12/11) e perguntas prováveis |
 | [Apresentação de 12/11](docs/entregas/apresentacao_20261112/README.md) | Roteiro e pendências da apresentação |
 | [Fechamento de 23/10](docs/entregas/pi_iv_pln_20261023_fechamento/README.md) | Artigo atual, notebook baseline e verificador |
 | [Notebook 1 offline](docs/entregas/notebook_1_offline/README.md) | Reprodução das métricas com dados incorporados |
