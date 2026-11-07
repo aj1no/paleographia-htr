@@ -100,7 +100,8 @@ métrica do projeto ([linhas](dados/avaliacao_validacao_base_A_nfc.json)):
 | --- | ---: | ---: |
 | PP-OCRv6 base | 14,20% | 56,72% |
 | PP-OCRv6 ajustado A | 12,17% | 50,75% |
-| PP-OCRv6 ajustado A, treino gravado em 06/11 (passo 95) | **10,72%** | **41,79%** |
+| PP-OCRv6 ajustado A, treino gravado em 06/11 (passo 95) | 10,72% | 41,79% |
+| PP-OCRv6 ajustado B, treino gravado em 07/11 (passo 29) | **10,14%** | **38,81%** |
 
 A melhora 4 das 7 linhas e não piora nenhuma ("dia domes" → "dias do mes"; "Officiays de Camara" →
 "Officiaes da Camara"). Peso A: `models/ppocrv6_ajustado_A_20261105/medium_ajustado_A.safetensors`
@@ -117,6 +118,13 @@ Em NFC: CER 10,72% e WER 41,79%. Contra o A de 05/11, melhora 3 linhas ("Saõ �
 `04194328e5d12b4f7a72bb2764a0c4c76f5030e9856e5c41ce96d04ab8b7c148`. As duas execuções de A têm a mesma
 configuração e semente, mas o treino em GPU não é determinístico; a diferença entre elas mostra
 quanto o resultado varia de uma execução para outra.
+
+**Treino B gravado (07/11)**, Traslado + 550 linhas da Inquisição, mesma configuração
+([provas](gravacao_20261107/treino_B/README.md), [linhas](dados/avaliacao_validacao_base_A_B_nfc.json)):
+melhor validação no passo 29 (90,52% / 64,18%, igual ao B interrompido de 05/11), parada antecipada
+no passo 263 (215,6 min). Em NFC: CER 10,14% e WER 38,81%, cerca de 2 caracteres em 345 melhor que o
+A gravado, dentro da variação entre execuções. Peso: `models/ppocrv6_ajustado_B_20261107/medium_ajustado_B_gravado.safetensors`,
+SHA-256 `52b2ad55829ad63d6e79c632de431521aeac0abe591fe60197dd1cbfc64fc384`.
 
 Limitações: validação muito pequena (diferenças de 1–2 pontos podem ser ruído); três sinais
 da validação (ᵃ, ˢ, -) não aparecem no treino; o TraPrInq recebeu recortes retangulares, embora
