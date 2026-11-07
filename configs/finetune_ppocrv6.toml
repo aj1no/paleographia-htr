@@ -19,7 +19,9 @@ device = "cuda:0"
 precision = "32-true"
 deterministic = false
 docker_image = "paleographia-kraken:7.1.0-cu126"
-docker_image_id = "sha256:b5e275eb694b25aeac0b159181953b8c3824e777ed9c8d49996db5347b6a0c1a"
+# Reconstruída em 06/11 (16h45) com o mesmo Dockerfile e constraints.txt; os pacotes conferem com as
+# restrições. O treino A gravado em 06/11 usou o ID anterior, sha256:b5e275eb694b25aeac0b159181953b8c3824e777ed9c8d49996db5347b6a0c1a.
+docker_image_id = "sha256:42207c02c3f0760e5fc576a5e07d0c2e408a88c0ea2279a223843bc9b8138fc5"
 seed = 1831
 threads = 4
 memory = "7g"
