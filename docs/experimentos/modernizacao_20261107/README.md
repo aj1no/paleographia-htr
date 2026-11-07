@@ -67,7 +67,7 @@ de 1831, contratos de 1763), elas servem de avaliação nova, sem mudar o códig
 a Thomas Pardo a comparação também poderá ser feita, com uma ressalva: durante o
 desenvolvimento o autor (Claude) viu a edição desse documento, embora não a transcrição
 diplomática, que ainda não existe. O código avaliado tem SHA-256
-`c39ff2572f70a823a1792a9d51a94b5f7f65c1f2246d3f9157476b74c59cd84b`.
+`cc00fbfb1b4000abe29583267e7e80302ea9754a7c097a0fab90c86fe3cca6e5` (com fim de linha LF, como no repositório).
 
 ## Créditos
 
