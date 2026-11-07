@@ -1,0 +1,1207 @@
+{
+ "vocabulario": {
+  "fontes": "transcrições de treino (Traslado alinhado + humano, Inquisição CC BY 4.0) e data/lexicon",
+  "linhas_de_treino": 741,
+  "formas_do_lexico": 21,
+  "formas_distintas": 2188,
+  "palavras_da_validacao_tambem_no_vocabulario": [
+   "annos",
+   "aos",
+   "bem",
+   "camara",
+   "casas",
+   "centos",
+   "cidade",
+   "cinco",
+   "da",
+   "de",
+   "desterro",
+   "dias",
+   "do",
+   "e",
+   "em",
+   "jundiahy",
+   "mes",
+   "mesma",
+   "mil",
+   "na",
+   "nesta",
+   "o",
+   "officiaes",
+   "oliveira",
+   "onde",
+   "os",
+   "paulo",
+   "povo",
+   "prado",
+   "salvador",
+   "se",
+   "senhora",
+   "sete",
+   "sobre",
+   "são",
+   "villa",
+   "vinte"
+  ],
+  "palavras_da_validacao_fora_do_vocabulario": [
+   "achavão",
+   "acto",
+   "ando",
+   "comarca",
+   "commum",
+   "juiz",
+   "junho",
+   "morada",
+   "noventa",
+   "nˢᵃ",
+   "presentes",
+   "presidente",
+   "trat",
+   "vereança"
+  ]
+ },
+ "modelos": {
+  "PP-OCRv6 base": {
+   "bruto": {
+    "cer": 0.14202898550724638,
+    "wer": 0.5671641791044776
+   },
+   "erros": {
+    "caracteres_referencia": 345,
+    "erros": 49,
+    "cer": 0.14202898550724638,
+    "por_tipo": {
+     "espaço (palavras coladas ou separadas)": {
+      "erros": 7,
+      "parcela_dos_erros": 0.14285714285714285,
+      "pontos_de_cer": 0.020289855072463767
+     },
+     "pontuação": {
+      "erros": 2,
+      "parcela_dos_erros": 0.04081632653061224,
+      "pontos_de_cer": 0.005797101449275362
+     },
+     "abreviatura": {
+      "erros": 4,
+      "parcela_dos_erros": 0.08163265306122448,
+      "pontos_de_cer": 0.011594202898550725
+     },
+     "maiúscula/minúscula": {
+      "erros": 5,
+      "parcela_dos_erros": 0.10204081632653061,
+      "pontos_de_cer": 0.014492753623188406
+     },
+     "acento ou til": {
+      "erros": 5,
+      "parcela_dos_erros": 0.10204081632653061,
+      "pontos_de_cer": 0.014492753623188406
+     },
+     "grafia histórica": {
+      "erros": 11,
+      "parcela_dos_erros": 0.22448979591836735,
+      "pontos_de_cer": 0.03188405797101449
+     },
+     "nome próprio": {
+      "erros": 1,
+      "parcela_dos_erros": 0.02040816326530612,
+      "pontos_de_cer": 0.002898550724637681
+     },
+     "forma da letra": {
+      "erros": 14,
+      "parcela_dos_erros": 0.2857142857142857,
+      "pontos_de_cer": 0.04057971014492753
+     }
+    },
+    "confusoes": [
+     {
+      "referencia": " ",
+      "predicao": "∅",
+      "vezes": 7
+     },
+     {
+      "referencia": "e",
+      "predicao": "∅",
+      "vezes": 3
+     },
+     {
+      "referencia": "c",
+      "predicao": "C",
+      "vezes": 3
+     },
+     {
+      "referencia": "s",
+      "predicao": "z",
+      "vezes": 3
+     },
+     {
+      "referencia": "i",
+      "predicao": "e",
+      "vezes": 2
+     },
+     {
+      "referencia": "j",
+      "predicao": "I",
+      "vezes": 2
+     },
+     {
+      "referencia": "ã",
+      "predicao": "a",
+      "vezes": 2
+     },
+     {
+      "referencia": "o",
+      "predicao": "õ",
+      "vezes": 2
+     },
+     {
+      "referencia": "a",
+      "predicao": "e",
+      "vezes": 2
+     },
+     {
+      "referencia": "s",
+      "predicao": "y",
+      "vezes": 2
+     },
+     {
+      "referencia": "s",
+      "predicao": "∅",
+      "vezes": 1
+     },
+     {
+      "referencia": "∅",
+      "predicao": "t",
+      "vezes": 1
+     },
+     {
+      "referencia": "c",
+      "predicao": "a",
+      "vezes": 1
+     },
+     {
+      "referencia": "V",
+      "predicao": "v",
+      "vezes": 1
+     },
+     {
+      "referencia": "e",
+      "predicao": "a",
+      "vezes": 1
+     }
+    ]
+   },
+   "pos_correcao": {
+    "A": {
+     "cer": 0.16521739130434782,
+     "wer": 0.5074626865671642,
+     "linhas": [
+      {
+       "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+       "bruto": "Aos vinte ecenco dia domes de Iunho demil sette",
+       "sugestao": "Aos vinte cinco dia dores de Iulho demil sete",
+       "trocas": [
+        {
+         "de": "ecenco",
+         "para": "cinco"
+        },
+        {
+         "de": "domes",
+         "para": "dores"
+        },
+        {
+         "de": "Iunho",
+         "para": "Iulho"
+        },
+        {
+         "de": "sette",
+         "para": "sete"
+        }
+       ]
+      },
+      {
+       "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+       "bruto": "centos e noventa ainco annos nesta villa da Nossa",
+       "sugestao": "centos e corenta cinco annos nesta villa da Nossa",
+       "trocas": [
+        {
+         "de": "noventa",
+         "para": "corenta"
+        },
+        {
+         "de": "ainco",
+         "para": "cinco"
+        }
+       ]
+      },
+      {
+       "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+       "bruto": "senhora do Desterro de Iundiahi Comarca da Cidade",
+       "sugestao": "senhora do Desterro de Jundiahy Camara da Cidade",
+       "trocas": [
+        {
+         "de": "Iundiahi",
+         "para": "Jundiahy"
+        },
+        {
+         "de": "Comarca",
+         "para": "Camara"
+        }
+       ]
+      },
+      {
+       "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+       "bruto": "de Saõ Paulo em Cazas de morada do Iuis Prezidente",
+       "sugestao": "de Saõ Paulo em Cazas de morado do Luis Prezente",
+       "trocas": [
+        {
+         "de": "morada",
+         "para": "morado"
+        },
+        {
+         "de": "Iuis",
+         "para": "Luis"
+        },
+        {
+         "de": "Prezidente",
+         "para": "Prezente"
+        }
+       ]
+      },
+      {
+       "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+       "bruto": "Selvador de Oliviera Prado, onde se achavaõ prezenty",
+       "sugestao": "Salvador de Oliveira Prado, onde se chamaõ prezente",
+       "trocas": [
+        {
+         "de": "Selvador",
+         "para": "Salvador"
+        },
+        {
+         "de": "Oliviera",
+         "para": "Oliveira"
+        },
+        {
+         "de": "achavaõ",
+         "para": "chamaõ"
+        },
+        {
+         "de": "prezenty",
+         "para": "prezente"
+        }
+       ]
+      },
+      {
+       "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+       "bruto": "os Officiays de Camara em acto de Vercança, trac",
+       "sugestao": "os Officiais de Camara em auto de Vercança, tra",
+       "trocas": [
+        {
+         "de": "Officiays",
+         "para": "Officiais"
+        },
+        {
+         "de": "acto",
+         "para": "auto"
+        },
+        {
+         "de": "trac",
+         "para": "tra"
+        }
+       ]
+      },
+      {
+       "referencia": "ando sobre o bem commum do povo, na mesma se",
+       "bruto": "lando sobre obem commûm dopovo, namyma se",
+       "sugestao": "mando sobre bem commûm povo, namyma se",
+       "trocas": [
+        {
+         "de": "lando",
+         "para": "mando"
+        },
+        {
+         "de": "obem",
+         "para": "bem"
+        },
+        {
+         "de": "dopovo",
+         "para": "povo"
+        }
+       ]
+      }
+     ]
+    },
+    "B": {
+     "cer": 0.2,
+     "wer": 0.5373134328358209,
+     "linhas": [
+      {
+       "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+       "bruto": "Aos vinte ecenco dia domes de Iunho demil sette",
+       "sugestao": "Aos vinte ecenco dia dom de Iunho mil settenta",
+       "trocas": [
+        {
+         "de": "domes",
+         "para": "dom"
+        },
+        {
+         "de": "demil",
+         "para": "mil"
+        },
+        {
+         "de": "sette",
+         "para": "settenta"
+        }
+       ]
+      },
+      {
+       "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+       "bruto": "centos e noventa ainco annos nesta villa da Nossa",
+       "sugestao": "centos e nove sinco annos nesta villa da Nossa",
+       "trocas": [
+        {
+         "de": "noventa",
+         "para": "nove"
+        },
+        {
+         "de": "ainco",
+         "para": "sinco"
+        }
+       ]
+      },
+      {
+       "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+       "bruto": "senhora do Desterro de Iundiahi Comarca da Cidade",
+       "sugestao": "senhora do Desterro de Ahi Comarca da Cidade",
+       "trocas": [
+        {
+         "de": "Iundiahi",
+         "para": "Ahi"
+        }
+       ]
+      },
+      {
+       "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+       "bruto": "de Saõ Paulo em Cazas de morada do Iuis Prezidente",
+       "sugestao": "de Saõ Paulo em Cazas de morado do Iuiz Prezente",
+       "trocas": [
+        {
+         "de": "morada",
+         "para": "morado"
+        },
+        {
+         "de": "Iuis",
+         "para": "Iuiz"
+        },
+        {
+         "de": "Prezidente",
+         "para": "Prezente"
+        }
+       ]
+      },
+      {
+       "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+       "bruto": "Selvador de Oliviera Prado, onde se achavaõ prezenty",
+       "sugestao": "Salvador de Oliveira Prado, onde se achar prezente",
+       "trocas": [
+        {
+         "de": "Selvador",
+         "para": "Salvador"
+        },
+        {
+         "de": "Oliviera",
+         "para": "Oliveira"
+        },
+        {
+         "de": "achavaõ",
+         "para": "achar"
+        },
+        {
+         "de": "prezenty",
+         "para": "prezente"
+        }
+       ]
+      },
+      {
+       "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+       "bruto": "os Officiays de Camara em acto de Vercança, trac",
+       "sugestao": "os Officiaes de Camara em cto de Vercança, tra",
+       "trocas": [
+        {
+         "de": "Officiays",
+         "para": "Officiaes"
+        },
+        {
+         "de": "acto",
+         "para": "cto"
+        },
+        {
+         "de": "trac",
+         "para": "tra"
+        }
+       ]
+      },
+      {
+       "referencia": "ando sobre o bem commum do povo, na mesma se",
+       "bruto": "lando sobre obem commûm dopovo, namyma se",
+       "sugestao": "mando sobre bem commette povo, nam se",
+       "trocas": [
+        {
+         "de": "lando",
+         "para": "mando"
+        },
+        {
+         "de": "obem",
+         "para": "bem"
+        },
+        {
+         "de": "commûm",
+         "para": "commette"
+        },
+        {
+         "de": "dopovo",
+         "para": "povo"
+        },
+        {
+         "de": "namyma",
+         "para": "nam"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "Ajustado A (Traslado)": {
+   "bruto": {
+    "cer": 0.1072463768115942,
+    "wer": 0.417910447761194
+   },
+   "erros": {
+    "caracteres_referencia": 345,
+    "erros": 37,
+    "cer": 0.1072463768115942,
+    "por_tipo": {
+     "espaço (palavras coladas ou separadas)": {
+      "erros": 4,
+      "parcela_dos_erros": 0.10810810810810811,
+      "pontos_de_cer": 0.011594202898550725
+     },
+     "pontuação": {
+      "erros": 2,
+      "parcela_dos_erros": 0.05405405405405406,
+      "pontos_de_cer": 0.005797101449275362
+     },
+     "abreviatura": {
+      "erros": 4,
+      "parcela_dos_erros": 0.10810810810810811,
+      "pontos_de_cer": 0.011594202898550725
+     },
+     "maiúscula/minúscula": {
+      "erros": 8,
+      "parcela_dos_erros": 0.21621621621621623,
+      "pontos_de_cer": 0.02318840579710145
+     },
+     "acento ou til": {
+      "erros": 1,
+      "parcela_dos_erros": 0.02702702702702703,
+      "pontos_de_cer": 0.002898550724637681
+     },
+     "grafia histórica": {
+      "erros": 5,
+      "parcela_dos_erros": 0.13513513513513514,
+      "pontos_de_cer": 0.014492753623188406
+     },
+     "nome próprio": {
+      "erros": 1,
+      "parcela_dos_erros": 0.02702702702702703,
+      "pontos_de_cer": 0.002898550724637681
+     },
+     "forma da letra": {
+      "erros": 12,
+      "parcela_dos_erros": 0.32432432432432434,
+      "pontos_de_cer": 0.034782608695652174
+     }
+    },
+    "confusoes": [
+     {
+      "referencia": " ",
+      "predicao": "∅",
+      "vezes": 4
+     },
+     {
+      "referencia": "c",
+      "predicao": "C",
+      "vezes": 3
+     },
+     {
+      "referencia": "s",
+      "predicao": "z",
+      "vezes": 3
+     },
+     {
+      "referencia": "e",
+      "predicao": "∅",
+      "vezes": 2
+     },
+     {
+      "referencia": "j",
+      "predicao": "J",
+      "vezes": 2
+     },
+     {
+      "referencia": "∅",
+      "predicao": "l",
+      "vezes": 2
+     },
+     {
+      "referencia": "V",
+      "predicao": "v",
+      "vezes": 2
+     },
+     {
+      "referencia": "a",
+      "predicao": "e",
+      "vezes": 2
+     },
+     {
+      "referencia": "i",
+      "predicao": "u",
+      "vezes": 1
+     },
+     {
+      "referencia": "t",
+      "predicao": "l",
+      "vezes": 1
+     },
+     {
+      "referencia": "c",
+      "predicao": "a",
+      "vezes": 1
+     },
+     {
+      "referencia": "e",
+      "predicao": "u",
+      "vezes": 1
+     },
+     {
+      "referencia": "∅",
+      "predicao": "o",
+      "vezes": 1
+     },
+     {
+      "referencia": "∅",
+      "predicao": "s",
+      "vezes": 1
+     },
+     {
+      "referencia": "ˢ",
+      "predicao": "s",
+      "vezes": 1
+     }
+    ]
+   },
+   "pos_correcao": {
+    "A": {
+     "cer": 0.1391304347826087,
+     "wer": 0.3880597014925373,
+     "linhas": [
+      {
+       "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+       "bruto": "Aos vinte cunco dias do mes de Junho de mil selle",
+       "sugestao": "Aos vinte cinco dias do mes de Julho de mil elle",
+       "trocas": [
+        {
+         "de": "cunco",
+         "para": "cinco"
+        },
+        {
+         "de": "Junho",
+         "para": "Julho"
+        },
+        {
+         "de": "selle",
+         "para": "elle"
+        }
+       ]
+      },
+      {
+       "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+       "bruto": "centos e noventa ainco annos nesta villa du Nossa",
+       "sugestao": "centos e corenta cinco annos nesta villa du Nossa",
+       "trocas": [
+        {
+         "de": "noventa",
+         "para": "corenta"
+        },
+        {
+         "de": "ainco",
+         "para": "cinco"
+        }
+       ]
+      },
+      {
+       "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+       "bruto": "senhora do Desterro de Jundiahi Comarca de Cidade",
+       "sugestao": "senhora do Desterro de Jundiahy Camara de Cidade",
+       "trocas": [
+        {
+         "de": "Jundiahi",
+         "para": "Jundiahy"
+        },
+        {
+         "de": "Comarca",
+         "para": "Camara"
+        }
+       ]
+      },
+      {
+       "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+       "bruto": "de São Paulo em Cazas de morada do Juis Prezidente",
+       "sugestao": "de São Paulo em Cazas de morado do Luis Prezente",
+       "trocas": [
+        {
+         "de": "morada",
+         "para": "morado"
+        },
+        {
+         "de": "Juis",
+         "para": "Luis"
+        },
+        {
+         "de": "Prezidente",
+         "para": "Prezente"
+        }
+       ]
+      },
+      {
+       "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+       "bruto": "Selvador de Oliveira Prado, onde se achavao prezente",
+       "sugestao": "Salvador de Oliveira Prado, onde se achavao prezente",
+       "trocas": [
+        {
+         "de": "Selvador",
+         "para": "Salvador"
+        }
+       ]
+      },
+      {
+       "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+       "bruto": "os Officiaes da Camara em acto de vercança, trac",
+       "sugestao": "os Officiaes da Camara em auto de vercança, tra",
+       "trocas": [
+        {
+         "de": "acto",
+         "para": "auto"
+        },
+        {
+         "de": "trac",
+         "para": "tra"
+        }
+       ]
+      },
+      {
+       "referencia": "ando sobre o bem commum do povo, na mesma se",
+       "bruto": "lando sobre o bem commum dopovo, namesma se",
+       "sugestao": "mando sobre o bem commum povo, mesma se",
+       "trocas": [
+        {
+         "de": "lando",
+         "para": "mando"
+        },
+        {
+         "de": "dopovo",
+         "para": "povo"
+        },
+        {
+         "de": "namesma",
+         "para": "mesma"
+        }
+       ]
+      }
+     ]
+    },
+    "B": {
+     "cer": 0.14782608695652175,
+     "wer": 0.43283582089552236,
+     "linhas": [
+      {
+       "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+       "bruto": "Aos vinte cunco dias do mes de Junho de mil selle",
+       "sugestao": "Aos vinte cunco dias do mes de Junto de mil elle",
+       "trocas": [
+        {
+         "de": "Junho",
+         "para": "Junto"
+        },
+        {
+         "de": "selle",
+         "para": "elle"
+        }
+       ]
+      },
+      {
+       "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+       "bruto": "centos e noventa ainco annos nesta villa du Nossa",
+       "sugestao": "centos e nove sinco annos nesta villa du Nossa",
+       "trocas": [
+        {
+         "de": "noventa",
+         "para": "nove"
+        },
+        {
+         "de": "ainco",
+         "para": "sinco"
+        }
+       ]
+      },
+      {
+       "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+       "bruto": "senhora do Desterro de Jundiahi Comarca de Cidade",
+       "sugestao": "senhora do Desterro de Jundiahy Comarca de Cidade",
+       "trocas": [
+        {
+         "de": "Jundiahi",
+         "para": "Jundiahy"
+        }
+       ]
+      },
+      {
+       "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+       "bruto": "de São Paulo em Cazas de morada do Juis Prezidente",
+       "sugestao": "de São Paulo em Cazas de morado do Juizo Prezente",
+       "trocas": [
+        {
+         "de": "morada",
+         "para": "morado"
+        },
+        {
+         "de": "Juis",
+         "para": "Juizo"
+        },
+        {
+         "de": "Prezidente",
+         "para": "Prezente"
+        }
+       ]
+      },
+      {
+       "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+       "bruto": "Selvador de Oliveira Prado, onde se achavao prezente",
+       "sugestao": "Salvador de Oliveira Prado, onde se achar prezente",
+       "trocas": [
+        {
+         "de": "Selvador",
+         "para": "Salvador"
+        },
+        {
+         "de": "achavao",
+         "para": "achar"
+        }
+       ]
+      },
+      {
+       "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+       "bruto": "os Officiaes da Camara em acto de vercança, trac",
+       "sugestao": "os Officiaes da Camara em cto de vercança, tra",
+       "trocas": [
+        {
+         "de": "acto",
+         "para": "cto"
+        },
+        {
+         "de": "trac",
+         "para": "tra"
+        }
+       ]
+      },
+      {
+       "referencia": "ando sobre o bem commum do povo, na mesma se",
+       "bruto": "lando sobre o bem commum dopovo, namesma se",
+       "sugestao": "mando sobre o bem communicou povo, mesma se",
+       "trocas": [
+        {
+         "de": "lando",
+         "para": "mando"
+        },
+        {
+         "de": "commum",
+         "para": "communicou"
+        },
+        {
+         "de": "dopovo",
+         "para": "povo"
+        },
+        {
+         "de": "namesma",
+         "para": "mesma"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "Ajustado B (Traslado + Inquisição)": {
+   "bruto": {
+    "cer": 0.10144927536231885,
+    "wer": 0.3880597014925373
+   },
+   "erros": {
+    "caracteres_referencia": 345,
+    "erros": 35,
+    "cer": 0.10144927536231885,
+    "por_tipo": {
+     "espaço (palavras coladas ou separadas)": {
+      "erros": 3,
+      "parcela_dos_erros": 0.08571428571428572,
+      "pontos_de_cer": 0.008695652173913044
+     },
+     "pontuação": {
+      "erros": 2,
+      "parcela_dos_erros": 0.05714285714285714,
+      "pontos_de_cer": 0.005797101449275362
+     },
+     "abreviatura": {
+      "erros": 4,
+      "parcela_dos_erros": 0.11428571428571428,
+      "pontos_de_cer": 0.011594202898550725
+     },
+     "maiúscula/minúscula": {
+      "erros": 5,
+      "parcela_dos_erros": 0.14285714285714285,
+      "pontos_de_cer": 0.014492753623188406
+     },
+     "acento ou til": {
+      "erros": 4,
+      "parcela_dos_erros": 0.11428571428571428,
+      "pontos_de_cer": 0.011594202898550725
+     },
+     "grafia histórica": {
+      "erros": 9,
+      "parcela_dos_erros": 0.2571428571428571,
+      "pontos_de_cer": 0.02608695652173913
+     },
+     "nome próprio": {
+      "erros": 1,
+      "parcela_dos_erros": 0.02857142857142857,
+      "pontos_de_cer": 0.002898550724637681
+     },
+     "forma da letra": {
+      "erros": 7,
+      "parcela_dos_erros": 0.2,
+      "pontos_de_cer": 0.020289855072463767
+     }
+    },
+    "confusoes": [
+     {
+      "referencia": " ",
+      "predicao": "∅",
+      "vezes": 3
+     },
+     {
+      "referencia": "c",
+      "predicao": "C",
+      "vezes": 3
+     },
+     {
+      "referencia": "s",
+      "predicao": "z",
+      "vezes": 3
+     },
+     {
+      "referencia": "j",
+      "predicao": "I",
+      "vezes": 2
+     },
+     {
+      "referencia": "ã",
+      "predicao": "a",
+      "vezes": 2
+     },
+     {
+      "referencia": "o",
+      "predicao": "õ",
+      "vezes": 2
+     },
+     {
+      "referencia": "i",
+      "predicao": "e",
+      "vezes": 1
+     },
+     {
+      "referencia": "∅",
+      "predicao": "t",
+      "vezes": 1
+     },
+     {
+      "referencia": "e",
+      "predicao": "∅",
+      "vezes": 1
+     },
+     {
+      "referencia": "c",
+      "predicao": "a",
+      "vezes": 1
+     },
+     {
+      "referencia": "V",
+      "predicao": "v",
+      "vezes": 1
+     },
+     {
+      "referencia": "e",
+      "predicao": "a",
+      "vezes": 1
+     },
+     {
+      "referencia": "∅",
+      "predicao": "o",
+      "vezes": 1
+     },
+     {
+      "referencia": "∅",
+      "predicao": "s",
+      "vezes": 1
+     },
+     {
+      "referencia": "ˢ",
+      "predicao": "s",
+      "vezes": 1
+     }
+    ]
+   },
+   "pos_correcao": {
+    "A": {
+     "cer": 0.12753623188405797,
+     "wer": 0.3582089552238806,
+     "linhas": [
+      {
+       "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+       "bruto": "Aos vinte ecenco dias do mes de Iunho de mil sette",
+       "sugestao": "Aos vinte cinco dias do mes de Iulho de mil sete",
+       "trocas": [
+        {
+         "de": "ecenco",
+         "para": "cinco"
+        },
+        {
+         "de": "Iunho",
+         "para": "Iulho"
+        },
+        {
+         "de": "sette",
+         "para": "sete"
+        }
+       ]
+      },
+      {
+       "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+       "bruto": "centos e noventa ainco annos nesta villa da Nossa",
+       "sugestao": "centos e corenta cinco annos nesta villa da Nossa",
+       "trocas": [
+        {
+         "de": "noventa",
+         "para": "corenta"
+        },
+        {
+         "de": "ainco",
+         "para": "cinco"
+        }
+       ]
+      },
+      {
+       "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+       "bruto": "senhora do Desterro de Iundiahi Comarca da Cidade",
+       "sugestao": "senhora do Desterro de Jundiahy Camara da Cidade",
+       "trocas": [
+        {
+         "de": "Iundiahi",
+         "para": "Jundiahy"
+        },
+        {
+         "de": "Comarca",
+         "para": "Camara"
+        }
+       ]
+      },
+      {
+       "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+       "bruto": "de Saõ Paulo em Cazas de morada do Iuis Prezidente",
+       "sugestao": "de Saõ Paulo em Cazas de morado do Luis Prezente",
+       "trocas": [
+        {
+         "de": "morada",
+         "para": "morado"
+        },
+        {
+         "de": "Iuis",
+         "para": "Luis"
+        },
+        {
+         "de": "Prezidente",
+         "para": "Prezente"
+        }
+       ]
+      },
+      {
+       "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+       "bruto": "Selvador de Oliveira Prado, onde se achavaõ prezentes",
+       "sugestao": "Salvador de Oliveira Prado, onde se chamaõ prezentes",
+       "trocas": [
+        {
+         "de": "Selvador",
+         "para": "Salvador"
+        },
+        {
+         "de": "achavaõ",
+         "para": "chamaõ"
+        }
+       ]
+      },
+      {
+       "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+       "bruto": "os Officiaes da Camara em acto de Vercança, trac",
+       "sugestao": "os Officiaes da Camara em auto de Vercança, tra",
+       "trocas": [
+        {
+         "de": "acto",
+         "para": "auto"
+        },
+        {
+         "de": "trac",
+         "para": "tra"
+        }
+       ]
+      },
+      {
+       "referencia": "ando sobre o bem commum do povo, na mesma se",
+       "bruto": "lando sobre o bem commum do povo, namesma se",
+       "sugestao": "mando sobre o bem commum do povo, mesma se",
+       "trocas": [
+        {
+         "de": "lando",
+         "para": "mando"
+        },
+        {
+         "de": "namesma",
+         "para": "mesma"
+        }
+       ]
+      }
+     ]
+    },
+    "B": {
+     "cer": 0.16231884057971013,
+     "wer": 0.417910447761194,
+     "linhas": [
+      {
+       "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+       "bruto": "Aos vinte ecenco dias do mes de Iunho de mil sette",
+       "sugestao": "Aos vinte ecenco dias do mes de Iunho de mil settenta",
+       "trocas": [
+        {
+         "de": "sette",
+         "para": "settenta"
+        }
+       ]
+      },
+      {
+       "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+       "bruto": "centos e noventa ainco annos nesta villa da Nossa",
+       "sugestao": "centos e nove sinco annos nesta villa da Nossa",
+       "trocas": [
+        {
+         "de": "noventa",
+         "para": "nove"
+        },
+        {
+         "de": "ainco",
+         "para": "sinco"
+        }
+       ]
+      },
+      {
+       "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+       "bruto": "senhora do Desterro de Iundiahi Comarca da Cidade",
+       "sugestao": "senhora do Desterro de Ahi Comarca da Cidade",
+       "trocas": [
+        {
+         "de": "Iundiahi",
+         "para": "Ahi"
+        }
+       ]
+      },
+      {
+       "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+       "bruto": "de Saõ Paulo em Cazas de morada do Iuis Prezidente",
+       "sugestao": "de Saõ Paulo em Cazas de morado do Iuiz Prezente",
+       "trocas": [
+        {
+         "de": "morada",
+         "para": "morado"
+        },
+        {
+         "de": "Iuis",
+         "para": "Iuiz"
+        },
+        {
+         "de": "Prezidente",
+         "para": "Prezente"
+        }
+       ]
+      },
+      {
+       "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+       "bruto": "Selvador de Oliveira Prado, onde se achavaõ prezentes",
+       "sugestao": "Salvador de Oliveira Prado, onde se achar prezentes",
+       "trocas": [
+        {
+         "de": "Selvador",
+         "para": "Salvador"
+        },
+        {
+         "de": "achavaõ",
+         "para": "achar"
+        }
+       ]
+      },
+      {
+       "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+       "bruto": "os Officiaes da Camara em acto de Vercança, trac",
+       "sugestao": "os Officiaes da Camara em cto de Vercança, tra",
+       "trocas": [
+        {
+         "de": "acto",
+         "para": "cto"
+        },
+        {
+         "de": "trac",
+         "para": "tra"
+        }
+       ]
+      },
+      {
+       "referencia": "ando sobre o bem commum do povo, na mesma se",
+       "bruto": "lando sobre o bem commum do povo, namesma se",
+       "sugestao": "mando sobre o bem communicou do povo, mesma se",
+       "trocas": [
+        {
+         "de": "lando",
+         "para": "mando"
+        },
+        {
+         "de": "commum",
+         "para": "communicou"
+        },
+        {
+         "de": "namesma",
+         "para": "mesma"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}
