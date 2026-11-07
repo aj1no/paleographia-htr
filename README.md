@@ -139,8 +139,11 @@ commit em que ele foi fechado. Veja a [CI acadêmica](docs/manutencao/ci_academi
 ## Reproduzir o ajuste fino
 
 Registro completo do experimento de 05/11: [fólio inteiro e ajuste fino do PP-OCRv6](docs/experimentos/ppocrv6_ajuste_fino_20261105/README.md).
-Na validação de 1795, o modelo ajustado no Traslado baixou o CER de 14,20% para 10,72% (WER de 56,72% para 41,79%)
-no treino gravado ao vivo em 06/11 ([provas: prints, log e resultado](docs/experimentos/ppocrv6_ajuste_fino_20261105/gravacao_20261106/treino_A/README.md)).
+Na validação de 1795, o ajuste fino baixou o CER de 14,20% para 10,72% (WER de 56,72% para 41,79%) só com o Traslado
+e para 10,14% (WER 38,81%) com o Traslado e as linhas públicas da Inquisição, em treinos gravados em
+06/11 e 07/11 ([provas do A](docs/experimentos/ppocrv6_ajuste_fino_20261105/gravacao_20261106/treino_A/README.md),
+[provas do B](docs/experimentos/ppocrv6_ajuste_fino_20261105/gravacao_20261107/treino_B/README.md)).
+A diferença entre A e B (cerca de 2 caracteres) está dentro da variação entre execuções.
 
 1. **Modelos e dados públicos** (Zenodo; MD5 conferido; só os arquivos necessários):
 
