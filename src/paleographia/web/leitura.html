@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PaleographIA · Modo leitura</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:light;--paper:#f3ede2;--paper-2:#e7decd;--card:#fbf8f2;--field:#fffdf9;--ink:#221b16;--soft:#4e4339;--muted:#6b5e52;--rust:#9a3b22;--rust-dark:#7e2f1a;--line:#d9cfbc;--edge:#8c7b66;--ok:#3e6b3a;--serif:'EB Garamond',Georgia,serif;--sans:'IBM Plex Sans',system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.55 var(--sans);background:var(--paper);color:var(--ink)}
+header{background:var(--ink);color:var(--paper);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:3px solid var(--rust)}
+header h1{font:600 26px/1.1 var(--serif);margin:0}
+header h1 span{font-style:italic;font-weight:400;color:#c9bba6}
+header nav{display:flex;gap:18px;flex-wrap:wrap}
+header nav a{color:#efe6d6;text-decoration:none;font-size:14px}
+header nav a:hover{text-decoration:underline;text-underline-offset:3px}
+main{max-width:1400px;margin:auto;padding:20px 32px 40px}
+button{background:var(--rust);color:#fbf8f2;border:0;border-radius:6px;padding:10px 16px;cursor:pointer;font:500 14px/1.3 var(--sans);transition:background-color .15s}
+button:hover:not(:disabled){background:var(--rust-dark)}
+button.secondary{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--edge)}
+button.secondary:hover:not(:disabled){background:var(--paper-2)}
+button.ghost{background:transparent;color:var(--soft)}
+button.ghost:hover:not(:disabled){background:var(--paper-2)}
+button:disabled{opacity:.55;cursor:wait}
+:where(button,a,input,textarea,select,summary):focus-visible{outline:3px solid var(--rust);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){button{transition:none}}
+select,input{font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--edge);border-radius:6px;padding:8px 10px}
+.top{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:end;margin-bottom:14px}
+.top label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:500;color:var(--soft)}
+.top select{min-width:320px}
+.progress-text{margin-left:auto;font-size:14px;color:var(--soft)}
+.ruler{display:flex;gap:3px;align-items:flex-end;height:22px;margin:4px 0 22px}
+.ruler button{flex:1;min-width:0;height:10px;padding:0;border-radius:3px;background:transparent;box-shadow:inset 0 0 0 1.5px var(--edge)}
+.ruler button.validated{background:var(--ok);box-shadow:none}
+.ruler button.rejected{background:repeating-linear-gradient(135deg,var(--edge) 0 2px,transparent 2px 5px);box-shadow:inset 0 0 0 1px var(--edge)}
+.ruler button.current{height:20px;box-shadow:inset 0 0 0 2px var(--rust)}
+.ruler button.current.validated{box-shadow:0 0 0 2px var(--rust)}
+.ruler button:hover:not(:disabled){background:var(--paper-2)}
+.ruler button.validated:hover:not(:disabled){background:#335a30}
+.desk{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}
+.sheet{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 26px 24px}
+.where{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
+.where h2{font:600 24px/1.2 var(--serif);margin:0}
+.status{font-size:12px;font-weight:500;border-radius:999px;padding:3px 10px;background:#f6e9d6;color:var(--rust-dark)}
+.status.validated{background:#e3ebd9;color:var(--ok)}
+.status.rejected{background:var(--paper-2);color:var(--soft)}
+.lens{background:var(--paper-2);border-radius:8px;padding:14px;display:flex;justify-content:center}
+.lens img{display:block;width:100%;max-height:200px;object-fit:contain}
+.interlinear{margin-top:18px}
+.row{display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;align-items:baseline;padding:12px 0;border-top:1px solid var(--line)}
+.row .label{font-size:13px;color:var(--muted)}
+.row .label.mine{color:var(--ink);font-weight:600}
+.reading{font:21px/1.45 var(--serif);white-space:pre-wrap;word-break:break-word}
+.reading.model{color:var(--soft)}
+.reading.note{font-style:italic;color:var(--muted);font-size:17px}
+.reading .differs{text-decoration:underline dotted var(--rust);text-decoration-thickness:2px;text-underline-offset:5px}
+textarea{width:100%;font:22px/1.45 var(--serif);color:var(--ink);background:var(--field);border:0;border-bottom:2px solid var(--ink);border-radius:0;padding:4px 2px;resize:none;overflow:hidden;min-height:44px}
+textarea:focus-visible{outline:none;border-bottom-color:var(--rust);background:#fff}
+.hint{font-size:13px;color:var(--muted);margin:6px 0 0}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:18px}
+.keys{margin-left:auto;font-size:12px;color:var(--muted)}
+kbd{font:500 11px var(--sans);border:1px solid var(--edge);border-bottom-width:2px;border-radius:4px;padding:1px 5px;background:var(--field);color:var(--soft)}
+#message{margin:0 0 14px;padding:10px 14px;border-radius:6px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--rust);min-height:44px}
+#message.error{background:#f8e3da;border-color:#e7b9a6;border-left-color:var(--rust-dark);color:#6b2412}
+#message.ok{border-left-color:var(--ok)}
+aside{display:flex;flex-direction:column;gap:14px}
+.mini{position:relative;background:var(--paper-2);border-radius:8px;overflow:hidden;line-height:0}
+.mini img{width:100%;display:block}
+.mini .mark{position:absolute;border:2px solid var(--rust);background:#9a3b2226;border-radius:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:13px;color:var(--soft)}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:8px 0 0}
+.card dt{color:var(--muted)}
+.card dd{margin:0;color:var(--ink);word-break:break-word}
+.card a{color:var(--rust)}
+summary{cursor:pointer;font-weight:600;color:var(--soft)}
+.empty{padding:60px 20px;text-align:center;color:var(--muted);font:italic 19px/1.4 var(--serif)}
+@media(max-width:980px){.desk{grid-template-columns:1fr}main{padding:14px}header{padding:12px 16px}.row{grid-template-columns:1fr;gap:4px}.keys{margin-left:0}.progress-text{margin-left:0}}
+</style>
+</head>
+<body>
+<header><h1>PaleographIA <span>modo leitura</span></h1><nav aria-label="Outras vistas"><a href="/">Editor completo</a><a id="folioTextLink" href="/folio-texto" target="_blank" rel="noopener">Texto do fólio</a></nav></header>
+<main>
+<div class="top">
+  <label>Fólio<select id="pages" aria-label="Selecionar fólio"></select></label>
+  <label>Revisor<input id="reviewer" autocomplete="name" placeholder="Seu nome"></label>
+  <span id="progress" class="progress-text" role="status"></span>
+</div>
+<div id="ruler" class="ruler" role="group" aria-label="Linhas do fólio"></div>
+<p id="message" role="status">Carregando o fólio…</p>
+<div class="desk">
+  <section class="sheet" id="sheet" hidden>
+    <div class="where"><h2 id="lineTitle">Linha</h2><span id="lineStatus" class="status"></span></div>
+    <div class="lens"><img id="crop" alt="Recorte da linha atual no manuscrito"></div>
+    <div class="interlinear">
+      <div class="row" id="modelRow"><span class="label">Leitura do modelo</span><div id="model" class="reading model"></div></div>
+      <div class="row" id="editionRow" hidden><span class="label">Edição publicada</span><div id="edition" class="reading model"></div></div>
+      <div class="row"><label class="label mine" for="mine">Sua leitura</label><div>
+        <textarea id="mine" rows="1" spellcheck="false" autocorrect="off" autocapitalize="off" autocomplete="off" data-gramm="false" data-enable-grammarly="false" writingsuggestions="false" placeholder="Registre só o que você conferiu na imagem."></textarea>
+        <p id="diffHint" class="hint"></p></div></div>
+    </div>
+    <div class="actions">
+      <button id="validate" title="Ctrl+Enter">Validar e seguir</button>
+      <button id="saveDraft" class="secondary">Salvar rascunho</button>
+      <button id="useModel" class="ghost">Começar pela leitura do modelo</button>
+      <span class="keys"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> valida · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha</span>
+    </div>
+    <p class="hint">Validar significa: conferi esta leitura na imagem e a aceito como transcrição paleográfica. O recorte e a ordem de leitura não mudam aqui.</p>
+  </section>
+  <p id="empty" class="empty">Selecione um fólio com linhas para começar.</p>
+  <aside id="side" hidden>
+    <div class="mini" id="mini"><img id="pageImage" alt="Página inteira, com a linha atual marcada"><div class="mark" id="mark"></div></div>
+    <div class="card"><details><summary>Detalhes da linha</summary><dl id="details"></dl></details>
+      <p class="hint">Para ajustar o recorte, a região ou a proveniência, use o <a href="/">editor completo</a>.</p></div>
+  </aside>
+</div>
+</main>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+let state = null, pageId = null, index = 0;
+const drafts = new Map();
+const statusLabel = {validated: 'Validada', rejected: 'Rejeitada', pending_review: 'Pendente'};
+
+function message(text, kind = '') { $('message').textContent = text; $('message').className = kind; }
+async function request(url, method = 'GET', body) {
+  const r = await fetch(url, {method, headers: body ? {'Content-Type': 'application/json'} : {}, body: body ? JSON.stringify(body) : undefined});
+  if (!r.ok) {
+    let detail; try { detail = (await r.json()).detail; } catch { /* keep the generic message */ }
+    const error = Error(typeof detail === 'string' ? detail : 'Não foi possível salvar. Confira os campos.'); error.status = r.status; throw error;
+  }
+  return r.json();
+}
+const pageLines = () => state.lines.filter(l => l.page_id === pageId)
+  .sort((a, b) => a.reading_order - b.reading_order || String(a.region_id).localeCompare(String(b.region_id)));
+const current = () => pageLines()[index];
+const prediction = id => state.predictions.filter(p => p.line_id === id).at(-1);
+
+// Words of the model reading that are not in the human reading (longest common subsequence).
+function differingWords(model, mine) {
+  const a = model.split(/\s+/).filter(Boolean), b = mine.split(/\s+/).filter(Boolean);
+  const dp = Array.from({length: a.length + 1}, () => new Array(b.length + 1).fill(0));
+  for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--)
+    dp[i][j] = a[i] === b[j] ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1]);
+  const differs = new Array(a.length).fill(true);
+  for (let i = 0, j = 0; i < a.length && j < b.length;) {
+    if (a[i] === b[j]) { differs[i] = false; i++; j++; } else if (dp[i + 1][j] >= dp[i][j + 1]) i++; else j++;
+  }
+  return a.map((word, i) => ({word, differs: differs[i]}));
+}
+function renderModel() {
+  const l = current(), pred = prediction(l.line_id), box = $('model');
+  const enabled = state.presentation_policy?.automatic_transcription_enabled;
+  $('modelRow').hidden = !enabled; $('useModel').hidden = true; $('diffHint').textContent = '';
+  if (!enabled) return;
+  box.replaceChildren(); box.className = 'reading model';
+  if (!pred) { box.className = 'reading note'; box.textContent = 'O reconhecedor ainda não leu esta linha.'; return; }
+  if (pred.presentation?.status !== 'candidate') { box.className = 'reading note'; box.textContent = pred.presentation?.text || 'Leitura indisponível.'; return; }
+  const text = pred.presentation.text, mine = $('mine').value.trim();
+  $('useModel').hidden = !!mine;
+  if (!mine) { box.textContent = text; return; }
+  const words = differingWords(text, mine);
+  words.forEach((w, i) => {
+    if (i) box.append(' ');
+    if (w.differs) { const s = document.createElement('span'); s.className = 'differs'; s.textContent = w.word; box.append(s); }
+    else box.append(w.word);
+  });
+  const n = words.filter(w => w.differs).length;
+  $('diffHint').textContent = n ? `${n} palavra(s) do modelo diferem da sua leitura (sublinhado pontilhado).` : 'Sua leitura coincide com a do modelo palavra por palavra. Confira mesmo assim na imagem.';
+}
+function fit() { const t = $('mine'); t.style.height = 'auto'; t.style.height = t.scrollHeight + 'px'; }
+function remember() { const l = current(); if (!l) return;
+  const value = $('mine').value; if (value === (l.text_diplomatic || '')) drafts.delete(l.line_id); else drafts.set(l.line_id, value); }
+function renderRuler() {
+  const ls = pageLines(); $('ruler').replaceChildren();
+  ls.forEach((l, i) => {
+    const b = document.createElement('button'); b.type = 'button';
+    b.className = [l.review_status === 'validated' ? 'validated' : l.review_status === 'rejected' ? 'rejected' : '', i === index ? 'current' : ''].join(' ').trim();
+    const label = `Linha ${i + 1}: ${statusLabel[l.review_status] || 'pendente'}${drafts.has(l.line_id) ? ', com rascunho local' : ''}`;
+    b.title = label; b.setAttribute('aria-label', label); if (i === index) b.setAttribute('aria-current', 'step');
+    b.onclick = () => go(i); $('ruler').append(b);
+  });
+  const done = ls.filter(l => l.review_status === 'validated').length;
+  $('progress').textContent = ls.length ? `${done} de ${ls.length} linhas validadas` : '';
+}
+function render() {
+  const ls = pageLines(), page = state.pages.find(p => p.page_id === pageId);
+  $('sheet').hidden = $('side').hidden = !ls.length; $('empty').hidden = !!ls.length;
+  $('folioTextLink').href = `/folio-texto?page=${encodeURIComponent(pageId || '')}`;
+  renderRuler(); if (!ls.length) return;
+  index = Math.min(index, ls.length - 1);
+  const l = current();
+  $('lineTitle').textContent = `Linha ${index + 1} de ${ls.length}` + (l.region_id && l.region_id !== 'page' ? ` · ${l.region_id}` : '');
+  $('lineStatus').textContent = statusLabel[l.review_status] || 'Pendente'; $('lineStatus').className = 'status ' + l.review_status;
+  $('crop').src = `/lines/${encodeURIComponent(pageId)}/${encodeURIComponent(l.line_id)}.png?v=${state.revision}`;
+  $('mine').value = drafts.has(l.line_id) ? drafts.get(l.line_id) : (l.text_diplomatic || ''); fit();
+  const ref = l.published_reference;
+  $('editionRow').hidden = !ref?.text; $('edition').textContent = ref?.text || '';
+  renderModel();
+  if (page?.width && page?.height) {
+    const [x1, y1, x2, y2] = l.bbox_xyxy, m = $('mark').style;
+    m.left = (100 * x1 / page.width) + '%'; m.top = (100 * y1 / page.height) + '%';
+    m.width = (100 * (x2 - x1) / page.width) + '%'; m.height = (100 * (y2 - y1) / page.height) + '%';
+  }
+  const rows = [['Ordem de leitura', l.reading_order], ['Região', l.region_id], ['Revisor registrado', l.reviewer || 'não informado'],
+    ['Revisado em', l.reviewed_at || 'nunca'], ['Recorte (px)', l.bbox_xyxy.join(', ')], ['Recorte conferido', l.geometry_status === 'validated' ? 'sim' : 'não']];
+  $('details').replaceChildren(...rows.flatMap(([k, v]) => { const dt = document.createElement('dt'), dd = document.createElement('dd'); dt.textContent = k; dd.textContent = String(v); return [dt, dd]; }));
+}
+function go(i) { remember(); const n = pageLines().length; if (!n) return; index = Math.max(0, Math.min(n - 1, i)); render(); $('mine').focus(); }
+async function load(keepLine) {
+  state = await request('/api/catalog');
+  $('pages').replaceChildren(...state.pages.map(p => new Option(`${p.original_name} · ${p.folio_id}`, p.page_id)));
+  if (!state.pages.some(p => p.page_id === pageId)) {
+    const wanted = new URLSearchParams(location.search).get('page');
+    pageId = state.pages.some(p => p.page_id === wanted) ? wanted : state.pages[0]?.page_id || null;
+  }
+  $('pages').value = pageId || '';
+  $('pageImage').src = pageId ? `/api/pages/${encodeURIComponent(pageId)}/image` : '';
+  if (keepLine) { const i = pageLines().findIndex(l => l.line_id === keepLine); if (i >= 0) index = i; }
+  render();
+}
+let busy = false;
+async function save(validate) {
+  const l = current(); if (!l || busy) return;
+  const n = index + 1;
+  const text = $('mine').value.trim(), reviewer = $('reviewer').value.trim();
+  if (validate && !text) return message('Escreva a leitura conferida antes de validar.', 'error');
+  if (validate && !reviewer) { $('reviewer').focus(); return message('Informe o nome do revisor para validar.', 'error'); }
+  if (!validate && l.review_status === 'validated' && text === (l.text_diplomatic || '')) return message('Nada mudou nesta linha.');
+  const changes = {text_diplomatic: text || null, review_status: validate ? 'validated' : 'pending_review'};
+  if (validate) changes.reference_kind = 'human_diplomatic';
+  if (reviewer) changes.reviewer = reviewer;
+  busy = true; document.querySelectorAll('button').forEach(b => b.disabled = true);
+  try {
+    await request('/api/lines/' + encodeURIComponent(l.line_id), 'PATCH', {changes, revision: state.revision});
+    drafts.delete(l.line_id); await load(l.line_id);
+    if (validate) {
+      const ls = pageLines(), next = ls.findIndex((x, i) => i > index && x.review_status !== 'validated' && x.review_status !== 'rejected');
+      message(next >= 0 ? `Linha ${n} validada. Seguindo para a próxima pendente.` : `Linha ${n} validada. Não há mais linhas pendentes depois desta.`, 'ok');
+      if (next >= 0) go(next);
+    } else message(`Rascunho da linha ${n} salvo. A linha continua pendente.`, 'ok');
+  } catch (e) {
+    remember();
+    message(e.status === 409 ? 'Outra pessoa salvou enquanto você lia. Seu texto foi mantido aqui; recarregue o fólio, confira e salve de novo.' : e.message, 'error');
+  } finally { busy = false; document.querySelectorAll('button').forEach(b => b.disabled = false); }
+}
+$('mine').addEventListener('input', () => { fit(); remember(); renderModel(); renderRuler(); });
+$('validate').onclick = () => save(true);
+$('saveDraft').onclick = () => save(false);
+$('useModel').onclick = () => { const p = prediction(current().line_id); if (p?.presentation?.status === 'candidate') { $('mine').value = p.presentation.text; fit(); remember(); renderModel(); $('mine').focus(); } };
+$('pages').onchange = () => { remember(); pageId = $('pages').value; index = 0; history.replaceState(null, '', `?page=${encodeURIComponent(pageId)}`); load(); };
+try { $('reviewer').value = localStorage.getItem('paleographia.revisor') || ''; } catch { /* storage may be blocked */ }
+$('reviewer').addEventListener('change', () => { try { localStorage.setItem('paleographia.revisor', $('reviewer').value.trim()); } catch { /* optional */ } });
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); save(true); }
+  else if (e.altKey && e.key === 'ArrowDown') { e.preventDefault(); go(index + 1); }
+  else if (e.altKey && e.key === 'ArrowUp') { e.preventDefault(); go(index - 1); }
+});
+window.addEventListener('beforeunload', e => { remember(); if (drafts.size) { e.preventDefault(); e.returnValue = ''; } });
+load().then(() => message('Leia a linha na imagem, registre o que conferiu e valide. O modelo é só uma sugestão.'))
+  .catch(e => message(e.message, 'error'));
+</script>
+</body>
+</html>

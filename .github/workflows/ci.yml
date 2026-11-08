@@ -28,7 +28,7 @@ jobs:
           python -m pip install ruff==0.17.3
           ruff check src server tests scripts
       - run: python -m pytest -q
-      - run: node --test tests/web_review.test.cjs
+      - run: node --test tests/web_review.test.cjs tests/web_leitura.test.cjs
       - run: python -m compileall -q src server tests
       - run: python -m paleographia --help
       - name: Conferir corpus expandido e evidências do ensaio PP-OCRv6 sem pesos

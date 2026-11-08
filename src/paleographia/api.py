@@ -223,6 +223,11 @@ def create_app(root=None, config=None, recognizer=None):
     def edit_line(line_id: str, edit: Edit):
         return service.update_line(line_id, edit.changes, edit.revision)
 
+    @app.get("/leitura")
+    def reading_mode():
+        # Uma linha por vez: valida só texto, revisor e status; recorte e ordem ficam no editor completo.
+        return FileResponse(Path(__file__).parent/"web/leitura.html")
+
     @app.get("/folio-texto")
     def folio_text_page():
         return FileResponse(Path(__file__).parent/"web/folio_texto.html")

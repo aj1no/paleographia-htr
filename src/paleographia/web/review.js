@@ -321,13 +321,17 @@ function point(e) {
 function renderOverlay() {
     const p = page(); if (!p) return;
     const svg = $('overlay'); svg.setAttribute('viewBox', `0 0 ${p.width} ${p.height}`); svg.replaceChildren();
+    // Selection and rejection also differ by stroke weight and dash, not by color alone.
+    const stroke = Math.max(2, p.width / 500);
     const boxes = lines().map(l => ({box: l.line_id === lineId && pendingBox ? pendingBox : l.bbox_xyxy,
-        color: l.review_status === 'rejected' ? '#999' : l.line_id === lineId ? '#d3741e' : '#287455'}));
-    if (drag?.box) boxes.push({box: drag.box, color: '#f80'});
-    for (const {box: b, color} of boxes) {
+        color: l.review_status === 'rejected' ? '#999' : l.line_id === lineId ? '#d3741e' : '#287455',
+        width: l.line_id === lineId ? stroke * 2.5 : stroke, dash: l.review_status === 'rejected' ? `${stroke * 4} ${stroke * 3}` : ''}));
+    if (drag?.box) boxes.push({box: drag.box, color: '#f80', width: stroke * 2.5, dash: ''});
+    for (const {box: b, color, width, dash} of boxes) {
         const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
         for (const [key, value] of Object.entries({x: b[0], y: b[1], width: b[2] - b[0], height: b[3] - b[1],
-            fill: '#e9ad451a', stroke: color, 'stroke-width': Math.max(2, p.width / 500)})) r.setAttribute(key, value);
+            fill: '#e9ad451a', stroke: color, 'stroke-width': width})) r.setAttribute(key, value);
+        if (dash) r.setAttribute('stroke-dasharray', dash);
         svg.append(r);
     }
 }
