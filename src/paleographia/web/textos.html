@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PaleographIA · Textos</title>
+<script src="/tema.js"></script>
+<link rel="stylesheet" href="/tema.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.55 var(--sans);background:var(--paper);color:var(--ink)}
+header{background:var(--head-bg);color:var(--head-fg);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:3px solid var(--rust)}
+header h1{font:600 26px/1.1 var(--serif);margin:0}
+header h1 span{font-style:italic;font-weight:400;color:var(--head-soft)}
+header nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+header nav a{color:var(--head-link);text-decoration:none;font-size:14px}
+header nav a:hover{text-decoration:underline;text-underline-offset:3px}
+main{max-width:920px;margin:auto;padding:24px 32px 56px}
+:where(button,a,select,input):focus-visible{outline:3px solid var(--rust-text);outline-offset:2px}
+.bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:28px}
+select{font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--edge);border-radius:6px;padding:8px 10px;min-width:260px}
+.views{display:inline-flex;border-radius:8px;box-shadow:inset 0 0 0 1px var(--edge);overflow:hidden}
+.views button,.ghost{font:500 13px/1.3 var(--sans);border:0;background:transparent;color:var(--ink);padding:8px 14px;cursor:pointer}
+.views button+button{box-shadow:inset 1px 0 0 var(--edge)}
+.views button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.views button:hover:not([aria-pressed=true]),.ghost:hover{background:var(--paper-2)}
+.ghost{border-radius:6px}
+.ghost[aria-pressed=true]{box-shadow:inset 0 0 0 1px var(--edge)}
+.right{margin-left:auto;display:flex;gap:4px}
+.kicker{font-size:13px;color:var(--muted);margin:0 0 4px}
+h2{font:600 34px/1.15 var(--serif);margin:0}
+.meta{color:var(--soft);margin:6px 0 0}
+.meta .partial{color:var(--warn-fg);background:var(--warn-bg);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:500;margin-left:6px}
+article{margin-top:28px}
+.prose p{font:21px/1.75 var(--serif);margin:0 0 1em;max-width:68ch;hyphens:auto}
+.gap{font:italic 17px var(--serif);color:var(--muted);white-space:nowrap}
+.lines{font:20px/1.6 var(--serif)}
+.line{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:baseline}
+.line .n{font:12px var(--sans);color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.nonum .line{grid-template-columns:minmax(0,1fr)}
+.nonum .line .n{display:none}
+.line.gapline .t{font:italic 16px var(--serif);color:var(--muted)}
+.side{display:grid;grid-template-columns:44px minmax(0,1fr) minmax(0,1fr);gap:6px 18px;font:18px/1.5 var(--serif)}
+.side .h{font:600 12px var(--sans);color:var(--muted);padding-bottom:6px;border-bottom:1px solid var(--line)}
+.side .n{font:12px var(--sans);color:var(--muted);text-align:right;padding-top:4px}
+.side .m.edicao{box-shadow:inset 3px 0 0 var(--rust-text);padding-left:8px}
+.side .gapcell{grid-column:2 / 4;font:italic 15px var(--serif);color:var(--muted)}
+.nonum .side{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.nonum .side .n{display:none}
+.nonum .side .gapcell{grid-column:1 / 3}
+.margin{margin-top:28px;padding-top:16px;border-top:1px solid var(--line)}
+.margin h3{font:600 14px var(--sans);color:var(--soft);margin:0 0 8px}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer p{margin:0 0 6px}
+footer a{color:var(--rust-text)}
+#status{font-size:13px;color:var(--muted);min-height:20px}
+.empty{padding:60px 0;text-align:center;color:var(--muted);font:italic 20px/1.4 var(--serif)}
+@media(max-width:720px){main{padding:16px}header{padding:12px 16px}.right{margin-left:0}h2{font-size:28px}.prose p{font-size:19px}.side{grid-template-columns:32px minmax(0,1fr)}.side .m{grid-column:2}.side .h.m{display:none}}
+@media print{header,.bar,#status{display:none}main{max-width:none;padding:0}}
+</style>
+</head>
+<body>
+<header><h1>PaleographIA <span>textos</span></h1><nav aria-label="Outras vistas"><a href="/leitura">Modo leitura</a><a href="/">Editor completo</a><button type="button" id="themeToggle" class="theme-toggle">Tema: automático</button></nav></header>
+<main>
+  <div class="bar">
+    <select id="pages" aria-label="Selecionar fólio"></select>
+    <div class="views" role="group" aria-label="Versão do texto">
+      <button type="button" data-view="moderna" aria-pressed="true">Modernizada</button>
+      <button type="button" data-view="diplomatica" aria-pressed="false">Diplomática</button>
+      <button type="button" data-view="lado" aria-pressed="false">Lado a lado</button>
+    </div>
+    <div class="right">
+      <button type="button" class="ghost" id="numbers" aria-pressed="true" title="Números de linha (versão diplomática e lado a lado)">Nº de linha</button>
+      <button type="button" class="ghost" id="copy">Copiar</button>
+      <button type="button" class="ghost" id="download">Baixar .txt</button>
+    </div>
+  </div>
+  <p id="status" role="status"></p>
+  <section id="doc" hidden>
+    <p class="kicker" id="kicker"></p>
+    <h2 id="title"></h2>
+    <p class="meta" id="meta"></p>
+    <article id="text"></article>
+    <div class="margin" id="marginBox" hidden><h3>Na margem</h3><div id="marginText"></div></div>
+    <footer>
+      <p id="note"></p>
+      <p id="credits"></p>
+    </footer>
+  </section>
+  <p id="empty" class="empty" hidden>Nenhuma linha validada neste fólio ainda.</p>
+</main>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+let data = null, view = 'moderna', numbers = true;
+try { view = localStorage.getItem('paleographia.textos.vista') || 'moderna'; numbers = localStorage.getItem('paleographia.textos.numeros') !== '0'; } catch { /* opcional */ }
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const range = ns => ns.length === 1 ? `linha ${ns[0]}` : `linhas ${ns[0]} a ${ns.at(-1)}`;
+async function json(url) { const r = await fetch(url); if (!r.ok) throw Error((await r.json()).detail || r.statusText); return r.json(); }
+
+function gapMark(block) {
+  const s = el('span', 'gap', '[…]');
+  s.title = `${range(block.numeros)} ainda em revisão`; s.setAttribute('aria-label', s.title);
+  return s;
+}
+function renderProse(parts, box) {
+  // Texto corrido: cada trecho validado vira um parágrafo; as lacunas ficam entre eles.
+  let p = el('p');
+  for (const b of parts) {
+    if (b.tipo === 'lacuna') { if (p.childNodes.length) p.append(' '); p.append(gapMark(b)); continue; }
+    if (p.childNodes.length) { box.append(p); p = el('p'); }
+    p.append(view === 'moderna' ? b.modernizada : b.diplomatica);
+  }
+  if (p.childNodes.length) box.append(p);
+}
+function renderLines(parts, box) {
+  const wrap = el('div', 'lines');
+  for (const b of parts) {
+    if (b.tipo === 'lacuna') {
+      const row = el('div', 'line gapline'); row.append(el('span', 'n', String(b.numeros[0])), el('span', 't', `[${range(b.numeros)} em revisão]`)); wrap.append(row); continue;
+    }
+    for (const l of b.linhas) { const row = el('div', 'line'); row.append(el('span', 'n', String(l.numero)), el('span', 't', l.diplomatica)); wrap.append(row); }
+  }
+  box.append(wrap);
+}
+function renderSide(parts, box) {
+  const grid = el('div', 'side');
+  grid.append(el('span', 'h n', ''), el('span', 'h', 'Diplomática'), el('span', 'h m', 'Modernizada'));
+  for (const b of parts) {
+    if (b.tipo === 'lacuna') { grid.append(el('span', 'n', String(b.numeros[0])), el('span', 'gapcell', `[${range(b.numeros)} em revisão]`)); continue; }
+    for (const l of b.linhas) {
+      const m = el('span', 'm' + (l.fonte_moderna === 'edicao' ? ' edicao' : ''), l.modernizada);
+      if (l.fonte_moderna === 'edicao') m.title = 'Edição modernizada registrada na linha';
+      grid.append(el('span', 'n', String(l.numero)), el('span', 'd', l.diplomatica), m);
+    }
+  }
+  box.append(grid);
+}
+function render() {
+  document.querySelectorAll('.views button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+  $('numbers').setAttribute('aria-pressed', String(numbers)); $('numbers').hidden = view === 'moderna';
+  if (!data) return;
+  const has = data.validadas > 0;
+  $('doc').hidden = !has; $('empty').hidden = has;
+  if (!has) return;
+  $('kicker').textContent = data.documento ? `Documento ${data.documento}` : 'Fólio';
+  $('title').textContent = `Fólio ${data.folio || data.page_id}`;
+  $('meta').replaceChildren(`${data.validadas} de ${data.total} linhas validadas`);
+  if (data.validadas < data.total) $('meta').append(el('span', 'partial', 'texto parcial'));
+  const box = $('text'); box.replaceChildren(); box.className = numbers ? '' : 'nonum';
+  if (view === 'lado') renderSide(data.corpo, box); else if (view === 'diplomatica') renderLines(data.corpo, box); else { box.classList.add('prose'); renderProse(data.corpo, box); }
+  $('marginBox').hidden = !data.margem.length; $('marginText').replaceChildren();
+  if (data.margem.length) { const m = $('marginText'); m.className = (view === 'moderna' ? 'prose' : '') + (numbers ? '' : ' nonum'); view === 'lado' ? renderSide(data.margem, m) : view === 'diplomatica' ? renderLines(data.margem, m) : renderProse(data.margem, m); }
+  $('note').textContent = view === 'diplomatica'
+    ? 'Transcrição paleográfica (diplomática) validada pela equipe: grafia, abreviaturas e pontuação como no manuscrito. Só linhas validadas aparecem; as demais ficam marcadas como em revisão.'
+    : 'Leitura modernizada automática, para facilitar a leitura hoje: atualiza grafia e acentos e desenvolve abreviaturas conhecidas. Pode errar; a referência é a transcrição diplomática. Só linhas validadas entram.';
+  $('credits').textContent = [data.creditos, data.imagem ? `Imagem: ${data.imagem}.` : ''].filter(Boolean).join(' ');
+}
+function plain() {
+  if (!data) return '';
+  const parts = [...data.corpo, ...(data.margem.length ? [{tipo: 'titulo'}, ...data.margem] : [])];
+  if (view === 'moderna') return parts.map(b => b.tipo === 'titulo' ? '\n[Margem]' : b.tipo === 'lacuna' ? '[…]' : b.modernizada).join('\n\n');
+  if (view === 'diplomatica') return parts.flatMap(b => b.tipo === 'titulo' ? ['[Margem]'] : b.tipo === 'lacuna' ? [`[${range(b.numeros)} em revisão]`] : b.linhas.map(l => (numbers ? `${l.numero}\t` : '') + l.diplomatica)).join('\n');
+  return parts.flatMap(b => b.tipo === 'titulo' ? ['[Margem]'] : b.tipo === 'lacuna' ? [`[${range(b.numeros)} em revisão]`] : b.linhas.map(l => `${numbers ? l.numero + '\t' : ''}${l.diplomatica}\t${l.modernizada}`)).join('\n');
+}
+async function load(pageId) {
+  $('status').textContent = 'Carregando…';
+  data = await json(`/api/pages/${encodeURIComponent(pageId)}/textos`);
+  history.replaceState(null, '', `?page=${encodeURIComponent(pageId)}`);
+  $('status').textContent = ''; render();
+}
+document.querySelectorAll('.views button').forEach(b => b.onclick = () => { view = b.dataset.view; try { localStorage.setItem('paleographia.textos.vista', view); } catch { /* opcional */ } render(); });
+$('numbers').onclick = () => { numbers = !numbers; try { localStorage.setItem('paleographia.textos.numeros', numbers ? '1' : '0'); } catch { /* opcional */ } render(); };
+$('copy').onclick = async () => { try { await navigator.clipboard.writeText(plain()); $('status').textContent = 'Texto copiado.'; } catch { $('status').textContent = 'Não foi possível copiar; use Baixar .txt.'; } };
+$('download').onclick = () => {
+  const blob = new Blob([plain() + '\n'], {type: 'text/plain;charset=utf-8'});
+  const a = Object.assign(document.createElement('a'), {href: URL.createObjectURL(blob), download: `${data.page_id}_${view}.txt`});
+  a.click(); URL.revokeObjectURL(a.href);
+};
+$('pages').onchange = () => load($('pages').value).catch(e => { $('status').textContent = e.message; });
+(async () => {
+  const catalog = await json('/api/catalog');
+  const count = p => catalog.lines.filter(l => l.page_id === p.page_id && l.review_status === 'validated').length;
+  const total = p => catalog.lines.filter(l => l.page_id === p.page_id && l.review_status !== 'rejected').length;
+  for (const p of catalog.pages) $('pages').add(new Option(`${p.folio_id} · ${count(p)} de ${total(p)} validadas`, p.page_id));
+  const wanted = new URLSearchParams(location.search).get('page');
+  const best = [...catalog.pages].sort((a, b) => count(b) - count(a))[0];
+  const pageId = catalog.pages.some(p => p.page_id === wanted) ? wanted : best?.page_id;
+  render();
+  if (pageId) { $('pages').value = pageId; await load(pageId); } else $('status').textContent = 'Nenhum fólio no catálogo.';
+})().catch(e => { $('status').textContent = e.message; });
+</script>
+</body>
+</html>

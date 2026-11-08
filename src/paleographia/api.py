@@ -247,6 +247,11 @@ def create_app(root=None, config=None, recognizer=None):
     def theme_js():
         return FileResponse(Path(__file__).parent/"web/tema.js", media_type="text/javascript")
 
+    @app.get("/textos")
+    def texts_page():
+        # Só linhas validadas, na transcrição diplomática e na leitura modernizada.
+        return FileResponse(Path(__file__).parent/"web/textos.html")
+
     @app.get("/leitura")
     def reading_mode():
         # Uma linha por vez: valida só texto, revisor e status; recorte e ordem ficam no editor completo.
@@ -286,6 +291,15 @@ def create_app(root=None, config=None, recognizer=None):
     def conference_time_summary():
         from .conferencia import timing_summary
         return timing_summary(service.workspace)
+
+    @app.get("/api/pages/{page_id}/textos")
+    def validated_texts(page_id: str):
+        from .textos import textos_validados
+        state = service.state()
+        page = next((p for p in state["pages"] if p["page_id"] == page_id), None)
+        if page is None:
+            raise KeyError(page_id)
+        return textos_validados(page, state["lines"])
 
     @app.get("/api/pages/{page_id}/pagexml")
     def page_xml_export(page_id: str):
