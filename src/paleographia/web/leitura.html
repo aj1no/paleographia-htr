@@ -44,8 +44,19 @@ select,input{font:inherit;color:var(--ink);background:var(--field);border:1px so
 .status{font-size:12px;font-weight:500;border-radius:999px;padding:3px 10px;background:#f6e9d6;color:var(--rust-dark)}
 .status.validated{background:#e3ebd9;color:var(--ok)}
 .status.rejected{background:var(--paper-2);color:var(--soft)}
-.lens{background:var(--paper-2);border-radius:8px;padding:14px;display:flex;justify-content:center}
-.lens img{display:block;width:100%;max-height:200px;object-fit:contain}
+.lens{background:var(--paper-2);border-radius:8px;padding:14px;overflow:auto;max-height:62vh;touch-action:none}
+.lens img{display:block;width:100%;max-height:200px;object-fit:contain;margin:auto;user-select:none}
+.lens.zoomed{cursor:grab}
+.lens.zoomed img{max-height:none;max-width:none;margin:0}
+.lens.dragging{cursor:grabbing}
+.tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin:12px 0 0;font-size:13px;color:var(--soft)}
+.tools label{display:flex;align-items:center;gap:8px}
+.tools input[type=range]{width:110px;accent-color:var(--rust);padding:0;border:0;background:transparent}
+.tools output{min-width:40px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.tools .switches{display:flex;flex-wrap:wrap;gap:6px}
+.toggle{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--edge);padding:6px 12px;font-size:13px}
+.toggle:hover:not(:disabled){background:var(--paper-2)}
+.toggle[aria-pressed=true],.toggle[aria-pressed=true]:hover:not(:disabled){background:var(--ink);color:var(--paper);box-shadow:none}
 .interlinear{margin-top:18px}
 .row{display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;align-items:baseline;padding:12px 0;border-top:1px solid var(--line)}
 .row .label{font-size:13px;color:var(--muted)}
@@ -63,6 +74,7 @@ kbd{font:500 11px var(--sans);border:1px solid var(--edge);border-bottom-width:2
 #message{margin:0 0 14px;padding:10px 14px;border-radius:6px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--rust);min-height:44px}
 #message.error{background:#f8e3da;border-color:#e7b9a6;border-left-color:var(--rust-dark);color:#6b2412}
 #message.ok{border-left-color:var(--ok)}
+#message:empty{display:none}
 aside{display:flex;flex-direction:column;gap:14px}
 .mini{position:relative;background:var(--paper-2);border-radius:8px;overflow:hidden;line-height:0}
 .mini img{width:100%;display:block}
@@ -86,11 +98,24 @@ summary{cursor:pointer;font-weight:600;color:var(--soft)}
   <span id="progress" class="progress-text" role="status"></span>
 </div>
 <div id="ruler" class="ruler" role="group" aria-label="Linhas do fólio"></div>
-<p id="message" role="status">Carregando o fólio…</p>
+<p id="message" role="status"></p>
 <div class="desk">
   <section class="sheet" id="sheet" hidden>
     <div class="where"><h2 id="lineTitle">Linha</h2><span id="lineStatus" class="status"></span></div>
-    <div class="lens"><img id="crop" alt="Recorte da linha atual no manuscrito"></div>
+    <div class="lens" id="lens"><img id="crop" alt="Recorte da linha atual no manuscrito" draggable="false"></div>
+    <div class="tools" role="group" aria-label="Ajustes de visualização do recorte">
+      <label title="Alt+= amplia, Alt+- reduz">Ampliação <input type="range" id="zoom" min="1" max="4" step="0.25" value="1"><output id="zoomOut" for="zoom">1×</output></label>
+      <label>Contraste <input type="range" id="contrast" min="50" max="300" step="10" value="100"><output id="contrastOut" for="contrast">100%</output></label>
+      <label title="Com Preto e branco ligado, o brilho move o limiar entre tinta e papel">Brilho <input type="range" id="brightness" min="50" max="200" step="10" value="100"><output id="brightnessOut" for="brightness">100%</output></label>
+      <div class="switches">
+        <button type="button" class="toggle" id="invert" aria-pressed="false" title="Alt+N">Negativo</button>
+        <button type="button" class="toggle" id="gray" aria-pressed="false">Tons de cinza</button>
+        <button type="button" class="toggle" id="threshold" aria-pressed="false">Preto e branco</button>
+        <button type="button" class="ghost" id="resetLens" title="Alt+0">Restaurar</button>
+      </div>
+    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="limiar" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="discrete" tableValues="0 1"/><feFuncG type="discrete" tableValues="0 1"/><feFuncB type="discrete" tableValues="0 1"/></feComponentTransfer></filter></svg>
+    <p class="hint">Os ajustes só mudam o que você vê; a imagem guardada não é alterada. Com ampliação, arraste o recorte para mover.</p>
     <div class="interlinear">
       <div class="row" id="modelRow"><span class="label">Leitura do modelo</span><div id="model" class="reading model"></div></div>
       <div class="row" id="editionRow" hidden><span class="label">Edição publicada</span><div id="edition" class="reading model"></div></div>
@@ -102,7 +127,7 @@ summary{cursor:pointer;font-weight:600;color:var(--soft)}
       <button id="validate" title="Ctrl+Enter">Validar e seguir</button>
       <button id="saveDraft" class="secondary">Salvar rascunho</button>
       <button id="useModel" class="ghost">Começar pela leitura do modelo</button>
-      <span class="keys"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> valida · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha</span>
+      <span class="keys"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> valida · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha · <kbd>Alt</kbd>+<kbd>=</kbd>/<kbd>-</kbd> amplia · <kbd>Alt</kbd>+<kbd>N</kbd> negativo</span>
     </div>
     <p class="hint">Validar significa: conferi esta leitura na imagem e a aceito como transcrição paleográfica. O recorte e a ordem de leitura não mudam aqui.</p>
   </section>
@@ -243,6 +268,52 @@ async function save(validate) {
     message(e.status === 409 ? 'Outra pessoa salvou enquanto você lia. Seu texto foi mantido aqui; recarregue o fólio, confira e salve de novo.' : e.message, 'error');
   } finally { busy = false; document.querySelectorAll('button').forEach(b => b.disabled = false); }
 }
+// Visualização do recorte: só CSS sobre a imagem exibida; nada é gravado no servidor.
+const lensDefaults = {zoom: 1, contrast: 100, brightness: 100, invert: false, gray: false, threshold: false};
+const lens = {...lensDefaults};
+try { Object.assign(lens, JSON.parse(localStorage.getItem('paleographia.lente') || '{}')); } catch { /* optional */ }
+function lensFilter(s) {
+  const parts = [];
+  if (s.contrast !== 100) parts.push(`contrast(${s.contrast}%)`);
+  if (s.brightness !== 100) parts.push(`brightness(${s.brightness}%)`);
+  if (s.gray || s.threshold) parts.push('grayscale(1)');
+  if (s.threshold) parts.push('url(#limiar)');
+  if (s.invert) parts.push('invert(1)');
+  return parts.join(' ') || 'none';
+}
+function applyLens() {
+  const img = $('crop');
+  img.style.filter = lensFilter(lens);
+  img.style.width = lens.zoom > 1 ? `${lens.zoom * 100}%` : '';
+  $('lens').classList.toggle('zoomed', lens.zoom > 1);
+  $('zoom').value = lens.zoom; $('zoomOut').textContent = `${String(lens.zoom).replace('.', ',')}×`;
+  $('contrast').value = lens.contrast; $('contrastOut').textContent = `${lens.contrast}%`;
+  $('brightness').value = lens.brightness; $('brightnessOut').textContent = `${lens.brightness}%`;
+  for (const key of ['invert', 'gray', 'threshold']) $(key).setAttribute('aria-pressed', String(!!lens[key]));
+  try { localStorage.setItem('paleographia.lente', JSON.stringify(lens)); } catch { /* optional */ }
+}
+function setZoom(value) {
+  const box = $('lens'), old = lens.zoom, next = Math.max(1, Math.min(4, Math.round(value * 4) / 4));
+  const cx = (box.scrollLeft + box.clientWidth / 2) / (old || 1), cy = (box.scrollTop + box.clientHeight / 2) / (old || 1);
+  lens.zoom = next; applyLens();
+  box.scrollLeft = cx * next - box.clientWidth / 2; box.scrollTop = cy * next - box.clientHeight / 2;
+}
+$('zoom').addEventListener('input', () => setZoom(Number($('zoom').value)));
+$('contrast').addEventListener('input', () => { lens.contrast = Number($('contrast').value); applyLens(); });
+$('brightness').addEventListener('input', () => { lens.brightness = Number($('brightness').value); applyLens(); });
+for (const key of ['invert', 'gray', 'threshold']) $(key).onclick = () => { lens[key] = !lens[key]; applyLens(); };
+$('resetLens').onclick = () => { Object.assign(lens, lensDefaults); applyLens(); };
+let pan = null;
+$('lens').addEventListener('pointerdown', e => {
+  if (lens.zoom <= 1) return;
+  pan = {x: e.clientX, y: e.clientY, left: $('lens').scrollLeft, top: $('lens').scrollTop};
+  $('lens').setPointerCapture(e.pointerId); $('lens').classList.add('dragging');
+});
+$('lens').addEventListener('pointermove', e => {
+  if (!pan) return; $('lens').scrollLeft = pan.left - (e.clientX - pan.x); $('lens').scrollTop = pan.top - (e.clientY - pan.y);
+});
+for (const type of ['pointerup', 'pointercancel']) $('lens').addEventListener(type, () => { pan = null; $('lens').classList.remove('dragging'); });
+applyLens();
 $('mine').addEventListener('input', () => { fit(); remember(); renderModel(); renderRuler(); });
 $('validate').onclick = () => save(true);
 $('saveDraft').onclick = () => save(false);
@@ -254,10 +325,13 @@ document.addEventListener('keydown', e => {
   if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); save(true); }
   else if (e.altKey && e.key === 'ArrowDown') { e.preventDefault(); go(index + 1); }
   else if (e.altKey && e.key === 'ArrowUp') { e.preventDefault(); go(index - 1); }
+  else if (e.altKey && (e.code === 'Equal' || e.code === 'NumpadAdd')) { e.preventDefault(); setZoom(lens.zoom + 0.5); }
+  else if (e.altKey && (e.code === 'Minus' || e.code === 'NumpadSubtract')) { e.preventDefault(); setZoom(lens.zoom - 0.5); }
+  else if (e.altKey && e.code === 'Digit0') { e.preventDefault(); Object.assign(lens, lensDefaults); applyLens(); }
+  else if (e.altKey && e.code === 'KeyN') { e.preventDefault(); lens.invert = !lens.invert; applyLens(); }
 });
 window.addEventListener('beforeunload', e => { remember(); if (drafts.size) { e.preventDefault(); e.returnValue = ''; } });
-load().then(() => message('Leia a linha na imagem, registre o que conferiu e valide. O modelo é só uma sugestão.'))
-  .catch(e => message(e.message, 'error'));
+load().catch(e => message(e.message, 'error'));
 </script>
 </body>
 </html>

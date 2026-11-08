@@ -27,3 +27,21 @@ test('leitura humana vazia marca tudo e não quebra', () => {
 test('respeita a ordem: palavra repetida em outro lugar não conta como igual', () => {
   assert.deepStrictEqual(marked('de mil de', 'mil de seis'), ['de']);
 });
+
+// Filtros de visualização do recorte: só CSS, na ordem que mantém o negativo por último.
+const filterSource = html.match(/function lensFilter[\s\S]*?\r?\n}\r?\n/)[0];
+const lensFilter = new Function(`${filterSource}; return lensFilter;`)();
+const base = {zoom: 1, contrast: 100, brightness: 100, invert: false, gray: false, threshold: false};
+
+test('sem ajustes não aplica filtro', () => {
+  assert.strictEqual(lensFilter(base), 'none');
+});
+
+test('contraste, brilho e negativo combinam na ordem certa', () => {
+  assert.strictEqual(lensFilter({...base, contrast: 180, brightness: 90, invert: true}), 'contrast(180%) brightness(90%) invert(1)');
+});
+
+test('preto e branco passa por tons de cinza e pelo limiar, e o negativo vem depois', () => {
+  assert.strictEqual(lensFilter({...base, threshold: true, invert: true}), 'grayscale(1) url(#limiar) invert(1)');
+  assert.strictEqual(lensFilter({...base, gray: true, threshold: true}), 'grayscale(1) url(#limiar)');
+});
