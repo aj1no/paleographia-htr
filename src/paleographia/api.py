@@ -223,6 +223,14 @@ def create_app(root=None, config=None, recognizer=None):
     def edit_line(line_id: str, edit: Edit):
         return service.update_line(line_id, edit.changes, edit.revision)
 
+    @app.get("/tema.css")
+    def theme_css():
+        return FileResponse(Path(__file__).parent/"web/tema.css", media_type="text/css")
+
+    @app.get("/tema.js")
+    def theme_js():
+        return FileResponse(Path(__file__).parent/"web/tema.js", media_type="text/javascript")
+
     @app.get("/leitura")
     def reading_mode():
         # Uma linha por vez: valida só texto, revisor e status; recorte e ordem ficam no editor completo.
