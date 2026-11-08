@@ -1,0 +1,78 @@
+{
+ "checkpoint": "passo 3000 (menor CER na validação interna da Inquisição)",
+ "minutos": 25.8,
+ "val_inq": {
+  "linhas": 953,
+  "cer": 0.7260497794237787,
+  "wer": 1.091979498545505
+ },
+ "val_jundiai": {
+  "linhas": 10,
+  "cer": 0.7209302325581395,
+  "wer": 1.043010752688172,
+  "por_documento": {
+   "sessao_1795": {
+    "cer": 0.7188405797101449,
+    "wer": 1.0149253731343284,
+    "linhas": 7
+   },
+   "carta_jose_gomes_1767": {
+    "cer": 0.7265625,
+    "wer": 1.1153846153846154,
+    "linhas": 3
+   }
+  },
+  "linhas_transcritas": [
+   {
+    "documento": "sessao_1795",
+    "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "modelo": " e e a e de e e ee e e  a e"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "modelo": " de e e  e e e e e ee"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+    "modelo": " e e e  de de  e e e"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+    "modelo": "e e de e e e  e ee e e e e e e"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "modelo": " e  e a e e e e  e   a"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+    "modelo": "e dee de e ee eee e"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "ando sobre o bem commum do povo, na mesma se",
+    "modelo": " de e e e  e e a a"
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "Paguem as Camaras, e a Razão por não",
+    "modelo": " a e de a a e de ee"
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "se as não tivessem seriam Srsˢ dos Desco-",
+    "modelo": "aa a e aa a e ea e a e"
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "bertos do campo verde, e de outros muⁱᵗᵒˢ que estão",
+    "modelo": "e e e e a a a  a e a a ee"
+   }
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+{"passo": 500, "perda": 4.299207558631897, "cer_val_inq": 1.0, "wer_val_inq": 1.0, "segundos": 161, "melhor_ate_aqui": 500}
+{"passo": 1000, "perda": 2.7765583510398866, "cer_val_inq": 0.5629595337944556, "wer_val_inq": 0.9468070369857321, "segundos": 314, "melhor_ate_aqui": 1000}
+{"passo": 1500, "perda": 1.509865664243698, "cer_val_inq": 0.43006916834595066, "wer_val_inq": 0.8817010666297271, "segundos": 467, "melhor_ate_aqui": 1500}
+{"passo": 2000, "perda": 0.8897192392647266, "cer_val_inq": 0.39899787593268343, "wer_val_inq": 0.85635129519324, "segundos": 621, "melhor_ate_aqui": 2000}
+{"passo": 2500, "perda": 0.5608044120371342, "cer_val_inq": 0.3842383312455749, "wer_val_inq": 0.8395899709100983, "segundos": 774, "melhor_ate_aqui": 2500}
+{"passo": 3000, "perda": 0.3810469126086682, "cer_val_inq": 0.38208703229671587, "wer_val_inq": 0.8420833910513922, "segundos": 928, "melhor_ate_aqui": 3000}
+{"passo": 3500, "perda": 0.28434787549916657, "cer_val_inq": 0.3759054517727793, "wer_val_inq": 0.8329408505333149, "segundos": 1081, "melhor_ate_aqui": 3500}
+{"passo": 4000, "perda": 0.23936661958368496, "cer_val_inq": 0.37495234464353794, "wer_val_inq": 0.8297548136861062, "segundos": 1234, "melhor_ate_aqui": 4000}
+{"passo": 4500, "perda": 0.2121131546748802, "cer_val_inq": 0.37274658243015085, "wer_val_inq": 0.8271228702036293, "segundos": 1387, "melhor_ate_aqui": 4500}
+{"passo": 5000, "perda": 0.20044209094997495, "cer_val_inq": 0.3704046620554436, "wer_val_inq": 0.8251835434270675, "segundos": 1541, "melhor_ate_aqui": 5000}

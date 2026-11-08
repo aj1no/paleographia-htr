@@ -1,0 +1,21 @@
+{
+ "nome": "ssl_ajuste_completo",
+ "passos": 25000,
+ "lote": 24,
+ "lr": 0.001,
+ "init": "runs/ssl/encoder.pt",
+ "congelar": false,
+ "fracao": 1.0,
+ "avaliar_cada": 1000,
+ "semente": 20261107,
+ "trabalhadores": 4,
+ "linhas_rotuladas": 12734,
+ "amostras_por_epoca": 13116,
+ "val_inq": 953,
+ "val_jundiai": 10,
+ "alfabeto": 138,
+ "parametros": 6257003,
+ "treinaveis": 6257003,
+ "gpu": "NVIDIA GeForce GTX 1650",
+ "torch": "2.14.1+cu126"
+}

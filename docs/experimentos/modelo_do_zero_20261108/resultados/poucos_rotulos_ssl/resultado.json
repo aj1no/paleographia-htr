@@ -1,0 +1,78 @@
+{
+ "checkpoint": "passo 5000 (menor CER na validação interna da Inquisição)",
+ "minutos": 25.7,
+ "val_inq": {
+  "linhas": 953,
+  "cer": 0.3704046620554436,
+  "wer": 0.8251835434270675
+ },
+ "val_jundiai": {
+  "linhas": 10,
+  "cer": 0.3150105708245243,
+  "wer": 0.7526881720430108,
+  "por_documento": {
+   "sessao_1795": {
+    "cer": 0.2811594202898551,
+    "wer": 0.7164179104477612,
+    "linhas": 7
+   },
+   "carta_jose_gomes_1767": {
+    "cer": 0.40625,
+    "wer": 0.8461538461538461,
+    "linhas": 3
+   }
+  },
+  "linhas_transcritas": [
+   {
+    "documento": "sessao_1795",
+    "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "modelo": "dor pinte aenco deas domos de Iunho demit nelle"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "modelo": "enhos e nounha aenico annos nesta villa du Tisca"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+    "modelo": "centora do Sertiro de Sundiali Comarca de Lidade"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+    "modelo": "dessai deuto em Loras de morada do Juis Frezidente"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "modelo": "elrador de Oecrira Arado onde se achavaõ nmvene"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+    "modelo": "as Officiaes de camara, Eem acto debencana cue"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "ando sobre o bem commum do povo, na mesma se",
+    "modelo": "Cando sobre otem commim do povo, na mesmaõ se"
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "Paguem as Camaras, e a Razão por não",
+    "modelo": "faquendar comaras, c alazão porqnaõ"
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "se as não tivessem seriam Srsˢ dos Desco-",
+    "modelo": "par naõ tirefemo seriaõ Poto dos daceu"
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "bertos do campo verde, e de outros muⁱᵗᵒˢ que estão",
+    "modelo": "ptor do tanpo eerde, e de Cutos mt.o qudesitas"
+   }
+  ]
+ }
+}

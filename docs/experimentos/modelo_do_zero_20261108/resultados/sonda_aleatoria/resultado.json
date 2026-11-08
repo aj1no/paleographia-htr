@@ -1,0 +1,78 @@
+{
+ "checkpoint": "passo 500 (menor CER na validação interna da Inquisição)",
+ "minutos": 6.1,
+ "val_inq": {
+  "linhas": 953,
+  "cer": 1.0,
+  "wer": 1.0
+ },
+ "val_jundiai": {
+  "linhas": 10,
+  "cer": 1.0,
+  "wer": 1.0,
+  "por_documento": {
+   "sessao_1795": {
+    "cer": 1.0,
+    "wer": 1.0,
+    "linhas": 7
+   },
+   "carta_jose_gomes_1767": {
+    "cer": 1.0,
+    "wer": 1.0,
+    "linhas": 3
+   }
+  },
+  "linhas_transcritas": [
+   {
+    "documento": "sessao_1795",
+    "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "modelo": ""
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "modelo": ""
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+    "modelo": ""
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+    "modelo": ""
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "modelo": ""
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+    "modelo": ""
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "ando sobre o bem commum do povo, na mesma se",
+    "modelo": ""
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "Paguem as Camaras, e a Razão por não",
+    "modelo": ""
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "se as não tivessem seriam Srsˢ dos Desco-",
+    "modelo": ""
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "bertos do campo verde, e de outros muⁱᵗᵒˢ que estão",
+    "modelo": ""
+   }
+  ]
+ }
+}

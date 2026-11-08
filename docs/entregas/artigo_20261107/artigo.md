@@ -92,6 +92,23 @@ Do base para o B, os erros de forma da letra caíram pela metade e os de espaço
 
 A pós-correção piorou o CER nos três modelos, com os dois métodos. O método A melhorou o WER nos três; o B, só no modelo base. As correções certas existem ("Selvador" → "Salvador", "ainco" → "cinco"), mas 14 das 51 palavras distintas da validação não estão no vocabulário, entre elas "noventa", "morada" e "comarca", e são trocadas por vizinhas erradas ("noventa" → "corenta"). O método B, mais permissivo, faz trocas piores ("Iundiahi" → "Ahi"). Com um vocabulário pequeno, a correção automática erra mais do que acerta; ela só serve como sugestão para o revisor. O uso de um grande modelo de linguagem fica para trabalho futuro, pelo risco de modernizar a grafia ou inventar palavras.
 
+### Curiosidade: um reconhecedor treinado do zero
+
+Para ver quanto pesa partir de um modelo pré-treinado, um reconhecedor CRNN-CTC (convoluções e BiLSTM, 6,3 milhões de parâmetros) foi treinado sem nenhum peso prévio, em uma noite na mesma GPU, com 12.543 linhas públicas da Inquisição e as 191 do Traslado. Numa segunda versão, o codificador passou antes por um pré-treino não supervisionado: trechos de cada linha eram apagados e o modelo reconstruía os pixels, sem ver texto algum. O checkpoint foi escolhido numa validação separada da Inquisição (953 linhas de 20 documentos); a validação de 1795 foi lida uma única vez, no fim.
+
+**Tabela 4 — Modelos treinados do zero, validação de 1795**
+
+| Modelo | CER | WER |
+| --- | ---: | ---: |
+| Do zero, todas as linhas | 16,23% | 53,73% |
+| Pré-treino + todas as linhas | 15,94% | 50,75% |
+| Do zero, 5% das linhas | 71,88% | 101,49% |
+| Pré-treino + 5% das linhas | 28,12% | 71,64% |
+
+Fonte: treinos de 07 e 08/11, fora do pipeline principal. Números exploratórios.
+
+O melhor modelo do zero fica perto do PP-OCRv6 sem ajuste (14,20%) e atrás dos ajustados: com poucos dados rotulados, partir de um modelo pré-treinado continua valendo. O pré-treino não supervisionado quase não muda o resultado quando todas as linhas têm texto, mas, com só 5% delas (637 linhas), derruba o CER de 71,88% para 28,12%. Como o acervo tem muito mais imagens do que transcrições, isso sugere um caminho para reduzir o custo de rotulação.
+
 ## Limitações
 
 A validação tem sete linhas de uma única mão e foi usada para escolher o checkpoint, o que torna os números otimistas e sujeitos a variação de uma ou duas linhas. O treino na GPU não é determinístico, e a comparação entre A e B fica dentro dessa variação. Os rótulos do Traslado vêm da edição, não de leitura diplomática independente. O teste reservado ainda espera a transcrição às cegas da equipe; só depois todos os modelos serão avaliados nele, uma única vez.
@@ -102,11 +119,11 @@ O ajuste fino do PP-OCRv6 com 191 linhas de um documento de Jundiaí reduziu o C
 
 ## Disponibilidade dos materiais
 
-Código, dados de treino sem imagens, provas dos treinos gravados e o Notebook 3 estão no [repositório público](https://github.com/aj1no/paleographia-htr). A licença MIT cobre o código; documentos e edições têm condições próprias.
+Código, dados de treino sem imagens, provas dos treinos gravados, o Notebook 3 e o experimento do zero estão no [repositório público](https://github.com/aj1no/paleographia-htr). A licença MIT cobre o código; documentos e edições têm condições próprias.
 
 ## Comentários
 
-Ferramentas de IA: Codex (OpenAI), Antigravity, ChatGPT (OpenAI) e Claude Code (Anthropic). Codex apoiou a programação, a organização dos artefatos e a versão de 23/10 deste artigo. Claude Code apoiou o pipeline de ajuste fino, a análise de erros, a pós-correção, o Notebook 3 e a revisão deste texto. O uso de Antigravity e ChatGPT, e os detalhes de cada integrante, estão na planilha de documentação do uso de IA. Nenhuma ferramenta de IA validou leituras: as referências humanas são da equipe.
+Ferramentas de IA: Codex (OpenAI), Antigravity, ChatGPT (OpenAI) e Claude Code (Anthropic). Codex apoiou a programação, a organização dos artefatos e a versão de 23/10 deste artigo. Claude Code apoiou o pipeline de ajuste fino, a análise de erros, a pós-correção, o Notebook 3, o experimento do zero e a revisão deste texto. O uso de Antigravity e ChatGPT, e os detalhes de cada integrante, estão na planilha de documentação do uso de IA. Nenhuma ferramenta de IA validou leituras: as referências humanas são da equipe.
 
 ## Referências bibliográficas
 

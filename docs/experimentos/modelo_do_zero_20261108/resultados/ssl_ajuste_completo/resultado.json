@@ -1,0 +1,78 @@
+{
+ "checkpoint": "passo 23000 (menor CER na validação interna da Inquisição)",
+ "minutos": 131.4,
+ "val_inq": {
+  "linhas": 953,
+  "cer": 0.16319917215837917,
+  "wer": 0.4957750380939188
+ },
+ "val_jundiai": {
+  "linhas": 10,
+  "cer": 0.18181818181818182,
+  "wer": 0.5268817204301075,
+  "por_documento": {
+   "sessao_1795": {
+    "cer": 0.15942028985507245,
+    "wer": 0.5074626865671642,
+    "linhas": 7
+   },
+   "carta_jose_gomes_1767": {
+    "cer": 0.2421875,
+    "wer": 0.5769230769230769,
+    "linhas": 3
+   }
+  },
+  "linhas_transcritas": [
+   {
+    "documento": "sessao_1795",
+    "referencia": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "modelo": "Aos vinte uenco dias do mas de Iunho de mil selle"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "modelo": "centos e nounta uinco annos nesta villa da Nossa"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "senhora do Desterro de jundiahy comarca da cidade",
+    "modelo": "senhora do Pesterro de Jundiahi Comarca dez Cidade"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "de São Paulo, em casas de morada do Juiz Presidente",
+    "modelo": "de Saõ beulo, em Cazes desnorada do Suis Prezidente"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "modelo": "saivador de Oliveira Frado onde se achavaõ prezentes"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "os officiaes da Camara em acto de Vereança, trat-",
+    "modelo": "os Officiais da Hamara im acto deVercança trac"
+   },
+   {
+    "documento": "sessao_1795",
+    "referencia": "ando sobre o bem commum do povo, na mesma se",
+    "modelo": "lando sobre o bem commum do povo, na mesma se"
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "Paguem as Camaras, e a Razão por não",
+    "modelo": "Faguem as Camaras, ealazão porq̄ não"
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "se as não tivessem seriam Srsˢ dos Desco-",
+    "modelo": "zas não tivessem seriao Inr.a dos Dezeu."
+   },
+   {
+    "documento": "carta_jose_gomes_1767",
+    "referencia": "bertos do campo verde, e de outros muⁱᵗᵒˢ que estão",
+    "modelo": "etoz do lampo verde, e de Outtos mtos que estaõ"
+   }
+  ]
+ }
+}

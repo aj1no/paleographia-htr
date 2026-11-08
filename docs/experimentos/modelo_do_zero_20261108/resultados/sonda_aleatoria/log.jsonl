@@ -1,0 +1,6 @@
+{"passo": 500, "perda": 8.346254287242889, "cer_val_inq": 1.0, "wer_val_inq": 1.0, "segundos": 68, "melhor_ate_aqui": 500}
+{"passo": 1000, "perda": 3.3575048389434814, "cer_val_inq": 1.0, "wer_val_inq": 1.0, "segundos": 128, "melhor_ate_aqui": 500}
+{"passo": 1500, "perda": 3.2842106537818907, "cer_val_inq": 1.0, "wer_val_inq": 1.0, "segundos": 186, "melhor_ate_aqui": 500}
+{"passo": 2000, "perda": 3.2515132884979248, "cer_val_inq": 1.0, "wer_val_inq": 1.0, "segundos": 247, "melhor_ate_aqui": 500}
+{"passo": 2500, "perda": 3.2377087335586547, "cer_val_inq": 1.0, "wer_val_inq": 1.0, "segundos": 306, "melhor_ate_aqui": 500}
+{"passo": 3000, "perda": 3.2588804817199706, "cer_val_inq": 1.0, "wer_val_inq": 1.0, "segundos": 366, "melhor_ate_aqui": 500}

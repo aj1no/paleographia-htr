@@ -80,7 +80,9 @@ def table(doc, rows):
     t = doc.add_table(rows=1, cols=3)
     t.alignment = WD_TABLE_ALIGNMENT.CENTER
     t.autofit = False
-    widths = [Mm(60), Mm(15), Mm(15)]
+    # 17 mm cabe "101,49%"; cabeçalho longo ("Ajustado B") pede 19 mm para não partir a palavra
+    longo = any(len(c.strip()) > 6 for c in rows[0][1:])
+    widths = [Mm(52), Mm(19), Mm(19)] if longo else [Mm(56), Mm(17), Mm(17)]
     for i, width in enumerate(widths):
         t.columns[i].width = width
     for index, row in enumerate(rows):

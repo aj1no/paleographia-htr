@@ -1,0 +1,11 @@
+{
+ "nome": "ssl",
+ "passos": 12000,
+ "lote": 24,
+ "lr": 0.001,
+ "proporcao": 0.4,
+ "semente": 20261107,
+ "trabalhadores": 4,
+ "imagens": 12734,
+ "textos_usados": 0
+}
