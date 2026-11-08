@@ -45,3 +45,48 @@ test('preto e branco passa por tons de cinza e pelo limiar, e o negativo vem dep
   assert.strictEqual(lensFilter({...base, threshold: true, invert: true}), 'grayscale(1) url(#limiar) invert(1)');
   assert.strictEqual(lensFilter({...base, gray: true, threshold: true}), 'grayscale(1) url(#limiar)');
 });
+
+// Foco na linha: a faixa de tinta é achada no perfil horizontal, preferindo o centro do recorte.
+const bandSource = html.match(/function inkBand[\s\S]*?\r?\n}\r?\n/)[0];
+const inkBand = new Function(`${bandSource}; return inkBand;`)();
+const profile = (n, spans) => Array.from({length: n}, (_, y) => spans.reduce((s, [a, b, v]) => s + (y >= a && y < b ? v : 0), 0));
+
+test('acha a faixa da linha central e deixa as vizinhas de fora', () => {
+  // 100 linhas de pixels: descendentes da linha de cima (0-15), linha atual (40-60), ascendentes de baixo (88-100).
+  const band = inkBand(profile(100, [[0, 15, 30], [40, 60, 80], [88, 100, 25]]));
+  assert.ok(band.top > 0.2 && band.top < 0.4, `top ${band.top}`);
+  assert.ok(band.bottom > 0.6 && band.bottom < 0.82, `bottom ${band.bottom}`);
+});
+
+test('um vizinho com um pouco mais de tinta na borda não rouba o foco do centro', () => {
+  const band = inkBand(profile(100, [[0, 14, 95], [42, 58, 80]]));
+  assert.ok(band.top > 0.25 && band.bottom < 0.8, JSON.stringify(band));
+});
+
+test('recorte sem tinta não aplica foco', () => {
+  assert.strictEqual(inkBand(new Array(50).fill(0)), null);
+  assert.strictEqual(inkBand([]), null);
+});
+
+test('linha vizinha cortada pela borda superior não vence a linha do meio (caso da linha 21 do 269r)', () => {
+  const band = inkBand(profile(100, [[0, 24, 90], [40, 75, 70], [92, 100, 20]]));
+  assert.ok(band.top > 0.2 && band.bottom > 0.7, JSON.stringify(band));
+});
+
+// Fila por discordância: distância de edição entre a leitura do modelo e a edição publicada.
+const fnSource = name => html.match(new RegExp(String.raw`function ${name}[\s\S]*?\r?\n}\r?\n`))[0];
+const discordance = new Function(`${fnSource('editDistance')}${fnSource('discordance')}; return discordance;`)();
+
+test('discordância é a distância de edição sobre o tamanho da edição', () => {
+  assert.strictEqual(discordance('lando sobre obem', 'lando sobre o bem'), 1 / 17);
+  assert.strictEqual(discordance('torze Dias', 'torze Dias'), 0);
+});
+
+test('sem leitura do modelo ou sem edição não há discordância', () => {
+  assert.strictEqual(discordance('', 'Anno'), null);
+  assert.strictEqual(discordance('Anno', undefined), null);
+});
+
+test('conta caracteres combinados como letras, em NFC', () => {
+  assert.strictEqual(discordance('Nossa', 'No\u0303ssa'.normalize('NFD')), 1 / 5);
+});

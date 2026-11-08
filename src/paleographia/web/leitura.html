@@ -3,26 +3,30 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PaleographIA · Modo leitura</title>
+<script src="/tema.js"></script>
+<link rel="stylesheet" href="/tema.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-:root{color-scheme:light;--paper:#f3ede2;--paper-2:#e7decd;--card:#fbf8f2;--field:#fffdf9;--ink:#221b16;--soft:#4e4339;--muted:#6b5e52;--rust:#9a3b22;--rust-dark:#7e2f1a;--line:#d9cfbc;--edge:#8c7b66;--ok:#3e6b3a;--serif:'EB Garamond',Georgia,serif;--sans:'IBM Plex Sans',system-ui,sans-serif}
 *{box-sizing:border-box}
+/* Nada marcado como oculto aparece, mesmo com display definido por classe (às cegas depende disto). */
+[hidden]{display:none!important}
 body{margin:0;font:15px/1.55 var(--sans);background:var(--paper);color:var(--ink)}
-header{background:var(--ink);color:var(--paper);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:3px solid var(--rust)}
+header{background:var(--head-bg);color:var(--head-fg);padding:14px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:3px solid var(--rust)}
 header h1{font:600 26px/1.1 var(--serif);margin:0}
-header h1 span{font-style:italic;font-weight:400;color:#c9bba6}
+header h1 span{font-style:italic;font-weight:400;color:var(--head-soft)}
 header nav{display:flex;gap:18px;flex-wrap:wrap}
-header nav a{color:#efe6d6;text-decoration:none;font-size:14px}
+header nav a{color:var(--head-link);text-decoration:none;font-size:14px}
 header nav a:hover{text-decoration:underline;text-underline-offset:3px}
+header nav{align-items:center}
 main{max-width:1400px;margin:auto;padding:20px 32px 40px}
-button{background:var(--rust);color:#fbf8f2;border:0;border-radius:6px;padding:10px 16px;cursor:pointer;font:500 14px/1.3 var(--sans);transition:background-color .15s}
+button{background:var(--rust);color:var(--on-rust);border:0;border-radius:6px;padding:10px 16px;cursor:pointer;font:500 14px/1.3 var(--sans);transition:background-color .15s}
 button:hover:not(:disabled){background:var(--rust-dark)}
 button.secondary{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--edge)}
 button.secondary:hover:not(:disabled){background:var(--paper-2)}
 button.ghost{background:transparent;color:var(--soft)}
 button.ghost:hover:not(:disabled){background:var(--paper-2)}
 button:disabled{opacity:.55;cursor:wait}
-:where(button,a,input,textarea,select,summary):focus-visible{outline:3px solid var(--rust);outline-offset:2px}
+:where(button,a,input,textarea,select,summary):focus-visible{outline:3px solid var(--rust-text);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){button{transition:none}}
 select,input{font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--edge);border-radius:6px;padding:8px 10px}
 .top{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:end;margin-bottom:14px}
@@ -33,16 +37,16 @@ select,input{font:inherit;color:var(--ink);background:var(--field);border:1px so
 .ruler button{flex:1;min-width:0;height:10px;padding:0;border-radius:3px;background:transparent;box-shadow:inset 0 0 0 1.5px var(--edge)}
 .ruler button.validated{background:var(--ok);box-shadow:none}
 .ruler button.rejected{background:repeating-linear-gradient(135deg,var(--edge) 0 2px,transparent 2px 5px);box-shadow:inset 0 0 0 1px var(--edge)}
-.ruler button.current{height:20px;box-shadow:inset 0 0 0 2px var(--rust)}
-.ruler button.current.validated{box-shadow:0 0 0 2px var(--rust)}
+.ruler button.current{height:20px;box-shadow:inset 0 0 0 2px var(--rust-text)}
+.ruler button.current.validated{box-shadow:0 0 0 2px var(--rust-text)}
 .ruler button:hover:not(:disabled){background:var(--paper-2)}
-.ruler button.validated:hover:not(:disabled){background:#335a30}
+.ruler button.validated:hover:not(:disabled){background:var(--ok-hover)}
 .desk{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}
 .sheet{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 26px 24px}
 .where{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:10px}
 .where h2{font:600 24px/1.2 var(--serif);margin:0}
-.status{font-size:12px;font-weight:500;border-radius:999px;padding:3px 10px;background:#f6e9d6;color:var(--rust-dark)}
-.status.validated{background:#e3ebd9;color:var(--ok)}
+.status{font-size:12px;font-weight:500;border-radius:999px;padding:3px 10px;background:var(--warn-bg);color:var(--warn-fg)}
+.status.validated{background:var(--ok-bg);color:var(--ok-fg)}
 .status.rejected{background:var(--paper-2);color:var(--soft)}
 .lens{background:var(--paper-2);border-radius:8px;padding:14px;overflow:auto;max-height:62vh;touch-action:none}
 .lens img{display:block;width:100%;max-height:200px;object-fit:contain;margin:auto;user-select:none}
@@ -51,7 +55,7 @@ select,input{font:inherit;color:var(--ink);background:var(--field);border:1px so
 .lens.dragging{cursor:grabbing}
 .tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin:12px 0 0;font-size:13px;color:var(--soft)}
 .tools label{display:flex;align-items:center;gap:8px}
-.tools input[type=range]{width:110px;accent-color:var(--rust);padding:0;border:0;background:transparent}
+.tools input[type=range]{width:110px;accent-color:var(--rust-text);padding:0;border:0;background:transparent}
 .tools output{min-width:40px;font-variant-numeric:tabular-nums;color:var(--ink)}
 .tools .switches{display:flex;flex-wrap:wrap;gap:6px}
 .toggle{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--edge);padding:6px 12px;font-size:13px}
@@ -64,37 +68,63 @@ select,input{font:inherit;color:var(--ink);background:var(--field);border:1px so
 .reading{font:21px/1.45 var(--serif);white-space:pre-wrap;word-break:break-word}
 .reading.model{color:var(--soft)}
 .reading.note{font-style:italic;color:var(--muted);font-size:17px}
-.reading .differs{text-decoration:underline dotted var(--rust);text-decoration-thickness:2px;text-underline-offset:5px}
+.reading .differs{text-decoration:underline dotted var(--rust-text);text-decoration-thickness:2px;text-underline-offset:5px}
 textarea{width:100%;font:22px/1.45 var(--serif);color:var(--ink);background:var(--field);border:0;border-bottom:2px solid var(--ink);border-radius:0;padding:4px 2px;resize:none;overflow:hidden;min-height:44px}
-textarea:focus-visible{outline:none;border-bottom-color:var(--rust);background:#fff}
+textarea:focus-visible{outline:none;border-bottom-color:var(--rust-text);background:var(--field-focus)}
 .hint{font-size:13px;color:var(--muted);margin:6px 0 0}
 .actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:18px}
 .keys{margin-left:auto;font-size:12px;color:var(--muted)}
 kbd{font:500 11px var(--sans);border:1px solid var(--edge);border-bottom-width:2px;border-radius:4px;padding:1px 5px;background:var(--field);color:var(--soft)}
-#message{margin:0 0 14px;padding:10px 14px;border-radius:6px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--rust);min-height:44px}
-#message.error{background:#f8e3da;border-color:#e7b9a6;border-left-color:var(--rust-dark);color:#6b2412}
+#message{margin:0 0 14px;padding:10px 14px;border-radius:6px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--rust-text);min-height:44px}
+#message.error{background:var(--err-bg);border-color:var(--err-border);border-left-color:var(--rust-dark);color:var(--err-fg)}
 #message.ok{border-left-color:var(--ok)}
 #message:empty{display:none}
 aside{display:flex;flex-direction:column;gap:14px}
 .mini{position:relative;background:var(--paper-2);border-radius:8px;overflow:hidden;line-height:0}
 .mini img{width:100%;display:block}
-.mini .mark{position:absolute;border:2px solid var(--rust);background:#9a3b2226;border-radius:2px}
+.mini .mark{position:absolute;border:2px solid var(--rust-text);background:var(--mark-fill);border-radius:2px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:13px;color:var(--soft)}
 .card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:8px 0 0}
 .card dt{color:var(--muted)}
 .card dd{margin:0;color:var(--ink);word-break:break-word}
-.card a{color:var(--rust)}
+.card a{color:var(--rust-text)}
 summary{cursor:pointer;font-weight:600;color:var(--soft)}
 .empty{padding:60px 20px;text-align:center;color:var(--muted);font:italic 19px/1.4 var(--serif)}
+.under{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:6px;min-height:30px}
+.under .hint{margin:0}
+.small{padding:5px 12px;font-size:13px}
+.glyphs{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-top:8px;padding:12px 14px;background:var(--field);border:1px solid var(--line);border-radius:8px}
+.glyphs .group{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.glyphs .gl{font-size:12px;color:var(--muted);margin-right:2px}
+.glyph{background:var(--field);color:var(--ink);box-shadow:inset 0 0 0 1px var(--edge);padding:3px 0;min-width:34px;font:20px/1.2 var(--serif);border-radius:5px}
+.glyph:hover:not(:disabled){background:var(--paper-2)}
+.glyphs details{flex-basis:100%}
+.glyphs details summary{font-size:12px;font-weight:500}
+.glyphs details .group{margin-top:6px}
+#supMode{font-size:12px;border-radius:999px;padding:2px 10px;background:var(--ink);color:var(--paper)}
+.blindnote{background:var(--note-bg);border-left:3px solid var(--ink);border-radius:0;padding:8px 12px;color:var(--soft)}
+body.blind .sheet{box-shadow:inset 0 0 0 2px var(--ink)}
+.card h3{font:600 17px/1.2 var(--serif);margin:0 0 6px;color:var(--ink)}
+.more summary{font-weight:500;font-size:13px}
+.more .section{border-top:1px solid var(--line);margin-top:10px;padding-top:10px}
+.more h4{font:600 13px var(--sans);margin:0 0 4px;color:var(--soft)}
+#keysList{margin:10px 0 0}
+.card .big{font:600 22px/1.2 var(--serif);color:var(--ink)}
+.card label.check{display:flex;gap:6px;align-items:center;margin-top:8px}
+.agreement{margin-top:8px;display:flex;flex-direction:column;gap:8px;max-height:340px;overflow:auto}
+.agreement .item{border-top:1px solid var(--line);padding-top:6px}
+.agreement .reading{font-size:16px}
 @media(max-width:980px){.desk{grid-template-columns:1fr}main{padding:14px}header{padding:12px 16px}.row{grid-template-columns:1fr;gap:4px}.keys{margin-left:0}.progress-text{margin-left:0}}
 </style>
 </head>
 <body>
-<header><h1>PaleographIA <span>modo leitura</span></h1><nav aria-label="Outras vistas"><a href="/">Editor completo</a><a id="folioTextLink" href="/folio-texto" target="_blank" rel="noopener">Texto do fólio</a></nav></header>
+<header><h1>PaleographIA <span>modo leitura</span></h1><nav aria-label="Outras vistas"><a href="/">Editor completo</a><a id="folioTextLink" href="/folio-texto" target="_blank" rel="noopener">Texto do fólio</a><a id="pageXmlLink" href="#" download>Exportar PAGE XML</a><button type="button" id="themeToggle" class="theme-toggle">Tema: automático</button></nav></header>
 <main>
 <div class="top">
   <label>Fólio<select id="pages" aria-label="Selecionar fólio"></select></label>
   <label>Revisor<input id="reviewer" autocomplete="name" placeholder="Seu nome"></label>
+  <label>Ordem<select id="queue"><option value="leitura">Ordem de leitura</option><option value="discordancia">Maior discordância primeiro</option></select></label>
+  <button type="button" class="toggle" id="blind" aria-pressed="false" title="Esconde a sugestão do modelo e a edição; a leitura vai para um registro separado">Às cegas</button>
   <span id="progress" class="progress-text" role="status"></span>
 </div>
 <div id="ruler" class="ruler" role="group" aria-label="Linhas do fólio"></div>
@@ -103,7 +133,7 @@ summary{cursor:pointer;font-weight:600;color:var(--soft)}
   <section class="sheet" id="sheet" hidden>
     <div class="where"><h2 id="lineTitle">Linha</h2><span id="lineStatus" class="status"></span></div>
     <div class="lens" id="lens"><img id="crop" alt="Recorte da linha atual no manuscrito" draggable="false"></div>
-    <div class="tools" role="group" aria-label="Ajustes de visualização do recorte">
+    <div class="tools" role="group" aria-label="Ajustes de visualização do recorte" title="Os ajustes só mudam o que você vê; a imagem guardada não é alterada. Com ampliação, arraste o recorte para mover.">
       <label title="Alt+= amplia, Alt+- reduz">Ampliação <input type="range" id="zoom" min="1" max="4" step="0.25" value="1"><output id="zoomOut" for="zoom">1×</output></label>
       <label>Contraste <input type="range" id="contrast" min="50" max="300" step="10" value="100"><output id="contrastOut" for="contrast">100%</output></label>
       <label title="Com Preto e branco ligado, o brilho move o limiar entre tinta e papel">Brilho <input type="range" id="brightness" min="50" max="200" step="10" value="100"><output id="brightnessOut" for="brightness">100%</output></label>
@@ -111,31 +141,49 @@ summary{cursor:pointer;font-weight:600;color:var(--soft)}
         <button type="button" class="toggle" id="invert" aria-pressed="false" title="Alt+N">Negativo</button>
         <button type="button" class="toggle" id="gray" aria-pressed="false">Tons de cinza</button>
         <button type="button" class="toggle" id="threshold" aria-pressed="false">Preto e branco</button>
+        <button type="button" class="toggle" id="focus" aria-pressed="false" title="Alt+F: esmaece as linhas vizinhas, sem apagar nada">Foco na linha</button>
         <button type="button" class="ghost" id="resetLens" title="Alt+0">Restaurar</button>
       </div>
     </div>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="limiar" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="discrete" tableValues="0 1"/><feFuncG type="discrete" tableValues="0 1"/><feFuncB type="discrete" tableValues="0 1"/></feComponentTransfer></filter></svg>
-    <p class="hint">Os ajustes só mudam o que você vê; a imagem guardada não é alterada. Com ampliação, arraste o recorte para mover.</p>
     <div class="interlinear">
       <div class="row" id="modelRow"><span class="label">Leitura do modelo</span><div id="model" class="reading model"></div></div>
       <div class="row" id="editionRow" hidden><span class="label">Edição publicada</span><div id="edition" class="reading model"></div></div>
       <div class="row"><label class="label mine" for="mine">Sua leitura</label><div>
         <textarea id="mine" rows="1" spellcheck="false" autocorrect="off" autocapitalize="off" autocomplete="off" data-gramm="false" data-enable-grammarly="false" writingsuggestions="false" placeholder="Registre só o que você conferiu na imagem."></textarea>
-        <p id="diffHint" class="hint"></p></div></div>
+        <div class="under"><p id="diffHint" class="hint"></p>
+          <button type="button" class="ghost small" id="glyphToggle" aria-expanded="false" aria-controls="glyphs" title="Alt+P">Sinais especiais</button></div>
+        <div class="glyphs" id="glyphs" role="toolbar" aria-label="Sinais paleográficos" hidden>
+          <div class="group" id="supGlyphs"><span class="gl">Sobrescritas</span></div>
+          <div class="group" id="markGlyphs"><span class="gl">Sinais</span></div>
+          <div class="group"><span id="supMode" hidden>Sobrescrito ligado</span><span class="gl"><kbd>Alt</kbd>+<kbd>S</kbd>: próximas letras sobrescritas</span></div>
+          <details><summary>Sinais medievais</summary><div class="group" id="medievalGlyphs"></div>
+            <p class="hint">Use só com convenção registrada na política de transcrição: sinais sem representação Unicode inequívoca exigem convenção humana antes de validar.</p></details>
+        </div></div></div>
     </div>
     <div class="actions">
-      <button id="validate" title="Ctrl+Enter">Validar e seguir</button>
+      <button id="validate" title="Ctrl+Enter. Validar significa: conferi esta leitura na imagem e a aceito como transcrição paleográfica; recorte e ordem não mudam aqui.">Validar e seguir</button>
       <button id="saveDraft" class="secondary">Salvar rascunho</button>
       <button id="useModel" class="ghost">Começar pela leitura do modelo</button>
-      <span class="keys"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> valida · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha · <kbd>Alt</kbd>+<kbd>=</kbd>/<kbd>-</kbd> amplia · <kbd>Alt</kbd>+<kbd>N</kbd> negativo</span>
+      <button type="button" class="ghost small keys" id="keysToggle" aria-expanded="false" aria-controls="keysList">Atalhos</button>
     </div>
-    <p class="hint">Validar significa: conferi esta leitura na imagem e a aceito como transcrição paleográfica. O recorte e a ordem de leitura não mudam aqui.</p>
+    <p class="hint" id="keysList" hidden><kbd>Ctrl</kbd>+<kbd>Enter</kbd> valida · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha · <kbd>Alt</kbd>+<kbd>P</kbd> sinais especiais · <kbd>Alt</kbd>+<kbd>S</kbd> sobrescrito · <kbd>Alt</kbd>+<kbd>=</kbd>/<kbd>-</kbd> amplia · <kbd>Alt</kbd>+<kbd>N</kbd> negativo · <kbd>Alt</kbd>+<kbd>F</kbd> foco · <kbd>Alt</kbd>+<kbd>0</kbd> restaura a imagem</p>
+    <p class="hint blindnote" id="blindNote" hidden>Às cegas: a sugestão do modelo e a edição estão escondidas e o campo começa vazio. Sua leitura vai para um registro separado e não altera a transcrição oficial da linha.</p>
   </section>
   <p id="empty" class="empty">Selecione um fólio com linhas para começar.</p>
   <aside id="side" hidden>
     <div class="mini" id="mini"><img id="pageImage" alt="Página inteira, com a linha atual marcada"><div class="mark" id="mark"></div></div>
-    <div class="card"><details><summary>Detalhes da linha</summary><dl id="details"></dl></details>
-      <p class="hint">Para ajustar o recorte, a região ou a proveniência, use o <a href="/">editor completo</a>.</p></div>
+    <div class="card" id="blindCard" hidden><h3>Concordância às cegas</h3>
+      <p class="hint" id="blindCount">Nenhuma leitura às cegas neste fólio.</p>
+      <button type="button" class="secondary" id="showAgreement">Ver concordância</button>
+      <div id="agreement" class="agreement" aria-live="polite"></div></div>
+    <details class="card more"><summary>Mais sobre esta linha</summary>
+      <dl id="details"></dl>
+      <p class="hint">Recorte, região e proveniência se ajustam no <a href="/">editor completo</a>.</p>
+      <div class="section"><h4>Tempo de conferência</h4>
+        <div id="timingStats" class="hint">Ainda sem medições.</div>
+        <label class="check"><input type="checkbox" id="timingOn" checked> Medir o tempo desta tela (sem nome nem texto)</label></div>
+    </details>
   </aside>
 </div>
 </main>
@@ -143,7 +191,9 @@ summary{cursor:pointer;font-weight:600;color:var(--soft)}
 'use strict';
 const $ = id => document.getElementById(id);
 let state = null, pageId = null, index = 0;
-const drafts = new Map();
+const drafts = new Map(), blindDrafts = new Map();
+let blind = false, blindStatus = {}, queue = 'leitura';
+try { blind = localStorage.getItem('paleographia.cegas') === '1'; queue = localStorage.getItem('paleographia.fila') || 'leitura'; } catch { /* optional */ }
 const statusLabel = {validated: 'Validada', rejected: 'Rejeitada', pending_review: 'Pendente'};
 
 function message(text, kind = '') { $('message').textContent = text; $('message').className = kind; }
@@ -160,6 +210,38 @@ const pageLines = () => state.lines.filter(l => l.page_id === pageId)
 const current = () => pageLines()[index];
 const prediction = id => state.predictions.filter(p => p.line_id === id).at(-1);
 
+// Discordância modelo × edição: distância de edição de caracteres ÷ tamanho da edição (null sem os dois textos).
+function editDistance(a, b) {
+  const x = Array.from(a), y = Array.from(b); let prev = Array.from({length: y.length + 1}, (_, j) => j);
+  for (let i = 1; i <= x.length; i++) {
+    const row = [i];
+    for (let j = 1; j <= y.length; j++) row[j] = Math.min(prev[j] + 1, row[j - 1] + 1, prev[j - 1] + (x[i - 1] === y[j - 1] ? 0 : 1));
+    prev = row;
+  }
+  return prev[y.length];
+}
+function discordance(model, edition) {
+  const a = (model || '').normalize('NFC').trim().replace(/\s+/g, ' '), b = (edition || '').normalize('NFC').trim().replace(/\s+/g, ' ');
+  return a && b ? editDistance(a, b) / Array.from(b).length : null;
+}
+function lineDiscordance(l) {
+  const p = prediction(l.line_id);
+  return p?.presentation?.status === 'candidate' ? discordance(p.presentation.text, l.published_reference?.text) : null;
+}
+const done = l => blind ? !!blindStatus[l.line_id]?.mine : l.review_status === 'validated' || l.review_status === 'rejected';
+// Próxima linha a conferir: na ordem de leitura, a primeira pendente depois da atual;
+// por discordância, a pendente em que o modelo mais se afasta da edição (sem edição, vai por último).
+function nextIndex(ls, from, order) {
+  const open = ls.map((l, i) => ({l, i})).filter(({l, i}) => i !== from && !done(l));
+  if (!open.length) return -1;
+  if (order === 'discordancia') {
+    open.sort((a, b) => (lineDiscordance(b.l) ?? -1) - (lineDiscordance(a.l) ?? -1) || a.i - b.i);
+    return open[0].i;
+  }
+  return (open.find(({i}) => i > from) || open[0]).i;
+}
+const percent = v => v == null ? '–' : `${(100 * v).toFixed(1).replace('.', ',')}%`;
+
 // Words of the model reading that are not in the human reading (longest common subsequence).
 function differingWords(model, mine) {
   const a = model.split(/\s+/).filter(Boolean), b = mine.split(/\s+/).filter(Boolean);
@@ -174,10 +256,10 @@ function differingWords(model, mine) {
 }
 function renderModel() {
   const l = current(), pred = prediction(l.line_id), box = $('model');
-  const enabled = state.presentation_policy?.automatic_transcription_enabled;
+  const enabled = state.presentation_policy?.automatic_transcription_enabled && !blind;
   $('modelRow').hidden = !enabled; $('useModel').hidden = true; $('diffHint').textContent = '';
-  if (!enabled) return;
   box.replaceChildren(); box.className = 'reading model';
+  if (!enabled) return;
   if (!pred) { box.className = 'reading note'; box.textContent = 'O reconhecedor ainda não leu esta linha.'; return; }
   if (pred.presentation?.status !== 'candidate') { box.className = 'reading note'; box.textContent = pred.presentation?.text || 'Leitura indisponível.'; return; }
   const text = pred.presentation.text, mine = $('mine').value.trim();
@@ -190,22 +272,29 @@ function renderModel() {
     else box.append(w.word);
   });
   const n = words.filter(w => w.differs).length;
-  $('diffHint').textContent = n ? `${n} palavra(s) do modelo diferem da sua leitura (sublinhado pontilhado).` : 'Sua leitura coincide com a do modelo palavra por palavra. Confira mesmo assim na imagem.';
+  $('diffHint').textContent = n ? `${n} palavra${n === 1 ? '' : 's'} diferem do modelo` : 'Igual ao modelo: confira mesmo assim na imagem';
 }
 function fit() { const t = $('mine'); t.style.height = 'auto'; t.style.height = t.scrollHeight + 'px'; }
 function remember() { const l = current(); if (!l) return;
-  const value = $('mine').value; if (value === (l.text_diplomatic || '')) drafts.delete(l.line_id); else drafts.set(l.line_id, value); }
+  const value = $('mine').value;
+  if (blind) { if (value) blindDrafts.set(l.line_id, value); else blindDrafts.delete(l.line_id); return; }
+  if (value === (l.text_diplomatic || '')) drafts.delete(l.line_id); else drafts.set(l.line_id, value); }
 function renderRuler() {
   const ls = pageLines(); $('ruler').replaceChildren();
   ls.forEach((l, i) => {
     const b = document.createElement('button'); b.type = 'button';
-    b.className = [l.review_status === 'validated' ? 'validated' : l.review_status === 'rejected' ? 'rejected' : '', i === index ? 'current' : ''].join(' ').trim();
-    const label = `Linha ${i + 1}: ${statusLabel[l.review_status] || 'pendente'}${drafts.has(l.line_id) ? ', com rascunho local' : ''}`;
+    const state_ = blind ? (blindStatus[l.line_id]?.mine ? 'validated' : '') : l.review_status === 'validated' ? 'validated' : l.review_status === 'rejected' ? 'rejected' : '';
+    b.className = [state_, i === index ? 'current' : ''].join(' ').trim();
+    const what = blind ? (blindStatus[l.line_id]?.mine ? 'lida por você às cegas' : 'ainda não lida por você às cegas') : (statusLabel[l.review_status] || 'pendente');
+    const extra = !blind && queue === 'discordancia' ? `, discordância ${percent(lineDiscordance(l))}` : '';
+    const label = `Linha ${i + 1}: ${what}${extra}${(blind ? blindDrafts : drafts).has(l.line_id) ? ', com rascunho local' : ''}`;
     b.title = label; b.setAttribute('aria-label', label); if (i === index) b.setAttribute('aria-current', 'step');
     b.onclick = () => go(i); $('ruler').append(b);
   });
-  const done = ls.filter(l => l.review_status === 'validated').length;
-  $('progress').textContent = ls.length ? `${done} de ${ls.length} linhas validadas` : '';
+  const count = ls.filter(done).length;
+  $('progress').textContent = !ls.length ? '' : blind ? `Você leu ${count} de ${ls.length} linhas às cegas` : `${ls.filter(l => l.review_status === 'validated').length} de ${ls.length} linhas validadas`;
+  const readers = Object.values(blindStatus);
+  $('blindCount').textContent = readers.length ? `${readers.length} linha(s) com leitura às cegas; ${readers.filter(r => r.count >= 2).length} com duas ou mais.` : 'Nenhuma leitura às cegas neste fólio.';
 }
 function render() {
   const ls = pageLines(), page = state.pages.find(p => p.page_id === pageId);
@@ -215,11 +304,16 @@ function render() {
   index = Math.min(index, ls.length - 1);
   const l = current();
   $('lineTitle').textContent = `Linha ${index + 1} de ${ls.length}` + (l.region_id && l.region_id !== 'page' ? ` · ${l.region_id}` : '');
-  $('lineStatus').textContent = statusLabel[l.review_status] || 'Pendente'; $('lineStatus').className = 'status ' + l.review_status;
+  if (blind) { const b = blindStatus[l.line_id]; $('lineStatus').textContent = b?.mine ? `Lida por você · ${b.count} leitura(s)` : `Às cegas · ${b?.count || 0} leitura(s)`; $('lineStatus').className = 'status' + (b?.mine ? ' validated' : ''); }
+  else { $('lineStatus').textContent = statusLabel[l.review_status] || 'Pendente'; $('lineStatus').className = 'status ' + l.review_status; }
+  document.body.classList.toggle('blind', blind); $('blindNote').hidden = !blind; $('blindCard').hidden = !blind;
+  $('validate').textContent = blind ? 'Registrar leitura às cegas' : 'Validar e seguir'; $('saveDraft').hidden = blind;
+  $('queue').disabled = blind; $('queue').value = blind ? 'leitura' : queue;
+  if (l.line_id !== timer.line) startTimer(l.line_id);
   $('crop').src = `/lines/${encodeURIComponent(pageId)}/${encodeURIComponent(l.line_id)}.png?v=${state.revision}`;
-  $('mine').value = drafts.has(l.line_id) ? drafts.get(l.line_id) : (l.text_diplomatic || ''); fit();
+  $('mine').value = blind ? (blindDrafts.get(l.line_id) || '') : drafts.has(l.line_id) ? drafts.get(l.line_id) : (l.text_diplomatic || ''); fit();
   const ref = l.published_reference;
-  $('editionRow').hidden = !ref?.text; $('edition').textContent = ref?.text || '';
+  $('editionRow').hidden = blind || !ref?.text; $('edition').textContent = blind ? '' : ref?.text || '';
   renderModel();
   if (page?.width && page?.height) {
     const [x1, y1, x2, y2] = l.bbox_xyxy, m = $('mark').style;
@@ -227,7 +321,8 @@ function render() {
     m.width = (100 * (x2 - x1) / page.width) + '%'; m.height = (100 * (y2 - y1) / page.height) + '%';
   }
   const rows = [['Ordem de leitura', l.reading_order], ['Região', l.region_id], ['Revisor registrado', l.reviewer || 'não informado'],
-    ['Revisado em', l.reviewed_at || 'nunca'], ['Recorte (px)', l.bbox_xyxy.join(', ')], ['Recorte conferido', l.geometry_status === 'validated' ? 'sim' : 'não']];
+    ['Revisado em', l.reviewed_at || 'nunca'], ['Recorte (px)', l.bbox_xyxy.join(', ')], ['Recorte conferido', l.geometry_status === 'validated' ? 'sim' : 'não'],
+    ...(blind ? [] : [['Discordância modelo × edição', percent(lineDiscordance(l))]])];
   $('details').replaceChildren(...rows.flatMap(([k, v]) => { const dt = document.createElement('dt'), dd = document.createElement('dd'); dt.textContent = k; dd.textContent = String(v); return [dt, dd]; }));
 }
 function go(i) { remember(); const n = pageLines().length; if (!n) return; index = Math.max(0, Math.min(n - 1, i)); render(); $('mine').focus(); }
@@ -240,6 +335,8 @@ async function load(keepLine) {
   }
   $('pages').value = pageId || '';
   $('pageImage').src = pageId ? `/api/pages/${encodeURIComponent(pageId)}/image` : '';
+  $('pageXmlLink').href = pageId ? `/api/pages/${encodeURIComponent(pageId)}/pagexml` : '#';
+  await loadBlind();
   if (keepLine) { const i = pageLines().findIndex(l => l.line_id === keepLine); if (i >= 0) index = i; }
   render();
 }
@@ -248,6 +345,7 @@ async function save(validate) {
   const l = current(); if (!l || busy) return;
   const n = index + 1;
   const text = $('mine').value.trim(), reviewer = $('reviewer').value.trim();
+  if (blind) return saveBlind(l, text, reviewer);
   if (validate && !text) return message('Escreva a leitura conferida antes de validar.', 'error');
   if (validate && !reviewer) { $('reviewer').focus(); return message('Informe o nome do revisor para validar.', 'error'); }
   if (!validate && l.review_status === 'validated' && text === (l.text_diplomatic || '')) return message('Nada mudou nesta linha.');
@@ -257,9 +355,10 @@ async function save(validate) {
   busy = true; document.querySelectorAll('button').forEach(b => b.disabled = true);
   try {
     await request('/api/lines/' + encodeURIComponent(l.line_id), 'PATCH', {changes, revision: state.revision});
+    recordTime(l, validate ? 'validada' : 'rascunho', text);
     drafts.delete(l.line_id); await load(l.line_id);
     if (validate) {
-      const ls = pageLines(), next = ls.findIndex((x, i) => i > index && x.review_status !== 'validated' && x.review_status !== 'rejected');
+      const ls = pageLines(), next = nextIndex(ls, index, queue);
       message(next >= 0 ? `Linha ${n} validada. Seguindo para a próxima pendente.` : `Linha ${n} validada. Não há mais linhas pendentes depois desta.`, 'ok');
       if (next >= 0) go(next);
     } else message(`Rascunho da linha ${n} salvo. A linha continua pendente.`, 'ok');
@@ -268,8 +367,125 @@ async function save(validate) {
     message(e.status === 409 ? 'Outra pessoa salvou enquanto você lia. Seu texto foi mantido aqui; recarregue o fólio, confira e salve de novo.' : e.message, 'error');
   } finally { busy = false; document.querySelectorAll('button').forEach(b => b.disabled = false); }
 }
+// ---------- Modo às cegas: leituras independentes num registro separado ----------
+async function loadBlind() {
+  if (!pageId) { blindStatus = {}; return; }
+  try { blindStatus = await request(`/api/conferencia/cegas?page_id=${encodeURIComponent(pageId)}&revisor=${encodeURIComponent($('reviewer').value.trim())}`); }
+  catch { blindStatus = {}; }
+}
+async function saveBlind(l, text, reviewer) {
+  if (!text) return message('Escreva a leitura antes de registrar.', 'error');
+  if (!reviewer) { $('reviewer').focus(); return message('Informe o nome do revisor para registrar a leitura às cegas.', 'error'); }
+  busy = true; document.querySelectorAll('button').forEach(b => b.disabled = true);
+  try {
+    await request('/api/conferencia/cegas', 'POST', {line_id: l.line_id, reviewer, text});
+    recordTime(l, 'cega', text); blindDrafts.delete(l.line_id); await loadBlind();
+    const n = index + 1, next = nextIndex(pageLines(), index, 'leitura');
+    message(next >= 0 ? `Leitura às cegas da linha ${n} registrada. Seguindo para a próxima.` : `Leitura às cegas da linha ${n} registrada. Você leu todas as linhas deste fólio.`, 'ok');
+    if (next >= 0) go(next); else render();
+  } catch (e) { remember(); message(e.message, 'error'); }
+  finally { busy = false; document.querySelectorAll('button').forEach(b => b.disabled = false); $('queue').disabled = blind; }
+}
+function setBlind(on) {
+  remember(); blind = on; $('blind').setAttribute('aria-pressed', String(blind));
+  try { localStorage.setItem('paleographia.cegas', blind ? '1' : '0'); } catch { /* optional */ }
+  $('agreement').replaceChildren(); agreementArmed = false; $('showAgreement').textContent = 'Ver concordância';
+  message(blind ? 'Modo às cegas ligado: sugestão do modelo e edição escondidas.' : 'Modo às cegas desligado.');
+  render();
+}
+let agreementArmed = false;
+async function showAgreement() {
+  if (!agreementArmed) {
+    agreementArmed = true; $('showAgreement').textContent = 'Confirmar: mostrar as leituras de todos';
+    $('agreement').replaceChildren(Object.assign(document.createElement('p'), {className: 'hint', textContent: 'Isto revela as leituras dos outros revisores. Só confirme se já terminou de transcrever às cegas.'}));
+    return;
+  }
+  const data = await request(`/api/conferencia/concordancia?page_id=${encodeURIComponent(pageId)}`);
+  const box = $('agreement'); box.replaceChildren();
+  const head = document.createElement('p'); head.className = 'big';
+  head.textContent = data.pairs ? `${percent(data.rate)} entre revisores` : 'Ainda não há linhas com duas leituras.'; box.append(head);
+  if (data.pairs) box.append(Object.assign(document.createElement('p'), {className: 'hint', textContent: `${data.pairs} par(es) de leituras. Método: ${data.method}. É o teto humano para comparar com o CER do modelo.`}));
+  const position = id => pageLines().findIndex(l => l.line_id === id) + 1;
+  for (const item of data.lines.sort((a, b) => position(a.line_id) - position(b.line_id))) {
+    const div = document.createElement('div'); div.className = 'item';
+    div.append(Object.assign(document.createElement('strong'), {textContent: `Linha ${position(item.line_id)}: ${item.pairs.map(p => percent(p.rate)).join(', ')}`}));
+    for (const [who, text] of Object.entries(item.readings)) {
+      const r = document.createElement('div'); r.className = 'reading';
+      r.append(Object.assign(document.createElement('span'), {className: 'hint', textContent: `${who}: `}), text); div.append(r);
+    }
+    box.append(div);
+  }
+  agreementArmed = false; $('showAgreement').textContent = 'Atualizar concordância';
+}
+
+// ---------- Tempo de conferência: só tempo ativo, sem nome nem texto ----------
+const timer = {line: null, active: 0, last: 0};
+let timingOn = true;
+try { timingOn = localStorage.getItem('paleographia.tempo') !== '0'; } catch { /* optional */ }
+function startTimer(lineId) { timer.line = lineId; timer.active = 0; timer.last = Date.now(); }
+for (const type of ['keydown', 'pointerdown', 'input', 'wheel']) document.addEventListener(type, () => { timer.last = Date.now(); }, {passive: true});
+setInterval(() => { if (document.visibilityState === 'visible' && Date.now() - timer.last < 60000) timer.active += 1; }, 1000);
+function recordTime(l, action, text) {
+  const seconds = timer.active;
+  startTimer(l.line_id);
+  if (!timingOn || seconds < 1) return;
+  const pred = prediction(l.line_id);
+  const shown = !blind && state.presentation_policy?.automatic_transcription_enabled && pred?.presentation?.status === 'candidate';
+  request('/api/conferencia/tempo', 'POST', {line_id: l.line_id, seconds: Math.min(seconds, 3600), condition: shown ? 'com_sugestao' : 'sem_sugestao',
+    action, chars: Math.min(Array.from(text).length, 2000)}).then(loadTiming).catch(() => { /* medição é opcional */ });
+}
+async function loadTiming() {
+  try {
+    const s = await request('/api/conferencia/tempo'), fmt = v => v == null ? '–' : `${Math.round(v)} s`;
+    const a = s.com_sugestao, b = s.sem_sugestao;
+    $('timingStats').textContent = a.lines || b.lines
+      ? `Mediana por linha: com sugestão ${fmt(a.median_seconds)} (${a.lines} linha${a.lines === 1 ? '' : 's'}); sem sugestão ${fmt(b.median_seconds)} (${b.lines} linha${b.lines === 1 ? '' : 's'}).`
+      : 'Ainda sem medições.';
+  } catch { /* optional */ }
+}
+
+// ---------- Teclado de sinais paleográficos ----------
+const SUP = {a: 'ᵃ', b: 'ᵇ', c: 'ᶜ', d: 'ᵈ', e: 'ᵉ', g: 'ᵍ', h: 'ʰ', i: 'ⁱ', l: 'ˡ', m: 'ᵐ', n: 'ⁿ', o: 'ᵒ', p: 'ᵖ', r: 'ʳ', s: 'ˢ', t: 'ᵗ', u: 'ᵘ', v: 'ᵛ', x: 'ˣ', z: 'ᶻ'};
+const MARKS = [['\u0303', '◌̃', 'til sobre a letra anterior'], ['\u0304', '◌̄', 'mácron sobre a letra anterior'], ['ſ', 'ſ', 's longo']];
+const MEDIEVAL = [['ꝑ', 'p cortado (per/par)'], ['ꝓ', 'p com floreio (pro)'], ['ꝗ', 'q cortado (que)'], ['ꝯ', 'con/us'], ['⁊', 'et tironiano'], ['ꝰ', 'us sobrescrito']];
+let supMode = false;
+function insertText(text) {
+  const t = $('mine'), start = t.selectionStart ?? t.value.length, end = t.selectionEnd ?? t.value.length;
+  t.setRangeText(text, start, end, 'end'); t.dispatchEvent(new Event('input')); t.focus();
+}
+function glyphButton(char, label, title) {
+  const b = document.createElement('button'); b.type = 'button'; b.className = 'glyph'; b.textContent = label;
+  b.title = `${title} (U+${char.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')})`; b.setAttribute('aria-label', title);
+  b.addEventListener('mousedown', e => e.preventDefault()); b.onclick = () => insertText(char); return b;
+}
+for (const [letter, char] of Object.entries(SUP).filter(([k]) => 'aeorsdtmnucp'.includes(k))) $('supGlyphs').append(glyphButton(char, char, `${letter} sobrescrito`));
+for (const [char, label, title] of MARKS) $('markGlyphs').append(glyphButton(char, label, title));
+for (const [char, title] of MEDIEVAL) $('medievalGlyphs').append(glyphButton(char, char, title));
+function setSupMode(on) { supMode = on; $('supMode').hidden = !on; }
+function setGlyphs(open) {
+  $('glyphs').hidden = !open; $('glyphToggle').setAttribute('aria-expanded', String(open));
+  $('glyphToggle').textContent = open ? 'Fechar sinais' : 'Sinais especiais';
+}
+$('glyphToggle').addEventListener('mousedown', e => e.preventDefault());
+$('glyphToggle').onclick = () => { setGlyphs($('glyphs').hidden); $('mine').focus(); };
+$('keysToggle').onclick = () => { const open = $('keysList').hidden; $('keysList').hidden = !open; $('keysToggle').setAttribute('aria-expanded', String(open)); };
+// beforeinput pega qualquer entrada de texto (teclado físico, de celular, colar, acentuação).
+$('mine').addEventListener('beforeinput', e => {
+  if (!supMode || e.inputType !== 'insertText' || !e.data) return;
+  // Até o primeiro espaço, as minúsculas viram sobrescritas (a maiúscula de "Nˢᵃ" continua normal);
+  // o espaço desliga o modo e o resto entra como foi digitado ou colado.
+  const space = e.data.search(/\s/), head = space < 0 ? e.data : e.data.slice(0, space), rest = space < 0 ? '' : e.data.slice(space);
+  const mapped = Array.from(head).map(c => (c === c.toLowerCase() && SUP[c]) || c).join('');
+  if (rest) setSupMode(false);
+  if (mapped !== head) { e.preventDefault(); insertText(mapped + rest); }
+});
+$('mine').addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  if (supMode) { e.preventDefault(); setSupMode(false); } else if (!$('glyphs').hidden) { e.preventDefault(); setGlyphs(false); }
+});
+
 // Visualização do recorte: só CSS sobre a imagem exibida; nada é gravado no servidor.
-const lensDefaults = {zoom: 1, contrast: 100, brightness: 100, invert: false, gray: false, threshold: false};
+const lensDefaults = {zoom: 1, contrast: 100, brightness: 100, invert: false, gray: false, threshold: false, focus: false};
 const lens = {...lensDefaults};
 try { Object.assign(lens, JSON.parse(localStorage.getItem('paleographia.lente') || '{}')); } catch { /* optional */ }
 function lensFilter(s) {
@@ -281,15 +497,63 @@ function lensFilter(s) {
   if (s.invert) parts.push('invert(1)');
   return parts.join(' ') || 'none';
 }
+// Faixa da linha: linhas de pixels com mais tinta que o papel, a partir do pico do perfil horizontal.
+// Devolve frações da altura {top, bottom}, ou null se não houver tinta suficiente.
+function inkBand(rows) {
+  const n = rows.length; if (!n) return null;
+  const w = Math.max(1, Math.round(n * 0.04));
+  const smooth = rows.map((_, i) => { let s = 0, c = 0; for (let k = i - w; k <= i + w; k++) if (k >= 0 && k < n) { s += rows[k]; c++; } return s / c; });
+  const max = Math.max(...smooth); if (max <= 0) return null;
+  const cut = max * 0.35, mid = (n - 1) / 2;
+  // Faixas contínuas acima do corte. A segmentação centraliza a linha; uma faixa encostada na borda
+  // do recorte costuma ser a linha vizinha cortada, então perde peso.
+  let best = null;
+  for (let i = 0; i < n;) {
+    if (smooth[i] < cut) { i++; continue; }
+    let j = i, mass = 0, moment = 0;
+    while (j < n && smooth[j] >= cut) { mass += smooth[j]; moment += smooth[j] * j; j++; }
+    const center = moment / mass, edge = i === 0 || j === n;
+    const score = mass * (1 - 0.7 * Math.abs(center - mid) / Math.max(1, mid)) * (edge ? 0.4 : 1);
+    if (!best || score > best.score) best = {top: i, bottom: j - 1, score};
+    i = j;
+  }
+  const pad = Math.max(1, Math.round((best.bottom - best.top + 1) * 0.35));
+  return {top: Math.max(0, best.top - pad) / n, bottom: Math.min(n, best.bottom + 1 + pad) / n};
+}
+// Perfil de tinta do recorte: conta, por linha de pixels, os pontos bem mais escuros que o papel (mediana).
+function inkRows(img) {
+  const c = document.createElement('canvas'); c.width = img.naturalWidth; c.height = img.naturalHeight;
+  if (!c.width || !c.height) return [];
+  const g = c.getContext('2d', {willReadFrequently: true}); g.drawImage(img, 0, 0);
+  const data = g.getImageData(0, 0, c.width, c.height).data, lum = new Uint8Array(c.width * c.height);
+  for (let i = 0, j = 0; i < data.length; i += 4, j++) lum[j] = (data[i] * 299 + data[i + 1] * 587 + data[i + 2] * 114) / 1000;
+  const sorted = Uint8Array.from(lum).sort(), paper = sorted[Math.floor(sorted.length / 2)], ink = paper - 45;
+  const rows = new Array(c.height).fill(0);
+  for (let y = 0; y < c.height; y++) for (let x = 0; x < c.width; x++) if (lum[y * c.width + x] < ink) rows[y]++;
+  return rows;
+}
+let band = null;
+function focusMask() {
+  if (!lens.focus || !band) return '';
+  const fade = 'rgba(0,0,0,.18)', feather = 6, top = band.top * 100, bottom = band.bottom * 100;
+  return `linear-gradient(to bottom, ${fade} 0%, ${fade} ${Math.max(0, top - feather)}%, #000 ${top}%, #000 ${bottom}%, ${fade} ${Math.min(100, bottom + feather)}%, ${fade} 100%)`;
+}
+function measureBand() {
+  const img = $('crop');
+  try { band = img.complete && img.naturalWidth ? inkBand(inkRows(img)) : null; } catch { band = null; }
+  applyLens();
+}
+$('crop').addEventListener('load', measureBand);
 function applyLens() {
   const img = $('crop');
   img.style.filter = lensFilter(lens);
+  const mask = focusMask(); img.style.maskImage = img.style.webkitMaskImage = mask;
   img.style.width = lens.zoom > 1 ? `${lens.zoom * 100}%` : '';
   $('lens').classList.toggle('zoomed', lens.zoom > 1);
   $('zoom').value = lens.zoom; $('zoomOut').textContent = `${String(lens.zoom).replace('.', ',')}×`;
   $('contrast').value = lens.contrast; $('contrastOut').textContent = `${lens.contrast}%`;
   $('brightness').value = lens.brightness; $('brightnessOut').textContent = `${lens.brightness}%`;
-  for (const key of ['invert', 'gray', 'threshold']) $(key).setAttribute('aria-pressed', String(!!lens[key]));
+  for (const key of ['invert', 'gray', 'threshold', 'focus']) $(key).setAttribute('aria-pressed', String(!!lens[key]));
   try { localStorage.setItem('paleographia.lente', JSON.stringify(lens)); } catch { /* optional */ }
 }
 function setZoom(value) {
@@ -301,7 +565,7 @@ function setZoom(value) {
 $('zoom').addEventListener('input', () => setZoom(Number($('zoom').value)));
 $('contrast').addEventListener('input', () => { lens.contrast = Number($('contrast').value); applyLens(); });
 $('brightness').addEventListener('input', () => { lens.brightness = Number($('brightness').value); applyLens(); });
-for (const key of ['invert', 'gray', 'threshold']) $(key).onclick = () => { lens[key] = !lens[key]; applyLens(); };
+for (const key of ['invert', 'gray', 'threshold', 'focus']) $(key).onclick = () => { lens[key] = !lens[key]; applyLens(); };
 $('resetLens').onclick = () => { Object.assign(lens, lensDefaults); applyLens(); };
 let pan = null;
 $('lens').addEventListener('pointerdown', e => {
@@ -316,6 +580,13 @@ for (const type of ['pointerup', 'pointercancel']) $('lens').addEventListener(ty
 applyLens();
 $('mine').addEventListener('input', () => { fit(); remember(); renderModel(); renderRuler(); });
 $('validate').onclick = () => save(true);
+$('blind').onclick = () => setBlind(!blind);
+$('queue').onchange = () => { queue = $('queue').value; try { localStorage.setItem('paleographia.fila', queue); } catch { /* optional */ } render(); };
+$('showAgreement').onclick = () => showAgreement().catch(e => message(e.message, 'error'));
+$('timingOn').checked = timingOn;
+$('timingOn').onchange = () => { timingOn = $('timingOn').checked; try { localStorage.setItem('paleographia.tempo', timingOn ? '1' : '0'); } catch { /* optional */ } };
+$('reviewer').addEventListener('change', () => loadBlind().then(render));
+$('blind').setAttribute('aria-pressed', String(blind));
 $('saveDraft').onclick = () => save(false);
 $('useModel').onclick = () => { const p = prediction(current().line_id); if (p?.presentation?.status === 'candidate') { $('mine').value = p.presentation.text; fit(); remember(); renderModel(); $('mine').focus(); } };
 $('pages').onchange = () => { remember(); pageId = $('pages').value; index = 0; history.replaceState(null, '', `?page=${encodeURIComponent(pageId)}`); load(); };
@@ -329,9 +600,12 @@ document.addEventListener('keydown', e => {
   else if (e.altKey && (e.code === 'Minus' || e.code === 'NumpadSubtract')) { e.preventDefault(); setZoom(lens.zoom - 0.5); }
   else if (e.altKey && e.code === 'Digit0') { e.preventDefault(); Object.assign(lens, lensDefaults); applyLens(); }
   else if (e.altKey && e.code === 'KeyN') { e.preventDefault(); lens.invert = !lens.invert; applyLens(); }
+  else if (e.altKey && e.code === 'KeyF') { e.preventDefault(); lens.focus = !lens.focus; applyLens(); }
+  else if (e.altKey && e.code === 'KeyS') { e.preventDefault(); setSupMode(!supMode); $('mine').focus(); }
+  else if (e.altKey && e.code === 'KeyP') { e.preventDefault(); setGlyphs($('glyphs').hidden); $('mine').focus(); }
 });
 window.addEventListener('beforeunload', e => { remember(); if (drafts.size) { e.preventDefault(); e.returnValue = ''; } });
-load().catch(e => message(e.message, 'error'));
+load().then(loadTiming).catch(e => message(e.message, 'error'));
 </script>
 </body>
 </html>

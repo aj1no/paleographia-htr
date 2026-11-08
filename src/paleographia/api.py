@@ -52,6 +52,22 @@ def same_origin(origin, host):
     return parts.scheme in {"http", "https"} and bool(host) and parts.netloc.lower() == host.lower()
 
 
+class BlindReading(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    line_id: str = Field(min_length=1)
+    reviewer: str = Field(max_length=120)
+    text: str = Field(max_length=2000)
+
+
+class Timing(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    line_id: str = Field(min_length=1)
+    seconds: float
+    condition: str
+    action: str
+    chars: int
+
+
 class AddLine(BaseModel):
     bbox_xyxy: list[int] = Field(min_length=4, max_length=4)
     region_id: str = "page"
@@ -235,6 +251,51 @@ def create_app(root=None, config=None, recognizer=None):
     def reading_mode():
         # Uma linha por vez: valida só texto, revisor e status; recorte e ordem ficam no editor completo.
         return FileResponse(Path(__file__).parent/"web/leitura.html")
+
+    def known_line(line_id):
+        line = next((l for l in service.state()["lines"] if l["line_id"] == line_id), None)
+        if line is None:
+            raise KeyError(line_id)
+        return line
+
+    @app.post("/api/conferencia/cegas")
+    def blind_reading(reading: BlindReading):
+        # Registro próprio: a leitura às cegas nunca altera a transcrição oficial da linha.
+        from .conferencia import add_blind_reading
+        with service.lock:
+            return add_blind_reading(service.workspace, known_line(reading.line_id), reading.reviewer, reading.text)
+
+    @app.get("/api/conferencia/cegas")
+    def blind_lines(page_id: str, revisor: str = ""):
+        from .conferencia import blind_status
+        return blind_status(service.workspace, page_id, revisor)
+
+    @app.get("/api/conferencia/concordancia")
+    def blind_agreement(page_id: str):
+        from .conferencia import agreement
+        return agreement(service.workspace, page_id)
+
+    @app.post("/api/conferencia/tempo")
+    def conference_time(timing: Timing):
+        from .conferencia import add_timing
+        with service.lock:
+            return add_timing(service.workspace, known_line(timing.line_id), timing.seconds,
+                              timing.condition, timing.action, timing.chars)
+
+    @app.get("/api/conferencia/tempo")
+    def conference_time_summary():
+        from .conferencia import timing_summary
+        return timing_summary(service.workspace)
+
+    @app.get("/api/pages/{page_id}/pagexml")
+    def page_xml_export(page_id: str):
+        from .page_xml_export import page_xml
+        state = service.state()
+        page = next((p for p in state["pages"] if p["page_id"] == page_id), None)
+        if page is None:
+            raise KeyError(page_id)
+        return Response(page_xml(page, state["lines"]), media_type="application/xml",
+                        headers={"Content-Disposition": f'attachment; filename="{page_id}.page.xml"'})
 
     @app.get("/folio-texto")
     def folio_text_page():

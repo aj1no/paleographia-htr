@@ -48,3 +48,16 @@ def test_reading_mode_saves_only_text_status_and_reviewer(corpus):
         # Uma página aberta com a revisão antiga recebe conflito em vez de sobrescrever.
         stale = client.patch(path, json={"revision": revision, "changes": {"text_diplomatic": "x", "review_status": "pending_review"}})
         assert stale.status_code == 409
+
+
+def test_hidden_rows_cannot_be_overridden_by_layout_classes(corpus):
+    # Às cegas depende de esconder a leitura do modelo e a edição; uma classe com display
+    # (como .row{display:grid}) não pode vencer o atributo hidden.
+    root, config, pages, lines = copy.deepcopy(corpus)
+    app = create_app(root, config, TestRecognizer())
+    with TestClient(app) as client:
+        page = client.get("/leitura").text
+    assert "[hidden]{display:none!important}" in page
+    model = page[page.index("function renderModel()"):]
+    model = model[:model.index("\n}")]
+    assert model.index("box.replaceChildren()") < model.index("if (!enabled) return;")
