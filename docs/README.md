@@ -63,6 +63,7 @@ preservado como histórico.
 - [Grupo de teste reservado — pagamento a Thomas Pardo, 05/11](revisao_humana/pagamento_thomas_pardo_teste/README.md): decisão, partição proposta, ressalvas e protocolo de curadoria sem sugestões de modelo.
 - [Segundo documento do teste — contrato do livro 12, 1763, 09/11](revisao_humana/contrato_livro12_teste/README.md): entra somado ao pagamento, escolhido só pela legibilidade, antes de qualquer modelo rodar no teste.
 - [Teste reservado congelado, 09/11](revisao_humana/teste_reservado_congelado_20261109/README.md): 49 linhas e 1.644 caracteres em dois documentos, lidos às cegas; referência fixa antes da avaliação única.
+- [Notebook comparativo, 09/11 (Entrega 06 do PI IV)](entregas/notebook_comparativo_20261109/README.md): baseline PP-OCRv6 × ajustados A e B na validação e no teste reservado, com intervalos, comparação pareada e tipos de erro.
 - [Esquema e estados](data_schema.md), [política de transcrição](transcription_policy.md).
 - [Curadoria de 1795 — fechamento após 038 em 03/11](revisao_humana/sessao_1795/sessao_20261103/fechamento_curadoria_038.md): sete referências por linha validadas, oitava provável/excluída, identificação e cobertura parcial confirmadas; treino científico ainda sem partições prontas.
 - [Próxima curadoria: carta de José Gomes de Gouveia de 1767](revisao_humana/carta_jose_gomes_1767/preparacao_20261103/README.md): primeiro recorte proposto, sem aprovação humana ou transcrição diplomática.

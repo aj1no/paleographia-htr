@@ -60,8 +60,8 @@ CER em NFC, com IC 95% por bootstrap de linhas:
 
 | Modelo | Total (49 linhas) | Pagamento (14) | Contrato (35) | WER total |
 | --- | ---: | ---: | ---: | ---: |
-| PP-OCRv6 base | 64,0% (57,1–71,4) | 31,1% (24,2–38,4) | 77,1% (72,9–81,6) | 95,4% |
-| PP-OCRv6 ajustado A | 60,6% (53,6–67,8) | 27,9% (21,8–33,9) | 73,5% (69,5–77,8) | 93,7% |
+| PP-OCRv6 base | 64,0% (57,1–71,4) | 31,1% (24,2–38,4) | 77,1% (72,9–81,6) | 95,3% |
+| PP-OCRv6 ajustado A | 60,5% (53,5–67,8) | 27,9% (21,8–33,9) | 73,5% (69,5–77,8) | 93,7% |
 | PP-OCRv6 ajustado B | 60,9% (54,0–68,0) | 28,3% (22,8–33,9) | 73,8% (69,6–78,3) | 94,4% |
 
 - **O ajuste fino ajuda, mas pouco fora do domínio.** A e B ficam abaixo do base nas mesmas linhas.
