@@ -10,13 +10,13 @@ Jundiaí — SP
 
 ## Resumo
 
-A leitura de manuscritos históricos em português dos séculos XVII a XIX exige tempo e formação paleográfica, recursos escassos em arquivos municipais. O PaleographIA é uma ferramenta aberta que sugere a leitura de cada linha para revisão humana rastreável. Este trabalho adapta o reconhecedor PP-OCRv6 medium a documentos do Arquivo Histórico de Jundiaí e acrescenta uma etapa de Processamento de Linguagem Natural depois do reconhecimento. O ajuste fino usou 191 linhas do Traslado do Auto de Criação da Vila, rotuladas pelo alinhamento automático com a transcrição paleográfica publicada, e, numa segunda configuração, 550 linhas públicas de processos da Inquisição. Em sete linhas de validação de outra mão (1795), o CER caiu de 14,20% para 10,72% e 10,14%, e o WER de 56,72% para 41,79% e 38,81%. A análise linguística dos erros mostra que o ajuste reduziu sobretudo a forma das letras e as palavras coladas; o que resta é, em boa parte, convenção de escrita. A pós-correção lexical por distância de Levenshtein e por TF-IDF de n-gramas de caracteres piorou o CER, porque o vocabulário de treino não cobre palavras corretas da validação. Os números são de desenvolvimento; o teste reservado ainda não foi usado.
+A leitura de manuscritos históricos em português dos séculos XVII a XIX exige tempo e formação paleográfica, recursos escassos em arquivos municipais. O PaleographIA é uma ferramenta aberta que sugere a leitura de cada linha para revisão humana rastreável. Este trabalho adapta o reconhecedor PP-OCRv6 medium a documentos do Arquivo Histórico de Jundiaí e acrescenta uma etapa de Processamento de Linguagem Natural depois do reconhecimento. O ajuste fino usou 191 linhas do Traslado do Auto de Criação da Vila, rotuladas pelo alinhamento automático com a transcrição paleográfica publicada, e, numa segunda configuração, 550 linhas públicas de processos da Inquisição. Em sete linhas de validação de outra mão (1795), o CER caiu de 14,20% para 10,72% e 10,14%, e o WER de 56,72% para 41,79% e 38,81%. A análise linguística dos erros mostra que o ajuste reduziu sobretudo a forma das letras e as palavras coladas; o que resta é, em boa parte, convenção de escrita. A pós-correção lexical por distância de Levenshtein e por TF-IDF de n-gramas de caracteres piorou o CER, porque o vocabulário de treino não cobre palavras corretas da validação. No teste reservado, transcrito às cegas pela equipe e avaliado uma única vez (49 linhas de duas outras mãos), o CER foi de 64,0% no base e de 60,6% e 60,9% nos ajustados: cerca de 28% num pagamento de letra regular e 74% num contrato de escrita densa. O ganho do ajuste se mantém, mas a generalização para outras mãos ainda é limitada.
 
 **Palavras-chave:** reconhecimento de manuscritos; português histórico; ajuste fino; análise de erros; pós-correção lexical.
 
 ## Abstract
 
-Reading handwritten historical Portuguese from the 17th to 19th centuries requires time and paleographic training, which municipal archives often lack. PaleographIA is an open tool that suggests a reading for each line, followed by traceable human review. This work adapts the PP-OCRv6 medium recognizer to documents from the Historical Archive of Jundiaí and adds a Natural Language Processing stage after recognition. Fine-tuning used 191 lines of a 1767 certified copy, labeled by automatic alignment with a published paleographic transcription, and, in a second configuration, 550 public lines from Inquisition trials. On seven validation lines by another hand (1795), CER dropped from 14.20% to 10.72% and 10.14%, and WER from 56.72% to 41.79% and 38.81%. Linguistic error analysis shows that fine-tuning mainly reduced letter-shape errors and merged words; most remaining errors concern writing conventions. Lexical post-correction by Levenshtein distance and by TF-IDF character n-grams increased CER, because the training vocabulary does not cover correct validation words. Results are from development; the reserved test set has not been used.
+Reading handwritten historical Portuguese from the 17th to 19th centuries requires time and paleographic training, which municipal archives often lack. PaleographIA is an open tool that suggests a reading for each line, followed by traceable human review. This work adapts the PP-OCRv6 medium recognizer to documents from the Historical Archive of Jundiaí and adds a Natural Language Processing stage after recognition. Fine-tuning used 191 lines of a 1767 certified copy, labeled by automatic alignment with a published paleographic transcription, and, in a second configuration, 550 public lines from Inquisition trials. On seven validation lines by another hand (1795), CER dropped from 14.20% to 10.72% and 10.14%, and WER from 56.72% to 41.79% and 38.81%. Linguistic error analysis shows that fine-tuning mainly reduced letter-shape errors and merged words; most remaining errors concern writing conventions. Lexical post-correction by Levenshtein distance and by TF-IDF character n-grams increased CER, because the training vocabulary does not cover correct validation words. On the reserved test set, transcribed blind by the team and evaluated only once (49 lines by two other hands), CER was 64.0% for the base model and 60.6% and 60.9% for the fine-tuned ones: about 28% on a payment record in a regular hand and 74% on a densely written contract. The fine-tuning gain holds, but generalization to other hands is still limited.
 
 **Keywords:** handwritten text recognition; historical Portuguese; fine-tuning; error analysis; lexical post-correction.
 
@@ -38,7 +38,7 @@ As métricas são o CER e o WER: a distância de edição (substituições, apag
 
 ### Documentos e partições
 
-Treino: o Traslado do Auto de Criação da Vila de Jundiaí, cópia de 1767 de um auto de 1656 (Jundiaí, s.d.), com a transcrição paleográfica publicada por Miranda (s.d.). Validação: sete linhas da sessão da Câmara de 25/06/1795, de outra mão, com referência diplomática validada pela equipe (345 caracteres). Teste reservado: o registro de um pagamento a Thomas Pardo (livro 0146, fólios 113v e 114r), recusado pelo código de treino e ainda sem uso. As imagens do Arquivo Histórico de Jundiaí, públicas no Acervo Digital da prefeitura, são usadas com autorização do arquivo, para fins não comerciais e com crédito ao acervo.
+Treino: o Traslado do Auto de Criação da Vila de Jundiaí, cópia de 1767 de um auto de 1656 (Jundiaí, s.d.), com a transcrição paleográfica publicada por Miranda (s.d.). Validação: sete linhas da sessão da Câmara de 25/06/1795, de outra mão, com referência diplomática validada pela equipe (345 caracteres). Teste reservado, recusado pelo código de treino: o registro de um pagamento a Thomas Pardo (livro 0146, fólios 113v e 114r, 1759) e, porque as linhas finais do pagamento se mostraram ilegíveis, um contrato de 1763 (Cartório Olgado, livro 12), escolhido só pela legibilidade, antes de qualquer modelo rodar. Dois integrantes transcreveram as linhas às cegas, com o reconhecedor desligado; a referência (49 linhas, 1.644 caracteres) foi congelada, com hashes, antes da avaliação. As imagens do Arquivo Histórico de Jundiaí, públicas no Acervo Digital da prefeitura, são usadas com autorização do arquivo, para fins não comerciais e com crédito ao acervo.
 
 ### Dados de treino
 
@@ -92,11 +92,25 @@ Do base para o B, os erros de forma da letra caíram pela metade e os de espaço
 
 A pós-correção piorou o CER nos três modelos, com os dois métodos. O método A melhorou o WER nos três; o B, só no modelo base. As correções certas existem ("Selvador" → "Salvador", "ainco" → "cinco"), mas 14 das 51 palavras distintas da validação não estão no vocabulário, entre elas "noventa", "morada" e "comarca", e são trocadas por vizinhas erradas ("noventa" → "corenta"). O método B, mais permissivo, faz trocas piores ("Iundiahi" → "Ahi"). Com um vocabulário pequeno, a correção automática erra mais do que acerta; ela só serve como sugestão para o revisor. O uso de um grande modelo de linguagem fica para trabalho futuro, pelo risco de modernizar a grafia ou inventar palavras.
 
+### Teste reservado
+
+**Tabela 4 — Teste reservado, avaliação única (CER)**
+
+| Modelo | Total | Pagamento | Contrato |
+| --- | ---: | ---: | ---: |
+| PP-OCRv6 base | 64,0% | 31,1% | 77,1% |
+| Ajustado A | 60,6% | 27,9% | 73,5% |
+| Ajustado B | 60,9% | 28,3% | 73,8% |
+
+Fonte: avaliação de 09/11, uma vez por modelo; 49 linhas (14 do pagamento, 35 do contrato).
+
+Os dois ajustados erram menos que o base nas mesmas linhas (diferença pareada de 1,4 a 5,6 pontos, IC 95% por bootstrap de linhas), e A e B continuam indistinguíveis: o IC 95% do CER total vai de 54% a 68% em ambos, e o WER fica em 94–95% nos três modelos. A distância para a validação, porém, é grande. No pagamento, de letra grande e regular, o B leu "do Concelho NNicolaõ Guedes" onde a referência tem "do conselho Nicolal Guedes": o erro é sobretudo de convenção. No contrato, de cursiva densa e com a tinta do verso aparecendo, a saída é quase sempre ilegível, e em nove pedaços curtos de margem, com uma ou duas palavras, nenhum modelo leu nada. Depois do resultado, notamos que uma linha do contrato foi validada com uma nota do revisor no lugar da leitura e que algumas seguem a grafia da edição; a referência congelada não foi alterada.
+
 ### Curiosidade: um reconhecedor treinado do zero
 
 Para ver quanto pesa partir de um modelo pré-treinado, um reconhecedor CRNN-CTC (convoluções e BiLSTM, 6,3 milhões de parâmetros) foi treinado sem nenhum peso prévio, em uma noite na mesma GPU, com 12.543 linhas públicas da Inquisição e as 191 do Traslado. Numa segunda versão, o codificador passou antes por um pré-treino não supervisionado: trechos de cada linha eram apagados e o modelo reconstruía os pixels, sem ver texto algum. O checkpoint foi escolhido numa validação separada da Inquisição (953 linhas de 20 documentos); a validação de 1795 foi lida uma única vez, no fim.
 
-**Tabela 4 — Modelos treinados do zero, validação de 1795**
+**Tabela 5 — Modelos treinados do zero, validação de 1795**
 
 | Modelo | CER | WER |
 | --- | ---: | ---: |
@@ -111,11 +125,11 @@ O melhor modelo do zero fica perto do PP-OCRv6 sem ajuste (14,20%) e atrás dos 
 
 ## Limitações
 
-A validação tem sete linhas de uma única mão e foi usada para escolher o checkpoint, o que torna os números otimistas e sujeitos a variação de uma ou duas linhas. O treino na GPU não é determinístico, e a comparação entre A e B fica dentro dessa variação. Os rótulos do Traslado vêm da edição, não de leitura diplomática independente. O teste reservado ainda espera a transcrição às cegas da equipe; só depois todos os modelos serão avaliados nele, uma única vez.
+A validação tem sete linhas de uma única mão e foi usada para escolher o checkpoint, o que torna os números otimistas e sujeitos a variação de uma ou duas linhas. O treino na GPU não é determinístico, e a comparação entre A e B fica dentro dessa variação. Os rótulos do Traslado vêm da edição, não de leitura diplomática independente. O teste reservado é pequeno (49 linhas, duas mãos) e cada documento foi lido por um só integrante, sem dupla conferência; o contrato entrou depois que o pagamento se mostrou difícil de ler, e sua referência tem problemas notados só após o resultado. A pós-correção lexical não foi aplicada no teste.
 
 ## Conclusões
 
-O ajuste fino do PP-OCRv6 com 191 linhas de um documento de Jundiaí reduziu o CER de 14,20% para cerca de 10–11% e o WER de 57% para 39–42% numa mão diferente, com custo de duas a quatro horas numa GPU de notebook. A análise linguística mostra que o modelo aprendeu a forma das letras e a separação das palavras, e que o erro restante se concentra em convenções de escrita, o que pede políticas de transcrição explícitas. A pós-correção lexical, nas condições testadas, não ajuda. O resultado reforça o desenho do PaleographIA: o modelo sugere, e o humano valida.
+O ajuste fino do PP-OCRv6 com 191 linhas de um documento de Jundiaí reduziu o CER de 14,20% para cerca de 10–11% e o WER de 57% para 39–42% numa mão diferente, com custo de duas a quatro horas numa GPU de notebook. A análise linguística mostra que o modelo aprendeu a forma das letras e a separação das palavras, e que o erro restante se concentra em convenções de escrita, o que pede políticas de transcrição explícitas. A pós-correção lexical, nas condições testadas, não ajuda. No teste reservado, o ganho do ajuste se manteve, mas o erro subiu para 28% numa letra regular e 74% numa escrita densa: com um só documento de treino, o modelo ainda não generaliza para outras mãos, e mais documentos rotulados são o próximo passo. O resultado reforça o desenho do PaleographIA: o modelo sugere, e o humano valida.
 
 ## Disponibilidade dos materiais
 
