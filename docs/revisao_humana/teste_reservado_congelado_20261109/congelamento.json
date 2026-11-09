@@ -1,0 +1,45 @@
+{
+ "frozen_at": "2026-11-09T17:22:31.514780+00:00",
+ "rule": "Referência fixa. Cada configuração final roda uma única vez neste conjunto; nada aqui entra em treino, escolha de checkpoint ou parâmetros.",
+ "reference_sha256": "2d0fb78e021f72a971a2ae8ccacbc72544b560a5c7e57b1366cf2fe273a6fee0",
+ "lines": 49,
+ "chars": 1644,
+ "by_document": {
+  "contrato_livro12_1763": {
+   "lines": 35,
+   "chars": 1177,
+   "reviewers": {
+    "Tiago Avelar": 35
+   }
+  },
+  "pagamento_thomas_pardo": {
+   "lines": 14,
+   "chars": 467,
+   "reviewers": {
+    "Rodolfo Takemoto": 14
+   }
+  }
+ },
+ "workspaces": {
+  "configs/curation_teste_pagamento.toml": {
+   "workspace": "data/workspace_teste_pagamento",
+   "revision": "20261109T151425_07c5a14c",
+   "lines_total": 61,
+   "status": {
+    "validated": 14,
+    "pending_review": 47
+   }
+  },
+  "configs/curation_teste_contrato12.toml": {
+   "workspace": "data/workspace_teste_contrato12",
+   "revision": "20261109T171958_671858ca",
+   "lines_total": 139,
+   "status": {
+    "validated": 35,
+    "pending_review": 104
+   }
+  }
+ },
+ "crops_local_dir": "data/teste_reservado_congelado_20261109/recortes",
+ "model_predictions_before_freeze": 0
+}

@@ -12,8 +12,9 @@ def crop(tmp_path, name):
     return "crops/" + name
 
 
-def test_reserved_test_document_never_reaches_training(tmp_path):
-    pairs = [{"crop_image": crop(tmp_path, "a.png"), "text": "Aos vinte", "document_id": "pagamento_thomas_pardo",
+@pytest.mark.parametrize("document", ["pagamento_thomas_pardo", "contrato_livro12_1763"])
+def test_reserved_test_document_never_reaches_training(tmp_path, document):
+    pairs = [{"crop_image": crop(tmp_path, "a.png"), "text": "Aos vinte", "document_id": document,
               "split": "train"}]
     with pytest.raises(ValueError, match="Teste reservado"):
         prepare(pairs, tmp_path / "run", tmp_path)

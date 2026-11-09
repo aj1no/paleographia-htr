@@ -16,7 +16,7 @@ from PIL import Image, ImageEnhance, ImageFilter
 
 from .io import now, safe_path, sha256, write_json
 
-RESERVED_TEST_DOCUMENTS = {"pagamento_thomas_pardo"}
+RESERVED_TEST_DOCUMENTS = {"pagamento_thomas_pardo", "contrato_livro12_1763"}
 
 
 def augment_variants(image, count, rng):
