@@ -47,3 +47,35 @@ worker de inferência da validação de 1795: Docker `paleographia-kraken:7.1.0-
 métricas são CER e WER em NFC, com espaços simplificados, por linha, por documento e no total. O
 resultado vai para `avaliacao_final.json` nesta pasta. Um modelo que já tem resultado gravado não
 roda de novo.
+
+## Resultado da avaliação única (09/11/2026)
+
+Cada modelo rodou **uma vez**, no commit do congelamento (`1797998`), com os hashes da referência,
+dos recortes e dos pesos conferidos. Os dados estão em [`avaliacao_final.json`](avaliacao_final.json),
+com a leitura de cada linha. Os intervalos foram calculados depois, a partir das mesmas predições,
+sem rodar nenhum modelo de novo ([`analise_intervalos.json`](analise_intervalos.json),
+[`scripts/analisar_teste_final.py`](../../../scripts/analisar_teste_final.py)).
+
+CER em NFC, com IC 95% por bootstrap de linhas:
+
+| Modelo | Total (49 linhas) | Pagamento (14) | Contrato (35) | WER total |
+| --- | ---: | ---: | ---: | ---: |
+| PP-OCRv6 base | 64,0% (57,1–71,4) | 31,1% (24,2–38,4) | 77,1% (72,9–81,6) | 95,4% |
+| PP-OCRv6 ajustado A | 60,6% (53,6–67,8) | 27,9% (21,8–33,9) | 73,5% (69,5–77,8) | 93,7% |
+| PP-OCRv6 ajustado B | 60,9% (54,0–68,0) | 28,3% (22,8–33,9) | 73,8% (69,6–78,3) | 94,4% |
+
+- **O ajuste fino ajuda, mas pouco fora do domínio.** A e B ficam abaixo do base nas mesmas linhas.
+  A diferença pareada de CER é de −1,5 a −5,6 pontos para o A e de −1,4 a −4,9 para o B (IC 95%).
+  **A e B não se distinguem** entre si.
+- **A distância para a validação é grande.** Em 1795, o B teve 10,1% de CER. No teste, foi 28% no
+  pagamento (letra grande e regular) e 74% no contrato. No contrato, a saída é quase sempre ilegível:
+  letra cursiva densa, tinta do verso aparecendo e imagem tirada de dentro do PDF da edição.
+- **Pedaços curtos.** Em 9 linhas os três modelos não leram nada. Todas são pedaços de margem com 1
+  ou 2 palavras ("ou", "na", "Com"…). Sem os 12 pedaços de margem (análise post hoc, 37 linhas), o
+  CER do B fica em 59,4% (51,7–66,5).
+- **Qualidade da referência do contrato (observação posterior ao resultado).** Uma linha validada
+  tem como texto uma nota do revisor ("não e possivele ler"), e não uma leitura. Algumas linhas
+  parecem seguir a grafia da edição ("Manuel", "Francisco" por extenso), e não a do manuscrito.
+  Pelo protocolo, a referência congelada **não foi alterada** e os números acima valem como estão.
+  Uma auditoria do revisor pode produzir uma referência corrigida. Ela só pode ser aplicada às
+  **mesmas predições gravadas** e precisa ser identificada como análise posterior.

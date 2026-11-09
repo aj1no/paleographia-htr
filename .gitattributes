@@ -104,3 +104,6 @@ docs/entregas/apresentacao_20261112/** -text -whitespace
 docs/revisao_humana/contrato_livro13_1763/** -text whitespace=cr-at-eol
 docs/experimentos/kraken_vgsl_pretrain_piloto/** -text whitespace=cr-at-eol
 docs/experimentos/kraken_vgsl_comparacao_piloto/** -text whitespace=cr-at-eol
+# Teste reservado congelado: preservar bytes, para o SHA-256 da referência bater em qualquer sistema.
+docs/revisao_humana/teste_reservado_congelado_*/*.json -text
+docs/revisao_humana/teste_reservado_congelado_*/*.jsonl -text

@@ -1,0 +1,1424 @@
+{
+ "reference_sha256": "2d0fb78e021f72a971a2ae8ccacbc72544b560a5c7e57b1366cf2fe273a6fee0",
+ "normalization": "NFC, espaços simplificados",
+ "metric": "jiwer.cer e jiwer.wer agregados (mesmo cálculo da validação de 1795)",
+ "git_commit": "1797998c78391d4706dfe047d35708bf85322023",
+ "models": {
+  "PP-OCRv6 base": {
+   "weights": "models/kraken_ppocrv6_medium/medium.safetensors",
+   "sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+   "started_at": "2026-11-09T17:25:10.623063+00:00",
+   "finished_at": "2026-11-09T17:25:49.074919+00:00",
+   "total": {
+    "lines": 49,
+    "chars": 1640,
+    "words": 301,
+    "cer": 0.6402,
+    "wer": 0.9535
+   },
+   "by_document": {
+    "contrato_livro12_1763": {
+     "lines": 35,
+     "chars": 1174,
+     "words": 218,
+     "cer": 0.7709,
+     "wer": 1.0138
+    },
+    "pagamento_thomas_pardo": {
+     "lines": 14,
+     "chars": 466,
+     "words": 83,
+     "cer": 0.3112,
+     "wer": 0.7952
+    }
+   },
+   "rows": [
+    {
+     "line_id": "l_c38a819763500a2b5a22",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 0,
+     "ref": "stros de uma peticição",
+     "hyp": "mP",
+     "cer": 0.9545
+    },
+    {
+     "line_id": "l_d2dfe8baa561ebbbe61e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 1,
+     "ref": "Regis",
+     "hyp": "ת",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_fe6404f4e67f5651caf7",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 2,
+     "ref": "Senho Guarda mor geral dis Francisco Viera da costa",
+     "hyp": "hndgn. Disgac cvi",
+     "cer": 0.8039
+    },
+    {
+     "line_id": "l_0b9fbd8ccaae93bd4f0f",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 3,
+     "ref": "e seu genro Manuel da Siqueira Gil que ele ha onze annos",
+     "hyp": "g aed wa",
+     "cer": 0.875
+    },
+    {
+     "line_id": "l_1031a01aaa3df011ac2a",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 4,
+     "ref": "ou",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_619057e8ae10b8458647",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 5,
+     "ref": "dose que entrou para esta Com quistas alias Campanha",
+     "hyp": "aaiumtn paay taem hitaly Cam pne",
+     "cer": 0.6346
+    },
+    {
+     "line_id": "l_9acc52040e6788952a41",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 6,
+     "ref": "diligencia de descobrir ouro e nella tem andado a sua",
+     "hyp": "zio heewit parenna tim an had dh",
+     "cer": 0.6604
+    },
+    {
+     "line_id": "l_3098a953343f192cf616",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 7,
+     "ref": "na",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_8c7fb52dba2328949c2e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 8,
+     "ref": "com prejuizo comcideravel como le no ta veio man-",
+     "hyp": "Cp umC dervi Ceme ti",
+     "cer": 0.7347
+    },
+    {
+     "line_id": "l_93d0042438b195f64ae9",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 9,
+     "ref": "dando de bandeiras a ffazeres picadas acistinda Com TOdos",
+     "hyp": "p sanvza atoyeiendas di tind. Cma",
+     "cer": 0.6491
+    },
+    {
+     "line_id": "l_968102d3eb7ba66ef598",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 10,
+     "ref": "o necesario a todos e planntando rochas em varias partes",
+     "hyp": "njjaris at dsnantantvmoai",
+     "cer": 0.6964
+    },
+    {
+     "line_id": "l_ce39547ee23a24b64089",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 11,
+     "ref": "des certam para aesitir com mantimentos",
+     "hyp": "d j am paa aუłir Cm man ti mint a",
+     "cer": 0.4615
+    },
+    {
+     "line_id": "l_16ee7cab9f2312602552",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 12,
+     "ref": ",",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_c1f4b93753305a3a1786",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 13,
+     "ref": "abrirão com elle a fazer a dita diligencia",
+     "hyp": "y yadit Lu beng",
+     "cer": 0.8095
+    },
+    {
+     "line_id": "l_74a2e9c3f67e447d14f4",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 14,
+     "ref": "os",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_23a97882cd2c58dfd75a",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 15,
+     "ref": "por duas outras vezes desamparão o deixarão",
+     "hyp": "zg pdioutyvzy azmradz oza",
+     "cer": 0.7209
+    },
+    {
+     "line_id": "l_9d4536d7ce03ed60aad0",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 16,
+     "ref": "não e possivele ler",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_fc86040988ed9eb55124",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 17,
+     "ref": "desamsaparão e deixam a todos os perigos",
+     "hyp": "m para dzndeat as ju",
+     "cer": 0.725
+    },
+    {
+     "line_id": "l_02f25447783a8dd3cddb",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 18,
+     "ref": "so",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_3760b50d5f30b358c3dc",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 19,
+     "ref": "gros como de jentiu ao suplicante sempres as",
+     "hyp": "mztudjrnumke jirn",
+     "cer": 0.8409
+    },
+    {
+     "line_id": "l_ed53c75885328c8d15ef",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 20,
+     "ref": "de ne",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_1bc43c5f914a405d72c0",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 21,
+     "ref": "sistindo no intento por cujo motivo eles mas pi",
+     "hyp": "gyn nmtnt re chlemetedeesme",
+     "cer": 0.6809
+    },
+    {
+     "line_id": "l_8403c252a7c1e297680e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 22,
+     "ref": "cadas que o suplicante fizerão por a esta prezen",
+     "hyp": "ua w ju rupyfeaeykä moraatanyye",
+     "cer": 0.6875
+    },
+    {
+     "line_id": "l_cd78def0143f289ad6c3",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 23,
+     "ref": "que os chegarão ate o chapadam epelas beiradas",
+     "hyp": "Kjja j l varäay vrn hsenead",
+     "cer": 0.7609
+    },
+    {
+     "line_id": "l_01c06aa5f190cf0c102e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 24,
+     "ref": "chegaraão ate Riberão de Sam Joam com as amos",
+     "hyp": "uyye ay jubri ohpamro me",
+     "cer": 0.7556
+    },
+    {
+     "line_id": "l_66f406a69e8a188ca26a",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 25,
+     "ref": "uro que tirarão assim do Rio de Sam ate",
+     "hyp": "H4J HjTT A",
+     "cer": 0.9487
+    },
+    {
+     "line_id": "l_c82e6a7743813131c07c",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 26,
+     "ref": "de o",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_8c43bc8623b8b39e26f9",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 27,
+     "ref": "is bandeiras pello Rio Grande Acima entrando",
+     "hyp": "g",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_7794764d4dccb2a11193",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 28,
+     "ref": "Com",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_1565007df0d5c1ed033c",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 29,
+     "ref": "pella bordas como tambem querendo buscar lhe aca",
+     "hyp": "ypumcsemahb-ek e",
+     "cer": 0.8542
+    },
+    {
+     "line_id": "l_bb64969a730f3bc857f5",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 30,
+     "ref": "eria acabando o Rio de Santa Anna achando",
+     "hyp": ". Cae. +a A",
+     "cer": 0.8537
+    },
+    {
+     "line_id": "l_b02ffd0be6168cd975c7",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 31,
+     "ref": "ouro como todos sabem ser resolverao varios",
+     "hyp": "n CmtdsJ hem j N re.ura uari",
+     "cer": 0.6047
+    },
+    {
+     "line_id": "l_0210bf55733933671bbb",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 32,
+     "ref": "seguiram pella picada do suplicante a descpbi",
+     "hyp": "wreju fllnte a",
+     "cer": 0.8
+    },
+    {
+     "line_id": "l_8d9dd59e672daa265081",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 33,
+     "ref": "rem ouro e com efeito acharão adiantando",
+     "hyp": "iacehuatteehn jiintha",
+     "cer": 0.8
+    },
+    {
+     "line_id": "l_de885348e984438c4f9c",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 34,
+     "ref": "sulpicante deste Rio Sam Pedro e tãobem",
+     "hyp": "Kelkgijnphhim",
+     "cer": 0.8974
+    },
+    {
+     "line_id": "l_75b74eada97c289e5268",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 0,
+     "ref": "Recebi do procurador dos conselho Nicolal Guesdes Pinto",
+     "hyp": "sebi do Crocurador do sonsello Nilslao Guedez Pinto",
+     "cer": 0.2182
+    },
+    {
+     "line_id": "l_3fd9b94ded90c1913ba8",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 1,
+     "ref": "aquantia de doze mil reis proferidas dos mes Ordenados dolama",
+     "hyp": "aguantia de doze mil ziz, poro Iedidoz domco Ordenado dolama",
+     "cer": 0.2623
+    },
+    {
+     "line_id": "l_7aa6b81b3c6e720451c3",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 2,
+     "ref": "ral, epor estar pago eclastiz feitos pago apresente vela de jundiai",
+     "hyp": "ral eporestar pago cSati fcitto paso opnzente Refibo Juncl",
+     "cer": 0.3731
+    },
+    {
+     "line_id": "l_d0b754cca83220a93c48",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 3,
+     "ref": "aý, 27 de novem de 1759",
+     "hyp": "o 27 2951 l1759",
+     "cer": 0.6087
+    },
+    {
+     "line_id": "l_b1565df6ef2950b0c75d",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 4,
+     "ref": "Rangel",
+     "hyp": "Kanger",
+     "cer": 0.3333
+    },
+    {
+     "line_id": "l_76217b902fb4c3d39956",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 5,
+     "ref": "aetano Antonio",
+     "hyp": "aelano Antonio e",
+     "cer": 0.2143
+    },
+    {
+     "line_id": "l_2f47094e4cd7027bfc87",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 6,
+     "ref": "Mandado para o procurador",
+     "hyp": "Landado parao Procurador",
+     "cer": 0.12
+    },
+    {
+     "line_id": "l_d7e125b5de2d0970f02c",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 7,
+     "ref": "do conselho Nicolal Guedes",
+     "hyp": "do Concelho NicoLaõ Geuedes sin",
+     "cer": 0.3462
+    },
+    {
+     "line_id": "l_cd5b3985f640dd9e2002",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 0,
+     "ref": "Nosso mandado sendo primeiro",
+     "hyp": "oho mandado sendostrimeyro",
+     "cer": 0.2143
+    },
+    {
+     "line_id": "l_f9aa650442a48bee0001",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 1,
+     "ref": "por nos assinado em seu cumpri",
+     "hyp": "nos asignado emseu comprifampelo",
+     "cer": 0.5
+    },
+    {
+     "line_id": "l_322b323cb6a421392a76",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 2,
+     "ref": "mento e na forma dele satisfa",
+     "hyp": "ento e na forma delle sateffa",
+     "cer": 0.1379
+    },
+    {
+     "line_id": "l_dd56882dafeb6530c3b4",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 3,
+     "ref": "ca pelos reditos da câmara a Thomas",
+     "hyp": "eapellos Redetos da Camara a Romas.",
+     "cer": 0.2857
+    },
+    {
+     "line_id": "l_ec2199e5bb5a153fadbb",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 4,
+     "ref": "Pardo capitão do mato da cidade",
+     "hyp": "ardo Cappitao do nato docidade",
+     "cer": 0.2258
+    },
+    {
+     "line_id": "l_f2229ac155cd8f86dc2e",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 5,
+     "ref": "de São Paulo a quantia de quatro mil",
+     "hyp": "de suanti deatrmil",
+     "cer": 0.5278
+    }
+   ]
+  },
+  "PP-OCRv6 ajustado A": {
+   "weights": "models/ppocrv6_ajustado_A_20261106/medium_ajustado_A_gravado.safetensors",
+   "sha256": "04194328e5d12b4f7a72bb2764a0c4c76f5030e9856e5c41ce96d04ab8b7c148",
+   "started_at": "2026-11-09T17:25:56.123471+00:00",
+   "finished_at": "2026-11-09T17:26:43.933483+00:00",
+   "total": {
+    "lines": 49,
+    "chars": 1640,
+    "words": 301,
+    "cer": 0.6055,
+    "wer": 0.9369
+   },
+   "by_document": {
+    "contrato_livro12_1763": {
+     "lines": 35,
+     "chars": 1174,
+     "words": 218,
+     "cer": 0.7351,
+     "wer": 0.9954
+    },
+    "pagamento_thomas_pardo": {
+     "lines": 14,
+     "chars": 466,
+     "words": 83,
+     "cer": 0.279,
+     "wer": 0.7831
+    }
+   },
+   "rows": [
+    {
+     "line_id": "l_c38a819763500a2b5a22",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 0,
+     "ref": "stros de uma peticição",
+     "hyp": "AumaP",
+     "cer": 0.8636
+    },
+    {
+     "line_id": "l_d2dfe8baa561ebbbe61e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 1,
+     "ref": "Regis",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_fe6404f4e67f5651caf7",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 2,
+     "ref": "Senho Guarda mor geral dis Francisco Viera da costa",
+     "hyp": "egngne Higa Gvierd",
+     "cer": 0.8235
+    },
+    {
+     "line_id": "l_0b9fbd8ccaae93bd4f0f",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 3,
+     "ref": "e seu genro Manuel da Siqueira Gil que ele ha onze annos",
+     "hyp": "Maed a e",
+     "cer": 0.8571
+    },
+    {
+     "line_id": "l_1031a01aaa3df011ac2a",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 4,
+     "ref": "ou",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_619057e8ae10b8458647",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 5,
+     "ref": "dose que entrou para esta Com quistas alias Campanha",
+     "hyp": "ჯaat pa tabem კteaსig Cam pł",
+     "cer": 0.6923
+    },
+    {
+     "line_id": "l_9acc52040e6788952a41",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 6,
+     "ref": "diligencia de descobrir ouro e nella tem andado a sua",
+     "hyp": "zv Heevit gerende ten an had",
+     "cer": 0.717
+    },
+    {
+     "line_id": "l_3098a953343f192cf616",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 7,
+     "ref": "na",
+     "hyp": "ne",
+     "cer": 0.5
+    },
+    {
+     "line_id": "l_8c7fb52dba2328949c2e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 8,
+     "ref": "com prejuizo comcideravel como le no ta veio man-",
+     "hyp": "C pr; სmC der ს Cასenა t viაm",
+     "cer": 0.6531
+    },
+    {
+     "line_id": "l_93d0042438b195f64ae9",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 9,
+     "ref": "dando de bandeiras a ffazeres picadas acistinda Com TOdos",
+     "hyp": "npo sah a ateiendes ei tind Cme",
+     "cer": 0.6316
+    },
+    {
+     "line_id": "l_968102d3eb7ba66ef598",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 10,
+     "ref": "o necesario a todos e planntando rochas em varias partes",
+     "hyp": "nejdaris at des pt antantelde emdnrig u",
+     "cer": 0.6071
+    },
+    {
+     "line_id": "l_ce39547ee23a24b64089",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 11,
+     "ref": "des certam para aesitir com mantimentos",
+     "hyp": "d Ham pata aსუtir Cm man ti mintt de",
+     "cer": 0.4872
+    },
+    {
+     "line_id": "l_16ee7cab9f2312602552",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 12,
+     "ref": ",",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_c1f4b93753305a3a1786",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 13,
+     "ref": "abrirão com elle a fazer a dita diligencia",
+     "hyp": "rit bene",
+     "cer": 0.8571
+    },
+    {
+     "line_id": "l_74a2e9c3f67e447d14f4",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 14,
+     "ref": "os",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_23a97882cd2c58dfd75a",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 15,
+     "ref": "por duas outras vezes desamparão o deixarão",
+     "hyp": "g dg eutryvezy zemret o a",
+     "cer": 0.6047
+    },
+    {
+     "line_id": "l_9d4536d7ce03ed60aad0",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 16,
+     "ref": "não e possivele ler",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_fc86040988ed9eb55124",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 17,
+     "ref": "desamsaparão e deixam a todos os perigos",
+     "hyp": "m parar e zrnde teg s ju",
+     "cer": 0.7
+    },
+    {
+     "line_id": "l_02f25447783a8dd3cddb",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 18,
+     "ref": "so",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_3760b50d5f30b358c3dc",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 19,
+     "ref": "gros como de jentiu ao suplicante sempres as",
+     "hyp": "Cme zte dedenente Jinnn",
+     "cer": 0.7727
+    },
+    {
+     "line_id": "l_ed53c75885328c8d15ef",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 20,
+     "ref": "de ne",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_1bc43c5f914a405d72c0",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 21,
+     "ref": "sistindo no intento por cujo motivo eles mas pi",
+     "hyp": "Jge vmtente rer delemetede desmt",
+     "cer": 0.7021
+    },
+    {
+     "line_id": "l_8403c252a7c1e297680e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 22,
+     "ref": "cadas que o suplicante fizerão por a esta prezen",
+     "hyp": "ua ju ruteAehka ntraatanrvt",
+     "cer": 0.7083
+    },
+    {
+     "line_id": "l_cd78def0143f289ad6c3",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 23,
+     "ref": "que os chegarão ate o chapadam epelas beiradas",
+     "hyp": "vva t e araer vrn Hsenvad",
+     "cer": 0.7174
+    },
+    {
+     "line_id": "l_01c06aa5f190cf0c102e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 24,
+     "ref": "chegaraão ate Riberão de Sam Joam com as amos",
+     "hyp": "eee ate jubrrt ed eam One me",
+     "cer": 0.6444
+    },
+    {
+     "line_id": "l_66f406a69e8a188ca26a",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 25,
+     "ref": "uro que tirarão assim do Rio de Sam ate",
+     "hyp": "HJ HTHT H",
+     "cer": 0.9487
+    },
+    {
+     "line_id": "l_c82e6a7743813131c07c",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 26,
+     "ref": "de o",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_8c43bc8623b8b39e26f9",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 27,
+     "ref": "is bandeiras pello Rio Grande Acima entrando",
+     "hyp": "rne",
+     "cer": 0.9318
+    },
+    {
+     "line_id": "l_7794764d4dccb2a11193",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 28,
+     "ref": "Com",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_1565007df0d5c1ed033c",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 29,
+     "ref": "pella bordas como tambem querendo buscar lhe aca",
+     "hyp": "emtesenverekek",
+     "cer": 0.8333
+    },
+    {
+     "line_id": "l_bb64969a730f3bc857f5",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 30,
+     "ref": "eria acabando o Rio de Santa Anna achando",
+     "hyp": "C. Cante .i deinta Ann «a",
+     "cer": 0.5854
+    },
+    {
+     "line_id": "l_b02ffd0be6168cd975c7",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 31,
+     "ref": "ouro como todos sabem ser resolverao varios",
+     "hyp": "Gmet d J hem eerae vari",
+     "cer": 0.6279
+    },
+    {
+     "line_id": "l_0210bf55733933671bbb",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 32,
+     "ref": "seguiram pella picada do suplicante a descpbi",
+     "hyp": "n pe Ju plilnte a",
+     "cer": 0.7111
+    },
+    {
+     "line_id": "l_8d9dd59e672daa265081",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 33,
+     "ref": "rem ouro e com efeito acharão adiantando",
+     "hyp": "ene cemu te tee vlien ttnt",
+     "cer": 0.725
+    },
+    {
+     "line_id": "l_de885348e984438c4f9c",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 34,
+     "ref": "sulpicante deste Rio Sam Pedro e tãobem",
+     "hyp": "eete vn s l",
+     "cer": 0.8205
+    },
+    {
+     "line_id": "l_75b74eada97c289e5268",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 0,
+     "ref": "Recebi do procurador dos conselho Nicolal Guesdes Pinto",
+     "hyp": "sebi do Procurador do onsello Nilslao Guedez Pinto",
+     "cer": 0.2182
+    },
+    {
+     "line_id": "l_3fd9b94ded90c1913ba8",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 1,
+     "ref": "aquantia de doze mil reis proferidas dos mes Ordenados dolama",
+     "hyp": "aguantia de doze mil liz, pro Jedidoz domco Ordenado do Cama",
+     "cer": 0.2787
+    },
+    {
+     "line_id": "l_7aa6b81b3c6e720451c3",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 2,
+     "ref": "ral, epor estar pago eclastiz feitos pago apresente vela de jundiai",
+     "hyp": "ra eporestar pagoe Saztis feitto paso aprzente Resibo Junili",
+     "cer": 0.3284
+    },
+    {
+     "line_id": "l_d0b754cca83220a93c48",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 3,
+     "ref": "aý, 27 de novem de 1759",
+     "hyp": "a 27 95 1759",
+     "cer": 0.5652
+    },
+    {
+     "line_id": "l_b1565df6ef2950b0c75d",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 4,
+     "ref": "Rangel",
+     "hyp": "Langer",
+     "cer": 0.3333
+    },
+    {
+     "line_id": "l_76217b902fb4c3d39956",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 5,
+     "ref": "aetano Antonio",
+     "hyp": "aelano Antonio e",
+     "cer": 0.2143
+    },
+    {
+     "line_id": "l_2f47094e4cd7027bfc87",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 6,
+     "ref": "Mandado para o procurador",
+     "hyp": "Landado parao Procurador",
+     "cer": 0.12
+    },
+    {
+     "line_id": "l_d7e125b5de2d0970f02c",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 7,
+     "ref": "do conselho Nicolal Guedes",
+     "hyp": "do Conc elho Hicolao Guedes Tin",
+     "cer": 0.3462
+    },
+    {
+     "line_id": "l_cd5b3985f640dd9e2002",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 0,
+     "ref": "Nosso mandado sendo primeiro",
+     "hyp": "opo mandado sendos trimeyro",
+     "cer": 0.2143
+    },
+    {
+     "line_id": "l_f9aa650442a48bee0001",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 1,
+     "ref": "por nos assinado em seu cumpri",
+     "hyp": "nos asignado em seu compriffampelo",
+     "cer": 0.5
+    },
+    {
+     "line_id": "l_322b323cb6a421392a76",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 2,
+     "ref": "mento e na forma dele satisfa",
+     "hyp": "ento e na forma delle satiffa",
+     "cer": 0.1034
+    },
+    {
+     "line_id": "l_dd56882dafeb6530c3b4",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 3,
+     "ref": "ca pelos reditos da câmara a Thomas",
+     "hyp": "ea pellos Redetos da Camara a Romas",
+     "cer": 0.2286
+    },
+    {
+     "line_id": "l_ec2199e5bb5a153fadbb",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 4,
+     "ref": "Pardo capitão do mato da cidade",
+     "hyp": "ardo Capitao do mnato dacidade",
+     "cer": 0.1613
+    },
+    {
+     "line_id": "l_f2229ac155cd8f86dc2e",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 5,
+     "ref": "de São Paulo a quantia de quatro mil",
+     "hyp": "de aalo suantia de Coatromil",
+     "cer": 0.3333
+    }
+   ]
+  },
+  "PP-OCRv6 ajustado B": {
+   "weights": "models/ppocrv6_ajustado_B_20261107/medium_ajustado_B_gravado.safetensors",
+   "sha256": "52b2ad55829ad63d6e79c632de431521aeac0abe591fe60197dd1cbfc64fc384",
+   "started_at": "2026-11-09T17:26:51.992522+00:00",
+   "finished_at": "2026-11-09T17:27:31.510715+00:00",
+   "total": {
+    "lines": 49,
+    "chars": 1640,
+    "words": 301,
+    "cer": 0.6085,
+    "wer": 0.9435
+   },
+   "by_document": {
+    "contrato_livro12_1763": {
+     "lines": 35,
+     "chars": 1174,
+     "words": 218,
+     "cer": 0.7376,
+     "wer": 1.0092
+    },
+    "pagamento_thomas_pardo": {
+     "lines": 14,
+     "chars": 466,
+     "words": 83,
+     "cer": 0.2833,
+     "wer": 0.7711
+    }
+   },
+   "rows": [
+    {
+     "line_id": "l_c38a819763500a2b5a22",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 0,
+     "ref": "stros de uma peticição",
+     "hyp": "maP",
+     "cer": 0.9091
+    },
+    {
+     "line_id": "l_d2dfe8baa561ebbbe61e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 1,
+     "ref": "Regis",
+     "hyp": "םות",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_fe6404f4e67f5651caf7",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 2,
+     "ref": "Senho Guarda mor geral dis Francisco Viera da costa",
+     "hyp": "hg. aDisga cvi",
+     "cer": 0.8235
+    },
+    {
+     "line_id": "l_0b9fbd8ccaae93bd4f0f",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 3,
+     "ref": "e seu genro Manuel da Siqueira Gil que ele ha onze annos",
+     "hyp": "aed a a e",
+     "cer": 0.8393
+    },
+    {
+     "line_id": "l_1031a01aaa3df011ac2a",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 4,
+     "ref": "ou",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_619057e8ae10b8458647",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 5,
+     "ref": "dose que entrou para esta Com quistas alias Campanha",
+     "hyp": "xaamt paay taem talig Cam pł",
+     "cer": 0.6731
+    },
+    {
+     "line_id": "l_9acc52040e6788952a41",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 6,
+     "ref": "diligencia de descobrir ouro e nella tem andado a sua",
+     "hyp": "zio eewit pareinna tem an had dh",
+     "cer": 0.6415
+    },
+    {
+     "line_id": "l_3098a953343f192cf616",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 7,
+     "ref": "na",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_8c7fb52dba2328949c2e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 8,
+     "ref": "com prejuizo comcideravel como le no ta veio man-",
+     "hyp": "Cpri umCi der avi Cee ne te vim",
+     "cer": 0.6122
+    },
+    {
+     "line_id": "l_93d0042438b195f64ae9",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 9,
+     "ref": "dando de bandeiras a ffazeres picadas acistinda Com TOdos",
+     "hyp": "p sanvza atyeiendas di tind. Cma",
+     "cer": 0.6491
+    },
+    {
+     "line_id": "l_968102d3eb7ba66ef598",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 10,
+     "ref": "o necesario a todos e planntando rochas em varias partes",
+     "hyp": "ncjjaris at desntantantevao monrig vt",
+     "cer": 0.6071
+    },
+    {
+     "line_id": "l_ce39547ee23a24b64089",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 11,
+     "ref": "des certam para aesitir com mantimentos",
+     "hyp": "d j tam paa aუtir Com man ti minta e",
+     "cer": 0.4103
+    },
+    {
+     "line_id": "l_16ee7cab9f2312602552",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 12,
+     "ref": ",",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_c1f4b93753305a3a1786",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 13,
+     "ref": "abrirão com elle a fazer a dita diligencia",
+     "hyp": "y yadit Lu keng",
+     "cer": 0.8095
+    },
+    {
+     "line_id": "l_74a2e9c3f67e447d14f4",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 14,
+     "ref": "os",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_23a97882cd2c58dfd75a",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 15,
+     "ref": "por duas outras vezes desamparão o deixarão",
+     "hyp": "g d outryvzy zmr oa",
+     "cer": 0.6512
+    },
+    {
+     "line_id": "l_9d4536d7ce03ed60aad0",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 16,
+     "ref": "não e possivele ler",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_fc86040988ed9eb55124",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 17,
+     "ref": "desamsaparão e deixam a todos os perigos",
+     "hyp": "m parar d znde at as u",
+     "cer": 0.7
+    },
+    {
+     "line_id": "l_02f25447783a8dd3cddb",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 18,
+     "ref": "so",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_3760b50d5f30b358c3dc",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 19,
+     "ref": "gros como de jentiu ao suplicante sempres as",
+     "hyp": "gmztu djenamke jimn",
+     "cer": 0.7727
+    },
+    {
+     "line_id": "l_ed53c75885328c8d15ef",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 20,
+     "ref": "de ne",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_1bc43c5f914a405d72c0",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 21,
+     "ref": "sistindo no intento por cujo motivo eles mas pi",
+     "hyp": "g rmtt re clometede esme",
+     "cer": 0.7234
+    },
+    {
+     "line_id": "l_8403c252a7c1e297680e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 22,
+     "ref": "cadas que o suplicante fizerão por a esta prezen",
+     "hyp": "ua ju rupsteaeykä moraatanyye",
+     "cer": 0.6667
+    },
+    {
+     "line_id": "l_cd78def0143f289ad6c3",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 23,
+     "ref": "que os chegarão ate o chapadam epelas beiradas",
+     "hyp": "jja j l arähy vra hsenrad",
+     "cer": 0.7391
+    },
+    {
+     "line_id": "l_01c06aa5f190cf0c102e",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 24,
+     "ref": "chegaraão ate Riberão de Sam Joam com as amos",
+     "hyp": "gyaye al jubri jam ro me",
+     "cer": 0.6889
+    },
+    {
+     "line_id": "l_66f406a69e8a188ca26a",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 25,
+     "ref": "uro que tirarão assim do Rio de Sam ate",
+     "hyp": "HJHjT TA",
+     "cer": 0.9744
+    },
+    {
+     "line_id": "l_c82e6a7743813131c07c",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 26,
+     "ref": "de o",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_8c43bc8623b8b39e26f9",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 27,
+     "ref": "is bandeiras pello Rio Grande Acima entrando",
+     "hyp": "g hrnn",
+     "cer": 0.9091
+    },
+    {
+     "line_id": "l_7794764d4dccb2a11193",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 28,
+     "ref": "Com",
+     "hyp": "",
+     "cer": 1.0
+    },
+    {
+     "line_id": "l_1565007df0d5c1ed033c",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 29,
+     "ref": "pella bordas como tambem querendo buscar lhe aca",
+     "hyp": "ypumcsemvrmbłek e",
+     "cer": 0.8542
+    },
+    {
+     "line_id": "l_bb64969a730f3bc857f5",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 30,
+     "ref": "eria acabando o Rio de Santa Anna achando",
+     "hyp": "Cate .o deita Ann va",
+     "cer": 0.6585
+    },
+    {
+     "line_id": "l_b02ffd0be6168cd975c7",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 31,
+     "ref": "ouro como todos sabem ser resolverao varios",
+     "hyp": "Cmtd em ena vari",
+     "cer": 0.6744
+    },
+    {
+     "line_id": "l_0210bf55733933671bbb",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 32,
+     "ref": "seguiram pella picada do suplicante a descpbi",
+     "hyp": "wnpea Ju flilnte a",
+     "cer": 0.7333
+    },
+    {
+     "line_id": "l_8d9dd59e672daa265081",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 33,
+     "ref": "rem ouro e com efeito acharão adiantando",
+     "hyp": "iazemuateih2 dinthak",
+     "cer": 0.75
+    },
+    {
+     "line_id": "l_de885348e984438c4f9c",
+     "document_id": "contrato_livro12_1763",
+     "page_id": "contrato12_pdf_p09",
+     "reading_order": 34,
+     "ref": "sulpicante deste Rio Sam Pedro e tãobem",
+     "hyp": "gelegijm phim",
+     "cer": 0.8462
+    },
+    {
+     "line_id": "l_75b74eada97c289e5268",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 0,
+     "ref": "Recebi do procurador dos conselho Nicolal Guesdes Pinto",
+     "hyp": "sebi do Crocurador do onsello Nilslao Guedez Pinto",
+     "cer": 0.2182
+    },
+    {
+     "line_id": "l_3fd9b94ded90c1913ba8",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 1,
+     "ref": "aquantia de doze mil reis proferidas dos mes Ordenados dolama",
+     "hyp": "aquantia de doze mil Reiz, poro Jedidoz domco Ordenado do Cama",
+     "cer": 0.2623
+    },
+    {
+     "line_id": "l_7aa6b81b3c6e720451c3",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 2,
+     "ref": "ral, epor estar pago eclastiz feitos pago apresente vela de jundiai",
+     "hyp": "ral e porestar pago e Saztiz feitto paso opnzente Refibo Jundli",
+     "cer": 0.3284
+    },
+    {
+     "line_id": "l_d0b754cca83220a93c48",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 3,
+     "ref": "aý, 27 de novem de 1759",
+     "hyp": "a 27 2951 e 1759",
+     "cer": 0.4783
+    },
+    {
+     "line_id": "l_b1565df6ef2950b0c75d",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 4,
+     "ref": "Rangel",
+     "hyp": "Kanger",
+     "cer": 0.3333
+    },
+    {
+     "line_id": "l_76217b902fb4c3d39956",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 5,
+     "ref": "aetano Antonio",
+     "hyp": "aelano Antonio e",
+     "cer": 0.2143
+    },
+    {
+     "line_id": "l_2f47094e4cd7027bfc87",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 6,
+     "ref": "Mandado para o procurador",
+     "hyp": "Landado parao Procurador",
+     "cer": 0.12
+    },
+    {
+     "line_id": "l_d7e125b5de2d0970f02c",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f113v",
+     "reading_order": 7,
+     "ref": "do conselho Nicolal Guedes",
+     "hyp": "do Concelho NNicolaõ Guedes Fin",
+     "cer": 0.3077
+    },
+    {
+     "line_id": "l_cd5b3985f640dd9e2002",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 0,
+     "ref": "Nosso mandado sendo primeiro",
+     "hyp": "oho mandado sendostrimeyro",
+     "cer": 0.2143
+    },
+    {
+     "line_id": "l_f9aa650442a48bee0001",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 1,
+     "ref": "por nos assinado em seu cumpri",
+     "hyp": "nos asignado emseu comprisfampelo",
+     "cer": 0.5333
+    },
+    {
+     "line_id": "l_322b323cb6a421392a76",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 2,
+     "ref": "mento e na forma dele satisfa",
+     "hyp": "nento e na forma delle satiffa",
+     "cer": 0.1034
+    },
+    {
+     "line_id": "l_dd56882dafeb6530c3b4",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 3,
+     "ref": "ca pelos reditos da câmara a Thomas",
+     "hyp": "eapellos Redetos da Camara a Romas",
+     "cer": 0.2571
+    },
+    {
+     "line_id": "l_ec2199e5bb5a153fadbb",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 4,
+     "ref": "Pardo capitão do mato da cidade",
+     "hyp": "ardo Cappitaõ do mnato decidade",
+     "cer": 0.2581
+    },
+    {
+     "line_id": "l_f2229ac155cd8f86dc2e",
+     "document_id": "pagamento_thomas_pardo",
+     "page_id": "pagamento_f114r",
+     "reading_order": 5,
+     "ref": "de São Paulo a quantia de quatro mil",
+     "hyp": "de o dquantia de coatromil",
+     "cer": 0.3611
+    }
+   ]
+  }
+ }
+}
