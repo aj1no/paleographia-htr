@@ -47,3 +47,17 @@ A declaração da [entrega acadêmica](entregas/pi_iv_pln_20261020/adequacao_aca
 deve ser revisada conforme a rubrica. Não foram presumidas ferramentas usadas
 anteriormente, coautorias, aprovações ou revisão sistemática concluída. Créditos,
 fontes, texto e interpretações precisam da conferência final do grupo.
+
+## Atualização de 09/11/2026: Claude Code
+
+De 05/11 a 09/11, o Claude Code (Claude Opus 5.5, Anthropic) apoiou, a pedido de Rodolfo Takemoto:
+o pipeline de ajuste fino do PP-OCRv6 e os treinos gravados, a análise linguística dos erros e a
+pós-correção (Notebook 3), o reconhecedor treinado do zero, a aplicação web (modo leitura, aba Textos,
+conferência às cegas, PAGE XML, tema noturno), a curadoria às cegas e o congelamento do teste
+reservado, a avaliação final única, o notebook comparativo, a redação e a revisão do artigo de PLN e
+deste README. Os prompts e os resultados estão na planilha de documentação do uso de IA da equipe.
+
+Os commits desse período foram feitos pelo Claude Code em nome do autor e, a pedido do autor, as mensagens
+não trazem a linha de coautoria; o uso de IA fica declarado aqui, na planilha e nos comentários dos
+notebooks e do artigo. Nenhuma ferramenta de IA validou leituras: as transcrições de referência da
+validação e do teste foram feitas por integrantes da equipe.
