@@ -114,7 +114,46 @@ class ReviewService:
                 lines, _ = segment_pages([page], method, self.config, output, self.root)
             state["lines"].extend(lines)
             self.save(state, "segment")
+            if method == "kraken_blla" and self.rejoin_blla_pieces(page_id):
+                lines = sorted((l for l in self.state()["lines"] if l["page_id"] == page_id),
+                               key=lambda l: l["reading_order"])
             return lines
+
+    def rejoin_blla_pieces(self, page_id, max_gap=40):
+        """Glue the first/last words that blla cut off back onto their line, before anyone reads them.
+
+        Only lines with no human work (no text, never reviewed) are touched; the replaced lines stay
+        in the revision history and the new line lists them in ``merged_from``.
+        """
+        from .blla_segmentation import rejoin_line, side_fragments
+
+        def untouched(line):
+            return (not line.get("text_diplomatic") and not line.get("reviewed_at")
+                    and line["review_status"] == "pending_review" and line["geometry_status"] == "pending_review")
+        with self.lock:
+            state = self.state()
+            page = self.get_page(page_id, state)
+            if page is None:
+                raise KeyError(page_id)
+            lines = [l for l in state["lines"] if l["page_id"] == page_id and l["review_status"] != "rejected"]
+            by_id = {l["line_id"]: l for l in lines if l.get("blla_geometry", {}).get("boundary")}
+            groups = {main: [p for p in pieces if p["line_id"] in by_id and untouched(p)]
+                      for main, pieces in side_fragments(list(by_id.values()), max_gap).items()
+                      if untouched(by_id[main])}
+            groups = {main: pieces for main, pieces in groups.items() if pieces}
+            if not groups:
+                return []
+            output = self.workspace/"segments"/run_id()
+            rejoined = [rejoin_line(page, by_id[main], pieces, output, self.root) for main, pieces in groups.items()]
+            gone = {lid for line in rejoined for lid in line["merged_from"]}
+            # Cropping takes a moment; apply to the newest revision and only if nobody touched those lines.
+            fresh = self.state()
+            current = {l["line_id"]: l for l in fresh["lines"]}
+            if not all(lid in current and untouched(current[lid]) for lid in gone):
+                raise Conflict("Linhas alteradas durante a junção; nada foi gravado. Tente de novo.")
+            fresh["lines"] = [l for l in fresh["lines"] if l["line_id"] not in gone] + rejoined
+            self.save(fresh, "rejoin_blla_pieces")
+            return rejoined
 
     def add_line(self, page_id, box, region_id="page", reading_order=0):
         with self.lock:

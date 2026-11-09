@@ -60,12 +60,18 @@ def ordered_lines(result):
 
 def polygon_crop(image, polygon, pad=6, grow=5):
     """Crop the polygon's box; keep pixels inside the (slightly grown) polygon, paper colour outside."""
-    xs, ys = [p[0] for p in polygon], [p[1] for p in polygon]
+    return polygons_crop(image, [polygon], pad, grow)
+
+
+def polygons_crop(image, polygons, pad=6, grow=5):
+    """Same as ``polygon_crop`` for the union of several polygons (a line rejoined from pieces)."""
+    xs, ys = [p[0] for poly in polygons for p in poly], [p[1] for poly in polygons for p in poly]
     box = [max(0, int(min(xs)) - pad), max(0, int(min(ys)) - pad),
            min(image.width, int(max(xs)) + pad + 1), min(image.height, int(max(ys)) + pad + 1)]
     crop = image.crop(box)
     mask = Image.new("L", crop.size, 0)
-    ImageDraw.Draw(mask).polygon([(x - box[0], y - box[1]) for x, y in polygon], fill=255)
+    for polygon in polygons:
+        ImageDraw.Draw(mask).polygon([(x - box[0], y - box[1]) for x, y in polygon], fill=255)
     if grow:
         mask = mask.filter(ImageFilter.MaxFilter(2 * grow + 1))
     gray = crop.convert("L")
@@ -128,3 +134,71 @@ def segment_page_blla(page, output_dir, root, settings=None, result=None):
     write_json(output_dir / "segmentation.json", {"method": "kraken_blla", "model": MODEL_IN_IMAGE,
                "seconds": result.get("_seconds"), "count": len(lines), "transform_id": transform})
     return lines
+
+
+def side_fragments(lines, max_gap=40, min_overlap=0.5, tolerance=30):
+    """Pair each short ``margem`` piece with the full line it continues on the same row.
+
+    blla sometimes cuts the first or last word of a line into a separate short line. A piece is
+    paired when at least ``min_overlap`` of its height overlaps a ``page`` line and the horizontal
+    gap between them is at most ``max_gap`` pixels (small overlaps up to ``tolerance`` allowed).
+    Returns {main line_id: [pieces]}; pieces away from every line (true margin notes) stay out.
+    """
+    mains = [line for line in lines if line["region_id"] == "page"]
+    groups = {}
+    for piece in lines:
+        if piece["region_id"] != "margem":
+            continue
+        b, best = piece["bbox_xyxy"], None
+        for main in mains:
+            m = main["bbox_xyxy"]
+            if min(b[3], m[3]) - max(b[1], m[1]) < min_overlap * (b[3] - b[1]):
+                continue
+            if b[2] <= m[0] + tolerance:
+                gap = m[0] - b[2]
+            elif b[0] >= m[2] - tolerance:
+                gap = b[0] - m[2]
+            else:
+                continue
+            if gap <= max_gap and (best is None or abs(gap) < best[0]):
+                best = (abs(gap), main)
+        if best:
+            groups.setdefault(best[1]["line_id"], []).append(piece)
+    return groups
+
+
+def rejoin_line(page, main, pieces, output_dir, root):
+    """Crop one line again from its blla polygon plus the polygons of its side pieces."""
+    root, output_dir = Path(root), Path(output_dir)
+    source = safe_path(root, page["source_image"])
+    if sha256(source) != page["source_sha256"]:
+        raise ValueError("Fonte alterada desde o inventário.")
+    with Image.open(source) as opened:
+        image = opened.convert("RGB")
+        image.info.clear()
+    parts = sorted([main, *pieces], key=lambda line: line["bbox_xyxy"][0])
+    polygons = [[(int(x), int(y)) for x, y in part["blla_geometry"]["boundary"]] for part in parts]
+    for left, right in zip(parts, parts[1:]):
+        # Bridge the gap between neighbouring pieces over the rows they share.
+        a, b = left["bbox_xyxy"], right["bbox_xyxy"]
+        top, bottom = max(a[1], b[1]), min(a[3], b[3])
+        if bottom > top and b[0] > a[2]:
+            polygons.append([(a[2] - 2, top), (b[0] + 2, top), (b[0] + 2, bottom), (a[2] - 2, bottom)])
+    box, crop = polygons_crop(image, polygons)
+    if not bbox_valid(box, image.width, image.height):
+        raise ValueError("Recorte inválido.")
+    merged = [part["line_id"] for part in parts]
+    lid = "l_" + hashlib.sha256(("|".join(merged) + f"|{box}").encode()).hexdigest()[:20]
+    output_dir.mkdir(parents=True, exist_ok=True)
+    path = output_dir / (lid + ".png")
+    crop.save(path)
+    transform = hashlib.sha256(json.dumps({"method": "kraken_blla_rejoined", "model": MODEL_IN_IMAGE,
+                                           "crop": "polygons_box_pad6_grow5_paper_fill"}).encode()).hexdigest()
+    line = Line(line_id=lid, page_id=main["page_id"], document_id=main["document_id"], folio_id=main["folio_id"],
+                region_id="page", reading_order=main["reading_order"], source_image=main["source_image"],
+                crop_image=relative(path, root), bbox_xyxy=box, source_width=main["source_width"],
+                source_height=main["source_height"], split_group=main["split_group"],
+                source_sha256=main["source_sha256"], transform_id=transform).model_dump()
+    line.update(segmentation_method="kraken_blla", crop_sha256=sha256(path), merged_from=merged,
+                blla_geometry={"parts": [{"line_id": p["line_id"], **p["blla_geometry"]} for p in parts]})
+    return line
