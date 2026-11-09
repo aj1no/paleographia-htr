@@ -50,7 +50,7 @@ roda de novo.
 
 ## Resultado da avaliação única (09/11/2026)
 
-Cada modelo rodou **uma vez**, no commit do congelamento (`1797998`), com os hashes da referência,
+Cada modelo rodou **uma vez**, no commit do congelamento (`1797998`; depois da [reescrita das mensagens em 09/11](../../manutencao/reescrita_historico_20261109/README.md), `472f9f6`, com a mesma árvore), com os hashes da referência,
 dos recortes e dos pesos conferidos. Os dados estão em [`avaliacao_final.json`](avaliacao_final.json),
 com a leitura de cada linha. Os intervalos foram calculados depois, a partir das mesmas predições,
 sem rodar nenhum modelo de novo ([`analise_intervalos.json`](analise_intervalos.json),
