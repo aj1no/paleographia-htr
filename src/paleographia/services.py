@@ -155,6 +155,41 @@ class ReviewService:
             self.save(fresh, "rejoin_blla_pieces")
             return rejoined
 
+    def join_lines(self, line_id, other_id, expected_revision=None):
+        """Join two lines of the same page into one crop, at the reviewer's request.
+
+        Refuses validated lines (the reviewer must reopen them first). Any draft text is kept, in
+        left-to-right order. The new line takes the reading order of the wider line; both originals
+        stay in the revision history and are listed in ``merged_from``.
+        """
+        from .blla_segmentation import rejoin_line
+        with self.lock:
+            state = self.state()
+            if expected_revision and state["revision"] != expected_revision:
+                raise Conflict("A revisão mudou; recarregue antes de juntar.")
+            if line_id == other_id:
+                raise ValueError("Escolha duas linhas diferentes.")
+            byid = {l["line_id"]: l for l in state["lines"]}
+            if line_id not in byid or other_id not in byid:
+                raise KeyError(other_id if line_id in byid else line_id)
+            a, b = byid[line_id], byid[other_id]
+            if a["page_id"] != b["page_id"]:
+                raise ValueError("As linhas são de fólios diferentes.")
+            if "validated" in (a["review_status"], b["review_status"]):
+                raise Conflict("Uma das linhas já está validada. Volte-a para pendente antes de juntar.")
+            if "rejected" in (a["review_status"], b["review_status"]):
+                raise ValueError("Uma das linhas foi rejeitada.")
+            main, piece = (a, b) if (a["bbox_xyxy"][2] - a["bbox_xyxy"][0]) >= (b["bbox_xyxy"][2] - b["bbox_xyxy"][0]) else (b, a)
+            page = self.get_page(a["page_id"], state)
+            joined = rejoin_line(page, main, [piece], self.workspace/"segments"/run_id(), self.root)
+            textos = [l.get("text_diplomatic") or "" for l in sorted((a, b), key=lambda l: l["bbox_xyxy"][0])]
+            joined.update(region_id=main["region_id"],
+                          text_diplomatic=" ".join(t.strip() for t in textos if t.strip()) or None,
+                          exclusion_reason=None)
+            state["lines"] = [l for l in state["lines"] if l["line_id"] not in (line_id, other_id)] + [joined]
+            self.save(state, "join_lines")
+            return joined
+
     def add_line(self, page_id, box, region_id="page", reading_order=0):
         with self.lock:
             state = self.state()

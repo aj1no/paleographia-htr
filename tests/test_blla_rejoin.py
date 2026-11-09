@@ -70,3 +70,42 @@ def test_service_never_touches_lines_with_human_work(tmp_path):
     ids = {item["line_id"] for item in service.state()["lines"]}
     assert {"m2", "a2"} <= ids and not {"m1", "a1"} & ids
     assert service.rejoin_blla_pieces("p") == []
+
+
+def test_join_lines_on_request_keeps_drafts_in_reading_order(tmp_path):
+    sha = page_image(tmp_path / "img.png")
+    service = ReviewService(tmp_path, {"paths": {"workspace": "ws"}, "recognition": {"backend": "disabled"}})
+    lines = [line("m", [60, 40, 300, 70], order=0, text_diplomatic="mandado sendo"),
+             line("a", [20, 42, 52, 68], "margem", 1, text_diplomatic="Nosso"),
+             line("v", [60, 120, 300, 150], order=2, review_status="validated", text_diplomatic="lida",
+                  reviewer="R", reviewed_at="2026-11-09T00:00:00Z", reference_kind="human_diplomatic")]
+    lines[0]["exclusion_reason"] = "teste"
+    for item in lines:
+        item["source_sha256"] = sha
+    rev = service.save({"revision": None, "pages": [page_record(sha)], "lines": lines, "predictions": []}, "seed")["revision"]
+    joined = service.join_lines("a", "m", rev)
+    assert joined["text_diplomatic"] == "Nosso mandado sendo"
+    assert joined["reading_order"] == 0 and joined["region_id"] == "page" and joined["exclusion_reason"] is None
+    assert sorted(joined["merged_from"]) == ["a", "m"]
+    import pytest
+    from paleographia.services import Conflict
+    with pytest.raises(Conflict):
+        service.join_lines(joined["line_id"], "v", service.state()["revision"])
+    with pytest.raises(Conflict):
+        service.join_lines(joined["line_id"], "v", rev)  # revisão velha
+
+
+def test_join_route_requires_revision(tmp_path):
+    from fastapi.testclient import TestClient
+    from paleographia.api import create_app
+    sha = page_image(tmp_path / "img.png")
+    config = {"paths": {"workspace": "ws"}, "recognition": {"backend": "disabled"}}
+    service = ReviewService(tmp_path, config)
+    lines = [line("m", [60, 40, 300, 70], order=0), line("a", [20, 42, 52, 68], "margem", 1)]
+    for item in lines:
+        item["source_sha256"] = sha
+    rev = service.save({"revision": None, "pages": [page_record(sha)], "lines": lines, "predictions": []}, "seed")["revision"]
+    with TestClient(create_app(tmp_path, config)) as client:
+        assert client.post("/api/lines/m/juntar", json={"com": "a"}).status_code == 422
+        ok = client.post("/api/lines/m/juntar", json={"com": "a", "revision": rev})
+        assert ok.status_code == 200 and ok.json()["merged_from"] == ["a", "m"]

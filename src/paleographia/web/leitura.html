@@ -48,6 +48,13 @@ select,input{font:inherit;color:var(--ink);background:var(--field);border:1px so
 .status{font-size:12px;font-weight:500;border-radius:999px;padding:3px 10px;background:var(--warn-bg);color:var(--warn-fg)}
 .status.validated{background:var(--ok-bg);color:var(--ok-fg)}
 .status.rejected{background:var(--paper-2);color:var(--soft)}
+.status.excluded{background:var(--paper-2);color:var(--warn-fg);box-shadow:inset 0 0 0 1px var(--warn-fg)}
+.ruler button.excluded{background:repeating-linear-gradient(45deg,var(--warn-fg) 0 1.5px,transparent 1.5px 5px);box-shadow:inset 0 0 0 1px var(--warn-fg)}
+.panel{margin-top:12px;padding:12px 14px;background:var(--field);border:1px solid var(--line);border-radius:8px;display:flex;flex-direction:column;gap:10px}
+.panel .hint{margin:0}
+.panel .chips{display:flex;flex-wrap:wrap;gap:6px}
+.panel label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--soft)}
+.panel .actions{margin-top:0}
 .lens{background:var(--paper-2);border-radius:8px;padding:14px;overflow:auto;max-height:62vh;touch-action:none}
 .lens img{display:block;width:100%;max-height:200px;object-fit:contain;margin:auto;user-select:none}
 .lens.zoomed{cursor:grab}
@@ -165,7 +172,26 @@ body.blind .sheet{box-shadow:inset 0 0 0 2px var(--ink)}
       <button id="validate" title="Ctrl+Enter. Validar significa: conferi esta leitura na imagem e a aceito como transcrição paleográfica; recorte e ordem não mudam aqui.">Validar e seguir</button>
       <button id="saveDraft" class="secondary">Salvar rascunho</button>
       <button id="useModel" class="ghost">Começar pela leitura do modelo</button>
+      <button type="button" class="ghost" id="excludeToggle" aria-expanded="false" aria-controls="excludePanel" title="Tirar da referência uma linha que não dá para ler com segurança">Ilegível…</button>
+      <button type="button" class="ghost" id="joinToggle" aria-expanded="false" aria-controls="joinPanel" title="Quando o segmentador cortou uma palavra numa linha separada">Juntar linhas</button>
       <button type="button" class="ghost small keys" id="keysToggle" aria-expanded="false" aria-controls="keysList">Atalhos</button>
+    </div>
+    <div class="panel" id="excludePanel" hidden>
+      <p class="hint">Tira a linha da referência sem validar: ela não entra no treino nem nas métricas. O que você já escreveu fica guardado como rascunho.</p>
+      <div class="chips" role="group" aria-label="Motivo">
+        <button type="button" class="toggle reason" aria-pressed="false">Tinta apagada ou borrão</button>
+        <button type="button" class="toggle reason" aria-pressed="false">Papel danificado</button>
+        <button type="button" class="toggle reason" aria-pressed="false">Leitura só pela edição</button>
+        <button type="button" class="toggle reason" aria-pressed="false">Recorte errado</button>
+      </div>
+      <label>Outro motivo ou detalhe<input id="excludeOther" autocomplete="off" spellcheck="false" placeholder="Ex.: 3ª palavra ilegível"></label>
+      <div class="actions"><button type="button" id="excludeSave">Tirar da referência</button>
+        <button type="button" class="secondary" id="notText">Não é texto (rubrica, mancha, número)</button>
+        <button type="button" class="ghost" id="includeBack" hidden>Voltar a incluir</button></div>
+    </div>
+    <div class="panel" id="joinPanel" hidden>
+      <p class="hint">Junta esta linha com a vizinha num recorte só, quando o segmentador separou uma palavra. Rascunhos das duas são mantidos; linhas validadas precisam voltar a pendentes antes.</p>
+      <div class="actions"><button type="button" class="secondary" id="joinPrev">Com a anterior</button><button type="button" class="secondary" id="joinNext">Com a seguinte</button></div>
     </div>
     <p class="hint" id="keysList" hidden><kbd>Ctrl</kbd>+<kbd>Enter</kbd> valida · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha · <kbd>Alt</kbd>+<kbd>P</kbd> sinais especiais · <kbd>Alt</kbd>+<kbd>S</kbd> sobrescrito · <kbd>Alt</kbd>+<kbd>=</kbd>/<kbd>-</kbd> amplia · <kbd>Alt</kbd>+<kbd>N</kbd> negativo · <kbd>Alt</kbd>+<kbd>F</kbd> foco · <kbd>Alt</kbd>+<kbd>0</kbd> restaura a imagem</p>
     <p class="hint blindnote" id="blindNote" hidden>Às cegas: a sugestão do modelo e a edição estão escondidas e o campo começa vazio. Sua leitura vai para um registro separado e não altera a transcrição oficial da linha.</p>
@@ -228,7 +254,15 @@ function lineDiscordance(l) {
   const p = prediction(l.line_id);
   return p?.presentation?.status === 'candidate' ? discordance(p.presentation.text, l.published_reference?.text) : null;
 }
-const done = l => blind ? !!blindStatus[l.line_id]?.mine : l.review_status === 'validated' || l.review_status === 'rejected';
+const excluded = l => !!l.exclusion_reason && l.review_status === 'pending_review';
+const done = l => blind ? !!blindStatus[l.line_id]?.mine : l.review_status === 'validated' || l.review_status === 'rejected' || excluded(l);
+// Texto que parece nota do revisor, e não leitura do manuscrito: pede confirmação antes de validar.
+function looksLikeNote(text) {
+  const t = (text || '').normalize('NFC').trim().toLowerCase();
+  if (!t) return false;
+  return /n[ãa]o\s+(é|e|eh)\s+poss[íi]vel|ileg[íi]vel|n[ãa]o\s+(consigo|consegui|d[áa])\s+(pra\s+|para\s+)?l[eê]r?|n[ãa]o\s+leg[íi]vel|sem\s+leitura|n[ãa]o\s+sei\s+ler/.test(t)
+    || /^[?.…\s\[\]-]+$/.test(t);
+}
 // Próxima linha a conferir: na ordem de leitura, a primeira pendente depois da atual;
 // por discordância, a pendente em que o modelo mais se afasta da edição (sem edição, vai por último).
 function nextIndex(ls, from, order) {
@@ -283,16 +317,17 @@ function renderRuler() {
   const ls = pageLines(); $('ruler').replaceChildren();
   ls.forEach((l, i) => {
     const b = document.createElement('button'); b.type = 'button';
-    const state_ = blind ? (blindStatus[l.line_id]?.mine ? 'validated' : '') : l.review_status === 'validated' ? 'validated' : l.review_status === 'rejected' ? 'rejected' : '';
+    const state_ = blind ? (blindStatus[l.line_id]?.mine ? 'validated' : '') : l.review_status === 'validated' ? 'validated' : l.review_status === 'rejected' ? 'rejected' : excluded(l) ? 'excluded' : '';
     b.className = [state_, i === index ? 'current' : ''].join(' ').trim();
-    const what = blind ? (blindStatus[l.line_id]?.mine ? 'lida por você às cegas' : 'ainda não lida por você às cegas') : (statusLabel[l.review_status] || 'pendente');
+    const what = blind ? (blindStatus[l.line_id]?.mine ? 'lida por você às cegas' : 'ainda não lida por você às cegas') : excluded(l) ? `fora da referência (${l.exclusion_reason})` : (statusLabel[l.review_status] || 'pendente');
     const extra = !blind && queue === 'discordancia' ? `, discordância ${percent(lineDiscordance(l))}` : '';
     const label = `Linha ${i + 1}: ${what}${extra}${(blind ? blindDrafts : drafts).has(l.line_id) ? ', com rascunho local' : ''}`;
     b.title = label; b.setAttribute('aria-label', label); if (i === index) b.setAttribute('aria-current', 'step');
     b.onclick = () => go(i); $('ruler').append(b);
   });
   const count = ls.filter(done).length;
-  $('progress').textContent = !ls.length ? '' : blind ? `Você leu ${count} de ${ls.length} linhas às cegas` : `${ls.filter(l => l.review_status === 'validated').length} de ${ls.length} linhas validadas`;
+  const fora = ls.filter(excluded).length;
+  $('progress').textContent = !ls.length ? '' : blind ? `Você leu ${count} de ${ls.length} linhas às cegas` : `${ls.filter(l => l.review_status === 'validated').length} de ${ls.length} linhas validadas` + (fora ? ` · ${fora} fora da referência` : '');
   const readers = Object.values(blindStatus);
   $('blindCount').textContent = readers.length ? `${readers.length} linha(s) com leitura às cegas; ${readers.filter(r => r.count >= 2).length} com duas ou mais.` : 'Nenhuma leitura às cegas neste fólio.';
 }
@@ -305,9 +340,12 @@ function render() {
   const l = current();
   $('lineTitle').textContent = `Linha ${index + 1} de ${ls.length}` + (l.region_id && l.region_id !== 'page' ? ` · ${l.region_id}` : '');
   if (blind) { const b = blindStatus[l.line_id]; $('lineStatus').textContent = b?.mine ? `Lida por você · ${b.count} leitura(s)` : `Às cegas · ${b?.count || 0} leitura(s)`; $('lineStatus').className = 'status' + (b?.mine ? ' validated' : ''); }
-  else { $('lineStatus').textContent = statusLabel[l.review_status] || 'Pendente'; $('lineStatus').className = 'status ' + l.review_status; }
+  else if (excluded(l)) { $('lineStatus').textContent = 'Fora da referência'; $('lineStatus').className = 'status excluded'; $('lineStatus').title = l.exclusion_reason; }
+  else { $('lineStatus').textContent = statusLabel[l.review_status] || 'Pendente'; $('lineStatus').className = 'status ' + l.review_status; $('lineStatus').title = ''; }
   document.body.classList.toggle('blind', blind); $('blindNote').hidden = !blind; $('blindCard').hidden = !blind;
   $('validate').textContent = blind ? 'Registrar leitura às cegas' : 'Validar e seguir'; $('saveDraft').hidden = blind;
+  $('excludeToggle').hidden = $('joinToggle').hidden = blind;
+  $('includeBack').hidden = !(excluded(l) || l.review_status === 'rejected');
   $('queue').disabled = blind; $('queue').value = blind ? 'leitura' : queue;
   if (l.line_id !== timer.line) startTimer(l.line_id);
   $('crop').src = `/lines/${encodeURIComponent(pageId)}/${encodeURIComponent(l.line_id)}.png?v=${state.revision}`;
@@ -321,11 +359,11 @@ function render() {
     m.width = (100 * (x2 - x1) / page.width) + '%'; m.height = (100 * (y2 - y1) / page.height) + '%';
   }
   const rows = [['Ordem de leitura', l.reading_order], ['Região', l.region_id], ['Revisor registrado', l.reviewer || 'não informado'],
-    ['Revisado em', l.reviewed_at || 'nunca'], ['Recorte (px)', l.bbox_xyxy.join(', ')], ['Recorte conferido', l.geometry_status === 'validated' ? 'sim' : 'não'],
+    ['Revisado em', l.reviewed_at || 'nunca'], ...(l.exclusion_reason ? [['Motivo de exclusão', l.exclusion_reason]] : []), ['Recorte (px)', l.bbox_xyxy.join(', ')], ['Recorte conferido', l.geometry_status === 'validated' ? 'sim' : 'não'],
     ...(blind ? [] : [['Discordância modelo × edição', percent(lineDiscordance(l))]])];
   $('details').replaceChildren(...rows.flatMap(([k, v]) => { const dt = document.createElement('dt'), dd = document.createElement('dd'); dt.textContent = k; dd.textContent = String(v); return [dt, dd]; }));
 }
-function go(i) { remember(); const n = pageLines().length; if (!n) return; index = Math.max(0, Math.min(n - 1, i)); render(); $('mine').focus(); }
+function go(i) { remember(); const n = pageLines().length; if (!n) return; index = Math.max(0, Math.min(n - 1, i)); noteArmed = null; openPanel(null); render(); $('mine').focus(); }
 async function load(keepLine) {
   state = await request('/api/catalog');
   $('pages').replaceChildren(...state.pages.map(p => new Option(`${p.original_name} · ${p.folio_id}`, p.page_id)));
@@ -340,7 +378,7 @@ async function load(keepLine) {
   if (keepLine) { const i = pageLines().findIndex(l => l.line_id === keepLine); if (i >= 0) index = i; }
   render();
 }
-let busy = false;
+let busy = false, noteArmed = null;
 async function save(validate) {
   const l = current(); if (!l || busy) return;
   const n = index + 1;
@@ -348,9 +386,13 @@ async function save(validate) {
   if (blind) return saveBlind(l, text, reviewer);
   if (validate && !text) return message('Escreva a leitura conferida antes de validar.', 'error');
   if (validate && !reviewer) { $('reviewer').focus(); return message('Informe o nome do revisor para validar.', 'error'); }
+  if (validate && looksLikeNote(text) && noteArmed !== l.line_id) {
+    noteArmed = l.line_id;
+    return message('Isto parece uma nota, não uma leitura do manuscrito. Se a linha não dá para ler, use “Ilegível…” para tirá-la da referência. Para validar mesmo assim, clique em Validar de novo.', 'error');
+  }
   if (!validate && l.review_status === 'validated' && text === (l.text_diplomatic || '')) return message('Nada mudou nesta linha.');
   const changes = {text_diplomatic: text || null, review_status: validate ? 'validated' : 'pending_review'};
-  if (validate) changes.reference_kind = 'human_diplomatic';
+  if (validate) { changes.reference_kind = 'human_diplomatic'; if (l.exclusion_reason) changes.exclusion_reason = null; }
   if (reviewer) changes.reviewer = reviewer;
   busy = true; document.querySelectorAll('button').forEach(b => b.disabled = true);
   try {
@@ -366,6 +408,58 @@ async function save(validate) {
     remember();
     message(e.status === 409 ? 'Outra pessoa salvou enquanto você lia. Seu texto foi mantido aqui; recarregue o fólio, confira e salve de novo.' : e.message, 'error');
   } finally { busy = false; document.querySelectorAll('button').forEach(b => b.disabled = false); }
+}
+// ---------- Tirar da referência e juntar linhas ----------
+function openPanel(which) {
+  for (const [panel, toggle] of [['excludePanel', 'excludeToggle'], ['joinPanel', 'joinToggle']]) {
+    const open = panel === which; $(panel).hidden = !open; $(toggle).setAttribute('aria-expanded', String(open));
+  }
+  if (which === 'excludePanel') {
+    const l = current(); $('excludeOther').value = '';
+    document.querySelectorAll('.reason').forEach(b => b.setAttribute('aria-pressed', String(b.textContent === l?.exclusion_reason)));
+  }
+}
+async function changeLine(l, changes, after) {
+  if (busy) return; busy = true; document.querySelectorAll('button').forEach(b => b.disabled = true);
+  try {
+    await request('/api/lines/' + encodeURIComponent(l.line_id), 'PATCH', {changes, revision: state.revision});
+    drafts.delete(l.line_id); await load(l.line_id); openPanel(null); after();
+  } catch (e) {
+    message(e.status === 409 ? 'Outra pessoa salvou enquanto você lia. Recarregue o fólio e tente de novo.' : e.message, 'error');
+  } finally { busy = false; document.querySelectorAll('button').forEach(b => b.disabled = false); }
+}
+function exclude(asNotText) {
+  const l = current(); if (!l) return;
+  const n = index + 1, chosen = document.querySelector('.reason[aria-pressed="true"]')?.textContent || '';
+  const detail = $('excludeOther').value.trim();
+  const reason = asNotText ? 'Não é texto (rubrica, mancha, número)' : [chosen, detail].filter(Boolean).join(': ');
+  if (!reason) return message('Escolha um motivo ou escreva o que impede a leitura.', 'error');
+  const text = $('mine').value.trim(), reviewer = $('reviewer').value.trim();
+  const changes = {exclusion_reason: reason, review_status: asNotText ? 'rejected' : 'pending_review', text_diplomatic: text || null};
+  if (reviewer) changes.reviewer = reviewer;
+  changeLine(l, changes, () => {
+    const next = nextIndex(pageLines(), index, queue);
+    message(`Linha ${n} ${asNotText ? 'marcada como não texto' : 'fora da referência'}: ${reason}.`, 'ok');
+    if (next >= 0) go(next);
+  });
+}
+function includeBack() {
+  const l = current(); if (!l) return; const n = index + 1;
+  changeLine(l, {exclusion_reason: null, review_status: 'pending_review'}, () => message(`Linha ${n} voltou para a referência, pendente.`, 'ok'));
+}
+async function join(offset) {
+  const ls = pageLines(), l = current(), other = ls[index + offset];
+  if (!l || !other) return message(offset < 0 ? 'Esta é a primeira linha do fólio.' : 'Esta é a última linha do fólio.', 'error');
+  remember();
+  if (drafts.has(l.line_id) || drafts.has(other.line_id)) return message('Salve o rascunho antes de juntar as linhas.', 'error');
+  if (busy) return; busy = true; document.querySelectorAll('button').forEach(b => b.disabled = true);
+  const a = Math.min(index, index + offset) + 1, b = Math.max(index, index + offset) + 1;
+  try {
+    const joined = await request('/api/lines/' + encodeURIComponent(l.line_id) + '/juntar', 'POST', {com: other.line_id, revision: state.revision});
+    await load(joined.line_id); openPanel(null);
+    message(`Linhas ${a} e ${b} juntadas num recorte só. Confira a leitura na imagem nova.`, 'ok');
+  } catch (e) { message(e.message, 'error'); }
+  finally { busy = false; document.querySelectorAll('button').forEach(x => x.disabled = false); }
 }
 // ---------- Modo às cegas: leituras independentes num registro separado ----------
 async function loadBlind() {
@@ -588,6 +682,14 @@ $('timingOn').onchange = () => { timingOn = $('timingOn').checked; try { localSt
 $('reviewer').addEventListener('change', () => loadBlind().then(render));
 $('blind').setAttribute('aria-pressed', String(blind));
 $('saveDraft').onclick = () => save(false);
+$('excludeToggle').onclick = () => openPanel($('excludePanel').hidden ? 'excludePanel' : null);
+$('joinToggle').onclick = () => openPanel($('joinPanel').hidden ? 'joinPanel' : null);
+document.querySelectorAll('.reason').forEach(b => b.onclick = () => document.querySelectorAll('.reason').forEach(o => o.setAttribute('aria-pressed', String(o === b && b.getAttribute('aria-pressed') !== 'true'))));
+$('excludeSave').onclick = () => exclude(false);
+$('notText').onclick = () => exclude(true);
+$('includeBack').onclick = includeBack;
+$('joinPrev').onclick = () => join(-1);
+$('joinNext').onclick = () => join(1);
 $('useModel').onclick = () => { const p = prediction(current().line_id); if (p?.presentation?.status === 'candidate') { $('mine').value = p.presentation.text; fit(); remember(); renderModel(); $('mine').focus(); } };
 $('pages').onchange = () => { remember(); pageId = $('pages').value; index = 0; history.replaceState(null, '', `?page=${encodeURIComponent(pageId)}`); load(); };
 try { $('reviewer').value = localStorage.getItem('paleographia.revisor') || ''; } catch { /* storage may be blocked */ }

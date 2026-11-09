@@ -52,6 +52,12 @@ def same_origin(origin, host):
     return parts.scheme in {"http", "https"} and bool(host) and parts.netloc.lower() == host.lower()
 
 
+class Join(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    com: str = Field(min_length=1, max_length=80)
+    revision: str = Field(min_length=1)
+
+
 class BlindReading(BaseModel):
     model_config = ConfigDict(extra="forbid")
     line_id: str = Field(min_length=1)
@@ -238,6 +244,10 @@ def create_app(root=None, config=None, recognizer=None):
     @app.patch("/api/lines/{line_id}")
     def edit_line(line_id: str, edit: Edit):
         return service.update_line(line_id, edit.changes, edit.revision)
+
+    @app.post("/api/lines/{line_id}/juntar")
+    def join_line(line_id: str, join: Join):
+        return service.join_lines(line_id, join.com, join.revision)
 
     @app.get("/tema.css")
     def theme_css():

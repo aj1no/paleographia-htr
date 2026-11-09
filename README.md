@@ -63,6 +63,7 @@ grafia. Os três modelos leem os mesmos recortes.
 | Tela | O que faz |
 | --- | --- |
 | **Modo leitura** (`/leitura`, padrão) | Uma linha por vez: recorte ampliável, filtros de visualização (contraste, brilho, negativo, tons de cinza, preto e branco), foco na linha, leitura do modelo com as palavras divergentes marcadas, sinais paleográficos sob demanda e atalhos de teclado |
+| **Ilegível e Juntar linhas** | Tira da referência, com motivo, a linha que não dá para ler com segurança; junta numa só a linha que o segmentador partiu; avisa antes de validar um texto que parece nota do revisor |
 | **Às cegas** | Esconde o modelo e a edição para uma segunda leitura independente; mede a concordância entre revisores |
 | **Textos** (`/textos`) | Só as linhas validadas, em leitura diplomática, modernizada ou lado a lado, com download em .txt |
 | **Editor completo** (`/`) | Importar imagens, segmentar linhas (Kraken blla), ajustar recortes e ordem de leitura, catalogar fólio e face |

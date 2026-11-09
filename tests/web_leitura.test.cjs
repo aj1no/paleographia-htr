@@ -90,3 +90,17 @@ test('sem leitura do modelo ou sem edição não há discordância', () => {
 test('conta caracteres combinados como letras, em NFC', () => {
   assert.strictEqual(discordance('Nossa', 'No\u0303ssa'.normalize('NFD')), 1 / 5);
 });
+
+// Aviso antes de validar: texto que parece nota do revisor, e não leitura do manuscrito.
+const noteSource = html.match(/function looksLikeNote[\s\S]*?\r?\n}\r?\n/)[0];
+const looksLikeNote = new Function(`${noteSource}; return looksLikeNote;`)();
+
+test('reconhece notas do revisor no lugar da leitura', () => {
+  for (const nota of ['não e possivele ler', 'Não é possível ler', 'ilegível', 'nao consigo ler', 'não dá pra ler', '???', '[...]', '…'])
+    assert.strictEqual(looksLikeNote(nota), true, nota);
+});
+
+test('não confunde leituras de verdade com notas', () => {
+  for (const leitura of ['Com', 'não', 'de o', 'Nosso mandado sendo primeiro', 'por nos assinado em seu cumpri', 'ou', ''])
+    assert.strictEqual(looksLikeNote(leitura), false, leitura);
+});

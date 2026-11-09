@@ -167,6 +167,17 @@ def side_fragments(lines, max_gap=40, min_overlap=0.5, tolerance=30):
     return groups
 
 
+def line_polygons(line):
+    """Polygons that outline a line: its blla boundary, the parts of a rejoined line, or its box."""
+    geometry = line.get("blla_geometry") or {}
+    if geometry.get("boundary"):
+        return [[(int(x), int(y)) for x, y in geometry["boundary"]]]
+    if geometry.get("parts"):
+        return [[(int(x), int(y)) for x, y in part["boundary"]] for part in geometry["parts"] if part.get("boundary")]
+    x1, y1, x2, y2 = line["bbox_xyxy"]
+    return [[(x1, y1), (x2, y1), (x2, y2), (x1, y2)]]
+
+
 def rejoin_line(page, main, pieces, output_dir, root):
     """Crop one line again from its blla polygon plus the polygons of its side pieces."""
     root, output_dir = Path(root), Path(output_dir)
@@ -177,7 +188,7 @@ def rejoin_line(page, main, pieces, output_dir, root):
         image = opened.convert("RGB")
         image.info.clear()
     parts = sorted([main, *pieces], key=lambda line: line["bbox_xyxy"][0])
-    polygons = [[(int(x), int(y)) for x, y in part["blla_geometry"]["boundary"]] for part in parts]
+    polygons = [poly for part in parts for poly in line_polygons(part)]
     for left, right in zip(parts, parts[1:]):
         # Bridge the gap between neighbouring pieces over the rows they share.
         a, b = left["bbox_xyxy"], right["bbox_xyxy"]
@@ -200,5 +211,6 @@ def rejoin_line(page, main, pieces, output_dir, root):
                 source_height=main["source_height"], split_group=main["split_group"],
                 source_sha256=main["source_sha256"], transform_id=transform).model_dump()
     line.update(segmentation_method="kraken_blla", crop_sha256=sha256(path), merged_from=merged,
-                blla_geometry={"parts": [{"line_id": p["line_id"], **p["blla_geometry"]} for p in parts]})
+                blla_geometry={"parts": [{"line_id": p["line_id"], "boundary": [list(pt) for pt in poly]}
+                                         for p in parts for poly in line_polygons(p)]})
     return line
