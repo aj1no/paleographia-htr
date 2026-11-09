@@ -6,6 +6,7 @@ from pathlib import Path
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.exceptions import RequestValidationError
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 from starlette.concurrency import run_in_threadpool
@@ -101,6 +102,8 @@ def create_app(root=None, config=None, recognizer=None):
                 await run_in_threadpool(close)
 
     app = FastAPI(title="PaleographIA — revisão local", lifespan=lifespan)
+    # O catálogo cresce com as leituras do modelo; comprimir reduz ~9x o envio (útil em rede lenta ou túnel).
+    app.add_middleware(GZipMiddleware, minimum_size=2048)
     app.state.service = service
 
     @app.middleware("http")
@@ -201,11 +204,13 @@ def create_app(root=None, config=None, recognizer=None):
     async def upload(file: UploadFile = File(...)):
         content = await file.read(25*1024*1024+1)
         if len(content) > 25*1024*1024:
-            raise HTTPException(413, "Imagem excede 25 MiB.")
+            raise HTTPException(413, "Arquivo excede 25 MiB.")
         try:
-            return await run_in_threadpool(service.import_image, content, file.filename)
+            pages = await run_in_threadpool(service.import_upload, content, file.filename)
         except ValueError as exc:
             raise HTTPException(400, str(exc)) from exc
+        # Compatível com quem espera uma página: devolve a primeira e lista todas (PDF tem várias).
+        return dict(pages[0], imported_pages=[p["page_id"] for p in pages])
 
     @app.post("/process-folio")
     async def process_folio(file: UploadFile = File(...), recognize: bool = False):

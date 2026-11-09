@@ -31,3 +31,7 @@ experiments/*
 !experiments/README.md
 # Recreated from the verified supplied ZIP; catalogs and text stay versioned.
 /data/manifests/corpus_expandido_v02/pdf_images/
+# Demonstração da apresentação: dados e config gerados localmente; cloudflared baixado à parte.
+data/demo_apresentacao/
+configs/demo_apresentacao.toml
+tools/

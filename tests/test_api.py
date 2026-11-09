@@ -120,3 +120,65 @@ def test_geometry_edit_refreshes_existing_crop_hash_in_export(corpus):
         with zipfile.ZipFile(io.BytesIO(client.get("/api/export").content)) as archive:
             exported = [json.loads(row) for row in archive.read("lines.jsonl").splitlines()]
         assert next(row for row in exported if row["line_id"] == saved["line_id"]) == saved
+
+
+def test_upload_accepts_pdf_pages_and_other_image_formats(corpus):
+    import io
+
+    import pytest
+    from PIL import Image
+    pymupdf = pytest.importorskip("pymupdf")
+    root, config, pages, lines = corpus
+    app = create_app(root, config, TestRecognizer())
+    pdf = pymupdf.open()
+    for texto in ("primeira", "segunda"):
+        pdf.new_page(width=300, height=400).insert_text((40, 60), texto)
+    webp = io.BytesIO()
+    Image.new("RGB", (120, 80), (200, 180, 150)).save(webp, "WEBP")
+    with TestClient(app) as client:
+        response = client.post("/api/pages", files={"file": ("livro.pdf", pdf.tobytes(), "application/pdf")})
+        assert response.status_code == 200
+        body = response.json()
+        assert len(body["imported_pages"]) == 2 and body["page_id"] == body["imported_pages"][0]
+        names = {p["page_id"]: p["original_name"] for p in client.get("/api/catalog").json()["pages"]}
+        assert names[body["imported_pages"][1]] == "livro · página 2 do PDF.png"
+        response = client.post("/api/pages", files={"file": ("foto.webp", webp.getvalue(), "image/webp")})
+        assert response.status_code == 200 and response.json()["original_name"] == "foto.png"
+        assert client.get(f"/api/pages/{response.json()['page_id']}/image").status_code == 200
+        bad = client.post("/api/pages", files={"file": ("x.pdf", b"%PDF-quebrado", "application/pdf")})
+        assert bad.status_code == 400
+
+
+def test_demo_cache_brings_back_a_preprocessed_folio_on_upload(corpus, tmp_path):
+    import hashlib
+    import io
+    import json
+
+    from PIL import Image
+    root, config, pages, lines = corpus
+    picture = io.BytesIO()
+    Image.new("RGB", (200, 120), (210, 190, 160)).save(picture, "JPEG")
+    content = picture.getvalue()
+    checksum = hashlib.sha256(content).hexdigest()
+    crop = root / "demo_cache" / "l_demo.png"
+    crop.parent.mkdir(parents=True)
+    Image.new("RGB", (180, 20), "white").save(crop)
+    page_id = "p_" + checksum[:20]
+    entry = {"page": {"page_id": page_id, "document_id": "demo", "folio_id": "101r", "side": "recto",
+                      "source_image": "x.jpg", "original_name": "Fólio 101 reto.JPG", "width": 200, "height": 120,
+                      "source_sha256": checksum, "correspondence_status": "pending_review", "transcribed_coverage": []},
+             "lines": [{"line_id": "l_demo", "page_id": page_id, "document_id": "demo", "folio_id": "101r",
+                        "region_id": "page", "reading_order": 0, "source_image": "x.jpg",
+                        "crop_image": "demo_cache/l_demo.png", "bbox_xyxy": [10, 10, 190, 30], "source_width": 200,
+                        "source_height": 120, "split_group": "demo", "source_sha256": checksum,
+                        "review_status": "pending_review", "geometry_status": "pending_review"}],
+             "predictions": [], "processed_at": "2026-11-09T20:00:00Z"}
+    (crop.parent / f"{checksum}.json").write_text(json.dumps(entry), encoding="utf-8")
+    app = create_app(root, dict(config, demo={"cache_dir": "demo_cache"}), TestRecognizer())
+    with TestClient(app) as client:
+        body = client.post("/api/pages", files={"file": ("foto.jpg", content, "image/jpeg")}).json()
+        assert body["from_demo_cache"] is True and body["cached_lines"] == 1 and body["page_id"] == page_id
+        catalog = client.get("/api/catalog").json()
+        assert [l["line_id"] for l in catalog["lines"] if l["page_id"] == page_id] == ["l_demo"]
+        again = client.post("/api/pages", files={"file": ("foto.jpg", content, "image/jpeg")}).json()
+        assert "from_demo_cache" not in again  # já está na lista: não duplica

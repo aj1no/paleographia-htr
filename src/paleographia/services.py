@@ -61,6 +61,46 @@ class ReviewService:
                 raise Conflict("Importe catálogo em workspace vazio para preservar a revisão existente.")
             return self.save(dict(state, pages=pages, lines=lines), "import_catalog")
 
+    def import_upload(self, content, original_name, dpi=200, max_pages=30):
+        """Import an uploaded file: JPEG/PNG/TIFF as is, other images as PNG, and each PDF page as an image.
+
+        Returns the list of imported pages (one per PDF page). PDF pages are rendered at ``dpi``
+        with PyMuPDF (the ``pdf`` extra); nothing else in the upload is kept.
+        """
+        name = Path(original_name or "imagem").name
+        if not content:
+            raise ValueError("Envie um arquivo não vazio.")
+        if content[:5] == b"%PDF-":
+            try:
+                import pymupdf
+            except ImportError as exc:
+                raise ValueError("Para importar PDF, instale o extra pdf (pymupdf).") from exc
+            try:
+                document = pymupdf.open(stream=content, filetype="pdf")
+            except Exception as exc:  # pymupdf raises its own error types
+                raise ValueError("PDF inválido.") from exc
+            with document:
+                if document.page_count == 0:
+                    raise ValueError("O PDF não tem páginas.")
+                if document.page_count > max_pages:
+                    raise ValueError(f"O PDF tem {document.page_count} páginas; envie até {max_pages} por vez.")
+                stem = Path(name).stem
+                return [self.import_image(page.get_pixmap(dpi=dpi).tobytes("png"),
+                                          f"{stem} · página {number} do PDF.png")
+                        for number, page in enumerate(document, start=1)]
+        try:
+            with Image.open(io.BytesIO(content)) as opened:
+                fmt = opened.format
+                if fmt not in {"JPEG", "PNG", "TIFF"}:
+                    if opened.width * opened.height > 40_000_000:
+                        raise ValueError("Imagem excede 40 milhões de pixels.")
+                    buffer = io.BytesIO()
+                    opened.convert("RGB").save(buffer, "PNG")
+                    content, name = buffer.getvalue(), Path(name).stem + ".png"
+        except (OSError, UnidentifiedImageError, Image.DecompressionBombError) as exc:
+            raise ValueError("Formato não reconhecido. Envie uma imagem (JPEG, PNG, TIFF, WEBP…) ou um PDF.") from exc
+        return [self.import_image(content, name)]
+
     def import_image(self, content, original_name):
         if not content or len(content) > 25 * 1024 * 1024:
             raise ValueError("Envie imagem não vazia de até 25 MiB.")
@@ -87,12 +127,38 @@ class ReviewService:
                 raise Conflict("Colisão na identificação da fonte.")
             if not path.exists():
                 path.write_bytes(content)
+            cached = self._demo_cache(checksum)
+            if cached and not any(p["page_id"] == cached["page"]["page_id"] for p in state["pages"]):
+                # Demonstração: o fólio já foi processado antes; as linhas e a leitura do modelo
+                # voltam na hora, marcadas como vindas desse processamento anterior.
+                page = dict(cached["page"], source_image=relative(path, self.root))
+                state["pages"].append(page)
+                state["lines"].extend(cached["lines"])
+                state["predictions"].extend(cached["predictions"])
+                self.save(state, "import_image_demo_cache")
+                return dict(page, from_demo_cache=True, cached_lines=len(cached["lines"]),
+                            cached_at=cached.get("processed_at"))
             page = Page(page_id=page_id, document_id="unassigned_"+page_id, folio_id=page_id,
                         source_image=relative(path, self.root), original_name=Path(original_name or "imagem").name,
                         width=width, height=height, source_sha256=checksum).model_dump()
             state["pages"].append(page)
             self.save(state, "import_image")
             return page
+
+    def _demo_cache(self, checksum):
+        """Pre-processed folio for demonstrations, keyed by the image SHA-256 (``[demo] cache_dir``)."""
+        directory = self.config.get("demo", {}).get("cache_dir")
+        if not directory:
+            return None
+        entry = safe_path(self.root, directory)/f"{checksum}.json"
+        if not entry.is_file():
+            return None
+        cached = json.loads(entry.read_text(encoding="utf-8"))
+        if cached.get("page", {}).get("source_sha256") != checksum:
+            return None
+        if not all(safe_path(self.root, l["crop_image"]).is_file() for l in cached["lines"]):
+            return None
+        return cached
 
     def get_page(self, page_id, state=None):
         return next((p for p in (state or self.state())["pages"] if p["page_id"] == page_id), None)

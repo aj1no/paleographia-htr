@@ -119,6 +119,12 @@ a imagem e os pesos antes de abrir o navegador.
 | `configs/curation_teste_contrato12.toml` | Teste reservado, documento 2, **reconhecedor desligado** | 8017 |
 | `configs/pilot.toml` | Piloto de 1831, sugestões desativadas (`start_safe.bat`) | 8000 |
 
+**Demonstração da apresentação** (cópia, sem tocar nos dados oficiais): `scripts/demo_apresentacao.py`
+monta uma coleção com os fólios transcritos e o modelo ajustado B, guarda fólios pré-processados (o
+upload da mesma imagem traz linhas e leitura na hora, com aviso) e restaura o estado guardado;
+`iniciar_demo.bat` abre a demonstração na porta 8018 e, com `tools/cloudflared.exe`, um link público
+temporário. O editor aceita imagens (JPEG, PNG, TIFF, WEBP…) e PDF, uma página por fólio.
+
 Um clone novo começa **sem workspace**: iniciar o servidor não importa revisões de outra máquina. O
 [guia de execução](docs/runbook.md) explica como importar o catálogo congelado num workspace vazio.
 Use um único processo por workspace. O reconhecimento exige os pesos e o

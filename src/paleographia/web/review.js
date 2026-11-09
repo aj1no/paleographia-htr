@@ -364,7 +364,9 @@ $('uploadBtn').onclick = () => $('file').click();
 $('file').onchange = () => action(async () => {
     if (!$('file').files.length) return; captureDrafts(); const f = new FormData(); f.append('file', $('file').files[0]);
     const p = await request('/api/pages', 'POST', f); pageId = p.page_id; lineId = null;
-    await refresh(); message('Imagem importada. Identifique o fólio e detecte ou desenhe as linhas.');
+    const n = (p.imported_pages || [p.page_id]).length;
+    if (p.from_demo_cache) { await refresh(); message(`Este fólio já tinha sido processado para a demonstração: ${p.cached_lines} linhas e a leitura do modelo foram carregadas na hora. Abra o Modo leitura para conferir.`); return; }
+    await refresh(); message(n > 1 ? `PDF importado: ${n} páginas viraram fólios. Escolha um na lista, identifique e detecte as linhas.` : 'Imagem importada. Identifique o fólio e detecte ou desenhe as linhas.');
 });
 $('segment').onclick = () => action(async () => {
     if (!page()) throw Error('Importe uma imagem.'); await request(`/api/pages/${pageId}/segment`, 'POST');
