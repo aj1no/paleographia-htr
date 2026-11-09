@@ -98,10 +98,11 @@ def test_reserved_test_curation_never_shows_model_suggestions():
     from paleographia.config import load_config
     from paleographia.presentation import review_policy
     root = Path(__file__).parents[1]
-    config = load_config(root / "configs/curation_teste_pagamento.toml")
-    assert config["recognition"]["backend"] == "disabled"
-    assert review_policy(config)["automatic_transcription_enabled"] is False
-    assert create_recognizer(config, root).status()["backend"] == "disabled"
+    for name in ("curation_teste_pagamento.toml", "curation_teste_contrato12.toml"):
+        config = load_config(root / "configs" / name)
+        assert config["recognition"]["backend"] == "disabled", name
+        assert review_policy(config)["automatic_transcription_enabled"] is False, name
+        assert create_recognizer(config, root).status()["backend"] == "disabled", name
 
 
 def test_folio_text_prefers_human_reading_then_suggestion(corpus):

@@ -100,3 +100,9 @@ com [`scripts/resegmentar_teste_blla.py`](../../../scripts/resegmentar_teste_bll
   partidas em dois pedaços, fragmentos de assinatura e de rubrica e as anotações de margem
   (por exemplo, "1000" e "27/11/1759" em 113v). Conferir cada recorte, juntar ou ajustar os
   pedaços, rejeitar o que estiver fora da cobertura e só então transcrever (passos 3 e 4 acima).
+
+## Segundo documento no teste (09/11/2026)
+
+As linhas finais de 113v e 114r ficaram quase ilegíveis para o revisor. O pagamento continua no
+teste, com essas linhas pendentes e motivo de exclusão, e o contrato do livro 12 (1763) entrou como
+segundo documento. Ver [contrato_livro12_teste](../contrato_livro12_teste/README.md).
