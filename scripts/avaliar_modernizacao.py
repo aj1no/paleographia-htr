@@ -1,6 +1,8 @@
 """Avalia a leitura modernizada automática contra a edição modernizada do Arquivo Histórico.
 
-Uso, na raiz do projeto:  python scripts/avaliar_modernizacao.py [saida.json]
+Uso, na raiz do projeto:  python scripts/avaliar_modernizacao.py [saida.json] [--v1]
+
+Por padrão avalia a versão em uso (v2, ``modernizacao_v2``); ``--v1`` avalia a primeira versão.
 
 Pares: linhas com transcrição diplomática validada por humano e a mesma linha na edição
 modernizada do AHMJ (que preserva a quebra de linha do original). Comparação em minúsculas,
@@ -16,7 +18,10 @@ import jiwer
 
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
-from paleographia.modernizacao import modernizar_linha, nfc  # noqa: E402
+from paleographia import modernizacao, modernizacao_v2  # noqa: E402
+from paleographia.modernizacao import nfc  # noqa: E402
+
+VERSOES = {1: modernizacao.modernizar_linha, 2: modernizacao_v2.modernizar_linha}
 
 PARES = RAIZ / "docs/experimentos/modernizacao_20261107/pares_avaliacao.json"
 SINAIS = str.maketrans("", "", string.punctuation + "“”‘’«»…[]†♱")
@@ -49,8 +54,9 @@ def alinhar_palavras(a, b):
     return pares[::-1]
 
 
-def main(saida=None):
-    pares = json.loads(PARES.read_text(encoding="utf-8"))["pares"]
+def main(saida=None, versao=2, pares=None):
+    modernizar_linha = VERSOES[versao]
+    pares = pares if pares is not None else json.loads(PARES.read_text(encoding="utf-8"))["pares"]
     assert not any(p["document_id"] == "pagamento_thomas_pardo" for p in pares), "teste reservado fora"
     diplomaticas = [comparavel(p["diplomatica"]) for p in pares]
     edicoes = [comparavel(p["edicao"]) for p in pares]
@@ -75,7 +81,7 @@ def main(saida=None):
                        "sugestao": sugestao, "edicao": par["edicao"], "trocas": trocas,
                        "wer_antes": jiwer.wer(edicao, diplomatica), "wer_depois": jiwer.wer(edicao, comparavel(sugestao))})
     resultado = {
-        "pares": len(pares), "palavras_da_edicao": sum(len(e.split()) for e in edicoes),
+        "versao": versao, "pares": len(pares), "palavras_da_edicao": sum(len(e.split()) for e in edicoes),
         "sem_modernizar": {"cer": jiwer.cer(edicoes, diplomaticas), "wer": jiwer.wer(edicoes, diplomaticas)},
         "modernizado": {"cer": jiwer.cer(edicoes, sugestoes), "wer": jiwer.wer(edicoes, sugestoes)},
         "trocas": {"certas": certas, "erradas": erradas, "desnecessarias": desnecessarias},
@@ -88,7 +94,9 @@ def main(saida=None):
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
-    r = main(sys.argv[1] if len(sys.argv) > 1 else None)
+    argumentos = [a for a in sys.argv[1:] if a != "--v1"]
+    r = main(argumentos[0] if argumentos else None, versao=1 if "--v1" in sys.argv else 2)
+    print(f"versão {r['versao']}")
     for chave in ("sem_modernizar", "modernizado"):
         print(f"{chave:15s} CER {r[chave]['cer']:.2%}  WER {r[chave]['wer']:.2%}")
     print("trocas:", r["trocas"])

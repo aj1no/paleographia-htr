@@ -1,0 +1,199 @@
+{
+ "descricao": "Contrato do livro 12 (1763), fl. 1: diplomática da referência congelada de 09/11 (Tiago Avelar) × edição modernizada do AHMJ (Gilson Santos; revisão Isabella Ferraro). Uso sem fins comerciais, com crédito. Linha = número da linha na edição.",
+ "referencia_sha256": "2d0fb78e021f72a971a2ae8ccacbc72544b560a5c7e57b1366cf2fe273a6fee0",
+ "edicao_sha256": "c7ffb34ac9b8c735bf5b25cfa6c32d98b3e752fbc8744fa9a8feb14489620e07",
+ "pares": [
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 2,
+   "line_id": "l_fe6404f4e67f5651caf7",
+   "diplomatica": "Senho Guarda mor geral dis Francisco Viera da costa",
+   "edicao": "Senhor Guarda Mor geral // Diz Francisco Vieira da Costa",
+   "edicao_inteira": "Senhor Guarda Mor geral // Diz Francisco Vieira da Costa"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 3,
+   "line_id": "l_0b9fbd8ccaae93bd4f0f",
+   "diplomatica": "e seu genro Manuel da Siqueira Gil que ele ha onze annos",
+   "edicao": "e [seu] genro Manoel da Siqueira Gil que ele há onze anos",
+   "edicao_inteira": "e [seu] genro Manoel da Siqueira Gil que ele há onze anos ou"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 4,
+   "line_id": "l_619057e8ae10b8458647",
+   "diplomatica": "dose  que entrou para esta Com quistas alias Campanha",
+   "edicao": "doze entrou para esta conquista, aliás, campanha,",
+   "edicao_inteira": "doze entrou para esta conquista, aliás, campanha,"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 5,
+   "line_id": "l_9acc52040e6788952a41",
+   "diplomatica": "diligencia de descobrir ouro e nella tem andado a sua",
+   "edicao": "diligência de descobrir ouro e nela tem andado à sua",
+   "edicao_inteira": "na diligência de descobrir ouro e nela tem andado à sua"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 6,
+   "line_id": "l_8c7fb52dba2328949c2e",
+   "diplomatica": "com prejuizo comcideravel como le no ta veio man-",
+   "edicao": "com prejuízos consideráveis, como é notório, man-",
+   "edicao_inteira": "c[u]sta com prejuízos consideráveis, como é notório, man-"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 7,
+   "line_id": "l_93d0042438b195f64ae9",
+   "diplomatica": "dando de bandeiras a ffazeres picadas acistinda Com TOdos",
+   "edicao": "dando bandeiras a fazer picadas assistindo com todo",
+   "edicao_inteira": "dando bandeiras a fazer picadas assistindo com todo"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 8,
+   "line_id": "l_968102d3eb7ba66ef598",
+   "diplomatica": "o necesario a todos e planntando rochas em varias partes",
+   "edicao": "o necessário a todos e plantando roças em várias partes",
+   "edicao_inteira": "o necessário a todos e plantando roças em várias partes"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 9,
+   "line_id": "l_ce39547ee23a24b64089",
+   "diplomatica": "des certam para aesitir com mantimentos",
+   "edicao": "deste sertão para assistir com mantim[e]ntos",
+   "edicao_inteira": "deste sertão para assistir com mantim[e]ntos aos que"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 10,
+   "line_id": "l_c1f4b93753305a3a1786",
+   "diplomatica": "abrirão com elle a fazer a dita diligencia",
+   "edicao": "abriram com ele a fazer a dita diligência",
+   "edicao_inteira": "abriram com ele a fazer a dita diligência e os m[e]s-"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 11,
+   "line_id": "l_23a97882cd2c58dfd75a",
+   "diplomatica": "por duas outras vezes desamparão o deixarão",
+   "edicao": "por duas outras vezes o desampararam, o deixando",
+   "edicao_inteira": "mos por duas outras vezes o desampararam, o deixando"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 12,
+   "line_id": "l_fc86040988ed9eb55124",
+   "diplomatica": "desamsaparão e deixam a todos os perigos",
+   "edicao": "desampararam e deixando a todos os perigos",
+   "edicao_inteira": "só, o desampararam e deixando a todos os perigos [†]"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 13,
+   "line_id": "l_3760b50d5f30b358c3dc",
+   "diplomatica": "gros como de jentiu ao suplicante sempres as",
+   "edicao": "negros como de gentiu ao suplicante sempre as-",
+   "edicao_inteira": "de negros como de gentiu ao suplicante sempre as-"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 14,
+   "line_id": "l_1bc43c5f914a405d72c0",
+   "diplomatica": "sistindo no intento por cujo motivo eles mas pi",
+   "edicao": "sistindo no intento por cujo motivo e com as pi-",
+   "edicao_inteira": "sistindo no intento por cujo motivo e com as pi-"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 15,
+   "line_id": "l_8403c252a7c1e297680e",
+   "diplomatica": "cadas que o suplicante fizerão por a esta prezen",
+   "edicao": "cadas que o suplicante fizeram por a esta prez [...]",
+   "edicao_inteira": "cadas que o suplicante fizeram por a esta prez [...]"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 16,
+   "line_id": "l_cd78def0143f289ad6c3",
+   "diplomatica": "que os chegarão ate o chapadam epelas beiradas",
+   "edicao": "que os chegaram até o chapadão e pelas beiradas",
+   "edicao_inteira": "que os chegaram até o chapadão e pelas beiradas"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 17,
+   "line_id": "l_01c06aa5f190cf0c102e",
+   "diplomatica": "chegaraão ate Riberão de Sam Joam com as amos",
+   "edicao": "chegaram até o Ribeirão de São João, com as mostr[as]",
+   "edicao_inteira": "chegaram até o Ribeirão de São João, com as mostr[as]"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 18,
+   "line_id": "l_66f406a69e8a188ca26a",
+   "diplomatica": "uro que tirarão assim do Rio de Sam   ate",
+   "edicao": "ouro [q]ue tiraram assim do rio de São",
+   "edicao_inteira": "do ouro [q]ue tiraram assim do rio de São João até"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 19,
+   "line_id": "l_8c43bc8623b8b39e26f9",
+   "diplomatica": "is bandeiras pello Rio Grande Acima entrando",
+   "edicao": "três bandeiras pelo Rio Grande Acima, entrando",
+   "edicao_inteira": "com três bandeiras pelo Rio Grande Acima, entrando"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 20,
+   "line_id": "l_1565007df0d5c1ed033c",
+   "diplomatica": "pella bordas como tambem querendo buscar lhe aca",
+   "edicao": "pela borra como também querendo buscar-lhe a",
+   "edicao_inteira": "pela borra como também querendo buscar-lhe a cabe-"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 21,
+   "line_id": "l_bb64969a730f3bc857f5",
+   "diplomatica": "eria acabando o Rio de Santa Anna achando",
+   "edicao": "e, se acabando o Rio de Sant’Anna achando-se",
+   "edicao_inteira": "ceira e, se acabando o Rio de Sant’Anna achando-se"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 22,
+   "line_id": "l_b02ffd0be6168cd975c7",
+   "diplomatica": "ouro como todos sabem ser resolverao varios",
+   "edicao": "ouro, como todo sabem ser, resolveram vários",
+   "edicao_inteira": "ouro, como todo sabem ser, resolveram vários a"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 23,
+   "line_id": "l_0210bf55733933671bbb",
+   "diplomatica": "seguiram pella picada do suplicante a descpbi",
+   "edicao": "seguir pela picada do suplicante a descob[ri]-",
+   "edicao_inteira": "seguir pela picada do suplicante a descob[ri]-"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 24,
+   "line_id": "l_8d9dd59e672daa265081",
+   "diplomatica": "rem ouro e com efeito acharão adiantando",
+   "edicao": "rem ouro e com efeito acharam, adiantando",
+   "edicao_inteira": "rem ouro e com efeito acharam, adiantando [o]"
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 25,
+   "line_id": "l_de885348e984438c4f9c",
+   "diplomatica": "sulpicante deste Rio Sam Pedro e tãobem",
+   "edicao": "suplicante este rio de São Pedro e também",
+   "edicao_inteira": "suplicante este rio de São Pedro e também"
+  }
+ ]
+}

@@ -13,7 +13,7 @@ from starlette.concurrency import run_in_threadpool
 
 from .config import load_config
 from .io import safe_path
-from .modernizacao import modernizar_linhas
+from .modernizacao_v2 import modernizar_linhas
 from .recognition import ModelUnavailable
 from .presentation import present_predictions as present_frozen, review_policy
 

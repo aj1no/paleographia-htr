@@ -69,8 +69,81 @@ desenvolvimento o autor (Claude) viu a edição desse documento, embora não a t
 diplomática, que ainda não existe. O código avaliado tem SHA-256
 `cc00fbfb1b4000abe29583267e7e80302ea9754a7c097a0fab90c86fe3cca6e5` (com fim de linha LF, como no repositório).
 
+## Versão 2 (10/11/2026)
+
+A aba Modernizada ainda ficava muito parecida com a diplomática. A v2
+([`modernizacao_v2.py`](../../../src/paleographia/modernizacao_v2.py)) é uma camada sobre a v1, que
+continua intacta (o teste confere o SHA-256 acima). A v2 trata antes quatro coisas:
+
+- **Caixa:** `Com TOdos` → `com todos`. Maiúscula no meio da palavra vira minúscula, e
+  palavras gramaticais com maiúscula no meio da frase também.
+- **Palavra partida dentro da linha:** `Com quistas` → `Conquistas`. A junção acontece quando a
+  segunda parte sozinha não é palavra atual e a junção é. Há uma tabela pequena para quando as
+  duas partes existem (`tão bem` → `também`, `toda via` → `todavia`).
+- **Nomes próprios:** tabela de topônimos paulistas e prenomes em grafia antiga (`Jundiahy` →
+  `Jundiaí`, `Joam` → `João`, `Riberão` → `Ribeirão`, `Manoel` → `Manuel`).
+- **Pretérito em -ão:** `deraõ` → `deram`, `Havião` → `Haviam`, quando a forma em -am existe.
+  A regra não se aplica depois de determinante (`pela mesma Razão`, `do Fundaõ`), porque aí a
+  palavra é substantivo. Também entram três correções de erros da v1: `Reo` → `Réu`,
+  `menhã` → `manhã`, `Paes` fica `Paes`.
+
+| Texto comparado com a edição (10 linhas de desenvolvimento) | CER | WER |
+| --- | ---: | ---: |
+| Sem modernizar | 6,61% | 14,89% |
+| v1 | 1,28% | 2,13% |
+| v2 | 0,85% | 1,06% |
+
+São 13 trocas, todas iguais à edição. Só resta `por não`, em que a edição acrescenta `que`
+([resultado v2](resultado_avaliacao_v2.json)). **Esse ganho é otimista por construção:** `Jundiahy`
+era o resíduo conhecido da v1 e está na tabela de nomes. Por isso a varredura das 741 linhas de
+treino importa mais aqui. Nela, a v2 muda 110 linhas em relação à v1: 65 minúsculas, 26 nomes,
+19 pretéritos, 11 formas fixas, 8 grafias. Ela serviu para achar e corrigir `o mto` → `unto`
+(abreviatura sem vogal não entra na junção) e `do Fundaõ` → `Fundam` (bloqueio depois de
+determinante). A ambiguidade que sobra é o futuro (`acharão` vira `acharam`), aceitável em texto
+narrativo. Código avaliado: SHA-256
+`bdd34ffe6c7311c3b562a6c9b7eef72d72e194320b261eb47ee554182b579ed8` (LF). A interface (`/leitura`,
+Texto do fólio e aba Textos) usa a v2. Para comparar: `python scripts/avaliar_modernizacao.py --v1`.
+
+### Avaliação nova: contrato do livro 12, 1763 (10/11/2026)
+
+O código da v2 foi fechado antes desta avaliação (SHA-256 acima), e nada foi ajustado depois.
+[`scripts/avaliar_modernizacao_contrato12.py`](../../../scripts/avaliar_modernizacao_contrato12.py)
+compara três textos com o fl. 1 da edição modernizada do AHMJ: a diplomática das 24 linhas do
+corpo da página 9 do PDF e as leituras da v1 e da v2 sobre ela. A diplomática vem da
+[referência congelada de 09/11](../../revisao_humana/teste_reservado_congelado_20261109/README.md),
+lida às cegas por Tiago Avelar. O script só lê a referência e confere o hash dela, então o
+teste do HTR não muda. As 11 peças de margem ficam de fora
+([pares](pares_contrato12.json), [resultado](resultado_contrato12.json)).
+
+| Texto comparado com a edição (24 linhas, 197 palavras) | CER | WER |
+| --- | ---: | ---: |
+| Diplomática, sem modernizar | 14,23% | 44,67% |
+| v1 | 11,68% | 34,01% |
+| **v2** | **10,58%** | **30,46%** |
+
+Se a linha da edição for usada inteira, sem o corte do trecho (217 palavras), a ordem não muda:
+WER de 48,85% sem modernizar, 38,71% com a v1 e 35,48% com a v2. A v2 acerta 25 trocas e a v1
+acerta 20. As duas têm cerca de 14 trocas que não batem com a edição.
+
+**Ressalvas.**
+- Os exemplos que motivaram a v2 (`Com quistas`, `Riberão`, `Com TOdos`) foram vistos em 09/11
+  justamente nestas linhas, na aba Modernizada. As regras são gerais, mas esta avaliação não é
+  totalmente cega.
+- O erro que sobra é quase todo de leitura, não de modernização. A diplomática e a edição leem
+  trechos de forma diferente (`le no ta veio` × `é notório`, `eles mas` × `e com as`), e o
+  modernizador não tem como resolver isso.
+
+**Erros da modernização vistos aqui, que ficam para uma próxima versão** (corrigir agora seria
+ajustar no teste):
+- `resolverao` sem til não entra na regra do pretérito;
+- `tãobem` escrito junto não vira `também`;
+- `des certam` não vira `deste sertão`;
+- começos de palavra partida na quebra de linha, avaliados como linha solta: `rem` → `rim`,
+  `uro` → `urro`, `eria` → `iria`. No texto corrido esses pedaços são unidos e ficam como estão.
+
 ## Créditos
 
 Edições modernizadas do Arquivo Histórico Municipal de Jundiaí: sessão de 1795, transcrição e
 edição de Gilson Santos Lino; carta de 1767, Júlia Munhoz e Matheus Bellodi; revisão de
+Isabella Ferraro; contrato do livro 12 (1763), transcrição e edição de Gilson Santos, revisão de
 Isabella Ferraro. Uso sem fins comerciais, com crédito.

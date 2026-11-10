@@ -1,0 +1,986 @@
+{
+ "trecho_v1": {
+  "pares": 24,
+  "palavras_da_edicao": 197,
+  "sem_modernizar": {
+   "cer": 0.14233576642335766,
+   "wer": 0.4467005076142132
+  },
+  "modernizado": {
+   "cer": 0.11678832116788321,
+   "wer": 0.3401015228426396
+  },
+  "trocas": {
+   "certas": 20,
+   "erradas": 13,
+   "desnecessarias": 1
+  }
+ },
+ "linhas_v1": [
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 2,
+   "diplomatica": "Senho Guarda mor geral dis Francisco Viera da costa",
+   "sugestao": "Senho Guarda mor geral diz Francisco Viera da costa",
+   "edicao": "Senhor Guarda Mor geral // Diz Francisco Vieira da Costa",
+   "trocas": [
+    {
+     "de": "dis",
+     "para": "diz",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.3333333333333333,
+   "wer_depois": 0.2222222222222222
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 3,
+   "diplomatica": "e seu genro Manuel da Siqueira Gil que ele ha onze annos",
+   "sugestao": "e seu genro Manuel da Siqueira Gil que ele ha onze anos",
+   "edicao": "e [seu] genro Manoel da Siqueira Gil que ele há onze anos",
+   "trocas": [
+    {
+     "de": "annos",
+     "para": "anos",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.25,
+   "wer_depois": 0.16666666666666666
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 4,
+   "diplomatica": "dose  que entrou para esta Com quistas alias Campanha",
+   "sugestao": "dose que entrou para esta Com quistas aliás Campanha",
+   "edicao": "doze entrou para esta conquista, aliás, campanha,",
+   "trocas": [
+    {
+     "de": "alias",
+     "para": "aliás",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.7142857142857143,
+   "wer_depois": 0.5714285714285714
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 5,
+   "diplomatica": "diligencia de descobrir ouro e nella tem andado a sua",
+   "sugestao": "diligência de descobrir ouro e nela tem andado a sua",
+   "edicao": "diligência de descobrir ouro e nela tem andado à sua",
+   "trocas": [
+    {
+     "de": "diligencia",
+     "para": "diligência",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "nella",
+     "para": "nela",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.3,
+   "wer_depois": 0.1
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 6,
+   "diplomatica": "com prejuizo comcideravel como le no ta veio man-",
+   "sugestao": "com prejuízo comcideravel como le no ta veio man-",
+   "edicao": "com prejuízos consideráveis, como é notório, man-",
+   "trocas": [
+    {
+     "de": "prejuizo",
+     "para": "prejuízo",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.8571428571428571,
+   "wer_depois": 0.8571428571428571
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 7,
+   "diplomatica": "dando de bandeiras a ffazeres picadas acistinda Com TOdos",
+   "sugestao": "dando de bandeiras a fazeres picadas acistinda Com TOdos",
+   "edicao": "dando bandeiras a fazer picadas assistindo com todo",
+   "trocas": [
+    {
+     "de": "ffazeres",
+     "para": "fazeres",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.5,
+   "wer_depois": 0.5
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 8,
+   "diplomatica": "o necesario a todos e planntando rochas em varias partes",
+   "sugestao": "o necessário a todos e plantando rochas em várias partes",
+   "edicao": "o necessário a todos e plantando roças em várias partes",
+   "trocas": [
+    {
+     "de": "necesario",
+     "para": "necessário",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "planntando",
+     "para": "plantando",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "varias",
+     "para": "várias",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.4,
+   "wer_depois": 0.1
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 9,
+   "diplomatica": "des certam para aesitir com mantimentos",
+   "sugestao": "dês sertão para aesitir com mantimentos",
+   "edicao": "deste sertão para assistir com mantim[e]ntos",
+   "trocas": [
+    {
+     "de": "des",
+     "para": "dês",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "certam",
+     "para": "sertão",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.5,
+   "wer_depois": 0.3333333333333333
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 10,
+   "diplomatica": "abrirão com elle a fazer a dita diligencia",
+   "sugestao": "abrirão com ele a fazer a dita diligência",
+   "edicao": "abriram com ele a fazer a dita diligência",
+   "trocas": [
+    {
+     "de": "elle",
+     "para": "ele",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "diligencia",
+     "para": "diligência",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.375,
+   "wer_depois": 0.125
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 11,
+   "diplomatica": "por duas outras vezes desamparão o deixarão",
+   "sugestao": "por duas outras vezes desamparam o deixarão",
+   "edicao": "por duas outras vezes o desampararam, o deixando",
+   "trocas": [
+    {
+     "de": "desamparão",
+     "para": "desamparam",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.375,
+   "wer_depois": 0.375
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 12,
+   "diplomatica": "desamsaparão e deixam a todos os perigos",
+   "sugestao": "desamsaparão e deixam a todos os perigos",
+   "edicao": "desampararam e deixando a todos os perigos",
+   "trocas": [],
+   "wer_antes": 0.2857142857142857,
+   "wer_depois": 0.2857142857142857
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 13,
+   "diplomatica": "gros como de jentiu ao suplicante sempres as",
+   "sugestao": "gros como de jentiu ao suplicante sempres as",
+   "edicao": "negros como de gentiu ao suplicante sempre as-",
+   "trocas": [],
+   "wer_antes": 0.375,
+   "wer_depois": 0.375
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 14,
+   "diplomatica": "sistindo no intento por cujo motivo eles mas pi",
+   "sugestao": "sistindo no intento por cujo motivo eles mas pi",
+   "edicao": "sistindo no intento por cujo motivo e com as pi-",
+   "trocas": [],
+   "wer_antes": 0.3,
+   "wer_depois": 0.3
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 15,
+   "diplomatica": "cadas que o suplicante fizerão por a esta prezen",
+   "sugestao": "cadas que o suplicante fizeram por a esta prezem",
+   "edicao": "cadas que o suplicante fizeram por a esta prez [...]",
+   "trocas": [
+    {
+     "de": "fizerão",
+     "para": "fizeram",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "prezen",
+     "para": "prezem",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.2222222222222222,
+   "wer_depois": 0.1111111111111111
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 16,
+   "diplomatica": "que os chegarão ate o chapadam epelas beiradas",
+   "sugestao": "que os chegarão até o chapadam epelas beiradas",
+   "edicao": "que os chegaram até o chapadão e pelas beiradas",
+   "trocas": [
+    {
+     "de": "ate",
+     "para": "até",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.5555555555555556,
+   "wer_depois": 0.4444444444444444
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 17,
+   "diplomatica": "chegaraão ate Riberão de Sam Joam com as amos",
+   "sugestao": "chegaraão até Riberão de São Joam com as amos",
+   "edicao": "chegaram até o Ribeirão de São João, com as mostr[as]",
+   "trocas": [
+    {
+     "de": "ate",
+     "para": "até",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "Sam",
+     "para": "São",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.7,
+   "wer_depois": 0.5
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 18,
+   "diplomatica": "uro que tirarão assim do Rio de Sam   ate",
+   "sugestao": "urro que tirarão assim do Rio de São até",
+   "edicao": "ouro [q]ue tiraram assim do rio de São",
+   "trocas": [
+    {
+     "de": "uro",
+     "para": "urro",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "Sam",
+     "para": "São",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "ate",
+     "para": "até",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.5,
+   "wer_depois": 0.375
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 19,
+   "diplomatica": "is bandeiras pello Rio Grande Acima entrando",
+   "sugestao": "is bandeiras pelo Rio Grande Acima entrando",
+   "edicao": "três bandeiras pelo Rio Grande Acima, entrando",
+   "trocas": [
+    {
+     "de": "pello",
+     "para": "pelo",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.2857142857142857,
+   "wer_depois": 0.14285714285714285
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 20,
+   "diplomatica": "pella bordas como tambem querendo buscar lhe aca",
+   "sugestao": "pela bordas como também querendo buscar lhe asa",
+   "edicao": "pela borra como também querendo buscar-lhe a",
+   "trocas": [
+    {
+     "de": "pella",
+     "para": "pela",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "tambem",
+     "para": "também",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "aca",
+     "para": "asa",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.8571428571428571,
+   "wer_depois": 0.5714285714285714
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 21,
+   "diplomatica": "eria acabando o Rio de Santa Anna achando",
+   "sugestao": "iria acabando o Rio de Santa Ana achando",
+   "edicao": "e, se acabando o Rio de Sant’Anna achando-se",
+   "trocas": [
+    {
+     "de": "eria",
+     "para": "iria",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "Anna",
+     "para": "Ana",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.625,
+   "wer_depois": 0.625
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 22,
+   "diplomatica": "ouro como todos sabem ser resolverao varios",
+   "sugestao": "ouro como todos sabem ser resolverão vários",
+   "edicao": "ouro, como todo sabem ser, resolveram vários",
+   "trocas": [
+    {
+     "de": "resolverao",
+     "para": "resolverão",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "varios",
+     "para": "vários",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.42857142857142855,
+   "wer_depois": 0.2857142857142857
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 23,
+   "diplomatica": "seguiram pella picada do suplicante a descpbi",
+   "sugestao": "seguiram pela picada do suplicante a descpbi",
+   "edicao": "seguir pela picada do suplicante a descob[ri]-",
+   "trocas": [
+    {
+     "de": "pella",
+     "para": "pela",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.42857142857142855,
+   "wer_depois": 0.2857142857142857
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 24,
+   "diplomatica": "rem ouro e com efeito acharão adiantando",
+   "sugestao": "rim ouro e com efeito acharão adiantando",
+   "edicao": "rem ouro e com efeito acharam, adiantando",
+   "trocas": [
+    {
+     "de": "rem",
+     "para": "rim",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.14285714285714285,
+   "wer_depois": 0.2857142857142857
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 25,
+   "diplomatica": "sulpicante deste Rio Sam Pedro e tãobem",
+   "sugestao": "sulpicante deste Rio São Pedro e tãobem",
+   "edicao": "suplicante este rio de São Pedro e também",
+   "trocas": [
+    {
+     "de": "Sam",
+     "para": "São",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.625,
+   "wer_depois": 0.5
+  }
+ ],
+ "trecho_v2": {
+  "pares": 24,
+  "palavras_da_edicao": 197,
+  "sem_modernizar": {
+   "cer": 0.14233576642335766,
+   "wer": 0.4467005076142132
+  },
+  "modernizado": {
+   "cer": 0.10583941605839416,
+   "wer": 0.30456852791878175
+  },
+  "trocas": {
+   "certas": 25,
+   "erradas": 14,
+   "desnecessarias": 1
+  }
+ },
+ "linhas_v2": [
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 2,
+   "diplomatica": "Senho Guarda mor geral dis Francisco Viera da costa",
+   "sugestao": "Senho Guarda mor geral diz Francisco Viera da costa",
+   "edicao": "Senhor Guarda Mor geral // Diz Francisco Vieira da Costa",
+   "trocas": [
+    {
+     "de": "dis",
+     "para": "diz",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.3333333333333333,
+   "wer_depois": 0.2222222222222222
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 3,
+   "diplomatica": "e seu genro Manuel da Siqueira Gil que ele ha onze annos",
+   "sugestao": "e seu genro Manuel da Siqueira Gil que ele ha onze anos",
+   "edicao": "e [seu] genro Manoel da Siqueira Gil que ele há onze anos",
+   "trocas": [
+    {
+     "de": "annos",
+     "para": "anos",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.25,
+   "wer_depois": 0.16666666666666666
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 4,
+   "diplomatica": "dose  que entrou para esta Com quistas alias Campanha",
+   "sugestao": "dose que entrou para esta Conquistas aliás Campanha",
+   "edicao": "doze entrou para esta conquista, aliás, campanha,",
+   "trocas": [
+    {
+     "de": "Com quistas",
+     "para": "Conquistas",
+     "motivo": "palavra unida"
+    },
+    {
+     "de": "alias",
+     "para": "aliás",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.7142857142857143,
+   "wer_depois": 0.42857142857142855
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 5,
+   "diplomatica": "diligencia de descobrir ouro e nella tem andado a sua",
+   "sugestao": "diligência de descobrir ouro e nela tem andado a sua",
+   "edicao": "diligência de descobrir ouro e nela tem andado à sua",
+   "trocas": [
+    {
+     "de": "diligencia",
+     "para": "diligência",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "nella",
+     "para": "nela",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.3,
+   "wer_depois": 0.1
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 6,
+   "diplomatica": "com prejuizo comcideravel como le no ta veio man-",
+   "sugestao": "com prejuízo comcideravel como le no ta veio man-",
+   "edicao": "com prejuízos consideráveis, como é notório, man-",
+   "trocas": [
+    {
+     "de": "prejuizo",
+     "para": "prejuízo",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.8571428571428571,
+   "wer_depois": 0.8571428571428571
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 7,
+   "diplomatica": "dando de bandeiras a ffazeres picadas acistinda Com TOdos",
+   "sugestao": "dando de bandeiras a fazeres picadas acistinda com todos",
+   "edicao": "dando bandeiras a fazer picadas assistindo com todo",
+   "trocas": [
+    {
+     "de": "ffazeres",
+     "para": "fazeres",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "Com",
+     "para": "com",
+     "motivo": "minúscula"
+    },
+    {
+     "de": "TOdos",
+     "para": "todos",
+     "motivo": "minúscula"
+    }
+   ],
+   "wer_antes": 0.5,
+   "wer_depois": 0.5
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 8,
+   "diplomatica": "o necesario a todos e planntando rochas em varias partes",
+   "sugestao": "o necessário a todos e plantando rochas em várias partes",
+   "edicao": "o necessário a todos e plantando roças em várias partes",
+   "trocas": [
+    {
+     "de": "necesario",
+     "para": "necessário",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "planntando",
+     "para": "plantando",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "varias",
+     "para": "várias",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.4,
+   "wer_depois": 0.1
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 9,
+   "diplomatica": "des certam para aesitir com mantimentos",
+   "sugestao": "dês sertão para aesitir com mantimentos",
+   "edicao": "deste sertão para assistir com mantim[e]ntos",
+   "trocas": [
+    {
+     "de": "des",
+     "para": "dês",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "certam",
+     "para": "sertão",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.5,
+   "wer_depois": 0.3333333333333333
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 10,
+   "diplomatica": "abrirão com elle a fazer a dita diligencia",
+   "sugestao": "abriram com ele a fazer a dita diligência",
+   "edicao": "abriram com ele a fazer a dita diligência",
+   "trocas": [
+    {
+     "de": "abrirão",
+     "para": "abriram",
+     "motivo": "pretérito em -am"
+    },
+    {
+     "de": "elle",
+     "para": "ele",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "diligencia",
+     "para": "diligência",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.375,
+   "wer_depois": 0.0
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 11,
+   "diplomatica": "por duas outras vezes desamparão o deixarão",
+   "sugestao": "por duas outras vezes desamparam o deixaram",
+   "edicao": "por duas outras vezes o desampararam, o deixando",
+   "trocas": [
+    {
+     "de": "desamparão",
+     "para": "desamparam",
+     "motivo": "pretérito em -am"
+    },
+    {
+     "de": "deixarão",
+     "para": "deixaram",
+     "motivo": "pretérito em -am"
+    }
+   ],
+   "wer_antes": 0.375,
+   "wer_depois": 0.375
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 12,
+   "diplomatica": "desamsaparão e deixam a todos os perigos",
+   "sugestao": "desamsaparão e deixam a todos os perigos",
+   "edicao": "desampararam e deixando a todos os perigos",
+   "trocas": [],
+   "wer_antes": 0.2857142857142857,
+   "wer_depois": 0.2857142857142857
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 13,
+   "diplomatica": "gros como de jentiu ao suplicante sempres as",
+   "sugestao": "gros como de jentiu ao suplicante sempres as",
+   "edicao": "negros como de gentiu ao suplicante sempre as-",
+   "trocas": [],
+   "wer_antes": 0.375,
+   "wer_depois": 0.375
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 14,
+   "diplomatica": "sistindo no intento por cujo motivo eles mas pi",
+   "sugestao": "sistindo no intento por cujo motivo eles mas pi",
+   "edicao": "sistindo no intento por cujo motivo e com as pi-",
+   "trocas": [],
+   "wer_antes": 0.3,
+   "wer_depois": 0.3
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 15,
+   "diplomatica": "cadas que o suplicante fizerão por a esta prezen",
+   "sugestao": "cadas que o suplicante fizeram por a esta prezem",
+   "edicao": "cadas que o suplicante fizeram por a esta prez [...]",
+   "trocas": [
+    {
+     "de": "fizerão",
+     "para": "fizeram",
+     "motivo": "pretérito em -am"
+    },
+    {
+     "de": "prezen",
+     "para": "prezem",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.2222222222222222,
+   "wer_depois": 0.1111111111111111
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 16,
+   "diplomatica": "que os chegarão ate o chapadam epelas beiradas",
+   "sugestao": "que os chegaram até o chapadam epelas beiradas",
+   "edicao": "que os chegaram até o chapadão e pelas beiradas",
+   "trocas": [
+    {
+     "de": "chegarão",
+     "para": "chegaram",
+     "motivo": "pretérito em -am"
+    },
+    {
+     "de": "ate",
+     "para": "até",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.5555555555555556,
+   "wer_depois": 0.3333333333333333
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 17,
+   "diplomatica": "chegaraão ate Riberão de Sam Joam com as amos",
+   "sugestao": "chegaraão até Ribeirão de São João com as amos",
+   "edicao": "chegaram até o Ribeirão de São João, com as mostr[as]",
+   "trocas": [
+    {
+     "de": "ate",
+     "para": "até",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "Riberão",
+     "para": "Ribeirão",
+     "motivo": "nome próprio"
+    },
+    {
+     "de": "Sam",
+     "para": "São",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "Joam",
+     "para": "João",
+     "motivo": "nome próprio"
+    }
+   ],
+   "wer_antes": 0.7,
+   "wer_depois": 0.3
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 18,
+   "diplomatica": "uro que tirarão assim do Rio de Sam   ate",
+   "sugestao": "urro que tiraram assim do Rio de São até",
+   "edicao": "ouro [q]ue tiraram assim do rio de São",
+   "trocas": [
+    {
+     "de": "uro",
+     "para": "urro",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "tirarão",
+     "para": "tiraram",
+     "motivo": "pretérito em -am"
+    },
+    {
+     "de": "Sam",
+     "para": "São",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "ate",
+     "para": "até",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.5,
+   "wer_depois": 0.25
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 19,
+   "diplomatica": "is bandeiras pello Rio Grande Acima entrando",
+   "sugestao": "is bandeiras pelo Rio Grande Acima entrando",
+   "edicao": "três bandeiras pelo Rio Grande Acima, entrando",
+   "trocas": [
+    {
+     "de": "pello",
+     "para": "pelo",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.2857142857142857,
+   "wer_depois": 0.14285714285714285
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 20,
+   "diplomatica": "pella bordas como tambem querendo buscar lhe aca",
+   "sugestao": "pela bordas como também querendo buscar lhe asa",
+   "edicao": "pela borra como também querendo buscar-lhe a",
+   "trocas": [
+    {
+     "de": "pella",
+     "para": "pela",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "tambem",
+     "para": "também",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "aca",
+     "para": "asa",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.8571428571428571,
+   "wer_depois": 0.5714285714285714
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 21,
+   "diplomatica": "eria acabando o Rio de Santa Anna achando",
+   "sugestao": "iria acabando o Rio de Santa Ana achando",
+   "edicao": "e, se acabando o Rio de Sant’Anna achando-se",
+   "trocas": [
+    {
+     "de": "eria",
+     "para": "iria",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "Anna",
+     "para": "Ana",
+     "motivo": "nome próprio"
+    }
+   ],
+   "wer_antes": 0.625,
+   "wer_depois": 0.625
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 22,
+   "diplomatica": "ouro como todos sabem ser resolverao varios",
+   "sugestao": "ouro como todos sabem ser resolverão vários",
+   "edicao": "ouro, como todo sabem ser, resolveram vários",
+   "trocas": [
+    {
+     "de": "resolverao",
+     "para": "resolverão",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "varios",
+     "para": "vários",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.42857142857142855,
+   "wer_depois": 0.2857142857142857
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 23,
+   "diplomatica": "seguiram pella picada do suplicante a descpbi",
+   "sugestao": "seguiram pela picada do suplicante a descpbi",
+   "edicao": "seguir pela picada do suplicante a descob[ri]-",
+   "trocas": [
+    {
+     "de": "pella",
+     "para": "pela",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.42857142857142855,
+   "wer_depois": 0.2857142857142857
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 24,
+   "diplomatica": "rem ouro e com efeito acharão adiantando",
+   "sugestao": "rim ouro e com efeito acharam adiantando",
+   "edicao": "rem ouro e com efeito acharam, adiantando",
+   "trocas": [
+    {
+     "de": "rem",
+     "para": "rim",
+     "motivo": "grafia atualizada"
+    },
+    {
+     "de": "acharão",
+     "para": "acharam",
+     "motivo": "pretérito em -am"
+    }
+   ],
+   "wer_antes": 0.14285714285714285,
+   "wer_depois": 0.14285714285714285
+  },
+  {
+   "document_id": "contrato_livro12_1763",
+   "linha": 25,
+   "diplomatica": "sulpicante deste Rio Sam Pedro e tãobem",
+   "sugestao": "sulpicante deste Rio São Pedro e tãobem",
+   "edicao": "suplicante este rio de São Pedro e também",
+   "trocas": [
+    {
+     "de": "Sam",
+     "para": "São",
+     "motivo": "grafia atualizada"
+    }
+   ],
+   "wer_antes": 0.625,
+   "wer_depois": 0.5
+  }
+ ],
+ "inteira_v1": {
+  "pares": 24,
+  "palavras_da_edicao": 217,
+  "sem_modernizar": {
+   "cer": 0.18493150684931506,
+   "wer": 0.48847926267281105
+  },
+  "modernizado": {
+   "cer": 0.1601027397260274,
+   "wer": 0.3870967741935484
+  },
+  "trocas": {
+   "certas": 18,
+   "erradas": 15,
+   "desnecessarias": 1
+  }
+ },
+ "inteira_v2": {
+  "pares": 24,
+  "palavras_da_edicao": 217,
+  "sem_modernizar": {
+   "cer": 0.18493150684931506,
+   "wer": 0.48847926267281105
+  },
+  "modernizado": {
+   "cer": 0.14982876712328766,
+   "wer": 0.3548387096774194
+  },
+  "trocas": {
+   "certas": 23,
+   "erradas": 16,
+   "desnecessarias": 1
+  }
+ }
+}

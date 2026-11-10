@@ -4,10 +4,12 @@ Só entram linhas validadas por um revisor; linhas pendentes, rascunhos humanos 
 do modelo nunca aparecem (viram lacunas marcadas). As linhas validadas consecutivas são
 unidas em texto corrido, juntando a palavra partida na quebra de linha (``aos ca`` |
 ``torze`` → ``aos catorze``) com o mesmo detector do modernizador, e a leitura modernizada
-é feita sobre o texto já unido. O módulo ``modernizacao`` é só usado, não alterado.
+é feita sobre o texto já unido, com a versão 2 (``modernizacao_v2``). O módulo ``modernizacao``
+é só usado, não alterado.
 Não há pós-correção lexical aqui: a linha validada já é a correção humana.
 """
-from .modernizacao import modernizar_linha, modernizar_linhas, nfc, palavra_partida
+from .modernizacao import nfc, palavra_partida
+from .modernizacao_v2 import modernizar_linha, modernizar_linhas
 
 QUEBRA = ("-", "=", "¬")
 
