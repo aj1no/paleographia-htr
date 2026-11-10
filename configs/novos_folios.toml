@@ -1,0 +1,45 @@
+# Curadoria assistida dos fólios novos para treino (10/11/2026): Posturas 1831 (100r, 100v,
+# 101r), carta de José Gomes de Gouveia 1767 (fólio 4) e contrato do livro 13, 1763 (2 imagens).
+# O ajustado B sugere a leitura; a equipe corrige e valida no modo leitura. Só as linhas
+# validadas viram rótulo de treino. Nunca entram aqui o teste reservado (pagamento e
+# contrato do livro 12) nem a validação de 1795. Gerado por scripts/preparar_novos_folios.py.
+
+[paths]
+workspace = "data/workspace_novos_folios"
+
+[recognition]
+backend = "kraken_ppocrv6"
+model = "models/ppocrv6_ajustado_B_20261107/medium_ajustado_B_gravado.safetensors"
+sha256 = "52b2ad55829ad63d6e79c632de431521aeac0abe591fe60197dd1cbfc64fc384"
+docker_image = "paleographia-kraken:7.1.0-cpu"
+docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+device = "cpu"
+precision = "float32"
+timeout_seconds = 180
+
+[presentation]
+language = "pt-BR"
+automatic_transcription_enabled = true
+evaluated_backend = "kraken_ppocrv6"
+evaluated_model_sha256 = "52b2ad55829ad63d6e79c632de431521aeac0abe591fe60197dd1cbfc64fc384"
+evaluated_docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
+evaluated_worker_sha256 = "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a"
+
+[segmentation]
+# Segmentação neural de linhas (Kraken blla, na mesma imagem Docker). O botão
+# "Detectar linhas" usa este método; a projeção continua disponível via API.
+default_method = "kraken_blla"
+detector = "projection"
+horizontal_margin_ratio = 0.06
+smoothing_ratio = 0.003
+peak_threshold_std = 0.2
+min_peak_distance_ratio = 0.019
+block_size = 31
+threshold_c = 15
+kernel_width_ratio = 0.025
+kernel_height = 3
+iterations = 1
+min_width_ratio = 0.12
+min_height_ratio = 0.002
+max_height_ratio = 0.12
+padding = 4

@@ -26,6 +26,7 @@ data/workspace_traslado_269r/
 data/workspace_folios/
 data/workspace_teste_pagamento/
 data/workspace_teste_contrato12/
+data/workspace_novos_folios/
 data/teste_reservado_congelado_*/
 experiments/*
 !experiments/README.md
