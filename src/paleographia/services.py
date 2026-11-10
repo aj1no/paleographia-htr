@@ -118,7 +118,10 @@ class ReviewService:
         page_id = "p_" + checksum[:20]
         with self.lock:
             state = self.state()
-            previous = next((p for p in state["pages"] if p["page_id"] == page_id), None)
+            # A mesma imagem já catalogada (mesmo SHA-256, qualquer page_id) abre o fólio existente,
+            # com as linhas e validações dele, em vez de criar uma cópia.
+            previous = next((p for p in state["pages"]
+                             if p["page_id"] == page_id or p.get("source_sha256") == checksum), None)
             if previous:
                 return previous
             path = self.root/"data/raw/uploads"/(page_id+{"JPEG":".jpg", "PNG":".png", "TIFF":".tif"}[fmt])

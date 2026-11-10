@@ -182,3 +182,14 @@ def test_demo_cache_brings_back_a_preprocessed_folio_on_upload(corpus, tmp_path)
         assert [l["line_id"] for l in catalog["lines"] if l["page_id"] == page_id] == ["l_demo"]
         again = client.post("/api/pages", files={"file": ("foto.jpg", content, "image/jpeg")}).json()
         assert "from_demo_cache" not in again  # já está na lista: não duplica
+
+
+def test_upload_of_an_image_already_in_the_catalog_opens_the_existing_folio(corpus):
+    root, config, pages, lines = corpus
+    app = create_app(root, config, TestRecognizer())
+    app.state.service.import_catalog(pages, lines)
+    content = (root / pages[0]["source_image"]).read_bytes()
+    with TestClient(app) as client:
+        body = client.post("/api/pages", files={"file": ("de novo.png", content, "image/png")}).json()
+        assert body["page_id"] == pages[0]["page_id"]
+        assert len(client.get("/api/catalog").json()["pages"]) == len(pages)

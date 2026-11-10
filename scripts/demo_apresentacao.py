@@ -5,12 +5,16 @@ Uso, na raiz do projeto:
     python scripts/demo_apresentacao.py montar --de tmp/demo_folios/workspace --config tmp/demo_folios/config.toml
     python scripts/demo_apresentacao.py guardar PAGE_ID     # tira o fólio da lista e o deixa pré-processado
     python scripts/demo_apresentacao.py restaurar           # volta a demonstração ao estado guardado
+    python scripts/demo_apresentacao.py incorporar --de data/workspace_novos_folios   # fólios em curadoria
     python scripts/demo_apresentacao.py listar
 
 Tudo fica em data/demo_apresentacao/ (fora do Git): o workspace, os recortes copiados, o estado de
 referência (estado_guardado.json) e o cache de fólios pré-processados. Um fólio "guardado" some da
 lista; quando alguém fizer o upload da mesma imagem, as linhas e a leitura do modelo voltam na hora,
 com o aviso de que vieram do processamento anterior. Os workspaces oficiais são só lidos.
+
+Fólios "incorporados" são de curadoria: a equipe lê e valida neles, e as validações viram rótulo
+de treino. ``restaurar`` nunca mexe neles (a lista fica em curadoria.json).
 """
 import argparse
 import json
@@ -28,6 +32,11 @@ PASTA = RAIZ / "data/demo_apresentacao"
 CONFIG = RAIZ / "configs/demo_apresentacao.toml"
 GUARDADO = PASTA / "estado_guardado.json"
 CACHE = PASTA / "cache"
+CURADORIA = PASTA / "curadoria.json"
+
+
+def paginas_em_curadoria():
+    return set(json.loads(CURADORIA.read_text(encoding="utf-8"))["page_ids"]) if CURADORIA.exists() else set()
 
 
 def servico():
@@ -108,8 +117,37 @@ def restaurar(_args):
     service = servico()
     estado = service.state()
     guardado = json.loads(GUARDADO.read_text(encoding="utf-8"))
-    service.save(dict(estado, **guardado), "restaurar_demonstracao")
-    print("Demonstração restaurada:", len(guardado["pages"]), "fólios.")
+    protegidas = paginas_em_curadoria()
+    # Fólios em curadoria ficam como estão agora: restaurar não pode apagar validações da equipe.
+    novo = {chave: [item for item in guardado[chave] if item["page_id"] not in protegidas]
+            + [item for item in estado[chave] if item["page_id"] in protegidas]
+            for chave in ("pages", "lines", "predictions")}
+    service.save(dict(estado, **novo), "restaurar_demonstracao")
+    print("Demonstração restaurada:", len(novo["pages"]), "fólios,", len(protegidas), "em curadoria mantidos como estavam.")
+
+
+def incorporar(args):
+    """Traz para a demonstração os fólios de outro workspace, com linhas, leituras e revisões."""
+    origem = RAIZ / args.de
+    revisao = json.loads((origem / "current.json").read_text(encoding="utf-8"))["revision"]
+    vindo = json.loads((origem / "revisions" / f"{revisao}.json").read_text(encoding="utf-8"))
+    service = servico()
+    estado = service.state()
+    existentes = {p["page_id"] for p in estado["pages"]} | {p["source_sha256"] for p in estado["pages"]}
+    repetidas = [p["page_id"] for p in vindo["pages"] if p["page_id"] in existentes or p["source_sha256"] in existentes]
+    if repetidas:
+        raise SystemExit(f"Já estão na demonstração: {', '.join(repetidas)}. Nada foi alterado.")
+    prefixo = Path(args.de).as_posix().rstrip("/") + "/"
+    copiar_recortes(vindo["lines"] + vindo["predictions"], PASTA / "recortes", prefixo)
+    for chave in ("pages", "lines", "predictions"):
+        estado[chave].extend(vindo[chave])
+    service.save(estado, "incorporar_folios_curadoria")
+    ids = sorted(paginas_em_curadoria() | {p["page_id"] for p in vindo["pages"]})
+    CURADORIA.write_text(json.dumps({"page_ids": ids, "origem": args.de, "revisao_origem": revisao},
+                                    ensure_ascii=False, indent=1), encoding="utf-8")
+    guardar_estado()
+    print(f"Incorporados {len(vindo['pages'])} fólios, {len(vindo['lines'])} linhas e "
+          f"{len(vindo['predictions'])} leituras (revisão {revisao} de {args.de}).")
 
 
 def listar(_args):
@@ -135,6 +173,9 @@ if __name__ == "__main__":
     g.add_argument("page_id")
     g.set_defaults(func=guardar)
     sub.add_parser("restaurar").set_defaults(func=restaurar)
+    i = sub.add_parser("incorporar")
+    i.add_argument("--de", required=True)
+    i.set_defaults(func=incorporar)
     sub.add_parser("listar").set_defaults(func=listar)
     args = parser.parse_args()
     args.func(args)

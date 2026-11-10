@@ -24,9 +24,19 @@ imagem, desenha as linhas com o blla do Kraken (juntando os pedaços cortados) e
 **ajustado B**, que aparece como sugestão. Configuração: [`configs/novos_folios.toml`](../../../configs/novos_folios.toml).
 Workspace: `data/workspace_novos_folios/`, fora do Git, como os demais.
 
+## Onde ficam (atualizado em 10/11)
+
+A pedido do usuário, os seis fólios foram levados para a **aplicação oficial**, a mesma da
+apresentação (`data/demo_apresentacao`, porta 8018), com
+`python scripts/demo_apresentacao.py incorporar --de data/workspace_novos_folios`. Nenhuma linha
+estava validada na hora da cópia. O workspace `data/workspace_novos_folios` (porta 8020) fica só
+como registro da preparação. **Não validar nele.** A lista dos fólios em curadoria está em
+`data/demo_apresentacao/curadoria.json`, e o `restaurar` da demonstração não mexe neles. Se a
+mesma imagem for enviada de novo pelo upload, o app abre o fólio que já existe, sem duplicar.
+
 ## Como revisar
 
-1. Abrir `iniciar_curadoria_novos_folios.bat` (ou `.venv/Scripts/python.exe -m paleographia serve --config configs/novos_folios.toml --port 8020`) e ir ao **Modo leitura**.
+1. Abrir `iniciar_demo.bat` ou `iniciar_curadoria_novos_folios.bat` (os dois abrem a aplicação oficial, porta 8018) e ir ao **Modo leitura**.
 2. Ler cada linha **na imagem** e corrigir a sugestão até ficar diplomática: como está escrito, sem
    modernizar nem desenvolver abreviaturas, nas mesmas convenções do 269r e de 1795.
 3. Validar só o que foi lido de fato. O que não der para ler fica como **Ilegível**. Recortes ruins
