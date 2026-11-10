@@ -170,7 +170,7 @@ body.blind .sheet{box-shadow:inset 0 0 0 2px var(--ink)}
         </div></div></div>
     </div>
     <div class="actions">
-      <button id="validate" title="Ctrl+Enter. Validar significa: conferi esta leitura na imagem e a aceito como transcrição paleográfica; recorte e ordem não mudam aqui.">Validar e seguir</button>
+      <button id="validate" title="Enter (ou Ctrl+Enter). Validar significa: conferi esta leitura na imagem e a aceito como transcrição paleográfica; recorte e ordem não mudam aqui.">Validar e seguir</button>
       <button id="saveDraft" class="secondary">Salvar rascunho</button>
       <button id="useModel" class="ghost">Começar pela leitura do modelo</button>
       <button type="button" class="ghost" id="excludeToggle" aria-expanded="false" aria-controls="excludePanel" title="Tirar da referência uma linha que não dá para ler com segurança">Ilegível…</button>
@@ -194,7 +194,7 @@ body.blind .sheet{box-shadow:inset 0 0 0 2px var(--ink)}
       <p class="hint">Junta esta linha com a vizinha num recorte só, quando o segmentador separou uma palavra. Rascunhos das duas são mantidos; linhas validadas precisam voltar a pendentes antes.</p>
       <div class="actions"><button type="button" class="secondary" id="joinPrev">Com a anterior</button><button type="button" class="secondary" id="joinNext">Com a seguinte</button></div>
     </div>
-    <p class="hint" id="keysList" hidden><kbd>Ctrl</kbd>+<kbd>Enter</kbd> valida · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha · <kbd>Alt</kbd>+<kbd>P</kbd> sinais especiais · <kbd>Alt</kbd>+<kbd>S</kbd> sobrescrito · <kbd>Alt</kbd>+<kbd>=</kbd>/<kbd>-</kbd> amplia · <kbd>Alt</kbd>+<kbd>←</kbd>/<kbd>→</kbd> move a imagem ampliada para os lados (<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> para cima e para baixo) · com a imagem clicada, só as setas movem, <kbd>Shift</kbd> anda mais e <kbd>Home</kbd>/<kbd>End</kbd> vão ao começo e ao fim da linha · <kbd>Alt</kbd>+<kbd>N</kbd> negativo · <kbd>Alt</kbd>+<kbd>F</kbd> foco · <kbd>Alt</kbd>+<kbd>0</kbd> restaura a imagem</p>
+    <p class="hint" id="keysList" hidden><kbd>Enter</kbd> valida e segue · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha · <kbd>Alt</kbd>+<kbd>P</kbd> sinais especiais · <kbd>Alt</kbd>+<kbd>S</kbd> sobrescrito · <kbd>Alt</kbd>+<kbd>=</kbd>/<kbd>-</kbd> amplia · <kbd>Alt</kbd>+<kbd>←</kbd>/<kbd>→</kbd> move a imagem ampliada para os lados (<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> para cima e para baixo) · com a imagem clicada, só as setas movem, <kbd>Shift</kbd> anda mais e <kbd>Home</kbd>/<kbd>End</kbd> vão ao começo e ao fim da linha · <kbd>Alt</kbd>+<kbd>N</kbd> negativo · <kbd>Alt</kbd>+<kbd>F</kbd> foco · <kbd>Alt</kbd>+<kbd>0</kbd> restaura a imagem</p>
     <p class="hint blindnote" id="blindNote" hidden>Às cegas: a sugestão do modelo e a edição estão escondidas e o campo começa vazio. Sua leitura vai para um registro separado e não altera a transcrição oficial da linha.</p>
   </section>
   <p id="empty" class="empty">Selecione um fólio com linhas para começar.</p>
@@ -389,7 +389,7 @@ async function save(validate) {
   if (validate && !reviewer) { $('reviewer').focus(); return message('Informe o nome do revisor para validar.', 'error'); }
   if (validate && looksLikeNote(text) && noteArmed !== l.line_id) {
     noteArmed = l.line_id;
-    return message('Isto parece uma nota, não uma leitura do manuscrito. Se a linha não dá para ler, use “Ilegível…” para tirá-la da referência. Para validar mesmo assim, clique em Validar de novo.', 'error');
+    return message('Isto parece uma nota, não uma leitura do manuscrito. Se a linha não dá para ler, use “Ilegível…” para tirá-la da referência. Para validar mesmo assim, clique em Validar (ou aperte Enter) de novo.', 'error');
   }
   if (!validate && l.review_status === 'validated' && text === (l.text_diplomatic || '')) return message('Nada mudou nesta linha.');
   const changes = {text_diplomatic: text || null, review_status: validate ? 'validated' : 'pending_review'};
@@ -575,6 +575,12 @@ $('mine').addEventListener('beforeinput', e => {
   if (mapped !== head) { e.preventDefault(); insertText(mapped + rest); }
 });
 $('mine').addEventListener('keydown', e => {
+  // Enter valida e segue (a leitura é sempre uma linha só); Shift+Enter não quebra a linha.
+  if (e.key === 'Enter' && !e.isComposing && !e.altKey) {
+    e.preventDefault();
+    if (!e.shiftKey && !e.ctrlKey && !e.metaKey) save(true);
+    return;
+  }
   if (e.key !== 'Escape') return;
   if (supMode) { e.preventDefault(); setSupMode(false); } else if (!$('glyphs').hidden) { e.preventDefault(); setGlyphs(false); }
 });
@@ -696,7 +702,10 @@ $('lens').addEventListener('keydown', e => {
   else if (e.key === 'Escape' || e.key === 'Enter') { e.preventDefault(); $('mine').focus(); }
 });
 applyLens();
-$('mine').addEventListener('input', () => { fit(); remember(); renderModel(); renderRuler(); });
+$('mine').addEventListener('input', () => {
+  const t = $('mine');
+  if (/[\r\n]/.test(t.value)) { const at = t.selectionStart; t.value = t.value.replace(/\r?\n|\r/g, ' '); t.selectionStart = t.selectionEnd = at; }
+  fit(); remember(); renderModel(); renderRuler(); });
 $('validate').onclick = () => save(true);
 $('blind').onclick = () => setBlind(!blind);
 $('queue').onchange = () => { queue = $('queue').value; try { localStorage.setItem('paleographia.fila', queue); } catch { /* optional */ } render(); };
