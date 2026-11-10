@@ -104,3 +104,14 @@ test('não confunde leituras de verdade com notas', () => {
   for (const leitura of ['Com', 'não', 'de o', 'Nosso mandado sendo primeiro', 'por nos assinado em seu cumpri', 'ou', ''])
     assert.strictEqual(looksLikeNote(leitura), false, leitura);
 });
+
+// Setas movem a imagem ampliada: 15% da área visível, 60% com Shift; outras teclas não movem.
+const panSource = html.match(/function panDelta[\s\S]*?\r?\n}\r?\n/)[0];
+const panDelta = new Function(`${panSource}; return panDelta;`)();
+
+test('setas movem a imagem ampliada em passos proporcionais à área visível', () => {
+  assert.deepStrictEqual(panDelta('ArrowRight', false, 600, 200), [90, 0]);
+  assert.deepStrictEqual(panDelta('ArrowLeft', true, 600, 200), [-360, 0]);
+  assert.deepStrictEqual(panDelta('ArrowDown', false, 600, 200), [0, 30]);
+  assert.strictEqual(panDelta('Enter', false, 600, 200), null);
+});
