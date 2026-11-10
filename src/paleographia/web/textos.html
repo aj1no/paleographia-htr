@@ -54,6 +54,16 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-si
 footer p{margin:0 0 6px}
 footer a{color:var(--rust-text)}
 #status{font-size:13px;color:var(--muted);min-height:20px}
+.duv{text-decoration:underline wavy var(--rust-text) 1px;text-underline-offset:5px;text-decoration-skip-ink:none}
+.duv.nome{text-decoration-style:dotted;text-decoration-color:var(--soft);text-decoration-thickness:2px}
+.prose .duv{cursor:pointer;border-radius:3px}
+.prose .duv:hover{background:var(--paper-2)}
+.noduv .duv{text-decoration:none;cursor:auto}
+.noduv .duv:hover{background:none}
+.meta .doubts{font-size:13px;color:var(--soft)}
+.side .flash{background:var(--warn-bg);border-radius:4px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 18px;margin:0 0 6px}
+.legend span{white-space:nowrap}
 .empty{padding:60px 0;text-align:center;color:var(--muted);font:italic 20px/1.4 var(--serif)}
 @media(max-width:720px){main{padding:16px}header{padding:12px 16px}.right{margin-left:0}h2{font-size:28px}.prose p{font-size:19px}.side{grid-template-columns:32px minmax(0,1fr)}.side .m{grid-column:2}.side .h.m{display:none}}
 @media print{header,.bar,#status{display:none}main{max-width:none;padding:0}}
@@ -70,6 +80,7 @@ footer a{color:var(--rust-text)}
       <button type="button" data-view="lado" aria-pressed="false">Lado a lado</button>
     </div>
     <div class="right">
+      <button type="button" class="ghost" id="doubts" aria-pressed="true" title="Sublinhar as palavras fora do dicionário atual">Palavras a conferir</button>
       <button type="button" class="ghost" id="numbers" aria-pressed="true" title="Números de linha (versão diplomática e lado a lado)">Nº de linha</button>
       <button type="button" class="ghost" id="copy">Copiar</button>
       <button type="button" class="ghost" id="download">Baixar .txt</button>
@@ -83,6 +94,7 @@ footer a{color:var(--rust-text)}
     <article id="text"></article>
     <div class="margin" id="marginBox" hidden><h3>Na margem</h3><div id="marginText"></div></div>
     <footer>
+      <p class="legend" id="legend"><span><span class="duv">sublinhado ondulado</span>: fora do dicionário atual (erro de leitura ou palavra antiga)</span><span><span class="duv nome">pontilhado</span>: provável nome próprio</span></p>
       <p id="note"></p>
       <p id="credits"></p>
     </footer>
@@ -92,12 +104,45 @@ footer a{color:var(--rust-text)}
 <script>
 'use strict';
 const $ = id => document.getElementById(id);
-let data = null, view = 'moderna', numbers = true;
-try { view = localStorage.getItem('paleographia.textos.vista') || 'moderna'; numbers = localStorage.getItem('paleographia.textos.numeros') !== '0'; } catch { /* opcional */ }
+let data = null, view = 'moderna', numbers = true, doubts = true;
+try { view = localStorage.getItem('paleographia.textos.vista') || 'moderna'; numbers = localStorage.getItem('paleographia.textos.numeros') !== '0'; doubts = localStorage.getItem('paleographia.textos.duvidas') !== '0'; } catch { /* opcional */ }
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 const range = ns => ns.length === 1 ? `linha ${ns[0]}` : `linhas ${ns[0]} a ${ns.at(-1)}`;
 async function json(url) { const r = await fetch(url); if (!r.ok) throw Error((await r.json()).detail || r.statusText); return r.json(); }
 
+// Corta o texto nos trechos marcados: [{texto, tipo, linha}], com tipo null fora das marcas.
+function pieces(text, spans) {
+  const out = []; let at = 0;
+  for (const [start, end, kind, line] of spans || []) {
+    if (start < at || end > text.length) continue;
+    if (start > at) out.push({texto: text.slice(at, start), tipo: null});
+    out.push({texto: text.slice(start, end), tipo: kind, linha: line ?? null});
+    at = end;
+  }
+  if (at < text.length || !out.length) out.push({texto: text.slice(at), tipo: null});
+  return out;
+}
+const DUVIDA = {duvida: 'Fora do dicionário atual: erro de leitura ou palavra antiga. Confira na imagem.',
+  nome: 'Fora do dicionário atual, com maiúscula: provável nome próprio. Confira na imagem.'};
+function marked(text, spans) {
+  return pieces(text, spans).map(p => {
+    if (!p.tipo) return p.texto;
+    const s = el('span', `duv ${p.tipo}`, p.texto);
+    s.title = (p.linha ? `Linha ${p.linha}. ` : '') + DUVIDA[p.tipo];
+    if (p.linha && doubts) { s.dataset.line = p.linha; s.tabIndex = 0; s.setAttribute('role', 'button'); }
+    return s;
+  });
+}
+function doubtCount(parts) { return parts.reduce((n, b) => n + (b.tipo === 'texto' ? (b.duvidas || []).length : 0), 0); }
+function showLine(n) {
+  // Da leitura corrida para o lado a lado, na linha de onde veio a palavra.
+  view = 'lado'; render();
+  const cells = [...document.querySelectorAll(`.side [data-n="${n}"]`)];
+  if (!cells.length) return;
+  cells[0].scrollIntoView({block: 'center'});
+  cells.forEach(c => c.classList.add('flash'));
+  setTimeout(() => cells.forEach(c => c.classList.remove('flash')), 2000);
+}
 function gapMark(block) {
   const s = el('span', 'gap', '[…]');
   s.title = `${range(block.numeros)} ainda em revisão`; s.setAttribute('aria-label', s.title);
@@ -109,7 +154,7 @@ function renderProse(parts, box) {
   for (const b of parts) {
     if (b.tipo === 'lacuna') { if (p.childNodes.length) p.append(' '); p.append(gapMark(b)); continue; }
     if (p.childNodes.length) { box.append(p); p = el('p'); }
-    p.append(view === 'moderna' ? b.modernizada : b.diplomatica);
+    if (view === 'moderna') p.append(...marked(b.modernizada, b.duvidas)); else p.append(b.diplomatica);
   }
   if (p.childNodes.length) box.append(p);
 }
@@ -129,9 +174,12 @@ function renderSide(parts, box) {
   for (const b of parts) {
     if (b.tipo === 'lacuna') { grid.append(el('span', 'n', String(b.numeros[0])), el('span', 'gapcell', `[${range(b.numeros)} em revisão]`)); continue; }
     for (const l of b.linhas) {
-      const m = el('span', 'm' + (l.fonte_moderna === 'edicao' ? ' edicao' : ''), l.modernizada);
+      const m = el('span', 'm' + (l.fonte_moderna === 'edicao' ? ' edicao' : ''));
+      m.append(...marked(l.modernizada, l.duvidas));
       if (l.fonte_moderna === 'edicao') m.title = 'Edição modernizada registrada na linha';
-      grid.append(el('span', 'n', String(l.numero)), el('span', 'd', l.diplomatica), m);
+      const cells = [el('span', 'n', String(l.numero)), el('span', 'd', l.diplomatica), m];
+      cells.forEach(c => { c.dataset.n = l.numero; });
+      grid.append(...cells);
     }
   }
   box.append(grid);
@@ -139,6 +187,7 @@ function renderSide(parts, box) {
 function render() {
   document.querySelectorAll('.views button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
   $('numbers').setAttribute('aria-pressed', String(numbers)); $('numbers').hidden = view === 'moderna';
+  $('doubts').setAttribute('aria-pressed', String(doubts)); $('doubts').hidden = view === 'diplomatica';
   if (!data) return;
   const has = data.validadas > 0;
   $('doc').hidden = !has; $('empty').hidden = has;
@@ -147,13 +196,18 @@ function render() {
   $('title').textContent = `Fólio ${data.folio || data.page_id}`;
   $('meta').replaceChildren(`${data.validadas} de ${data.total} linhas validadas`);
   if (data.validadas < data.total) $('meta').append(el('span', 'partial', 'texto parcial'));
+  const total = doubtCount(data.corpo) + doubtCount(data.margem);
+  if (doubts && view !== 'diplomatica' && total) $('meta').append(el('span', 'doubts', ` · ${total} ${total === 1 ? 'palavra' : 'palavras'} a conferir`));
+  $('legend').hidden = !doubts || view === 'diplomatica' || !total;
+  document.body.classList.toggle('noduv', !doubts);
   const box = $('text'); box.replaceChildren(); box.className = numbers ? '' : 'nonum';
   if (view === 'lado') renderSide(data.corpo, box); else if (view === 'diplomatica') renderLines(data.corpo, box); else { box.classList.add('prose'); renderProse(data.corpo, box); }
   $('marginBox').hidden = !data.margem.length; $('marginText').replaceChildren();
   if (data.margem.length) { const m = $('marginText'); m.className = (view === 'moderna' ? 'prose' : '') + (numbers ? '' : ' nonum'); view === 'lado' ? renderSide(data.margem, m) : view === 'diplomatica' ? renderLines(data.margem, m) : renderProse(data.margem, m); }
   $('note').textContent = view === 'diplomatica'
     ? 'Transcrição paleográfica (diplomática) validada pela equipe: grafia, abreviaturas e pontuação como no manuscrito. Só linhas validadas aparecem; as demais ficam marcadas como em revisão.'
-    : 'Leitura modernizada automática, para facilitar a leitura hoje: atualiza grafia e acentos e desenvolve abreviaturas conhecidas. Pode errar; a referência é a transcrição diplomática. Só linhas validadas entram.';
+    : 'Leitura modernizada automática, para facilitar a leitura hoje: atualiza grafia e acentos e desenvolve abreviaturas conhecidas. Pode errar; a referência é a transcrição diplomática. Só linhas validadas entram.'
+      + (doubts ? ' As palavras sublinhadas continuaram fora do dicionário do português atual depois da modernização; na leitura corrida, clique numa delas para ver a linha.' : '');
   $('credits').textContent = [data.creditos, data.imagem ? `Imagem: ${data.imagem}.` : ''].filter(Boolean).join(' ');
 }
 function plain() {
@@ -170,6 +224,9 @@ async function load(pageId) {
   $('status').textContent = ''; render();
 }
 document.querySelectorAll('.views button').forEach(b => b.onclick = () => { view = b.dataset.view; try { localStorage.setItem('paleographia.textos.vista', view); } catch { /* opcional */ } render(); });
+$('doubts').onclick = () => { doubts = !doubts; try { localStorage.setItem('paleographia.textos.duvidas', doubts ? '1' : '0'); } catch { /* opcional */ } render(); };
+$('text').addEventListener('click', e => { const s = e.target.closest('.prose .duv[data-line]'); if (s) showLine(s.dataset.line); });
+$('text').addEventListener('keydown', e => { const s = e.target.closest('.prose .duv[data-line]'); if (s && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); showLine(s.dataset.line); } });
 $('numbers').onclick = () => { numbers = !numbers; try { localStorage.setItem('paleographia.textos.numeros', numbers ? '1' : '0'); } catch { /* opcional */ } render(); };
 $('copy').onclick = async () => { try { await navigator.clipboard.writeText(plain()); $('status').textContent = 'Texto copiado.'; } catch { $('status').textContent = 'Não foi possível copiar; use Baixar .txt.'; } };
 $('download').onclick = () => {

@@ -8,7 +8,7 @@ Sem ``--gravar`` só mostra as contagens. Com ``--gravar`` escreve
 Desde 10/11 os fólios em curadoria moram na aplicação oficial (a da apresentação,
 ``data/demo_apresentacao``); a lista deles está em ``data/demo_apresentacao/curadoria.json``.
 Entram só linhas desses fólios com ``review_status = validated``, revisor
-identificado, texto diplomático e sem motivo de exclusão. Sai toda linha do contrato do livro 13
+identificado, texto diplomático e sem motivo de exclusão (espaços duplos viram um só). Sai toda linha do contrato do livro 13
 que tenha 6 palavras seguidas em comum com a referência congelada do contrato do livro 12 (teste
 reservado). A validação continua sendo as 7 linhas de 1795, as mesmas do A e do B.
 """
@@ -57,7 +57,7 @@ def main(gravar=False):
     novos, retiradas = [], []
     for linha, pagina in validadas:
         assert linha["document_id"] not in PROIBIDOS, linha["line_id"]
-        texto = unicodedata.normalize("NFC", linha["text_diplomatic"]).strip()
+        texto = " ".join(unicodedata.normalize("NFC", linha["text_diplomatic"]).split())  # junta espaços duplos
         if linha["document_id"] == "contrato_livro13_1763" and ngramas(texto) & teste:
             retiradas.append(texto)
             continue

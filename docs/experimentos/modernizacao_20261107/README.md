@@ -141,6 +141,22 @@ ajustar no teste):
 - começos de palavra partida na quebra de linha, avaliados como linha solta: `rem` → `rim`,
   `uro` → `urro`, `eria` → `iria`. No texto corrido esses pedaços são unidos e ficam como estão.
 
+## Palavras a conferir (10/11/2026)
+
+O modernizador só atualiza palavras que reconhece. A aba Textos agora sublinha as palavras da
+leitura modernizada que continuam fora do dicionário do português atual
+([`src/paleographia/duvidas.py`](../../../src/paleographia/duvidas.py), o mesmo dicionário do
+modernizador, sem alterá-lo). O sublinhado ondulado indica erro de leitura ou palavra antiga;
+o pontilhado, inicial maiúscula (provável nome próprio). Acentos não contam, e o pedaço de palavra
+partida na quebra de linha não é marcado. Na leitura corrida, clicar numa palavra abre o lado a
+lado na linha de onde ela veio. É só uma marca, sem correção automática: a referência continua
+sendo a transcrição diplomática conferida na imagem.
+
+Nas Posturas de 1831 (94 linhas validadas), ficaram marcadas 41 de 748 palavras. A maioria são
+leituras a rever na imagem (`batecins`, `prorpem`, `melativamenete`); algumas são palavras antigas
+(`magotes`, `rocio`) ou nomes (`Pentiado`). Como essas linhas são rótulos do ajustado C, a marca
+também serve para revisar os rótulos antes do treino.
+
 ## Créditos
 
 Edições modernizadas do Arquivo Histórico Municipal de Jundiaí: sessão de 1795, transcrição e
