@@ -1,0 +1,529 @@
+{
+ "pares": [
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:18",
+   "diplomatica": "Leo se hum Projecto de Postura com treze artigos seg",
+   "edicao": "Leu-se um Projeto de Posturas com treze artigos seguintes",
+   "sim": 0.92
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:19",
+   "diplomatica": "Art. 1° Niguem poderá vender armas ofencivas",
+   "edicao": "Artigo 1º – Ninguém poderá vender armas ofensivas,",
+   "sim": 0.89
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:20",
+   "diplomatica": "ou defensivas, polvora, e xumbo sem previa licença",
+   "edicao": "ou defensivas, pólvora, ou chumbo sem prévia licença",
+   "sim": 0.95
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:21",
+   "diplomatica": "do Juiz de Paz do Destrito para comerciar na quel",
+   "edicao": "do Juiz de Paz do Distrito para comércio naque-",
+   "sim": 0.93
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:22",
+   "diplomatica": "le genero = O Contraventor sera preso por quatro",
+   "edicao": "le gênero = O contraventor será preso por quatro",
+   "sim": 1.0
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:23",
+   "diplomatica": "dias, e pagará dez mil reis de multa",
+   "edicao": "dias, e pagará dez mil réis de multa.",
+   "sim": 0.97
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:24",
+   "diplomatica": "Art. 2°  Nenhum Negociante vendera Polvora, e",
+   "edicao": "Artigo 2º - Nenhum negociante venderá pólvora,",
+   "sim": 0.89
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:25",
+   "diplomatica": "xumbo, armas, ofensivas, e defensivas a escravos, ou",
+   "edicao": "chumbo, armas ofensivas, e defensivas, a escravos, ou",
+   "sim": 1.0
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:26",
+   "diplomatica": "possôas de suspeitas, ou desconhecidas. O contra-",
+   "edicao": "pessoas de suspeitas, ou desconhecidas. O contra-",
+   "sim": 0.96
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:27",
+   "diplomatica": "ventor terá oito dias de prisaõ e paga vinte mil",
+   "edicao": "ventor terá oito dias de prisão, e pagará vinte mil",
+   "sim": 0.98
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:28",
+   "diplomatica": "reis de multa",
+   "edicao": "réis de multa.",
+   "sim": 0.92
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:29",
+   "diplomatica": "Art.3° O Escravo naõ poderaõ trabalham so-",
+   "edicao": "Artigo 3º - Os escravos não poderão trabalhar so-",
+   "sim": 0.88
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:30",
+   "diplomatica": "bre si em officinas de Ferreiro, emesmos adminis",
+   "edicao": "bre si em oficinas de Ferreiro, e menos adminis-",
+   "sim": 0.96
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100r:31",
+   "diplomatica": "tralas. O Contraventor será preso por oito dias",
+   "edicao": "trá-las. O contraventor será preso por oito dias,",
+   "sim": 0.98
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:0",
+   "diplomatica": "dias, eo senhor pagará oito mil reis de multa",
+   "edicao": "e o senhor pagará oito mil réis de multa.",
+   "sim": 0.9
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:1",
+   "diplomatica": "Art. 4° Os  Officiais de Ferreiros e mais officiais  não",
+   "edicao": "Artigo 4º - As Oficinas de Ferreiros, e mais ofícios não",
+   "sim": 0.87
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:2",
+   "diplomatica": "construiraõ, ou concertaraõ armas aos escravos, ou pessôas",
+   "edicao": "construirão, ou consertarão armas aos escravos, e ou pessoas",
+   "sim": 0.88
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:3",
+   "diplomatica": "Desespeitas, e desconhecidas, O contraventor sendo livre",
+   "edicao": "de suspeitas, e desconhecidas; o contraventor sendo livre",
+   "sim": 0.97
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:4",
+   "diplomatica": "terá oito dias de prisaõ e pagará vinte mil reis de -",
+   "edicao": "terá oito dias de prisão, e pagará vinte mil réis de",
+   "sim": 0.98
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:5",
+   "diplomatica": "multa sendo escravo será prezo por quatro dias, e seu",
+   "edicao": "multa, sendo escravo será preso por quatro dias, e seu",
+   "sim": 1.0
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:6",
+   "diplomatica": "Senhor avizado para lhe mandar dar duzentos a cortes na",
+   "edicao": "senhor avisado para lhe mandar dar duzentos açoites na",
+   "sim": 0.95
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:7",
+   "diplomatica": "grade da cadeia, e quanto repugne sera prezo por dez",
+   "edicao": "grade da cadeia, e quando repugne será preso por dez",
+   "sim": 0.98
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:8",
+   "diplomatica": "Dias, e pará a multa do antigo antendente.",
+   "edicao": "dias, e pagará a multa do artigo antecedente.",
+   "sim": 0.89
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:9",
+   "diplomatica": "Art. 5° Nenhuma pessôa poderá ficarem na Villa",
+   "edicao": "Artigo 5º - Nenhuma pessoa poderá passar na Vila",
+   "sim": 0.84
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:10",
+   "diplomatica": "com armas offencivas, defensivas com armas de fogo",
+   "edicao": "com armas ofensivas, e defensivas como armas de fogo",
+   "sim": 0.97
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:11",
+   "diplomatica": "Tara, jagaia, espada, abondaõ. O contraventor sendo",
+   "edicao": "faca, zagaia, espada, e bordão. O contraventor sendo",
+   "sim": 0.82
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:12",
+   "diplomatica": "livre terá a pena de prizaõ por quatro dias, e paga -",
+   "edicao": "livre terá a pena de prisão por quatro dias, e paga-",
+   "sim": 1.0
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:13",
+   "diplomatica": "rá quatro mil reis de multa, sendo escravo será pre-",
+   "edicao": "ra quatro mil réis de multa; sendo escravo será pre-",
+   "sim": 0.96
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:14",
+   "diplomatica": "zo por quatro dias, seu senhor avisado para lhe man -",
+   "edicao": "so por quatro dias: seu senhor avisado para lhe man-",
+   "sim": 0.94
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:15",
+   "diplomatica": "dar duzento aconta na grade da Cadeia, quando",
+   "edicao": "dar dar duzentos açoites na grade da cadeia; quando repug",
+   "sim": 0.82
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:16",
+   "diplomatica": "se será prezo por oito dias, e pagará vinte mil reis de -",
+   "edicao": "ne será preso por oito dias, e pagará vinte mil réis de multa.",
+   "sim": 0.91
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:18",
+   "diplomatica": "Art. 6° Os escravos não poderaõ andar em magotes",
+   "edicao": "Artigo 6º - Os escravos não poderão andar em magotes",
+   "sim": 0.95
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:19",
+   "diplomatica": "pelas ruas, ou na via, logo que chegarem as municao de -",
+   "edicao": "pelas ruas, ou rocio logo que chegue ao número de",
+   "sim": 0.76
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:20",
+   "diplomatica": "suis individuos: seraõ dispensados; resistindo seraõ pre",
+   "edicao": "seis indivíduos: serão dispersados; resistindo serão pre-",
+   "sim": 0.94
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:21",
+   "diplomatica": "zos, açoitados como no artigo quarto",
+   "edicao": "sos, e açoitados como no artigo quarto.",
+   "sim": 0.94
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:22",
+   "diplomatica": "Art. 7° Nenhum senhor poderá trazes seus escravos",
+   "edicao": "Artigo 7º - Nenhum senhor poderá trazer seus escravos",
+   "sim": 0.93
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:23",
+   "diplomatica": "ou escravas apernal avulço sem a lugador certo, e deter",
+   "edicao": "ou escravas a [jornal] avulso sem alugador certo, e deter-",
+   "sim": 0.93
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:24",
+   "diplomatica": "minado. O Contraventor será prezo por quarto",
+   "edicao": "minado. O contraventor será preso por quatro",
+   "sim": 0.98
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:25",
+   "diplomatica": "dias,  ou pagará quatro mil reis de multa",
+   "edicao": "dias ou pagará quatro mil réis de multa.",
+   "sim": 0.97
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:26",
+   "diplomatica": "Art. 8°. Sedo o escravo que for acto de poble",
+   "edicao": "Artigo 8º - Todo escravo que por ato de pala-",
+   "sim": 0.79
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:27",
+   "diplomatica": "oras dê indicios de insurreição, ou levantar sem cantiga",
+   "edicao": "vras dê indícios de insurreição, ou levante será castiga-",
+   "sim": 0.9
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:28",
+   "diplomatica": "de como no artigo quarto, seu Senhor será pre",
+   "edicao": "do como no artigo quarto, e seu senhor avisado pa-",
+   "sim": 0.83
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:29",
+   "diplomatica": "zo otradiem um fomos por tempo de seis meses qᵈᵒ",
+   "edicao": "[ra o trazer em ferros] por tempo de seis meses, quando",
+   "sim": 0.76
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f100v:30",
+   "diplomatica": "este repugne pagará oito mil reis de Multa",
+   "edicao": "este repugne pagará oito mil réis de multa.",
+   "sim": 0.98
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:0",
+   "diplomatica": "Art. 9°. Toda pessoa desconhecida que apare-",
+   "edicao": "Artigo 9º - Toda a pessoa desconhecida que apare-",
+   "sim": 0.92
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:1",
+   "diplomatica": "cer sem Passaporte dentro de Municipio será",
+   "edicao": "cer sem passaporte dentro do município será",
+   "sim": 0.95
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:2",
+   "diplomatica": "prezo e levado perante o Juiz de Paz do lugar pra",
+   "edicao": "preso e levado perante o juiz de paz do lugar pa-",
+   "sim": 0.99
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:3",
+   "diplomatica": "ra fazer a competente indagação da pessoa afinal a",
+   "edicao": "ra fazer a competente indagação da pessoa, e finda",
+   "sim": 0.93
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:4",
+   "diplomatica": "averiguar, sendo livre será prezo por quatro dias",
+   "edicao": "a viagem; sendo livre será preso por quatro dias",
+   "sim": 0.88
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:5",
+   "diplomatica": "sendo Escravo será castigao com cincoenta asoi",
+   "edicao": "e sendo escravo será castigado com cinquenta açoi-",
+   "sim": 0.91
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:6",
+   "diplomatica": "tes e avizado seu Senhor",
+   "edicao": "tes e avisado seu senhor.",
+   "sim": 0.96
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:7",
+   "diplomatica": "Art. 10° Sedo a pessoa que comprem a Escravos qual -",
+   "edicao": "Artigo 10º - Toda a pessoa que comprar a escravos qual-",
+   "sim": 0.85
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:8",
+   "diplomatica": "quer genero, com seja ouro, prata, outro qualquer",
+   "edicao": "quer gênero, como seja ouro, prata ou outro qualquer",
+   "sim": 0.96
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:9",
+   "diplomatica": "genero, de Fazendas Roupas, mantimento e toda qual",
+   "edicao": "gênero, de fazendas roupas, mantimentos, e toda e qual-",
+   "sim": 0.97
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:10",
+   "diplomatica": "quer especie que seja sem apresentar bilhete de",
+   "edicao": "quer espécie que seja sem apresentar bilhete de",
+   "sim": 1.0
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:11",
+   "diplomatica": "um Senhor. O Contraventor tera apena de quatro dias de",
+   "edicao": "seu senhor o contraventor terá a pena de quatro dias de",
+   "sim": 0.96
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:12",
+   "diplomatica": "preizaõ e pagará quatro mil reis de multa",
+   "edicao": "prisão e pagará quatro mil reis de multa.",
+   "sim": 0.91
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:13",
+   "diplomatica": "Art.11° Os Escravos que formarem ajutamento pa",
+   "edicao": "Artigo 11º - Os escravos que formarem ajuntamentos pa-",
+   "sim": 0.9
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:14",
+   "diplomatica": "ra dançar dentro do rocio da Villa seraõ prezas por",
+   "edicao": "ra danças dentro do rocio da Vila serão presos por-",
+   "sim": 0.94
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:15",
+   "diplomatica": "dozes dias, e seu Senho avizado para lhe mandar",
+   "edicao": "dois dias, e seus senhores avisados para lhes mandar",
+   "sim": 0.91
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:16",
+   "diplomatica": "dar nas grades da cadeia vinte e cinco acoites quan",
+   "edicao": "dar nas grades da cadeia vinte e cinco açoites, quan-",
+   "sim": 0.94
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:17",
+   "diplomatica": "do repugnar serão multados em seis mil reis.",
+   "edicao": "do repugnem serão multados em seis mil réis.",
+   "sim": 0.93
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:18",
+   "diplomatica": "Art.12° Sedo a pessôa livre, ou escravo que com",
+   "edicao": "Artigo 12º - Toda a pessoa livre, ou escrava que co-",
+   "sim": 0.84
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:19",
+   "diplomatica": "municar, ou favor a cer pessôas livres, de suspeitas, ou",
+   "edicao": "merciar, ou favorecer pessoas livres, de suspeita, ou",
+   "sim": 0.87
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:20",
+   "diplomatica": "escravos fugidos. O Contraventor sendo livre se",
+   "edicao": "escravos fugidos. O contraventor sendo livre se-",
+   "sim": 1.0
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:21",
+   "diplomatica": "rá prezo por oito dias, e pagará multa de doze",
+   "edicao": "rá preso por oito dias, pagará multa de dez",
+   "sim": 0.94
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:22",
+   "diplomatica": "mil reis, sendo escravo sera preza por quatro dias",
+   "edicao": "mil réis, sendo escravo será preso por quatro dias",
+   "sim": 0.94
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:23",
+   "diplomatica": "seu Senhor avizado para lhe mandar nas grades",
+   "edicao": "seu senhor avisado para lhe mandar dar nas grades",
+   "sim": 0.96
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:24",
+   "diplomatica": "da Cadeia duzentos acoites e quanto repugner sera",
+   "edicao": "da cadeia duzentos açoites, e quando repugne seja",
+   "sim": 0.91
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:25",
+   "diplomatica": "Multado como no artigo 4°",
+   "edicao": "multado como no artigo quarto.",
+   "sim": 0.85
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:26",
+   "diplomatica": "Art.13° Nenhum individuo podera levantar",
+   "edicao": "Artigo 13º - Nenhum indivíduo poderá levantar",
+   "sim": 0.9
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:27",
+   "diplomatica": "Baticins nas ruas com qualquer protesto que",
+   "edicao": "[ † ] nas ruas com qualquer pretexto que",
+   "sim": 0.83
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:28",
+   "diplomatica": "ja dentro do recinto da Villa o Contraventor",
+   "edicao": "seja dentro do recinto da Vila. O contraventor",
+   "sim": 0.98
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:29",
+   "diplomatica": "tera a pena de quatro mil de multa e quatro",
+   "edicao": "terá a pena de quatro mil de multa, e quatro",
+   "sim": 1.0
+  },
+  {
+   "document_id": "posturas_1831",
+   "linha": "f101r:30",
+   "diplomatica": "dias de prizaõ - Paço da Camara 9 de Junho",
+   "edicao": "dias de prisão. – Paço da Câmara 9 de julho.",
+   "sim": 0.92
+  }
+ ]
+}

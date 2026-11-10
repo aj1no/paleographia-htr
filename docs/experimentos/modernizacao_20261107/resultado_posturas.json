@@ -1,0 +1,50 @@
+{
+ "v1": {
+  "sem_modernizar": {
+   "cer": 0.1184995737425405,
+   "wer": 0.35239567233384855
+  },
+  "modernizado": {
+   "cer": 0.10116510372264848,
+   "wer": 0.28129829984544047
+  },
+  "trocas": {
+   "certas": 49,
+   "erradas": 22,
+   "desnecessarias": 7
+  },
+  "palavras_da_edicao": 647
+ },
+ "v2": {
+  "sem_modernizar": {
+   "cer": 0.1184995737425405,
+   "wer": 0.35239567233384855
+  },
+  "modernizado": {
+   "cer": 0.10287013356067065,
+   "wer": 0.2828438948995363
+  },
+  "trocas": {
+   "certas": 48,
+   "erradas": 24,
+   "desnecessarias": 7
+  },
+  "palavras_da_edicao": 647
+ },
+ "v3": {
+  "sem_modernizar": {
+   "cer": 0.1184995737425405,
+   "wer": 0.35239567233384855
+  },
+  "modernizado": {
+   "cer": 0.08127308894572322,
+   "wer": 0.2117465224111283
+  },
+  "trocas": {
+   "certas": 68,
+   "erradas": 29,
+   "desnecessarias": 5
+  },
+  "palavras_da_edicao": 647
+ }
+}

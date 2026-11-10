@@ -4,7 +4,7 @@ Só entram linhas validadas por um revisor; linhas pendentes, rascunhos humanos 
 do modelo nunca aparecem (viram lacunas marcadas). As linhas validadas consecutivas são
 unidas em texto corrido, juntando a palavra partida na quebra de linha (``aos ca`` |
 ``torze`` → ``aos catorze``) com o mesmo detector do modernizador, e a leitura modernizada
-é feita sobre o texto já unido, com a versão 2 (``modernizacao_v2``). O módulo ``modernizacao``
+é feita sobre o texto já unido, com a versão 3 (``modernizacao_v3``). O módulo ``modernizacao``
 é só usado, não alterado.
 Não há pós-correção lexical aqui: a linha validada já é a correção humana. As palavras da
 leitura modernizada que ficam fora do dicionário atual vêm marcadas (``duvidas``) para conferência,
@@ -12,14 +12,17 @@ e as que estão no glossário histórico recebem o número da nota (``notas``), 
 """
 from .duvidas import duvidas, duvidas_por_linha, localizar
 from .glossario import Notas, verbetes
-from .modernizacao import nfc, palavra_partida
-from .modernizacao_v2 import modernizar_linha, modernizar_linhas
+from .modernizacao import nfc
+from .modernizacao_v3 import limpar_hifen, modernizar_linha, modernizar_linhas, palavra_partida
 
 QUEBRA = ("-", "=", "¬")
 
 
 def juntar(linhas):
-    """Une linhas diplomáticas consecutivas em texto corrido, juntando palavras partidas."""
+    """Une linhas diplomáticas consecutivas em texto corrido, juntando palavras partidas.
+
+    Hífen de enchimento (``de -`` | ``multa``) e hífen antes de maiúscula (``de-`` | ``Paz``) somem.
+    """
     corrido = ""
     for indice, linha in enumerate(linhas):
         atual = nfc(linha).strip()
@@ -27,9 +30,9 @@ def juntar(linhas):
             corrido = atual
         elif palavra_partida(linhas[indice - 1], linha):
             anterior = corrido.rstrip()
-            corrido = (anterior[:-1] if anterior.endswith(QUEBRA) else anterior) + atual
+            corrido = (anterior[:-1].rstrip() if anterior.endswith(QUEBRA) else anterior) + atual
         else:
-            corrido = f"{corrido} {atual}"
+            corrido = f"{limpar_hifen(corrido, linha)} {atual}"
     return corrido
 
 

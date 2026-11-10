@@ -157,6 +157,48 @@ leituras a rever na imagem (`batecins`, `prorpem`, `melativamenete`); algumas s�
 (`magotes`, `rocio`) ou nomes (`Pentiado`). Como essas linhas são rótulos do ajustado C, a marca
 também serve para revisar os rótulos antes do treino.
 
+## Versão 3 (10/11/2026)
+
+O Arquivo publicou a edição modernizada das Posturas de 1831 (`data/raw/transcriptions/codigo_de_posturas_-_1831_p00*.txt`).
+[`scripts/avaliar_modernizacao_posturas.py`](../../../scripts/avaliar_modernizacao_posturas.py) alinha as 94
+linhas validadas na aplicação oficial com a edição: são 75 linhas e 647 palavras, porque o começo do
+100r não está na edição ([pares](pares_posturas.json), [resultado](resultado_posturas.json)). Os erros da v2 nessas
+linhas guiaram a [v3](../../../src/paleographia/modernizacao_v3.py), uma camada sobre a v2, que continua intacta
+(o teste confere o SHA-256). **Por isso estas linhas agora são de desenvolvimento, não de avaliação cega.**
+
+O que a v3 trata: `Art. 1°` → `Artigo 1º`; `mil reis` → `mil réis`; o futuro em -rão quando há
+um futuro inequívoco por perto (`não construiraõ … terá` → `construirão`; na narrativa, `derão` →
+`deram` continua); palavra grudada (`eo` → `e o`, `apena` → `a pena`) e `a lugador` → `alugador`;
+palavra na frequência mínima do dicionário trocada por variante 2× mais comum (`acoites` → `açoites`),
+com `paço` protegido; `cincoenta` → `cinquenta`, `aa` → `à`; minúscula em `o Contraventor`/`seu Senhor`
+(não em `o dito Senhor` nem `Nossa Senhora`); e hífen de quebra: `paga -` | `rá` → `pagará`, `de -` | `multa`
+→ `de multa`, `Juiz de-` | `Paz` → `Juiz de Paz`.
+
+| Comparado com a edição | Posturas (75 linhas) | Desenvolvimento antigo (10 linhas) |
+| --- | ---: | ---: |
+| Sem modernizar | WER 35,24% | WER 14,89% |
+| v2 | WER 28,28% | WER 1,06% |
+| **v3** | **WER 21,17%** (CER 8,13%) | WER 1,06% |
+
+Com as linhas em contexto, como na aplicação, a v3 fica em WER 20,1% (v2: 27,5%). Na varredura das
+748 linhas de treino (Traslado e Inquisição, sem edição), a v3 muda 21 linhas em relação à v2:
+`mosso` → `moço`, `aa` → `à`, `Brazaõ` → `Brasão`, `Inquizidores` → `Inquisidores`, `penitencia` → `penitência`,
+`sumario` → `sumário`, `Provara`/`cumprira` → `Provará`/`cumprirá` (fórmulas de libelo e sentença). Uma primeira versão
+baixava a maiúscula de começo de ato (`Aos vinte dias…`) e de sobrenomes (`Paschoal Dias`), corrigida antes do registro.
+Código: SHA-256 `4fc7dbe9daba66d1b0b5a0c91f8243e92ddb53ec21605e5fea83333538b4852d` (LF).
+
+**O que sobra é quase todo leitura, não modernização.** A edição mostra leituras a rever nas linhas
+validadas, que também são rótulos do ajustado C: `aconta`/`a cortes` (açoites), `jagaia` (zagaia),
+`abondaõ` (bordão), `dispensados` (dispersados), `apernal avulço` (a jornal avulso), `Sedo o escravo que for
+acto de poble` (Todo escravo que por ato de pala-), `otradiem um fomos` (o trazer em ferros), `possôas` (pessoas),
+`emesmos` (e menos), `quarto` (quatro), `doze`/`dozes` (dez, dois), `protesto` (pretexto), `Junho` (julho).
+No Art. 13, a palavra que a equipe leu `Baticins` aparece na edição como `[ † ]`: os editores do Arquivo
+também não a leram.
+
+**Próxima versão:** acento em palavra que existe sem acento (`individuo`, `previa`), plural e
+concordância (`seu Senho` → `seus senhores`) e futuro de verbos regulares (`vendera`) ficam de fora,
+porque dependem de sintaxe.
+
 ## Créditos
 
 Edições modernizadas do Arquivo Histórico Municipal de Jundiaí: sessão de 1795, transcrição e

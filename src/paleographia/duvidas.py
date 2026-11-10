@@ -11,8 +11,9 @@ alterá-lo; acentos não contam, porque a dúvida é sobre a palavra, não sobre
 """
 import re
 
-from .modernizacao import dicionario, nfc, palavra_partida, sem_acento
+from .modernizacao import dicionario, nfc, sem_acento
 from .modernizacao_v2 import NOMES
+from .modernizacao_v3 import palavra_partida
 
 PALAVRA = re.compile(r"[^\W\d_]+")
 CONHECIDAS = frozenset({"art", "arts", "pra", "pras", "pro", "pros"})  # abreviatura de artigo e formas orais comuns
