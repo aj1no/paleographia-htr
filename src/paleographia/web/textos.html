@@ -64,6 +64,18 @@ footer a{color:var(--rust-text)}
 .side .flash{background:var(--warn-bg);border-radius:4px}
 .legend{display:flex;flex-wrap:wrap;gap:4px 18px;margin:0 0 6px}
 .legend span{white-space:nowrap}
+sup.nref{font:600 .62em var(--sans);line-height:0;margin-left:1px}
+sup.nref a{color:var(--rust-text);text-decoration:none;padding:0 1px}
+sup.nref a:hover{text-decoration:underline}
+.notes{margin-top:28px;padding-top:16px;border-top:1px solid var(--line)}
+.notes h3{font:600 14px var(--sans);color:var(--soft);margin:0 0 8px}
+.notes ol{margin:0;padding-left:1.6em;font:17px/1.55 var(--serif)}
+.notes li{margin:0 0 .7em;max-width:68ch;scroll-margin-top:24px}
+.notes li:target{background:var(--warn-bg);border-radius:4px}
+.notes .termo{font-style:italic;font-weight:600}
+.notes .fonte{display:block;font:13px/1.5 var(--sans);color:var(--muted)}
+.notes .sit{font:500 11px var(--sans);border-radius:999px;padding:1px 8px;margin-left:6px;background:var(--warn-bg);color:var(--warn-fg);white-space:nowrap}
+.notes .sit.conferida{background:var(--ok-bg);color:var(--ok-fg)}
 .empty{padding:60px 0;text-align:center;color:var(--muted);font:italic 20px/1.4 var(--serif)}
 @media(max-width:720px){main{padding:16px}header{padding:12px 16px}.right{margin-left:0}h2{font-size:28px}.prose p{font-size:19px}.side{grid-template-columns:32px minmax(0,1fr)}.side .m{grid-column:2}.side .h.m{display:none}}
 @media print{header,.bar,#status{display:none}main{max-width:none;padding:0}}
@@ -93,6 +105,7 @@ footer a{color:var(--rust-text)}
     <p class="meta" id="meta"></p>
     <article id="text"></article>
     <div class="margin" id="marginBox" hidden><h3>Na margem</h3><div id="marginText"></div></div>
+    <section class="notes" id="notesBox" hidden aria-labelledby="notesTitle"><h3 id="notesTitle">Notas do glossário histórico</h3><ol id="notesList"></ol></section>
     <footer>
       <p class="legend" id="legend"><span><span class="duv">sublinhado ondulado</span>: fora do dicionário atual (erro de leitura ou palavra antiga)</span><span><span class="duv nome">pontilhado</span>: provável nome próprio</span></p>
       <p id="note"></p>
@@ -110,22 +123,47 @@ const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls)
 const range = ns => ns.length === 1 ? `linha ${ns[0]}` : `linhas ${ns[0]} a ${ns.at(-1)}`;
 async function json(url) { const r = await fetch(url); if (!r.ok) throw Error((await r.json()).detail || r.statusText); return r.json(); }
 
-// Corta o texto nos trechos marcados: [{texto, tipo, linha}], com tipo null fora das marcas.
-function pieces(text, spans) {
-  const out = []; let at = 0;
+// Corta o texto nos trechos marcados: [{texto, tipo, linha}], com tipo null fora das marcas, e
+// {nota: n} logo depois da palavra que tem nota no glossário (notes: [início, fim, número]).
+function pieces(text, spans, notes) {
+  const cuts = new Map();
+  for (const [, end, n] of notes || []) if (end > 0 && end <= text.length) cuts.set(end, n);
+  const out = [];
+  const push = (from, to, tipo, linha) => {
+    let a = from;
+    for (const pos of [...cuts.keys()].filter(c => c > from && c <= to).sort((x, y) => x - y)) {
+      out.push(tipo ? {texto: text.slice(a, pos), tipo, linha} : {texto: text.slice(a, pos), tipo: null});
+      out.push({nota: cuts.get(pos)}); a = pos;
+    }
+    if (a < to) out.push(tipo ? {texto: text.slice(a, to), tipo, linha} : {texto: text.slice(a, to), tipo: null});
+  };
+  let at = 0;
   for (const [start, end, kind, line] of spans || []) {
     if (start < at || end > text.length) continue;
-    if (start > at) out.push({texto: text.slice(at, start), tipo: null});
-    out.push({texto: text.slice(start, end), tipo: kind, linha: line ?? null});
+    push(at, start, null); push(start, end, kind, line ?? null);
     at = end;
   }
-  if (at < text.length || !out.length) out.push({texto: text.slice(at), tipo: null});
+  push(at, text.length, null);
+  if (!out.length) out.push({texto: '', tipo: null});
   return out;
 }
+const SOBRESCRITO = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+const sup = n => String(n).replace(/\d/g, d => SOBRESCRITO[d]);
+// Texto puro com os números das notas em sobrescrito (para copiar e baixar).
+function withNotes(text, notes) {
+  return pieces(text, [], notes).map(p => p.nota ? sup(p.nota) : p.texto).join('');
+}
+const SITUACAO = {hipotese: 'hipótese', rascunho: 'rascunho: conferir a fonte', conferida: 'conferida'};
 const DUVIDA = {duvida: 'Fora do dicionário atual: erro de leitura ou palavra antiga. Confira na imagem.',
   nome: 'Fora do dicionário atual, com maiúscula: provável nome próprio. Confira na imagem.'};
-function marked(text, spans) {
-  return pieces(text, spans).map(p => {
+function marked(text, spans, notes) {
+  return pieces(text, spans, notes).map(p => {
+    if (p.nota) {
+      const s = el('sup', 'nref'), a = el('a', null, String(p.nota));
+      const nota = (data.notas || []).find(n => n.numero === p.nota);
+      a.href = `#nota-${p.nota}`; a.setAttribute('aria-label', `nota ${p.nota}`); if (nota) a.title = `${nota.termo}: ${nota.nota}`;
+      s.append(a); return s;
+    }
     if (!p.tipo) return p.texto;
     const s = el('span', `duv ${p.tipo}`, p.texto);
     s.title = (p.linha ? `Linha ${p.linha}. ` : '') + DUVIDA[p.tipo];
@@ -154,7 +192,7 @@ function renderProse(parts, box) {
   for (const b of parts) {
     if (b.tipo === 'lacuna') { if (p.childNodes.length) p.append(' '); p.append(gapMark(b)); continue; }
     if (p.childNodes.length) { box.append(p); p = el('p'); }
-    if (view === 'moderna') p.append(...marked(b.modernizada, b.duvidas)); else p.append(b.diplomatica);
+    if (view === 'moderna') p.append(...marked(b.modernizada, b.duvidas, b.notas)); else p.append(b.diplomatica);
   }
   if (p.childNodes.length) box.append(p);
 }
@@ -175,7 +213,7 @@ function renderSide(parts, box) {
     if (b.tipo === 'lacuna') { grid.append(el('span', 'n', String(b.numeros[0])), el('span', 'gapcell', `[${range(b.numeros)} em revisão]`)); continue; }
     for (const l of b.linhas) {
       const m = el('span', 'm' + (l.fonte_moderna === 'edicao' ? ' edicao' : ''));
-      m.append(...marked(l.modernizada, l.duvidas));
+      m.append(...marked(l.modernizada, l.duvidas, l.notas));
       if (l.fonte_moderna === 'edicao') m.title = 'Edição modernizada registrada na linha';
       const cells = [el('span', 'n', String(l.numero)), el('span', 'd', l.diplomatica), m];
       cells.forEach(c => { c.dataset.n = l.numero; });
@@ -204,18 +242,34 @@ function render() {
   if (view === 'lado') renderSide(data.corpo, box); else if (view === 'diplomatica') renderLines(data.corpo, box); else { box.classList.add('prose'); renderProse(data.corpo, box); }
   $('marginBox').hidden = !data.margem.length; $('marginText').replaceChildren();
   if (data.margem.length) { const m = $('marginText'); m.className = (view === 'moderna' ? 'prose' : '') + (numbers ? '' : ' nonum'); view === 'lado' ? renderSide(data.margem, m) : view === 'diplomatica' ? renderLines(data.margem, m) : renderProse(data.margem, m); }
+  renderNotes();
   $('note').textContent = view === 'diplomatica'
     ? 'Transcrição paleográfica (diplomática) validada pela equipe: grafia, abreviaturas e pontuação como no manuscrito. Só linhas validadas aparecem; as demais ficam marcadas como em revisão.'
     : 'Leitura modernizada automática, para facilitar a leitura hoje: atualiza grafia e acentos e desenvolve abreviaturas conhecidas. Pode errar; a referência é a transcrição diplomática. Só linhas validadas entram.'
       + (doubts ? ' As palavras sublinhadas continuaram fora do dicionário do português atual depois da modernização; na leitura corrida, clique numa delas para ver a linha.' : '');
   $('credits').textContent = [data.creditos, data.imagem ? `Imagem: ${data.imagem}.` : ''].filter(Boolean).join(' ');
 }
+function renderNotes() {
+  const notas = data.notas || [], list = $('notesList');
+  $('notesBox').hidden = view === 'diplomatica' || !notas.length;
+  list.replaceChildren();
+  for (const n of notas) {
+    const li = el('li'); li.id = `nota-${n.numero}`; li.value = n.numero;
+    li.append(el('span', 'termo', n.termo), el('span', 'sit' + (n.situacao === 'conferida' ? ' conferida' : ''), SITUACAO[n.situacao] || n.situacao), ' ', n.nota);
+    for (const f of n.fontes || []) li.append(el('span', 'fonte', f));
+    list.append(li);
+  }
+}
+function notesText() {
+  const notas = data.notas || [];
+  return notas.length ? '\n\nNotas\n' + notas.map(n => `${sup(n.numero)} ${n.termo} (${SITUACAO[n.situacao] || n.situacao}): ${n.nota}${(n.fontes || []).length ? ' ' + n.fontes.join(' ') : ''}`).join('\n') : '';
+}
 function plain() {
   if (!data) return '';
   const parts = [...data.corpo, ...(data.margem.length ? [{tipo: 'titulo'}, ...data.margem] : [])];
-  if (view === 'moderna') return parts.map(b => b.tipo === 'titulo' ? '\n[Margem]' : b.tipo === 'lacuna' ? '[…]' : b.modernizada).join('\n\n');
+  if (view === 'moderna') return parts.map(b => b.tipo === 'titulo' ? '\n[Margem]' : b.tipo === 'lacuna' ? '[…]' : withNotes(b.modernizada, b.notas)).join('\n\n') + notesText();
   if (view === 'diplomatica') return parts.flatMap(b => b.tipo === 'titulo' ? ['[Margem]'] : b.tipo === 'lacuna' ? [`[${range(b.numeros)} em revisão]`] : b.linhas.map(l => (numbers ? `${l.numero}\t` : '') + l.diplomatica)).join('\n');
-  return parts.flatMap(b => b.tipo === 'titulo' ? ['[Margem]'] : b.tipo === 'lacuna' ? [`[${range(b.numeros)} em revisão]`] : b.linhas.map(l => `${numbers ? l.numero + '\t' : ''}${l.diplomatica}\t${l.modernizada}`)).join('\n');
+  return parts.flatMap(b => b.tipo === 'titulo' ? ['[Margem]'] : b.tipo === 'lacuna' ? [`[${range(b.numeros)} em revisão]`] : b.linhas.map(l => `${numbers ? l.numero + '\t' : ''}${l.diplomatica}\t${withNotes(l.modernizada, l.notas)}`)).join('\n') + notesText();
 }
 async function load(pageId) {
   $('status').textContent = 'Carregando…';

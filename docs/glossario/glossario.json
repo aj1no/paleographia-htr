@@ -1,0 +1,26 @@
+{
+  "sobre": "Glossário histórico da leitura modernizada (aba Textos). Cada verbete vira uma nota numerada (¹²³) embaixo do texto. 'formas' são as grafias como aparecem na leitura modernizada (sem diferença de acento ou maiúscula). 'situacao': 'hipotese' (leitura ou sentido em discussão), 'rascunho' (sentido proposto, falta conferir a fonte) ou 'conferida' (a equipe conferiu na fonte). Só 'conferida' tira o sublinhado de palavra a conferir.",
+  "verbetes": [
+    {
+      "termo": "batecins",
+      "formas": ["batecins", "baticins"],
+      "situacao": "hipotese",
+      "nota": "Leitura em discussão. Hipóteses da equipe: (a) batzen, moeda de prata suíça e do sul da Alemanha, em forma aportuguesada; (b) botequins, casas ou barracas de venda de bebida e comida, que as posturas municipais costumavam regular. O contexto do 101r é \"levantar Baticins nas ruas\". Conferir na imagem e em dicionário de época.",
+      "fontes": []
+    },
+    {
+      "termo": "magotes",
+      "formas": ["magote", "magotes"],
+      "situacao": "rascunho",
+      "nota": "Magote: ajuntamento, grupo de pessoas. \"Andar em magotes\" é andar em grupo.",
+      "fontes": ["A conferir: Moraes Silva, Diccionario da lingua portugueza (1789), verbete \"magote\"."]
+    },
+    {
+      "termo": "rocio",
+      "formas": ["rocio", "rossio", "rocios", "rossios"],
+      "situacao": "rascunho",
+      "nota": "Rocio (rossio): terreno público de uso comum junto à vila, como praça ou logradouro.",
+      "fontes": ["A conferir: Moraes Silva, Diccionario da lingua portugueza (1789), verbete \"rocio\"."]
+    }
+  ]
+}
