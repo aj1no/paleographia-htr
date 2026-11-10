@@ -61,6 +61,10 @@ select,input{font:inherit;color:var(--ink);background:var(--field);border:1px so
 .lens.zoomed img{max-height:none;max-width:none;margin:0}
 .lens.dragging{cursor:grabbing}
 .lens:focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+.context{margin-top:10px;background:var(--paper-2);border-radius:8px;padding:10px;max-height:46vh;overflow:auto}
+.context canvas{display:block;width:100%;height:auto;border-radius:4px}
+.context .hint{margin:6px 0 0;font-size:12px}
+.tools select{padding:4px 6px;font-size:13px}
 .tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin:12px 0 0;font-size:13px;color:var(--soft)}
 .tools label{display:flex;align-items:center;gap:8px}
 .tools input[type=range]{width:110px;accent-color:var(--rust-text);padding:0;border:0;background:transparent}
@@ -152,6 +156,13 @@ body.blind .sheet{box-shadow:inset 0 0 0 2px var(--ink)}
         <button type="button" class="toggle" id="focus" aria-pressed="false" title="Alt+F: esmaece as linhas vizinhas, sem apagar nada">Foco na linha</button>
         <button type="button" class="ghost" id="resetLens" title="Alt+0">Restaurar</button>
       </div>
+      <div class="switches" role="group" aria-label="Contexto: linhas vizinhas na página" title="Alt+C liga e desliga o contexto, com a última escolha">
+        <label>Contexto acima <select id="contextAbove"><option value="0">nenhuma</option><option value="1">1 linha</option><option value="2">2 linhas</option><option value="3">3 linhas</option></select></label>
+        <label>abaixo <select id="contextBelow"><option value="0">nenhuma</option><option value="1">1 linha</option><option value="2">2 linhas</option><option value="3">3 linhas</option></select></label></div>
+    </div>
+    <div class="context" id="contextBox" hidden>
+      <canvas id="contextCanvas" role="img" aria-label="Trecho da página com as linhas vizinhas; a linha atual fica marcada"></canvas>
+      <p class="hint">Trecho da página para contexto; a linha que você está lendo fica marcada. Os ajustes de imagem valem aqui também.</p>
     </div>
     <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="limiar" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncR type="discrete" tableValues="0 1"/><feFuncG type="discrete" tableValues="0 1"/><feFuncB type="discrete" tableValues="0 1"/></feComponentTransfer></filter></svg>
     <div class="interlinear">
@@ -194,7 +205,7 @@ body.blind .sheet{box-shadow:inset 0 0 0 2px var(--ink)}
       <p class="hint">Junta esta linha com a vizinha num recorte só, quando o segmentador separou uma palavra. Rascunhos das duas são mantidos; linhas validadas precisam voltar a pendentes antes.</p>
       <div class="actions"><button type="button" class="secondary" id="joinPrev">Com a anterior</button><button type="button" class="secondary" id="joinNext">Com a seguinte</button></div>
     </div>
-    <p class="hint" id="keysList" hidden><kbd>Enter</kbd> valida e segue · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha · <kbd>Alt</kbd>+<kbd>P</kbd> sinais especiais · <kbd>Alt</kbd>+<kbd>S</kbd> sobrescrito · <kbd>Alt</kbd>+<kbd>=</kbd>/<kbd>-</kbd> amplia · <kbd>Alt</kbd>+<kbd>←</kbd>/<kbd>→</kbd> move a imagem ampliada para os lados (<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> para cima e para baixo) · com a imagem clicada, só as setas movem, <kbd>Shift</kbd> anda mais e <kbd>Home</kbd>/<kbd>End</kbd> vão ao começo e ao fim da linha · <kbd>Alt</kbd>+<kbd>N</kbd> negativo · <kbd>Alt</kbd>+<kbd>F</kbd> foco · <kbd>Alt</kbd>+<kbd>0</kbd> restaura a imagem</p>
+    <p class="hint" id="keysList" hidden><kbd>Enter</kbd> valida e segue · <kbd>Alt</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> muda de linha · <kbd>Alt</kbd>+<kbd>P</kbd> sinais especiais · <kbd>Alt</kbd>+<kbd>S</kbd> sobrescrito · <kbd>Alt</kbd>+<kbd>=</kbd>/<kbd>-</kbd> amplia · <kbd>Alt</kbd>+<kbd>←</kbd>/<kbd>→</kbd> move a imagem ampliada para os lados (<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>↑</kbd>/<kbd>↓</kbd> para cima e para baixo) · com a imagem clicada, só as setas movem, <kbd>Shift</kbd> anda mais e <kbd>Home</kbd>/<kbd>End</kbd> vão ao começo e ao fim da linha · <kbd>Alt</kbd>+<kbd>N</kbd> negativo · <kbd>Alt</kbd>+<kbd>F</kbd> foco · <kbd>Alt</kbd>+<kbd>C</kbd> liga e desliga o contexto (linhas acima e abaixo, na última escolha) · <kbd>Alt</kbd>+<kbd>0</kbd> restaura a imagem</p>
     <p class="hint blindnote" id="blindNote" hidden>Às cegas: a sugestão do modelo e a edição estão escondidas e o campo começa vazio. Sua leitura vai para um registro separado e não altera a transcrição oficial da linha.</p>
   </section>
   <p id="empty" class="empty">Selecione um fólio com linhas para começar.</p>
@@ -363,6 +374,7 @@ function render() {
     ['Revisado em', l.reviewed_at || 'nunca'], ...(l.exclusion_reason ? [['Motivo de exclusão', l.exclusion_reason]] : []), ['Recorte (px)', l.bbox_xyxy.join(', ')], ['Recorte conferido', l.geometry_status === 'validated' ? 'sim' : 'não'],
     ...(blind ? [] : [['Discordância modelo × edição', percent(lineDiscordance(l))]])];
   $('details').replaceChildren(...rows.flatMap(([k, v]) => { const dt = document.createElement('dt'), dd = document.createElement('dd'); dt.textContent = k; dd.textContent = String(v); return [dt, dd]; }));
+  drawContext();
 }
 function go(i) { remember(); const n = pageLines().length; if (!n) return; index = Math.max(0, Math.min(n - 1, i)); noteArmed = null; openPanel(null); render(); $('mine').focus(); }
 async function load(keepLine) {
@@ -656,6 +668,53 @@ function applyLens() {
   $('brightness').value = lens.brightness; $('brightnessOut').textContent = `${lens.brightness}%`;
   for (const key of ['invert', 'gray', 'threshold', 'focus']) $(key).setAttribute('aria-pressed', String(!!lens[key]));
   try { localStorage.setItem('paleographia.lente', JSON.stringify(lens)); } catch { /* optional */ }
+  if (!$('contextBox').hidden) $('contextCanvas').style.filter = lensFilter(lens);
+}
+// Contexto: retângulo da página (px da página) com a linha atual, até ``above`` vizinhas antes e
+// ``below`` depois, na mesma região.
+function contextBox(ls, i, above, below, width, height) {
+  const cur = ls[i];
+  if (!cur?.bbox_xyxy || !(above > 0 || below > 0)) return null;
+  const same = ls.filter(l => l.region_id === cur.region_id && l.bbox_xyxy);
+  const at = same.indexOf(cur), near = same.slice(Math.max(0, at - above), at + below + 1);
+  const pad = Math.round((cur.bbox_xyxy[3] - cur.bbox_xyxy[1]) * 0.3);
+  return [Math.max(0, Math.min(...near.map(l => l.bbox_xyxy[0])) - pad), Math.max(0, Math.min(...near.map(l => l.bbox_xyxy[1])) - pad),
+    Math.min(width, Math.max(...near.map(l => l.bbox_xyxy[2])) + pad), Math.min(height, Math.max(...near.map(l => l.bbox_xyxy[3])) + pad)];
+}
+const context = {above: 0, below: 0}, contextLast = {above: 1, below: 1};
+try {
+  const saved = JSON.parse(localStorage.getItem('paleographia.contexto') || '{}');
+  if (typeof saved === 'number') Object.assign(context, {above: saved, below: saved});  // versão anterior: um número só
+  else for (const k of ['above', 'below']) { context[k] = Number(saved[k]) || 0; contextLast[k] = Number(saved['last_' + k] ?? 1); }
+} catch { /* optional */ }
+const contextOn = () => context.above > 0 || context.below > 0;
+function setContext(above, below) {
+  const ok = v => [0, 1, 2, 3].includes(v) ? v : 0;
+  context.above = ok(above); context.below = ok(below);
+  if (contextOn()) Object.assign(contextLast, context);
+  $('contextAbove').value = String(context.above); $('contextBelow').value = String(context.below);
+  try { localStorage.setItem('paleographia.contexto', JSON.stringify({...context, last_above: contextLast.above, last_below: contextLast.below})); } catch { /* optional */ }
+  drawContext();
+}
+function drawContext() {
+  const holder = $('contextBox'), l = state && current(), page = state?.pages.find(p => p.page_id === pageId);
+  holder.hidden = !contextOn() || !l || !page;
+  if (holder.hidden) return;
+  const img = $('pageImage');
+  if (!img.complete || !img.naturalWidth) { img.addEventListener('load', drawContext, {once: true}); return; }
+  const r = contextBox(pageLines(), index, context.above, context.below, page.width, page.height);
+  if (!r) { holder.hidden = true; return; }
+  const sx = img.naturalWidth / page.width, sy = img.naturalHeight / page.height;
+  const w = (r[2] - r[0]) * sx, h = (r[3] - r[1]) * sy, scale = Math.min(1, 1600 / w);
+  const c = $('contextCanvas'), g = c.getContext('2d');
+  c.width = Math.max(1, Math.round(w * scale)); c.height = Math.max(1, Math.round(h * scale));
+  g.drawImage(img, r[0] * sx, r[1] * sy, w, h, 0, 0, c.width, c.height);
+  const [a, b, d, e] = l.bbox_xyxy, x = (a - r[0]) * sx * scale, y = (b - r[1]) * sy * scale;
+  const lw = (d - a) * sx * scale, lh = (e - b) * sy * scale;
+  g.fillStyle = 'rgba(0,0,0,.12)'; g.fillRect(0, 0, c.width, y); g.fillRect(0, y + lh, c.width, c.height - y - lh);
+  g.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--rust').trim() || '#9a3b22';
+  g.lineWidth = Math.max(2, c.width / 450); g.strokeRect(x, y, lw, lh);
+  c.style.filter = lensFilter(lens);
 }
 // Quanto as setas movem a imagem ampliada: 15% da área visível; com Shift, 60%.
 function panDelta(key, shift, width, height) {
@@ -679,6 +738,8 @@ $('contrast').addEventListener('input', () => { lens.contrast = Number($('contra
 $('brightness').addEventListener('input', () => { lens.brightness = Number($('brightness').value); applyLens(); });
 for (const key of ['invert', 'gray', 'threshold', 'focus']) $(key).onclick = () => { lens[key] = !lens[key]; applyLens(); };
 $('resetLens').onclick = () => { Object.assign(lens, lensDefaults); applyLens(); };
+$('contextAbove').value = String(context.above); $('contextBelow').value = String(context.below);
+for (const id of ['contextAbove', 'contextBelow']) $(id).addEventListener('change', () => setContext(Number($('contextAbove').value), Number($('contextBelow').value)));
 let pan = null;
 $('lens').addEventListener('pointerdown', e => {
   if (lens.zoom <= 1) return;
@@ -739,6 +800,7 @@ document.addEventListener('keydown', e => {
   else if (e.altKey && e.code === 'Digit0') { e.preventDefault(); Object.assign(lens, lensDefaults); applyLens(); }
   else if (e.altKey && e.code === 'KeyN') { e.preventDefault(); lens.invert = !lens.invert; applyLens(); }
   else if (e.altKey && e.code === 'KeyF') { e.preventDefault(); lens.focus = !lens.focus; applyLens(); }
+  else if (e.altKey && e.code === 'KeyC') { e.preventDefault(); if (contextOn()) setContext(0, 0); else if (contextLast.above || contextLast.below) setContext(contextLast.above, contextLast.below); else setContext(1, 1); }
   else if (e.altKey && e.code === 'KeyS') { e.preventDefault(); setSupMode(!supMode); $('mine').focus(); }
   else if (e.altKey && e.code === 'KeyP') { e.preventDefault(); setGlyphs($('glyphs').hidden); $('mine').focus(); }
 });

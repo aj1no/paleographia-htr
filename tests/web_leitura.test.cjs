@@ -115,3 +115,17 @@ test('setas movem a imagem ampliada em passos proporcionais à área visível', 
   assert.deepStrictEqual(panDelta('ArrowDown', false, 600, 200), [0, 30]);
   assert.strictEqual(panDelta('Enter', false, 600, 200), null);
 });
+
+// Contexto: trecho da página com a linha atual e até k vizinhas da mesma região, com folga.
+const contextSource = html.match(/function contextBox[\s\S]*?\r?\n}\r?\n/)[0];
+const contextBox = new Function(`${contextSource}; return contextBox;`)();
+
+test('contexto pega as vizinhas da mesma região, acima e abaixo separadas, e respeita a borda', () => {
+  const linha = (y, region = 'page') => ({region_id: region, bbox_xyxy: [100, y, 900, y + 40]});
+  const ls = [linha(0), linha(50), linha(100), linha(400, 'margem'), linha(150), linha(200)];
+  assert.deepStrictEqual(contextBox(ls, 2, 1, 1, 1000, 1000), [88, 38, 912, 202]);   // 50 a 190, folga de 12
+  assert.deepStrictEqual(contextBox(ls, 2, 2, 0, 1000, 1000), [88, 0, 912, 152]);    // só acima, sem passar do topo
+  assert.deepStrictEqual(contextBox(ls, 2, 0, 3, 1000, 1000), [88, 88, 912, 252]);   // só abaixo, pulando a margem
+  assert.deepStrictEqual(contextBox(ls, 3, 3, 3, 1000, 1000), [88, 388, 912, 452]);  // margem: só ela
+  assert.strictEqual(contextBox(ls, 2, 0, 0, 1000, 1000), null);
+});
