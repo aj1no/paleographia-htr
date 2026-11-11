@@ -3,7 +3,7 @@
 Uso, na raiz do projeto, com Docker aberto:  python scripts/avaliar_teste_final.py
 
 Confere o SHA-256 da referência congelada e de cada recorte, roda cada configuração final do
-PP-OCRv6 (base, ajustado A, ajustado B) uma única vez pelo mesmo worker de inferência do editor
+PP-OCRv6 (base, ajustado A, ajustado B e, desde 11/11, o ajustado D1) uma única vez pelo mesmo worker de inferência do editor
 e grava CER e WER em NFC, por linha, por documento e no total. A métrica é a mesma da validação
 de 1795 (scripts/avaliar_validacao.py). Um modelo que já tem resultado gravado não roda de novo.
 """
@@ -30,6 +30,9 @@ MODELOS = {
                             "04194328e5d12b4f7a72bb2764a0c4c76f5030e9856e5c41ce96d04ab8b7c148"),
     "PP-OCRv6 ajustado B": ("models/ppocrv6_ajustado_B_20261107/medium_ajustado_B_gravado.safetensors",
                             "52b2ad55829ad63d6e79c632de431521aeac0abe591fe60197dd1cbfc64fc384"),
+    # Traslado + Posturas 100r/100v, checkpoint escolhido no dev 101r + 1795 (docs/experimentos/ppocrv6_ajustado_C/noturno_20261110).
+    "PP-OCRv6 ajustado D1": ("models/ppocrv6_ajustado_D1_20261110/medium_ajustado_D1.safetensors",
+                             "13a1fa98d4dae668fbded047be73503dca2705a378a88fbc674ea4378558bdf7"),
 }
 DOCKER = {"docker_image": "paleographia-kraken:7.1.0-cpu",
           "docker_image_id": "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b",

@@ -79,3 +79,33 @@ CER em NFC, com IC 95% por bootstrap de linhas:
   Pelo protocolo, a referência congelada **não foi alterada** e os números acima valem como estão.
   Uma auditoria do revisor pode produzir uma referência corrigida. Ela só pode ser aplicada às
   **mesmas predições gravadas** e precisa ser identificada como análise posterior.
+
+## Ajustado D1 (11/11/2026)
+
+O D1 é um modelo novo, treinado depois do congelamento: Traslado + Posturas de 1831, fólios 100r e
+100v. O checkpoint foi escolhido no dev 101r + 1795, sem olhar o teste
+([registro](../../experimentos/ppocrv6_ajustado_C/noturno_20261110/README.md)). Ele foi o único
+candidato novo levado ao teste e rodou **uma vez**, pelo mesmo script, com a referência, os
+recortes e os pesos conferidos (SHA-256 `13a1fa98…`). Os modelos já avaliados não rodaram de novo,
+e os números deles não mudaram.
+
+| Modelo | Total (49 linhas) | Pagamento (14) | Contrato (35) | WER total |
+| --- | ---: | ---: | ---: | ---: |
+| PP-OCRv6 ajustado B | 60,9% (54,0–68,0) | 28,3% (22,8–33,9) | 73,8% (69,6–78,3) | 94,4% |
+| **PP-OCRv6 ajustado D1** | **55,4% (49,5–61,9)** | 29,0% (23,5–35,0) | **65,9% (62,1–70,3)** | 94,4% |
+
+Diferença pareada de CER entre o D1 e o B (bootstrap de linhas, 2.000 reamostragens, semente 7):
+
+| Recorte | D1 − B | IC 95% |
+| --- | ---: | ---: |
+| Total | −5,4 pontos | −8,1 a −3,3 |
+| Contrato | −7,8 pontos | −11,0 a −5,4 |
+| Pagamento | +0,6 ponto | −2,1 a +3,4 |
+
+- **O D1 erra menos que o B**, e o intervalo não cruza o zero. Toda a melhora vem do contrato do
+  livro 12: no pagamento, os dois empatam. Linha a linha, o D1 melhora 25 linhas, piora 5 e empata 19.
+- **Em palavras, nada muda** (WER de 94,4% nos dois). A melhora é de caracteres soltos dentro de
+  palavras que continuam erradas.
+- **Por isso, o D1 substituiu o B na aplicação** (`configs/demo_apresentacao.toml`, 11/11).
+- **Ressalva:** o teste já foi usado para 4 modelos. Cada um rodou uma vez, mas a comparação entre
+  eles não é mais totalmente cega. A escolha do D1 foi feita antes, no dev, e não no teste.

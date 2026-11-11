@@ -1,0 +1,399 @@
+[
+ {
+  "crop_image": "data/workspace/curation_sessao_1795/crops/20261028T180723_c80a33f8/l_46885e82a1448e83690e.png",
+  "text": "Aos vinte e cinco dias do mes de junho de mil sete",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_b8a06d58bd7cced4f3a2.png",
+  "text": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+  "text": "senhora do Desterro de jundiahy comarca da cidade",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+  "text": "de São Paulo, em casas de morada do Juiz Presidente",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+  "text": "Salvador de Oliveira Prado, onde se achavão presentes",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+  "text": "os officiaes da Camara em acto de Vereança, trat-",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_40d2333b12328973de24.png",
+  "text": "ando sobre o bem commum do povo, na mesma se",
+  "document_id": "sessao_1795",
+  "split": "validation",
+  "label_source": "human_diplomatic",
+  "reviewer": "Rodolfo Vinicius Cima Takemoto"
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_35c9997a14cc282b5a5b.png",
+  "text": "ra fazer a competente indagação da pessoa afinal a",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_35c9997a14cc282b5a5b",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_eee3ed68592d4c6651fa.png",
+  "text": "averiguar, sendo livre será prezo por quatro dias",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_eee3ed68592d4c6651fa",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_4eee78a671e753f18a15.png",
+  "text": "sendo Escravo será castigao com cincoenta asoi",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_4eee78a671e753f18a15",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_48860470c273af85126e.png",
+  "text": "tes e avizado seu Senhor",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_48860470c273af85126e",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_a9c2a88fbe578f0c1293.png",
+  "text": "Art. 10° Sedo a pessoa que comprem a Escravos qual -",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_a9c2a88fbe578f0c1293",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_7b1ae45ba510f2750312.png",
+  "text": "quer genero, com seja ouro, prata, outro qualquer",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_7b1ae45ba510f2750312",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_cde80822f4d25b38131a.png",
+  "text": "genero, de Fazendas Roupas, mantimento e toda qual",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_cde80822f4d25b38131a",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_cb1c45481b8a235b96e4.png",
+  "text": "quer especie que seja sem apresentar bilhete de",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_cb1c45481b8a235b96e4",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_adb704a8224791043cca.png",
+  "text": "um Senhor. O Contraventor tera apena de quatro dias de",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_adb704a8224791043cca",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_a4e724d29cb359aab100.png",
+  "text": "preizaõ e pagará quatro mil reis de multa",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_a4e724d29cb359aab100",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_cc9337374a4326c2e2e0.png",
+  "text": "Art.11° Os Escravos que formarem ajutamento pa",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_cc9337374a4326c2e2e0",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_4e655c76245c80d4ec19.png",
+  "text": "ra dançar dentro do rocio da Villa seraõ prezas por",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_4e655c76245c80d4ec19",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_f355a7f1ee7e64309e45.png",
+  "text": "dozes dias, e seu Senho avizado para lhe mandar",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_f355a7f1ee7e64309e45",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_1b6fc8b75f9a0782c157.png",
+  "text": "dar nas grades da cadeia vinte e cinco acoites quan",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_1b6fc8b75f9a0782c157",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_29f02536d059b3706891.png",
+  "text": "do repugnar serão multados em seis mil reis.",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_29f02536d059b3706891",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_61618275f66e335583ae.png",
+  "text": "Art.12° Sedo a pessôa livre, ou escravo que com",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_61618275f66e335583ae",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_ca129b58666e7e18f56f.png",
+  "text": "municar, ou favor a cer pessôas livres, de suspeitas, ou",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_ca129b58666e7e18f56f",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_d6d84f2abd0956d8f86c.png",
+  "text": "escravos fugidos. O Contraventor sendo livre se",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_d6d84f2abd0956d8f86c",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_6249bf351146d63c94e2.png",
+  "text": "rá prezo por oito dias, e pagará multa de doze",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_6249bf351146d63c94e2",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_43e4bd1bd9bbd8af787a.png",
+  "text": "mil reis, sendo escravo sera preza por quatro dias",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_43e4bd1bd9bbd8af787a",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_454f6fe8a319939aac0d.png",
+  "text": "seu Senhor avizado para lhe mandar nas grades",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_454f6fe8a319939aac0d",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_63bd55f678825cc83db7.png",
+  "text": "da Cadeia duzentos acoites e quanto repugner sera",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_63bd55f678825cc83db7",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_2a182e19ab4352185284.png",
+  "text": "Multado como no artigo 4°",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_2a182e19ab4352185284",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_59e89c3cb0987acfc07e.png",
+  "text": "Art.13° Nenhum individuo podera levantar",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_59e89c3cb0987acfc07e",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_7bce403e0d1a3e58b0d2.png",
+  "text": "Baticins nas ruas com qualquer protesto que",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_7bce403e0d1a3e58b0d2",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_910b23369f02e282304a.png",
+  "text": "ja dentro do recinto da Villa o Contraventor",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_910b23369f02e282304a",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_e9d8e60fa0993be553e7.png",
+  "text": "tera a pena de quatro mil de multa e quatro",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_e9d8e60fa0993be553e7",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_fa3f79be86e3b1cb8757.png",
+  "text": "dias de prizaõ - Paço da Camara 9 de Junho",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_fa3f79be86e3b1cb8757",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_a7f2d0eee049123f9bcd.png",
+  "text": "Art. 9°. Toda pessoa desconhecida que apare-",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_a7f2d0eee049123f9bcd",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_ea6c25eb8dfae81663d7.png",
+  "text": "cer sem Passaporte dentro de Municipio será",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_ea6c25eb8dfae81663d7",
+  "augment": 1
+ },
+ {
+  "crop_image": "data/demo_apresentacao/recortes/l_bc0a3bd5301cdea7725e.png",
+  "text": "prezo e levado perante o Juiz de Paz do lugar pra",
+  "document_id": "jundiai_atas_sessao_1831-07-11",
+  "folio": "f101r",
+  "split": "validation",
+  "label_source": "human_diplomatic_assisted",
+  "reviewer": "Rodolfo Takemoto",
+  "line_id": "l_bc0a3bd5301cdea7725e",
+  "augment": 1
+ }
+]

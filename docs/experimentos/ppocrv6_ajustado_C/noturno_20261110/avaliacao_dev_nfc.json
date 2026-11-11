@@ -1,0 +1,798 @@
+{
+ "models/kraken_ppocrv6_medium/medium.safetensors": {
+  "sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+  "lines": 38,
+  "chars": 1759,
+  "cer": 0.1814,
+  "wer": 0.6142,
+  "rows": [
+   {
+    "ref": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "hyp": "Aos vinte ecenco dia domes de Iunho demil sette",
+    "cer": 0.14
+   },
+   {
+    "ref": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "hyp": "centos e noventa ainco annos nesta villa da Nossa",
+    "cer": 0.1837
+   },
+   {
+    "ref": "senhora do Desterro de jundiahy comarca da cidade",
+    "hyp": "senhora do Desterro de Iundiahi Comarca da Cidade",
+    "cer": 0.0816
+   },
+   {
+    "ref": "de São Paulo, em casas de morada do Juiz Presidente",
+    "hyp": "de Saõ Paulo em Cazas de morada do Iuis Prezidente",
+    "cer": 0.1569
+   },
+   {
+    "ref": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "hyp": "Selvador de Oliviera Prado, onde se achavaõ prezenty",
+    "cer": 0.1509
+   },
+   {
+    "ref": "os officiaes da Camara em acto de Vereança, trat-",
+    "hyp": "os Officiays de Camara em acto de Vercança, trac",
+    "cer": 0.1224
+   },
+   {
+    "ref": "ando sobre o bem commum do povo, na mesma se",
+    "hyp": "lando sobre obem commûm dopovo, namyma se",
+    "cer": 0.1591
+   },
+   {
+    "ref": "ra fazer a competente indagação da pessoa afinal a",
+    "hyp": "ra fazer acompetente indagaçaõ da pessõo, efinde",
+    "cer": 0.2
+   },
+   {
+    "ref": "averiguar, sendo livre será prezo por quatro dias",
+    "hyp": "aviaqun; urdo livne será firez por quatro dias",
+    "cer": 0.2857
+   },
+   {
+    "ref": "sendo Escravo será castigao com cincoenta asoi",
+    "hyp": "esende Eseravo seré cartigado com cincoenta acou-",
+    "cer": 0.1957
+   },
+   {
+    "ref": "tes e avizado seu Senhor",
+    "hyp": "tis, e avizado seo senhor",
+    "cer": 0.1667
+   },
+   {
+    "ref": "Art. 10° Sedo a pessoa que comprem a Escravos qual -",
+    "hyp": "Art.S0- Sodo a pessoa que comprer a Escravos qual-",
+    "cer": 0.1154
+   },
+   {
+    "ref": "quer genero, com seja ouro, prata, outro qualquer",
+    "hyp": "quer gener, com reja ouro, prata ou outro qualquen",
+    "cer": 0.1224
+   },
+   {
+    "ref": "genero, de Fazendas Roupas, mantimento e toda qual",
+    "hyp": "enero, de Tazendas roupas, mantimentos, etoda quel",
+    "cer": 0.14
+   },
+   {
+    "ref": "quer especie que seja sem apresentar bilhete de",
+    "hyp": "yuur ossucie que seje sem aprozentar bithité de-",
+    "cer": 0.2553
+   },
+   {
+    "ref": "um Senhor. O Contraventor tera apena de quatro dias de",
+    "hyp": "1o Senhor. OContraventer tea apena de quatre dias de",
+    "cer": 0.1111
+   },
+   {
+    "ref": "preizaõ e pagará quatro mil reis de multa",
+    "hyp": "prisoo epageré quatro mil vis de milta",
+    "cer": 0.2439
+   },
+   {
+    "ref": "Art.11° Os Escravos que formarem ajutamento pa",
+    "hyp": "Art.S1- Os Escravos que formaren ajuntamentos pe-",
+    "cer": 0.1522
+   },
+   {
+    "ref": "ra dançar dentro do rocio da Villa seraõ prezas por",
+    "hyp": "ra danças dentro do rocio da Villa seraõ prezos por-",
+    "cer": 0.0588
+   },
+   {
+    "ref": "dozes dias, e seu Senho avizado para lhe mandar",
+    "hyp": "dous elias, escos Senhevis avizados pare thes mandar",
+    "cer": 0.3404
+   },
+   {
+    "ref": "dar nas grades da cadeia vinte e cinco acoites quan",
+    "hyp": "dar nas grades da Cadiie veste a cinco acouls quan",
+    "cer": 0.1765
+   },
+   {
+    "ref": "do repugnar serão multados em seis mil reis.",
+    "hyp": "repugnem rerai multados enn sur mil rei-",
+    "cer": 0.3409
+   },
+   {
+    "ref": "Art.12° Sedo a pessôa livre, ou escravo que com",
+    "hyp": "Art-12. Sodo ofesôa livre, ou eseravo que co-",
+    "cer": 0.1915
+   },
+   {
+    "ref": "municar, ou favor a cer pessôas livres, de suspeitas, ou",
+    "hyp": "merciar, ou favor ecer pessôar livnes, desulpuita, ou",
+    "cer": 0.2143
+   },
+   {
+    "ref": "escravos fugidos. O Contraventor sendo livre se",
+    "hyp": "eseravos fugides. & Contraventor sendo lione se-",
+    "cer": 0.1277
+   },
+   {
+    "ref": "rá prezo por oito dias, e pagará multa de doze",
+    "hyp": "rá priz por eito dias, epogare amcutto de diz",
+    "cer": 0.2609
+   },
+   {
+    "ref": "mil reis, sendo escravo sera preza por quatro dias",
+    "hyp": "milreis, sendo ascravo será preza por quatro dias",
+    "cer": 0.06
+   },
+   {
+    "ref": "seu Senhor avizado para lhe mandar nas grades",
+    "hyp": "su Senhre avizado pari lhe mander dor nos g.rades",
+    "cer": 0.2444
+   },
+   {
+    "ref": "da Cadeia duzentos acoites e quanto repugner sera",
+    "hyp": "da Cadeco dizentos acoutes, equand repuiqne sya",
+    "cer": 0.2653
+   },
+   {
+    "ref": "Multado como no artigo 4°",
+    "hyp": "muttado como no ortigo dra",
+    "cer": 0.24
+   },
+   {
+    "ref": "Art.13° Nenhum individuo podera levantar",
+    "hyp": "Art. 83° Nenhum individuo poderá hvantar",
+    "cer": 0.125
+   },
+   {
+    "ref": "Baticins nas ruas com qualquer protesto que",
+    "hyp": "Boticins nas Vuas com qualquer pretox to que",
+    "cer": 0.1395
+   },
+   {
+    "ref": "ja dentro do recinto da Villa o Contraventor",
+    "hyp": "seja dentro do Vicinto da Villa a Contraventor",
+    "cer": 0.1136
+   },
+   {
+    "ref": "tera a pena de quatro mil de multa e quatro",
+    "hyp": "tire apera de quatro mil de multe, e quotr",
+    "cer": 0.186
+   },
+   {
+    "ref": "dias de prizaõ - Paço da Camara 9 de Junho",
+    "hyp": "dias deprizaõ - Peçe da Comare 9 de Junhe",
+    "cer": 0.1429
+   },
+   {
+    "ref": "Art. 9°. Toda pessoa desconhecida que apare-",
+    "hyp": "Art.E^ Toda afessoa desconhuida que apare 104",
+    "cer": 0.2727
+   },
+   {
+    "ref": "cer sem Passaporte dentro de Municipio será",
+    "hyp": "cor rem Parsaporté dentro de Muricipis será Pradate",
+    "cer": 0.3256
+   },
+   {
+    "ref": "prezo e levado perante o Juiz de Paz do lugar pra",
+    "hyp": "prezo clivado puerante a Juiz de Paz doluger pa",
+    "cer": 0.1633
+   }
+  ]
+ },
+ "models/ppocrv6_ajustado_A_20261106/medium_ajustado_A_gravado.safetensors": {
+  "sha256": "04194328e5d12b4f7a72bb2764a0c4c76f5030e9856e5c41ce96d04ab8b7c148",
+  "lines": 38,
+  "chars": 1759,
+  "cer": 0.162,
+  "wer": 0.5309,
+  "rows": [
+   {
+    "ref": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "hyp": "Aos vinte cunco dias do mes de Junho de mil selle",
+    "cer": 0.12
+   },
+   {
+    "ref": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "hyp": "centos e noventa ainco annos nesta villa du Nossa",
+    "cer": 0.1837
+   },
+   {
+    "ref": "senhora do Desterro de jundiahy comarca da cidade",
+    "hyp": "senhora do Desterro de Jundiahi Comarca de Cidade",
+    "cer": 0.102
+   },
+   {
+    "ref": "de São Paulo, em casas de morada do Juiz Presidente",
+    "hyp": "de São Paulo em Cazas de morada do Juis Prezidente",
+    "cer": 0.098
+   },
+   {
+    "ref": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "hyp": "Selvador de Oliveira Prado, onde se achavao prezente",
+    "cer": 0.0755
+   },
+   {
+    "ref": "os officiaes da Camara em acto de Vereança, trat-",
+    "hyp": "os Officiaes da Camara em acto de vercança, trac",
+    "cer": 0.102
+   },
+   {
+    "ref": "ando sobre o bem commum do povo, na mesma se",
+    "hyp": "lando sobre o bem commum dopovo, namesma se",
+    "cer": 0.0682
+   },
+   {
+    "ref": "ra fazer a competente indagação da pessoa afinal a",
+    "hyp": "ra fazer a competente indagaçãõ da pessõo, e finde",
+    "cer": 0.18
+   },
+   {
+    "ref": "averiguar, sendo livre será prezo por quatro dias",
+    "hyp": "viaqun; urdo livre será prez por quatro dias",
+    "cer": 0.2449
+   },
+   {
+    "ref": "sendo Escravo será castigao com cincoenta asoi",
+    "hyp": "vsende Eseravo pere cartigado com cimoenta a cou",
+    "cer": 0.2609
+   },
+   {
+    "ref": "tes e avizado seu Senhor",
+    "hyp": "tes, e avizado seo senhor",
+    "cer": 0.125
+   },
+   {
+    "ref": "Art. 10° Sedo a pessoa que comprem a Escravos qual -",
+    "hyp": "Artso- Soda a pessoa que coprar a Escravos qual",
+    "cer": 0.2308
+   },
+   {
+    "ref": "quer genero, com seja ouro, prata, outro qualquer",
+    "hyp": "quer geneze, com reja ouro prata ou outro qualguen",
+    "cer": 0.1837
+   },
+   {
+    "ref": "genero, de Fazendas Roupas, mantimento e toda qual",
+    "hyp": "enero, de Fazendas roupas, mantimentos, e toda quel",
+    "cer": 0.1
+   },
+   {
+    "ref": "quer especie que seja sem apresentar bilhete de",
+    "hyp": "ospucie que seje sem oprezentar bithete de-",
+    "cer": 0.2553
+   },
+   {
+    "ref": "um Senhor. O Contraventor tera apena de quatro dias de",
+    "hyp": "po Senher. Obontraventer tera apena de quatro dias de",
+    "cer": 0.1111
+   },
+   {
+    "ref": "preizaõ e pagará quatro mil reis de multa",
+    "hyp": "prizao e pagera quatro mil rees de multa",
+    "cer": 0.122
+   },
+   {
+    "ref": "Art.11° Os Escravos que formarem ajutamento pa",
+    "hyp": "Art-H- Os Escravos que formarem ojuntamentos pe",
+    "cer": 0.1739
+   },
+   {
+    "ref": "ra dançar dentro do rocio da Villa seraõ prezas por",
+    "hyp": "ra danças dentro do rocio da Villa serao prezas por",
+    "cer": 0.0392
+   },
+   {
+    "ref": "dozes dias, e seu Senho avizado para lhe mandar",
+    "hyp": "dous dias, eseos Senheres avizados pare thes mandar",
+    "cer": 0.2766
+   },
+   {
+    "ref": "dar nas grades da cadeia vinte e cinco acoites quan",
+    "hyp": "dar nas grades da Cadeia veste e cinco acouts quan",
+    "cer": 0.098
+   },
+   {
+    "ref": "do repugnar serão multados em seis mil reis.",
+    "hyp": "e repugnem vera multados en sis mit reis-",
+    "cer": 0.25
+   },
+   {
+    "ref": "Art.12° Sedo a pessôa livre, ou escravo que com",
+    "hyp": "Art-12. Sodo apesõa livre ou eseravo que co",
+    "cer": 0.1915
+   },
+   {
+    "ref": "municar, ou favor a cer pessôas livres, de suspeitas, ou",
+    "hyp": "merciar, ou favorecer pesŝas livres, de sulpeita, ou",
+    "cer": 0.1964
+   },
+   {
+    "ref": "escravos fugidos. O Contraventor sendo livre se",
+    "hyp": "vseravos fugidos. H Contraventor sendo lieme se",
+    "cer": 0.1064
+   },
+   {
+    "ref": "rá prezo por oito dias, e pagará multa de doze",
+    "hyp": "va prez por eito dias, e pogare amutto de diz",
+    "cer": 0.2391
+   },
+   {
+    "ref": "mil reis, sendo escravo sera preza por quatro dias",
+    "hyp": "milreis, sendo eseravo pera preza por quatro dias",
+    "cer": 0.06
+   },
+   {
+    "ref": "seu Senhor avizado para lhe mandar nas grades",
+    "hyp": "se Senhor avizado pari lhe mandor dar nos grades",
+    "cer": 0.1556
+   },
+   {
+    "ref": "da Cadeia duzentos acoites e quanto repugner sera",
+    "hyp": "da Cadica duzentos acoutes, equand repriqne Ja",
+    "cer": 0.2857
+   },
+   {
+    "ref": "Multado como no artigo 4°",
+    "hyp": "muttado com no ortigo Fra",
+    "cer": 0.28
+   },
+   {
+    "ref": "Art.13° Nenhum individuo podera levantar",
+    "hyp": "Art. 83o Nenhum individuo podera hvantar",
+    "cer": 0.125
+   },
+   {
+    "ref": "Baticins nas ruas com qualquer protesto que",
+    "hyp": "Baticins nas Vuas com qualguer pretexto que",
+    "cer": 0.093
+   },
+   {
+    "ref": "ja dentro do recinto da Villa o Contraventor",
+    "hyp": "seja dentro do Vicinto da Villa & Contraventor",
+    "cer": 0.1136
+   },
+   {
+    "ref": "tera a pena de quatro mil de multa e quatro",
+    "hyp": "tere apena de quatro mil de multe, e quat",
+    "cer": 0.1395
+   },
+   {
+    "ref": "dias de prizaõ - Paço da Camara 9 de Junho",
+    "hyp": "dias deprizão - Pev̧o tabomara 9 de Junhe",
+    "cer": 0.2619
+   },
+   {
+    "ref": "Art. 9°. Toda pessoa desconhecida que apare-",
+    "hyp": "Art-Hr Toda apessoo desconheida que apare 1a",
+    "cer": 0.25
+   },
+   {
+    "ref": "cer sem Passaporte dentro de Municipio será",
+    "hyp": "cor pem Passaporte dentro do Municipio sera Prada",
+    "cer": 0.2326
+   },
+   {
+    "ref": "prezo e levado perante o Juiz de Paz do lugar pra",
+    "hyp": "prezo elvado perante a Juiz de Paz do luger pa",
+    "cer": 0.102
+   }
+  ]
+ },
+ "models/ppocrv6_ajustado_B_20261107/medium_ajustado_B_gravado.safetensors": {
+  "sha256": "52b2ad55829ad63d6e79c632de431521aeac0abe591fe60197dd1cbfc64fc384",
+  "lines": 38,
+  "chars": 1759,
+  "cer": 0.1575,
+  "wer": 0.5154,
+  "rows": [
+   {
+    "ref": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "hyp": "Aos vinte ecenco dias do mes de Iunho de mil sette",
+    "cer": 0.08
+   },
+   {
+    "ref": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "hyp": "centos e noventa ainco annos nesta villa da Nossa",
+    "cer": 0.1837
+   },
+   {
+    "ref": "senhora do Desterro de jundiahy comarca da cidade",
+    "hyp": "senhora do Desterro de Iundiahi Comarca da Cidade",
+    "cer": 0.0816
+   },
+   {
+    "ref": "de São Paulo, em casas de morada do Juiz Presidente",
+    "hyp": "de Saõ Paulo em Cazas de morada do Iuis Prezidente",
+    "cer": 0.1569
+   },
+   {
+    "ref": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "hyp": "Selvador de Oliveira Prado, onde se achavaõ prezentes",
+    "cer": 0.0755
+   },
+   {
+    "ref": "os officiaes da Camara em acto de Vereança, trat-",
+    "hyp": "os Officiaes da Camara em acto de Vercança, trac",
+    "cer": 0.0816
+   },
+   {
+    "ref": "ando sobre o bem commum do povo, na mesma se",
+    "hyp": "lando sobre o bem commum do povo, namesma se",
+    "cer": 0.0455
+   },
+   {
+    "ref": "ra fazer a competente indagação da pessoa afinal a",
+    "hyp": "ra fazer a competente indagaçaõ da pessõo, e finda",
+    "cer": 0.18
+   },
+   {
+    "ref": "averiguar, sendo livre será prezo por quatro dias",
+    "hyp": "aviaqun; urdo livre será pirezo por quatro dias",
+    "cer": 0.2245
+   },
+   {
+    "ref": "sendo Escravo será castigao com cincoenta asoi",
+    "hyp": "esendo Eseravo peré cartigado com cimcoenta a cou",
+    "cer": 0.2174
+   },
+   {
+    "ref": "tes e avizado seu Senhor",
+    "hyp": "tos, e avizado seo senhor",
+    "cer": 0.1667
+   },
+   {
+    "ref": "Art. 10° Sedo a pessoa que comprem a Escravos qual -",
+    "hyp": "Art.S0- Soda a pessoa que comprer a Escravos qual",
+    "cer": 0.1538
+   },
+   {
+    "ref": "quer genero, com seja ouro, prata, outro qualquer",
+    "hyp": "quer genez, com reja ouro prata ou outro qualquen",
+    "cer": 0.1633
+   },
+   {
+    "ref": "genero, de Fazendas Roupas, mantimento e toda qual",
+    "hyp": "enero, de Fazendas roupas, mantimentos, e toda quel",
+    "cer": 0.1
+   },
+   {
+    "ref": "quer especie que seja sem apresentar bilhete de",
+    "hyp": "yuer ospucie que seje sem aprezentar bithite de-",
+    "cer": 0.1702
+   },
+   {
+    "ref": "um Senhor. O Contraventor tera apena de quatro dias de",
+    "hyp": "o Senhor. OContraventer tera apena de quatro dias de",
+    "cer": 0.0741
+   },
+   {
+    "ref": "preizaõ e pagará quatro mil reis de multa",
+    "hyp": "prizaõ epageré quatro mil vis de milta",
+    "cer": 0.1707
+   },
+   {
+    "ref": "Art.11° Os Escravos que formarem ajutamento pa",
+    "hyp": "Art.11- Os Escravos que formarem ajuntamentos pe-",
+    "cer": 0.1087
+   },
+   {
+    "ref": "ra dançar dentro do rocio da Villa seraõ prezas por",
+    "hyp": "ra danças dentro do rocio da Villa seraõ prezas por",
+    "cer": 0.0196
+   },
+   {
+    "ref": "dozes dias, e seu Senho avizado para lhe mandar",
+    "hyp": "dous dias, escos Senheves avizados pare thes mandar",
+    "cer": 0.2979
+   },
+   {
+    "ref": "dar nas grades da cadeia vinte e cinco acoites quan",
+    "hyp": "dar nas grades da Cadice vesite e cinco acouts quan",
+    "cer": 0.1765
+   },
+   {
+    "ref": "do repugnar serão multados em seis mil reis.",
+    "hyp": "repugnerr rerae multados enn uus mit reis-",
+    "cer": 0.3409
+   },
+   {
+    "ref": "Art.12° Sedo a pessôa livre, ou escravo que com",
+    "hyp": "Art-12. Sodo opesoa livre, ou escravo que co-",
+    "cer": 0.1702
+   },
+   {
+    "ref": "municar, ou favor a cer pessôas livres, de suspeitas, ou",
+    "hyp": "merciar, ou favor ecer pessôas livnes, de sulpeita, ou",
+    "cer": 0.1607
+   },
+   {
+    "ref": "escravos fugidos. O Contraventor sendo livre se",
+    "hyp": "eseravos fugidos. & Contraventor sendo lione se",
+    "cer": 0.0851
+   },
+   {
+    "ref": "rá prezo por oito dias, e pagará multa de doze",
+    "hyp": "rá prizo por eito dias, e pagara amcutto de diz",
+    "cer": 0.1957
+   },
+   {
+    "ref": "mil reis, sendo escravo sera preza por quatro dias",
+    "hyp": "milreis, asendo escravo será preza por quatro dias",
+    "cer": 0.06
+   },
+   {
+    "ref": "seu Senhor avizado para lhe mandar nas grades",
+    "hyp": "se Senhor avizado pari lhe mander dar nos q.rades",
+    "cer": 0.2
+   },
+   {
+    "ref": "da Cadeia duzentos acoites e quanto repugner sera",
+    "hyp": "da Cadica dizentos acoutes, equand repriqne ya",
+    "cer": 0.3061
+   },
+   {
+    "ref": "Multado como no artigo 4°",
+    "hyp": "muttado com no ortigo Fra",
+    "cer": 0.28
+   },
+   {
+    "ref": "Art.13° Nenhum individuo podera levantar",
+    "hyp": "Art. 83o Nenhum individuo podera hvantar",
+    "cer": 0.125
+   },
+   {
+    "ref": "Baticins nas ruas com qualquer protesto que",
+    "hyp": "Baticins nas Vuas com qualquer pretex to que",
+    "cer": 0.093
+   },
+   {
+    "ref": "ja dentro do recinto da Villa o Contraventor",
+    "hyp": "seja dentro do Vicinto da Villa a Contraventor",
+    "cer": 0.1136
+   },
+   {
+    "ref": "tera a pena de quatro mil de multa e quatro",
+    "hyp": "tere apera de quatro mil de multe, e quat",
+    "cer": 0.1628
+   },
+   {
+    "ref": "dias de prizaõ - Paço da Camara 9 de Junho",
+    "hyp": "dias de prizaõ - Peço da Comara 9 de Junhe",
+    "cer": 0.0714
+   },
+   {
+    "ref": "Art. 9°. Toda pessoa desconhecida que apare-",
+    "hyp": "Art-E.a Toda afessõa desconhuida que apare 1a8",
+    "cer": 0.3182
+   },
+   {
+    "ref": "cer sem Passaporte dentro de Municipio será",
+    "hyp": "cor rem Parsaporté destro de Murccipis será Pradat",
+    "cer": 0.3488
+   },
+   {
+    "ref": "prezo e levado perante o Juiz de Paz do lugar pra",
+    "hyp": "prezo clivado perante a Juix de Paz do luger pa",
+    "cer": 0.1429
+   }
+  ]
+ },
+ "output/treino_noturno_D1_20261110T215803/checkpoints/best_0.8695_recuperado.safetensors": {
+  "sha256": "13a1fa98d4dae668fbded047be73503dca2705a378a88fbc674ea4378558bdf7",
+  "lines": 38,
+  "chars": 1759,
+  "cer": 0.1455,
+  "wer": 0.5278,
+  "rows": [
+   {
+    "ref": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "hyp": "Aos vinte cunco dias do mes de Junho de mil selte",
+    "cer": 0.1
+   },
+   {
+    "ref": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "hyp": "centos e noventa ainco annos nesta villa du Nossa",
+    "cer": 0.1837
+   },
+   {
+    "ref": "senhora do Desterro de jundiahy comarca da cidade",
+    "hyp": "senhora do Desterro de Jundiahi Comarca da Cidade",
+    "cer": 0.0816
+   },
+   {
+    "ref": "de São Paulo, em casas de morada do Juiz Presidente",
+    "hyp": "de São Paulo em Cazas de morada do Juis Prezidente",
+    "cer": 0.098
+   },
+   {
+    "ref": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "hyp": "Selvador de Oliveira Prado, onde se achavão prezentes",
+    "cer": 0.0377
+   },
+   {
+    "ref": "os officiaes da Camara em acto de Vereança, trat-",
+    "hyp": "os Officiaes de Camara em acto de vercança, trac",
+    "cer": 0.1224
+   },
+   {
+    "ref": "ando sobre o bem commum do povo, na mesma se",
+    "hyp": "lando sobre o tem commum do povo, namesma se",
+    "cer": 0.0682
+   },
+   {
+    "ref": "ra fazer a competente indagação da pessoa afinal a",
+    "hyp": "a fazer a competente indagação da pessõa, e finda",
+    "cer": 0.16
+   },
+   {
+    "ref": "averiguar, sendo livre será prezo por quatro dias",
+    "hyp": "aviaquen; urdo livre será prezo por quatro dias",
+    "cer": 0.2041
+   },
+   {
+    "ref": "sendo Escravo será castigao com cincoenta asoi",
+    "hyp": "esendo Escravo sera cartigado com cimoenta acou",
+    "cer": 0.1739
+   },
+   {
+    "ref": "tes e avizado seu Senhor",
+    "hyp": "tis, e avizado seo senhor",
+    "cer": 0.1667
+   },
+   {
+    "ref": "Art. 10° Sedo a pessoa que comprem a Escravos qual -",
+    "hyp": "ArtSo- Soda a pessoa que comprar aEscravos qual-",
+    "cer": 0.2115
+   },
+   {
+    "ref": "quer genero, com seja ouro, prata, outro qualquer",
+    "hyp": "quer geneze, com seja ouro prata ou outro qualguen",
+    "cer": 0.1633
+   },
+   {
+    "ref": "genero, de Fazendas Roupas, mantimento e toda qual",
+    "hyp": "enero de Fazendas roupas, mantimentos, e Aoda quel",
+    "cer": 0.14
+   },
+   {
+    "ref": "quer especie que seja sem apresentar bilhete de",
+    "hyp": "e ospucie que seje sem aprezentar bithete de-",
+    "cer": 0.1915
+   },
+   {
+    "ref": "um Senhor. O Contraventor tera apena de quatro dias de",
+    "hyp": "po Senher. OContraventer tera apena de quatro dias de",
+    "cer": 0.0926
+   },
+   {
+    "ref": "preizaõ e pagará quatro mil reis de multa",
+    "hyp": "prizao e pagara quatro mil reis de multa",
+    "cer": 0.0732
+   },
+   {
+    "ref": "Art.11° Os Escravos que formarem ajutamento pa",
+    "hyp": "Art- 11- Os Escravos que formarem ajuntamentos pe-",
+    "cer": 0.1522
+   },
+   {
+    "ref": "ra dançar dentro do rocio da Villa seraõ prezas por",
+    "hyp": "ra danças dentro do rocio da Villa serao prezas por",
+    "cer": 0.0392
+   },
+   {
+    "ref": "dozes dias, e seu Senho avizado para lhe mandar",
+    "hyp": "dous dias, escos Senheres avizados pare thes mandan",
+    "cer": 0.3191
+   },
+   {
+    "ref": "dar nas grades da cadeia vinte e cinco acoites quan",
+    "hyp": "dar nas grades da Cadeia vente e cimco acoutes quan-",
+    "cer": 0.098
+   },
+   {
+    "ref": "do repugnar serão multados em seis mil reis.",
+    "hyp": "e repugnem sera multados en ses mil reis-",
+    "cer": 0.2045
+   },
+   {
+    "ref": "Art.12° Sedo a pessôa livre, ou escravo que com",
+    "hyp": "Art-12. Soda apessoa livre ou escravo que co-",
+    "cer": 0.1702
+   },
+   {
+    "ref": "municar, ou favor a cer pessôas livres, de suspeitas, ou",
+    "hyp": "merciar, ou favorecer pessôas livres, desulpeita, ou",
+    "cer": 0.1786
+   },
+   {
+    "ref": "escravos fugidos. O Contraventor sendo livre se",
+    "hyp": "eseravos fugidos o Contraventor sendo lieme se",
+    "cer": 0.1064
+   },
+   {
+    "ref": "rá prezo por oito dias, e pagará multa de doze",
+    "hyp": "ra prezo por eito dias, e pagara amutto de diz",
+    "cer": 0.1739
+   },
+   {
+    "ref": "mil reis, sendo escravo sera preza por quatro dias",
+    "hyp": "milreis, esendo escravo será preze por quatro dias",
+    "cer": 0.08
+   },
+   {
+    "ref": "seu Senhor avizado para lhe mandar nas grades",
+    "hyp": "se Senher avizado pari lhe mandor dar nos grades",
+    "cer": 0.1778
+   },
+   {
+    "ref": "da Cadeia duzentos acoites e quanto repugner sera",
+    "hyp": "da Cadeia dezentos acoutes, equando repriqne ya",
+    "cer": 0.2449
+   },
+   {
+    "ref": "Multado como no artigo 4°",
+    "hyp": "muttado como no ortiga fra",
+    "cer": 0.28
+   },
+   {
+    "ref": "Art.13° Nenhum individuo podera levantar",
+    "hyp": "Art. 83° Nenhum individuo podera hvantar",
+    "cer": 0.1
+   },
+   {
+    "ref": "Baticins nas ruas com qualquer protesto que",
+    "hyp": "Baticins nas Vuas com qualquer pretexto que",
+    "cer": 0.0698
+   },
+   {
+    "ref": "ja dentro do recinto da Villa o Contraventor",
+    "hyp": "seja dentro do Vecinto da Villa a Contraventor",
+    "cer": 0.0909
+   },
+   {
+    "ref": "tera a pena de quatro mil de multa e quatro",
+    "hyp": "tere apena de quatro mil de multa, e qual",
+    "cer": 0.1395
+   },
+   {
+    "ref": "dias de prizaõ - Paço da Camara 9 de Junho",
+    "hyp": "dias deprizão - Pavo taCamara 9 de Junhe",
+    "cer": 0.1667
+   },
+   {
+    "ref": "Art. 9°. Toda pessoa desconhecida que apare-",
+    "hyp": "Art-H Joda apessoa desconheida que apare 10",
+    "cer": 0.25
+   },
+   {
+    "ref": "cer sem Passaporte dentro de Municipio será",
+    "hyp": "cer sem Passaporte dentro do Municipio sera Prada",
+    "cer": 0.186
+   },
+   {
+    "ref": "prezo e levado perante o Juiz de Paz do lugar pra",
+    "hyp": "prezo elvado perante a Juix de Paz do lugor pa",
+    "cer": 0.1224
+   }
+  ]
+ }
+}

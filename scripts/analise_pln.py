@@ -17,7 +17,8 @@ from paleographia.pln_erros import (TIPOS, Vocabulario, analisar, corrigir_linha
 DADOS = RAIZ / "docs/experimentos/ppocrv6_ajuste_fino_20261105/dados"
 NOMES = {"models/kraken_ppocrv6_medium/medium.safetensors": "PP-OCRv6 base",
          "models/ppocrv6_ajustado_A_20261106/medium_ajustado_A_gravado.safetensors": "Ajustado A (Traslado)",
-         "models/ppocrv6_ajustado_B_20261107/medium_ajustado_B_gravado.safetensors": "Ajustado B (Traslado + Inquisição)"}
+         "models/ppocrv6_ajustado_B_20261107/medium_ajustado_B_gravado.safetensors": "Ajustado B (Traslado + Inquisição)",
+         "models/ppocrv6_ajustado_D1_20261110/medium_ajustado_D1.safetensors": "Ajustado D1 (Traslado + Posturas)"}
 
 
 def metricas(refs, hyps):

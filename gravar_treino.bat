@@ -1,5 +1,5 @@
 @echo off
-rem Grava um treino de verdade (A ou B), um por vez.
+rem Grava um treino de verdade (A, B ou C), um por vez. Aceita o modo como argumento: gravar_treino.bat C
 chcp 65001 >nul
 cd /d "%~dp0"
 title PaleographIA - treino ao vivo
@@ -19,9 +19,15 @@ echo  PaleographIA - ajuste fino do PP-OCRv6
 echo.
 echo    A = so Traslado (191 linhas; cerca de 2h20 na GTX 1650)
 echo    B = Traslado + 550 linhas publicas da Inquisicao (cerca de 1h30 por epoca; varias horas)
+echo    C = Traslado + 94 linhas validadas das Posturas de 1831 (gere antes os pares do C)
 echo.
-choice /c AB /n /m "  Qual treino gravar? [A/B] "
-if errorlevel 2 (set MODO=B) else (set MODO=A)
+set MODO=%~1
+if /i "%MODO%"=="A" goto escolhido
+if /i "%MODO%"=="B" goto escolhido
+if /i "%MODO%"=="C" goto escolhido
+choice /c ABC /n /m "  Qual treino gravar? [A/B/C] "
+if errorlevel 3 (set MODO=C) else if errorlevel 2 (set MODO=B) else (set MODO=A)
+:escolhido
 where nvidia-smi >nul 2>&1 && start "GPU - nvidia-smi" cmd /k nvidia-smi -l 3
 echo.
 echo  Treino %MODO% escolhido. Uma janela ao lado mostra o uso da GPU (nao e o treino).
@@ -33,6 +39,7 @@ echo  e aperte qualquer tecla para COMECAR o treino.
 pause >nul
 cls
 start "" /min powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File scripts\prints_treino.ps1 -Modo %MODO%
+start "" /min powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File scripts\desempenho_treino.ps1 -Modo %MODO%
 .venv\Scripts\python.exe scripts\treinar_ao_vivo.py %MODO%
 echo.
 echo  Saidas: pasta output\treino_ao_vivo_%MODO%_* (console.log, validacoes e peso exportado).

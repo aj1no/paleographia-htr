@@ -111,6 +111,44 @@
     -0.0494,
     -0.0141
    ]
+  },
+  "PP-OCRv6 ajustado D1": {
+   "cer": 0.5543,
+   "cer_ic95": [
+    0.4954,
+    0.6185
+   ],
+   "by_document": {
+    "contrato_livro12_1763": {
+     "lines": 35,
+     "cer": 0.6593,
+     "cer_ic95": [
+      0.6207,
+      0.7034
+     ]
+    },
+    "pagamento_thomas_pardo": {
+     "lines": 14,
+     "cer": 0.2897,
+     "cer_ic95": [
+      0.2346,
+      0.3503
+     ]
+    }
+   },
+   "post_hoc_sem_pedacos_de_margem": {
+    "lines": 37,
+    "cer": 0.5399,
+    "cer_ic95": [
+     0.4763,
+     0.5984
+    ]
+   },
+   "empty_predictions": 8,
+   "diferenca_para_base_ic95": [
+    -0.1171,
+    -0.057
+   ]
   }
  }
 }
