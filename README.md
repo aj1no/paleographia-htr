@@ -19,38 +19,46 @@ registros.** Nenhuma sugestão vira referência sem conferência humana na image
 Projeto Integrador IV e Processamento de Linguagem Natural (Fatec Jundiaí, Ciência de Dados).
 Interface em português do Brasil.
 
-## Estado em 09/11/2026
+## Estado em 11/11/2026
 
 | Etapa | Situação |
 | --- | --- |
-| Aplicação | Modo leitura (padrão), editor completo, aba Textos, conferência às cegas, exportação em PAGE XML, tema claro e noturno |
-| Modelo | PP-OCRv6 medium com ajuste fino em dois treinos gravados: A (191 linhas do Traslado) e B (A + 550 linhas públicas da Inquisição) |
-| Validação | Sessão da Câmara de 1795, 7 linhas de outra mão, usadas para escolher o checkpoint |
+| Aplicação | Modo leitura (padrão), editor completo, aba Textos (diplomática e modernizada, com palavras a conferir e glossário histórico), conferência às cegas, exportação em PAGE XML, tema claro e noturno |
+| Modelo em uso | **Ajustado D1**: PP-OCRv6 medium ajustado com 191 linhas do Traslado e 63 linhas validadas das Posturas de 1831 (fólios 100r e 100v). Antes: A (só Traslado) e B (A + 550 linhas públicas da Inquisição) |
+| Validação | Sessão da Câmara de 1795 (7 linhas de outra mão) e, desde o D1, também o fólio 101r das Posturas (31 linhas fora do treino), usados para escolher o checkpoint |
 | Teste reservado | 49 linhas de duas mãos inéditas (pagamento de 1759 e contrato de 1763), transcritas às cegas pela equipe, [congeladas e avaliadas uma única vez](docs/revisao_humana/teste_reservado_congelado_20261109/README.md) |
 | Entregas | [Artigo de PLN](docs/entregas/artigo_20261107/README.md), [notebook comparativo](docs/entregas/notebook_comparativo_20261109/README.md), [Notebook 3 de PLN](docs/entregas/notebook_3_pln/README.md) e apresentação de 19/11 |
 
 ## Resultados
 
 CER e WER (menor é melhor), em Unicode NFC, com espaços simplificados e preservando caixa, acentos e
-grafia. Os três modelos leem os mesmos recortes.
+grafia. Todos os modelos leem os mesmos recortes.
 
-| Conjunto | PP-OCRv6 base | Ajustado A | Ajustado B |
-| --- | ---: | ---: | ---: |
-| Validação 1795, 7 linhas (CER / WER) | 14,2% / 56,7% | 10,7% / 41,8% | 10,1% / 38,8% |
-| **Teste reservado, 49 linhas (CER / WER)** | 64,0% / 95,3% | **60,5%** / 93,7% | 60,9% / 94,4% |
-| Teste: pagamento de 1759, 14 linhas (CER) | 31,1% | 27,9% | 28,3% |
-| Teste: contrato de 1763, 35 linhas (CER) | 77,1% | 73,5% | 73,8% |
+| Conjunto | PP-OCRv6 base | Ajustado A | Ajustado B | **Ajustado D1** |
+| --- | ---: | ---: | ---: | ---: |
+| Validação 1795, 7 linhas (CER / WER) | 14,2% / 56,7% | 10,7% / 41,8% | 10,1% / 38,8% | **9,9%** / 38,8% |
+| Posturas de 1831, fólio 101r, 31 linhas fora do treino (CER / WER) | 19,1% / 62,7% | 17,5% / 56,0% | 17,1% / 54,9% | **15,7%** / 56,4% |
+| **Teste reservado, 49 linhas (CER / WER)** | 64,0% / 95,3% | 60,5% / 93,7% | 60,9% / 94,4% | **55,4%** / 94,4% |
+| Teste: pagamento de 1759, 14 linhas (CER) | 31,1% | **27,9%** | 28,3% | 29,0% |
+| Teste: contrato de 1763, 35 linhas (CER) | 77,1% | 73,5% | 73,8% | **65,9%** |
 
 <p align="center">
   <img src="docs/interface/cer_base_ajustados.png" width="720"
-       alt="Gráfico de barras do CER por conjunto: em todos, os ajustados A e B ficam abaixo do modelo base; o erro é de cerca de 10% na validação, 28% no pagamento e 74% no contrato">
+       alt="Gráfico de barras do CER por conjunto, de 09/11, com o modelo base e os ajustados A e B: em todos, os ajustados ficam abaixo do base; o erro é de cerca de 10% na validação, 28% no pagamento e 74% no contrato">
 </p>
 
 - **O ajuste fino melhora o modelo base de forma consistente.** Nas mesmas linhas do teste, a
-  diferença pareada fica entre −1,4 e −5,6 pontos de CER (IC 95% por bootstrap).
+  diferença pareada fica entre −1,4 e −5,6 pontos de CER para A e B (IC 95% por bootstrap). O
+  gráfico acima é de 09/11, sem o D1.
 - **A e B não se distinguem:** as linhas da Inquisição não trouxeram ganho mensurável.
-- **A generalização ainda é o limite.** Fora da validação, o erro sobe para cerca de 28% numa letra
-  regular e 74% numa escrita densa. Com um só documento de treino, o modelo aprende a mão que viu.
+- **Um segundo documento de Jundiaí ajudou mais.** O D1 soma ao Traslado 63 linhas das Posturas de
+  1831, validadas pela equipe. No teste, ele erra menos que o B: a diferença pareada vai de −8,1 a
+  −3,3 pontos de CER. Toda a melhora vem do contrato; no pagamento, os dois empatam, e o WER não
+  muda. O D1 rodou no teste uma única vez, depois de escolhido no dev
+  ([registro](docs/experimentos/ppocrv6_ajustado_C/noturno_20261110/README.md)). O teste já foi usado
+  por 4 modelos, então a comparação entre eles não é mais totalmente cega.
+- **A generalização ainda é o limite.** Fora da validação, o erro fica em cerca de 29% numa letra
+  regular e 66% numa escrita densa. O modelo aprende sobretudo as mãos que viu.
 - **PLN depois do reconhecimento:** a [análise linguística dos erros](docs/entregas/notebook_3_pln/README.md)
   mostra que o ajuste reduz sobretudo a forma das letras e as palavras coladas. A pós-correção lexical
   (Levenshtein × TF-IDF de n-gramas) piorou o CER e fica só como sugestão ao revisor.
@@ -120,7 +128,7 @@ a imagem e os pesos antes de abrir o navegador.
 | `configs/pilot.toml` | Piloto de 1831, sugestões desativadas (`start_safe.bat`) | 8000 |
 
 **Demonstração da apresentação** (cópia, sem tocar nos dados oficiais): `scripts/demo_apresentacao.py`
-monta uma coleção com os fólios transcritos e o modelo ajustado B, guarda fólios pré-processados (o
+monta uma coleção com os fólios transcritos e o modelo ajustado (D1 desde 11/11), guarda fólios pré-processados (o
 upload da mesma imagem traz linhas e leitura na hora, com aviso) e restaura o estado guardado;
 `iniciar_demo.bat` abre a demonstração na porta 8018 e, com `tools/cloudflared.exe`, um link público
 temporário. O editor aceita imagens (JPEG, PNG, TIFF, WEBP…) e PDF, uma página por fólio.
@@ -151,7 +159,12 @@ referência congelada e recalcula tudo a partir das leituras gravadas.
 
 Registro completo: [ajuste fino do PP-OCRv6](docs/experimentos/ppocrv6_ajuste_fino_20261105/README.md),
 com as provas dos treinos gravados ([A, 06/11](docs/experimentos/ppocrv6_ajuste_fino_20261105/gravacao_20261106/treino_A/README.md);
-[B, 07/11](docs/experimentos/ppocrv6_ajuste_fino_20261105/gravacao_20261107/treino_B/README.md)).
+[B, 07/11](docs/experimentos/ppocrv6_ajuste_fino_20261105/gravacao_20261107/treino_B/README.md);
+[C, 10/11](docs/experimentos/ppocrv6_ajustado_C/gravacao_20261110/treino_C/README.md)) e o
+[experimento D1 × D2](docs/experimentos/ppocrv6_ajustado_C/noturno_20261110/README.md), que separa o
+fólio 101r das Posturas para a validação (`scripts/treino_noturno.py`). O C usou as 94 linhas das
+Posturas, mas o checkpoint foi escolhido só em 1795 e ficou no nível do B. O D2, com 2 variações
+aumentadas por linha, empatou com o D1.
 
 1. **Modelos e dados públicos** (Zenodo; MD5 conferido; só os arquivos necessários):
 
@@ -171,6 +184,8 @@ com as provas dos treinos gravados ([A, 06/11](docs/experimentos/ppocrv6_ajuste_
    docker build --provenance=false -t paleographia-kraken:7.1.0-cu126 runtime/kraken_ppocrv6_gpu
    .venv/Scripts/python.exe scripts/treinar_ao_vivo.py A      # Traslado
    .venv/Scripts/python.exe scripts/treinar_ao_vivo.py B      # Traslado + Inquisição
+   .venv/Scripts/python.exe scripts/treinar_ao_vivo.py C      # Traslado + Posturas (pares_C.json)
+   .venv/Scripts/python.exe scripts/treino_noturno.py D1      # Traslado + Posturas 100r/100v; dev 101r + 1795
    ```
 
    O progresso aparece ao vivo no terminal e fica em `output/treino_ao_vivo_*/console.log`.

@@ -43,7 +43,8 @@ Medidos com `scripts/avaliar_validacao.py`, o mesmo worker de inferência do edi
 | PP-OCRv6 base | 19,09% | 62,65% | 14,20% | 56,72% |
 | Ajustado A | 17,54% | 56,03% | 10,72% | 41,79% |
 | Ajustado B (na aplicação) | 17,11% | **54,86%** | 10,14% | 38,81% |
-| **D1** (Traslado + 100r/100v) | **15,70%** | 56,42% | **9,86%** | **38,81%** |
+| **D1** (Traslado + 100r/100v) | 15,70% | 56,42% | **9,86%** | **38,81%** |
+| D2 (idem, 2 variantes por linha) | **15,63%** | 56,03% | 10,72% | 44,78% |
 
 O C não entra nesta tabela, porque treinou no 101r.
 
@@ -55,8 +56,45 @@ O C não entra nesta tabela, porque treinou no 101r.
 
 ## O que falta
 
-- **D2** (2 variantes aumentadas): não rodou.
+- **D2** (2 variantes aumentadas): rodou de dia, em 11/11; ver a seção abaixo.
 - **Teste reservado:** com o aval do usuário, rodou uma vez no D1, em 11/11. Resultado: CER total de 55,4%,
   contra 60,9% do B; a diferença pareada vai de −8,1 a −3,3 pontos (IC 95%), e o WER empata. O D1
   passou a ser o modelo da aplicação. Os detalhes estão no [README do teste reservado](../../../revisao_humana/teste_reservado_congelado_20261109/README.md).
   O peso fica em `models/ppocrv6_ajustado_D1_20261110/medium_ajustado_D1.safetensors`, fora do Git.
+
+## D2, em 11/11/2026: duas variantes aumentadas por linha
+
+Mesmos pares e mesma validação do D1. A única mudança é `augment_variants = 2`, contra 1 no D1:
+cada linha de treino aparece 3 vezes por época, a original e 2 variações. O D2 rodou com
+`python scripts/treino_noturno.py D2` das 08h05 às 14h29 (381,8 min), numa aba do Terminal.
+
+| Item | Valor |
+|---|---|
+| Passos do otimizador | 395 (4 épocas completas e parte da 5ª; 350 lotes por época) |
+| Parada | antecipada, 8 validações sem passar o recorde |
+| Melhor checkpoint | `checkpoint_02-0.8701.ckpt` (passo 219, 3ª época): 87,01% de acerto de caracteres no dev |
+| Peso exportado | `best_0.8701.safetensors`, SHA-256 `9b2c13226139b2b6cefb9a612effa6bbd55b8601734c40a02c8edd6b5cad0433` |
+| Teste reservado | não usado |
+
+No acerto do `ketos`, o melhor ponto do D2 (87,01%) fica 0,06 ponto acima do D1 (86,95%). Isso dá
+cerca de 1 caractere em 1.760, ou seja, empate. A curva do D2 andou um pouco à frente nas épocas 2 e
+3, e depois caiu.
+
+Na métrica do projeto (tabela acima), o D2 empata com o D1 no 101r (15,63% × 15,70% de CER, 1
+caractere de diferença; o D2 melhora 12 linhas do dev e piora 11) e fica atrás em 1795: 10,72% ×
+9,86% de CER, 3 caracteres, e 44,78% × 38,81% de WER, 4 palavras. **Conclusão:** com estes dados,
+dobrar o aumento não ajuda e custa cerca de 50% mais tempo de GPU. O D1 continua sendo o modelo da
+aplicação, e o C2 (receita do D2 com todas as linhas) não foi treinado. Também não houve nova
+rodada no teste reservado.
+
+**Registro**, em [D2/](D2/):
+- `console.log`, `validation_history.json`, `losses.jsonl`, `worker_result.json`, `training.json`,
+  `ketos_arguments.json`, `command.json` e `plan.json`, com a pasta do projeto trocada por `<raiz do projeto>`;
+- `desempenho.csv` e `desempenho.svg`: 701 medições, uma a cada 30 s. A GPU teve uso médio de 99%,
+  3,9 de 4 GB de memória, 69 °C em média (máx. 76 °C) e 29 W em média. O Windows usou em média
+  13,9 de 15,9 GB;
+- `prints/`: a janela que acompanhava o log e o Docker Desktop, a cada 10 min, das 08h09 às 12h00.
+  O script de prints parou às 12h, e a janela de acompanhamento já não estava aberta no fim; a causa não ficou registrada. O resto do
+  treino está no `console.log`. Não há print final.
+
+![Desempenho do notebook durante o treino D2](D2/desempenho.svg)

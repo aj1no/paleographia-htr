@@ -1,0 +1,2951 @@
+{
+  "seed": 1831,
+  "threads": 4,
+  "normalization": "NFD",
+  "max_width": 2560,
+  "max_epochs": 6,
+  "min_epochs": 2,
+  "lag": 8,
+  "min_delta": 0.001,
+  "batch_size": 2,
+  "accumulate": 4,
+  "learning_rate": 2e-05,
+  "min_learning_rate": 1e-06,
+  "weight_decay": 0.0,
+  "warmup_steps": 40,
+  "device": "cuda:0",
+  "precision": "32-true",
+  "deterministic": false,
+  "freq": 0.25,
+  "freeze_batchnorm": true,
+  "log_every": 1,
+  "quit": "early",
+  "base_sha256": "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9",
+  "counts": {
+    "train": 699,
+    "validation": 38
+  },
+  "data": [
+    {
+      "index": 0,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_61a03587f9faa267436b.png",
+      "crop_sha256": "97e398f8a1e10990535653ec7bdce88107045de18a77d664cff41f47304e3dd2",
+      "text_sha256": "126812a9e4f9238319c4a4312f8c7a7c513a1a420dc7719cc22110b1711cebbc",
+      "variants": 3
+    },
+    {
+      "index": 1,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_578af314b5981fdae24a.png",
+      "crop_sha256": "c2dddea95bb39819e17ed67cd973a5ac7529850d0284a2c7fb0b917a31f52bba",
+      "text_sha256": "63da15a55c9d33ed0dff978996fdf584988b7eb73e0ac996a6a9f1e20b54dc07",
+      "variants": 3
+    },
+    {
+      "index": 2,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_e16ec78b02f4d644b845.png",
+      "crop_sha256": "01ceab6286d293f363dbabf0b183a65869696f78c2971a8b3ad9051a249310a6",
+      "text_sha256": "6406a211c2556d691df58ce5bb8c1581f22edc769a1bbae4d32bb055ba6e02a5",
+      "variants": 3
+    },
+    {
+      "index": 3,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_937857786e03cfcfce5e.png",
+      "crop_sha256": "bc275012ae36ac830563bb6c7f6f655a25ae1b07584c82c684df4e9c8f04de19",
+      "text_sha256": "0256952815a8cc847f2651e4bde9e5906fd8904ae76ea5b423937478bef246e4",
+      "variants": 3
+    },
+    {
+      "index": 4,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_f3f4f9429398b6a22873.png",
+      "crop_sha256": "c668192a679f5dc7688b01f01085226ec249c1ea018ff19fc6e278195698b9fe",
+      "text_sha256": "b9ec76e657e0d7ab4550446d301fca624628ace98d8940cc18a91efcf16cb64b",
+      "variants": 3
+    },
+    {
+      "index": 5,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_81fbc66fd403b1e46eb8.png",
+      "crop_sha256": "001c64e92564ae374bc506f349a5978115115cd20c94b19fe9b524150ba7ce4b",
+      "text_sha256": "06a38356251696262cb9d8dc32e370360a040ef91246967eb6a4b8f9ee6641d8",
+      "variants": 3
+    },
+    {
+      "index": 6,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_9e3598e5ca9461d5d6aa.png",
+      "crop_sha256": "e1ed495320286442cf7500e6d49d9fd1dcb51919268f19215606ecf0ea4701fa",
+      "text_sha256": "ea321b7bc9fe8367a5eda8af991ff9e118fbc1b9e9d5663019af23fb762c5f9e",
+      "variants": 3
+    },
+    {
+      "index": 7,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_83f2ef71b7f236c1b75f.png",
+      "crop_sha256": "1effc021ec4aa6674f892991aaab901d05adabbbc75a193cd08079deeffe5e52",
+      "text_sha256": "c5267419d14d3358dd19e3956a16204b7723eabafddd416644d9da1132ad15b8",
+      "variants": 3
+    },
+    {
+      "index": 8,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_8a86869e7d8d6db17dd8.png",
+      "crop_sha256": "00702e55c732a7a86f220c90874feace9521b7f2ba918544a81026d8e026ab82",
+      "text_sha256": "b8f7b1e986bc6dba5dce51f9396748291e6c9da043c31f688624aabdef7b52d3",
+      "variants": 3
+    },
+    {
+      "index": 9,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_f4d7e45a7114f739e357.png",
+      "crop_sha256": "a0a89997ab8c3af27354c5d064f0a08394472d133824c0a233aae6603a31f526",
+      "text_sha256": "5110501822d7c843b8fa1969a5943d56a2e405f74f5d7f8b2d2d037864a67b5e",
+      "variants": 3
+    },
+    {
+      "index": 10,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_c0989c7ae7b4e5ec3c51.png",
+      "crop_sha256": "43524682e9e0969977a104448e218a2aa9c78ce3cd6e3d4f83ca255268a09f52",
+      "text_sha256": "f5bf14ddf85dce9abcc087dc563d05b9a2178dd5d70f21bdd5730f17d8e501b7",
+      "variants": 3
+    },
+    {
+      "index": 11,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_6e40604eb6ece517cc8e.png",
+      "crop_sha256": "92c1e6509d5b0011abc7595bdef20302cf999d47ba9bfff477edbde5601ccb3b",
+      "text_sha256": "43a31afdecdd0994e2a2d5ce188d786407839ccd1f90a916cf6b4dcfd89190fb",
+      "variants": 3
+    },
+    {
+      "index": 12,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_e6bf2818783e4071d9ff.png",
+      "crop_sha256": "d09567e3b7d7671b111a25203dd45d3a3c6e0390cd9b2b5b0c5a956681c4eaad",
+      "text_sha256": "5c7bac3b7a3113751ad8d0676980ad12be3068bb0339a5957f35939ee565a098",
+      "variants": 3
+    },
+    {
+      "index": 13,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_ec31d004569e294adf29.png",
+      "crop_sha256": "dac17e4f5435f796183e8ba3aecd9f04d1e88f4780827849eed0be642b337d6a",
+      "text_sha256": "ae349306f10cb6d67e5c0e7b43eec8a732ec83397e3156068eafba0a377fc715",
+      "variants": 3
+    },
+    {
+      "index": 14,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_51f80762d713e3a7dcd1.png",
+      "crop_sha256": "d6110141ea79c36199535d68813aff031c43162e7ed3a97986e3a6afec854c50",
+      "text_sha256": "63a9ee34efb5a73989111801c3c57827a1859ee8b4c652434a7a16a752d2f2ca",
+      "variants": 3
+    },
+    {
+      "index": 15,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_4a6d7b216e8ee841c583.png",
+      "crop_sha256": "85861598fea31b6c30eb6901a8bfd387ccd465e934fe291f0b1fbafe14663daa",
+      "text_sha256": "2fbb5150b7338b289a63f18d29cc349d9c64b25f0686f5b9d2719ea8c3b58d60",
+      "variants": 3
+    },
+    {
+      "index": 16,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_573718c38a2176b62d56.png",
+      "crop_sha256": "293c98d725715438249c7d7e07a2836e5acd1b7d2d32fde96568490a1bcc1baf",
+      "text_sha256": "e8df9b901c9f726f3ff79024ab83470fdc1e3ffcc1ddff99ef9e958a7f76a618",
+      "variants": 3
+    },
+    {
+      "index": 17,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_2730bf4aee4b069b675b.png",
+      "crop_sha256": "2cdec21787487372df7da3fd978b472557a0456b02345a554aec916419f215e9",
+      "text_sha256": "d58510751f9b124adf57a3b3fe6f52e60366cc950b4a4d5a8d27fc808eba1595",
+      "variants": 3
+    },
+    {
+      "index": 18,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_b35d2cbd4b4e57e6373f.png",
+      "crop_sha256": "8a68974deb6e360ad271610f1e1e9a9522d325a91e467b55087e398c80a7ebd4",
+      "text_sha256": "2e011d06d8c440595b71e5bf653dee63e05e7d6cb6a6bb2a569b4e0258d4982d",
+      "variants": 3
+    },
+    {
+      "index": 19,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_ff7eaafdcff598bc8e02.png",
+      "crop_sha256": "ca4456be5dc39ad909ea1d42902ddc38fb72f256f5894a604a6b41efd9a622c0",
+      "text_sha256": "1069cbfac4f0198d9f9d01d862d391b91367cf7325b835d76a1a559e98df9b2d",
+      "variants": 3
+    },
+    {
+      "index": 20,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_399b0774d1e2cec92901.png",
+      "crop_sha256": "7a61dfff02420b63667ea74af3fce6eb4d096e280af3c39fb68d8980d0e311bb",
+      "text_sha256": "222a3c9db804ff7dc89689a87d6197a077216433472951e4b91bd4b1526fbf58",
+      "variants": 3
+    },
+    {
+      "index": 21,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_16d2a8abb58a005bb701.png",
+      "crop_sha256": "7edb9602d25099e67af91ebe272aceb76c98a10ba6312fb55418d5b24b1ba96b",
+      "text_sha256": "0e55faf0c39b65daee4e953e61e9d14ebd404648a9d782e74da0f5d240e08e9e",
+      "variants": 3
+    },
+    {
+      "index": 22,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_5063899182e88091c1cb.png",
+      "crop_sha256": "c82cdde1b65c2f497aeecea56436e9de07301d936ccac0ce9d817390f89567eb",
+      "text_sha256": "7144d4006ad9d0d4402119da7285aeecb29e41588e49601af29a3c11f21fe4a9",
+      "variants": 3
+    },
+    {
+      "index": 23,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_e37f973212094c973edc.png",
+      "crop_sha256": "a82050a4f97a3d25b5f424629ea91d826edd5c534bf130a9f06d6444178176c1",
+      "text_sha256": "731cea946e53a2a4dc953321fcb5619a0cd2c992aede9d079bed311a53c68bdd",
+      "variants": 3
+    },
+    {
+      "index": 24,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_c64937dea381aee1a96e.png",
+      "crop_sha256": "15d0065715dd926ea49f60a8f3c4e014215b474e68f1f2eeeaa4dbdf883c5eb4",
+      "text_sha256": "caa45b7993d503a7488939ea668bfa0dcb282df1413aee22aba2570edf2a9fbe",
+      "variants": 3
+    },
+    {
+      "index": 25,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_3db8c653904e59c2b12b.png",
+      "crop_sha256": "5975aca0159b0d196945a6179227288e6db65bfeff781b159815d4414fed0b46",
+      "text_sha256": "2fe46c9313471a34c6e31b55b670ea1a788054ce1a9f47521776f0b4f861b467",
+      "variants": 3
+    },
+    {
+      "index": 26,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_00b1f09fe97517b3293a.png",
+      "crop_sha256": "d72cb2d5863bd79d0961bcf4efc5f6e95be3bffc0714b8153d887f43215eace2",
+      "text_sha256": "ca4776da5e8b0260e24bdf093eeeaf080ee6424cb3d62b34464611bf7ae57a10",
+      "variants": 3
+    },
+    {
+      "index": 27,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_36bb35fe6e621a09b0b8.png",
+      "crop_sha256": "31e01b84697b404e261badb58a7ad3e19569c8c742837798ec5ea847ad822fce",
+      "text_sha256": "7bdf5e440b4dbe8c63490f6f5ea7ac1d1c86d4357f50cf3d3f5ab3b64baba160",
+      "variants": 3
+    },
+    {
+      "index": 28,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_46c13bb4916a2be55297.png",
+      "crop_sha256": "503be76838d4046e88086f071c2b9e0e6ba95c942cfcadfb5aeedc5c193f1c48",
+      "text_sha256": "2133b13578ef527e6bb3619860e470a2f5f28ed2180230e761a81dd0de0bdf38",
+      "variants": 3
+    },
+    {
+      "index": 29,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_d659dff46737131e22e9.png",
+      "crop_sha256": "010f048d59107dc7279b504f2bd41ffb2ccb13ebd4123962aba683f59533b84c",
+      "text_sha256": "ea1d7a9ef52f4b2d786ba3e85e4029c4141d16c67fb3f907b5138040a92711b4",
+      "variants": 3
+    },
+    {
+      "index": 30,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269r/l_c63750e8f94c255da756.png",
+      "crop_sha256": "8f20263c936dd952b6b1890e570596cd90f6f0e7872b63fe3889af74c1ff2678",
+      "text_sha256": "a7648361ac76f6bef054c8c1c8ac31e88ebf11c93077ba50767dd0a5212b15bf",
+      "variants": 3
+    },
+    {
+      "index": 31,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_83a0135f634b9998330d.png",
+      "crop_sha256": "1ec8820fd063772b2cc68bf358c28b6495eca0f9678823b42fffaea1281c0a6f",
+      "text_sha256": "f8f18ea02340119d7e7176178a18f200a0de6592ccfded303cb667fa00213051",
+      "variants": 3
+    },
+    {
+      "index": 32,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_d7de26df2de07b4fb8e1.png",
+      "crop_sha256": "ef40a59ec31fcc5e0dd119a8a9389904c4a9938acd4eafcf98deaea49418205b",
+      "text_sha256": "197e2dd05f232d4bdd2b73ee5aa34acf79a36296b9ef5c725f7fe6077db05934",
+      "variants": 3
+    },
+    {
+      "index": 33,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_bf093730c748d0fa6621.png",
+      "crop_sha256": "4efd904f3a6be9b98eaa7e2eb3e4a98e042413f4c6a53bb09d38d3c162202c64",
+      "text_sha256": "8a1f0aadf511e26731546c4a181cc81e4b95d948d72bb9231f8d3acb4dae8f08",
+      "variants": 3
+    },
+    {
+      "index": 34,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_f7568697cc8f29fac118.png",
+      "crop_sha256": "88833990c03648bddd159356e13f454082cb6984c013da096ed104382c9a0b79",
+      "text_sha256": "0a44ae8a8a2e1abfb2b141665d55992a834c17bedb09e3aacdd304d1c04894f4",
+      "variants": 3
+    },
+    {
+      "index": 35,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_0debad10a22182727c3b.png",
+      "crop_sha256": "78a37bdac4574623664636789b184a41bbdb0cb6a9c3185f766a5d5fba265ad1",
+      "text_sha256": "9ac095e77a19f6587d2cc6ad9be3c461548bcbbe54507bc6425f188e5e869597",
+      "variants": 3
+    },
+    {
+      "index": 36,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_3163dea2b320ca48d47f.png",
+      "crop_sha256": "566dbb1fe30167c900b5392409114bd9bb96e51da950f1d2f6d7b202567f182c",
+      "text_sha256": "929ee437c29cc93b294dfcca3e65a4c15af36e5d7627a0bd2b19d7eb3f99b671",
+      "variants": 3
+    },
+    {
+      "index": 37,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_7ec6d8355f29e3e9602d.png",
+      "crop_sha256": "2167f155cd1696aec897e08c9ea4578ea101e666c84329aaa79ac5719a808b7e",
+      "text_sha256": "c142e037331e22aeb8ad3c56d51a09b52c1b4516534ad476f964fa5a2a624d67",
+      "variants": 3
+    },
+    {
+      "index": 38,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_f557e92807696656785e.png",
+      "crop_sha256": "4f1e8b6162e4dad3df7eec8a7f7df7108172ab1a12d663a926f3a9f46934da76",
+      "text_sha256": "565efbe1becb21236720c7d57a00d7a221333beb9ef36bdd67bcf1eb70032fb9",
+      "variants": 3
+    },
+    {
+      "index": 39,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_7c3aba40a468eaa2e75c.png",
+      "crop_sha256": "10390796be37cacd3a492c51c83f8795dc841e4c8cb3184f30c36e86f16cc2d7",
+      "text_sha256": "ce7d5c0ca262972001cf9cd29b635ec61783b5c9e2562355ec6fe0107ba036d8",
+      "variants": 3
+    },
+    {
+      "index": 40,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_fe16f8c6759fa64d818e.png",
+      "crop_sha256": "dcec538e3bd485568f77d82e2de67c7fcc0b2c7f3e2b7a146c7df94addcf23b6",
+      "text_sha256": "27e1b55aaafaa4d39aacba3dc440ba8e47629f5dbe8955c2d3f8482aff2f7fe0",
+      "variants": 3
+    },
+    {
+      "index": 41,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_a0eabeb9bb3a05a3456c.png",
+      "crop_sha256": "54739854cd393b860aca49594419679ec7b18a7c6499e71e997e4de28579ae9d",
+      "text_sha256": "4711cdf02f6e244dac9d56e786fdfa2518b8f49418625f6e392499bf8cfe0579",
+      "variants": 3
+    },
+    {
+      "index": 42,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_093ced5df9f3a1a5a7b0.png",
+      "crop_sha256": "6a5eaef377d87a88dcfa086f8b68459ef2b565b135ee0abf7f3bf6fd02440559",
+      "text_sha256": "0111bcaad970aac72ea25735dea8c589a2f2f4a02b752fa23809f0b6083ca84f",
+      "variants": 3
+    },
+    {
+      "index": 43,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_7417622432f673531459.png",
+      "crop_sha256": "f2c74dee44ca3d25c77ef2de38acc9639b7668eebb2c57c9134684520f4f99da",
+      "text_sha256": "ae2d366037f4e60c9d1646297706d458669010f470444ece0d964744af4464ad",
+      "variants": 3
+    },
+    {
+      "index": 44,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_aac5315285f62d13cab1.png",
+      "crop_sha256": "e81caf22c86790ab098e70291b48f0c007c299c81037c06a937a4ca2cff5be4b",
+      "text_sha256": "cf248819a6a386fc5ba43d3f629bf8e3e335d9c41887baf797aa67d7e96a1e40",
+      "variants": 3
+    },
+    {
+      "index": 45,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_f610593cc210f9121158.png",
+      "crop_sha256": "c1844de15f43536fb707b315b95ba4fdf18616f85113414fdff64bbe11b3c479",
+      "text_sha256": "e213a8062298354ff096c36fbabb09c8805593210c07b74112e45f9fe7d85db1",
+      "variants": 3
+    },
+    {
+      "index": 46,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_9d98bb6abd632ae209ad.png",
+      "crop_sha256": "116362460077f9ff952a36a0d8612e6b27f48065d27a01387907ba67e19a238a",
+      "text_sha256": "02a5da0fdbe5d63527f51455876a2c80e538d47779c3ad033957a8aa1f35651e",
+      "variants": 3
+    },
+    {
+      "index": 47,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_3e1f817628662081eaa7.png",
+      "crop_sha256": "46a20623386bd56dbc06a82f3d6290552145aff5411b33961aec7a0e119aae8c",
+      "text_sha256": "85b1f53387806c1ae52ad5e85dbd114af300a5356aca57add74914aafb66b540",
+      "variants": 3
+    },
+    {
+      "index": 48,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_b891076426ddb76a0767.png",
+      "crop_sha256": "f7ed14e6e28d332795330fa61451c650349b7dcd6a50e698637f56657b7aa409",
+      "text_sha256": "56800a9553d183172cd7013841f3cdab72df2430c84cea13b1fca4a5e8734766",
+      "variants": 3
+    },
+    {
+      "index": 49,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_1c89b578c4ea1053ee22.png",
+      "crop_sha256": "c92c9df4f2eae7719703d95f890f3deb26ebb882af19244991b56e4b1b8169ec",
+      "text_sha256": "eb5edc7607c437258b2cfade13f62ea7dab39c494518b7530bebfdf7ce50bb7e",
+      "variants": 3
+    },
+    {
+      "index": 50,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_0ef04e4dccd8fbce99d0.png",
+      "crop_sha256": "b9369e38668e4fc996cc81939d7e3061d1a5f3438306f2ab4d6d59350d094b5d",
+      "text_sha256": "733c66c61dfe0bde0911f07032988eece012b555c3c750c99fbbb08b1e260219",
+      "variants": 3
+    },
+    {
+      "index": 51,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_d692ce84fae8295c7de0.png",
+      "crop_sha256": "cc66862bee2486b9c465d4bfc640644af03b741dd05b6f7b39b77373eb88b37b",
+      "text_sha256": "8824781f65ff1707284ab6c06aff47c043dcafb953bcbd76132e846a84c8eea4",
+      "variants": 3
+    },
+    {
+      "index": 52,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_0464ef08627e353f7732.png",
+      "crop_sha256": "7133f4b06e67c07a880f93c6c2d235fbc823022c336acea35355b1a99610f9e7",
+      "text_sha256": "a562e6cf29abc05773db27b20a07cdc87b572908ca93982e94ef0f8dd7babc56",
+      "variants": 3
+    },
+    {
+      "index": 53,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_04e98ddda9bbdb6d42a6.png",
+      "crop_sha256": "7e7db94b1e5f7b293b8b96f7e7a1538aa6e7b12cdef517bf2b529674c44a95c8",
+      "text_sha256": "ab1d007357413e6f263b3d06b7778147d33378183db4f8957ec9e373d02a4191",
+      "variants": 3
+    },
+    {
+      "index": 54,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_beaa8bbac582aa0482d0.png",
+      "crop_sha256": "2b886e356bdae6746d1b32f9d2713130ef4402a0c9a4cfd1f2723deea882369d",
+      "text_sha256": "9afc0f93bd5a851037cc52929dd33f8db53f7a5db944e7da1f09887966b2c365",
+      "variants": 3
+    },
+    {
+      "index": 55,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_68d396fb487163b3d641.png",
+      "crop_sha256": "6dfc9f8e2a403682a4fd57db6a0dab0a0b54816c0522de0044ce802809a953d6",
+      "text_sha256": "eb20eae7951af7efd73e76fea23789692b2bd67e0f850db63a821f329dc5cbac",
+      "variants": 3
+    },
+    {
+      "index": 56,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_b35d7f3cda3b21734488.png",
+      "crop_sha256": "92e5ade564f3d2a92d8ad09bf37cfcb07b00f95aa59d1dc4bb47bdf27f8e43a0",
+      "text_sha256": "949922e05c93e2341ebebb868ae18f8ece313c30fb42d0c329d1d8c8092d9116",
+      "variants": 3
+    },
+    {
+      "index": 57,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_001abea8aec483f62181.png",
+      "crop_sha256": "2635c649e58926b5d1b3b2fa40c22441ed80f0b2ca2c658a2543c7b85356a9e6",
+      "text_sha256": "bf9d14486a438825df1fda58c74aa43fe40503e94797a8ee1517608424c9cff6",
+      "variants": 3
+    },
+    {
+      "index": 58,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_e002fca281bfc057b820.png",
+      "crop_sha256": "dcd725baf0bab104082f66d40efea147ddd3f7b8300ffacbb04003a6401ae198",
+      "text_sha256": "bca6e47343e5fd9966c9de86fab6bbd319bac0b8c3a35c12535a85cb70fbdbb5",
+      "variants": 3
+    },
+    {
+      "index": 59,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_bff22bd764629caa7eda.png",
+      "crop_sha256": "48df077ead8d4db7d2826483be7016d760160da82c5dd104301c3f0d88d67658",
+      "text_sha256": "0b629ef4f862b9debab8582725ce7d8502a457fd8346af122399271ad6869860",
+      "variants": 3
+    },
+    {
+      "index": 60,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_00bc47e745ee851f81ab.png",
+      "crop_sha256": "8d0cd9cbb1b4669ff3577194f61bdcb10293f573c8f2bb557d72813a94eb6560",
+      "text_sha256": "2b8cb7fe5b18c12200d23eddb790aa228d604118c25950168784047f6e2ac06f",
+      "variants": 3
+    },
+    {
+      "index": 61,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_0e04c450404ea2bfab59.png",
+      "crop_sha256": "7c755364478e60ab71584d6ad3ca7665033d79a7224f2c342cfa44ed38d3525a",
+      "text_sha256": "cbd2c5959e3e9b60a2aa5ac368eb4b944b81aeb003799da70d497fe0bcb990ed",
+      "variants": 3
+    },
+    {
+      "index": 62,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_3b786d90a6ce580b2e9e.png",
+      "crop_sha256": "1373b426817226e7c1f4abf914dd312eb5a42a10afd941cc217a8377cac4812a",
+      "text_sha256": "792fbccf1049da9dff210b6bf5ca2b79ccbbac08445b5f42e97bb1de319917db",
+      "variants": 3
+    },
+    {
+      "index": 63,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_bb1da2aac10182361c92.png",
+      "crop_sha256": "3a401fa2ffe6e5462468b44a2ff3b096b35c300854c623a2060ebf400513b4e6",
+      "text_sha256": "ceffac631612e8831cc5d08ccf632b90a5e217b1c01b85001be103c1843d78b9",
+      "variants": 3
+    },
+    {
+      "index": 64,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/269v/l_6d036d67751757c2a30b.png",
+      "crop_sha256": "80dda0f51b1dbb54f8bb9dc424527d5bee3ddd5904d1b20152963a6d74109835",
+      "text_sha256": "3ed3de42dc2cf6f354243a46a4fded923f4f30d7de4973f189e7ab1abadebc8d",
+      "variants": 3
+    },
+    {
+      "index": 65,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_825fea1beb46d5e44542.png",
+      "crop_sha256": "25914615342d7cea7a0e28434908d40bb02b75bc36e75c89cb5b90aefe9dd5fa",
+      "text_sha256": "9cea61dc2782bf0307140752fdae46326428faa5d685774c207e05ad2c637185",
+      "variants": 3
+    },
+    {
+      "index": 66,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_7183f7ffe9e4fa03888d.png",
+      "crop_sha256": "f29792889616da7072fe33287612e6ac38d2656717609f3b8552109971405ad8",
+      "text_sha256": "ee97b737a50a4d17fb0da1fc42e2aa2f76ad50108767a49b7a280540cbe9f8b2",
+      "variants": 3
+    },
+    {
+      "index": 67,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_cdec328d370fc882a787.png",
+      "crop_sha256": "a0346a5dde31ccb09a02c4141456c2bb597ba2eaf1bfadf759ff302cb8a0fea8",
+      "text_sha256": "4fea4cd86c8608b50e8f22d69b92daca25c0bf273065daf9ebb2da4a7f222782",
+      "variants": 3
+    },
+    {
+      "index": 68,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_8c469656dd41102387a7.png",
+      "crop_sha256": "c7683c4506e1a38fa2e002c6391e98ef50522889f35a3242e064b894fdbae22f",
+      "text_sha256": "e8fb8efb349dcae32037116195fdc6f0ddddbf26a8fa9078cf93e8b871b5bbb3",
+      "variants": 3
+    },
+    {
+      "index": 69,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_4b4a23b9002e3d078759.png",
+      "crop_sha256": "10657e7d74d45340eb79354a3f144b1c8909006419e11879ba46646fcbbaf048",
+      "text_sha256": "596f7e0c2eade1ccacc60260d929cb967871fc959618d757dbff7ec01f5f0634",
+      "variants": 3
+    },
+    {
+      "index": 70,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_de7c906036432802c089.png",
+      "crop_sha256": "9a0ac7f06a4268a0015da0f1a0797c85cedb86b186111cc41c57e42e53464257",
+      "text_sha256": "fb7bd5811329b54069b7ee69ddb5964c44eb39790c4bd9e3b08b48ec8ac7e607",
+      "variants": 3
+    },
+    {
+      "index": 71,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_15b45d083a760659acc9.png",
+      "crop_sha256": "1a4984734dfa744d5bba7c0c3ff1397fba1ba962cd760f3ed9fa657b23a39b5f",
+      "text_sha256": "284c784bd8d957b78d34b48d5a9b88a005bb00985d3e4f0770df46efdaeab9eb",
+      "variants": 3
+    },
+    {
+      "index": 72,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_7c3f74237ab6ee231df8.png",
+      "crop_sha256": "dab3b21e9a16a2cd833172863ad2f16974817fc5aaf32fb7e1a0d74cdae915e8",
+      "text_sha256": "0502a4a3148bb1a63709f1c2529722c8508940a97199a7863356e6ce65ae39cd",
+      "variants": 3
+    },
+    {
+      "index": 73,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_f7c83ed2c9d5423e86b2.png",
+      "crop_sha256": "be6debd95bd0a1596616f2c293c4a3686f5ba860d48982ba6a0ec97e2ce211ed",
+      "text_sha256": "af7d8d3024e6b3cf3886320ed11ca44ad47ccfcfd9174ae9751cb41d9e4853f9",
+      "variants": 3
+    },
+    {
+      "index": 74,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_3b449dc082c037ff2d3f.png",
+      "crop_sha256": "64a261936109b962addfd56765f01e3eebacd64ae67fb200bbbd88f68d82bc61",
+      "text_sha256": "6e293c3526a3f2166b350f3e66c51bc55365de3a2113ff25d92fc6ac1cd69f0d",
+      "variants": 3
+    },
+    {
+      "index": 75,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_f2b13fe5c92f2e154d96.png",
+      "crop_sha256": "cd5c34a6b173868fd78aa9e5a10e794110fc9c549c38657eb917dfdc5aee5e31",
+      "text_sha256": "b4257357b690ee1e3bfd8cac0786a04baac890a35495912ec7202ef17e600825",
+      "variants": 3
+    },
+    {
+      "index": 76,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_42eb86c87c53d3d38fe1.png",
+      "crop_sha256": "dcb8d3e0bedfebbed625417ab0a38feec2b1abb27dc5a78dcf84df410360c5db",
+      "text_sha256": "81155529498fd9f3b5cb6dd7b9985891156fa1c3937de6e59c53f86aff5a6321",
+      "variants": 3
+    },
+    {
+      "index": 77,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_221db26b80443edbb1df.png",
+      "crop_sha256": "dd0169933602a318a93e452700a649b066238d9b6ca6e1bde9ecc02c35c26681",
+      "text_sha256": "cc45973d70994359067e58b9ab7baf33b1c9f0d7e75f3d5d041d32618f5d704b",
+      "variants": 3
+    },
+    {
+      "index": 78,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_edaffa632aa09e76221b.png",
+      "crop_sha256": "e4918eae5ac41a82915faed836389f648eeaf3de31fd07aad25317bee620cdd5",
+      "text_sha256": "d20978b1237723938d7ff9bcac9fae78a4b90dbf9002867ffaf2f2b9d2589437",
+      "variants": 3
+    },
+    {
+      "index": 79,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_6c30444ac1b797c67399.png",
+      "crop_sha256": "2f385646c065e73950798bb3af8e31587b5e977d4c87b6051c70fbd831add491",
+      "text_sha256": "71eaa33c5960cbe6764686fc44ee64035198e91f2b62e632a6dee0a40c649ffb",
+      "variants": 3
+    },
+    {
+      "index": 80,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_f72989e8ce3e20c0b49c.png",
+      "crop_sha256": "187b3714b77d926afa3d50ca099e76a43ce97cdfb71ff5df533602e7f9a44055",
+      "text_sha256": "c30fcd9679b341dbc530dd3f98114d9612e53956f30db0b12ff971641ac4ddac",
+      "variants": 3
+    },
+    {
+      "index": 81,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_f41d36f9bad0b30c55d1.png",
+      "crop_sha256": "15d15712596da06c38dc2f377fa1b219ce1abe191dde67b85755d51cc7178b88",
+      "text_sha256": "de1f083b7a56a569027e0e9abc2a5936b0c73001fd4cea11517bb664dcb6a184",
+      "variants": 3
+    },
+    {
+      "index": 82,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_dca8d73ec0bfc9f251df.png",
+      "crop_sha256": "e451d2b581195a10b825cebd09f27b6cbe81caff6eacecb67911ae39727959ee",
+      "text_sha256": "47d6fd34bea99904fb576239dad9f4979245ff810353d1c7c6f308b13afe5c88",
+      "variants": 3
+    },
+    {
+      "index": 83,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_5bb56eff0dc95e0be8f6.png",
+      "crop_sha256": "e362f83f46498cb0d5db75d7c0807a8833390e99bb081385a12741bf897024b6",
+      "text_sha256": "aca7c7fe8ae30275970802d6ac9db173a62e0c602f9ca8f0612411bab131f3c8",
+      "variants": 3
+    },
+    {
+      "index": 84,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_789a842f64cb44f9a87c.png",
+      "crop_sha256": "192d77942f7cba694fb09f3bcee1b1e3bc4bb902ffccb4e465aecac39fda3835",
+      "text_sha256": "a4de255c2f274f5c12cb6410077c3a35960842591ca92cba4b5a7c57193eccf7",
+      "variants": 3
+    },
+    {
+      "index": 85,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_c59bf8f43515cf010a8e.png",
+      "crop_sha256": "6faa9d01a31e1825ab5cde5547f351393f5f55562fe6e3b588af23f75187a1b7",
+      "text_sha256": "37f14127f74c01af19cde9fb76f3c947c1d21cb8fb86589b30b40f63b25eb99c",
+      "variants": 3
+    },
+    {
+      "index": 86,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_83de7f4e0ae8b2a64c59.png",
+      "crop_sha256": "a86c0c0d8879c5d4a93e8ec98b3c9f7f70ecb933b0bf55855908331b7a47ae65",
+      "text_sha256": "4cf56431a8f520dfc021df1d98e744309bb85fef742043ce7f125b1c2140a29a",
+      "variants": 3
+    },
+    {
+      "index": 87,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_9e172c99f8f6ccfbfaa5.png",
+      "crop_sha256": "a85b7393d3f90cf2cbb188ce58d81a04275645c36b0d2f9036e062cf7b05e7af",
+      "text_sha256": "e4da1774864302c897af76d6d557cfaca57ba4518750087523442de350982e70",
+      "variants": 3
+    },
+    {
+      "index": 88,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_79ee046f7f8ce9dcffbc.png",
+      "crop_sha256": "d01a0766df9a37f91024ade05de1b3523ef2095d841e047b7f3f97bc14bdbe47",
+      "text_sha256": "b586a04952d95824ec9734da75c11d8a240f8fd95847d809d9d2b49acb2dffb6",
+      "variants": 3
+    },
+    {
+      "index": 89,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_7ef16c7af65212ee35c2.png",
+      "crop_sha256": "1700882dec1e7454d7c0e234715c38727ecf228ddfeb74682cfda8e63d34b9a9",
+      "text_sha256": "a5476f5379f52e673b1fdbaad1905f7e7aaddd9907f857b3ac6f7873d63e6850",
+      "variants": 3
+    },
+    {
+      "index": 90,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_fe26696547dbb6c03505.png",
+      "crop_sha256": "4a2e5602e2331d2b677db67b57b017a9c29c07b2b46b5a7150c467b6824a4320",
+      "text_sha256": "99d960211f0b4ea9f19349e3943bddb175e8a5e4fb04375d8fadc496cdfd9a5d",
+      "variants": 3
+    },
+    {
+      "index": 91,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_4d4bc1e34bbc12a3477e.png",
+      "crop_sha256": "ee0e6022952179eb4b9e18a4dac375e13bf371f63141963deeaf0e9784999ed4",
+      "text_sha256": "2aef1e202ce139a69017f7438e607ffd275e1dbae7bb7a58a09c1e6dd3551321",
+      "variants": 3
+    },
+    {
+      "index": 92,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_be59e46d8c3d77504b7f.png",
+      "crop_sha256": "cb77e43e179b8df7e57220aabfb714e972e651645fdf07dc0f5787f828748518",
+      "text_sha256": "1ee19ee06970ac6dac228435fcdcc5e5a9492e3e134795778c178c434b0ec9c6",
+      "variants": 3
+    },
+    {
+      "index": 93,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_c919667443e78540e249.png",
+      "crop_sha256": "94f62b67b5b350eeb409280e6b8d7f9c3cc74ef98bab08509e94ad740f3b6aec",
+      "text_sha256": "0d6cfeb3b83a2f2ef0310ff4536b8380b2519531681533d7897d22cb6507d448",
+      "variants": 3
+    },
+    {
+      "index": 94,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_03e2f4efd9c6cd426a40.png",
+      "crop_sha256": "e6bfa8d1c6f88bdad1e90ee2e15a9664ba32935c5061400bf2dba7c151028b98",
+      "text_sha256": "9c84e73ba42706446503916f5825815542932a5cb7026393752cab8c9281c813",
+      "variants": 3
+    },
+    {
+      "index": 95,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270r/l_fd8b01aa2e29d98d2498.png",
+      "crop_sha256": "a910606ed7bfa7ab4cb6b4cd0949fe12c145763c20db6b110034067733faad9c",
+      "text_sha256": "b233d0eeefdf28daa739d7a0736bcf6463a1b6dacdca0905dd266881cca47de0",
+      "variants": 3
+    },
+    {
+      "index": 96,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_945ac776602067d19f9e.png",
+      "crop_sha256": "b77d5e9b71ff2dfa5b444358f5d60745561c6983e84d3293ca64c9d88f2f645c",
+      "text_sha256": "3d8571d1c82ff216b4c1a782d44e3901b6040eff7332f11ba7840f457faf58cf",
+      "variants": 3
+    },
+    {
+      "index": 97,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_2c3de570a10fd893093c.png",
+      "crop_sha256": "49f121f5540bdac64ec148dd77fc442dcc52c90e9cadc718a2e957c6c15c27ef",
+      "text_sha256": "de7e12eeca9cb523e2ec9901d6c6a06d4a01b252c18cc425d39baa46d35004e3",
+      "variants": 3
+    },
+    {
+      "index": 98,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_ac2a7bc9f4331cbf18ee.png",
+      "crop_sha256": "dceb07656ffd40810133749ea4b3660bd6760fd3866da09bc9e5e3d3c3a492bf",
+      "text_sha256": "707e0630fbafb9c496a80ea06d3275d2f4845c16d5786440cea9ceb0321490d8",
+      "variants": 3
+    },
+    {
+      "index": 99,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_3d0b76f9e2bf69845d72.png",
+      "crop_sha256": "d76da73b02d9b74c3754c4a59612d1d31c1192f04e35c309ed8fac95a7b8205e",
+      "text_sha256": "cd019794a8b7908fc89e8dd070f5af003afb686f01863dfd0bbd370feb7ff585",
+      "variants": 3
+    },
+    {
+      "index": 100,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_9869de4d7694feee4d60.png",
+      "crop_sha256": "6cfcc54c6a832373c28dbe2405fc1d753ffe2da90ebd39857eff0b25426aa7da",
+      "text_sha256": "d70bd9bdc42f5379689d4f61feeea3294d61c7092b4dfacbcee5c858d4088111",
+      "variants": 3
+    },
+    {
+      "index": 101,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_071b7b70a041f975b5ff.png",
+      "crop_sha256": "4ca2cbf578c3a34d4cb565fabea2a9c3b34d4eac2ea9e856773ded383ebde4d3",
+      "text_sha256": "ee776bff094ee17ea818ec97a914fb2957dafe8e247cfb0f82cde0f1ec091055",
+      "variants": 3
+    },
+    {
+      "index": 102,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_a034a31f7b6d2ad67b13.png",
+      "crop_sha256": "a91de79edc4230e6994d7584c2782e20d4194b7bcaea31ed397d39c3a544f5e6",
+      "text_sha256": "517c9cbf676a7d4a5359ec00149b167b67395cef9ab029a42deb240e9d77e57d",
+      "variants": 3
+    },
+    {
+      "index": 103,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_3fe7db4c952cab524eb7.png",
+      "crop_sha256": "656e9ab2f8f24ae22d27d3d930d91df4a59779aaa49e4ed0c4dad8729264d26b",
+      "text_sha256": "608a95591991a5f5c74851ab3a869ef04e008fe6512a8ca121de66d0040e9bc7",
+      "variants": 3
+    },
+    {
+      "index": 104,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_d3edf9062d4228048f85.png",
+      "crop_sha256": "b7b370f57d5d5e7c3f86af1846ab451356ffb96e30d3ae6629ae3210029ca90e",
+      "text_sha256": "7cfa44e9110c1e03b6317b1379ceb15a4b558fe5a6d01ab2559da10bcb6b723b",
+      "variants": 3
+    },
+    {
+      "index": 105,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_bd304ca8fa81e9d87dbb.png",
+      "crop_sha256": "8d0e61a9255309edb9c0686449ae89efb7c990ee6193237a6c4070790de4436c",
+      "text_sha256": "b2230a277fc64a178a8414db3aab7673bcff0c8dc5e9e0f9f72b68f6bb832a87",
+      "variants": 3
+    },
+    {
+      "index": 106,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_97fa9a1f35f97f7c3d6e.png",
+      "crop_sha256": "a1b9bd4c04f7308348efd9eeddb55ee7186f1833a0563eb3a40a16ce407920e2",
+      "text_sha256": "6150e75577fcde7ffecbe8fe0044e18996ddad5f8384574c7ac1c0d546f776c9",
+      "variants": 3
+    },
+    {
+      "index": 107,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_8fa49eb10269e66b8cc8.png",
+      "crop_sha256": "a5203741f0a3eebc7846d9a1a2231c8da581de0e173042b3501c5a920e96c5a2",
+      "text_sha256": "f7ed904513e30f75374ddbf2b9262ee3f94d18ff9f68ebe830daea678a0cf1b4",
+      "variants": 3
+    },
+    {
+      "index": 108,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_a0253a2d158473c6c18b.png",
+      "crop_sha256": "8b4a9860ff31b8ed5220fb0ccb2ba1dc8aa6147b30bc9fa3e8f8344015d35868",
+      "text_sha256": "32637e72226a8d91b5fcd82739d5a4a9b235b0596a2064dc0f713fa217363278",
+      "variants": 3
+    },
+    {
+      "index": 109,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_08480e6e52a9208fc54b.png",
+      "crop_sha256": "e45667add49c6cc08d7d248003da406496251c51c4eaf0b229a35a387dcc4801",
+      "text_sha256": "a085755dd2c27bc1ae598463254b81c4d6cc749557df942cc6c1bf3d01186a5a",
+      "variants": 3
+    },
+    {
+      "index": 110,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_12f00dbfcf49e16c748f.png",
+      "crop_sha256": "528540c5530cbedec4a85ec95e717f2e6477e2802e3240858492f34c262d2c9b",
+      "text_sha256": "424fd3259b47e82a36b0bd88882b55f3cfbf43d2cf8a1f276ed2f6ebc75243be",
+      "variants": 3
+    },
+    {
+      "index": 111,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_a66fefa72f843aa66bd9.png",
+      "crop_sha256": "b3cd4335c0b4dee170df664a11526e06db3ec382fa4fc105f5e16416bcf1295e",
+      "text_sha256": "7930e734e6a794f3ff277dde9447bd89804013f90cf0f3740d66bf9f041431d8",
+      "variants": 3
+    },
+    {
+      "index": 112,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_c603a69c776493bffd49.png",
+      "crop_sha256": "89939429ed18ccb04a3bbd371a1c9cc8ac6e72924cc09f36b08ac921b24544d5",
+      "text_sha256": "a66f8ba9e1ba87da75533b1cf26e3007b30482b762422303a1ad1d33965b4886",
+      "variants": 3
+    },
+    {
+      "index": 113,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_816d5bb034c97d15f666.png",
+      "crop_sha256": "c4b94a5659d9579c01033db35536d7cfb2b6cdee088fdf397cca7fec2dfdca24",
+      "text_sha256": "83a27fbe1b645120d7ab7b712652a916a1218e53159dd93006e54747b17542fd",
+      "variants": 3
+    },
+    {
+      "index": 114,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_ae6b3f85d34d6a9ec990.png",
+      "crop_sha256": "38b417e374b8a9807f837c3db5da32376b334865f4024bc2f8b64458351eaab3",
+      "text_sha256": "b98c65bc370a8b1bd565fe7257613171baff009e30d8d04c4b8626cb46795bdc",
+      "variants": 3
+    },
+    {
+      "index": 115,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_19713263f5e1ef81ec78.png",
+      "crop_sha256": "aa478767680b43e7f2e9ceb62df3cd6e7e3e2342dc4d2137162c024e064d0daf",
+      "text_sha256": "556abcbf9624c995a5033bd90f2ea1fec87dd2d51aa7a38937bac3367dafb898",
+      "variants": 3
+    },
+    {
+      "index": 116,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_4fb35d399db5f3c394d9.png",
+      "crop_sha256": "030af8b3168d6b44c981eab8e6671bd936b4fdd6434b5d7378305abb74b6e0a7",
+      "text_sha256": "3cea003c1776a4efa6c82e905564abb115f7fdfca891b7841090c96e39f9a167",
+      "variants": 3
+    },
+    {
+      "index": 117,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_dfbf46ac501dc2638693.png",
+      "crop_sha256": "fe20c7561476b6938b4f4fea93af1a3bd42b79a63266e8c573a59199a245f4e8",
+      "text_sha256": "a72657ae3c1db3ff80b44ffec6c6bd3ed890a8cf5322d9c76996607a83b8c810",
+      "variants": 3
+    },
+    {
+      "index": 118,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_74b7a9fdd44b21ee7f6b.png",
+      "crop_sha256": "4f52f0b25c41d0327514ec92346555221a105829ab25be90e092f637563529b4",
+      "text_sha256": "656b3ec723714786ce45a3f3af32e073365d51f5e08025f6091e6583ee146bd3",
+      "variants": 3
+    },
+    {
+      "index": 119,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_cc9307b75631e7d1c6e4.png",
+      "crop_sha256": "64ef41038b5cc766bdf095cdfc5aa1f41957e1d0ed80cc6c301c3d577ce107d8",
+      "text_sha256": "ea057c0341b3144fb7a79de2a747b1831f8a12f5248cc83a1990458726ec2088",
+      "variants": 3
+    },
+    {
+      "index": 120,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/270v/l_6cb3a32e5c1e3417320e.png",
+      "crop_sha256": "9a4be19c10cf76b8603f9060a7ff872a8c9abaecd44e9700320fbd821a82acc5",
+      "text_sha256": "c268b58ea1eb386922bcd7445c0301fac45820211876bd95dd8b73a01105add8",
+      "variants": 3
+    },
+    {
+      "index": 121,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_6d183cb77df5d5de87e1.png",
+      "crop_sha256": "3fbc032690f76a0099b4e7f9f165a9edffa0b62a9e7714136b1e11cede598ef3",
+      "text_sha256": "e56cda1c8efdb8db503246a93b6d2abb0314b3f01bfedc9c126649547eed2638",
+      "variants": 3
+    },
+    {
+      "index": 122,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_a20987fbe645d59f19cc.png",
+      "crop_sha256": "66c6dd674b0d6be150a9b4dca4a8db05f4962741cebad6ac685108bfaaa274e5",
+      "text_sha256": "1476cc57e7a961b6a0663d443c2890f4dc0376e6b0e49126e1e77418fcd28cc6",
+      "variants": 3
+    },
+    {
+      "index": 123,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_1b0a37659adbd70f7703.png",
+      "crop_sha256": "a3856435703b789c8933230deec654d724051a7e55851bc0a6db4940ba7eff38",
+      "text_sha256": "983c219cc226699594311eff39e825c6bac48dbea0b42620f7554430d687498b",
+      "variants": 3
+    },
+    {
+      "index": 124,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_a51c153d62753f8d76a4.png",
+      "crop_sha256": "953e1dec1e0f839949d65808ee5be64d590e56ced5f2901bda77fbf1266225f8",
+      "text_sha256": "83cd148ea4f03c09eb26d78dc0231ecd2eaf49179baabbe47b497f88321c1fd7",
+      "variants": 3
+    },
+    {
+      "index": 125,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_41300c2d81b973ce5045.png",
+      "crop_sha256": "14b430bbd3ef425ea972c123c8c7ca997643ca41bcc737774949e486eb170986",
+      "text_sha256": "0eee49367fa019af3cb5e2e98eaa324023c57251b6c6c594ba13e40221fda51c",
+      "variants": 3
+    },
+    {
+      "index": 126,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_f479ce5c67054e81af02.png",
+      "crop_sha256": "dac67ec9e0a6f2cf0fd313511a862205fa9b087d801dbc397b1006e77d6eed13",
+      "text_sha256": "4aedff2aad7cf22260438c0198def803c6ccba0bc692cfad0c30db7181c403a3",
+      "variants": 3
+    },
+    {
+      "index": 127,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_f0e8c3af419a83f7e4ac.png",
+      "crop_sha256": "6a4c20d422278cfba00ce3be23db1ded149f06e1f9c7a756cdce62029cf71b01",
+      "text_sha256": "ba47c49fadfc408ec5cb4c6f058e9b86c03091e0cd12660304ba474303f9e484",
+      "variants": 3
+    },
+    {
+      "index": 128,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_8188a82847dca3620755.png",
+      "crop_sha256": "d097c68276c685e3cb995b84391ae811266913d3b6fa8a5a2c6e17776a0b1a6e",
+      "text_sha256": "c063a6a2816ec84e2008bcf1182ac16c6b8374682f5c8fd7385f37842160b251",
+      "variants": 3
+    },
+    {
+      "index": 129,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_bb1370e9834a32238400.png",
+      "crop_sha256": "c3c9e1acb09ec55c17fc97c4a5cb7908ee14053d84811457d23b12fefddbfc27",
+      "text_sha256": "676e3880236bd1d5d22a9d37cb2049e3c970fce95205b2f4c9206419e5237a47",
+      "variants": 3
+    },
+    {
+      "index": 130,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_4b9d3c96384287224d3e.png",
+      "crop_sha256": "0d6272262be5dcb18b8f26d26a9e5c27a33c1348c6e183581df2f922c7bd6dc1",
+      "text_sha256": "97d72718e4160b577fb277bb896b6668e074a0a9ae5e3ce89dc421bcfdbea49b",
+      "variants": 3
+    },
+    {
+      "index": 131,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271r/l_f53125316fc17b4e8651.png",
+      "crop_sha256": "a22a3278573e8dedd19076410109ce6bd698d5a2893c4a1f38067249ec2acef3",
+      "text_sha256": "cbb5bd031d0ed163fc89f92cac97bfb98f3da7e885a87886a955239560bdcdb2",
+      "variants": 3
+    },
+    {
+      "index": 132,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_0650deb214485f947e77.png",
+      "crop_sha256": "d1d3717ef33e8bddca5f50c3ab5785b70f7609da6ce33f7c30f838811f70b922",
+      "text_sha256": "2bdcbbef1f8a8abaeb797938ef07a303b215225358b019943246a78a4b01b91a",
+      "variants": 3
+    },
+    {
+      "index": 133,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_1aa2a45848ebefdec806.png",
+      "crop_sha256": "ae4db593b28a915ba62cc8184f706ec0fadc9057ea4e8d79ccd183ce6b209c32",
+      "text_sha256": "857927381b233de631ce19beeff146a52ae406eaeb5630d662b10b2347ec7d57",
+      "variants": 3
+    },
+    {
+      "index": 134,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_73bebc64273a34c1f8d2.png",
+      "crop_sha256": "b21fd8be0abcc5ea18730b7297d10a5608ebd1d4b67dae52257762d77d40af1e",
+      "text_sha256": "cfb5e6e99ce286f8034ffe81285eee2aaeda33f192b7ce536b9b02b7483bda19",
+      "variants": 3
+    },
+    {
+      "index": 135,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_b61fedf979a8eeef1307.png",
+      "crop_sha256": "aeac911c686ee6510a8a545b5cec2ee48066e2bba97721eeaec456098b652d93",
+      "text_sha256": "70eb1e5ced7c643983809207cbbb9de94e95ef0aafc891aba4e5c6fcbad1ef43",
+      "variants": 3
+    },
+    {
+      "index": 136,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_5be8d71cc4ed21891f85.png",
+      "crop_sha256": "be7adbd5477ddecd4982f4cd50f190c97eef5da75c363dde477a8b6713fbc123",
+      "text_sha256": "24dc0b891bb05a0d4ebc54a644ae6dd8a707cd2ea959928163d786f76aa3e56a",
+      "variants": 3
+    },
+    {
+      "index": 137,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_e9f56d7a10711ae99a26.png",
+      "crop_sha256": "90b33f560ebebd3489e08a1313969b2a08348f3478a7218017a98d245980764c",
+      "text_sha256": "fd3d55b59c3f3d9df7e1c057c81b4340bffd241ef10f6fb2e0955a0869fee546",
+      "variants": 3
+    },
+    {
+      "index": 138,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_6a8ce9eb6fb3f6e73d22.png",
+      "crop_sha256": "13e20a6380472c1b1fbddc2536ff17d090f14ea8fd65ff506f49cc2f27cbd96b",
+      "text_sha256": "e298bf475f2ae6d75537c983d24e4341107e13ec7d5a0fba4cef792da6e4851c",
+      "variants": 3
+    },
+    {
+      "index": 139,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_890624a05480bf2e08db.png",
+      "crop_sha256": "82f68758d2942696293efe46ce0123d83eace902590d7804792a6a63aff5eff7",
+      "text_sha256": "6ec097c0517e18a2ec62fc094d1a6772b57ce6c292e60cd0c0ee4699e0cff915",
+      "variants": 3
+    },
+    {
+      "index": 140,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_a3a0205408a3fea1f786.png",
+      "crop_sha256": "afafadcb896e5abc6d8fd2e298dd588e2a0fead6c6d408a8067396a15b5300b0",
+      "text_sha256": "7abb3a62b0e8ffb346676165ce9d996a38c54d5a6d6dcc1cb47af869701b0730",
+      "variants": 3
+    },
+    {
+      "index": 141,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_5723e80c153c302c8091.png",
+      "crop_sha256": "a288d22b820f0e22bfa4156f7aac0be01acaf2566c943062f0b3d47246169cca",
+      "text_sha256": "db3033a1ce53370977c805daaaa29da0b063cc542d605d4d0cf11c7291abef2f",
+      "variants": 3
+    },
+    {
+      "index": 142,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_442b10a206a5d2d4fe74.png",
+      "crop_sha256": "313048132e98122377fdefea28ebee0b66f1d208f08a1a57ec6525e23b3f3ab8",
+      "text_sha256": "173dfb2777df357aa57e163fcfba1c61d3f3c404cdf4a936409a241934784cc1",
+      "variants": 3
+    },
+    {
+      "index": 143,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_12c73fd3538e8098e174.png",
+      "crop_sha256": "6e86781c24a66437b6562fb721589b6eaa77b115c2df85422dedfa29db29a5e5",
+      "text_sha256": "533640527d22ea61eb086bc4e1e7d2fb98db1fa95033df09935e16947cc8b3ef",
+      "variants": 3
+    },
+    {
+      "index": 144,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_41e73a064c0b52251484.png",
+      "crop_sha256": "55fdbafb49b409d797b38851ee7531bfd0c006421754d37bb9220a830ccfb24d",
+      "text_sha256": "4164867711a029bd151db76e960cd9a0765580c90c798af5cd228159acdc98c6",
+      "variants": 3
+    },
+    {
+      "index": 145,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_c8301523d5c872465d20.png",
+      "crop_sha256": "0024d8ab9fca998f1bff1e222abb6ed155a228025afbc69c3cb1b597e5dd2c72",
+      "text_sha256": "4e47acbafdb91f6a5d29b75c1d0d3f1d6736067ab667825134163abc215f77dc",
+      "variants": 3
+    },
+    {
+      "index": 146,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_f20eff0ea7c52bc658e7.png",
+      "crop_sha256": "faef049fe4da879a5b4966ed2ebfadfad93bc335bb7dfefef89fd360585ba955",
+      "text_sha256": "a8a117772eda7537c080dd4c8b7783bf0c2cff06c02d84882c7f84efd88890ee",
+      "variants": 3
+    },
+    {
+      "index": 147,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/271v/l_c7b7d195968b73db3502.png",
+      "crop_sha256": "b8556ba9dc0cc3c1b91d52b97157f2cb64d6d4cd812d5b972ce0c4b5a776363d",
+      "text_sha256": "5369319a0521c8e6a068bcc43666a4fefb39ab922fc6a51583da55d8b20f6a1a",
+      "variants": 3
+    },
+    {
+      "index": 148,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_1184279d5c9e2e765972.png",
+      "crop_sha256": "9827ddce260930db7f8900b2471b5817d4ab162f607c7ba5624417cc95639e8d",
+      "text_sha256": "9749c544168dfb2d7f9b76bf296e0d76edd15ccc52ff92957ec282a398d66480",
+      "variants": 3
+    },
+    {
+      "index": 149,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_0bb1cd1b09d0081633a0.png",
+      "crop_sha256": "a8c65d892b427f967e57388a23cc39a0893d272b77c4a0b86ac8d205c090323a",
+      "text_sha256": "24073b9c03827722df14127391747a25675bbc81af335e6a07b0203483943e85",
+      "variants": 3
+    },
+    {
+      "index": 150,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_7e1567aa54d0af3ccf61.png",
+      "crop_sha256": "6ca764a62a7427673e7f724d99190591447d3addad5711c59caaeeb758bc9541",
+      "text_sha256": "1cc681bd27cf606c929049d57ab8070d8db80c59fda6cfae3fe04289f442b4b5",
+      "variants": 3
+    },
+    {
+      "index": 151,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_2f9734b8052472499629.png",
+      "crop_sha256": "2aa2322536f7bd87ba746f393df1172257d21510c937832bfaec1a6e80df0bdc",
+      "text_sha256": "cab32b58e7707ef41e6fcea39fabfda6219490632d265b3d5c4dfac3a3e7a4a1",
+      "variants": 3
+    },
+    {
+      "index": 152,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_e289a9635db436d306a2.png",
+      "crop_sha256": "231cefa0c0ff19076ef9176f9cf8416b0a8f5e545b5441bd5ae2a5666a97f366",
+      "text_sha256": "a0ca98db57acbe52e4a02af8eca3f86ad8020e9f8f047720e3f1198698af7dd2",
+      "variants": 3
+    },
+    {
+      "index": 153,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_f75233c31c3eac894e24.png",
+      "crop_sha256": "572aa7584b3dbb252b45fc28cefc94e7c2ff7d8c8b4cd1a577046341a579bdc1",
+      "text_sha256": "ea80fc32464f445930a88efe37d7f41ca4ec21174fad984e871d0633194e5d34",
+      "variants": 3
+    },
+    {
+      "index": 154,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_9c940dd4ec5056d90f3c.png",
+      "crop_sha256": "14fbe7b5afef9f3ed2162c35f2de1ca1210789c9fab2fe71c65a923c0f1c2635",
+      "text_sha256": "a968028238152c8477a84bba95340de70bbf61abd1dc50cfa88b42b1ae465a44",
+      "variants": 3
+    },
+    {
+      "index": 155,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_692419561e3bca0da1af.png",
+      "crop_sha256": "03da1f9220cefccf318c367eebe0512229f49f3ef66e1b229d0414a69044eb94",
+      "text_sha256": "f0091d05d8d25a3dbddf8d49dadbc830bcba148cf4981acfbc5405a52c98542a",
+      "variants": 3
+    },
+    {
+      "index": 156,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_b61f5eee87a3243fad26.png",
+      "crop_sha256": "548d398fb9b604e80ff2d49a0e10b48347bcf430f7de723faaec46272840a6b6",
+      "text_sha256": "18f7c7f0771a1aa80bd3a3f601d2bb36fd59ca9a7301d20fdcd781684f1619bb",
+      "variants": 3
+    },
+    {
+      "index": 157,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_60eca59ba74443ffb5c4.png",
+      "crop_sha256": "0939a86796b69cd8c9bceca23d62aa997b245c8a78a08c4ed35dcb94655c4fce",
+      "text_sha256": "0f144ca54190caa743c21ffd806341012b9b0e8ecb5969bc7fdf25f2e2ceb35f",
+      "variants": 3
+    },
+    {
+      "index": 158,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_d392f0686cb1c19a5981.png",
+      "crop_sha256": "52dc65928a73771498df1afe734c358b3cdac97f2651e253324c442336091ed0",
+      "text_sha256": "0f10d260e82d49cf25f46e7af04a5fdd80880f82aa2de1175739e4eb44e00f1b",
+      "variants": 3
+    },
+    {
+      "index": 159,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_ec7ace6915235fbf78c8.png",
+      "crop_sha256": "41c96379e29d09edcfdc16194158cd46190a84db9ab2ccb814587ec5f83b08a6",
+      "text_sha256": "6f5cb729ba8efa2684e2c3af247a4225fa6ff910d99ab0f90db008d2aa61b5db",
+      "variants": 3
+    },
+    {
+      "index": 160,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272r/l_d11f6c9e0c0fb96bd864.png",
+      "crop_sha256": "fb1578f6ca899820b7d0b40b603b7272056b58df632570ea28999224d19f324b",
+      "text_sha256": "6a3851f62857f0e573bd5d59235c5c8e8c2eea915804627ee7f18ae86b43c1bf",
+      "variants": 3
+    },
+    {
+      "index": 161,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_13ee47281d9b1ac58c33.png",
+      "crop_sha256": "f6750de6152c037ea81f76a243a9038134a593718af9a5c22708e5be26468b3f",
+      "text_sha256": "ba947c2e9eba9d14ae72b94c73bbbb017525bd911973f95bf31c417af64bff41",
+      "variants": 3
+    },
+    {
+      "index": 162,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_523a968e789e503286bd.png",
+      "crop_sha256": "3904c8790c01a5d1cc8966892d141e686858a7055f88e6fb137439323f712905",
+      "text_sha256": "2e0a0fb1d5f2f5a491fa3477b116fe2c88a8ba48498589fa27ba77045aea280d",
+      "variants": 3
+    },
+    {
+      "index": 163,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_649421a3d03e505de496.png",
+      "crop_sha256": "398c9776b895634fb6437ab12d49099d941392956c6d99ae45da1ea8024e01c6",
+      "text_sha256": "e981ca168ef359612f1f37e3006206fa407b612c08fc582e0892cdf20adec025",
+      "variants": 3
+    },
+    {
+      "index": 164,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_f2f154c7b4d833189382.png",
+      "crop_sha256": "1ba3cd854106dffb082520296039abe0067bc0b78f59f11a40e5ef7b4d0c9bad",
+      "text_sha256": "99c9230b8342e40a7146613c183e036787caa0c950a486c54742c796873048e6",
+      "variants": 3
+    },
+    {
+      "index": 165,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_1bd51d3b39fdd5cd0dd3.png",
+      "crop_sha256": "180a7fe22b75e2dd1f67cba71094d73ba1a179d22a6e8c038580dee080128418",
+      "text_sha256": "dd547293649aceb4c246fe130a56ccdea858f4dafbaaf46147540b4a07f5d330",
+      "variants": 3
+    },
+    {
+      "index": 166,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_87f3ba6b22c7ddb6db76.png",
+      "crop_sha256": "cd9a513322b9908ee7bc3e95bb87fff2bdef1a9a0d0899c6681c2bacef33acc3",
+      "text_sha256": "6d133b81705358102c10c2c8d328231bfeaf5b20eead801815f929c20309204f",
+      "variants": 3
+    },
+    {
+      "index": 167,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_e1c42384c1c1427c498e.png",
+      "crop_sha256": "0ba549f776072ef5b3848b6daa10ea442ab1c73c5bff95f171e679ee75f8dcf1",
+      "text_sha256": "a937956a2e3098a526c8bf9cdf276ec14897ae7a27d2269bad707e1405cd8181",
+      "variants": 3
+    },
+    {
+      "index": 168,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_5cabe5ac45d3aba962e2.png",
+      "crop_sha256": "302c72f072580df5261faf66bdb798ceb562bf80632618c4d4a1b9a80bdaf735",
+      "text_sha256": "03d5f14a91ff2c7f601ffbbf3611304661a4118512c38bba28c565ec8dff6e23",
+      "variants": 3
+    },
+    {
+      "index": 169,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/272v/l_90ddaac4656f1f23bb75.png",
+      "crop_sha256": "cbdde50435be13f0844b958f6a6b2f2e4a7cee8ec0bf1572d55be16794a1b6e0",
+      "text_sha256": "3a353c19b6411db96373f09256d43ad70f12b4a128589b6607f7f32e35326728",
+      "variants": 3
+    },
+    {
+      "index": 170,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_ddfbee677c15dcfc54dd.png",
+      "crop_sha256": "edc41d33ec104b7ca1acf8e31594c20bcfd1d3378126d67c0b52bdb431e87b7e",
+      "text_sha256": "7eac2abe5c0d2e462ef73efc7e02944772ed74c2843bf225a0b222c740292a3e",
+      "variants": 3
+    },
+    {
+      "index": 171,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_c16786aae5c502df7bcf.png",
+      "crop_sha256": "359151c2d1791da2f963567734c08a501d1130ab59379823027451cd5e0b68d8",
+      "text_sha256": "c4762c9e7b6bb373c5ac540f285ae35c527e450786fb8bd62bfce425a1c798c5",
+      "variants": 3
+    },
+    {
+      "index": 172,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_edf434cbf6a7468fdf8b.png",
+      "crop_sha256": "2f333e73b51110f919255a998ed9800a33cb3cb99e4e4aa3d195c236561d6896",
+      "text_sha256": "ee6f2d6e47b4ce774e1b58c64c746df7402ce2423c946a9355d9b5bd3eefa047",
+      "variants": 3
+    },
+    {
+      "index": 173,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_eb6925c236bc6c556e6e.png",
+      "crop_sha256": "ccae2a6c61cc9f3e157e6992062bb9c919675de70816c86cf277249586b24fc9",
+      "text_sha256": "0400402b3e9bcbfe17eee4ec1ba6a732e1e4519ae9e9bfb7735d1ae2709be9f4",
+      "variants": 3
+    },
+    {
+      "index": 174,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "edition_aligned_paleographic",
+      "crop_image": "output/fase1_blla_ppocrv6_traslado_20261105/273r/l_87263ea56f735a289957.png",
+      "crop_sha256": "1e946d3847ae1d83dedf11fa2c6edece4966f2fda3e9fa4274b929cccbe74382",
+      "text_sha256": "3d15d763b9a4eb57cf319f7df760cb85530eae58d8a8179bb91e3423cc9ee6d9",
+      "variants": 3
+    },
+    {
+      "index": 175,
+      "document_id": "sessao_1795",
+      "split": "validation",
+      "label_source": "human_diplomatic",
+      "crop_image": "data/workspace/curation_sessao_1795/crops/20261028T180723_c80a33f8/l_46885e82a1448e83690e.png",
+      "crop_sha256": "0ad8bfc4c5d60d45113e990e2ed61ff7b22c9463398a216e3db6026146fb5d02",
+      "text_sha256": "649a9f4bdc595d6856beceaba48998e7322a16da8ec35a8c4bc3e168bbd95c8b",
+      "variants": 1
+    },
+    {
+      "index": 176,
+      "document_id": "sessao_1795",
+      "split": "validation",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_b8a06d58bd7cced4f3a2.png",
+      "crop_sha256": "43f95998e00abb5811307921795e20d80e986251c00d0a8008e6b60c63f936dd",
+      "text_sha256": "d2f96dee954408a5e85f7d31a6c565d6d28fb59b9817e1a10fcf7f18bfcee8b2",
+      "variants": 1
+    },
+    {
+      "index": 177,
+      "document_id": "sessao_1795",
+      "split": "validation",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_4882de66b18aa948f2a4.png",
+      "crop_sha256": "711df1e41d53b3a56e569e3524654ddee21a15773b70af3fa2083698a6bd8638",
+      "text_sha256": "9e42b37fec56e9a1358d4c00be94e7f73a98c049f84e005f7435140f33bcd319",
+      "variants": 1
+    },
+    {
+      "index": 178,
+      "document_id": "sessao_1795",
+      "split": "validation",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_98962db568a2f74aab38.png",
+      "crop_sha256": "c1f69b1194d1d355cfb9324d34abcb6035959a6f8c73ec46a63982b5f9923892",
+      "text_sha256": "fc68622b2d58db9f51c94946fdc98cd40646b9d8515e3a7dc9e14666c728513c",
+      "variants": 1
+    },
+    {
+      "index": 179,
+      "document_id": "sessao_1795",
+      "split": "validation",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_27cb89d5763a6e64c484.png",
+      "crop_sha256": "7dd177110e9160aaaabbdd05a5ebac536c774779cf3c6aeec18704e7e365cabd",
+      "text_sha256": "8fcba0f43f5682a2f485da553628606d9378dea79355b81687632e687f6a3056",
+      "variants": 1
+    },
+    {
+      "index": 180,
+      "document_id": "sessao_1795",
+      "split": "validation",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_6077eea6d3ac418348ec.png",
+      "crop_sha256": "c2384cecb1381bf5d7b64608879d5b318310ae9f78a946ab25733c203708df17",
+      "text_sha256": "10050028a2a76411bfe27a2a6d693af721d50804eb78da8b6e68497e17e7fad3",
+      "variants": 1
+    },
+    {
+      "index": 181,
+      "document_id": "sessao_1795",
+      "split": "validation",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/dataset_expansion_20261023/curation_sessao_1795_bloco01/l_40d2333b12328973de24.png",
+      "crop_sha256": "7536043f5561f3ce3c96bae54b69b7d095bb69e5c926f31d1b14ceb4ee374199",
+      "text_sha256": "27c731f19f97e79cd862f57f173bf707a4c49509e851af7c0e8ab992874c579d",
+      "variants": 1
+    },
+    {
+      "index": 182,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_01.png",
+      "crop_sha256": "bf9bfd65b70bf59001d33860ca032c9c10d64ae85eefb986fa562d5a0e052385",
+      "text_sha256": "b8f7b1e986bc6dba5dce51f9396748291e6c9da043c31f688624aabdef7b52d3",
+      "variants": 3
+    },
+    {
+      "index": 183,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_02.png",
+      "crop_sha256": "61f934eaba26e141ef19387c44c48b5fdc8266c4e942ce5b736e934507ba23b4",
+      "text_sha256": "5110501822d7c843b8fa1969a5943d56a2e405f74f5d7f8b2d2d037864a67b5e",
+      "variants": 3
+    },
+    {
+      "index": 184,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_03.png",
+      "crop_sha256": "9394efae96505f40e5745967fa96c84d00d13e3bb2f32e299b90aaf1de10fb45",
+      "text_sha256": "d0246d2909d5124643d9f144bc24f178616789b557915f2296f86b5804aa4972",
+      "variants": 3
+    },
+    {
+      "index": 185,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_04.png",
+      "crop_sha256": "8cdfd498804d6a2bb509039ace9691ba5379a40a7948268792a6bd41a51b9c7f",
+      "text_sha256": "43a31afdecdd0994e2a2d5ce188d786407839ccd1f90a916cf6b4dcfd89190fb",
+      "variants": 3
+    },
+    {
+      "index": 186,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/revisao_humana/traslado_269r/images/linhas/linha_05.png",
+      "crop_sha256": "e0f8716dc4eb2fbfcc30476ca674753be551459c87d763cf83f5b91b0051e3d4",
+      "text_sha256": "5c7bac3b7a3113751ad8d0676980ad12be3068bb0339a5957f35939ee565a098",
+      "variants": 3
+    },
+    {
+      "index": 187,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_78df4fbf307720b1c60f.png",
+      "crop_sha256": "29fa8cd43ae105f1369e45d692f786a3ded0e0ee5142dad3d09c2d4f592431cf",
+      "text_sha256": "ae349306f10cb6d67e5c0e7b43eec8a732ec83397e3156068eafba0a377fc715",
+      "variants": 3
+    },
+    {
+      "index": 188,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_e1732d5cda17352c8f01.png",
+      "crop_sha256": "ffbc967bc6840c23a079a5288f6f5479f47f3b738974c37fc33d5105388347de",
+      "text_sha256": "63a9ee34efb5a73989111801c3c57827a1859ee8b4c652434a7a16a752d2f2ca",
+      "variants": 3
+    },
+    {
+      "index": 189,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_c84c4b48757eaa2ebd30.png",
+      "crop_sha256": "4ad7677eb60239b3790b5731df76e2e724e17deb807c0e75269e510b0651bb1c",
+      "text_sha256": "2fbb5150b7338b289a63f18d29cc349d9c64b25f0686f5b9d2719ea8c3b58d60",
+      "variants": 3
+    },
+    {
+      "index": 190,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_37060d08eb8ed4580154.png",
+      "crop_sha256": "303c5d244fee3866eae24e1f3dfca78f8d3d152bdeb42ff6d338748aa9998374",
+      "text_sha256": "e8df9b901c9f726f3ff79024ab83470fdc1e3ffcc1ddff99ef9e958a7f76a618",
+      "variants": 3
+    },
+    {
+      "index": 191,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "data/workspace_traslado_269r/preparacao_06_10/l_400d9ff8f70ad49591e0.png",
+      "crop_sha256": "7d0f697452cee9200f1c8bda3cc25b274d64bd83ea85759e089978b9b19b5f42",
+      "text_sha256": "d58510751f9b124adf57a3b3fe6f52e60366cc950b4a4d5a8d27fc808eba1595",
+      "variants": 3
+    },
+    {
+      "index": 192,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "data/workspace_traslado_269r/preparacao_11_15/l_9bf3fc735495610596ca.png",
+      "crop_sha256": "4476803a43d67ea731596b0c4fce67d21a20720069d1c2b1e4b09155d5330e6b",
+      "text_sha256": "1069cbfac4f0198d9f9d01d862d391b91367cf7325b835d76a1a559e98df9b2d",
+      "variants": 3
+    },
+    {
+      "index": 193,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "data/workspace_traslado_269r/preparacao_11_15/l_b26c97ac60108324fe92.png",
+      "crop_sha256": "063ddba7dac683f584de8178d8ecc2ef0924008a6cfb3c8d2aadee8ce80ea907",
+      "text_sha256": "222a3c9db804ff7dc89689a87d6197a077216433472951e4b91bd4b1526fbf58",
+      "variants": 3
+    },
+    {
+      "index": 194,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "data/workspace_traslado_269r/preparacao_11_15/l_49690c30e489edcf5e4d.png",
+      "crop_sha256": "00c527011142bfb7ac35bde1071f243911779a1efe5093ed30d2a2e5ff94f6cd",
+      "text_sha256": "fe3f5ded311ae64d4c97ce91a5b28f12a15b6ae2b943d4352a4ddcbdb4981aa2",
+      "variants": 3
+    },
+    {
+      "index": 195,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_18.png",
+      "crop_sha256": "9ead424cb0f99293db5d27a7b9183690248875be4d537aee24a987907d40c953",
+      "text_sha256": "2fe46c9313471a34c6e31b55b670ea1a788054ce1a9f47521776f0b4f861b467",
+      "variants": 3
+    },
+    {
+      "index": 196,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_21.png",
+      "crop_sha256": "071dfacacd3ae5920b5e33369cacdb598c1000dd90850b0afea627215afa0a5c",
+      "text_sha256": "fd7286d7704bd86ac809a61a38440c87baa781bb66401a71eb6ab50912b0ddab",
+      "variants": 3
+    },
+    {
+      "index": 197,
+      "document_id": "tt_pbr_0004_026_traslado_1767",
+      "split": "train",
+      "label_source": "human_diplomatic",
+      "crop_image": "docs/revisao_humana/traslado_269r/referencia_assistida_20261020/recortes/linha_22.png",
+      "crop_sha256": "9306627894eff7591b6bd27e53799aa1069c42aeb076640e240a5030db03117a",
+      "text_sha256": "ea1d7a9ef52f4b2d786ba3e85e4029c4141d16c67fb3f907b5138040a92711b4",
+      "variants": 3
+    },
+    {
+      "index": 198,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_f1f37daa36362d3c162c.png",
+      "crop_sha256": "0e73e36674b6ba1cf6de1d481977a9c0b9d627146760953dca8984a4a3d14e64",
+      "text_sha256": "be4214f4548dd866cd3dfae8318832d691dbbe989fee6faab4b8c514e9bffd37",
+      "variants": 2
+    },
+    {
+      "index": 199,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_5691f912a952ccc2f5d5.png",
+      "crop_sha256": "9504e5df4fd9253e71ab463a23537be200febf83962ed753b7518fc523980885",
+      "text_sha256": "ad57366865126e55649ecb23ae1d48887544976efea46a48eb5d85a6eeb4d306",
+      "variants": 2
+    },
+    {
+      "index": 200,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_68533437ceaf63895b95.png",
+      "crop_sha256": "ebe31ad5d6f714258444719aa980f5a0236f7259f53002e1270d470b6c410ee6",
+      "text_sha256": "d0977ff1b0f3840b5d74f9665d8301ff6a35a8b909a70fc8f468cbc9bf02011c",
+      "variants": 2
+    },
+    {
+      "index": 201,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_e42719d75afae9892130.png",
+      "crop_sha256": "d753fa8f230abfdd9c0a3adad110d00247e556c062de2eab18c999ce308e5c54",
+      "text_sha256": "53042376118450130bb502147b1958270d1af0ab923d913ce586f7db30caf23c",
+      "variants": 2
+    },
+    {
+      "index": 202,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_20261e02c962a0b97fbf.png",
+      "crop_sha256": "e7c35f7560caec8ede3f5ff8391498f76cf674c6be3165c0a022551ee81cc972",
+      "text_sha256": "0fe51f67a54d824ba0d1e722fcd2f35eede1ca1a8b5c0966cfb28e195da58f25",
+      "variants": 2
+    },
+    {
+      "index": 203,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_452b1b017ef2b94d2060.png",
+      "crop_sha256": "ceeac88bb582c96944f88f5e87a89cfc21568232abaf9b981b8e4d9fc9694b80",
+      "text_sha256": "8267ca258ad4a99f3172d8429b11ff7db46980e69f0bcc4a69ed75a45082b0f0",
+      "variants": 2
+    },
+    {
+      "index": 204,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_6a8b5e31ba53e0ddf6b1.png",
+      "crop_sha256": "6a078ce993f1dc96a8f4c804d54fd56669e46027c0260dfdd599a6ded96ea6cd",
+      "text_sha256": "53f60ba034b350fd7e0b40bfb32ddadce7c5e83a7ed4216729bff5d747c6475e",
+      "variants": 2
+    },
+    {
+      "index": 205,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_c1568d633b7815f636b6.png",
+      "crop_sha256": "88f2b58a9d0900b61cb836feda8ec8842bbd19077b0986eb0b9d7276fe4601b8",
+      "text_sha256": "c65a7167d547562a31a8a341e5f2c75b6ac22ea032153b7eeae49bad9bfdef65",
+      "variants": 2
+    },
+    {
+      "index": 206,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_aad7be1e8c7da9f8e30f.png",
+      "crop_sha256": "4c2ffb2041131ceeac93a142778a2e94d12cbf049cc53b4624cffd9d74702ad0",
+      "text_sha256": "61ed1bd6a8606b1d0d137d6843e6b8d5943ce7333a18501ca10ef71cbf5c0c90",
+      "variants": 2
+    },
+    {
+      "index": 207,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_210aa8c19697ee4874aa.png",
+      "crop_sha256": "cae92370fce68f71ce46b9287195a20eba3f763fc8546510aa8115836cd85a10",
+      "text_sha256": "88bca37857b1f027aa134d608c27d3a2e6359db0a0e1b945fdb15bd5236f74a5",
+      "variants": 2
+    },
+    {
+      "index": 208,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_587a55ac888cf60dcc60.png",
+      "crop_sha256": "fcd270d20482f9d581b86ed5af55adf5e9de399b71d1e9c9f0c32f01e055676a",
+      "text_sha256": "2ededde8724c8eabfd173f5a7bc915524072e01a2e3ce7560501bae33e52ff2a",
+      "variants": 2
+    },
+    {
+      "index": 209,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_37549330e2eede5234c0.png",
+      "crop_sha256": "19b75606807e64b427d71afe6f89f598e4fe200d3b756fff0bad9c53bf8eac43",
+      "text_sha256": "c5e23d0f02336943aaf9cc2b0082c2ce384dc21f0b124c824c768f0aacc65fe2",
+      "variants": 2
+    },
+    {
+      "index": 210,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_d40666e79dd8defc7a04.png",
+      "crop_sha256": "2cd3bce4b680e09d66c5f1e49329d8874f23df77797ae44012263b68c1aa51e8",
+      "text_sha256": "9a2fba6790907edd5eb3b1404e89c196036583d18ac6ae070690d5e06494bcc5",
+      "variants": 2
+    },
+    {
+      "index": 211,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_43395340ea6bcaa234f0.png",
+      "crop_sha256": "2656f571c02f61bde675fba40597aaa9c3814e5c44704be7ea9532b7524d176c",
+      "text_sha256": "85b3c92d153fd401e25617186c6355820e5db4434ca1141da4369a77c1195935",
+      "variants": 2
+    },
+    {
+      "index": 212,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_c9fe8445eb5848054ba3.png",
+      "crop_sha256": "dfb71de7bf2015c52e723711f7e143857f90d1571b944230c144e89f348ace91",
+      "text_sha256": "0ef7b4771259f007ab48e403bd9aa64396fc94022c1126a64dc1466d5df20950",
+      "variants": 2
+    },
+    {
+      "index": 213,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_15f988d8d8294d5395a2.png",
+      "crop_sha256": "df750b0963790f411ee20703b243d40ea97796244df787a7181251b1cdaa353e",
+      "text_sha256": "8e26667076941b9e71a8cabdee021ccf714399448e96c3b49af69663194b3bd8",
+      "variants": 2
+    },
+    {
+      "index": 214,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_7908e74f51e4ecb2c731.png",
+      "crop_sha256": "a0c581673bc4f5387166a9330fa1d1977bc2e0b8fc6858063b927e3adde60033",
+      "text_sha256": "c29f276a16cc7c0ec9ca7b5a25f8c1897d85407b20323981777553e09c3de9a0",
+      "variants": 2
+    },
+    {
+      "index": 215,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_2bef1ea712ad7819443e.png",
+      "crop_sha256": "0f199201400e685acb90936f70f77c3038c0d956f550756a5f8b2fdf088c1e9c",
+      "text_sha256": "c065943739a0210644d7c85dd4826a689e708a723865b38a77d23fa502accaf1",
+      "variants": 2
+    },
+    {
+      "index": 216,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_e7a2f2d8fa3d41ebf3ce.png",
+      "crop_sha256": "b6458c79e7b83c45e6ea726d155e0081ceeab61bd94d78f48cafeb44722e5600",
+      "text_sha256": "6c5beb94f85e3a291ce0002f280bb937c7c27760b674486aff557892f3a0d1da",
+      "variants": 2
+    },
+    {
+      "index": 217,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_f6ee31d112b77f275d41.png",
+      "crop_sha256": "53664b746dd940d86574474f2ec8eb1475e607203f295b25287c42c48c78e14b",
+      "text_sha256": "0cf3c6f9dc80126d100840b991311cab79871ebe9dfe138d30bbdab1161df434",
+      "variants": 2
+    },
+    {
+      "index": 218,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_ec36d64de840c57ac414.png",
+      "crop_sha256": "0e2bb347af998ccd1a07e2109457ebd079e19869b1fe9c0bfca849cf8952a59a",
+      "text_sha256": "d4429b66b16ecefc54cd026498531d947b2bbcb5a395a76b13f2f865fef5d43a",
+      "variants": 2
+    },
+    {
+      "index": 219,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_1e2a5bb3be305b3dcd5c.png",
+      "crop_sha256": "33ada891820f6be6b978a0809ea6450a24b2daf31ebfdaac025ebe3cc690376a",
+      "text_sha256": "270b28f606f33fa45e4e4c77776cef7420cc3d304c4da914a82e70b8110d239a",
+      "variants": 2
+    },
+    {
+      "index": 220,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_87b47557789d15945949.png",
+      "crop_sha256": "0b243ef7fa6ec8f178836d7f9ccdbb4c4329dc43102c282b5060ba5ef91665f9",
+      "text_sha256": "1f29af62275b86acfb9b51fb287ae080d6135b75bc180d2967c00b0eede36147",
+      "variants": 2
+    },
+    {
+      "index": 221,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_fd8584ea3f6277bda003.png",
+      "crop_sha256": "521b0fe3675b7b3e64814b74211ef574a038a12af053cfa2e011570e30a6d698",
+      "text_sha256": "b3248d9b1ab1a464c380a1c9025c5b6edd2766a6d0c1019c246542d5de74a55d",
+      "variants": 2
+    },
+    {
+      "index": 222,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_4702a6ec53a5a25aeca9.png",
+      "crop_sha256": "944a1b6cf503dd8de526af6eb91ffc0639a6b07266463177218e63af34a3ea0f",
+      "text_sha256": "5489a9e2b702d6be1e6377588307a21f7f18d981d9c893917292a245c2b53481",
+      "variants": 2
+    },
+    {
+      "index": 223,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_8f275facbda3e74a9ea4.png",
+      "crop_sha256": "0f4f5a628bbe22620a59ee66c04011b128e25a3b1dbf878ee393bf3fee4f3094",
+      "text_sha256": "2d4056c88e5850104905589b375b165f37ead0db121ce9a24f8295346626b68f",
+      "variants": 2
+    },
+    {
+      "index": 224,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_eec1224e3883d0fd6ab3.png",
+      "crop_sha256": "54fd59de1912429eaebbaadb5951f8fe57d3ddb6ac350a93694474d8ff1e12bf",
+      "text_sha256": "383735ab180800f545cc794e21fca80c8af0d22042e42c7c3e3ca529f8841184",
+      "variants": 2
+    },
+    {
+      "index": 225,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_f9f05e4ba29787e0f21f.png",
+      "crop_sha256": "3af7c0e1f2ac2485b695987796e043c9415c91919e42ac4099797b36087743dd",
+      "text_sha256": "571547306e5effc18feffd710dc3aa9fda7311f7461afbf73d368681276dd27a",
+      "variants": 2
+    },
+    {
+      "index": 226,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_b3962f6404e4b3d50ed1.png",
+      "crop_sha256": "b3155480bd13051549728a409be677d36e37e4281b7eb6e9cb06b83e1b396a6d",
+      "text_sha256": "6913ab9d25ae82a374cd3a6b0ca851e1fabdb3cb54099a990280b81676b40e92",
+      "variants": 2
+    },
+    {
+      "index": 227,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_7e04784b2fe1d6f019b2.png",
+      "crop_sha256": "fb16682d5fcc14a5f8b775d36f4e93c68d20d73cccabba73568294f8ab6bde54",
+      "text_sha256": "48095f8138888c675b51a7b20629011d72bef93c3ce991dc1eea83eefb08a9d8",
+      "variants": 2
+    },
+    {
+      "index": 228,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_0985c55572589e499664.png",
+      "crop_sha256": "36d6cc82ed35441e86fb3c1b8bfe5d738f9e653afe2f7d4cde02337766d519f2",
+      "text_sha256": "db07bd4560aecf94c9c141e2c3ca25faf6302b64ea32465afa5a55f5dcae2994",
+      "variants": 2
+    },
+    {
+      "index": 229,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_97c78db5bcba494ff9d3.png",
+      "crop_sha256": "2a4312d3f13a1a58b42e8b429a8341218d0874bb40513a32d3696b066c4bf5bd",
+      "text_sha256": "f86adda2e4c0ca6f69b3282368ea970ce0e19d55125f2d633613cbf83a801f0c",
+      "variants": 2
+    },
+    {
+      "index": 230,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_24b0dc8c84d81680a67d.png",
+      "crop_sha256": "437e7e86d3a56f1e0b903f0096c9b4674eec603d73e28571ab250a7981251033",
+      "text_sha256": "5094ee6314726e32e8d66660c9ae645f8bbd043d7c26cc076bfcf46e53de2db9",
+      "variants": 2
+    },
+    {
+      "index": 231,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_9f132cf1ea3c23e05c2a.png",
+      "crop_sha256": "34fca402542d3e07b84696210278a6d366380ab53a4dd30601dfe28eee59efdf",
+      "text_sha256": "6849415c2a8b09664c22936f09f433132029db0799cd2d88f12684a9e5d602af",
+      "variants": 2
+    },
+    {
+      "index": 232,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_fdd46a5f6ee4bc2927a4.png",
+      "crop_sha256": "73a319d3ae3b42bb3fcb84c5b7462286e302411422c4cfa961e2542e84abd479",
+      "text_sha256": "07b2fd159cbb615276b9f4449000d7b17fcf366844a746c51b8a64b30764bd31",
+      "variants": 2
+    },
+    {
+      "index": 233,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_ca3b37e4acf963da2c77.png",
+      "crop_sha256": "2edee8b818a465ee2bd2dc9b38147930c70a37a5a05001526e9e1d6a104577e0",
+      "text_sha256": "27dc0d498f0c78144d0c974bd65bc1f68ff445a939542da66af16570429bf278",
+      "variants": 2
+    },
+    {
+      "index": 234,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_3ed3c556f5ac3fd8d8b3.png",
+      "crop_sha256": "f503051f1202e63b2219855e0ac2e87dce690a2800a7ee8219dab640eda6da9c",
+      "text_sha256": "cc8d18fe7e5b0073eb529a859a42282c53311948c1b7c9c6dda8b7248922521b",
+      "variants": 2
+    },
+    {
+      "index": 235,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_d855e74c70447d5faaae.png",
+      "crop_sha256": "37529c18aff733b1db747650c075c841510b5921425d9d09b4d678b6e6c9b86d",
+      "text_sha256": "a2013ca2919241c43b31addcba0462e2b87d9beccace251301e593ed1dcba81a",
+      "variants": 2
+    },
+    {
+      "index": 236,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_29add4b64c4a028df4f0.png",
+      "crop_sha256": "37ba5fedd47c19016cf7a4c18a4c77851cff4a031e4a9e49f0a22395384384fc",
+      "text_sha256": "49e84452e564f42e7ce3ffaf8a6d5b8cf2fb1301d53245a86f3459716ee472cc",
+      "variants": 2
+    },
+    {
+      "index": 237,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_080811d259f7e6e707e1.png",
+      "crop_sha256": "a39e16bc4e7faebaab3bd6e2f2ecd680f2c7e2a52b1b2bf95ffccd0642ad62e9",
+      "text_sha256": "075956812e8729ab1acb614b01b073926fb73db42263b0c8d52cb7198d540d65",
+      "variants": 2
+    },
+    {
+      "index": 238,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_2e7c45b9c37843f34a8f.png",
+      "crop_sha256": "5b26d3c77250cab44acb3ec49512fe2861a8e0aa2804a300f16a3b1e964079e4",
+      "text_sha256": "aea358b2bdd334012878899b0de0a511e5f7b0da16508ff852757589d0bf93ab",
+      "variants": 2
+    },
+    {
+      "index": 239,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_22fd3778b56834e884bb.png",
+      "crop_sha256": "50fd1f6f502f129683c5f3494995e2f2aac1697b3b45e8365eadced1e8f070c2",
+      "text_sha256": "2ab570392995b03f92e4b87b5408e3144cfcc53315729d86c3a681bdf9f50f0a",
+      "variants": 2
+    },
+    {
+      "index": 240,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_eeca0dd63cb266cc653b.png",
+      "crop_sha256": "ce7d12c25ef7dc88cc5168253a02e2fed7a02aa271e088c5c6507c474964e045",
+      "text_sha256": "5d6a6e7b6be96bc53f85fcb704c1786e4d9d4e472afd553d7cef93a4708b4a69",
+      "variants": 2
+    },
+    {
+      "index": 241,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_55803c8f84f2170a09a2.png",
+      "crop_sha256": "e1f87c035b7624602ade9c4021aa3893ec449da2d1f2ec1da67a56a13684305c",
+      "text_sha256": "1b8b0b67666954865547a7dc3cc71a722dee1a1255092d9c4726afdd08e9b125",
+      "variants": 2
+    },
+    {
+      "index": 242,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_fc2b9261e45c9fb21c55.png",
+      "crop_sha256": "4a477ba6c71743b9a04a31f65cda39d940820bc76ba2ad299afe77a2ae728549",
+      "text_sha256": "484e70613b5af6ddc0fde6e9613e7c769d03983d25eaa2da4464d57dfead9b26",
+      "variants": 2
+    },
+    {
+      "index": 243,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_f209eda5c5c0b00fbeaf.png",
+      "crop_sha256": "f6fa0538ca7a70485a4c814857eebe4b44deb3ade79dfb6d43ed4ba06cdd99cf",
+      "text_sha256": "e94169931c6985e9e475900a4fc80f02f3b6f15d7f05ad5622e2d6215330d538",
+      "variants": 2
+    },
+    {
+      "index": 244,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_fe97f0f4964d9f1eddaa.png",
+      "crop_sha256": "7566bd363ca7d0b12b0c9e62b918b4b09c334fdc1c68456056f119d33d5221c6",
+      "text_sha256": "f38286d09111e08b95b140d90857e682c43a51c58ca982152bb8bb7183151267",
+      "variants": 2
+    },
+    {
+      "index": 245,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_f4b98c1c3b9d01d7f4a0.png",
+      "crop_sha256": "da61369ade1cd52c726cff7ea6a59efa79a46f1d08bd64f93468ee6ce7e9332a",
+      "text_sha256": "4e2d47fbfd6e72add49e51c0b126963e47e6251610cac524d271bf25c32a26a3",
+      "variants": 2
+    },
+    {
+      "index": 246,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_fb9c2b549a025553e329.png",
+      "crop_sha256": "8ef496873de2487ce023d2660893d3446ecb9097de16289a75c10673a721b50e",
+      "text_sha256": "437b7ef50540231417c5474c8d18b062bca9b6e79cdaf963bdb7ae81773ed603",
+      "variants": 2
+    },
+    {
+      "index": 247,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_ef23016580774e940221.png",
+      "crop_sha256": "8098c9be3a873691a3347a9ec9f5d66315053a595214fa60aa021fbebe26c3a0",
+      "text_sha256": "9b51e4cbd5b15df7da3134539b06585e0a994e0c533d9365ba1f40224db89929",
+      "variants": 2
+    },
+    {
+      "index": 248,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_907d4004f1ce855632d2.png",
+      "crop_sha256": "ec201dd522012c4357df382b213b6fd4e6d1cb5d09b35e999eb00f7b9cded274",
+      "text_sha256": "85693c48b3cf88dd65712114c17c78b976785556e98ebdbf1a9e0e0b97ea69b3",
+      "variants": 2
+    },
+    {
+      "index": 249,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_7e20c9f231b13d863597.png",
+      "crop_sha256": "904d01ffbc6d77caebdcccf8825b2a50e0b9a25d2204e8bc435930da77b4ba10",
+      "text_sha256": "b781cbcfca479331efbfb9e9ebe38e16cd23312fa7038878d3253f147b432147",
+      "variants": 2
+    },
+    {
+      "index": 250,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_1a833f36602d3dbece75.png",
+      "crop_sha256": "0bd18f0f5c959fd3dfa0ee959a42104b28f5ad95b66c7faf9cfbbbf034b376b6",
+      "text_sha256": "45e531cdc9fe18495833b3cee067b4a7d553c3e444d0e6554ff4fe3d66899359",
+      "variants": 2
+    },
+    {
+      "index": 251,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_0ce33d84ba925843e97d.png",
+      "crop_sha256": "a938a09e190786780bbbcf08baa869d15345b5915c856238870220389034af05",
+      "text_sha256": "896828f278163986e5cfe4f067321b333a03b2b44313ee5f585f7206fa73dbfd",
+      "variants": 2
+    },
+    {
+      "index": 252,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_f3f45825f05c89abf7b7.png",
+      "crop_sha256": "22c3b72826b3867b635117d7affb8ff1412e2eeb5e8b85504639cfdf4eff4bca",
+      "text_sha256": "9234e6c4845e9579f3635b15e46e0099a1e1adcdb61a18a3f7f37fcf0024ef1b",
+      "variants": 2
+    },
+    {
+      "index": 253,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_4c58710b31ef716ee57b.png",
+      "crop_sha256": "65c30ae3b9ac82582079e44a9cee8192e3aa26e9c640d2e69423b416e7801edf",
+      "text_sha256": "cd2ca7823101a8c11cf2291f4e997b9c7df8173d5bf7a4975cdf150d8cf4d321",
+      "variants": 2
+    },
+    {
+      "index": 254,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_c114fa07223cac3826cb.png",
+      "crop_sha256": "adb37658b29dcf13944547a42c3cebeaf39a1ebd79d393fd3f62b9bddd7499ad",
+      "text_sha256": "63f891cef3b6d846e50be8778a061f0ac76b66366f76c39434f090aac7956c33",
+      "variants": 2
+    },
+    {
+      "index": 255,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_2d5bea5d49cc90db4c3a.png",
+      "crop_sha256": "cf1194d80ca6357a55587602feb0596d149454e2669260f290e3282b8dc05d0f",
+      "text_sha256": "1f722a911cc79dbbc2d7bb6f415dbec9e9a2b84435438f6848eb8ab3ae2d5a06",
+      "variants": 2
+    },
+    {
+      "index": 256,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_fafd052c34ec03ae09b2.png",
+      "crop_sha256": "747031f8c07098f030efb342ad4832036421d914f481310eade8a177f4d5d816",
+      "text_sha256": "e3be7550c470794a84da339e9b4e8e3318c5ef87bc23410ce0659730c5ac2315",
+      "variants": 2
+    },
+    {
+      "index": 257,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_2cb8f353cad2f88f0402.png",
+      "crop_sha256": "293f35f0b18546d19a4d44a11a45325387dd7becd9c23fc60a7cf592cbee12b1",
+      "text_sha256": "9260070449f348ebcb7799b06790bfa13181d0cc4b03fd0f0900410fc0dbbe6a",
+      "variants": 2
+    },
+    {
+      "index": 258,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_4965e811eff183a37f25.png",
+      "crop_sha256": "6618c43d134b1b0c6bc21b9f0941fd9e7f1311e487685be37e0ef9d0bc7e9a40",
+      "text_sha256": "456c1236b2c49dcc606f1fef9e5718fc3ff062db8558f13b380ae47526406aa5",
+      "variants": 2
+    },
+    {
+      "index": 259,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_a599a5d8fdbc815d6f98.png",
+      "crop_sha256": "cd02920a954babade04242aaf49dc32b44238334f170475cc34397a655f64c52",
+      "text_sha256": "fa0f4ba01d127e10335f004042f05ea690536bd44b537981da51b47ed0b292b5",
+      "variants": 2
+    },
+    {
+      "index": 260,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "train",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_61f7a99ec57cfcc63d68.png",
+      "crop_sha256": "63001f9c170acd766cd668ac215904c647872ff4f9bf4ce308321e17acd7c83a",
+      "text_sha256": "808c4a50387061e49f1bc9b214a33166c28e7187ef0b58ecfb47f6e5cbc6afa1",
+      "variants": 2
+    },
+    {
+      "index": 261,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_35c9997a14cc282b5a5b.png",
+      "crop_sha256": "90d90e02a4e62d444446f30c6e356b2e17a05070e38c749374e7f6e843d91dcd",
+      "text_sha256": "ab197316e74b1cb83bed8ea1780b6ec55f33d33ab9c85544c562d07ceee5de54",
+      "variants": 1
+    },
+    {
+      "index": 262,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_eee3ed68592d4c6651fa.png",
+      "crop_sha256": "d39e7b1c5063b64c0c6e39de74236a15ff0ae081b8285b3657881fc2686af0c4",
+      "text_sha256": "2f828d3c9d49fe5dc468cc2f76e64c687a6b84c59b8e176ee09c63ffb34c1136",
+      "variants": 1
+    },
+    {
+      "index": 263,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_4eee78a671e753f18a15.png",
+      "crop_sha256": "434fb77b16d8be1c3be22265e68adb748a6064070a26640c29fc31aedc5b393c",
+      "text_sha256": "187fbf5ca4e0f32f79527ccd065c859f5e3b7e49aedb4cb813c51d6cdfd74c3d",
+      "variants": 1
+    },
+    {
+      "index": 264,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_48860470c273af85126e.png",
+      "crop_sha256": "82888857263d27dc92386fb7a484fa2d3786001acd6060d868f1979146390834",
+      "text_sha256": "539f4e5e6a45543745ad09bbd2e26e637557dbd05e9290abd43b90fb7d85ab21",
+      "variants": 1
+    },
+    {
+      "index": 265,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_a9c2a88fbe578f0c1293.png",
+      "crop_sha256": "5ebf12bf6d72f66dd777037806bb89fee10af0c76dc05a73e5f37c1d8ac60640",
+      "text_sha256": "045dca923bdb1ed5b8e66963df7c0b161d558414cdc32476a12204bd313e0b0b",
+      "variants": 1
+    },
+    {
+      "index": 266,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_7b1ae45ba510f2750312.png",
+      "crop_sha256": "27dea6332a8ce67520699480023e08510b19a449ff676a8c5365f37a4884543b",
+      "text_sha256": "0cd83e5d32da35701ed37664ed95e8a4c38bebbbbd7a4374d29f67289e497ce8",
+      "variants": 1
+    },
+    {
+      "index": 267,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_cde80822f4d25b38131a.png",
+      "crop_sha256": "2942a4b1730590365a741331c3d7d09320bb3687ed2260ce2e336934272cd9a3",
+      "text_sha256": "ee5ffba509141f778b2f0f0ea053626ac604606fa8d0bd30a1702ad3b6ff29fc",
+      "variants": 1
+    },
+    {
+      "index": 268,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_cb1c45481b8a235b96e4.png",
+      "crop_sha256": "8ae00452696c22fc512db7de7153017be1dbee7b7a8721b742c3e130d328ccec",
+      "text_sha256": "9afa296dc6d3cb6971c7d812687c5b8dc5993a749098b6fd7a9f3bb9f7f2be8c",
+      "variants": 1
+    },
+    {
+      "index": 269,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_adb704a8224791043cca.png",
+      "crop_sha256": "a460db7ecf489782458d575685eda8b384f38ac326c2841beffc328408c5ae01",
+      "text_sha256": "61d2f11d95659c53ad781e3310a214c36dbdbdb1bfe8f55b66581308809c8828",
+      "variants": 1
+    },
+    {
+      "index": 270,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_a4e724d29cb359aab100.png",
+      "crop_sha256": "2a4619446c7c2e4051cf24f4b2cfa6df86185bab3b085ccc440010d536d7e450",
+      "text_sha256": "2bd90b05960b927bffcded2a8f0c91464f8a25bbd662f47b804a52a2a405f678",
+      "variants": 1
+    },
+    {
+      "index": 271,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_cc9337374a4326c2e2e0.png",
+      "crop_sha256": "175e2db79031df66ffbaf079e52e4604f324f3526c3c286470faf68a2be4054b",
+      "text_sha256": "03ff193756fc9af405f320e0c4c4bf3bfc573ad6826f558a0829bac5fddbdef4",
+      "variants": 1
+    },
+    {
+      "index": 272,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_4e655c76245c80d4ec19.png",
+      "crop_sha256": "49f90c96b918e4965ff2ab402c48256957c70b23ae4e8a5cce914fbc7d047347",
+      "text_sha256": "ef1ad5ba0a58af3cbda41a9d79bcd3f43177512c843eed5e5768f2dec22a397c",
+      "variants": 1
+    },
+    {
+      "index": 273,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_f355a7f1ee7e64309e45.png",
+      "crop_sha256": "41cfa2dc7507d0b09af6dcee4dbb7f19265b4f71a7e8a91cfd05ca7388f89e77",
+      "text_sha256": "62be5200ba2e166110773d99f64e0d69efead437eb1bc00343f651aadaed07fb",
+      "variants": 1
+    },
+    {
+      "index": 274,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_1b6fc8b75f9a0782c157.png",
+      "crop_sha256": "65ba501dd91ed6a591787aad1d6c35554f3d6f89491d5279bca25c3e63bad3ff",
+      "text_sha256": "d7ea12a62f20b013f061ff192747f51578cf4fc4b876c0505013ef113440815d",
+      "variants": 1
+    },
+    {
+      "index": 275,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_29f02536d059b3706891.png",
+      "crop_sha256": "9b2ddd7e41d0d6ef1d01addfc0734acb867e30a37791265b3c85d1e5b9215c11",
+      "text_sha256": "c8892ab4845c0beb29ea222dfd637478fe311cd336946986a1cb95345695e92d",
+      "variants": 1
+    },
+    {
+      "index": 276,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_61618275f66e335583ae.png",
+      "crop_sha256": "747d507c4aba1a48640faabcb99a4244b3fe2f9c116247b3915c72d3f5bff8bb",
+      "text_sha256": "74ff8a792372aa33157046a13969475c28c7ab42bf8f82ea7127404c6edccf6b",
+      "variants": 1
+    },
+    {
+      "index": 277,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_ca129b58666e7e18f56f.png",
+      "crop_sha256": "347cf63c075eade5ed9f194bf6d847d31f0d7f3246213a28eb1d2688cd4815ee",
+      "text_sha256": "9b5a90918ce05b5f19a01e8f4aabcf2444de8e7ba5463e9d5bf61c9dc3299379",
+      "variants": 1
+    },
+    {
+      "index": 278,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_d6d84f2abd0956d8f86c.png",
+      "crop_sha256": "3c80aa7afff2ff93f33fd187f141b5f14a115b1183c0cf217e1ff332562a022e",
+      "text_sha256": "3440788958dea7f1c9200193bfe764f9d850928c2d615329d22d6a5603d4de65",
+      "variants": 1
+    },
+    {
+      "index": 279,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_6249bf351146d63c94e2.png",
+      "crop_sha256": "f1b08f83f9b971f8be90c1cec667b1951b6a7cb20e713831e18990fa3ad24419",
+      "text_sha256": "335affba9c05d5e1264bee0b015a21ebaca9901d136c2da4886905dc2e39d726",
+      "variants": 1
+    },
+    {
+      "index": 280,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_43e4bd1bd9bbd8af787a.png",
+      "crop_sha256": "2a16ac47e93d439c5bff855d00ad5d3f1ee6660c835085eec61a8e91a3b650f0",
+      "text_sha256": "d23c2906fcdc0574f76c1bc07186e6cefe2e4954f719e58844df7a11f0030091",
+      "variants": 1
+    },
+    {
+      "index": 281,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_454f6fe8a319939aac0d.png",
+      "crop_sha256": "bdcba3b43135e1e61b855b29301b31a68f5c9b212f01602d87ff0fed19ee2e5e",
+      "text_sha256": "e218c86365b859c627b8bdccb7672b8ef05b55bb8c72dee4b3123af166d84316",
+      "variants": 1
+    },
+    {
+      "index": 282,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_63bd55f678825cc83db7.png",
+      "crop_sha256": "959f5d2cbab974ab973e6fdf1cd2f3b17fdb195096da28c1bb4e089d6f3b6a79",
+      "text_sha256": "68d7695958f027726d0690a740418826a1a06790f4aeaa1a73a939ae8087983b",
+      "variants": 1
+    },
+    {
+      "index": 283,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_2a182e19ab4352185284.png",
+      "crop_sha256": "346a5134a6b11d87ad9b6af62536ab883434512c1f7edd45a6650ab4096ab4c0",
+      "text_sha256": "467b363920b686adcdee67e2b9148876ed5236a90de0797f903860cb5b89922f",
+      "variants": 1
+    },
+    {
+      "index": 284,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_59e89c3cb0987acfc07e.png",
+      "crop_sha256": "1d4af7c5c7c9ee39f685be0fee684142167de26e707f7efe44f6e8e4590d95b9",
+      "text_sha256": "b705f3c3b54630f8cd47828a3f586c54145ddcb70b54606ee9d071b57f396297",
+      "variants": 1
+    },
+    {
+      "index": 285,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_7bce403e0d1a3e58b0d2.png",
+      "crop_sha256": "f6ed1ae2defe4b7f61cb884860e2f5db5a572cf9d7b47e1ce9d891a17f6ec99a",
+      "text_sha256": "4fa7ce58af9980930a1b1c8aecc9c75df1190bcee7d9e7d42e14d371b683a159",
+      "variants": 1
+    },
+    {
+      "index": 286,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_910b23369f02e282304a.png",
+      "crop_sha256": "831c51cb595341be34908156739522ecf96c9027a414c52f03e8faab08523846",
+      "text_sha256": "3982fe2b273298ff21f7b1b99d6fbbbc63aa25697745b06c1157ea9416bc3cee",
+      "variants": 1
+    },
+    {
+      "index": 287,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_e9d8e60fa0993be553e7.png",
+      "crop_sha256": "e0027f212681cae8ab983d1de0b09e0877e57a2583b20536fdd1c45a5ac02c76",
+      "text_sha256": "d76a99ebb95fd7ae489f00c66f0b62590bcf9dfe6505edda3ebb13f872def779",
+      "variants": 1
+    },
+    {
+      "index": 288,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_fa3f79be86e3b1cb8757.png",
+      "crop_sha256": "209f73dead2b46e97400a6592f32c835d33a60fd7a67baa1d9a590a98d634e33",
+      "text_sha256": "cb84e936bb25d362de427ca933dd2473b113afbc5da88624538b8e2a05843d15",
+      "variants": 1
+    },
+    {
+      "index": 289,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_a7f2d0eee049123f9bcd.png",
+      "crop_sha256": "f2d36b109ad64a4c3aac8d7ccddddbc06208f0f1c91a7ac3c696298e61ce3324",
+      "text_sha256": "e053ad2c754cc88bf70b4f777aec35c3fe2caa0fc710c551a1f849ed6c6c0347",
+      "variants": 1
+    },
+    {
+      "index": 290,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_ea6c25eb8dfae81663d7.png",
+      "crop_sha256": "8029d1b97461ce5711fce336b442d9fa962972f893baf49a94ffa7609aaee548",
+      "text_sha256": "dc2ec2cf7b16d8704d2964c38d5fc4f6719d873aefb42eccf19eae6fa576804b",
+      "variants": 1
+    },
+    {
+      "index": 291,
+      "document_id": "jundiai_atas_sessao_1831-07-11",
+      "split": "validation",
+      "label_source": "human_diplomatic_assisted",
+      "crop_image": "data/demo_apresentacao/recortes/l_bc0a3bd5301cdea7725e.png",
+      "crop_sha256": "1a82bf2d8b717c5467efbf4f7177879f046d32f3a70eede5cb9a6303304b615b",
+      "text_sha256": "bd27e6132f1083a05b9171673a9fdc1c8a59a9721ed36ecbd0cddfd7ea9af3e9",
+      "variants": 1
+    }
+  ],
+  "checkpoint_selection": "ketos val_metric on validation only; reserved test never mounted"
+}
