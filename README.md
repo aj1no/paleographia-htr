@@ -185,8 +185,12 @@ aumentadas por linha, empatou com o D1.
    .venv/Scripts/python.exe scripts/treinar_ao_vivo.py A      # Traslado
    .venv/Scripts/python.exe scripts/treinar_ao_vivo.py B      # Traslado + Inquisição
    .venv/Scripts/python.exe scripts/treinar_ao_vivo.py C      # Traslado + Posturas (pares_C.json)
-   .venv/Scripts/python.exe scripts/treino_noturno.py D1      # Traslado + Posturas 100r/100v; dev 101r + 1795
+   .venv/Scripts/python.exe scripts/treinar_ao_vivo.py D      # receita do D1 (padrão): dev 101r + 1795
    ```
+
+   Desde 11/11, o treino guarda só o melhor checkpoint (antes eram 10, cerca de 4 GB). Se ele for
+   interrompido antes de exportar o peso (queda de energia, atualização do Windows),
+   `scripts/recuperar_checkpoint.py PASTA_DO_TREINO` converte o melhor checkpoint salvo.
 
    O progresso aparece ao vivo no terminal e fica em `output/treino_ao_vivo_*/console.log`.
    `gravar_treino.bat` prepara a gravação em vídeo. O código de treino recusa os documentos do teste

@@ -5,6 +5,8 @@ Uso, na raiz do projeto, com Docker Desktop aberto:
     python scripts/treinar_ao_vivo.py B      # Traslado + 550 linhas públicas da Inquisição
     python scripts/treinar_ao_vivo.py C      # Traslado + linhas validadas dos fólios novos
                                              # (gere antes: scripts/exportar_pares_novos_folios.py --gravar)
+    python scripts/treinar_ao_vivo.py D      # receita do D1 (padrão desde 11/11): os pares do C, com o fólio
+                                             # 101r das Posturas na validação junto com 1795; teto de 6 épocas
 
 Cada execução grava em uma pasta nova de output/ (console.log, validações, checkpoints).
 O treino roda no contêiner Docker: na GPU NVIDIA se houver (imagem de treino CUDA),
@@ -48,13 +50,17 @@ def pares(modo):
         return json.loads((DADOS / "pares_traslado_mais_inquisicao.json").read_text(encoding="utf-8"))
     if modo == "C":
         return json.loads(PARES_C.read_text(encoding="utf-8"))
+    if modo == "D":
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from treino_noturno import pares_dev
+        return pares_dev()
     return json.loads((DADOS / "pares_filtrados.json").read_text(encoding="utf-8"))
 
 
 def main(argv=None):
     sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("modo", choices=["A", "B", "C"])
+    parser.add_argument("modo", choices=["A", "B", "C", "D"])
     args = parser.parse_args(argv)
     from paleographia.config import load_config
     from paleographia.ppocrv6_finetune import run
@@ -72,6 +78,8 @@ def main(argv=None):
     settings["log_every"] = 1
     # Folga para o gravador de tela e o Windows: menos núcleos e memória no contêiner.
     settings.update(threads=3, memory="5g")
+    if args.modo == "D":
+        settings.update(max_epochs=6)  # como no D1: o cosseno da taxa de aprendizado cobre 6 épocas
     selecionados = pares(args.modo)
     faltando = [p["crop_image"] for p in selecionados if not (ROOT / p["crop_image"]).is_file()]
     contagem = {}

@@ -116,6 +116,11 @@ def main():
         class AuditedTrainer(original):
             def __init__(self, *a, **kw):
                 kw["callbacks"] = list(kw.get("callbacks", [])) + [audit]
+                # O ketos guarda os 10 melhores checkpoints (cerca de 420 MB cada). Só o melhor é usado,
+                # então o Lightning mantém apenas ele e apaga os piores ao salvar um novo melhor.
+                for callback in kw["callbacks"]:
+                    if hasattr(callback, "save_top_k"):
+                        callback.save_top_k = int(plan.get("keep_checkpoints", 1))
                 kw["enable_progress_bar"] = False
                 kw["enable_summary"] = False
                 super().__init__(*a, **kw)
