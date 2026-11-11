@@ -10,7 +10,6 @@ Desde 10/11 estas linhas são de **desenvolvimento** da v3: os erros da v2 nelas
 """
 import difflib
 import json
-import re
 import sys
 from pathlib import Path
 
