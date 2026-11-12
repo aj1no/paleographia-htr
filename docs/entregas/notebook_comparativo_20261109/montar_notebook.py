@@ -1,4 +1,7 @@
-"""Monta e executa o notebook comparativo da Entrega 06 do PI IV (base × ajustado A × ajustado B)."""
+"""Monta e executa o notebook comparativo da Entrega 06 do PI IV (base × ajustados A, B e D1).
+
+O D1 entrou em 12/11/2026; a versão de 09/11, com base, A e B, está no histórico do Git.
+"""
 import sys
 from pathlib import Path
 
@@ -20,13 +23,14 @@ Cima Takemoto e Tiago Galhardo Avelar.
 formação paleográfica. O PaleographIA sugere a leitura de cada linha para que um humano confira e
 valide.
 
-**O que este notebook compara.** Três reconhecedores de linha leem os mesmos recortes:
+**O que este notebook compara.** Quatro reconhecedores de linha leem os mesmos recortes:
 
 | Papel | Modelo | Treino |
 | --- | --- | --- |
 | **Baseline** | PP-OCRv6 medium, sem ajuste | Pré-treino multilíngue público (Kiessling, 2026) |
 | Ajustado A | PP-OCRv6 + ajuste fino | 191 linhas do Traslado do Auto de Criação da Vila (Jundiaí) |
 | Ajustado B | PP-OCRv6 + ajuste fino | As mesmas 191 linhas + 550 linhas públicas da Inquisição |
+| Ajustado D1 | PP-OCRv6 + ajuste fino | As mesmas 191 linhas + 63 linhas das Posturas de 1831 validadas pela equipe; é o modelo da aplicação (incluído em 12/11) |
 
 **Dados do próprio projeto.**
 - **Validação** (desenvolvimento): 7 linhas da sessão da Câmara de 25/06/1795, de outra mão; usada para
@@ -65,14 +69,16 @@ from paleographia.pln_erros import analisar, TIPOS
 
 VALIDACAO = raiz / "docs/experimentos/ppocrv6_ajuste_fino_20261105/dados/avaliacao_validacao_base_A_B_nfc.json"
 TESTE = raiz / "docs/revisao_humana/teste_reservado_congelado_20261109"
+VALIDACAO_D1 = raiz / "docs/experimentos/ppocrv6_ajustado_C/dados/avaliacao_validacao_D1_1795_nfc.json"
 print("Repositório:", raiz.name)"""),
 md("""## 1. Carregar as leituras e conferir a integridade
 
 Na validação, os nomes dos arquivos de pesos viram os nomes curtos dos modelos. No teste, o notebook
 confere se a referência é a mesma que foi congelada (SHA-256) antes de usar qualquer número."""),
 code("""NOMES = {"medium.safetensors": "Base", "medium_ajustado_A_gravado.safetensors": "Ajustado A",
-         "medium_ajustado_B_gravado.safetensors": "Ajustado B"}
+         "medium_ajustado_B_gravado.safetensors": "Ajustado B", "medium_ajustado_D1.safetensors": "Ajustado D1"}
 val_bruto = json.loads(VALIDACAO.read_text(encoding="utf-8"))
+val_bruto.update(json.loads(VALIDACAO_D1.read_text(encoding="utf-8")))
 validacao = {NOMES[Path(k).name]: v["rows"] for k, v in val_bruto.items()}
 
 congelamento = json.loads((TESTE / "congelamento.json").read_text(encoding="utf-8"))
@@ -83,7 +89,7 @@ assert teste_bruto["reference_sha256"] == hash_ref
 teste = {k.replace("PP-OCRv6 base", "Base").replace("PP-OCRv6 ajustado ", "Ajustado "): v["rows"]
          for k, v in teste_bruto["models"].items()}
 DOCS = {"pagamento_thomas_pardo": "Pagamento (1759)", "contrato_livro12_1763": "Contrato (1763)"}
-MODELOS = ["Base", "Ajustado A", "Ajustado B"]
+MODELOS = ["Base", "Ajustado A", "Ajustado B", "Ajustado D1"]
 
 print("Validação:", len(validacao["Base"]), "linhas |",
       "Teste:", len(teste["Base"]), "linhas, congelado em", congelamento["frozen_at"][:10],
@@ -111,15 +117,15 @@ for m in MODELOS:  # confere com o que a avaliação gravou
     gravado = teste_bruto["models"][{"Base": "PP-OCRv6 base"}.get(m, "PP-OCRv6 a" + m[1:])]["total"]
     assert round(tabela["Teste: total (49)"][m][0], 4) == gravado["cer"]
 
-print(f"{'Conjunto':24s}" + "".join(f"{m:>22s}" for m in MODELOS))
+print(f"{'Conjunto':24s}" + "".join(f"{m:>18s}" for m in MODELOS))
 for c, linha in tabela.items():
-    print(f"{c:24s}" + "".join(f"{f'{cer:.1%} / {wer:.1%}':>22s}" for cer, wer in linha.values()))
+    print(f"{c:24s}" + "".join(f"{f'{cer:.1%} / {wer:.1%}':>18s}" for cer, wer in linha.values()))
 print("\\n(cada célula: CER / WER; menor é melhor)")"""),
-code("""cores = {"Base": "#8a8178", "Ajustado A": "#c46a3a", "Ajustado B": "#7a2e1a"}
-fig, eixo = plt.subplots(figsize=(9, 3.6))
-largura = 0.26
+code("""cores = {"Base": "#8a8178", "Ajustado A": "#c46a3a", "Ajustado B": "#7a2e1a", "Ajustado D1": "#2f6f4f"}
+fig, eixo = plt.subplots(figsize=(10, 3.8))
+largura = 0.2
 for i, m in enumerate(MODELOS):
-    xs = [j + (i - 1) * largura for j in range(len(tabela))]
+    xs = [j + (i - 1.5) * largura for j in range(len(tabela))]
     ys = [tabela[c][m][0] * 100 for c in tabela]
     barras = eixo.bar(xs, ys, largura - 0.02, color=cores[m], label=m)
     eixo.bar_label(barras, labels=[f"{y:.0f}" for y in ys], padding=2, fontsize=8)
@@ -127,7 +133,7 @@ eixo.set_xticks(range(len(tabela)), list(tabela), fontsize=9)
 eixo.set_ylabel("CER (%)")
 eixo.set_title("CER por conjunto: baseline × ajustados (menor é melhor)")
 eixo.spines[["top", "right"]].set_visible(False)
-eixo.legend(frameon=False, ncol=3, loc="upper left")
+eixo.legend(frameon=False, ncol=4, loc="upper left")
 plt.tight_layout(); plt.show()"""),
 md("""## 3. A diferença é real? Intervalos de confiança e comparação pareada
 
@@ -156,10 +162,13 @@ for nome_conjunto, dados in [("Validação 1795", validacao), ("Teste reservado"
             pares = list(zip(dados[m], base))
             d_baixo, d_alto = bootstrap(pares, lambda s: cer([a for a, _ in s]) - cer([b for _, b in s]))
             texto += f" | diferença para o baseline: {d_baixo * 100:+.1f} a {d_alto * 100:+.1f} pontos"
-        print(texto)"""),
+        print(texto)
+    pares = list(zip(dados["Ajustado D1"], dados["Ajustado B"]))
+    d_baixo, d_alto = bootstrap(pares, lambda s: cer([a for a, _ in s]) - cer([b for _, b in s]))
+    print(f"  D1 contra B: {(cer(dados['Ajustado D1']) - cer(dados['Ajustado B'])) * 100:+.1f} pontos, IC95% {d_baixo * 100:+.1f} a {d_alto * 100:+.1f}")"""),
 md("""## 4. Linha a linha: quantas linhas o ajuste melhorou?"""),
 code("""for nome_conjunto, dados in [("Validação 1795", validacao), ("Teste reservado", teste)]:
-    for m in ["Ajustado A", "Ajustado B"]:
+    for m in ["Ajustado A", "Ajustado B", "Ajustado D1"]:
         melhor = sum(a["cer"] < b["cer"] for a, b in zip(dados[m], dados["Base"]))
         pior = sum(a["cer"] > b["cer"] for a, b in zip(dados[m], dados["Base"]))
         igual = len(dados[m]) - melhor - pior
@@ -193,20 +202,26 @@ md("""## 6. Conclusão
   No teste reservado, cai de 64,0% para 60,5% e 60,9%. A diferença pareada fica toda abaixo de zero,
   então a melhora é consistente, e não sorte de uma ou duas linhas.
 - **A e B não se distinguem.** Somar 550 linhas da Inquisição não trouxe ganho mensurável.
+- **O D1 passa o B (incluído em 12/11).** Somar 63 linhas das Posturas de 1831, do próprio acervo,
+  baixou o teste para 55,4%. A diferença pareada para o B fica toda abaixo de zero e vem do contrato
+  (74% → 66%); no pagamento, os dois empatam, e o WER não muda. O D1 foi escolhido antes, num fólio
+  das Posturas fora do treino, e rodou no teste uma única vez, em 11/11.
 - **A generalização ainda é o limite.** O erro sobe muito fora da validação: cerca de 28% no
   pagamento, de letra grande e regular, e cerca de 74% no contrato, de escrita densa e com a tinta do
-  verso aparecendo. Com um só documento de treino, o modelo aprende a mão que viu, e não "o português
-  do século XVIII".
+  verso aparecendo (66% com o D1). O modelo aprende as mãos que viu, e não "o português do século
+  XVIII".
 - **Próximo passo objetivo:** rotular mais documentos de mãos diferentes para o treino, com dupla
   leitura às cegas nas referências. O modelo continua sendo uma sugestão: quem valida é o humano.
 
-**Limitações.** A validação tem 7 linhas e foi usada para escolher o checkpoint. O teste tem 49
+**Limitações.** A validação tem 7 linhas e foi usada para escolher o checkpoint de A e B (o D1 usou
+também as 31 linhas do fólio 101r das Posturas). O teste já foi usado por quatro modelos, uma vez
+cada, então a comparação entre eles não é mais totalmente cega. O teste tem 49
 linhas de duas mãos, e cada documento foi lido por um só integrante. Na referência do contrato, foram
 notados problemas só depois do resultado: uma nota do revisor validada como texto e algumas linhas
 na grafia da edição. Pelo protocolo, a referência congelada não foi alterada."""),
 md("""---
 Comentários:
-Ferramenta: Claude Code (Claude Opus 5.5, Anthropic)
+Ferramenta: Claude Code (Claude Opus 5.5 e, na inclusão do D1 em 12/11, Claude Fable 5.2, Anthropic)
 Utilização: Utilizado para desenvolvimento do código deste notebook, do pipeline de avaliação e do
 congelamento do teste, e para redação dos textos explicativos, revisados pela equipe. A transcrição
 das referências (validação e teste) foi feita por integrantes da equipe, sem IA.

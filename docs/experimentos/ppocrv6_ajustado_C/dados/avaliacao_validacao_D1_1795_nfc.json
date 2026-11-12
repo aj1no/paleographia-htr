@@ -1,0 +1,47 @@
+{
+ "models/ppocrv6_ajustado_D1_20261110/medium_ajustado_D1.safetensors": {
+  "sha256": "13a1fa98d4dae668fbded047be73503dca2705a378a88fbc674ea4378558bdf7",
+  "lines": 7,
+  "chars": 345,
+  "cer": 0.0986,
+  "wer": 0.3881,
+  "nota": "As 7 linhas de 1795 extraídas de noturno_20261110/avaliacao_dev_nfc.json (mesmas leituras, sem rodar o modelo de novo).",
+  "rows": [
+   {
+    "ref": "Aos vinte e cinco dias do mes de junho de mil sete",
+    "hyp": "Aos vinte cunco dias do mes de Junho de mil selte",
+    "cer": 0.1
+   },
+   {
+    "ref": "centos e noventa e cinco annos nesta Villa de Nˢᵃ",
+    "hyp": "centos e noventa ainco annos nesta villa du Nossa",
+    "cer": 0.1837
+   },
+   {
+    "ref": "senhora do Desterro de jundiahy comarca da cidade",
+    "hyp": "senhora do Desterro de Jundiahi Comarca da Cidade",
+    "cer": 0.0816
+   },
+   {
+    "ref": "de São Paulo, em casas de morada do Juiz Presidente",
+    "hyp": "de São Paulo em Cazas de morada do Juis Prezidente",
+    "cer": 0.098
+   },
+   {
+    "ref": "Salvador de Oliveira Prado, onde se achavão presentes",
+    "hyp": "Selvador de Oliveira Prado, onde se achavão prezentes",
+    "cer": 0.0377
+   },
+   {
+    "ref": "os officiaes da Camara em acto de Vereança, trat-",
+    "hyp": "os Officiaes de Camara em acto de vercança, trac",
+    "cer": 0.1224
+   },
+   {
+    "ref": "ando sobre o bem commum do povo, na mesma se",
+    "hyp": "lando sobre o tem commum do povo, namesma se",
+    "cer": 0.0682
+   }
+  ]
+ }
+}
