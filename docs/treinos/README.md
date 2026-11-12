@@ -13,6 +13,11 @@ para 55,4%.
 | [C](#treino-c-traslado--posturas-de-1831) | 10/11 | A + 94 linhas validadas das Posturas de 1831 | 205 min | 91,09% (passo 161) | Escolhido só em 1795, ficou no nível do B |
 | [D1](#treino-d1-a-receita-da-entrega) | 10–11/11 | Como o C, com o fólio 101r fora do treino e na validação | 228 min | 86,95% (passo 239) | **Modelo da entrega**: passou o B no teste reservado |
 | [D2](#treino-d2-mais-aumento-de-dados) | 11/11 | Como o D1, com 2 variações por linha | 382 min | 87,01% (passo 219) | Empatou com o D1, gastando 50% mais tempo |
+| **Total** | 6 a 11/11 | | **1.173 min** | | **19 h 33 min de GPU** |
+
+Somados, os cinco treinos levaram 1.173 minutos, ou **19 horas e 33 minutos** de GPU (19,55 horas), numa
+placa de notebook. A duração de cada um vem dos registros (`training.json`; no D1, a última linha do log
+antes da reinicialização). Ficam de fora duas tentativas interrompidas logo no começo, uma do B e uma do C.
 
 ![Curvas de validação dos cinco treinos](curvas_validacao.png)
 
