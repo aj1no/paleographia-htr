@@ -7,8 +7,20 @@ from pathlib import Path
 
 from paleographia.io import deterministic_json_bytes, same_json_content, sha256, write_json, write_snapshot
 
-BASE = "632e8ff71eef2913f003cece810f834aa1ca4382"
+BASE = "e375b39f112859bec198b0f6631ff0f8be06369b"
 DIRECTORY = "docs/revisao_humana/traslado_269r"
+MAPA_REESCRITA = "docs/manutencao/organizacao_entrega_20261112/mapa_commits.tsv"
+
+
+def commit_atual(root, revision):
+    """Código do commit no histórico atual: os registros datados citam os de antes da reescrita de 12/11/2026."""
+    mapa = Path(root) / MAPA_REESCRITA
+    if mapa.exists():
+        for linha in mapa.read_text(encoding="utf-8").splitlines()[1:]:
+            antigo, novo = linha.split("\t")[:2]
+            if antigo == revision:
+                return novo
+    return revision
 
 
 def git_blob(root, revision, path):
@@ -50,7 +62,7 @@ def verify_history(root, record):
     data = json.loads(Path(record).read_bytes())
     rows = []
     for entry in data["snapshots"]:
-        blob = git_blob(root, data["git_revision"], entry["path"])
+        blob = git_blob(root, commit_atual(root, data["git_revision"]), entry["path"])
         local = (root / entry["path"]).read_bytes()
         if hashlib.sha256(blob).hexdigest() != entry["published_sha256"]:
             raise ValueError("Digest publicado divergente.")

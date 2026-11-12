@@ -36,9 +36,14 @@ commits ganharam código novo**. A correspondência antigo → novo está em
 
 - Os registros datados (READMEs de entregas e experimentos, `git_commit` em JSONs de avaliação)
   continuam citando os códigos antigos, porque são o registro da época. Use a tabela para achar o novo.
-- Três referências que o código executa foram atualizadas para os códigos novos: a base do histórico
-  do Traslado (`scripts/traslado_history.py`), o commit anterior dos scripts numerados
-  (`tests/test_legacy_entrypoints.py`) e o fechamento de 23/10 conferido pela CI (`.github/workflows/ci.yml`).
+- O código que lê commits específicos passou a usar os códigos novos: a base do histórico do
+  Traslado (`scripts/traslado_history.py`, que também traduz pelo mapa o código citado em
+  `integridade.json`), o commit anterior dos scripts numerados (`tests/test_legacy_entrypoints.py`)
+  e o fechamento de 23/10 conferido pela CI (`.github/workflows/ci.yml`).
+- A reescrita foi feita numa cópia espelho, com backup completo do repositório antes (um *bundle*
+  guardado fora do Git, na máquina da equipe). As branches antigas `master` e
+  `codex/refatoracao-piloto` também foram reescritas. A referência do pull request #1 é do GitHub
+  e não pode ser reescrita: até a limpeza do próprio GitHub, ela ainda aponta para os commits antigos.
 - Quem já tinha um clone precisa cloná-lo de novo.
 - Commits antigos podem continuar acessíveis no GitHub por um tempo pelo código direto, até a
   limpeza do próprio GitHub.

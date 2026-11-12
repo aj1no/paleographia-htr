@@ -1,0 +1,118 @@
+commit_antigo	commit_novo	data	titulo
+3c117b3fb515b2574811be2761c2fd3e3e3e59a6	4031239e531fcb50feda4224e5c151ee7c2c1007	2026-11-12	chore: organiza o repositório para a entrega 1.0.0
+4b4df011a5ac38315b8881c15fbcd159b7f8df7c	9381077a6a987ca46746fc0d2d088d29f73f8b98	2026-11-11	ci: ruff sem erros (import não usado e v2 congelada)
+a67556d15c28b8d88fb7f4b0fbc8726176116a0d	d501cf7a9c6adbc03b51864247cc55d96356d5de	2026-11-11	feat: receita do D1 como treino D, só o melhor checkpoint e recuperação
+8d763c5066707a48b46927cd79cf78066791de17	d98588ed43f27335e961eb4ee82545d9f645063c	2026-11-11	docs: treino D2 e README com o estado de 11/11
+c19620d2be5b4c516b23dc6be071ac5cfe38f0a1	0143a0e966e0ffb4550bb3ad317b283779ba36f1	2026-11-11	feat: ajustado C gravado e ajustado D1 na aplicação após o teste reservado
+6f1159055025f3713f5ec5d230c25da57c6c40bb	c2ba472272c3b124f3a83fb53ea6c68ad5b609f8	2026-11-10	feat: leitura modernizada v3, avaliada nas Posturas de 1831
+b613dff71cc6de47ae22971bf9f302a6c1d6aabb	4230a0b17a1dfcae78e312cddd7597c456344b1a	2026-11-10	feat: glossário histórico com notas numeradas na leitura modernizada
+50c0949aaa8c802bc41b526e690d4d95fa3a4c37	3d5bdcc7e4dec857568683472685b93d4bd37173	2026-11-10	feat: palavras a conferir na leitura modernizada e treino do ajustado C
+ee7a4efc8cc571483552028fd4f35e1f07497ed1	073a2bf04346e427b20015f15ac3503ea9dfd203	2026-11-10	feat: contexto com linhas vizinhas no modo leitura
+bd3090ef1c5bfb1c12e027db110c7847649a649c	95c8b19da5220114cb74fa51e3d6a68e61703864	2026-11-10	feat: Enter valida e segue no modo leitura
+d6e0de5db7c4d5796d75cce99cd5a31a3f21cb1b	a761693a7ef13f2c66a0a86e6c498476d4aadd6c	2026-11-10	feat: setas movem a imagem ampliada no modo leitura
+d5408460705d3c1060a778239130a598e6e26fcb	798264c60c73c3919189c4d312944d0c00b7dc9a	2026-11-10	feat: fólios em curadoria na aplicação oficial
+ec99a97557e96b340c79e810e55e314628f40540	808199ffa80f47470e604b5f53622a74626a8703	2026-11-10	feat: curadoria assistida dos fólios novos para o ajustado C
+8f8fae1ab3e9dc379128b8d9a2d4154001ada664	b723ce238d5df7c271bd15bb2306132312820fc2	2026-11-10	docs: leitura modernizada no artigo de PLN
+5adf0305f48059981a24671e80ddcba3a866d0a3	93447acfef11a0959fdf183d41752c0a706bc4f5	2026-11-10	feat: modernizador v2 e avaliação no contrato de 1763
+7e0ad2bd5a0fbfd12c8722b716f430115fc14da1	c689d6f0be83cc2a9f150fae7c1acae6f9c99bb5	2026-11-09	feat: upload de PDF e imagens, compressão e demonstração com fólio pré-processado
+84c398fd35fed8d1c25d89ad3dd10ddf130f3cf1	5f8e8c06719f79b158e92255fdbc40dca4b9ae60	2026-11-09	feat: Ilegível, Juntar linhas e aviso de nota no modo leitura
+e49da5a20e2d843c42d4d295d0cc2db3bc7bd75b	c7476bfa5af27bcb33099a5be2ee32babfd670ab	2026-11-09	docs: registra a reescrita das mensagens sem linha de coautoria
+0ecd7a5bca46a0ed846b36b56898bf0a32d50ee7	49e6f0d94b3787f4e847866957f24c0d24a08bd1	2026-11-09	docs: README atualizado para o estado de 09/11
+233db6a304035122c2d55d18f4df89ef4a999c4e	ecd85f39d9d533260004a5441dcc92b2bf604e92	2026-11-09	feat: notebook comparativo baseline × ajustados (Entrega 06 do PI IV)
+63457b50d91f3d9c7f36d6389368c156230951b9	750865732f9eeea1d6ca88ca15418fbfa33f8053	2026-11-09	docs: artigo de PLN com o resultado do teste reservado
+cc854518ee6ef45d03a704318e891448bca91f25	8572406e4b141a3e9314f790cdbe4c4f469966ce	2026-11-09	docs: resultado da avaliação única do teste reservado
+472f9f61780b779a3a46ebba480bb59ed26358c5	4c3617a210de59db4f0b8daee40c42ef4e9ceec2	2026-11-09	docs: congela a referência do teste reservado (49 linhas)
+2f30d63778f323def69a59a425c5c1185a903929	da0b574e9f949a1a2ae71bdf71683272b32f0272	2026-11-09	feat: junta à linha as palavras que o blla corta em pedaços
+c50193f2df67f7921af4712571b1bb0bc7c749f6	499d4d78406c4fe50100163df44feb6a5294e19a	2026-11-09	docs: soma o contrato do livro 12 (1763) ao teste reservado
+ad1276b1f0083bb8f804e3e36d5e0e706ab3106e	0674b2a89266e2e6138810f537208b3e9c996177	2026-11-08	chore: skill typeui-fundamentals para o trabalho de interface
+20f77fa3c4e979c885a6e8641b9f9f5839b437c6	7333fb049e58a4bb01444960fb0e0f1441631924	2026-11-08	feat: aba Textos com o texto validado, diplomático e modernizado
+d789d062d13dbc4d6cf7a7c41ca2c8eaf4881e66	c827ed5ba1a7f41ae99c009efc1b3357a0d05af0	2026-11-08	feat: modo leitura para conferência às cegas, sinais paleográficos e PAGE XML
+f200c16bd82c0599a1dddc3eb7e261190157bebb	9e4cf7c56ed8938a693618972d81b491e79763a7	2026-11-08	feat: tema noturno compartilhado por todas as telas
+96fd2839a7301c41b1a5ef561a2836d962482511	5f390b6f7afdf90dbab615dc84202d8d60ff6c90	2026-11-08	feat: ampliação e filtros de leitura no modo leitura
+b15ddda2b569c46a28385d301c039721da48db59	b46a9d58af25872fd158d541f681fb97c747339b	2026-11-08	feat: modo leitura e visual de arquivo na interface de revisão
+63ec4643a597c9d7032704421ce519f5676760a9	fcacedbbbb8431ba64fe283bd823d0d05cba1965	2026-11-08	docs: curiosidade do reconhecedor treinado do zero no artigo de 07/11
+ab1d55d3774dbd76834a5e69643c14f42a58f916	e2e1d95b6e0fee7c4ac59d4033db468dc546850d	2026-11-07	docs: hash do modernizador com fim de linha LF
+41de93147b5f7d2930fc6e6defe60cc953496bfe	2d2fbc23f47e2404942a1b1ddcd87099f22a9af6	2026-11-07	feat: leitura modernizada automática, separada da transcrição diplomática
+f38adfe66e78004bd04f1d21fc89c2db997aec6d	792adb7be0049fe6efd0d2ce3cd2a82c32c269b7	2026-11-07	fix: desliga corretor e sugestões do navegador nos campos de transcrição
+e428ba55a0c3bbb2c2988207becfd1ab1069607f	d632403473a9bbb746a4cdd64c0c819cbe0f941f	2026-11-07	feat: refaz os recortes do teste reservado com o blla, sem reconhecimento
+169b812dc4830f79f2c8ef45a2275acfd57ff015	babc023eae1897e9413e3422e9c59eb4f6dc18d4	2026-11-07	docs: artigo de 07/11, roteiro de 5 minutos e autorização do acervo
+dd252fe852c3cd8ed14d86e6bb9ed81addda283d	853a48854f72ec19a598c693bac29e4d5303ddd7	2026-11-07	feat: análise linguística dos erros e pós-correção lexical (Notebook 3)
+309fd906fa5fb0cbeb75eeca3607f9620d812c59	a6025107d0df4d1d64c05242232f9a5dd5e7fbce	2026-11-07	docs: provas do treino B gravado em 07/11 e avaliação em NFC
+a155e0de66bb4d055c61465d63350ac8fd007e09	1803d9648fb96c8b0a33a66606c54d1d07e98a75	2026-11-07	fix: aponta o treino para a imagem de GPU reconstruída
+b77424ac4eee4681d0b9a799faeed7e7037c7a6e	d6370c3168b03fd7eb2a6378fcef2a8932b2da2c	2026-11-06	feat: avalia o treino A gravado em NFC e automatiza os prints do treino
+6444e3975a2d2dc86c74a03a30e433f061d4d225	b9d69391575ef55dba7193472143b3542c2d0573	2026-11-06	docs: provas do treino A gravado ao vivo em 06/11 (90,80% na validação)
+137ed963d855dbba8d488347a8e8d7058c68aad8	b5905f0446f2b253cd78d78b045b17b134dc87f9	2026-11-06	feat: grava um treino real por vez (A ou B) e retira a demonstração
+8a6e978fa7124c81d379500ab9772ed02147de7c	af7c8eb46667c52b66c46b61a49fc1a17aa95731	2026-11-06	fix: impede dois treinos simultâneos e alivia a demonstração gravada
+b05c38980c8f956f0dffdae6823fb326e4741f2d	a7558e7caf4fce5e0813bddffa051217ec9ef28b	2026-11-06	feat: treino com progresso ao vivo no terminal para acompanhar e gravar
+2668b2a760005907c070411314cb3231750d890c	c967f62239c69c6c67ad4435cca9cbf0b9f3036e	2026-11-05	docs: aponta o peso exportado do modelo A na retomada
+6fb89adbb847bb5aaafbdbfe6cda8d44b4041e3e	2f75cc0f05b9117cec12b13dd3f6e7afc5cdc3aa	2026-11-05	docs: registra resultado parcial do treino B (Traslado + Inquisição)
+7ceb0e04d1ebd5641627184d41e2eefc4dd8aed2	28bd2a6728c62bd02a4282a88d156f0320ffa5d7	2026-11-05	docs: acrescenta plano de reprodutibilidade à retomada de 05/11
+8d62f3a0a6b07204fd0319bfdb72448b4b145ee1	bdd76d8a5ffd5fa37ef444998cc80be2dad09e05	2026-11-05	feat: script de download dos dados públicos e guia de reprodução do treino
+9d64efc0e767003bd0081430e43883b5edee770e	9449d5b7ec30bf32cc9dc84e1c0bb5823056df5c	2026-11-05	docs: registra avaliação do modelo ajustado A em NFC
+2195149d2cd86786e227133350f11ebbad70ea6f	00d42e604e6e9682dfc52a65985e31c64190dd1a	2026-11-05	docs: publica o contexto completo do projeto sem caminhos locais
+6941b520f732716016efd1c800a616b289a04dfa	e711661445f4b4a2865a28afc895bbfaaf10c08b	2026-11-05	docs: registra fólio inteiro, dados de treino e ajuste fino de 05/11
+b12c2e5c75b4d09b8f204c0bf02238a4312a4f80	1c0721ad613ee991781f715c1063145d8dbad84b	2026-11-05	feat: pipeline de ajuste fino do PP-OCRv6 com dados alinhados e externos
+911e1065e4c797bbbc6ba03b0eaad52f067e2b43	d55c26279d1e673b2cb944243b30b87dfd3a4793	2026-11-05	feat: segmentação neural de linhas e vista do texto do fólio inteiro
+6c0b3922b41f4708a0dda5e086b4454e33d08828	b853056024d3c2319a43103670f73334bc036154	2026-11-05	docs: reserva o pagamento a Thomas Pardo como grupo de teste
+69154dcafcd6a3b7e3aeb67011ca9a9aa538f25f	d11b21945335d7bcb75ba057afa748e827062c18	2026-11-05	feat: editor de fólios novos com sugestões do PP-OCRv6
+94fa846d3bf48a717a4def470cf010a801dd3189	965baa864a6998aa626d761d2744877ed8022742	2026-11-05	ci: adiciona ruff para erros de sintaxe e nomes
+a198933cbf79e8aa8041ab86b950fc3ff0f84845	fa1d8c1fffb08fa610ace5384d083e46306b2db8	2026-11-05	fix: preserva data da validação e protege escritas do editor
+a5a17dc1863c97d5c959d7043865165daa62fbc0	6ddb6d229476474e3a14832f61f7dfa9ec6c997d	2026-11-05	docs: atualiza README para o estado de 05/11
+6be0748756ed5ca17cc947fca10330b3469e86de	14a6f5cb96046f1aa3bac341b04e8bdc171dae78	2026-11-05	ci: confere fechamento de 23/10 no commit em que foi fechado
+309d863e3725331bc532addb47b2dd11f84ec041	abe0559cc943f2987fd2f322bea57a7c11c52345	2026-11-04	docs: publica pilotos Kraken e salva retomada de 04 de novembro
+48ee44e8336f2d6338a9e6ddf7b419b48c9fa853	e04cc27c67f79933c44cba45e9296c870211af2b	2026-11-04	docs: publica avaliacao por linha da carta de 1767
+bfa0ebfc1ed6e32e29bf7f742a37bf7c5491e7e3	505f0016921e64923c4114eeeaf5485fdc73737f	2026-11-04	docs: registra curadoria da carta de 1767
+8ba92bda5770b41166be8551fa6bfae6bef131ce	453a8220ba7848e7cd1727d8a063c65d2fdfd07e	2026-11-03	fix: preserva bytes dos registros e inventarios de curadoria
+863d6f1e46490086cf2044456ec5e5e7040aedd7	04e41021723302edb0782a4dc2f1db69bff0375e	2026-11-03	docs: salva continuidade e curadoria de 03 de novembro
+6b213fceb455f5a91f87178f7516800235a20a3a	fa767be4b995df95460beaafa2cc665e4b878984	2026-11-03	docs: disponibiliza Notebook 1 executado na página de entrega
+18310031004abfc610e7a44b628a7b769b7b7020	a7a9461f9462a7917f1e271d18e44cace31d1475	2026-11-03	docs: publica pacote offline do Notebook 1 e instruções de execução
+e8e96b3656c8f142cf3a5bfd334aa0c0721e1a2b	24e719fa5fcef75b457f4cbf8eb1f7f55c4badcf	2026-10-28	docs: aplica recorte aprovado da primeira linha de 1795
+158b8d183b71dc114b0dcdb00d655e4808dd09de	7d3ed81c41688801145b2ffe6805b872d7b6f563	2026-10-28	docs: registra leituras do Juiz Presidente e virgula
+c44c53750941ae020e2689006bfaebb94dfdcecd	9cc27d94cb05fb2c3e09795f901d52292cbcf447	2026-10-28	fix: atualiza hash ao alterar recorte no editor
+9ff6c1e07568238dcd76d72da1979d59e2e1650d	6ffe6d5021fab3a191a4bbb9d1416a4eb79b4e8d	2026-10-28	docs: esclarece historico e pendencias da revisao de 1795
+3c94ff62b270dbaddf0be7047aa90e1384e178d0	9abdbf225703382b2033aff83f5ef443e9385ed3	2026-10-28	docs: registra correcao humana de Luiz para Juiz
+4008e3cf7ab8de66831b1ef5a27ef35a08ceb6a1	e84f51567cfa0065de4f8ee1d40aea81d593ffa6	2026-10-28	docs: consolida geometria e parcialidade do bloco de 1795
+bf1db30a93fee10808b1509054524ae572fe1864	a5424c9cd332a7c0ebf395eaead78b470f2cfe34	2026-10-28	docs: consolida rascunhos de 1795 e prepara analise no ChatGPT
+2b309e31d6f35f3c541a679318192d06033a3a5d	89c0295c90ab4c079b810d3ef5b0241a6526bfca	2026-10-28	docs: registra revisao humana inicial da sessao de 1795
+a59e82893cec0c49b0881cbb8e1982ba34ee49b5	e7f30cf0970197153c602ab80349df89bfbb6134	2026-10-23	fix: confere notebook publicado com identidade Git entre sistemas
+2b109ee224d941fa828100c7ce6e4799d4592d9b	e7c504facc0768c815b6c40b5d099f2d90c8c465	2026-10-23	docs: fecha entrega academica e prepara rodada humana do dataset
+dbcd8ce100147ba066233d9b4d6078b7159dcec9	4b889081fb53d2c83130ee62c5d372297e1c7fbe	2026-10-23	fix: usa JSON valido nos campos de formulario do Colab
+53957da6bedf56b53f552001fe9ce21817d9a81b	e6dd7baa24f4e74dd57db85f313395be26e6969f	2026-10-23	docs: prepara notebook da equipe para Google Colab
+c8a3e9a7f1cc55b66d630c510eff17ff95dfdece	ec6553e18c6a6dbd4ad4f0313dc83ea329191372	2026-10-23	docs: organiza notebook colaborativo e registro de contribuicoes da equipe
+69e98a78aeddf7ee8938d00c94ad5250f6cb936b	a35c5b5e67904c15ae33bbfa39f97608bfed3f5f	2026-10-23	docs: revisa artigo e prepara PDF e Word para PI IV e PLN
+7f048a34ab9f406e42d22241e98146b85b81bf51	76c31d7bfea450f3a87bc6dbb41045afeae390d6	2026-10-23	docs: completa fichamentos T1 e T4 e amplia fundamentacao do artigo
+88191a8a9443276507d13ae680fb11dddba812f3	0bcc9f31004588da52aa5b6a693e8ae14a0fe6e7	2026-10-23	docs: incorpora referencias comentadas e atualiza fundamentacao do projeto
+bce8aead0d8dfee180d60e087c1c3ee0955674bd	1e9d0425d28587aa3e954cdeb81c83a161f4e184	2026-10-23	feat: incorpora corpus v0.2 e audita ajuste fino tecnico do PP-OCRv6
+75b7b24aa2f03aa906aedf2c6d3dfecfa89cb627	0673f89277e8f2f68576bff487ef194e296c5f03	2026-10-22	fix: corrige reproducao da auditoria do verso e orientacao da CI
+4d429c9c1a51d616b84452269895e4951f4464c4	ae128536ffd2598672485c0a36506574b18f8e26	2026-10-22	docs: publica diagnostico integral do 269 verso contra a edicao
+1912bb8b0faf541d3b4adfa6887ed8b98169a049	43bfe0e1de572a4a393417649f8c107138623ee6	2026-10-22	docs: publica diagnostico integral do 269r contra a edicao
+e901ced3e1d590c2090886ce2119679444f36c0b	a9ab852b8fddcd752379c85f4558e11898f90934	2026-10-22	ci: verifica entregas academicas de 20 e 22 de outubro
+00ae91dc238d167c02352a0a96ff4c21d1d2c634	09890c9d4bb2b3ee76b727db2f5169e69f0a1506	2026-10-22	docs: incorpora reconferencia ao notebook e artigo em nova versao
+27b547d0203b566ca5cf17c1378f64ce46ae5b1a	098e6e09fa38cc534bbf55d039350961d78f7400	2026-10-21	docs: consolida reconferencia humana com duvidas preservadas
+21b8c744b25e11bda059947246806c4414d618d6	bed65efb5357f9884854771e837c94660d993610	2026-10-21	docs: registra buscas B01 e B02 no arXiv com evidências
+1faf5c214ed7248f7f0b9ea5c33e020e94d8431a	89c963e5b74965045f05563f39bba55375432be8	2026-10-21	docs: atualiza protocolo bibliográfico para PP-OCRv5 e PP-OCRv6
+fcf111d4250018d2ba14a2b9dc098a5a0449698d	e6c60eb16252e4f33f5a1d7d80f381fcc986237f	2026-10-21	fix: permite consulta de processador do Jupyter na CI Linux
+1305871505fd425fa0449e0b3f41216945d293fc	829d438ad3fed6558010e9f102ca8cbe19293d50	2026-10-21	ci: audita e reexecuta notebook acadêmico sem nova inferência
+0691104a7b66c97a79d1d3c56aeee3794f9256e0	dcdc25f541a2a418f59a08c216cece0571b88cdb	2026-10-20	docs: adota main nos guias atuais e preserva referências históricas
+5879f8538146d36e78a996ac1f604deaec36ab83	5bb815bd7c9f54bad602169b3be1d5c146c91bf3	2026-10-20	chore: organiza avisos dos scripts numerados com compatibilidade preservada
+951363bdb588268dd973de6ead96d7d36c538df6	93fdeb313ebdefc85abab6b4c5502b84f7409c44	2026-10-20	chore: arquiva seis auxiliares históricos com caminhos e hashes
+398aafafce895c104a6f16d69167453213cdc50d	d47341e9ade3eda5bb6383e81d416fa6bd5361f9	2026-10-20	docs: revisa repositório e atualiza README e guias do piloto
+3a629e316e7f0485bc8eaec2ad2c882d3bb3a749	b76d06eca4181ba3f6bb993f6806a95f2de92e31	2026-10-20	Publica notebook e rascunho acadêmico do diagnóstico de 24 linhas
+7c9a1b7942fec4f5c7809ccc23e6f96ce44f665b	d75c5941b0c1cffae277ed74d3b6074c61880419	2026-10-20	Publica diagnóstico de desenvolvimento PP-OCRv5 e PP-OCRv6 em 24 recortes
+4c25b4f6a1dba2536fc5e055b11137d076ef61a5	f089462d486cd600d0a8f45315cf20c74379ffa2	2026-10-20	Publica referência assistida de 24 linhas do 269r e evidências
+c41065bd49d375435985bf1ae6550890ebe8b72b	7bd0666ec2cb6b0b4844cb609c025e326b090aec	2026-10-19	Registra conferência humana do 269r até a linha 21
+336c0defd3abba1a1ca946bff42a81acd5bcae4c	9e76be7910a0aedc6f53b0ef5d2c7a9716c3c2cc	2026-10-19	Publica relatório e evidências do teste lexical em cópia isolada
+a59f38a86516acd841b2e20ea24db6952caf782c	46db83d34214e1ed8d0b7f58f6464ee6a13c9908	2026-10-19	Adiciona consulta lexical histórica com fontes e preservação da revisão
+b2fc01ccdfa87ba36c73a2296514f91606ab437c	9a3065b2c18d03f5a38dc60db289077387ca58b1	2026-10-16	Merge pull request #1 from aj1no/codex/refatoracao-piloto
+3284e070285cac462bf38140618e053fe7161650	f5d70a636d20698409a04c7510d31d20e360d37a	2026-10-16	Preserva sessão do 269r com dez linhas validadas e próximo bloco
+b22e6b8ff772b661dd295458ef6a1694e03cc94c	cb174dc822bc396fb2d2ca5c3feabe5aa2cda9a7	2026-10-16	Integra PP-OCRv6 experimental e desativa TrOCR no piloto
+31997a428180d983d3f0093491daddbdcff90c34	b25008962229b7272bce11d6032f23f0d6df2714	2026-10-16	Publica referência do 269r e comparação controlada de reconhecedores
+498d47a646a291b1cb06b323e89973e99a39b782	1c841626be57272290ed9cb3a1e6953e75450d76	2026-10-16	feat: prepara cinco linhas do Traslado para revisão no editor
+632e8ff71eef2913f003cece810f834aa1ca4382	e375b39f112859bec198b0f6631ff0f8be06369b	2026-10-16	docs: registra acervo e revisão do Traslado 269r
+7d472af780d6374b839cf67a3a6f4b948b29d65d	bc57180ed9c26fcb9c7ffa97e2680894801b72b5	2026-10-15	docs: registra conferência humana do fólio 100 reto
+96c24ebdca573af6c9e2470ec53fa780f8218ca6	638e6b11ef070029dcc07570ba3bca07d4ac8380	2026-10-15	fix: preserva revisões e valida a partição completa
+756492c69b3eab4b86757e1dc0570349ff2cc02a	2d0c277ef3bc2fd2526314f521231ccea44e3165	2026-10-15	feat: organiza piloto e repertório de revisão paleográfica
+2ab24deaa183373bc0926966cbd474a9dde985cb	656521d09c0ef350bd37f1f3b4d1874e67e0652c	2026-05-28	docs: update repository name in badge links
+3c75d7702ec836a4e40b2fb115777333e89b3ef0	25be5da12ffd22caf172fd01b758d5d167eb2a4d	2026-05-28	docs: standardize repository structure and add bilingual READMEs
+f8bc2e599cccfac9f1fffc9e2ae4e9fb69d0fa6d	9845d0d51cc8d24e3572e526225ebb74d97ef1d5	2026-04-17	Docs: Atualização do README com foco em modo especialista e segurança de hardware
+a2bcd890ca7a509a08dd0ec00f2c53e50a15cf55	e8c99ba6bde26a6cf859085bfe1b35298791b99d	2026-04-17	PaleographIA: Estabilização de hardware, limpeza de UI e melhoria na segmentação

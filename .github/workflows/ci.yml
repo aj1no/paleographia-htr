@@ -75,7 +75,7 @@ jobs:
           # O recibo de 23/10 congela hashes de pastas que seguem evoluindo
           # (src/paleographia/, docs/experimentos/). Ele é conferido no commit
           # em que foi fechado; o pacote em si não pode mudar depois disso.
-          FECHAMENTO_COMMIT: a59e82893cec0c49b0881cbb8e1982ba34ee49b5
+          FECHAMENTO_COMMIT: e7f30cf0970197153c602ab80349df89bfbb6134
           FECHAMENTO_DIR: docs/entregas/pi_iv_pln_20261023_fechamento/
         run: |
           python -m pip install pypdf==6.1.1

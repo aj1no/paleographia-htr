@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT/'docs/manutencao/scripts_numerados_20261020/inventario.json'
 INVENTORY = json.loads(CATALOG.read_bytes())
 ROWS = INVENTORY['scripts']
+COMMIT_ANTERIOR_ATUAL = '93fdeb313ebdefc85abab6b4c5502b84f7409c44'  # reescrita do histórico de 12/11/2026
 
 
 def test_avisos_sairam_da_raiz():
@@ -30,7 +31,8 @@ def test_catalogo_preserva_historico_hashes_e_comandos_indicados():
         assert row['saida_esperada'] == 1
         assert hashlib.sha256((ROOT/row['original_historico']).read_bytes()).hexdigest() == row['sha256_original_historico']
         try:
-            old = subprocess.check_output(['git', 'show', INVENTORY['commit_anterior']+':'+row['caminho']], cwd=ROOT,
+            # O inventário cita o código de antes da reescrita de 12/11; no histórico atual ele é 93fdeb313ebdefc85abab6b4c5502b84f7409c44.
+            old = subprocess.check_output(['git', 'show', COMMIT_ANTERIOR_ATUAL+':'+row['caminho']], cwd=ROOT,
                                           stderr=subprocess.DEVNULL)
         except (subprocess.CalledProcessError, FileNotFoundError):
             pytest.skip('histórico do Git indisponível (clone raso ou sem git)')
