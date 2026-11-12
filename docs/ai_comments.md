@@ -61,3 +61,27 @@ Os commits desse período foram feitos pelo Claude Code em nome do autor e, a pe
 não trazem a linha de coautoria; o uso de IA fica declarado aqui, na planilha e nos comentários dos
 notebooks e do artigo. Nenhuma ferramenta de IA validou leituras: as transcrições de referência da
 validação e do teste foram feitas por integrantes da equipe.
+
+## Atualização de 12/11/2026: Claude Code, de 10 a 12/11
+
+De 10 a 12/11, o Claude Code (Claude Opus 5.5 e, a partir do fim da manhã de 12/11, Claude Fable 5.2, Anthropic)
+apoiou, a pedido de Rodolfo Takemoto:
+
+- **Leitura modernizada:** as palavras a conferir (sublinhadas), o glossário histórico com notas
+  numeradas e a versão 3 das regras, avaliada contra a edição do Arquivo nas Posturas de 1831.
+- **Treinos C, D1 e D2:** a preparação dos pares, a fila de treinos, a recuperação do checkpoint do D1
+  depois que o Windows reiniciou o computador, as avaliações na validação e a avaliação única do D1 no
+  teste reservado, autorizada pelo autor. A decisão de trocar o modelo da aplicação foi do autor.
+- **Documentação:** os registros dos treinos, a página [Os treinos, época por época](treinos/README.md),
+  o resumo e roteiro da apresentação, a atualização do artigo de PLN com o D1 e o rascunho do e-mail de
+  retorno ao Arquivo Histórico, que o autor revisou e enviou.
+- **Organização do repositório para a entrega** (12/11): correção do clone no Windows, `CITATION.cff`,
+  retirada de arquivos pessoais e do pacote do Arquivo, com reescrita do histórico decidida pelo autor
+  ([registro](manutencao/organizacao_entrega_20261112/README.md)), e preparação do Release v1.0.0,
+  que o autor publicou.
+- **Demonstração:** o fólio pré-processado e os atalhos para abrir a aplicação na apresentação.
+
+Como antes, as leituras e validações das linhas das Posturas de 1831 foram feitas pela equipe na
+aplicação; a IA apontou possíveis erros de digitação e divergências com a edição, e a decisão de
+corrigir ou manter foi dos revisores. Os commits continuam sem a linha de coautoria, a pedido do autor.
+Os prompts e os resultados desse período devem entrar na planilha de documentação do uso de IA da equipe.
