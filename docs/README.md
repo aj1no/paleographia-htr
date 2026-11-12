@@ -12,6 +12,7 @@ Estado em 12/11/2026, na branch `main` (versão 1.0.0, a da entrega final). O
 | [Notebook 3 de PLN](entregas/notebook_3_pln/README.md) | Análise linguística dos erros e pós-correção Levenshtein × TF-IDF |
 | [Resumo e roteiro da apresentação de 19/11](entregas/apresentacao_20261119/PaleographIA_resumo_e_roteiro.pdf) | Como o programa funciona, números, fala de cada integrante e perguntas prováveis ([roteiro em Markdown](entregas/apresentacao_20261119/ROTEIRO.md)) |
 | [Teste reservado congelado](revisao_humana/teste_reservado_congelado_20261109/README.md) | 49 linhas lidas às cegas; avaliação única de base, A, B e D1, com intervalos |
+| [Os treinos, época por época](treinos/README.md) | A, B, C, D1 e D2 com os prints tirados durante o treino, curvas de validação e o que cada época mostrou |
 | [Ajustados C e D1: Posturas de 1831](experimentos/ppocrv6_ajustado_C/noturno_20261110/README.md) | O D1, modelo da entrega, escolhido no fólio 101r fora do treino; o D2 empatou ([treino C gravado](experimentos/ppocrv6_ajustado_C/gravacao_20261110/treino_C/README.md)) |
 | [Ajuste fino A e B](experimentos/ppocrv6_ajuste_fino_20261105/README.md) | Treinos gravados de 06/11 e 07/11 |
 | [Leitura modernizada v1 a v3](experimentos/modernizacao_20261107/README.md) | Regras de grafia avaliadas contra a edição do Arquivo; palavras a conferir e [glossário](glossario/README.md) |

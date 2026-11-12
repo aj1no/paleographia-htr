@@ -58,6 +58,8 @@ grafia. Todos os modelos leem os mesmos recortes.
   muda. O D1 rodou no teste uma única vez, depois de escolhido no dev
   ([registro](docs/experimentos/ppocrv6_ajustado_C/noturno_20261110/README.md)). O teste já foi usado
   por 4 modelos, então a comparação entre eles não é mais totalmente cega.
+- **Os cinco treinos, época por época**, com os prints tirados durante cada um, estão em
+  [docs/treinos](docs/treinos/README.md).
 - **A generalização ainda é o limite.** Fora da validação, o erro fica em cerca de 29% numa letra
   regular e 66% numa escrita densa. O modelo aprende sobretudo as mãos que viu.
 - **PLN depois do reconhecimento:** a [análise linguística dos erros](docs/entregas/notebook_3_pln/README.md)
