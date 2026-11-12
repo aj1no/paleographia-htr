@@ -27,6 +27,17 @@ def git(*args):
     return subprocess.check_output(['git', *args], cwd=ROOT)
 
 
+def commit_atual(revision):
+    """O inventário cita o código de antes da reescrita do histórico de 12/11/2026; o mapa dá o atual."""
+    mapa = ROOT/'docs/manutencao/organizacao_entrega_20261112/mapa_commits.tsv'
+    if mapa.exists():
+        for linha in mapa.read_text(encoding='utf-8').splitlines()[1:]:
+            antigo, novo = linha.split('\t')[:2]
+            if antigo == revision:
+                return novo
+    return revision
+
+
 def verificar(base=BASE):
     base = Path(base).resolve()
     inventory = json.loads((base/'inventario.json').read_bytes())
@@ -43,9 +54,9 @@ def verificar(base=BASE):
         content = path.read_bytes()
         digest = hashlib.sha256(content).hexdigest()
         require(len(content) == row['bytes'] and digest == row['sha256'], 'Hash/tamanho divergente: '+expected_path)
-        blob = git('show', SOURCE_COMMIT+':'+original)
+        blob = git('show', commit_atual(SOURCE_COMMIT)+':'+original)
         require(content == blob, 'Bytes divergem do blob de origem: '+original)
-        oid = git('rev-parse', SOURCE_COMMIT+':'+original).decode().strip()
+        oid = git('rev-parse', commit_atual(SOURCE_COMMIT)+':'+original).decode().strip()
         require(oid == row['git_blob_original'], 'Identificador do blob divergente: '+original)
         local = blob.replace(b'\n', b'\r\n') if row['diferenca_checkout_somente_crlf'] else blob
         require(len(local) == row['bytes_checkout_antes'] and

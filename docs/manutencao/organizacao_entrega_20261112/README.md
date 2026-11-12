@@ -39,7 +39,14 @@ commits ganharam código novo**. A correspondência antigo → novo está em
 - O código que lê commits específicos passou a usar os códigos novos: a base do histórico do
   Traslado (`scripts/traslado_history.py`, que também traduz pelo mapa o código citado em
   `integridade.json`), o commit anterior dos scripts numerados (`tests/test_legacy_entrypoints.py`)
-  e o fechamento de 23/10 conferido pela CI (`.github/workflows/ci.yml`).
+  e o fechamento de 23/10 conferido pela CI (`.github/workflows/ci.yml`). O verificador dos
+  auxiliares arquivados (`legacy/auxiliares_20261020/verificar.py`) também traduz pelo mapa o
+  commit de origem citado no inventário.
+- Dois scripts de entregas de outubro, fora da CI, citam commits antigos e não foram editados,
+  porque fazem parte dos pacotes datados: o Colab de 23/10 (`c8a3e9a…`, em
+  `docs/entregas/pi_iv_pln_20261023_colab/`) e a auditoria do 269v (`4d429c9c…`, em
+  `docs/manutencao/reprodutibilidade_269v_20261022/verificar.py`). Para rodá-los, troque o código
+  pelo correspondente no mapa.
 - A reescrita foi feita numa cópia espelho, com backup completo do repositório antes (um *bundle*
   guardado fora do Git, na máquina da equipe). As branches antigas `master` e
   `codex/refatoracao-piloto` também foram reescritas. A referência do pull request #1 é do GitHub
