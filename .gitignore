@@ -36,3 +36,9 @@ experiments/*
 data/demo_apresentacao/
 configs/demo_apresentacao.toml
 tools/
+# Ferramentas locais e material pessoal ou de trabalho, fora do repositório.
+.claude/
+skills-lock.json
+client/
+outputs/
+/CONTEXTO_COMPLETO_PROJETO.md

@@ -1,26 +1,32 @@
 # Índice da documentação
 
-Estado em 03/11/2026, na branch principal e padrão `main`.
-A expansão de fontes e o ajuste fino passaram a integrar a etapa acadêmica.
+Estado em 12/11/2026, na branch `main` (versão 1.0.0, a da entrega final). O
+[README principal](../README.md) resume o projeto, os resultados e como instalar.
 
-Use a `main` para consultar a versão atual e iniciar novas contribuições.
-As branches anteriores e suas referências de publicação foram preservadas;
-veja a [nota da adoção da main](manutencao/main_20261020/README.md).
+## Entrega final (novembro de 2026)
 
-## Para começar
+| Material | O que traz |
+| --- | --- |
+| [Artigo de PLN](entregas/artigo_20261107/README.md) | Ajuste fino, análise de erros, pós-correção e teste reservado |
+| [Notebook comparativo, 09/11 (Entrega 06 do PI IV)](entregas/notebook_comparativo_20261109/README.md) | Base × ajustados A e B na validação e no teste reservado, com intervalos e tipos de erro |
+| [Notebook 3 de PLN](entregas/notebook_3_pln/README.md) | Análise linguística dos erros e pós-correção Levenshtein × TF-IDF |
+| [Resumo e roteiro da apresentação de 19/11](entregas/apresentacao_20261119/PaleographIA_resumo_e_roteiro.pdf) | Como o programa funciona, números, fala de cada integrante e perguntas prováveis ([roteiro em Markdown](entregas/apresentacao_20261119/ROTEIRO.md)) |
+| [Teste reservado congelado](revisao_humana/teste_reservado_congelado_20261109/README.md) | 49 linhas lidas às cegas; avaliação única de base, A, B e D1, com intervalos |
+| [Ajustados C e D1: Posturas de 1831](experimentos/ppocrv6_ajustado_C/noturno_20261110/README.md) | O D1, modelo da entrega, escolhido no fólio 101r fora do treino; o D2 empatou ([treino C gravado](experimentos/ppocrv6_ajustado_C/gravacao_20261110/treino_C/README.md)) |
+| [Ajuste fino A e B](experimentos/ppocrv6_ajuste_fino_20261105/README.md) | Treinos gravados de 06/11 e 07/11 |
+| [Leitura modernizada v1 a v3](experimentos/modernizacao_20261107/README.md) | Regras de grafia avaliadas contra a edição do Arquivo; palavras a conferir e [glossário](glossario/README.md) |
+| [Curadoria dos fólios novos](revisao_humana/novos_folios_20261110/README.md) | Posturas de 1831 validadas pela equipe; carta de 1767 e contrato do livro 13 em andamento |
+| [Organização da entrega, 12/11](manutencao/organizacao_entrega_20261112/README.md) | O que saiu do repositório e por quê, nomes encurtados e reescrita do histórico |
 
-- [Contexto completo do projeto](CONTEXTO_COMPLETO_PROJETO.md): mapa de pastas, arquitetura, Docker, API, dados, CI e pendências (retrato de 05/11).
-- [Retomada de 05/11](entregas/continuidade_20261103/RETOMADA_20261105.md): editor de fólio inteiro, grupo de teste reservado e ajuste fino do PP-OCRv6 ([experimento](experimentos/ppocrv6_ajuste_fino_20261105/README.md)).
-- [Retomar o trabalho de 03/11](entregas/continuidade_20261103/RETOMADA.md): curadoria salva até a observação 052; próxima conferência na quarta linha da carta de 1767.
+## Para usar e conferir
 
-- [Preparação da apresentação de 12/11/2026](entregas/apresentacao_20261112/README.md): retomada em 03/11, cronograma proposto, roteiro inicial e pendências para o fechamento.
-- [Apresentação e resultados atuais](../README.md).
-- [Execução e revisão local](runbook.md), [ambientes e modelos](environment.md).
-- [Guia para revisar o projeto](guia_revisao_gpt.md).
-- [Bibliografia comentada, fontes e fichamentos integrais de T1/T4](bibliografia/README.md).
-- [Revisão do repositório e candidatos a organização](revisao_repositorio_20261020.md).
+- [Execução e revisão local](runbook.md), [ambientes e modelos](environment.md), [runtime do reconhecedor](../runtime/kraken_ppocrv6/README.md).
+- [Protocolo de avaliação](evaluation_protocol.md), [esquema dos dados](data_schema.md), [política de transcrição](transcription_policy.md).
+- [Fontes e condições de uso](sources.md), [declaração de uso de IA](ai_comments.md).
+- [Bibliografia comentada e fichamentos](bibliografia/README.md).
+- [Contexto completo do projeto](CONTEXTO_COMPLETO_PROJETO.md) (retrato de 05/11) e [guia para revisar o projeto](guia_revisao_gpt.md).
 
-## Entrega atual de PI IV e PLN
+## Entregas de outubro (PI IV e PLN), preservadas
 
 | Material | Situação |
 | --- | --- |
@@ -38,7 +44,7 @@ veja a [nota da adoção da main](manutencao/main_20261020/README.md).
 | [Comparação de reconhecedores](experimentos/traslado_269r_reconhecedores_24_20261020/README.md) | PP-OCRv5 × PP-OCRv6, desenvolvimento |
 | [269 reto inteiro contra a edição](experimentos/traslado_269r_integral_edicao_20261022/README.md) | Diagnóstico separado: segmentação automática + PP-OCRv6; CER 26,97%, WER 60,31%; bruto e revisões preservados |
 | [269 verso inteiro contra a edição](experimentos/traslado_269v_integral_edicao_20261022/README.md) | Diagnóstico de desenvolvimento do mesmo documento, com pesos e parâmetros do reto; CER 16,48%, WER 56,25%; bruto, revisões e dúvidas preservados; sem treinamento ou teste reservado |
-| [Correção de reprodução do verso e orientação da CI](manutencao/reprodutibilidade_269v_20261022/README.md) | Auditoria v2 aditiva: fonte exata no RAR versionado ou PDF externo com hash; completo e parcial distintos; quatro ambientes leves e duas entregas acadêmicas na CI, sem diagnósticos integrais |
+| [Correção de reprodução do verso e orientação da CI](manutencao/reprodutibilidade_269v_20261022/README.md) | Auditoria v2 aditiva: fonte exata no RAR (fora do repositório desde 12/11) ou PDF externo com hash; completo e parcial distintos; quatro ambientes leves e duas entregas acadêmicas na CI, sem diagnósticos integrais |
 | [Notebook, artigo e evidências — versão de 22/10](entregas/pi_iv_pln_20261022/README.md) | Reconferência posterior incorporada; oito ressalvas históricas e métricas de 20/10 preservadas |
 | [Entrega acadêmica congelada de 20/10](entregas/pi_iv_pln_20261020/README.md) | Pacote original preservado; referência das métricas; verificado junto à versão de 22/10 |
 | [CI acadêmica das duas versões](manutencao/ci_academica_duas_versoes_20261022/README.md) | Auditoria e reexecução de 20/10 e 22/10, sem inferência; saídas e artefatos separados; oito ressalvas e reconferência preservadas |
@@ -85,6 +91,7 @@ Menções a `codex/refatoracao-piloto`, a `master` ou à situação antiga da `m
 registram a origem e as condições da época. Inclusive os pacotes de entregas e
 manutenção mantêm esses campos; isso não muda a branch principal atual.
 
+- [Retomadas de 03/11 e 05/11](entregas/continuidade_20261103/RETOMADA_20261105.md), [preparação inicial da apresentação](entregas/apresentacao_20261112/README.md), [revisão do repositório de 20/10](revisao_repositorio_20261020.md).
 - [Auditoria inicial de 15/10](audit.md), [relatório inicial](execution_report.md),
   [inventário legado](legacy_inventory.json).
 - [Caderno do 269r](revisao_humana/traslado_269r/comparacao.md),

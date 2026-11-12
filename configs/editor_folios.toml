@@ -2,19 +2,22 @@
 # PP-OCRv6 e registrar a leitura humana. Workspace próprio, separado dos
 # workspaces publicados (piloto de 1831, Traslado 269r e curadoria de 1795).
 #
-# As sugestões ficam liberadas só para a identidade exata avaliada no 269r
-# (peso, imagem Docker e worker). Se qualquer uma mudar, o editor volta a
-# esconder as sugestões até nova avaliação; a revisão manual continua.
-# Diagnóstico de apoio em 05/11/2026, sem valor de teste reservado: nas oito
-# linhas da sessão de 1795 o CER por linha ficou entre 8% e 19%.
+# Modelo: ajustado D1 (Traslado + Posturas de 1831), o da entrega. O peso vem do
+# Release do GitHub (README, "Sugestões do modelo") e fica em models/, fora do Git.
+# Avaliado uma vez no teste reservado em 11/11/2026: CER 55,4% (B: 60,9%).
+# As sugestões ficam liberadas só para essa identidade exata (peso, imagem Docker
+# e worker). Se qualquer uma mudar, o editor esconde as sugestões até nova
+# avaliação; a revisão manual continua. Para usar o modelo base, troque model por
+# models/kraken_ppocrv6_medium/medium.safetensors e os dois sha256 por
+# 15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9.
 
 [paths]
 workspace = "data/workspace_folios"
 
 [recognition]
 backend = "kraken_ppocrv6"
-model = "models/kraken_ppocrv6_medium/medium.safetensors"
-sha256 = "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9"
+model = "models/ppocrv6_ajustado_D1_20261110/medium_ajustado_D1.safetensors"
+sha256 = "13a1fa98d4dae668fbded047be73503dca2705a378a88fbc674ea4378558bdf7"
 docker_image = "paleographia-kraken:7.1.0-cpu"
 docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
 device = "cpu"
@@ -25,7 +28,7 @@ timeout_seconds = 180
 language = "pt-BR"
 automatic_transcription_enabled = true
 evaluated_backend = "kraken_ppocrv6"
-evaluated_model_sha256 = "15313b51ace64cbfa81f8f6ef25ad64f04e5a6fb7f7823e67b107527bc081ac9"
+evaluated_model_sha256 = "13a1fa98d4dae668fbded047be73503dca2705a378a88fbc674ea4378558bdf7"
 evaluated_docker_image_id = "sha256:511fb2e2b76db8de0d3eb87dcf04398f7a02fc06b5d91887629b2492f826af5b"
 evaluated_worker_sha256 = "825d6bea5171187c9f6dfa310f1fd0a9cc8fe933e9f72417f3ea43a0c628029a"
 

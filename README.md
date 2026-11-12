@@ -19,7 +19,7 @@ registros.** Nenhuma sugestão vira referência sem conferência humana na image
 Projeto Integrador IV e Processamento de Linguagem Natural (Fatec Jundiaí, Ciência de Dados).
 Interface em português do Brasil.
 
-## Estado em 11/11/2026
+## Estado em 12/11/2026
 
 | Etapa | Situação |
 | --- | --- |
@@ -27,7 +27,8 @@ Interface em português do Brasil.
 | Modelo em uso | **Ajustado D1**: PP-OCRv6 medium ajustado com 191 linhas do Traslado e 63 linhas validadas das Posturas de 1831 (fólios 100r e 100v). Antes: A (só Traslado) e B (A + 550 linhas públicas da Inquisição) |
 | Validação | Sessão da Câmara de 1795 (7 linhas de outra mão) e, desde o D1, também o fólio 101r das Posturas (31 linhas fora do treino), usados para escolher o checkpoint |
 | Teste reservado | 49 linhas de duas mãos inéditas (pagamento de 1759 e contrato de 1763), transcritas às cegas pela equipe, [congeladas e avaliadas uma única vez](docs/revisao_humana/teste_reservado_congelado_20261109/README.md) |
-| Entregas | [Artigo de PLN](docs/entregas/artigo_20261107/README.md), [notebook comparativo](docs/entregas/notebook_comparativo_20261109/README.md), [Notebook 3 de PLN](docs/entregas/notebook_3_pln/README.md) e apresentação de 19/11 |
+| Entregas | [Artigo de PLN](docs/entregas/artigo_20261107/README.md), [notebook comparativo](docs/entregas/notebook_comparativo_20261109/README.md), [Notebook 3 de PLN](docs/entregas/notebook_3_pln/README.md), [resumo e roteiro da apresentação](docs/entregas/apresentacao_20261119/PaleographIA_resumo_e_roteiro.pdf) (19/11) |
+| Versão da entrega | [Release v1.0.0](https://github.com/aj1no/paleographia-htr/releases/tag/v1.0.0), com o peso do modelo D1 |
 
 ## Resultados
 
@@ -103,24 +104,42 @@ flowchart LR
 
 ## Instalar e abrir
 
-Na raiz do repositório, com **Python 3.11 ou 3.12**:
+Requisitos: **Python 3.11 ou 3.12** e Git. Docker só é preciso para as sugestões do modelo.
+Em Linux ou macOS, troque `.venv/Scripts/python.exe` por `.venv/bin/python`.
 
 ```powershell
+git clone https://github.com/aj1no/paleographia-htr.git
+cd paleographia-htr
 py -3.12 -m venv .venv
 .venv/Scripts/python.exe -m pip install -e ".[test]"
+```
+
+**Ver a aplicação com um fólio já transcrito** (Traslado 269r, 24 linhas validadas, sem Docker):
+
+```powershell
+.venv/Scripts/python.exe -m paleographia import-catalog --pages docs/revisao_humana/traslado_269r/referencia_assistida_20261020/paginas_congeladas.jsonl --lines docs/revisao_humana/traslado_269r/referencia_assistida_20261020/linhas_congeladas.jsonl --config configs/traslado_269r.toml
 .venv/Scripts/python.exe -m paleographia serve --config configs/traslado_269r.toml --host 127.0.0.1 --port 8011
 ```
 
-Abra o [modo leitura do Traslado](http://127.0.0.1:8011/leitura). Em Linux, use `.venv/bin/python`.
-A documentação da API fica em `/docs`.
+Abra o [modo leitura](http://127.0.0.1:8011/leitura) e a [aba Textos](http://127.0.0.1:8011/textos).
+O `import-catalog` roda uma vez só, num workspace vazio; a documentação da API fica em `/docs`.
 
-Para **transcrever fólios novos** com sugestões do PP-OCRv6, abra o Docker Desktop e execute
-`iniciar_editor.bat` (ou use `configs/editor_folios.toml` na porta 8010). O atalho confere o Docker,
-a imagem e os pesos antes de abrir o navegador.
+### Sugestões do modelo
+
+Para transcrever fólios novos com a leitura sugerida pelo modelo da entrega (ajustado D1):
+
+1. Baixe `medium_ajustado_D1.safetensors` do [Release v1.0.0](https://github.com/aj1no/paleographia-htr/releases/tag/v1.0.0)
+   e salve em `models/ppocrv6_ajustado_D1_20261110/` (SHA-256 `13a1fa98…`, conferido ao carregar).
+2. Com o Docker Desktop aberto, monte a imagem de inferência (CPU, sem rede):
+   `docker build --provenance=false -t paleographia-kraken:7.1.0-cpu runtime/kraken_ppocrv6`.
+3. Execute `iniciar_editor.bat` (ou `serve --config configs/editor_folios.toml --port 8010`). O atalho
+   confere o Docker, a imagem e o peso antes de abrir o navegador.
+
+Sem o peso ou sem Docker, o editor abre do mesmo jeito: a leitura humana continua, só não há sugestão.
 
 | Configuração | Uso | Porta sugerida |
 | --- | --- | --- |
-| `configs/editor_folios.toml` | Fólios novos, com sugestões do PP-OCRv6 (`iniciar_editor.bat`) | 8010 |
+| `configs/editor_folios.toml` | Fólios novos, com sugestões do ajustado D1 (`iniciar_editor.bat`) | 8010 |
 | `configs/traslado_269r.toml` | Traslado 269r, com sugestões experimentais | 8011 |
 | `configs/curation_sessao_1795.toml` | Curadoria da validação de 1795 | 8012 |
 | `configs/curation_teste_pagamento.toml` | Teste reservado, documento 1, **reconhecedor desligado** | 8014 |
@@ -130,19 +149,20 @@ a imagem e os pesos antes de abrir o navegador.
 **Demonstração da apresentação** (cópia, sem tocar nos dados oficiais): `scripts/demo_apresentacao.py`
 monta uma coleção com os fólios transcritos e o modelo ajustado (D1 desde 11/11), guarda fólios pré-processados (o
 upload da mesma imagem traz linhas e leitura na hora, com aviso) e restaura o estado guardado;
-`iniciar_demo.bat` abre a demonstração na porta 8018 e, com `tools/cloudflared.exe`, um link público
-temporário. O editor aceita imagens (JPEG, PNG, TIFF, WEBP…) e PDF, uma página por fólio.
+`iniciar_apresentacao.bat` abre a demonstração na porta 8018 junto com os slides, e
+`iniciar_demo.bat` faz o mesmo com um link público temporário (`tools/cloudflared.exe`, baixado à
+parte). A demonstração é montada localmente a partir dos workspaces da equipe e não vem no clone.
+O editor aceita imagens (JPEG, PNG, TIFF, WEBP…) e PDF, uma página por fólio.
 
 Um clone novo começa **sem workspace**: iniciar o servidor não importa revisões de outra máquina. O
-[guia de execução](docs/runbook.md) explica como importar o catálogo congelado num workspace vazio.
-Use um único processo por workspace. O reconhecimento exige os pesos e o
-[runtime Docker separado](runtime/kraken_ppocrv6/README.md); a instalação básica não os baixa.
+[guia de execução](docs/runbook.md) traz outros catálogos congelados para importar. Use um único
+processo por workspace. Detalhes do [runtime Docker](runtime/kraken_ppocrv6/README.md).
 
 ## Conferir sem reconhecer de novo
 
 ```powershell
 .venv/Scripts/python.exe -m pytest -q
-node --test tests/web_review.test.cjs tests/web_leitura.test.cjs
+node --test tests/web_review.test.cjs tests/web_leitura.test.cjs tests/web_textos.test.cjs
 .venv/Scripts/python.exe scripts/audit_dataset_expansion.py
 ```
 
@@ -227,11 +247,20 @@ atualizações entram em novos registros.
 | `docs/revisao_humana/`, `docs/experimentos/` | Revisões e experimentos publicados com hashes |
 | `docs/entregas/`, `docs/interface/` | Notebooks, artigos, evidências acadêmicas e telas da aplicação |
 | `scripts/`, `tests/`, `.github/workflows/` | Rotinas de preparo e avaliação, testes e CI |
-| `legacy/`, scripts numerados, `client/` | Histórico e compatibilidade; consulte o [inventário](docs/manutencao/scripts_numerados_20261020/README.md) antes de remover |
+| `legacy/`, `server/` | Código histórico preservado para leitura e a entrada ASGI antiga; ver [organização da entrega](docs/manutencao/organizacao_entrega_20261112/README.md) |
 
 [Índice da documentação](docs/README.md) · [Esquema dos dados](docs/data_schema.md) ·
 [Política textual](docs/transcription_policy.md) · [Protocolo de avaliação](docs/evaluation_protocol.md) ·
 [Consulta lexical](docs/lexico_historico.md) · [Contribuição](CONTRIBUTING.md)
+
+## Como citar
+
+Os metadados de citação estão em [`CITATION.cff`](CITATION.cff) (o GitHub mostra o botão "Cite this
+repository"). Em texto:
+
+> SOARES, C. A. S.; VEIGA, G. R.; TAKEMOTO, R. V. C.; AVELAR, T. G. **PaleographIA: transcrição
+> assistida de manuscritos históricos de Jundiaí**. Versão 1.0.0. Jundiaí: Fatec Jundiaí, 2026.
+> Disponível em: https://github.com/aj1no/paleographia-htr.
 
 ## Equipe, licença e fontes
 

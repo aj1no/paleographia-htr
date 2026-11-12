@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "Se usar este software, cite-o com os metadados abaixo."
+title: "PaleographIA: transcrição assistida de manuscritos históricos de Jundiaí"
+abstract: >-
+  Aplicação web aberta de apoio à leitura de manuscritos de Jundiaí (séculos XVII a XIX).
+  A página é segmentada em linhas (Kraken blla), um reconhecedor PP-OCRv6 ajustado com
+  documentos do próprio acervo sugere a leitura de cada linha e uma pessoa confere na imagem,
+  corrige e valida. Reconhecimento bruto, edição publicada e transcrição validada ficam
+  separados. Inclui leitura modernizada por regras, análise de erros e um teste reservado
+  transcrito às cegas e avaliado uma única vez por modelo.
+type: software
+authors:
+  - given-names: Caio Augusto de Souza
+    family-names: Soares
+    affiliation: Fatec Jundiaí
+  - given-names: Guilherme Rodrigues
+    family-names: Veiga
+    affiliation: Fatec Jundiaí
+  - given-names: Rodolfo Vinicius Cima
+    family-names: Takemoto
+    affiliation: Fatec Jundiaí
+  - given-names: Tiago Galhardo
+    family-names: Avelar
+    affiliation: Fatec Jundiaí
+repository-code: "https://github.com/aj1no/paleographia-htr"
+license: MIT
+version: 1.0.0
+date-released: "2026-11-12"
+keywords:
+  - reconhecimento de texto manuscrito
+  - HTR
+  - paleografia
+  - PP-OCRv6
+  - Kraken
+  - processamento de linguagem natural
+  - português histórico
+  - Jundiaí

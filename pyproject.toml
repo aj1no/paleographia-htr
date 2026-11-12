@@ -1,11 +1,19 @@
 [build-system]
-requires = ["setuptools>=75"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "paleographia"
-version = "0.2.0"
-description = "Local, auditable manuscript transcription pilot"
+version = "1.0.0"
+description = "Transcrição assistida e auditável de manuscritos históricos de Jundiaí (PP-OCRv6 + revisão humana)"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  {name = "Caio Augusto de Souza Soares"}, {name = "Guilherme Rodrigues Veiga"},
+  {name = "Rodolfo Vinicius Cima Takemoto"}, {name = "Tiago Galhardo Avelar"},
+]
+keywords = ["HTR", "paleografia", "PP-OCRv6", "Kraken", "PLN", "português histórico"]
 requires-python = ">=3.11,<3.13"
 dependencies = [
   "Pillow==11.3.0", "numpy==2.2.6", "opencv-python-headless==4.12.0.88",
@@ -18,6 +26,10 @@ test = ["pytest==8.4.1", "httpx==0.28.1"]
 htr = ["torch==2.7.1", "torchvision==0.22.1", "transformers==4.57.1", "sentencepiece==0.2.1", "protobuf==6.32.0", "accelerate==1.10.1"]
 pdf = ["pypdf==6.1.1", "rarfile==4.2", "pymupdf==2.1"]
 ocr = ["onnxruntime==1.23.2"]
+
+[project.urls]
+Repository = "https://github.com/aj1no/paleographia-htr"
+Documentation = "https://github.com/aj1no/paleographia-htr/blob/main/docs/README.md"
 
 [project.scripts]
 paleographia = "paleographia.__main__:main"
